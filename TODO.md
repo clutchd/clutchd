@@ -3,7 +3,7 @@
 This file contains a list of all components that need to be created for
 envelope-ui.
 
-*✔️ = Finished </br> ❌ = Not Finished*
+_✔️ = Finished </br> ❌ = Not Finished_
 
 - [❌ Typography](src/components/typography/index.md)
   - [❌ Typography.Text](src/components/typography/index.md#Typography.Text)
