@@ -8,13 +8,13 @@ Basic text components such as headings, body text, and more.
 
 ## API
 
-### ❌ Typography.Text
+### ❌ Typography.Text (?)
 
 Text component that is meant to be used for single-line text. (buttons, menus, etc.)
 
 | Status | Property        | Description                        | Type                                                   | Default   |
 | :----: | --------------- | ---------------------------------- | ------------------------------------------------------ | --------- |
-|   ❌   | `code`          | Code style                         | `boolean`                                              | `false`   | 0.0.1 |
+|   ❌   | `code`          | Code style                         | `boolean`                                              | `false`   |
 |   ❌   | `copyable`      | Can copy text                      | `boolean`                                              | `false`   |
 |   ❌   | `disabled`      | Disabled style                     | `boolean`                                              | `false`   |
 |   ❌   | `editable`      | Can edit text                      | `boolean`                                              | `false`   |
