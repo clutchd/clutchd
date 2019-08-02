@@ -31,7 +31,8 @@ const defaultProps = {
 const Button = ({ theme, loading, children, ...props }) => {
   return (
     <StyledButton theme={theme} {...props}>
-      {loading ? children : children}
+      {loading ? children : children}{' '}
+      {/* add loading icon/skeleton component */}
     </StyledButton>
   );
 };

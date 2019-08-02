@@ -24,7 +24,7 @@ storiesOf('Button', module)
     'with some emoji',
     () => (
       <Button onClick={action('clicked')} theme={test}>
-        Test red text
+        Test blue text
         <span role="img" aria-label="so cool">
           😀 😎 👍 💯
         </span>
