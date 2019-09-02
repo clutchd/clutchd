@@ -27,6 +27,7 @@ const StyledHeading = styled(StyledTypography)`
     font-weight: ${props => (props.strong ? 700 : 600)};
     margin: 0 0 0.5em 0;
     line-height: 1.25;
+    padding: 0;
   }
   * + &&& {
     margin: 1em 0 0.5em 0;
@@ -37,7 +38,7 @@ const StyledHeading = styled(StyledTypography)`
 const Heading = ({ level, loading, children, ...props }) => {
   return (
     <StyledHeading as={`h${level}`} level={level} {...props}>
-      {loading ? children : children}{' '}
+      {loading ? children : children}
       {/* add loading icon/skeleton component */}
     </StyledHeading>
   );

@@ -10,6 +10,7 @@ const defaultProps = {};
 const StyledText = styled(StyledTypography)`
   &&& {
     margin: 0 0 0 0;
+    padding: 0;
   }
 `;
 
@@ -29,7 +30,7 @@ const Text = ({ loading, children, ...props }) => {
   }
   return (
     <StyledText as={`${as}`} {...props}>
-      {loading ? children : children}{' '}
+      {loading ? children : children}
       {/* add loading icon/skeleton component */}
     </StyledText>
   );
