@@ -8,7 +8,7 @@ const { Heading, Paragraph, Text } = Typography;
 storiesOf('Typography', module)
   .addParameters({ component: Typography })
   .add('Default', () => (
-    <React.Fragment>
+    <div>
       <Typography>
         <Heading>Overview</Heading>
         <Paragraph>
@@ -18,11 +18,12 @@ storiesOf('Typography', module)
           Ut enim ad minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat <Text underline>non proident</Text>,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
+          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          <Text underline>non proident</Text>, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
         </Paragraph>
-        <Text>
+        <Text pre code>
           Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna
           aliqua.
         </Text>
@@ -34,9 +35,10 @@ storiesOf('Typography', module)
           Ut enim ad minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat <Text underline>non proident</Text>,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
+          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          <Text underline>non proident</Text>, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
         </Paragraph>
       </Typography>
       <Typography>
@@ -48,11 +50,12 @@ storiesOf('Typography', module)
           Ut enim ad minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat <Text underline>non proident</Text>,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
+          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          <Text underline>non proident</Text>, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
         </Paragraph>
-        <Text>
+        <Text blockquote>
           Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna
           aliqua.
         </Text>
@@ -64,25 +67,26 @@ storiesOf('Typography', module)
           Ut enim ad minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat <Text underline>non proident</Text>,
-          sunt in culpa qui officia deserunt mollit anim id est laborum.
+          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          <Text underline>non proident</Text>, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
         </Paragraph>
       </Typography>
-    </React.Fragment>
+    </div>
   ));
 
 storiesOf('Typography.Heading', module)
   .addParameters({ component: Heading })
   .add('Default', () => (
-    <React.Fragment>
+    <div>
       <Heading level={1}>Hello World!</Heading>
       <Heading level={2}>Hello World!</Heading>
       <Heading level={3}>Hello World!</Heading>
       <Heading level={4}>Hello World!</Heading>
       <Heading level={5}>Hello World!</Heading>
       <Heading level={6}>Hello World!</Heading>
-    </React.Fragment>
+    </div>
   ));
 
 storiesOf('Typography.Paragraph', module)
@@ -107,8 +111,19 @@ storiesOf('Typography.Text', module)
     </Text>
   ))
   .add('Code', () => (
-    <Text code>
+    <Text pre code>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Text>
+  ))
+  .add('Code Highlighting', () => (
+    <Text pre code className="language-javascript">
+      {`onSubmit(e) {
+          e.preventDefault();
+          const job = {
+            title: 'Developer',
+            company: 'Facebook' 
+            };
+          }`}
     </Text>
   ))
   .add('Disabled', () => (

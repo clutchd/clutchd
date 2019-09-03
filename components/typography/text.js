@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Prism from 'prismjs';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import { StyledTypography } from './typography';
+import { StyledTypography, getWrapper } from './typography';
 
 const propTypes = {};
 
 const defaultProps = {};
 
 const StyledText = styled(StyledTypography)`
-  &&& {
+  & {
     margin: 0 0 0 0;
     padding: 0;
+    display: inline;
   }
 `;
 
-/** The `Text` component is meant to be used for single-line text. (buttons, menus, etc.) */
+/** The `Text` component is meant to be used for single-line text. (inline, buttons, menus, etc.) */
 const Text = ({ loading, children, ...props }) => {
   let as = 'span';
   if (props.code) {
@@ -28,11 +30,19 @@ const Text = ({ loading, children, ...props }) => {
   } else if (props.underline) {
     as = 'u';
   }
+  const Wrapper = getWrapper(props);
+
+  useEffect(() => {
+    Prism.highlightAll();
+  }, [props.code]);
+
   return (
-    <StyledText as={`${as}`} {...props}>
-      {loading ? children : children}
-      {/* add loading icon/skeleton component */}
-    </StyledText>
+    <Wrapper>
+      <StyledText as={`${as}`} {...props}>
+        {loading ? children : children}
+        {/* add loading icon/skeleton component */}
+      </StyledText>
+    </Wrapper>
   );
 };
 
