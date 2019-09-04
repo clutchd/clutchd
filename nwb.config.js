@@ -3,7 +3,7 @@ module.exports = {
   npm: {
     esModules: true,
     umd: {
-      global: 'envelope-ui',
+      global: '@clutchd/ui',
       externals: {
         react: 'React'
       }
