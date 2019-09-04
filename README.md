@@ -3,7 +3,7 @@
 ## Dev Tools <!-- omit in toc -->
 
 This file contains a list of development tools that are needed for
-envelope-ui.
+@clutchd/ui.
 
 _✔️ = Finished </br> ❌ = Not Finished_
 
@@ -14,7 +14,7 @@ Currently, `nwb` does not support a way to customize `src` directory for a proje
 ## Components <!-- omit in toc -->
 
 This file contains a list of all components that need to be created for
-envelope-ui.
+@clutchd/ui.
 
 _✔️ = Finished </br> ❌ = Not Finished_
 
@@ -25,11 +25,10 @@ _✔️ = Finished </br> ❌ = Not Finished_
 - [❌ Icon](src/components/icon/README.md)
 - [❌ Button](src/components/button/README.md)
 
-## Components <!-- omit in toc -->
+## Features <!-- omit in toc -->
 
-This file contains a list of all components that need to be created for
-envelope-ui.
+This file contains a list of all features that need to be created for @clutchd/ui.
 
 _✔️ = Finished </br> ❌ = Not Finished_
 
-- [❌ Code Highlighting](https://prismjs.com/)
+- [✔️ Code Highlighting](https://prismjs.com/)
