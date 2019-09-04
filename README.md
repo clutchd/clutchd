@@ -9,7 +9,7 @@ _✔️ = Finished </br> ❌ = Not Finished_
 
 - [❌ nwb](node_modules/nwb/lib/moduleBuild.js)
 
-Currently, `nwb` does not support a way to customize src directory for a project. For now, the path must manually be changed in the file listed above. Change all instances of `src` and `src/index.js` to `components` and `components/index.js` respectively.
+Currently, `nwb` does not support a way to customize `src` directory for a project. For now, the path must manually be changed in the file listed above. Change all instances of `src` and `src/index.js` to `components` and `components/index.js` respectively.
 
 ## Components <!-- omit in toc -->
 

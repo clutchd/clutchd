@@ -1,7 +1,7 @@
 {
-  "name": "test-envelope-ui",
-  "version": "0.0.9",
-  "description": "envelope-ui React component",
+  "name": "@clutchd/ui",
+  "version": "0.0.1",
+  "description": "envelope-ui React component library",
   "main": "components/index.js",
   "module": "es/index.js",
   "files": [
