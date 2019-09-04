@@ -31,7 +31,11 @@ storiesOf('Typography', module)
         <Paragraph>
           Lorem ipsum dolor sit amet,{' '}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
-          tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
+          tempor incididunt ut{' '}
+          <Text code className="language-javascript">
+            {`class TodoApp extends React.Component {`}
+          </Text>{' '}
+          magna aliqua.
           <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
@@ -63,7 +67,11 @@ storiesOf('Typography', module)
         <Paragraph>
           Lorem ipsum dolor sit amet,{' '}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
-          tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
+          tempor incididunt ut{' '}
+          <Text code className="language-javascript">
+            {`class TodoApp extends React.Component {`}
+          </Text>{' '}
+          magna aliqua.
           <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
@@ -72,6 +80,15 @@ storiesOf('Typography', module)
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </Paragraph>
+        <Text pre code className="language-javascript">
+          {`onSubmit(e) {
+  e.preventDefault();
+  const job = {
+    title: 'Developer',
+    company: 'Facebook' 
+  };
+}`}
+        </Text>
       </Typography>
     </div>
   ));
@@ -110,20 +127,95 @@ storiesOf('Typography.Text', module)
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))
-  .add('Code', () => (
-    <Text pre code>
-      Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </Text>
+  .add('Inline Code', () => (
+    <div>
+      <Text code>
+        Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </Text>
+      <br />
+      <Text code className="language-javascript">
+        {`class TodoApp extends React.Component {`}
+      </Text>
+    </div>
+  ))
+  .add('Preformatted Code', () => (
+    <div>
+      <Text pre code>
+        Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </Text>
+      <Text pre code className="language-javascript">
+        {`class TodoApp extends React.Component {`}
+      </Text>
+    </div>
   ))
   .add('Code Highlighting', () => (
     <Text pre code className="language-javascript">
-      {`onSubmit(e) {
-          e.preventDefault();
-          const job = {
-            title: 'Developer',
-            company: 'Facebook' 
-            };
-          }`}
+      {`class TodoApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { items: [], text: '' };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  render() {
+    return (
+      <div>
+        <h3>TODO</h3>
+        <TodoList items={this.state.items} />
+        <form onSubmit={this.handleSubmit}>
+          <label htmlFor="new-todo">
+            What needs to be done?
+          </label>
+          <input
+            id="new-todo"
+            onChange={this.handleChange}
+            value={this.state.text}
+          />
+          <button>
+            Add #{this.state.items.length + 1}
+          </button>
+        </form>
+      </div>
+    );
+  }
+
+  handleChange(e) {
+    this.setState({ text: e.target.value });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    if (!this.state.text.length) {
+      return;
+    }
+    const newItem = {
+      text: this.state.text,
+      id: Date.now()
+    };
+    this.setState(state => ({
+      items: state.items.concat(newItem),
+      text: ''
+    }));
+  }
+}
+
+class TodoList extends React.Component {
+  render() {
+    return (
+      <ul>
+        {this.props.items.map(item => (
+          <li key={item.id}>{item.text}</li>
+        ))}
+      </ul>
+    );
+  }
+}
+
+ReactDOM.render(
+  <TodoApp />,
+  document.getElementById('todos-example')
+);`}
     </Text>
   ))
   .add('Disabled', () => (

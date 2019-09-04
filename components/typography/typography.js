@@ -64,17 +64,112 @@ const code = css`
       'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
       'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
       monospace;
-    background-color: rgb(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-    padding: 0 3px 0 3px;
-    font-size: 95%;
+    color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(40, 44, 52, 1);
+    border: none;
+    border-radius: 5px;
+    padding: 1.5px 7px;
+    margin: 0 2px;
+    font-size: 90%;
+    white-space: normal;
+
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+
+    tab-size: 4;
+
+    hyphens: none;
+
+    .token.comment,
+    .token.block-comment,
+    .token.prolog,
+    .token.doctype,
+    .token.cdata {
+      color: rgba(178, 178, 178, 1);
+    }
+
+    .token.punctuation {
+      color: rgba(136, 198, 190, 1);
+    }
+
+    .token.tag,
+    .token.operator {
+      color: rgba(252, 146, 158, 1);
+    }
+
+    .token.attr-name {
+      color: rgba(197, 165, 197, 1);
+    }
+
+    .token.namespace {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .token.property,
+    .token.number,
+    .token.function-name,
+    .token.constant,
+    .token.symbol,
+    .token.deleted {
+      color: rgba(90, 155, 207, 1);
+    }
+
+    .token.boolean {
+      color: rgba(255, 139, 80, 1);
+    }
+
+    .token.function {
+      color: rgba(121, 182, 242, 1);
+    }
+
+    .token.class-name,
+    .token.atrule {
+      color: rgba(250, 200, 99, 1);
+    }
+
+    .token.selector,
+    .token.char,
+    .token.builtin,
+    .token.inserted {
+      color: rgba(216, 222, 233, 1);
+    }
+
+    .token.important,
+    .token.keyword {
+      color: rgba(197, 165, 197, 1);
+    }
+
+    .token.string,
+    .token.attr-value {
+      color: rgba(141, 200, 145, 1);
+    }
+
+    .token.regex,
+    .token.variable,
+    .token.entity,
+    .token.url {
+      color: rgba(215, 222, 234, 1);
+    }
+
+    .token.important,
+    .token.bold {
+      font-weight: bold;
+    }
+
+    .token.italic {
+      font-style: italic;
+    }
+
+    .token.entity {
+      cursor: help;
+    }
   }
   pre &&& {
-    border: none;
-    background-color: rgb(0, 0, 0, 0);
+    background: none;
     font-size: 100%;
     padding: 0;
+    white-space: pre;
   }
 `;
 
@@ -86,7 +181,7 @@ const emphasis = css`
 
 const disable = css`
   &&& {
-    color: rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.4);
     cursor: default;
     user-select: none;
     padding: 0;
@@ -107,13 +202,13 @@ const StyledPre = styled.pre`
       'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
       monospace;
     display: block;
-    background-color: rgb(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+    border: none;
+    border-radius: 10px;
     padding: 1em;
     overflow: auto;
     white-space: pre;
-    margin: 1em 0;
+    margin: 1.2em 0;
+    background-color: rgb(40, 44, 52);
   }
   &&& > :first-child {
     margin-top: 0;
@@ -154,7 +249,7 @@ export const StyledTypography = styled.article`
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-    margin: 3em 0 3em 0;
+    margin: 3em 0;
     padding: 0 2em;
     border: none;
     text-align: left;
@@ -191,9 +286,11 @@ export const getWrapper = props => {
 const Typography = ({ loading, children, ...props }) => {
   const Wrapper = getWrapper(props);
 
-  useEffect(() => {
-    Prism.highlightAll();
-  }, [props.code]);
+  if (props.code) {
+    useEffect(() => {
+      Prism.highlightAll();
+    }, [children]);
+  }
 
   return (
     <Wrapper>

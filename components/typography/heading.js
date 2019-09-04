@@ -43,9 +43,11 @@ const StyledHeading = styled(StyledTypography)`
 const Heading = ({ level, loading, children, ...props }) => {
   const Wrapper = getWrapper(props);
 
-  useEffect(() => {
-    Prism.highlightAll();
-  }, [props.code]);
+  if (props.code) {
+    useEffect(() => {
+      Prism.highlightAll();
+    }, [children]);
+  }
 
   return (
     <Wrapper>
