@@ -20,6 +20,7 @@ The `Typography` component is meant to be used as a wrapper component for multip
 |   ✔️   | `disable`       | Disables text                      | `boolean`                                              | `false`   |
 |   ❌   | `editable`      | Can edit text                      | `boolean`                                              | `false`   |
 |   ❌   | `ellipsis`      | Hides overflow with ellipsis       | `boolean`                                              | `false`   |
+|   ✔️   | `emphasis`      | Bold style                         | `boolean`                                              | `false`   |
 |   ✔️   | `mark`          | Mark style                         | `boolean`                                              | `false`   |
 |   ✔️   | `pre`           | Wraps in pre tag                   | `boolean`                                              | `false`   |
 |   ✔️   | `strikethrough` | Strikethrough style                | `boolean`                                              | `false`   |
@@ -39,6 +40,7 @@ The `Heading` component is meant to be used for all heading text. (h1-h6, titles
 |   ✔️   | `disable`       | Disables text                      | `boolean`                                              | `false`   |
 |   ❌   | `editable`      | Can edit text                      | `boolean`                                              | `false`   |
 |   ❌   | `ellipsis`      | Hides overflow with ellipsis       | `boolean`                                              | `false`   |
+|   ✔️   | `emphasis`      | Bold style                         | `boolean`                                              | `false`   |
 |   ✔️   | `mark`          | Mark style                         | `boolean`                                              | `false`   |
 |   ✔️   | `pre`           | Wraps in pre tag                   | `boolean`                                              | `false`   |
 |   ✔️   | `level`         | Heading level (h1-h6)              | `number: 1, 2, 3, 4, 5, 6`                             | `false`   |
@@ -59,6 +61,7 @@ The `Paragraph` component is meant to be used for multiline text. (content, desc
 |   ✔️   | `disable`       | Disables text                      | `boolean`                                              | `false`   |
 |   ❌   | `editable`      | Can edit text                      | `boolean`                                              | `false`   |
 |   ❌   | `ellipsis`      | Hides overflow with ellipsis       | `boolean`                                              | `false`   |
+|   ✔️   | `emphasis`      | Bold style                         | `boolean`                                              | `false`   |
 |   ✔️   | `mark`          | Mark style                         | `boolean`                                              | `false`   |
 |   ✔️   | `pre`           | Wraps in pre tag                   | `boolean`                                              | `false`   |
 |   ✔️   | `strikethrough` | Strikethrough style                | `boolean`                                              | `false`   |
@@ -78,6 +81,7 @@ The `Text` component is meant to be used for single-line text. (buttons, menus, 
 |   ✔️   | `disable`       | Disables text                      | `boolean`                                              | `false`   |
 |   ❌   | `editable`      | Can edit text                      | `boolean`                                              | `false`   |
 |   ❌   | `ellipsis`      | Hides overflow with ellipsis       | `boole`                                                | `false`   |
+|   ✔️   | `emphasis`      | Bold style                         | `boolean`                                              | `false`   |
 |   ✔️   | `mark`          | Mark style                         | `boolean`                                              | `false`   |
 |   ✔️   | `pre`           | Wraps in pre tag                   | `boolean`                                              | `false`   |
 |   ✔️   | `strikethrough` | Strikethrough style                | `boole`                                                | `false`   |

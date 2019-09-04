@@ -9,7 +9,7 @@ const propTypes = {};
 const defaultProps = {};
 
 const StyledParagraph = styled(StyledTypography)`
-  & {
+  &&& {
     margin: 0 0 1em 0;
     padding: 0;
     margin-block-start: 0;

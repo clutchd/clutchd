@@ -23,7 +23,7 @@ const headingFontSize = new Map([
 ]);
 
 const StyledHeading = styled(StyledTypography)`
-  & {
+  &&& {
     font-size: ${props => headingFontSize.get(props.level)};
     font-weight: ${props => (props.strong ? 700 : 600)};
     margin: 0 0 0.5em 0;
@@ -34,7 +34,7 @@ const StyledHeading = styled(StyledTypography)`
     line-height: 1.25;
     padding: 0;
   }
-  * + & {
+  * + &&& {
     margin: 1.2em 0 0.5em 0;
   }
 `;

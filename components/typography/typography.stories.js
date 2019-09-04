@@ -15,10 +15,10 @@ storiesOf('Typography', module)
           Lorem ipsum dolor sit amet,{' '}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
           tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation
+          <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat{' '}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
@@ -32,10 +32,10 @@ storiesOf('Typography', module)
           Lorem ipsum dolor sit amet,{' '}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
           tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation
+          <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat{' '}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
@@ -47,10 +47,10 @@ storiesOf('Typography', module)
           Lorem ipsum dolor sit amet,{' '}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
           tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation
+          <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat{' '}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
@@ -64,10 +64,10 @@ storiesOf('Typography', module)
           Lorem ipsum dolor sit amet,{' '}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
           tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation
+          <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
-          in voluptate velit esse <Text mark>cillum dolore eu</Text> fugiat
+          in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
           nulla pariatur. Excepteur sint occaecat cupidatat{' '}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
@@ -128,6 +128,11 @@ storiesOf('Typography.Text', module)
   ))
   .add('Disabled', () => (
     <Text disable>
+      Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </Text>
+  ))
+  .add('Emphasis', () => (
+    <Text emphasis>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))

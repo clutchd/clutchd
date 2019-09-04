@@ -9,7 +9,7 @@ const propTypes = {};
 const defaultProps = {};
 
 const StyledText = styled(StyledTypography)`
-  & {
+  &&& {
     margin: 0 0 0 0;
     padding: 0;
     display: inline;
@@ -21,6 +21,8 @@ const Text = ({ loading, children, ...props }) => {
   let as = 'span';
   if (props.code) {
     as = 'code';
+  } else if (props.emphasis) {
+    as = 'em';
   } else if (props.mark) {
     as = 'mark';
   } else if (props.strong) {
