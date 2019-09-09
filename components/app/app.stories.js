@@ -13,8 +13,19 @@ storiesOf('App', module)
   .addParameters({ component: App })
   .add('Default', () => (
     <App>
-      <Header>
-        <Text>This is a Header component</Text>
+      <Header style={{ padding: `10px` }}>
+        <Row align="stretch">
+          <Col span={6}>
+            <Text>Logo</Text>
+          </Col>
+          <Col span={18}>
+            <Row align="stretch" justify="end">
+              <Col span={6}>
+                <Text>Menu</Text>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </Header>
       <Content>
         <Text>This is a Content component</Text>

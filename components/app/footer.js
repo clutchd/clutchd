@@ -2,14 +2,9 @@ import React, { useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {
-  /** Additional styling */
-  style: PropTypes.object
-};
+const propTypes = {};
 
-const defaultProps = {
-  style: {}
-};
+const defaultProps = {};
 
 const StyledFooter = styled.footer`
   &&& {
@@ -23,7 +18,6 @@ const StyledFooter = styled.footer`
     background-color: rgba(0, 0, 0, 0.25);
     width: 100%;
     min-width: 100%;
-    ${props => props.style};
   }
 `;
 
