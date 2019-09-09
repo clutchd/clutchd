@@ -2,14 +2,9 @@ import React, { useEffect } from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {
-  /** Additional styling */
-  style: PropTypes.object
-};
+const propTypes = {};
 
-const defaultProps = {
-  style: {}
-};
+const defaultProps = {};
 
 const StyledContent = styled.main`
   &&& {
@@ -20,7 +15,6 @@ const StyledContent = styled.main`
     flex: auto;
     width: 100%;
     min-width: 100%;
-    ${props => props.style};
   }
 `;
 

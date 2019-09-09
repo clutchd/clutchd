@@ -2,14 +2,9 @@ import React, { useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {
-  /** Additional styling */
-  style: PropTypes.object
-};
+const propTypes = {};
 
-const defaultProps = {
-  style: {}
-};
+const defaultProps = {};
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -37,7 +32,6 @@ const StyledApp = styled.div`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    ${props => props.style};
   }
 `;
 
