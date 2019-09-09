@@ -22,6 +22,7 @@ export const StyledCol = styled(StyledGrid)`
     width: 100%;
     margin: 0;
     background-color: rgba(0, 0, 125, 0.2);
+    flex-direction: column;
     flex: 0 0 ${props => (props.span / 24) * 100 + '%'};
     max-width: ${props => (props.span / 24) * 100 + '%'};
     align-content: ${props =>

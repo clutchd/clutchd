@@ -38,6 +38,7 @@ const StyledRow = styled(StyledGrid)`
     align-content: ${props =>
       (props.align === 'start' || props.align === 'end' ? 'flex-' : '') +
       props.align};
+    flex-direction: row;
   }
   &&& > * {
     padding-left: ${props => props.gutter + 'px'};
