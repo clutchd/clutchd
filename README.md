@@ -18,12 +18,19 @@ This file contains a list of all components that need to be created for
 
 _✔️ = Finished </br> ❌ = Not Finished_
 
-- [❌ Typography](src/components/typography/README.md)
-  - [❌ Typography.Text](src/components/typography/README.md#Typography.Text)
-  - [❌ Typography.Paragraph](src/components/typography/README.md#Typography.Paragraph)
-  - [❌ Typography.Title](src/components/typography/README.md#Typography.Title)
-- [❌ Icon](src/components/icon/README.md)
-- [❌ Button](src/components/button/README.md)
+- [❌ App](components/app/README.md)
+  - [❌ App.Header](components/app/README.md#App.Header)
+  - [❌ App.Content](components/app/README.md#App.Content)
+  - [❌ App.Footer](components/app/README.md#App.Footer)
+- [❌ Grid](components/grid/README.md)
+  - [❌ Grid.Row](components/grid/README.md#Grid.Row)
+  - [❌ Grid.Col](components/grid/README.md#Grid.Col)
+- [❌ Button](components/button/README.md)
+- [❌ Icon](components/icon/README.md)
+- [❌ Typography](components/typography/README.md)
+  - [❌ Typography.Text](components/typography/README.md#Typography.Text)
+  - [❌ Typography.Paragraph](components/typography/README.md#Typography.Paragraph)
+  - [❌ Typography.Title](components/typography/README.md#Typography.Title)
 
 ## Features <!-- omit in toc -->
 
