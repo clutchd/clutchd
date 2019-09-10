@@ -28,9 +28,9 @@ _✔️ = Finished </br> ❌ = Not Finished_
 - [❌ Button](components/button/README.md)
 - [❌ Icon](components/icon/README.md)
 - [❌ Typography](components/typography/README.md)
-  - [❌ Typography.Text](components/typography/README.md#Typography.Text)
-  - [❌ Typography.Paragraph](components/typography/README.md#Typography.Paragraph)
-  - [❌ Typography.Title](components/typography/README.md#Typography.Title)
+  - [✔️ Typography.Heading](components/typography/README.md#Typography.Heading)
+  - [✔️ Typography.Paragraph](components/typography/README.md#Typography.Paragraph)
+  - [✔️ Typography.Text](components/typography/README.md#Typography.Text)
 
 ## Features <!-- omit in toc -->
 
