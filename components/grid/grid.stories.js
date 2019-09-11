@@ -19,11 +19,21 @@ storiesOf('Grid', module)
 storiesOf('Grid.Row', module)
   .addParameters({ component: Row })
   .add('Default', () => (
-    <Row gutter={16}>
-      <Col>
-        <Text>Col 1</Text>
-      </Col>
-    </Row>
+    <React.Fragment>
+      <Row>
+        <Col span={24}>
+          <Text>Col 1</Text>
+        </Col>
+      </Row>
+      <Row gutter={16}>
+        <Col span={12}>
+          <Text>Col 2</Text>
+        </Col>
+        <Col span={12}>
+          <Text>Col 3</Text>
+        </Col>
+      </Row>
+    </React.Fragment>
   ));
 
 storiesOf('Grid.Col', module)

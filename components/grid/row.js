@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import StyledGrid from './grid';
+import Grid from './grid';
 
 const propTypes = {
-  /** Determines vertical position */
-  align: PropTypes.oneOf(['center', 'end', 'start', 'stretch']),
   /** Spacing between Cols (px) */
   gutter: PropTypes.number,
   /** Determines horizontal position */
@@ -20,12 +18,11 @@ const propTypes = {
 };
 
 const defaultProps = {
-  align: 'center',
   gutter: 0,
   justify: 'start'
 };
 
-const StyledRow = styled(StyledGrid)`
+const StyledRow = styled(Grid)`
   &&& {
     display: flex;
     flex-wrap: wrap;
@@ -35,9 +32,6 @@ const StyledRow = styled(StyledGrid)`
     justify-content: ${props =>
       (props.justify === 'start' || props.justify === 'end' ? 'flex-' : '') +
       props.justify};
-    align-content: ${props =>
-      (props.align === 'start' || props.align === 'end' ? 'flex-' : '') +
-      props.align};
     flex-direction: row;
   }
   &&& > * {
