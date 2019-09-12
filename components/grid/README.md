@@ -4,7 +4,7 @@ type: Layout
 title: Grid
 ---
 
-Wrapper components to determine the layout of an App.
+Wrapper components to determine the structure of an App.
 
 ## API
 

@@ -6,7 +6,7 @@ const propTypes = {};
 
 const defaultProps = {};
 
-const StyledContent = styled.main`
+const StyledMain = styled.main`
   &&& {
     padding: 0.75em 0.75em;
     display: flex;
@@ -18,17 +18,17 @@ const StyledContent = styled.main`
   }
 `;
 
-/** The `Content` component... */
-const Content = ({ loading, children, ...props }) => {
+/** The `Main` component... */
+const Main = ({ loading, children, ...props }) => {
   return (
-    <StyledContent {...props}>
+    <StyledMain {...props}>
       {loading ? children : children}
       {/* add loading icon/skeleton component */}
-    </StyledContent>
+    </StyledMain>
   );
 };
 
-Content.propTypes = propTypes;
-Content.defaultProps = defaultProps;
+Main.propTypes = propTypes;
+Main.defaultProps = defaultProps;
 
-export default Content;
+export default Main;

@@ -4,7 +4,7 @@ import Typography from '../typography';
 const { Text } = Typography;
 
 import Layout from '.';
-const { Header, Content, Footer } = Layout;
+const { Header, Main, Footer } = Layout;
 
 import Grid from '../grid';
 const { Row, Col } = Grid;
@@ -27,9 +27,9 @@ storiesOf('Layout', module)
           </Col>
         </Row>
       </Header>
-      <Content>
-        <Text>This is a Content component</Text>
-      </Content>
+      <Main>
+        <Text>This is a Main component</Text>
+      </Main>
       <Footer>
         <Text>This is a Footer component</Text>
       </Footer>

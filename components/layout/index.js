@@ -1,10 +1,10 @@
 import Layout from './layout';
 import Header from './header';
-import Content from './content';
+import Main from './main';
 import Footer from './footer';
 
 Layout.Header = Header;
-Layout.Content = Content;
+Layout.Main = Main;
 Layout.Footer = Footer;
 
 export default Layout;

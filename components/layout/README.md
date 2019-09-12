@@ -12,30 +12,36 @@ Wrapper components to determine the overall layout of an App.
 
 The `Layout` component...
 
-| Status | Property   | Description          | Type            | Default         | Version |
-| :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
-|   ❌   | `property` | Property description | `property type` | `default value` |         |
+| Status | Property | Description       | Type     | Default | Version |
+| :----: | -------- | ----------------- | -------- | ------- | ------- |
+|   ❌   | `style`  | Custom CSS styles | `object` | -       |         |
 
 ### ❌ Layout.Header
 
-The `Layout` component...
+_`Layout.Header` extends the `Layout` API._
 
-| Status | Property   | Description          | Type            | Default         | Version |
-| :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
-|   ❌   | `property` | Property description | `property type` | `default value` |         |
+The `Layout.Header` component...
+
+| Status | Property | Description | Type | Default | Version |
+| :----: | -------- | ----------- | ---- | ------- | ------- |
+|        |          |             |      |         |         |
 
 ### ❌ Layout.Content
 
-The `Layout` component...
+_`Layout.Content` extends the `Layout` API._
 
-| Status | Property   | Description          | Type            | Default         | Version |
-| :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
-|   ❌   | `property` | Property description | `property type` | `default value` |         |
+The `Layout.Content` component...
+
+| Status | Property | Description | Type | Default | Version |
+| :----: | -------- | ----------- | ---- | ------- | ------- |
+|        |          |             |      |         |         |
 
 ### ❌ Layout.Footer
 
-The `Layout` component...
+_`Layout.Footer` extends the `Layout` API._
 
-| Status | Property   | Description          | Type            | Default         | Version |
-| :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
-|   ❌   | `property` | Property description | `property type` | `default value` |         |
+The `Layout.Footer` component...
+
+| Status | Property | Description | Type | Default | Version |
+| :----: | -------- | ----------- | ---- | ------- | ------- |
+|        |          |             |      |         |         |
