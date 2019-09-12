@@ -3,16 +3,16 @@ import { storiesOf } from '@storybook/react';
 import Typography from '../typography';
 const { Text } = Typography;
 
-import App from '../app';
-const { Header, Content, Footer } = App;
+import Layout from '.';
+const { Header, Content, Footer } = Layout;
 
 import Grid from '../grid';
 const { Row, Col } = Grid;
 
-storiesOf('App', module)
-  .addParameters({ component: App })
+storiesOf('Layout', module)
+  .addParameters({ component: Layout })
   .add('Default', () => (
-    <App>
+    <Layout>
       <Header style={{ padding: `10px` }}>
         <Row align="stretch">
           <Col span={6}>
@@ -33,5 +33,5 @@ storiesOf('App', module)
       <Footer>
         <Text>This is a Footer component</Text>
       </Footer>
-    </App>
+    </Layout>
   ));

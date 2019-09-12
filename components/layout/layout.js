@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const StyledApp = styled.div`
+const StyledLayout = styled.div`
   &&& {
     background-color: rgba(0, 0, 0, 0.25);
     min-height: 100%;
@@ -36,21 +36,21 @@ const StyledApp = styled.div`
 `;
 
 /**
- * The `App` component...
+ * The `Layout` component...
  */
-const App = ({ loading, children, ...props }) => {
+const Layout = ({ loading, children, ...props }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <StyledApp {...props}>
+      <StyledLayout {...props}>
         {loading ? children : <React.Fragment>{children}</React.Fragment>}
         {/* add loading icon/skeleton component */}
-      </StyledApp>
+      </StyledLayout>
     </React.Fragment>
   );
 };
 
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
+Layout.propTypes = propTypes;
+Layout.defaultProps = defaultProps;
 
-export default App;
+export default Layout;

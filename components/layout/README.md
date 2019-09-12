@@ -1,40 +1,40 @@
 ---
 category: Components
 type: Layout
-title: App
+title: Layout
 ---
 
-Wrapper components to determine the sections of an App.
+Wrapper components to determine the overall layout of an App.
 
 ## API
 
-### ❌ App
+### ❌ Layout
 
-The `App` component...
-
-| Status | Property   | Description          | Type            | Default         | Version |
-| :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
-|   ❌   | `property` | Property description | `property type` | `default value` |         |
-
-### ❌ App.Header
-
-The `App` component...
+The `Layout` component...
 
 | Status | Property   | Description          | Type            | Default         | Version |
 | :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
 |   ❌   | `property` | Property description | `property type` | `default value` |         |
 
-### ❌ App.Content
+### ❌ Layout.Header
 
-The `App` component...
+The `Layout` component...
 
 | Status | Property   | Description          | Type            | Default         | Version |
 | :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
 |   ❌   | `property` | Property description | `property type` | `default value` |         |
 
-### ❌ App.Footer
+### ❌ Layout.Content
 
-The `App` component...
+The `Layout` component...
+
+| Status | Property   | Description          | Type            | Default         | Version |
+| :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
+|   ❌   | `property` | Property description | `property type` | `default value` |         |
+
+### ❌ Layout.Footer
+
+The `Layout` component...
 
 | Status | Property   | Description          | Type            | Default         | Version |
 | :----: | ---------- | -------------------- | --------------- | --------------- | ------- |
