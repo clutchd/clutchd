@@ -2,14 +2,9 @@ import React, { useEffect } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {
-  /** Additional styling */
-  style: PropTypes.object
-};
+const propTypes = {};
 
-const defaultProps = {
-  style: {}
-};
+const defaultProps = {};
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -25,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const StyledApp = styled.div`
+const StyledLayout = styled.div`
   &&& {
     background-color: rgba(0, 0, 0, 0.25);
     min-height: 100%;
@@ -37,26 +32,25 @@ const StyledApp = styled.div`
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    ${props => props.style};
   }
 `;
 
 /**
- * The `App` component...
+ * The `Layout` component...
  */
-const App = ({ loading, children, ...props }) => {
+const Layout = ({ loading, children, ...props }) => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <StyledApp {...props}>
+      <StyledLayout {...props}>
         {loading ? children : <React.Fragment>{children}</React.Fragment>}
         {/* add loading icon/skeleton component */}
-      </StyledApp>
+      </StyledLayout>
     </React.Fragment>
   );
 };
 
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
+Layout.propTypes = propTypes;
+Layout.defaultProps = defaultProps;
 
-export default App;
+export default Layout;
