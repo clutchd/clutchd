@@ -18,13 +18,13 @@ This file contains a list of all components that need to be created for
 
 _✔️ = Finished </br> ❌ = Not Finished_
 
-- [❌ App](components/app/README.md)
-  - [❌ App.Header](components/app/README.md#App.Header)
-  - [❌ App.Content](components/app/README.md#App.Content)
-  - [❌ App.Footer](components/app/README.md#App.Footer)
-- [❌ Grid](components/grid/README.md)
-  - [❌ Grid.Row](components/grid/README.md#Grid.Row)
-  - [❌ Grid.Col](components/grid/README.md#Grid.Col)
+- [✔️ Layout](components/app/README.md)
+  - [✔️ Layout.Header](components/app/README.md#App.Header)
+  - [✔️ Layout.Content](components/app/README.md#App.Content)
+  - [✔️ Layout.Footer](components/app/README.md#App.Footer)
+- [✔️ Grid](components/grid/README.md)
+  - [✔️ Grid.Row](components/grid/README.md#Grid.Row)
+  - [✔️ Grid.Col](components/grid/README.md#Grid.Col)
 - [❌ Button](components/button/README.md)
 - [❌ Icon](components/icon/README.md)
 - [❌ Typography](components/typography/README.md)
