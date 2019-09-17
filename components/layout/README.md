@@ -8,15 +8,15 @@ Wrapper components to determine the overall layout of an App.
 
 ## API
 
-### ❌ Layout
+### ️️✔️ Layout
 
 The `Layout` component...
 
 | Status | Property | Description       | Type     | Default | Version |
 | :----: | -------- | ----------------- | -------- | ------- | ------- |
-|   ❌   | `style`  | Custom CSS styles | `object` | -       |         |
+|   ✔️   | `style`  | Custom CSS styles | `object` | -       |         |
 
-### ❌ Layout.Header
+### ✔️ Layout.Header
 
 _`Layout.Header` extends the `Layout` API._
 
@@ -26,7 +26,7 @@ The `Layout.Header` component...
 | :----: | -------- | ----------- | ---- | ------- | ------- |
 |        |          |             |      |         |         |
 
-### ❌ Layout.Content
+### ✔️ Layout.Content
 
 _`Layout.Content` extends the `Layout` API._
 
@@ -36,7 +36,7 @@ The `Layout.Content` component...
 | :----: | -------- | ----------- | ---- | ------- | ------- |
 |        |          |             |      |         |         |
 
-### ❌ Layout.Footer
+### ✔️ Layout.Footer
 
 _`Layout.Footer` extends the `Layout` API._
 
