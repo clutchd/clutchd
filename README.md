@@ -18,10 +18,10 @@ This file contains a list of all components that need to be created for
 
 _✔️ = Finished </br> ❌ = Not Finished_
 
-- [✔️ Layout](components/app/README.md)
-  - [✔️ Layout.Header](components/app/README.md#App.Header)
-  - [✔️ Layout.Content](components/app/README.md#App.Content)
-  - [✔️ Layout.Footer](components/app/README.md#App.Footer)
+- [✔️ Layout](components/layout/README.md)
+  - [✔️ Layout.Header](components/layout/README.md#Layout.Header)
+  - [✔️ Layout.Main](components/layout/README.md#Layout.Main)
+  - [✔️ Layout.Footer](components/layout/README.md#Layout.Footer)
 - [✔️ Grid](components/grid/README.md)
   - [✔️ Grid.Row](components/grid/README.md#Grid.Row)
   - [✔️ Grid.Col](components/grid/README.md#Grid.Col)
