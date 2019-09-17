@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "@clutchd/ui React component library",
   "main": "components/index.js",
   "module": "es/index.js",
