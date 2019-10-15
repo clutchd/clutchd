@@ -11,14 +11,31 @@ const defaultProps = {
   align: 'center'
 };
 
-const Grid = styled.div`
+const StyledGrid = styled.div`
   &&& {
     box-sizing: border-box;
     align-content: ${props =>
       (props.align === 'start' || props.align === 'end' ? 'flex-' : '') +
       props.align};
+    align-items: ${props =>
+      (props.align === 'start' || props.align === 'end' ? 'flex-' : '') +
+      props.align};
   }
 `;
+
+/**
+ * The `Grid` component...
+ */
+const Grid = ({ loading, children, ...props }) => {
+  return (
+    <React.Fragment>
+      <StyledGrid {...props}>
+        {loading ? children : <React.Fragment>{children}</React.Fragment>}
+        {/* add loading icon/skeleton component */}
+      </StyledGrid>
+    </React.Fragment>
+  );
+};
 
 Grid.propTypes = propTypes;
 Grid.defaultProps = defaultProps;
