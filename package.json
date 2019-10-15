@@ -42,11 +42,11 @@
     "styled-components": "^4.3.2"
   },
   "author": "William R. Crutchfield <william.r.crutchfield@gmail.com>",
-  "homepage": "https://github.com/CrutchTheClutch/envelope-ui#readme",
+  "homepage": "https://github.com/clutchd/ui#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CrutchTheClutch/envelope-ui.git"
+    "url": "git+https://github.com/clutchd/ui.git"
   },
   "keywords": [
     "react-component"
