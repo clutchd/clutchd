@@ -8,11 +8,10 @@ const defaultProps = {};
 
 const StyledHeader = styled.header`
   &&& {
+    padding: 0.75em 0.75em;
     display: flex;
     flex-direction: row;
-    min-height: 4em;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.25);
     width: 100%;
     min-width: 100%;
   }

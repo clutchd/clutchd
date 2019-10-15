@@ -12,10 +12,8 @@ const StyledFooter = styled.footer`
     display: flex;
     align-items: center;
     flex-direction: row;
-    min-height: 2em;
     vertical-align: middle;
     flex-wrap: wrap;
-    background-color: rgba(0, 0, 0, 0.25);
     width: 100%;
     min-width: 100%;
   }
