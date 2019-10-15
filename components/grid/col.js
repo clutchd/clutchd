@@ -35,7 +35,6 @@ export const StyledCol = styled(Grid)`
     position: relative;
     width: 100%;
     margin: 0;
-    background-color: rgba(0, 0, 125, 0.2);
     flex-direction: column;
     ${props => (props.span ? setSpan(props.span) : '')};
   }

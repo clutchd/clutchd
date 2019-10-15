@@ -27,7 +27,6 @@ const StyledRow = styled(Grid)`
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-    background-color: rgba(125, 0, 0, 0.2);
     width: 100%;
     justify-content: ${props =>
       (props.justify === 'start' || props.justify === 'end' ? 'flex-' : '') +

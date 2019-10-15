@@ -22,7 +22,6 @@ const GlobalStyle = createGlobalStyle`
 
 const StyledLayout = styled.div`
   &&& {
-    background-color: rgba(0, 0, 0, 0.25);
     min-height: 100%;
     height: 100%;
     margin: 0;

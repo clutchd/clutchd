@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import Typography from '../typography';
 const { Text } = Typography;
 
-import Layout from '.';
+import Layout from '../layout';
 const { Header, Main, Footer } = Layout;
 
 import Grid from '../grid';
@@ -12,25 +12,28 @@ const { Row, Col } = Grid;
 storiesOf('Layout', module)
   .addParameters({ component: Layout })
   .add('Default', () => (
-    <Layout>
-      <Header style={{ padding: `10px` }}>
-        <Row align="stretch">
-          <Col span={6}>
+    <Layout style={{ backgroundColor: `rgba(0, 0, 0, 0.25)` }}>
+      <Header style={{ backgroundColor: `rgba(0, 0, 0, 0.25)` }}>
+        <Row
+          style={{ backgroundColor: `rgba(125, 0, 0, 0.2)` }}
+          align="stretch"
+        >
+          <Col style={{ backgroundColor: `rgba(0, 0, 125, 0.2)` }} span={6}>
             <Text>Logo</Text>
           </Col>
-          <Col span={18}>
-            <Row align="stretch" justify="end">
-              <Col span={6}>
-                <Text>Menu</Text>
-              </Col>
-            </Row>
+          <Col
+            style={{ backgroundColor: `rgba(0, 0, 125, 0.2)` }}
+            span={18}
+            align="end"
+          >
+            <Text>Menu</Text>
           </Col>
         </Row>
       </Header>
       <Main>
         <Text>This is a Main component</Text>
       </Main>
-      <Footer>
+      <Footer style={{ backgroundColor: `rgba(0, 0, 0, 0.25)` }}>
         <Text>This is a Footer component</Text>
       </Footer>
     </Layout>
