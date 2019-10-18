@@ -1,10 +1,17 @@
-import React, { useEffect } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import React from 'react';
+import styled, { createGlobalStyle, ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {};
+import { clutchd } from '../themed/themes';
+import { getTheme, themedProps } from '../themed/utils';
 
-const defaultProps = {};
+const propTypes = {
+  theme: themedProps.theme
+};
+
+const defaultProps = {
+  theme: clutchd.theme
+};
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -37,11 +44,12 @@ const StyledLayout = styled.div`
 /**
  * The `Layout` component...
  */
-const Layout = ({ loading, children, ...props }) => {
+const Layout = ({ theme, loading, children, ...props }) => {
+  let currentTheme = getTheme(ThemeContext, theme);
   return (
     <React.Fragment>
       <GlobalStyle />
-      <StyledLayout {...props}>
+      <StyledLayout theme={currentTheme} {...props}>
         {loading ? children : <React.Fragment>{children}</React.Fragment>}
         {/* add loading icon/skeleton component */}
       </StyledLayout>
