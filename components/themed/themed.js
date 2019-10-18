@@ -1,16 +1,21 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import { themedProps, clutchd } from './utils';
+import { ThemeProvider, ThemeContext } from 'styled-components';
+import { clutchd } from './themes';
+import { themedProps } from './utils';
 
-const propTypes = themedProps;
-const defaultProps = clutchd;
+const propTypes = {
+  theme: themedProps.theme
+};
+const defaultProps = {
+  theme: clutchd.theme
+};
 
 /**
  * The `Themed` component is simply a modified ThemeProvider from styled-components.  This component comes will all the default stylings of @clutchd/ui.
  */
-const Themed = ({ children }) => {
+const Themed = ({ theme, children }) => {
   return (
-    <ThemeProvider theme={clutchd}>
+    <ThemeProvider theme={theme}>
       <React.Fragment>{children}</React.Fragment>
       {/* add loading icon/skeleton component */}
     </ThemeProvider>

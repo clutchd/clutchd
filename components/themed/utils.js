@@ -1,4 +1,24 @@
+import { useContext } from 'react';
 import PropTypes from 'prop-types';
+
+/** Gets the wrapper `Themed` component's theme.  If none exists, reverts to the components original theme.*/
+export const getTheme = (themeContext, themeProp) => {
+  let newTheme = useContext(themeContext);
+  if (newTheme === undefined) {
+    newTheme = themeProp;
+  } else {
+    newTheme = newTheme.theme;
+  }
+  return newTheme;
+};
+
+const sizes = {
+  default: 'default',
+  large: 'large',
+  small: 'small'
+};
+Object.freeze(sizes);
+export { sizes };
 
 export const themedProps = {
   theme: PropTypes.shape({
@@ -13,20 +33,4 @@ export const themedProps = {
       danger: PropTypes.string
     })
   })
-};
-
-/** Default theme for @clutchd/ui */
-export const clutchd = {
-  theme: {
-    colors: {
-      primary: `#AF7AC5`,
-      secondary: `rgba(136, 217, 230, 1)`,
-      light: `rgba(255, 255, 255, 1)`,
-      dark: `#17202A`,
-      info: `rgba(136, 217, 230, 1)`,
-      success: `rgba(66, 255, 66, 1)`,
-      warning: `rgba(255, 255, 66, 1)`,
-      danger: `rgba(255, 66, 66, 1)`
-    }
-  }
 };
