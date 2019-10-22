@@ -1,10 +1,17 @@
 import React, { useEffect } from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {};
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
 
-const defaultProps = {};
+const propTypes = {
+  theme: themeProps
+};
+
+const defaultProps = {
+  theme: clutchd
+};
 
 const StyledHeader = styled.header`
   &&& {
@@ -14,13 +21,17 @@ const StyledHeader = styled.header`
     flex-wrap: wrap;
     width: 100%;
     min-width: 100%;
+    color: ${props => props.theme.colors.light};
+    background-color: ${props => props.theme.colors.dark};
   }
 `;
 
 /** The `Header` component... */
-const Header = ({ loading, children, ...props }) => {
+const Header = ({ theme, loading, children, ...props }) => {
+  let currentTheme = getTheme(ThemeContext, theme);
+
   return (
-    <StyledHeader {...props}>
+    <StyledHeader theme={currentTheme} {...props}>
       {loading ? children : children}
       {/* add loading icon/skeleton component */}
     </StyledHeader>

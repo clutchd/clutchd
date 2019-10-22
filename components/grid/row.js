@@ -1,9 +1,13 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 import Grid from './grid';
 
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
+
 const propTypes = {
+  theme: themeProps,
   /** Spacing between Cols (px) */
   gutter: PropTypes.number,
   /** Determines horizontal position */
@@ -18,6 +22,7 @@ const propTypes = {
 };
 
 const defaultProps = {
+  theme: clutchd,
   gutter: 0,
   justify: 'start'
 };
@@ -42,9 +47,11 @@ const StyledRow = styled(Grid)`
 /**
  * The `Row` component...
  */
-const Row = ({ loading, children, ...props }) => {
+const Row = ({ theme, loading, children, ...props }) => {
+  let currentTheme = getTheme(ThemeContext, theme);
+
   return (
-    <StyledRow {...props}>
+    <StyledRow theme={currentTheme} {...props}>
       {loading ? children : <React.Fragment>{children}</React.Fragment>}
       {/* add loading icon/skeleton component */}
     </StyledRow>

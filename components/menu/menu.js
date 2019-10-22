@@ -1,10 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {};
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
 
-const defaultProps = {};
+const propTypes = {
+  theme: themeProps
+};
+
+const defaultProps = {
+  theme: clutchd
+};
 
 const StyledMenu = styled.ul`
   &&& {
@@ -19,9 +26,11 @@ const StyledMenu = styled.ul`
 /**
  * The `Menu` component is meant to be used as a navigation component to allow for quick menu building.
  */
-const Menu = ({ loading, children, ...props }) => {
+const Menu = ({ theme, loading, children, ...props }) => {
+  let currentTheme = getTheme(ThemeContext, theme);
+
   return (
-    <StyledMenu {...props}>
+    <StyledMenu theme={currentTheme} {...props}>
       {loading ? children : <React.Fragment>{children}</React.Fragment>}
       {/* add loading icon/skeleton component */}
     </StyledMenu>

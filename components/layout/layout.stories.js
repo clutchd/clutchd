@@ -12,20 +12,13 @@ const { Row, Col } = Grid;
 storiesOf('Layout', module)
   .addParameters({ component: Layout })
   .add('Default', () => (
-    <Layout style={{ backgroundColor: `rgba(0, 0, 0, 0.25)` }}>
-      <Header style={{ backgroundColor: `rgba(0, 0, 0, 0.25)` }}>
-        <Row
-          style={{ backgroundColor: `rgba(125, 0, 0, 0.2)` }}
-          align="stretch"
-        >
-          <Col style={{ backgroundColor: `rgba(0, 0, 125, 0.2)` }} span={6}>
+    <Layout>
+      <Header>
+        <Row align="stretch">
+          <Col span={6}>
             <Text>Logo</Text>
           </Col>
-          <Col
-            style={{ backgroundColor: `rgba(0, 0, 125, 0.2)` }}
-            span={18}
-            align="end"
-          >
+          <Col span={18} align="end">
             <Text>Menu</Text>
           </Col>
         </Row>
@@ -33,7 +26,7 @@ storiesOf('Layout', module)
       <Main>
         <Text>This is a Main component</Text>
       </Main>
-      <Footer style={{ backgroundColor: `rgba(0, 0, 0, 0.25)` }}>
+      <Footer>
         <Text>This is a Footer component</Text>
       </Footer>
     </Layout>

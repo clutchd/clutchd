@@ -6,20 +6,43 @@ storiesOf('Button', module)
   .addParameters({ component: Button })
   .add('Default', () => (
     <React.Fragment>
-      <Button size="default">Default</Button>
+      <Button>Default</Button>
     </React.Fragment>
   ))
   .add('Sizes', () => (
     <React.Fragment>
-      <Button size="large">Large</Button>
-      <Button size="default">Default</Button>
-      <Button size="small">Small</Button>
+      <Button size="xs">xs Button</Button>
+      <Button size="sm">sm Button</Button>
+      <Button size="md">md Button</Button>
+      <Button size="lg">lg Button</Button>
+      <Button size="xl">xl Button</Button>
     </React.Fragment>
   ))
   .add('Spacing', () => (
     <React.Fragment>
-      <Button space="large">Large</Button>
-      <Button space="default">Default</Button>
-      <Button space="small">Small</Button>
+      <Button space="xs">xs Button</Button>
+      <Button space="sm">sm Button</Button>
+      <Button space="md">md Button</Button>
+      <Button space="lg">lg Button</Button>
+      <Button space="xl">xl Button</Button>
+    </React.Fragment>
+  ))
+  .add('Sizing + Spacing', () => (
+    <React.Fragment>
+      <Button size="xs" space="xs">
+        xs Button
+      </Button>
+      <Button size="sm" space="sm">
+        sm Button
+      </Button>
+      <Button size="md" space="md">
+        md Button
+      </Button>
+      <Button size="lg" space="lg">
+        lg Button
+      </Button>
+      <Button size="xl" space="xl">
+        xl Button
+      </Button>
     </React.Fragment>
   ));

@@ -1,9 +1,13 @@
 import React, { useEffect } from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 import Grid from './grid';
 
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
+
 const propTypes = {
+  theme: themeProps,
   /** Number of 'cells' that a Col will occupy (24 total cells) */
   span: PropTypes.number,
   /** span of Col when page is <576px */
@@ -20,7 +24,9 @@ const propTypes = {
   xxl: PropTypes.number
 };
 
-const defaultProps = {};
+const defaultProps = {
+  theme: clutchd
+};
 
 const setSpan = span => {
   return css`
@@ -73,9 +79,11 @@ export const StyledCol = styled(Grid)`
 /**
  * The `Col` component...
  */
-const Col = ({ loading, children, ...props }) => {
+const Col = ({ theme, loading, children, ...props }) => {
+  let currentTheme = getTheme(ThemeContext, theme);
+
   return (
-    <StyledCol {...props}>
+    <StyledCol theme={currentTheme} {...props}>
       {loading ? children : <React.Fragment>{children}</React.Fragment>}
       {/* add loading icon/skeleton component */}
     </StyledCol>

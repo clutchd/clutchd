@@ -2,22 +2,22 @@ import React from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { clutchd } from '../themed/themes';
-import { getTheme, themedProps, sizes } from '../themed/utils';
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
 
 import Typography from '../typography';
 const { Text } = Typography;
 
 const propTypes = {
-  theme: themedProps.theme,
-  size: sizes,
-  space: sizes
+  theme: themeProps,
+  size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl']),
+  space: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl'])
 };
 
 const defaultProps = {
-  theme: clutchd.theme,
-  size: 'default',
-  space: 'default'
+  theme: clutchd,
+  size: 'md',
+  space: 'md'
 };
 
 // styles
@@ -31,13 +31,13 @@ const StyledButtonText = styled(Text)`
 
 const StyledButton = styled.button`
   font-size: 1em;
-  padding: ${props => setSpace(props.space)};
+  padding: ${props => props.theme.spaces[props.space]};
   margin: 0;
   display: inline-block;
   cursor: pointer;
   border-radius: 5px;
   margin: 1px 2px;
-  line-height: ${props => setSize(props.size)};
+  line-height: ${props => props.theme.sizes[props.size]};
   border: 0;
   background-color: ${props => props.theme.colors.dark};
 
@@ -51,28 +51,6 @@ const StyledButton = styled.button`
     }
   }
 `;
-
-const setSize = size => {
-  switch (size) {
-    case sizes.default:
-      return '1.75em';
-    case sizes.large:
-      return '2.5em';
-    case sizes.small:
-      return '1.25em';
-  }
-};
-
-const setSpace = space => {
-  switch (space) {
-    case 'default':
-      return '0 1.5em';
-    case 'large':
-      return '0 2.5em';
-    case 'small':
-      return '0 0.75em';
-  }
-};
 
 const Button = ({ theme, loading, children, ...props }) => {
   let currentTheme = getTheme(ThemeContext, theme);

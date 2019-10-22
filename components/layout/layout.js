@@ -2,15 +2,15 @@ import React from 'react';
 import styled, { createGlobalStyle, ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { clutchd } from '../themed/themes';
-import { getTheme, themedProps } from '../themed/utils';
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
 
 const propTypes = {
-  theme: themedProps.theme
+  theme: themeProps
 };
 
 const defaultProps = {
-  theme: clutchd.theme
+  theme: clutchd
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -50,8 +50,13 @@ const Layout = ({ theme, loading, children, ...props }) => {
     <React.Fragment>
       <GlobalStyle />
       <StyledLayout theme={currentTheme} {...props}>
-        {loading ? children : <React.Fragment>{children}</React.Fragment>}
-        {/* add loading icon/skeleton component */}
+        {loading ? (
+          {
+            /* add loading icon/skeleton component */
+          }
+        ) : (
+          <React.Fragment>{children}</React.Fragment>
+        )}
       </StyledLayout>
     </React.Fragment>
   );

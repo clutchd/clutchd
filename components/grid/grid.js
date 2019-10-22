@@ -1,13 +1,18 @@
 import React, { useEffect } from 'react';
-import styled from 'styled-components';
+import styled, { ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
+
 const propTypes = {
+  theme: themeProps,
   /** Determines flex position */
   align: PropTypes.oneOf(['center', 'end', 'start', 'stretch'])
 };
 
 const defaultProps = {
+  theme: clutchd,
   align: 'center'
 };
 
@@ -26,10 +31,12 @@ const StyledGrid = styled.div`
 /**
  * The `Grid` component...
  */
-const Grid = ({ loading, children, ...props }) => {
+const Grid = ({ theme, loading, children, ...props }) => {
+  let currentTheme = getTheme(ThemeContext, theme);
+
   return (
     <React.Fragment>
-      <StyledGrid {...props}>
+      <StyledGrid theme={currentTheme} {...props}>
         {loading ? children : <React.Fragment>{children}</React.Fragment>}
         {/* add loading icon/skeleton component */}
       </StyledGrid>

@@ -1,10 +1,17 @@
 import React, { useEffect } from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, ThemeContext } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const propTypes = {};
+import { clutchd, themeProps } from '../style/themes';
+import { getTheme } from '../style/utils';
 
-const defaultProps = {};
+const propTypes = {
+  theme: themeProps
+};
+
+const defaultProps = {
+  theme: clutchd
+};
 
 const StyledFooter = styled.footer`
   &&& {
@@ -16,13 +23,17 @@ const StyledFooter = styled.footer`
     flex-wrap: wrap;
     width: 100%;
     min-width: 100%;
+    color: ${props => props.theme.colors.light};
+    background-color: ${props => props.theme.colors.dark};
   }
 `;
 
 /** The `Footer` component... */
-const Footer = ({ loading, children, ...props }) => {
+const Footer = ({ theme, loading, children, ...props }) => {
+  let currentTheme = getTheme(ThemeContext, theme);
+
   return (
-    <StyledFooter {...props}>
+    <StyledFooter theme={currentTheme} {...props}>
       {loading ? children : children}
       {/* add loading icon/skeleton component */}
     </StyledFooter>
