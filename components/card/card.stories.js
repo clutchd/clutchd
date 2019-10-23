@@ -7,6 +7,11 @@ storiesOf('Card', module)
   .addParameters({ component: Card })
   .add('Default', () => (
     <React.Fragment>
-      <Card image={test} />
+      <Card
+        image={test}
+        overlay
+        title={`Best pic`}
+        content={`This lorem pic ipsum is lorem really ipsum the lorem best ipsum!`}
+      />
     </React.Fragment>
   ));

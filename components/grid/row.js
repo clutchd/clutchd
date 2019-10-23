@@ -42,6 +42,9 @@ const StyledRow = styled(Grid)`
     padding-left: ${props => props.gutter + 'px'};
     padding-right: ${props => props.gutter + 'px'};
   }
+  &&& + &&& {
+    margin-top: ${props => props.gutter + 'px'};
+  }
 `;
 
 /**

@@ -1,3 +1,6 @@
-import Themed from './style';
+import Style from './style';
+import { clutchd } from './themes';
 
-export default Themed;
+Style.Theme = clutchd;
+
+export default Style;

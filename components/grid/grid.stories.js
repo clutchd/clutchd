@@ -20,7 +20,7 @@ storiesOf('Grid.Row', module)
   .addParameters({ component: Row })
   .add('Default', () => (
     <React.Fragment>
-      <Row>
+      <Row gutter={16}>
         <Col span={24}>
           <Text>Col 1</Text>
         </Col>
