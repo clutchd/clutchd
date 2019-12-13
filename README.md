@@ -1,41 +1,31 @@
-# TODO
+# ui
 
-## Dev Tools <!-- omit in toc -->
+> A React component library designed around consistent, and simple web design.
 
-This file contains a list of development tools that are needed for
-@clutchd/ui.
+[![NPM](https://img.shields.io/npm/v/ui.svg)](https://www.npmjs.com/package/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-_✔️ = Finished </br> ❌ = Not Finished_
+## Install
 
-- [❌ nwb](node_modules/nwb/lib/moduleBuild.js)
+```bash
+npm install --save ui
+```
 
-Currently, `nwb` does not support a way to customize `src` directory for a project. For now, the path must manually be changed in the file listed above. Change all instances of `src` and `src/index.js` to `components` and `components/index.js` respectively.
+## Usage
 
-## Components <!-- omit in toc -->
+```jsx
+import React, { Component } from 'react'
 
-This file contains a list of all components that need to be created for
-@clutchd/ui.
+import MyComponent from 'ui'
 
-_✔️ = Finished </br> ❌ = Not Finished_
+class Example extends Component {
+  render () {
+    return (
+      <MyComponent />
+    )
+  }
+}
+```
 
-- [✔️ Layout](components/layout/README.md)
-  - [✔️ Layout.Header](components/layout/README.md#Layout.Header)
-  - [✔️ Layout.Main](components/layout/README.md#Layout.Main)
-  - [✔️ Layout.Footer](components/layout/README.md#Layout.Footer)
-- [✔️ Grid](components/grid/README.md)
-  - [✔️ Grid.Row](components/grid/README.md#Grid.Row)
-  - [✔️ Grid.Col](components/grid/README.md#Grid.Col)
-- [❌ Button](components/button/README.md)
-- [❌ Icon](components/icon/README.md)
-- [❌ Typography](components/typography/README.md)
-  - [✔️ Typography.Heading](components/typography/README.md#Typography.Heading)
-  - [✔️ Typography.Paragraph](components/typography/README.md#Typography.Paragraph)
-  - [✔️ Typography.Text](components/typography/README.md#Typography.Text)
+## License
 
-## Features <!-- omit in toc -->
-
-This file contains a list of all features that need to be created for @clutchd/ui.
-
-_✔️ = Finished </br> ❌ = Not Finished_
-
-- [✔️ Code Highlighting](https://prismjs.com/)
+MIT © [clutchd](https://github.com/clutchd)
