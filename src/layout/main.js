@@ -1,10 +1,5 @@
-import React, { useEffect } from 'react';
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-
-const propTypes = {};
-
-const defaultProps = {};
+import React from "react";
+import styled from "styled-components";
 
 const StyledMain = styled.main`
   &&& {
@@ -27,8 +22,5 @@ const Main = ({ loading, children, ...props }) => {
     </StyledMain>
   );
 };
-
-Main.propTypes = propTypes;
-Main.defaultProps = defaultProps;
 
 export default Main;

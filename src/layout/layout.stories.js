@@ -1,17 +1,16 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Typography from '../typography';
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import Typography from "../typography";
+import Layout from ".";
+import Grid from "../grid";
+
 const { Text } = Typography;
-
-import Layout from '.';
 const { Header, Main, Footer } = Layout;
-
-import Grid from '../grid';
 const { Row, Col } = Grid;
 
-storiesOf('Layout', module)
+storiesOf("Layout", module)
   .addParameters({ component: Layout })
-  .add('Default', () => (
+  .add("Default", () => (
     <Layout>
       <Header style={{ padding: `10px` }}>
         <Row align="stretch">

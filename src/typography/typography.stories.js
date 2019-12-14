@@ -1,25 +1,24 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import Typography from '../typography';
+import Typography from "../typography";
 const { Heading, Paragraph, Text } = Typography;
 
-storiesOf('Typography', module)
+storiesOf("Typography", module)
   .addParameters({ component: Typography })
-  .add('Default', () => (
+  .add("Default", () => (
     <div>
       <Typography>
         <Heading>Overview</Heading>
         <Paragraph>
-          Lorem ipsum dolor sit amet,{' '}
+          Lorem ipsum dolor sit amet,{" "}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
           tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
           <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
           in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          nulla pariatur. Excepteur sint occaecat cupidatat{" "}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </Paragraph>
@@ -29,18 +28,18 @@ storiesOf('Typography', module)
         </Text>
         <Heading level={2}>Sub Topic</Heading>
         <Paragraph>
-          Lorem ipsum dolor sit amet,{' '}
+          Lorem ipsum dolor sit amet,{" "}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
-          tempor incididunt ut{' '}
+          tempor incididunt ut{" "}
           <Text code className="language-javascript">
             {`class TodoApp extends React.Component {`}
-          </Text>{' '}
+          </Text>{" "}
           magna aliqua.
           <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
           in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          nulla pariatur. Excepteur sint occaecat cupidatat{" "}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </Paragraph>
@@ -48,14 +47,14 @@ storiesOf('Typography', module)
       <Typography>
         <Heading>Overview</Heading>
         <Paragraph>
-          Lorem ipsum dolor sit amet,{' '}
+          Lorem ipsum dolor sit amet,{" "}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
           tempor incididunt ut <Text code>labore et dolore</Text> magna aliqua.
           <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
           in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          nulla pariatur. Excepteur sint occaecat cupidatat{" "}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </Paragraph>
@@ -65,18 +64,18 @@ storiesOf('Typography', module)
         </Text>
         <Heading level={2}>Sub Topic</Heading>
         <Paragraph>
-          Lorem ipsum dolor sit amet,{' '}
+          Lorem ipsum dolor sit amet,{" "}
           <Text strikethrough>consectetur adipiscing elit</Text>, sed do eiusmod
-          tempor incididunt ut{' '}
+          tempor incididunt ut{" "}
           <Text code className="language-javascript">
             {`class TodoApp extends React.Component {`}
-          </Text>{' '}
+          </Text>{" "}
           magna aliqua.
           <Text mark>Ut enim ad</Text> minim veniam, quis nostrud exercitation
           <Text disable> ullamco laboris nisi</Text> ut aliquip ex ea commodo
           consequat. <Text strong>Duis aute irure</Text> dolor in reprehenderit
           in voluptate velit esse <Text emphasis>cillum dolore eu</Text> fugiat
-          nulla pariatur. Excepteur sint occaecat cupidatat{' '}
+          nulla pariatur. Excepteur sint occaecat cupidatat{" "}
           <Text underline>non proident</Text>, sunt in culpa qui officia
           deserunt mollit anim id est laborum.
         </Paragraph>
@@ -93,9 +92,9 @@ storiesOf('Typography', module)
     </div>
   ));
 
-storiesOf('Typography.Heading', module)
+storiesOf("Typography.Heading", module)
   .addParameters({ component: Heading })
-  .add('Default', () => (
+  .add("Default", () => (
     <div>
       <Heading level={1}>Hello World!</Heading>
       <Heading level={2}>Hello World!</Heading>
@@ -106,9 +105,9 @@ storiesOf('Typography.Heading', module)
     </div>
   ));
 
-storiesOf('Typography.Paragraph', module)
+storiesOf("Typography.Paragraph", module)
   .addParameters({ component: Paragraph })
-  .add('Default', () => (
+  .add("Default", () => (
     <Paragraph>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -120,14 +119,14 @@ storiesOf('Typography.Paragraph', module)
     </Paragraph>
   ));
 
-storiesOf('Typography.Text', module)
+storiesOf("Typography.Text", module)
   .addParameters({ component: Text })
-  .add('Default', () => (
+  .add("Default", () => (
     <Text>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))
-  .add('Inline Code', () => (
+  .add("Inline Code", () => (
     <div>
       <Text code>
         Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -138,7 +137,7 @@ storiesOf('Typography.Text', module)
       </Text>
     </div>
   ))
-  .add('Preformatted Code', () => (
+  .add("Preformatted Code", () => (
     <div>
       <Text pre code>
         Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -148,7 +147,7 @@ storiesOf('Typography.Text', module)
       </Text>
     </div>
   ))
-  .add('Code Highlighting', () => (
+  .add("Code Highlighting", () => (
     <Text pre code className="language-javascript">
       {`class TodoApp extends React.Component {
   constructor(props) {
@@ -218,32 +217,32 @@ ReactDOM.render(
 );`}
     </Text>
   ))
-  .add('Disabled', () => (
+  .add("Disabled", () => (
     <Text disable>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))
-  .add('Emphasis', () => (
+  .add("Emphasis", () => (
     <Text emphasis>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))
-  .add('Mark', () => (
+  .add("Mark", () => (
     <Text mark>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))
-  .add('Strikethrough', () => (
+  .add("Strikethrough", () => (
     <Text strikethrough>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))
-  .add('Strong', () => (
+  .add("Strong", () => (
     <Text strong>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>
   ))
-  .add('Underlined', () => (
+  .add("Underlined", () => (
     <Text underline>
       Lorem ipsum eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Text>

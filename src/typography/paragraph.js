@@ -1,12 +1,7 @@
-import React, { useEffect } from 'react';
-import Prism from 'prismjs';
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-import { StyledTypography, getWrapper } from './typography';
-
-const propTypes = {};
-
-const defaultProps = {};
+import React, { useEffect } from "react";
+import Prism from "prismjs";
+import styled from "styled-components";
+import { StyledTypography, getWrapper } from "./typography";
 
 const StyledParagraph = styled(StyledTypography)`
   &&& {
@@ -23,11 +18,11 @@ const StyledParagraph = styled(StyledTypography)`
 const Paragraph = ({ loading, children, ...props }) => {
   const Wrapper = getWrapper(props);
 
-  if (props.code) {
-    useEffect(() => {
+  useEffect(() => {
+    if (props.code) {
       Prism.highlightAll();
-    }, [children]);
-  }
+    }
+  }, [props.code, children]);
 
   return (
     <Wrapper>
@@ -38,8 +33,5 @@ const Paragraph = ({ loading, children, ...props }) => {
     </Wrapper>
   );
 };
-
-Paragraph.propTypes = propTypes;
-Paragraph.defaultProps = defaultProps;
 
 export default Paragraph;

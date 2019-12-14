@@ -1,12 +1,7 @@
-import React, { useEffect } from 'react';
-import Prism from 'prismjs';
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-import { StyledTypography, getWrapper } from './typography';
-
-const propTypes = {};
-
-const defaultProps = {};
+import React, { useEffect } from "react";
+import Prism from "prismjs";
+import styled from "styled-components";
+import { StyledTypography, getWrapper } from "./typography";
 
 const StyledText = styled(StyledTypography)`
   &&& {
@@ -18,27 +13,27 @@ const StyledText = styled(StyledTypography)`
 
 /** The `Text` component is meant to be used for single-line text. (inline, buttons, menus, etc.) */
 const Text = ({ loading, children, ...props }) => {
-  let as = 'span';
+  let as = "span";
   if (props.code) {
-    as = 'code';
+    as = "code";
   } else if (props.emphasis) {
-    as = 'em';
+    as = "em";
   } else if (props.mark) {
-    as = 'mark';
+    as = "mark";
   } else if (props.strong) {
-    as = 'strong';
+    as = "strong";
   } else if (props.strikethrough) {
-    as = 'del';
+    as = "del";
   } else if (props.underline) {
-    as = 'u';
+    as = "u";
   }
   const Wrapper = getWrapper(props);
 
-  if (props.code) {
-    useEffect(() => {
+  useEffect(() => {
+    if (props.code) {
       Prism.highlightAll();
-    }, [children]);
-  }
+    }
+  }, [props.code, children]);
 
   return (
     <Wrapper>
@@ -49,8 +44,5 @@ const Text = ({ loading, children, ...props }) => {
     </Wrapper>
   );
 };
-
-Text.propTypes = propTypes;
-Text.defaultProps = defaultProps;
 
 export default Text;

@@ -1,14 +1,14 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import Typography from '../typography';
-const { Text } = Typography;
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import Typography from "../typography";
+import Grid from "../grid";
 
-import Grid from '../grid';
+const { Text } = Typography;
 const { Row, Col } = Grid;
 
-storiesOf('Grid', module)
+storiesOf("Grid", module)
   .addParameters({ component: Grid })
-  .add('Default', () => (
+  .add("Default", () => (
     <Row>
       <Col>
         <Text>Col 1</Text>
@@ -16,9 +16,9 @@ storiesOf('Grid', module)
     </Row>
   ));
 
-storiesOf('Grid.Row', module)
+storiesOf("Grid.Row", module)
   .addParameters({ component: Row })
-  .add('Default', () => (
+  .add("Default", () => (
     <React.Fragment>
       <Row>
         <Col span={24}>
@@ -36,9 +36,9 @@ storiesOf('Grid.Row', module)
     </React.Fragment>
   ));
 
-storiesOf('Grid.Col', module)
+storiesOf("Grid.Col", module)
   .addParameters({ component: Col })
-  .add('Default', () => (
+  .add("Default", () => (
     <React.Fragment>
       <Row>
         <Col span={24}>

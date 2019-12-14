@@ -1,10 +1,5 @@
-import React, { useEffect } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
-import PropTypes from 'prop-types';
-
-const propTypes = {};
-
-const defaultProps = {};
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -49,8 +44,5 @@ const Layout = ({ loading, children, ...props }) => {
     </React.Fragment>
   );
 };
-
-Layout.propTypes = propTypes;
-Layout.defaultProps = defaultProps;
 
 export default Layout;

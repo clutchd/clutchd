@@ -1,25 +1,25 @@
-import React, { useEffect } from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import Grid from './grid';
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import Grid from "./grid";
 
 const propTypes = {
   /** Spacing between Cols (px) */
   gutter: PropTypes.number,
   /** Determines horizontal position */
   justify: PropTypes.oneOf([
-    'center',
-    'end',
-    'space-around',
-    'space-between',
-    'space-evenly',
-    'start'
+    "center",
+    "end",
+    "space-around",
+    "space-between",
+    "space-evenly",
+    "start"
   ])
 };
 
 const defaultProps = {
   gutter: 0,
-  justify: 'start'
+  justify: "start"
 };
 
 const StyledRow = styled(Grid)`
@@ -30,13 +30,13 @@ const StyledRow = styled(Grid)`
     background-color: rgba(125, 0, 0, 0.2);
     width: 100%;
     justify-content: ${props =>
-      (props.justify === 'start' || props.justify === 'end' ? 'flex-' : '') +
+      (props.justify === "start" || props.justify === "end" ? "flex-" : "") +
       props.justify};
     flex-direction: row;
   }
   &&& > * {
-    padding-left: ${props => props.gutter + 'px'};
-    padding-right: ${props => props.gutter + 'px'};
+    padding-left: ${props => props.gutter + "px"};
+    padding-right: ${props => props.gutter + "px"};
   }
 `;
 

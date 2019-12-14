@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import Prism from 'prismjs';
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-import { StyledTypography, getWrapper } from './typography';
+import React, { useEffect } from "react";
+import Prism from "prismjs";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import { StyledTypography, getWrapper } from "./typography";
 
 const propTypes = {
   /** Heading level (h1-h6) */
@@ -14,12 +14,12 @@ const defaultProps = {
 };
 
 const headingFontSize = new Map([
-  [1, '32px'],
-  [2, '24px'],
-  [3, '20px'],
-  [4, '16px'],
-  [5, '14px'],
-  [6, '13px']
+  [1, "32px"],
+  [2, "24px"],
+  [3, "20px"],
+  [4, "16px"],
+  [5, "14px"],
+  [6, "13px"]
 ]);
 
 const StyledHeading = styled(StyledTypography)`
@@ -43,11 +43,11 @@ const StyledHeading = styled(StyledTypography)`
 const Heading = ({ level, loading, children, ...props }) => {
   const Wrapper = getWrapper(props);
 
-  if (props.code) {
-    useEffect(() => {
+  useEffect(() => {
+    if (props.code) {
       Prism.highlightAll();
-    }, [children]);
-  }
+    }
+  }, [props.code, children]);
 
   return (
     <Wrapper>

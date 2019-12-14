@@ -1,10 +1,5 @@
-import React, { useEffect } from 'react';
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-
-const propTypes = {};
-
-const defaultProps = {};
+import React from "react";
+import styled from "styled-components";
 
 const StyledHeader = styled.header`
   &&& {
@@ -27,8 +22,5 @@ const Header = ({ loading, children, ...props }) => {
     </StyledHeader>
   );
 };
-
-Header.propTypes = propTypes;
-Header.defaultProps = defaultProps;
 
 export default Header;

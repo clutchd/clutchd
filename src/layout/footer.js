@@ -1,10 +1,5 @@
-import React, { useEffect } from 'react';
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
-
-const propTypes = {};
-
-const defaultProps = {};
+import React from "react";
+import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   &&& {
@@ -30,8 +25,5 @@ const Footer = ({ loading, children, ...props }) => {
     </StyledFooter>
   );
 };
-
-Footer.propTypes = propTypes;
-Footer.defaultProps = defaultProps;
 
 export default Footer;

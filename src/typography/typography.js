@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import Prism from 'prismjs';
-import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
+import React, { useEffect } from "react";
+import Prism from "prismjs";
+import styled, { css } from "styled-components";
+import PropTypes from "prop-types";
 
 const propTypes = {
   /** Blockquote style */
@@ -60,9 +60,9 @@ const StyledBlockquote = styled.blockquote`
 
 const code = css`
   &&& {
-    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+      "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+      "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
       monospace;
     color: rgba(255, 255, 255, 0.95);
     background-color: rgba(40, 44, 52, 1);
@@ -197,9 +197,9 @@ const mark = css`
 
 const StyledPre = styled.pre`
   &&& {
-    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
-      'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-      'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+      "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+      "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
       monospace;
     display: block;
     border: none;
@@ -242,9 +242,9 @@ const underline = css`
 
 export const StyledTypography = styled.article`
   &&& {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
     color: rgb(0, 0, 0, 0.8);
     font-size: 14px;
     font-weight: 400;
@@ -286,11 +286,11 @@ export const getWrapper = props => {
 const Typography = ({ loading, children, ...props }) => {
   const Wrapper = getWrapper(props);
 
-  if (props.code) {
-    useEffect(() => {
+  useEffect(() => {
+    if (props.code) {
       Prism.highlightAll();
-    }, [children]);
-  }
+    }
+  }, [props.code, children]);
 
   return (
     <Wrapper>
