@@ -13,7 +13,7 @@
     "npm": ">=5"
   },
   "scripts": {
-    "build": "build-storybook -c .storybook -o public",
+    "build": "build-storybook -c .storybook -o build",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT"
   },
