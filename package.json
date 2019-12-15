@@ -1,5 +1,5 @@
 {
-  "name": "ui",
+  "name": "@clutchd/ui",
   "version": "0.0.0-development",
   "description": "A React component library designed around consistent, and simple web design.",
   "author": "clutchd",
