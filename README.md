@@ -2,7 +2,7 @@
 
 > A React component library designed around consistent, and simple web design.
 
-[![NPM](https://img.shields.io/npm/v/@clutchd/ui.svg)](https://www.npmjs.com/package/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@clutchd/ui.svg)](https://www.npmjs.com/package/ui) [![Build Status](https://travis-ci.com/clutchd/ui.svg?branch=master)](https://travis-ci.com/clutchd/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
