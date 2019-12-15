@@ -1,10 +1,13 @@
 {
   "name": "ui",
-  "version": "0.0.3",
+  "version": "0.0.0-development",
   "description": "A React component library designed around consistent, and simple web design.",
   "author": "clutchd",
   "license": "MIT",
-  "repository": "clutchd/ui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutchd/ui.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -15,7 +18,8 @@
   "scripts": {
     "build": "build-storybook -c .storybook -o build",
     "start": "start-storybook",
-    "dev": "start-storybook -p 6006 || $PORT"
+    "dev": "start-storybook -p 6006 || $PORT",
+    "semantic-release": "semantic-release"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -49,7 +53,8 @@
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "semantic-release": "^15.13.31"
   },
   "files": [
     "dist"
