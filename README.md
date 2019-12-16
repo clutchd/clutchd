@@ -7,7 +7,7 @@
 ## Install
 
 ```bash
-npm install --save ui
+npm install --save @clutchd/ui
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ npm install --save ui
 ```jsx
 import React, { Component } from "react";
 
-import MyComponent from "ui";
+import MyComponent from "@clutchd/ui";
 
 class Example extends Component {
   render() {
