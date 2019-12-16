@@ -1,14 +1,12 @@
 import React, { useEffect } from "react";
 import Prism from "prismjs";
 import styled from "styled-components";
-import { StyledTypography, getWrapper } from "./typography";
+import { StyledTypography, getWrapper } from "./utils";
 
 const StyledText = styled(StyledTypography)`
-  &&& {
-    margin: 0 0 0 0;
-    padding: 0;
-    display: inline;
-  }
+  margin: 0 0 0 0;
+  padding: 0;
+  display: inline;
 `;
 
 /** The `Text` component is meant to be used for single-line text. (inline, buttons, menus, etc.) */
@@ -38,8 +36,7 @@ const Text = ({ loading, children, ...props }) => {
   return (
     <Wrapper>
       <StyledText as={`${as}`} {...props}>
-        {loading ? children : children}
-        {/* add loading icon/skeleton component */}
+        {children}
       </StyledText>
     </Wrapper>
   );
