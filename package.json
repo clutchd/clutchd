@@ -19,7 +19,7 @@
     "build": "build-storybook -c .storybook -o build && rollup -c",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "semantic-release": "semantic-release"
+    "prepublish": "npm run build"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
