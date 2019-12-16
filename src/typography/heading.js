@@ -6,11 +6,14 @@ import { StyledTypography, getWrapper } from "./utils";
 
 const propTypes = {
   /** Heading level (h1-h6) */
-  level: PropTypes.number
+  level: PropTypes.number,
+  /** Bolds text */
+  strong: PropTypes.bool
 };
 
 const defaultProps = {
-  level: 1
+  level: 1,
+  strong: false
 };
 
 const headingFontSize = [
