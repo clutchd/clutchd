@@ -1,8 +1,11 @@
 module.exports = [
   {
-    name: '@storybook/addon-docs/react/preset',
+    name: "@storybook/addon-docs/preset",
     options: {
-      configureJSX: true
-    }
-  }
+      configureJSX: true,
+    },
+  },
+  {
+    name: "@storybook/preset-create-react-app",
+  },
 ];

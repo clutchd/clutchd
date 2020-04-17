@@ -19,7 +19,7 @@
     "build": "build-storybook -c .storybook -o build && rollup -c",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepublish": "npm run build"
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -37,6 +37,7 @@
     "@storybook/addon-docs": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@svgr/rollup": "^2.4.1",
     "@typescript-eslint/parser": "^2.27.0",
@@ -59,8 +60,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.0-rc4"
-  }
+  ]
 }
