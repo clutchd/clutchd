@@ -1,30 +1,15 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
-import Button from "../button";
+import Button from "./button";
 
-<Meta title="MDX/Badge" component={Button} />
+<Meta title={"UI/Button"} />
 
-# Badge
+# Get started
 
-Let's define a story for our `Badge` component:
-
-<Story name="positive">
-  <Badge status="positive">Positive</Badge>
-</Story>
-
-We can drop it in a `Preview` to get a code snippet:
+With `MDX` we can define a story for `Button` right in the middle of our
+markdown documentation.
 
 <Preview>
-  <Story name="negative">
-    <Badge status="negative">Negative</Badge>
-  </Story>
-</Preview>
-
-We can even preview multiple stories in a block. This
-gets rendered as a group, but defines individual stories
-with unique URLs and isolated snapshot tests.
-
-<Preview>
-  <Story name="Test">
-    <Button>Test</Button>
+  <Story name="Default">
+    <Button>Click Here</Button>
   </Story>
 </Preview>
