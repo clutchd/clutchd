@@ -19,7 +19,8 @@
     "build": "build-storybook -c .storybook -o build && rollup -c",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "commit": "npx git-cz"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -42,11 +43,13 @@
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@svgr/rollup": "^2.4.1",
-    "@typescript-eslint/parser": "^2.27.0",
+    "@typescript-eslint/parser": "^2.29.0",
     "cross-env": "^5.1.4",
+    "cz-conventional-changelog": "^3.1.0",
     "eslint": "^6.7.2",
+    "husky": "^4.2.5",
     "i": "^0.3.6",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.0",
     "npm": "^6.14.4",
     "prettier-eslint": "^9.0.1",
     "prismjs": "^1.20.0",
@@ -58,12 +61,22 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
-    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-postcss": "^2.9.0",
     "semantic-release": "^15.14.0",
     "storybook-addon-deps": "^2.0.0",
     "styled-components": "^4.4.1"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  }
 }
