@@ -16,13 +16,12 @@
     "npm": ">=5"
   },
   "scripts": {
-    "prepare": "npm run format",
     "build": "build-storybook -c .storybook -o build && rollup -c",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepublish": "npm run build",
+    "prepublish": "npm run format && npm run build",
     "commit": "npx git-cz",
-    "format": "prettier-eslint \"src/**/*.js\" \"src/**/*.mdx\""
+    "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.mdx\""
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -44,13 +43,15 @@
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@svgr/rollup": "^2.4.1",
+    "@typescript-eslint/parser": "^2.29.0",
     "cz-conventional-changelog": "^3.1.0",
-    "husky": "^4.2.5",
+    "eslint": "^6.6.0",
     "node-sass": "^4.14.0",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
+    "react-dnd": "^7.7.0",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
     "rollup": "^1.32.1",
@@ -62,7 +63,8 @@
     "semantic-release": "^15.14.0",
     "storybook-addon-deps": "^2.0.0",
     "storybook-chromatic": "^3.5.3",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "vue": "^2.6.11"
   },
   "files": [
     "dist"
