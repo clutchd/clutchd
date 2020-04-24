@@ -16,10 +16,13 @@
     "npm": ">=5"
   },
   "scripts": {
+    "prebuild": "npm run format",
     "build": "build-storybook -c .storybook -o build && rollup -c",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepublish": "npm run build"
+    "prepare": "npm run build",
+    "commit": "npx git-cz",
+    "format": "prettier-eslint \"src/**/*.js\" \"src/**/*.mdx\""
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -33,17 +36,19 @@
     "@babel/preset-react": "^7.9.4",
     "@rollup/plugin-url": "^4.0.2",
     "@storybook/addon-a11y": "^5.3.18",
-    "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-docs": "^5.3.18",
+    "@storybook/addon-essentials": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-storysource": "^5.3.18",
     "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18",
     "@svgr/rollup": "^2.4.1",
-    "@typescript-eslint/parser": "^2.27.0",
-    "cross-env": "^5.1.4",
-    "eslint": "^6.7.2",
-    "node-sass": "^4.13.1",
+    "cz-conventional-changelog": "^3.1.0",
+    "husky": "^4.2.5",
+    "node-sass": "^4.14.0",
     "prettier-eslint": "^9.0.1",
+    "prettier-eslint-cli": "^5.0.0",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -53,14 +58,23 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
-    "rollup-plugin-postcss": "^2.5.0",
+    "rollup-plugin-postcss": "^2.9.0",
     "semantic-release": "^15.14.0",
+    "storybook-addon-deps": "^2.0.0",
+    "storybook-chromatic": "^3.5.3",
     "styled-components": "^4.4.1"
   },
   "files": [
     "dist"
   ],
-  "dependencies": {
-    "@quickbaseoss/babel-plugin-styled-components-css-namespace": "^1.0.0-rc4"
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
   }
 }

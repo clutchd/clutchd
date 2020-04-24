@@ -16,3 +16,9 @@ jobs:
         skip_cleanup: true
         script:
           - npx semantic-release
+branches:
+  only:
+    - master
+    - alpha
+    - beta
+    - /^\d+\.(\d+|x)(\.x)?$/
