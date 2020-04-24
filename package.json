@@ -16,11 +16,11 @@
     "npm": ">=5"
   },
   "scripts": {
-    "prebuild": "npm run format",
+    "prepare": "npm run format",
     "build": "build-storybook -c .storybook -o build && rollup -c",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepare": "npm run build",
+    "prepublish": "npm run build",
     "commit": "npx git-cz",
     "format": "prettier-eslint \"src/**/*.js\" \"src/**/*.mdx\""
   },
@@ -70,11 +70,6 @@
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   }
 }
