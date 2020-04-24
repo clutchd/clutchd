@@ -19,3 +19,6 @@ jobs:
 branches:
   only:
     - master
+    - alpha
+    - beta
+    - /^\d+\.(\d+|x)(\.x)?$/
