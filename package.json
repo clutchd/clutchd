@@ -19,7 +19,7 @@
     "build": "build-storybook -c .storybook -o build && rollup -c",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepublish": "npm run format && npm run build",
+    "prepare": "npm run format && npm run build",
     "commit": "npx git-cz",
     "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.mdx\""
   },
