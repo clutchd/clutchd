@@ -14,6 +14,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: Install Dependencies
+        run: npm ci
       - name: Github Packages - Prepare to Publish
         run: npm config set registry https://npm.pkg.github.com/
       - name: Github Packages - Publish
