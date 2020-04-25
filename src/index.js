@@ -1,5 +1,5 @@
-export { default as Layout } from "./layout";
-export { default as Button } from "./button";
-export { default as Grid } from "./grid";
-export { default as Icon } from "./icon";
-export { default as Typography } from "./typography";
+export { default as Layout } from "./components/layout";
+export { default as Button } from "./components/button";
+export { default as Grid } from "./components/grid";
+export { default as Icon } from "./components/icon";
+export { default as Typography } from "./components/typography";
