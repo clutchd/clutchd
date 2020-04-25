@@ -33,6 +33,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+      - name: Install Dependencies
+        run: npm ci
       - name: NPM - Prepare to Publish
         run: npm config set registry https://registry.npmjs.org/
       - name: NPM - Publish
