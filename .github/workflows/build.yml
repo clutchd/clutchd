@@ -1,11 +1,11 @@
-name: Release
+name: Build
 on:
   push:
     branches:
       - master
 jobs:
   release:
-    name: Release
+    name: Build
     runs-on: ubuntu-18.04
     steps:
       - name: Checkout
