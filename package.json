@@ -24,7 +24,7 @@
     "dev": "start-storybook -p 6006 || $PORT",
     "prepare": "npm run format && npm run build",
     "commit": "npx git-cz",
-    "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.mdx\""
+    "format": "prettier-eslint --write \"$PWD/src/**/*.js\" \"$PWD/src/**/*.mdx\""
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
