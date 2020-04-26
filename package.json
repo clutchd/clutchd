@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/clutchd/ui.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
