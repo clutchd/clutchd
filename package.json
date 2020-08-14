@@ -37,7 +37,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "@rollup/plugin-url": "^4.0.2",
-    "@storybook/addon-a11y": "^5.3.18",
+    "@storybook/addon-a11y": "^6.0.7",
     "@storybook/addon-docs": "^5.3.18",
     "@storybook/addon-essentials": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
