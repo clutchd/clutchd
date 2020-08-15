@@ -22,7 +22,7 @@ const propTypes = {
   /** Bolds text */
   strong: PropTypes.bool,
   /** Underlines text */
-  underline: PropTypes.bool
+  underline: PropTypes.bool,
 };
 
 const defaultProps = {
@@ -33,7 +33,7 @@ const defaultProps = {
   pre: false,
   strikethrough: false,
   strong: false,
-  underline: false
+  underline: false,
 };
 
 const StyledArticle = styled(StyledTypography)`

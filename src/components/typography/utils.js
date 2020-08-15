@@ -16,13 +16,13 @@ export const StyledTypography = styled.div`
   cursor: text;
   font-style: normal;
   user-select: text;
-  ${props => (props.code ? `${code}` : ``)};
-  ${props => (props.emphasis ? `${emphasis}` : ``)};
-  ${props => (props.disable ? `${disable}` : ``)};
-  ${props => (props.mark ? `${mark}` : ``)};
-  ${props => (props.strikethrough ? `${strikethrough}` : ``)};
-  ${props => (props.strong ? `${strong}` : ``)};
-  ${props => (props.underline ? `${underline}` : ``)};
+  ${(props) => (props.code ? `${code}` : ``)};
+  ${(props) => (props.emphasis ? `${emphasis}` : ``)};
+  ${(props) => (props.disable ? `${disable}` : ``)};
+  ${(props) => (props.mark ? `${mark}` : ``)};
+  ${(props) => (props.strikethrough ? `${strikethrough}` : ``)};
+  ${(props) => (props.strong ? `${strong}` : ``)};
+  ${(props) => (props.underline ? `${underline}` : ``)};
 `;
 
 const emphasis = css`
@@ -205,7 +205,7 @@ const StyledPre = styled.pre`
   }
 `;
 
-export const getWrapper = props => {
+export const getWrapper = (props) => {
   if (props.pre === true) {
     return StyledPre;
   }
