@@ -8,12 +8,12 @@ const propTypes = {
   /** Heading level (h1-h6) */
   level: PropTypes.number,
   /** Bolds text */
-  strong: PropTypes.bool
+  strong: PropTypes.bool,
 };
 
 const defaultProps = {
   level: 1,
-  strong: false
+  strong: false,
 };
 
 const headingFontSize = [
@@ -22,13 +22,13 @@ const headingFontSize = [
   ["28px", "1.75rem"],
   ["24px", "1.5rem"],
   ["20px", "1.25rem"],
-  ["16px", "1rem"]
+  ["16px", "1rem"],
 ];
 
 const StyledHeading = styled(StyledTypography)`
-  font-size: ${props => headingFontSize[props.level - 1][0]};
-  font-size: ${props => headingFontSize[props.level - 1][1]};
-  font-weight: ${props => (props.strong ? 700 : 600)};
+  font-size: ${(props) => headingFontSize[props.level - 1][0]};
+  font-size: ${(props) => headingFontSize[props.level - 1][1]};
+  font-weight: ${(props) => (props.strong ? 700 : 600)};
   margin: 0 0 0.5em 0;
   margin-block-start: 0;
   margin-block-end: 0.5em;

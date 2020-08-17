@@ -8,23 +8,23 @@ export const themePropTypes = {
       success: PropTypes.string.isRequired,
       info: PropTypes.string.isRequired,
       warning: PropTypes.string.isRequired,
-      error: PropTypes.string.isRequired
+      error: PropTypes.string.isRequired,
     },
     font: {
-      family: PropTypes.string.isRequired
-    }
-  }
+      family: PropTypes.string.isRequired,
+    },
+  },
 };
 
 export const themeProps = {
   theme: {
     color: {
-      primary: "purple"
+      primary: "purple",
     },
     font: {
       baseSize: "15px",
       family:
-        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol", "Noto Color Emoji"'
-    }
-  }
+        '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji","Segoe UI Symbol", "Noto Color Emoji"',
+    },
+  },
 };

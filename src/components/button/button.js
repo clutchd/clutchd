@@ -3,11 +3,11 @@ import styled from "styled-components";
 import { themePropTypes, themeProps } from "../../utils/theme";
 
 const propTypes = {
-  ...themePropTypes
+  ...themePropTypes,
 };
 
 const defaultProps = {
-  ...themeProps
+  ...themeProps,
 };
 
 // styles
@@ -16,8 +16,8 @@ const StyledButton = styled.button`
   margin: 1em;
   padding: 0.25em 1em;
   border-radius: 3px;
-  color: ${props => props.theme.color.primary};
-  border: 2px solid ${props => props.theme.color.primary};
+  color: ${(props) => props.theme.color.primary};
+  border: 2px solid ${(props) => props.theme.color.primary};
 `;
 
 const Button = ({ children, ...props }) => {
