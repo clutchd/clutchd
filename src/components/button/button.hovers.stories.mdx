@@ -1,0 +1,22 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import Button from "./button";
+
+<Meta title={"UI/Button/Hovers"} />
+
+# Get started
+
+With `MDX` we can define a story for `Button` right in the middle of our
+markdown documentation.
+
+<Canvas>
+  <Story name="Default">
+    <Button>Click Here</Button>
+  </Story>
+  <Story name="Shadow">
+    <Button hover="shadow">Click Here</Button>
+  </Story>
+  <Story name="Opacity">
+    <Button hover="opacity">Click Here</Button>
+  </Story>
+</Canvas>

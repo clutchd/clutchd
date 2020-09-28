@@ -1,0 +1,25 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import { action } from "@storybook/addon-actions";
+import Button from "./button";
+
+<Meta title={"UI/Button/Shapes"} />
+
+# Get started
+
+With `MDX` we can define a story for `Button` right in the middle of our
+markdown documentation.
+
+<Canvas>
+  <Story name="Default">
+    <Button>Click Here</Button>
+  </Story>
+  <Story name="Rounded">
+    <Button shape="rounded">Click Here</Button>
+  </Story>
+  <Story name="Oval">
+    <Button shape="oval">Click Here</Button>
+  </Story>
+  <Story name="Accent">
+    <Button shape="sharp">Click Here</Button>
+  </Story>
+</Canvas>
