@@ -1,6 +1,7 @@
 import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
-import Button from "./button";
+import Button from "../button";
+import theme from "../../theme";
 
 <Meta title={"UI/Button/Hovers"} />
 
@@ -13,10 +14,10 @@ markdown documentation.
   <Story name="Default">
     <Button>Click Here</Button>
   </Story>
-  <Story name="Shadow">
-    <Button hover="shadow">Click Here</Button>
+  <Story name="Drop Shadow">
+    <Button hover="dropShadow">Click Here</Button>
   </Story>
-  <Story name="Opacity">
-    <Button hover="opacity">Click Here</Button>
+  <Story name="Drop Shadow Lift">
+    <Button hover="dropShadowLift">Click Here</Button>
   </Story>
 </Canvas>

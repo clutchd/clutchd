@@ -1,8 +1,8 @@
 import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
 import { action } from "@storybook/addon-actions";
-import Button from "./button";
+import Button from "../button";
 
-<Meta title={"UI/Button/Backgrounds"} />
+<Meta title={"UI/Button/Colors"} />
 
 # Get started
 
@@ -14,18 +14,18 @@ markdown documentation.
     <Button>Click Here</Button>
   </Story>
   <Story name="Primary">
-    <Button background="primary">Click Here</Button>
+    <Button variant="primary">Click Here</Button>
   </Story>
   <Story name="Secondary">
-    <Button background="secondary">Click Here</Button>
+    <Button variant="secondary">Click Here</Button>
   </Story>
-  <Story name="Accent">
-    <Button background="accent">Click Here</Button>
+  <Story name="Tertiary">
+    <Button variant="tertiary">Click Here</Button>
   </Story>
   <Story name="Gradient">
-    <Button background="gradient">Click Here</Button>
+    <Button variant="gradient">Click Here</Button>
   </Story>
   <Story name="Glass">
-    <Button background="glass">Click Here</Button>
+    <Button variant="glass">Click Here</Button>
   </Story>
 </Canvas>
