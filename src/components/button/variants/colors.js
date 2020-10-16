@@ -1,33 +1,43 @@
-import { linearGradient } from "polished";
+import { lighten } from "polished";
 
-// Theme
-import Theme from "../../theme";
-const defaultTheme = Theme;
+export const primary = ({ ...props }) => ({
+  bg: `${props.theme.colors.primary}`,
+  "&:hover": {
+    bg: `${lighten(0.2, props.theme.colors.primary)}`,
+  },
+});
 
-export const primary = {
-  bg: `${defaultTheme.colors.primary}`,
-};
+export const secondary = ({ ...props }) => ({
+  bg: `${props.theme.colors.secondary}`,
+  "&:hover": {
+    bg: `${lighten(0.2, props.theme.colors.secondary)}`,
+  },
+});
 
-export const secondary = {
-  bg: `${defaultTheme.colors.secondary}`,
-};
+export const tertiary = ({ ...props }) => ({
+  bg: `${props.theme.colors.tertiary}`,
+  "&:hover": {
+    bg: `${lighten(0.2, props.theme.colors.tertiary)}`,
+  },
+});
 
-export const tertiary = {
-  bg: `${defaultTheme.colors.tertiary}`,
-};
+export const gradient = ({ ...props }) => ({
+  bg: `${props.theme.colors.primary}`,
+  background: `linear-gradient(150deg,
+    ${props.theme.colors.secondary} 0%,
+    ${props.theme.colors.primary} 60%,
+    ${props.theme.colors.tertiary} 95%)`,
+  "&:hover": {
+    background: `linear-gradient(150deg,
+      ${lighten(0.2, props.theme.colors.secondary)} 0%,
+      ${lighten(0.2, props.theme.colors.primary)} 60%,
+      ${lighten(0.2, props.theme.colors.tertiary)} 95%)`,
+  },
+});
 
-export const gradient = {
-  ...linearGradient({
-    colorStops: [
-      `${defaultTheme.colors.secondary} 0%`,
-      `${defaultTheme.colors.primary} 60%`,
-      `${defaultTheme.colors.tertiary} 95%`,
-    ],
-    toDirection: "150deg",
-    fallback: `${defaultTheme.colors.primary}`,
-  }),
-};
-
-export const glass = {
+export const glass = ({ ...props }) => ({
   bg: `rgb(255, 255, 255, 0.2)`,
-};
+  "&:hover": {
+    bg: `rgb(255, 255, 255, 0.4)`,
+  },
+});

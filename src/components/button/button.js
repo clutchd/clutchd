@@ -17,36 +17,47 @@ import Theme from "../theme";
 const defaultTheme = Theme;
 
 // Variants
-import { primary, secondary, tertiary, gradient } from "./variants/colors";
-import { dropShadow, dropShadowLift } from "./variants/hovers";
+import {
+  primary,
+  secondary,
+  tertiary,
+  gradient,
+  glass,
+} from "./variants/colors";
+import { rounded, oval, sharp } from "./variants/shapes";
 
 // Component
 const Button = styled(ReakitButton)(
   {
+    theme: defaultTheme,
     cursor: "pointer",
     transition: "ease-in-out all 200ms",
   },
   compose(border, color, layout, position, typography, shadow, space),
+  (props) =>
+    variant({
+      variants: {
+        primary: primary(props),
+        secondary: secondary(props),
+        tertiary: tertiary(props),
+        gradient: gradient(props),
+        glass: glass(props),
+      },
+    }),
   variant({
+    prop: "shape",
     variants: {
-      primary: primary,
-      secondary: secondary,
-      tertiary: tertiary,
-      gradient: gradient,
-    },
-  }),
-  variant({
-    prop: "hover",
-    variants: {
-      dropShadow: dropShadow,
-      dropShadowLift: dropShadowLift,
+      rounded: rounded,
+      oval: oval,
+      sharp: sharp,
     },
   })
 );
 
 Button.defaultProps = {
+  theme: defaultTheme,
   border: "none",
-  borderRadius: `${defaultTheme.radii[2]}px`,
+  shape: `rounded`,
   position: "relative",
   top: 0,
   m: `${defaultTheme.space[2]}px`,
@@ -56,7 +67,8 @@ Button.defaultProps = {
   fontFamily: `${defaultTheme.fonts}`,
   fontWeight: 700,
   variant: "primary",
-  hover: "dropShadow",
+  boxShadow: `0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.05);`,
 };
 
 export default Button;
