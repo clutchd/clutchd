@@ -29,11 +29,8 @@
     "build-storybook": "build-storybook --docs"
   },
   "peerDependencies": {
-    "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
-    "react-dom": "^15.0.0 || ^16.0.0",
-    "prismjs": "^1.17.x",
-    "styled-components": "^4.x"
+    "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -57,9 +54,7 @@
     "reakit": "^1.2.5",
     "rollup": "^1.32.1",
     "rollup-plugin-peer-deps-external": "^2.2.2",
-    "rollup-plugin-postcss": "^3.1.1",
-    "styled-components": "^4.4.1",
-    "styled-system": "^5.1.5"
+    "rollup-plugin-postcss": "^3.1.1"
   },
   "files": [
     "dist"
@@ -69,5 +64,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "tailwindcss": "^1.9.5"
+  }
 }
