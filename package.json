@@ -11,15 +11,13 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
   "scripts": {
-    "dev": "start-storybook -p 6006 || $PORT"
+    "build": "build-storybook -c .storybook -o build",
+    "start": "start-storybook",
+    "dev": "start-storybook -p 6006 || $PORT",
+    "prepare": "npm run format && npm run build",
+    "commit": "npx git-cz",
+    "format": "prettier-eslint --write \"src/**/*.{ts,tsx,js,jsx,mdx}\""
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
