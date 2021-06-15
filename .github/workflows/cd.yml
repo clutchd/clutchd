@@ -35,11 +35,10 @@ jobs:
 
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: npm install -g codecov
-        run: npm install
+        run: npm install -g codecov && npm install
 
       - run: npm run format
 
       - run: npm test && codecov
-      
+
       - run: npx semantic-release
