@@ -30,10 +30,10 @@ jobs:
             nodeModules-
 
       - if: steps.cache.outputs.cache-hit != 'true'
-        name: Install dependencies
+        name: Install dependencies with cache
         run: npm install -g codecov && npm install
-      - if: steps.cache.outputs.cache-hit != 'true'
-        name: Install dependencies
+      - if: steps.cache.outputs.cache-hit == 'true'
+        name: Install dependencies without cache
         run: npm install -g codecov
 
       - run: npm run format
