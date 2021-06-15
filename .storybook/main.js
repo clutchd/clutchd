@@ -4,6 +4,7 @@ module.exports = {
     "@storybook/addon-actions",
     "@storybook/addon-backgrounds",
     "@storybook/addon-docs",
+    "@storybook/addon-postcss",
   ],
   typescript: {
     reactDocgen: "none",
