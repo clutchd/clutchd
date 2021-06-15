@@ -12,7 +12,8 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "build-storybook -c .storybook -o build && tsc -p .",
+    "build": "npm run clean && build-storybook -c .storybook -o build && tsc -p .",
+    "clean": "rm -rf dist build",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
     "prepare": "npm run format && npm run build",
@@ -26,6 +27,7 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}"
     ],
+    "globalSetup": "<rootDir>/tests/jest.setup.ts",
     "testEnvironment": "jsdom",
     "verbose": true
   },
