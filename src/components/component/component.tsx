@@ -10,10 +10,12 @@ export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
 /**
  * A higher-order component that adds support for all HTMLAttributes
  */
-export const Component: React.FunctionComponent<IComponent> = ({
+const Component: React.FunctionComponent<IComponent> = ({
   tag: Wrapper = "div",
   children,
   ...rest
 }) => {
   return <Wrapper {...rest}>{children}</Wrapper>;
 };
+
+export default Component;
