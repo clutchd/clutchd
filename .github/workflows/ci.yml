@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [master, dev]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+    strategy:
+      matrix:
+        node-version: [14, 15, 16]
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Use cached node_modules
+        id: cache
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: nodeModules-${{ hashFiles('**/package-lock.json') }}-${{ matrix.node-version }}
+          restore-keys: |
+            nodeModules-
+
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm install -g codecov
+        run: npm install
+
+      - run: npm run format
+      
+      - run: npm test

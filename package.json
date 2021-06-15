@@ -17,7 +17,17 @@
     "dev": "start-storybook -p 6006 || $PORT",
     "prepare": "npm run format && npm run build",
     "commit": "npx git-cz",
-    "format": "prettier-eslint --write \"src/**/*.{ts,tsx,js,jsx,mdx}\""
+    "format": "prettier-eslint --write \"src/**/*.{ts,tsx,js,jsx,mdx}\"",
+    "test": "jest"
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "verbose": true
   },
   "peerDependencies": {
     "react": "^15.0.0 || ^16.0.0",
@@ -29,7 +39,14 @@
     "@storybook/addon-docs": "^6.3.0-rc.5",
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.3.0-rc.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
+    "@types/react": "^17.0.11",
+    "babel-jest": "^27.0.2",
     "cz-conventional-changelog": "^3.3.0",
+    "jest": "^27.0.4",
+    "next": "^10.2.3",
     "prettier-eslint-cli": "^5.0.1",
     "prismjs": "^1.23.0",
     "react": "^16.13.1",
