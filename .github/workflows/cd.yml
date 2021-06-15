@@ -29,10 +29,11 @@ jobs:
           restore-keys: |
             nodeModules-
 
-      - name: Install dependencies
       - if: steps.cache.outputs.cache-hit != 'true'
+        name: Install dependencies
         run: npm install -g codecov && npm install
       - if: steps.cache.outputs.cache-hit != 'true'
+        name: Install dependencies
         run: npm install -g codecov
 
       - run: npm run format
