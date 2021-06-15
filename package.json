@@ -37,7 +37,6 @@
     "@storybook/addon-actions": "^6.3.0-rc.5",
     "@storybook/addon-backgrounds": "^6.3.0-rc.5",
     "@storybook/addon-docs": "^6.3.0-rc.5",
-    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.3.0-rc.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
