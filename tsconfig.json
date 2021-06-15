@@ -13,8 +13,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "rootDir": "src",
+    "declaration": true,
+    "declarationDir": "dist/types",
     "noEmit": true
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
