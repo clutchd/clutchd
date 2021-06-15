@@ -29,16 +29,21 @@ jobs:
           restore-keys: |
             nodeModules-
 
-      - if: steps.cache.outputs.cache-hit != 'true'
-        name: Install dependencies without cache
-        run: npm install -g codecov && npm install
-      - if: steps.cache.outputs.cache-hit == 'true'
-        name: Install dependencies with cache
+      - name: Install Codecov
         run: npm install -g codecov
 
-      - run: npm run format
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
 
-      - run: npm test && codecov
+      - name: Format files
+        run: npm run format
+
+      - name: Run tests
+        run: npm test
+
+      - name: Upload code coverage
+        run: codecov
 
       - name: Release
         if: github.ref == 'refs/heads/master'
