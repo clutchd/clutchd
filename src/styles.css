@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+img {
+  display: inline-block;
+}

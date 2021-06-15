@@ -1,0 +1,44 @@
+import { Meta, Story, Canvas, Description } from "@storybook/addon-docs/blocks";
+import Component from "../component";
+import README from "../README.md";
+
+<Meta title={"UI/Component"} />
+
+<Description>{README}</Description>
+
+<Canvas>
+  <Story name="Default">
+    <Component>Click Here</Component>
+  </Story>
+</Canvas>
+
+## Custom Classes
+
+Like an ordinary html element, we can add and override css classes.
+
+<Canvas>
+  <Story name="Custom Classes">
+    <Component className="font-serif">
+      Component with `font-serif` class
+    </Component>
+    <Component className="text-blue-500">
+      Component with `text-blue-500` class
+    </Component>
+    <Component className="border">Component with `border` class</Component>
+  </Story>
+</Canvas>
+
+## Custom Tags
+
+Like an ordinary html element, we can add and override css classes.
+
+<Canvas>
+  <Story name="Custom Tags">
+    <Component>{`Component as <div> tag`}</Component>
+    <Component tag="h1">{`Component as <h1> tag`}</Component>
+    <Component
+      tag="a"
+      href="https://www.clutchd.com"
+    >{`Component as <a> tag`}</Component>
+  </Story>
+</Canvas>
