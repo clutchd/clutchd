@@ -12,7 +12,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "npm clean && build-storybook -c .storybook -o build && tsc -p .",
+    "build": "npm run clean && build-storybook -c .storybook -o build && tsc -p .",
     "clean": "rm -rf dist build",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
