@@ -53,9 +53,11 @@
     "react-dom": "^16.13.1",
     "typescript": "^4.3.2"
   },
+  "main": "dist/index.js",
   "files": [
     "dist"
   ],
+  "types": "./dist/index.d.ts",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
