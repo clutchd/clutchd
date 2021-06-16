@@ -41,6 +41,3 @@ jobs:
 
       - name: Run tests
         run: npm test
-
-      - name: Upload code coverage
-        run: codecov
