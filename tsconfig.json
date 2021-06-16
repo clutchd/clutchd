@@ -6,13 +6,6 @@
     "declaration": true,
     "declarationDir": "dist/types",
     "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
     "importHelpers": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -28,6 +21,6 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
 }
