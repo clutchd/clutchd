@@ -12,13 +12,10 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "npm run clean && npm run build-storybook && npm run build-components",
-    "build-storybook": "build-storybook -c .storybook -o build",
-    "build-components": "tsc -p .",
-    "clean": "rm -rf dist build",
+    "build-storybook": "rm -rf build && build-storybook -c .storybook -o build",
+    "build-components": "rm -rf dist && tsc -p .",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepare": "npm run format && npm run build",
     "commit": "npx git-cz",
     "format": "prettier-eslint --write \"src/**/*.{ts,tsx,js,jsx,mdx}\"",
     "test": "jest"
