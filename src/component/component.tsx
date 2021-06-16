@@ -1,10 +1,4 @@
-/**
- * An extendable React component that supports all standard HTMLAttributes
- */
-export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
-  tag?: keyof JSX.IntrinsicElements;
-  type?: "button" | "submit";
-}
+import IComponent from "./component.interface";
 
 /**
  * A higher-order component that adds support for all HTMLAttributes
