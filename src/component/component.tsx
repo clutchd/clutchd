@@ -1,5 +1,3 @@
-import React from "react";
-
 /**
  * An extendable React component that supports all standard HTMLAttributes
  */

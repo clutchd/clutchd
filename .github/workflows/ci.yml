@@ -13,9 +13,10 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout latest
+        uses: actions/checkout@v2
 
-      - name: Use Node.js
+      - name: Use Node.js 16
         uses: actions/setup-node@v1
         with:
           node-version: 16
@@ -29,18 +30,15 @@ jobs:
           restore-keys: |
             nodeModules-
 
-      - name: Install Codecov
-        run: npm install -g codecov
-
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Format files
+      - name: Format
         run: npm run format
+
+      - name: Verify build
+        run: npm run build-components
 
       - name: Run tests
         run: npm test
-
-      - name: Upload code coverage
-        run: codecov

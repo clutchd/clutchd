@@ -12,11 +12,10 @@
     "registry": "https://registry.npmjs.org/"
   },
   "scripts": {
-    "build": "npm run clean && build-storybook -c .storybook -o build && tsc -p .",
-    "clean": "rm -rf dist build",
+    "build-storybook": "rm -rf build && build-storybook -c .storybook -o build",
+    "build-components": "rm -rf dist && tsc -p .",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
-    "prepare": "npm run format && npm run build",
     "commit": "npx git-cz",
     "format": "prettier-eslint --write \"src/**/*.{ts,tsx,js,jsx,mdx}\"",
     "test": "jest"
@@ -25,7 +24,8 @@
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,ts,tsx}"
+      "src/**/*.{ts,tsx}",
+      "!src/**/index.{ts,tsx}"
     ],
     "globalSetup": "<rootDir>/tests/jest.setup.ts",
     "testEnvironment": "jsdom",
@@ -36,21 +36,19 @@
     "react-dom": "^15.0.0 || ^16.0.0"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.3.0-rc.5",
-    "@storybook/addon-backgrounds": "^6.3.0-rc.5",
-    "@storybook/addon-docs": "^6.3.0-rc.5",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-backgrounds": "^6.2.9",
+    "@storybook/addon-docs": "^6.2.9",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.3.0-rc.5",
+    "@storybook/react": "^6.2.9",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@types/jest": "^26.0.23",
     "@types/react": "^17.0.11",
-    "babel-jest": "^27.0.2",
     "cz-conventional-changelog": "^3.3.0",
     "jest": "^27.0.4",
     "next": "^10.2.3",
     "prettier-eslint-cli": "^5.0.1",
-    "prismjs": "^1.23.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "typescript": "^4.3.2"
