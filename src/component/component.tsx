@@ -3,6 +3,7 @@
  */
 export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
   tag?: keyof JSX.IntrinsicElements;
+  type?: "button" | "submit";
 }
 
 /**
@@ -11,9 +12,19 @@ export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
 const Component: React.FunctionComponent<IComponent> = ({
   tag: Wrapper = "div",
   children,
+  type,
   ...rest
 }) => {
-  return <Wrapper {...rest}>{children}</Wrapper>;
+  switch (Wrapper) {
+    case "button":
+      return (
+        <Wrapper {...type} {...rest}>
+          {children}
+        </Wrapper>
+      );
+    default:
+      return <Wrapper {...rest}>{children}</Wrapper>;
+  }
 };
 
 export default Component;
