@@ -1,1 +1,1 @@
-export { Component } from "./component";
+export { IComponent, Component } from "./component";
