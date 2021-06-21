@@ -5,6 +5,7 @@ import * as React from "react";
  */
 export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
   tag?: keyof JSX.IntrinsicElements;
+  type?: "button" | "submit";
 }
 
 /**
@@ -13,13 +14,14 @@ export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
 const Component: React.FunctionComponent<IComponent> = ({
   tag: Wrapper = "div",
   children,
-  type,
+  type = "button",
   ...rest
 }) => {
+  console.log(type);
   switch (Wrapper) {
     case "button":
       return (
-        <Wrapper {...type} {...rest}>
+        <Wrapper type={type} {...rest}>
           {children}
         </Wrapper>
       );

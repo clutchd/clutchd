@@ -24,4 +24,22 @@ describe("Component", () => {
 
     expect(component).toBeInTheDocument();
   });
+
+  test('Render <Component tag="button" />', () => {
+    const { container } = render(<Component tag="button" />);
+    const component = container.querySelector("button");
+
+    expect(component).toBeInTheDocument();
+    expect(component).toHaveAttribute("type", "button");
+  });
+
+  test('Render <Component tag="button" type="submit" />', () => {
+    const { container, debug } = render(
+      <Component tag="button" type="submit" />
+    );
+    const component = container.querySelector("button");
+
+    expect(component).toBeInTheDocument();
+    expect(component).toHaveAttribute("type", "submit");
+  });
 });
