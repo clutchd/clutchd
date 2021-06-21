@@ -1,2 +1,2 @@
-export type { default as IComponent } from "./component.interface";
+export { IComponent } from "./component";
 export { default as Component } from "./component";

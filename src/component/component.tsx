@@ -1,4 +1,11 @@
-import IComponent from "./component.interface";
+import * as React from "react";
+
+/**
+ * An extendable React component that supports all standard HTMLAttributes
+ */
+export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
+  tag?: keyof JSX.IntrinsicElements;
+}
 
 /**
  * A higher-order component that adds support for all HTMLAttributes
