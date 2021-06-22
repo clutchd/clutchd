@@ -17,7 +17,6 @@ const Component: React.FunctionComponent<IComponent> = ({
   type = "button",
   ...rest
 }) => {
-  console.log(type);
   switch (Wrapper) {
     case "button":
       return (
