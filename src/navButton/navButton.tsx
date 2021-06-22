@@ -1,0 +1,88 @@
+import * as React from "react";
+import { useState, useEffect } from "react";
+import { NextRouter, useRouter } from "next/router";
+import classNames from "classnames";
+import { IButton, Button } from "../button";
+import { Link } from "../link";
+
+export interface INavButton extends IButton {
+  active?: {
+    state?: boolean;
+    className?: string;
+    "!className"?: string;
+  };
+  activeClassName?: string;
+  href?: string;
+}
+
+export default function NavButton({
+  active = {
+    state: false,
+    className: "",
+    "!className": "",
+  },
+  type = "button",
+  children,
+  href,
+  ...props
+}: INavButton) {
+  const router = useRouter();
+  const originalActive = active.state;
+  const [activeState, setActiveState] = useState(
+    getActiveState(router, originalActive, href)
+  );
+  const [className, setClassName] = useState(
+    classNames(
+      props.className,
+      active.className ?? activeState,
+      active["!className"] ?? !activeState
+    )
+  );
+
+  useEffect(
+    () =>
+      setClassName(
+        classNames(
+          props.className,
+          active.className ?? activeState,
+          active["!className"] ?? !activeState
+        )
+      ),
+    [activeState]
+  );
+
+  useEffect(() => {
+    setActiveState(getActiveState(router, originalActive, href));
+  }, [href, router]);
+
+  if (href) {
+    return (
+      <Link href={href} className={className}>
+        {children}
+      </Link>
+    );
+  }
+
+  return (
+    <Button
+      {...props}
+      tag="button"
+      className={className}
+      onClick={props.onClick}
+      type={type}
+      children={children}
+    />
+  );
+}
+
+function getActiveState(
+  router: NextRouter,
+  originalActive?: boolean,
+  href?: string
+) {
+  const fullHref = href?.startsWith("/") ? href : `/${href}`;
+  if (router?.route.startsWith(fullHref)) {
+    return true;
+  }
+  return originalActive;
+}
