@@ -11,7 +11,6 @@ export interface INavButton extends IButton {
     className?: string;
     "!className"?: string;
   };
-  activeClassName?: string;
   href?: string;
 }
 
