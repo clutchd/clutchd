@@ -21,13 +21,14 @@ describe("NavButton", () => {
     expect(component).toBeInTheDocument();
   });
 
-  test('Render <NavButton href="/" active={{className: "active-class"}} /> on Page "/"', async () => {
+  test('Render <NavButton href="/" /> on Page "/"', async () => {
     const { container } = render(
       <RouterContext.Provider value={MockRouter()}>
         <NavButton
           href="/"
           active={{
             className: "active-class",
+            "!className": "inactive-class",
           }}
         />
       </RouterContext.Provider>
@@ -36,14 +37,16 @@ describe("NavButton", () => {
 
     expect(component).toBeInTheDocument();
     expect(component).toHaveClass("active-class");
+    expect(component).not.toHaveClass("inactive-class");
   });
 
-  test('Render <NavButton href="/dashboard" active={{"!className": "inactive-class"}} /> on Page "/"', async () => {
+  test('Render <NavButton href="/dashboard" /> on Page "/"', async () => {
     const { container } = render(
       <RouterContext.Provider value={MockRouter()}>
         <NavButton
           href="/dashboard"
           active={{
+            className: "active-class",
             "!className": "inactive-class",
           }}
         />
@@ -53,5 +56,6 @@ describe("NavButton", () => {
 
     expect(component).toBeInTheDocument();
     expect(component).toHaveClass("inactive-class");
+    expect(component).not.toHaveClass("active-class");
   });
 });
