@@ -26,15 +26,15 @@ export default function NavButton({
   ...props
 }: INavButton) {
   const router = useRouter();
-  const originalActive = active.state;
+  const originalActive = active.state || false;
   const [activeState, setActiveState] = useState(
     getActiveState(router, originalActive, href)
   );
+
   const [className, setClassName] = useState(
     classNames(
       props.className,
-      active.className ?? activeState,
-      active["!className"] ?? !activeState
+      activeState ? active.className : active["!className"]
     )
   );
 
@@ -43,8 +43,7 @@ export default function NavButton({
       setClassName(
         classNames(
           props.className,
-          active.className ?? activeState,
-          active["!className"] ?? !activeState
+          activeState ? active.className : active["!className"]
         )
       ),
     [activeState]
