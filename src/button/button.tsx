@@ -1,5 +1,5 @@
 import * as React from "react";
-import { IComponent, Component } from "../component";
+import { Component, IComponent } from "../component";
 
 export interface IButton extends IComponent {}
 

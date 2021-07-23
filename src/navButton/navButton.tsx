@@ -1,8 +1,8 @@
-import * as React from "react";
-import { useState, useEffect } from "react";
-import { NextRouter, useRouter } from "next/router";
 import classNames from "classnames";
-import { IButton, Button } from "../button";
+import { NextRouter, useRouter } from "next/router";
+import * as React from "react";
+import { useEffect, useState } from "react";
+import { Button, IButton } from "../button";
 import { Link } from "../link";
 
 export interface INavButton extends IButton {

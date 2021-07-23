@@ -1,9 +1,9 @@
-import React from "react";
 import "@testing-library/jest-dom";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import { RouterContext } from "next/dist/next-server/lib/router-context";
-import NavButton from "./navButton";
+import React from "react";
 import { MockRouter } from "../../tests/mockRouter";
+import NavButton from "./navButton";
 
 describe("NavButton", () => {
   test("Render <NavButton />", () => {
