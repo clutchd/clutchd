@@ -1,2 +1,1 @@
-export { INavButton } from "./navButton";
-export { default as NavButton } from "./navButton";
+export { default as NavButton, INavButton } from "./navButton";
