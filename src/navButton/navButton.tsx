@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classNames from "../../libs/classnames";
 import { NextRouter, useRouter } from "next/router";
 import * as React from "react";
 import { useEffect, useState } from "react";

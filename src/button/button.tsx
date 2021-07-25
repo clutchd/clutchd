@@ -1,5 +1,4 @@
 import * as React from "react";
-import { IBaseComponent } from "../component";
 
 export interface IButton
   extends React.DetailedHTMLProps<
