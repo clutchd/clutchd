@@ -1,7 +1,13 @@
 import * as React from "react";
-import { Component, IComponent } from "../component";
+import { IBaseComponent } from "../component";
 
-export interface IButton extends IComponent {}
+export interface IButton
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {
+  type?: "button" | "submit";
+}
 
 export default function Button({
   type = "button",
@@ -9,12 +15,11 @@ export default function Button({
   ...props
 }: IButton) {
   return (
-    <Component
+    <button
       {...props}
-      tag="button"
+      type={type}
       className={props.className}
       onClick={props.onClick}
-      type={type}
       children={children}
     />
   );

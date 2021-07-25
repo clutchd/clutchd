@@ -64,7 +64,6 @@ export default function NavButton({
   return (
     <Button
       {...props}
-      tag="button"
       className={className}
       onClick={props.onClick}
       type={type}

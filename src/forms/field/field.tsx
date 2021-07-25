@@ -1,7 +1,8 @@
 import classNames from "classnames";
 import * as React from "react";
+import { Component } from "../../component";
 
-export interface IInputField
+export interface IField
   extends React.DetailedHTMLProps<
     React.InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement
@@ -10,11 +11,7 @@ export interface IInputField
   helperText?: string;
 }
 
-export default function InputField({
-  error,
-  helperText,
-  ...props
-}: IInputField) {
+export default function Field({ error, helperText, ...props }: IField) {
   const className = classNames(
     props.className,
     `text-gray-900 w-full rounded-md border text-base font-normal transition-all px-2 py-1 
@@ -40,7 +37,7 @@ export default function InputField({
 
   return (
     <>
-      <input {...props} className={className} />
+      <Component as={as} {...props} className={className} />
       <div
         className={`pt-1 mb-2 text-sm text-red-600 transition-all ${
           helperText ? "h-6" : "h-0"

@@ -1,1 +1,1 @@
-export { default as Component, IComponent } from "./component";
+export { default as Component, IBaseComponent, IComponent } from "./component";
