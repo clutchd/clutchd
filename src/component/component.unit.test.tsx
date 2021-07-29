@@ -18,18 +18,17 @@ describe("Component", () => {
     expect(component).toHaveClass("w-full");
   });
 
-  test('Render <Component tag="p" />', () => {
+  test('Render <Component as="p" />', () => {
     const { container } = render(<Component as="p" />);
     const component = container.querySelector("p");
 
     expect(component).toBeInTheDocument();
   });
 
-  test('Render <Component tag="button" />', () => {
+  test('Render <Component as="button" />', () => {
     const { container } = render(<Component as="button" />);
     const component = container.querySelector("button");
 
     expect(component).toBeInTheDocument();
-    expect(component).toHaveAttribute("type", "button");
   });
 });
