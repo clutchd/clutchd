@@ -1,32 +1,26 @@
 import * as React from "react";
 
 /**
+ * An extendable React component that can supports any standard HTMLAttributes
+ */
+export interface IBaseComponent<T> extends React.HTMLAttributes<T> {}
+
+/**
  * An extendable React component that supports all standard HTMLAttributes
  */
-export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
-  tag?: keyof JSX.IntrinsicElements;
-  type?: "button" | "submit";
+export interface IComponent extends IBaseComponent<HTMLOrSVGElement> {
+  as?: keyof JSX.IntrinsicElements;
 }
 
 /**
  * A higher-order component that adds support for all HTMLAttributes
  */
 const Component: React.FunctionComponent<IComponent> = ({
-  tag: Wrapper = "div",
+  as: Wrapper = "div",
   children,
-  type = "button",
   ...rest
 }) => {
-  switch (Wrapper) {
-    case "button":
-      return (
-        <Wrapper type={type} {...rest}>
-          {children}
-        </Wrapper>
-      );
-    default:
-      return <Wrapper {...rest}>{children}</Wrapper>;
-  }
+  return <Wrapper {...rest}>{children}</Wrapper>;
 };
 
 export default Component;

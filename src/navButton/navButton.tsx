@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classNames from "../../libs/classnames";
 import { NextRouter, useRouter } from "next/router";
 import * as React from "react";
 import { useEffect, useState } from "react";
@@ -64,7 +64,6 @@ export default function NavButton({
   return (
     <Button
       {...props}
-      tag="button"
       className={className}
       onClick={props.onClick}
       type={type}

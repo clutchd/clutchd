@@ -1,0 +1,20 @@
+import { Meta, Story, Canvas, Description } from "@storybook/addon-docs/blocks";
+import Field from "../field";
+import README from "../README.md";
+
+<Meta title={"Forms/Field"} />
+
+<Description>{README}</Description>
+
+<Canvas>
+  <Story name="Default">
+    <Field />
+  </Story>
+  <Story name="Select">
+    <Field as="select">
+      <option>Option 1</option>
+      <option>Option 2</option>
+      <option>Option 3</option>
+    </Field>
+  </Story>
+</Canvas>
