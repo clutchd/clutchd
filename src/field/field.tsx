@@ -31,7 +31,7 @@ export default function Field({
       return "bg-white border-red-500 focus:ring-opacity-50 focus:ring focus:ring-red-300";
     }
 
-    return "border-gray-400 focus:ring-opacity-50 focus:ring focus:border-blue-300 focus:ring-blue-300";
+    return "bg-white border-gray-400 focus:ring-opacity-50 focus:ring focus:border-blue-300 focus:ring-blue-300";
   }
 
   return (

@@ -20,7 +20,7 @@ export default function Label({ required, ...props }: ILabel) {
     >
       {props.children}
       {required ? (
-        <span className="float-right text-red-600 font-light">*</span>
+        <span className="pl-1 text-red-600 font-light">*</span>
       ) : null}
     </label>
   );
