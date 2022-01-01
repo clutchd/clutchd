@@ -1,4 +1,4 @@
-import classNames from "../../libs/classnames";
+import clsx from "clsx";
 import { NextRouter, useRouter } from "next/router";
 import * as React from "react";
 import { useEffect, useState } from "react";
@@ -32,16 +32,13 @@ export default function NavButton({
   );
 
   const [className, setClassName] = useState(
-    classNames(
-      props.className,
-      activeState ? active.className : active["!className"]
-    )
+    clsx(props.className, activeState ? active.className : active["!className"])
   );
 
   useEffect(
     () =>
       setClassName(
-        classNames(
+        clsx(
           props.className,
           activeState ? active.className : active["!className"]
         )

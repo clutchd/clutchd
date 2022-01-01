@@ -1,5 +1,5 @@
-import classnames from "../../libs/classnames";
 import * as React from "react";
+import clsx from "clsx";
 import { Component } from "../component";
 
 export interface IField
@@ -39,7 +39,7 @@ export default function Field({
       <Component
         as={as}
         {...props}
-        className={classnames(
+        className={clsx(
           props.className,
           `text-gray-900 w-full rounded-md border text-base font-normal transition-all px-2 py-1 outline-none shadow-sm`,
           getStateClasses()
