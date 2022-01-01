@@ -1,14 +1,15 @@
 import * as React from "react";
 
 /**
- * An extendable React component that can supports any standard HTMLAttributes
+ * An extendable React component that can support any standard JSX.IntrinsicElements
  */
-export interface IBaseComponent<T> extends React.HTMLAttributes<T> {}
+export type IBaseComponent<K extends keyof JSX.IntrinsicElements> =
+  JSX.IntrinsicElements[K];
 
 /**
  * An extendable React component that supports all standard HTMLAttributes
  */
-export interface IComponent extends IBaseComponent<HTMLOrSVGElement> {
+export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
   as?: keyof JSX.IntrinsicElements;
 }
 

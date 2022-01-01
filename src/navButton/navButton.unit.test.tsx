@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
-import { RouterContext } from 'next/dist/shared/lib/router-context';
+import { RouterContext } from "next/dist/shared/lib/router-context";
 import React from "react";
 import { MockRouter } from "../../tests/mockRouter";
 import NavButton from "./navButton";

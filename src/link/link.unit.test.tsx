@@ -10,7 +10,7 @@ describe("Link", () => {
     expect(component).toBeInTheDocument();
   });
 
-  test('Render link to www.google.com', () => {
+  test("Render link to www.google.com", () => {
     const { container } = render(<Link href="www.google.com" />);
     const component = container.querySelector("a");
     expect(component).toBeInTheDocument();
