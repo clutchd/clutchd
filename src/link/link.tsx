@@ -1,5 +1,6 @@
 import clsx from "clsx";
-import { HTMLMotionProps, motion } from "framer-motion";
+import { HTMLMotionProps } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 import NextLink from "next/link";
 import React from "react";
 
