@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 /**
  * An extendable React component that can support any standard JSX.IntrinsicElements

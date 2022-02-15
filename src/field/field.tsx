@@ -1,19 +1,15 @@
-import * as React from "react";
 import clsx from "clsx";
-import { Component } from "../component";
+import { HTMLMotionProps, motion } from "framer-motion";
+import React from "react";
 
-export interface IField
-  extends React.DetailedHTMLProps<
-    React.InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement
-  > {
-  as?: "input" | "select";
+export interface IField extends HTMLMotionProps<"input"> {
+  disabled?: boolean;
   error?: boolean;
   helperText?: string;
+  readOnly?: boolean;
 }
 
 export default function Field({
-  as = "input",
   error,
   helperText,
   ...props
@@ -34,21 +30,23 @@ export default function Field({
     return "bg-white border-gray-400 focus:ring-opacity-50 focus:ring focus:border-blue-300 focus:ring-blue-300";
   }
 
+  const classNames = (
+    clsx(
+      props.className,
+      `text-gray-900 w-full rounded-md border text-base font-normal transition-all px-2 py-1 outline-none shadow-sm`,
+      getStateClasses()
+    )
+  );
+
   return (
     <>
-      <Component
-        as={as}
+      <motion.input
         {...props}
-        className={clsx(
-          props.className,
-          `text-gray-900 w-full rounded-md border text-base font-normal transition-all px-2 py-1 outline-none shadow-sm`,
-          getStateClasses()
-        )}
-      />
+        className={classNames}>
+      </motion.input>
       <div
-        className={`pt-1 mb-2 text-sm text-red-600 transition-all ${
-          helperText ? "h-6" : "h-0"
-        }`}
+        className={`pt-1 mb-2 text-sm text-red-600 transition-all ${helperText ? "h-6" : "h-0"
+          }`}
       >
         {helperText}
       </div>

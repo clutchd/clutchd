@@ -1,17 +1,14 @@
 import clsx from "clsx";
-import * as React from "react";
+import { HTMLMotionProps, motion } from "framer-motion";
+import React from "react";
 
-export interface ILabel
-  extends React.DetailedHTMLProps<
-    React.LabelHTMLAttributes<HTMLLabelElement>,
-    HTMLLabelElement
-  > {
+export interface ILabel extends HTMLMotionProps<"label"> {
   required?: boolean;
 }
 
 export default function Label({ required, ...props }: ILabel) {
   return (
-    <label
+    <motion.label
       {...props}
       className={clsx(
         props.className,
@@ -22,6 +19,6 @@ export default function Label({ required, ...props }: ILabel) {
       {required ? (
         <span className="pl-1 text-red-600 font-light">*</span>
       ) : null}
-    </label>
+    </motion.label>
   );
 }
