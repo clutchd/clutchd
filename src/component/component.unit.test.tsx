@@ -1,16 +1,17 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
+import React from "react";
 import Component from "./component";
 
 describe("Component", () => {
-  test("Render <Component />", () => {
+  test("Render default component", () => {
     const { container } = render(<Component />);
     const component = container.querySelector("div");
 
     expect(component).toBeInTheDocument();
   });
 
-  test('Render <Component className="w-full" />', () => {
+  test("Render component with w-full class", () => {
     const { container } = render(<Component className="w-full" />);
     const component = container.querySelector("div");
 
@@ -18,14 +19,14 @@ describe("Component", () => {
     expect(component).toHaveClass("w-full");
   });
 
-  test('Render <Component as="p" />', () => {
+  test("Render component as p tag", () => {
     const { container } = render(<Component as="p" />);
     const component = container.querySelector("p");
 
     expect(component).toBeInTheDocument();
   });
 
-  test('Render <Component as="button" />', () => {
+  test("Render component as button tag", () => {
     const { container } = render(<Component as="button" />);
     const component = container.querySelector("button");
 

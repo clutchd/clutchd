@@ -14,10 +14,12 @@
   "scripts": {
     "build-storybook": "rm -rf build && build-storybook -c .storybook -o build",
     "build-components": "rm -rf dist && tsc -p .",
+    "clean": "npm run prettier && npm run lint",
     "start": "start-storybook",
     "dev": "start-storybook -p 6006 || $PORT",
     "commit": "npx git-cz",
-    "format": "prettier-eslint --write \"src/**/*.{ts,tsx,js,jsx,mdx}\"",
+    "prettier": "prettier --write .",
+    "lint": "eslint --fix",
     "test": "jest"
   },
   "jest": {
@@ -27,32 +29,12 @@
       "src/**/*.{ts,tsx}",
       "!src/**/index.{ts,tsx}"
     ],
-    "globalSetup": "<rootDir>/tests/jest.setup.ts",
     "testEnvironment": "jsdom",
     "verbose": true
   },
   "peerDependencies": {
-    "react": ">=16.13.1",
-    "react-dom": ">=16.13.1"
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-backgrounds": "^6.2.9",
-    "@storybook/addon-docs": "^6.2.9",
-    "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.2.9",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@types/classnames": "^2.3.1",
-    "@types/jest": "^26.0.23",
-    "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.8",
-    "cz-conventional-changelog": "^3.3.0",
-    "jest": "^27.0.4",
-    "prettier-eslint-cli": "^5.0.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "typescript": "^4.3.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "main": "dist/src/index.js",
   "files": [
@@ -63,10 +45,30 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-backgrounds": "^6.4.9",
+    "@storybook/addon-docs": "^6.4.9",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@types/jest": "^27.4.0",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "clsx": "^1.1.1",
+    "eslint": "^8.6.0",
+    "eslint-config-next": "^12.0.7",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.5.4"
+  },
   "dependencies": {
-    "autoprefixer": "^10.2.6",
-    "next": "^10.2.3",
-    "postcss": "^8.3.4",
-    "tailwindcss": "^2.1.4"
+    "@storybook/react": "^6.4.9",
+    "framer-motion": "^5.5.5",
+    "next": "^12.0.7",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.8"
   }
 }

@@ -37,8 +37,8 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Format
-        run: npm run format
+      - name: Clean
+        run: npm run clean
 
       - name: Verify build
         run: npm run build-components
