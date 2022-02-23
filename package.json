@@ -66,7 +66,7 @@
   },
   "dependencies": {
     "@storybook/react": "^6.4.9",
-    "framer-motion": "^5.5.5",
+    "framer-motion": "^6.2.8",
     "next": "^12.0.7",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.0.8"
