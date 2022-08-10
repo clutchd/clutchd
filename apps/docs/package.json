@@ -1,5 +1,5 @@
 {
-  "name": "@acme/docs",
+  "name": "@clutchd/docs",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,12 +9,12 @@
     "clean": "rm -rf .turbo && rm -rf node_modules"
   },
   "dependencies": {
-    "@acme/core": "*",
+    "@clutchd/ui": "*",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@acme/tsconfig": "*",
+    "@clutchd/tsconfig": "*",
     "@storybook/addon-actions": "^6.4.18",
     "@storybook/addon-docs": "^6.4.22",
     "@storybook/addon-essentials": "^6.4.18",
@@ -23,7 +23,7 @@
     "@storybook/react": "^6.4.18",
     "@vitejs/plugin-react": "^1.3.2",
     "autoprefixer": "^10.4.8",
-    "eslint-config-acme": "*",
+    "eslint-config-clutchd": "*",
     "postcss": "^8.4.16",
     "serve": "^13.0.2",
     "tailwindcss": "^3.1.8",
