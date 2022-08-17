@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -24,7 +24,7 @@
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "eslint": "^8.15.0",
-        "jest": "^28.1.2",
+    "jest": "^28.1.2",
     "jest-environment-jsdom": "^28.1.2",
     "react": "^18.1.0",
     "tsup": "^5.10.1",
