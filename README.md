@@ -179,17 +179,3 @@ When you push your code to GitHub, the [GitHub Action](https://github.com/change
 ```bash
 turbo run build --filter=docs^... && changeset publish
 ```
-
-Turborepo runs the `build` script for all publishable packages (excluding docs) and publishes the packages to npm. By default, this example includes `clutchd` as the npm organization. To change this, do the following:
-
-- Rename folders in `packages/*` to replace `clutchd` with your desired scope
-- Search and replace `clutchd` with your desired scope
-- Re-run `yarn install`
-
-To publish packages to a private npm organization scope, **remove** the following from each of the `package.json`'s
-
-```diff
-- "publishConfig": {
--  "access": "public"
-- },
-```

@@ -13,14 +13,19 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "TIMING=1 eslint src/**/*.ts* --fix",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "test": "jest"
   },
   "devDependencies": {
+    "@clutchd/eslintconfig": "*",
     "@clutchd/tsconfig": "*",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^13.2.0",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
     "eslint": "^8.15.0",
-    "@clutchd/eslintconfig": "*",
+        "jest": "^28.1.2",
+    "jest-environment-jsdom": "^28.1.2",
     "react": "^18.1.0",
     "tsup": "^5.10.1",
     "typescript": "^4.5.3"
