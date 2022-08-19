@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.1.4
+
+### Patch Changes
+
+- 8bb80e6: Fix release script
+
 ## 0.1.3
 
 ### Patch Changes
