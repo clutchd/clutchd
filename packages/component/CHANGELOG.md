@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.1.3
+
+### Patch Changes
+
+- 1e204b4: Fix package files again
+
 ## 0.1.2
 
 ### Patch Changes
