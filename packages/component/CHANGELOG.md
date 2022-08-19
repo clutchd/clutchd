@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.1.2
+
+### Patch Changes
+
+- e61e20b: Add prepublish script
+
 ## 0.1.1
 
 ### Patch Changes
