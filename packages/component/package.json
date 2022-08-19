@@ -1,12 +1,10 @@
 {
   "name": "@clutchd/component",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist/**"
-  ],
+  "files": ["dist"],
   "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
