@@ -1,0 +1,19 @@
+{
+  "name": "@clutchd/config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "files": [
+    "*.js"
+  ],
+  "scripts": {
+    "lint": "eslint \"*.js\" --fix",
+    "clean": "rm -rf node_modules .turbo"
+  },
+  "dependencies": {
+    "eslint-config-next": "^12.2.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "7.28.0",
+    "next-transpile-modules": "9.0.0"
+  }
+}
