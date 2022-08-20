@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.2.0
+
+### Minor Changes
+
+- feab44d: Added additional component types
+
 ## 0.1.5
 
 ### Patch Changes
