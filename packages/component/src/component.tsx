@@ -3,7 +3,17 @@ import * as React from "react";
 /**
  * Supported components
  */
-const NODES = ["a", "button", "div", "p", "span"] as const;
+const NODES = [
+  "a",
+  "button",
+  "div",
+  "footer",
+  "header",
+  "main",
+  "p",
+  "section",
+  "span",
+] as const;
 
 /**
  * Props without the 'ref' prop
