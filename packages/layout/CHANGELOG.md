@@ -1,5 +1,12 @@
 # @clutchd/layout
 
+## 0.2.2
+
+### Patch Changes
+
+- ed44575: Fix page styles
+- f461d25: Fix page export
+
 ## 0.2.1
 
 ### Patch Changes
