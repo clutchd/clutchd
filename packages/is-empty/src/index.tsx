@@ -1,0 +1,1 @@
+export { IsEmpty } from "./isEmpty";
