@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.1.5
+
+### Patch Changes
+
+- 946c550: Component now acts as an extendable html tag. 'as' prop has been temporarily removed.
+
 ## 0.1.4
 
 ### Patch Changes
