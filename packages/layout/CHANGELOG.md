@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.3.1
+
+### Patch Changes
+
+- c560f99: Improve padding consistency
+
 ## 0.3.0
 
 ### Minor Changes
