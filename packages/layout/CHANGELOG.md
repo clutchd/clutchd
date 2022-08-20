@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.2.3
+
+### Patch Changes
+
+- 66e3763: Fix flex direction
+
 ## 0.2.2
 
 ### Patch Changes
