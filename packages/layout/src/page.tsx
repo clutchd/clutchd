@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 function Page({
   ...props
-}: ComponentPropsWithoutRef<typeof Component.section>) {
+}: ComponentPropsWithoutRef<typeof Component.div>) {
   const defaultClassName = "min-h-screen min-w-screen";
   return (
     <section {...props} className={clsx(defaultClassName, props.className)} />
