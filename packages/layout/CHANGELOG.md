@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.3.0
+
+### Minor Changes
+
+- d98884d: Remove colors from default styles, improve padding
+
 ## 0.2.3
 
 ### Patch Changes
