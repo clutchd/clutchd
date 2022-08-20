@@ -38,7 +38,7 @@
     "react-dom": "^18.1.0"
   },
   "dependencies": {
-    "@clutchd/component": "^0.3.0",
+    "@clutchd/component": "^0.2.0",
     "clsx": "^1.2.1"
   }
 }
