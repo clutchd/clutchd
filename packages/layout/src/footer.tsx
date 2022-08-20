@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { Component, ComponentPropsWithoutRef } from "..";
 
-export default function Footer({
+function Footer({
   ...props
 }: ComponentPropsWithoutRef<typeof Component.footer>) {
   const defaultClassName =
@@ -10,3 +10,5 @@ export default function Footer({
     <footer {...props} className={clsx(defaultClassName, props.className)} />
   );
 }
+
+export { Footer };

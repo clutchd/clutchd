@@ -1,18 +1,16 @@
-import { default as Content } from "./content";
-import { default as Footer } from "./footer";
-import { default as Header } from "./header";
-import {
-  default as InternalLayout,
-  ILayout as IInternalLayout,
-} from "./layout";
+import { Component, ComponentPropsWithoutRef } from "@clutchd/component";
+import { Content } from "./content";
+import { Footer } from "./footer";
+import { Header } from "./header";
+import { Layout as Section } from "./layout";
 
-interface ILayout extends React.FC<IInternalLayout> {
+interface ILayout extends ComponentPropsWithoutRef<typeof Component.section> {
   Content: typeof Content;
   Footer: typeof Footer;
   Header: typeof Header;
 }
 
-const Layout = InternalLayout as ILayout;
+const Layout = Section as unknown as ILayout;
 
 Layout.Content = Content;
 Layout.Footer = Footer;

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { Component, ComponentPropsWithoutRef } from "..";
 
-export default function Layout({
+function Layout({
   ...props
 }: ComponentPropsWithoutRef<typeof Component.section>) {
   const defaultClassName =
@@ -10,3 +10,5 @@ export default function Layout({
     <section {...props} className={clsx(defaultClassName, props.className)} />
   );
 }
+
+export { Layout };

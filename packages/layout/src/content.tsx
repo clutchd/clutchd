@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import { Component, ComponentPropsWithoutRef } from "..";
 
-export default function Content({
+function Content({
   ...props
 }: ComponentPropsWithoutRef<typeof Component.main>) {
   const defaultClassName = "flex flex-col flex-1";
@@ -9,3 +9,5 @@ export default function Content({
     <main {...props} className={clsx(defaultClassName, props.className)} />
   );
 }
+
+export { Content };
