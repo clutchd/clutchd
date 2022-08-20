@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { Component, ComponentPropsWithoutRef } from "..";
+import { Component, ComponentPropsWithoutRef } from "@clutchd/component";
 
 function Footer({
   ...props
