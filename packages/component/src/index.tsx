@@ -1,2 +1,2 @@
-export { default as Component } from "./component";
-export type { IBaseComponent, IComponent } from "./component";
+export { Component } from "./component";
+export type { ComponentPropsWithoutRef, ComponentPropsWithRef } from "./component";
