@@ -1,19 +1,23 @@
-import { Component, ComponentPropsWithoutRef } from "@clutchd/component";
 import { Content } from "./content";
 import { Footer } from "./footer";
 import { Header } from "./header";
-import { Layout as Section } from "./layout";
+import { Page } from "./page";
+import { Section } from "./section";
 
-interface ILayout extends ComponentPropsWithoutRef<typeof Component.section> {
+type ILayout = {
   Content: typeof Content;
   Footer: typeof Footer;
   Header: typeof Header;
-}
+  Page: typeof Page;
+  Section: typeof Section;
+};
 
-const Layout = Section as unknown as ILayout;
-
-Layout.Content = Content;
-Layout.Footer = Footer;
-Layout.Header = Header;
+const Layout: ILayout = {
+  Content: Content,
+  Footer: Footer,
+  Header: Header,
+  Page: Page,
+  Section: Section,
+};
 
 export { Layout };
