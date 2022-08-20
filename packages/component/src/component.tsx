@@ -1,27 +1,66 @@
-import * as React from "react";
+import * as React from 'react';
 
 /**
- * An extendable React component that can support any standard JSX.IntrinsicElements
+ * Supported components
  */
-export type IBaseComponent<K extends keyof JSX.IntrinsicElements> =
-  JSX.IntrinsicElements[K];
+const NODES = [
+  'a',
+  'button',
+  'div',
+  'p',
+  'span',
+] as const;
 
 /**
- * An extendable React component that supports all standard HTMLAttributes
+ * Props without the 'ref' prop
  */
-export interface IComponent extends React.HTMLAttributes<HTMLOrSVGElement> {
-  as?: keyof JSX.IntrinsicElements;
-}
+type PropsWithoutRef<P> = P extends any ? ('ref' extends keyof P ? Pick<P, Exclude<keyof P, 'ref'>> : P) : P;
 
 /**
- * A higher-order component that adds support for all HTMLAttributes
+ * ComponentProps without the 'ref' prop
  */
-const Component: React.FunctionComponent<IComponent> = ({
-  as: Wrapper = "div",
-  children,
-  ...rest
-}) => {
-  return <Wrapper {...rest}>{children}</Wrapper>;
+type ComponentPropsWithoutRef<T extends React.ElementType> = PropsWithoutRef<
+  React.ComponentProps<T>
+>;
+
+/**
+ * Component props with the 'ref' prop
+ */
+type ComponentPropsWithRef<E extends React.ElementType> = React.ComponentPropsWithRef<E> & {
+
 };
 
-export default Component;
+/**
+ * Forwarded ref component with the 'ref' prop
+ */
+interface ForwardRefComponent<E extends React.ElementType>
+  extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> { }
+
+/**
+ * Supported components
+ */
+type Components = { [E in typeof NODES[number]]: ForwardRefComponent<E> };
+
+/**
+ * A higher-order component that extends standard html tags
+ */
+const Component = NODES.reduce((component, node) => {
+  const Node = React.forwardRef((props: ComponentPropsWithRef<typeof node>, forwardedRef: any) => {
+    const { ...componentProps } = props;
+    const Comp: any = node;
+
+    React.useEffect(() => {
+      (window as any)[Symbol.for('clutchd')] = true;
+    }, []);
+
+    return <Comp {...componentProps} ref={forwardedRef} />;
+  });
+
+  Node.displayName = `Component.${node}`;
+
+  return { ...component, [node]: Node };
+}, {} as Components);
+
+export { Component };
+export type { ComponentPropsWithoutRef, ComponentPropsWithRef };
+
