@@ -6,7 +6,7 @@ function Page({
 }: ComponentPropsWithoutRef<typeof Component.div>) {
   const defaultClassName = "min-h-screen min-w-screen";
   return (
-    <section {...props} className={clsx(defaultClassName, props.className)} />
+    <div {...props} className={clsx(defaultClassName, props.className)} />
   );
 }
 
