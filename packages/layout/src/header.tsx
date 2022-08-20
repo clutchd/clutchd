@@ -1,13 +1,11 @@
-import clsx from "clsx";
 import { Component, ComponentPropsWithoutRef } from "@clutchd/component";
+import clsx from "clsx";
 
 function Header({
   ...props
 }: ComponentPropsWithoutRef<typeof Component.header>) {
-  const defaultClassName = "flex grow-1 shrink-0 px-8 py-2";
-  return (
-    <header {...props} className={clsx(defaultClassName, props.className)} />
-  );
+  const className = clsx("flex grow-1 shrink-0 p-6 sm:p-8", props.className);
+  return <header {...props} className={className} />;
 }
 
 export { Header };

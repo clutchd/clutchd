@@ -4,11 +4,8 @@ import clsx from "clsx";
 function Section({
   ...props
 }: ComponentPropsWithoutRef<typeof Component.section>) {
-  const defaultClassName =
-    "flex flex-col flex-1 min-h-0 bg-gray-100 text-gray-900";
-  return (
-    <section {...props} className={clsx(defaultClassName, props.className)} />
-  );
+  const className = clsx("flex flex-col flex-1", props.className);
+  return <section {...props} className={className} />;
 }
 
 export { Section };
