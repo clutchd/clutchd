@@ -1,7 +1,8 @@
 import * as React from "react";
+import { AsChild } from "./asChild";
 
 /**
- * Supported components
+ * Supported `BaseComponent` nodes
  */
 const NODES = [
   "a",
@@ -16,7 +17,7 @@ const NODES = [
 ] as const;
 
 /**
- * Props without the 'ref' prop
+ * Generic type to define `any` without the 'ref' prop
  */
 type PropsWithoutRef<P> = P extends any
   ? "ref" extends keyof P
@@ -25,37 +26,39 @@ type PropsWithoutRef<P> = P extends any
   : P;
 
 /**
- * ComponentProps without the 'ref' prop
+ * Generic type to define `React.ElementType` props without the 'ref' prop
  */
-type ComponentPropsWithoutRef<T extends React.ElementType> = PropsWithoutRef<
+type ReactPropsWithoutRef<T extends React.ElementType> = PropsWithoutRef<
   React.ComponentProps<T>
 >;
 
 /**
- * Component props with the 'ref' prop
+ * Type to define `Component` props with the 'ref' prop
  */
 type ComponentPropsWithRef<E extends React.ElementType> =
-  React.ComponentPropsWithRef<E> & {};
+  React.ComponentPropsWithRef<E> & {
+    asChild?: boolean;
+  };
 
 /**
- * Forwarded ref component with the 'ref' prop
+ * Type to define `Component` as a forwarded ref component with the 'ref' prop
  */
 interface ForwardRefComponent<E extends React.ElementType>
   extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> {}
 
 /**
- * Supported components
+ * Type to define the supported `Component` nodes
  */
 type Components = { [E in typeof NODES[number]]: ForwardRefComponent<E> };
 
 /**
- * A higher-order component that extends standard html tags
+ * `Component` - a higher-order component that extends standard html tags
  */
 const Component = NODES.reduce((component, node) => {
   const Node = React.forwardRef(
     (props: ComponentPropsWithRef<typeof node>, forwardedRef: any) => {
-      const { ...componentProps } = props;
-      const Comp: any = node;
+      const { asChild, ...componentProps } = props;
+      const Comp: any = asChild ? AsChild : node;
 
       React.useEffect(() => {
         (window as any)[Symbol.for("clutchd")] = true;
@@ -65,10 +68,10 @@ const Component = NODES.reduce((component, node) => {
     }
   );
 
-  Node.displayName = `Component.${node}`;
+  Node.displayName = `BaseComponent.${node}`;
 
   return { ...component, [node]: Node };
 }, {} as Components);
 
 export { Component };
-export type { ComponentPropsWithoutRef, ComponentPropsWithRef };
+export type { ComponentPropsWithRef, ReactPropsWithoutRef };

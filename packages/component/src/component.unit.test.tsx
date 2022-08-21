@@ -11,7 +11,11 @@ describe("Component", () => {
   });
 
   test("Render p component", () => {
-    const { container } = render(<Component.p />);
+    const { container } = render(
+      <Component.div asChild>
+        <p>Rendering a div as a paragraph!</p>
+      </Component.div>
+    );
     const component = container.querySelector("p");
 
     expect(component).toBeInTheDocument();
