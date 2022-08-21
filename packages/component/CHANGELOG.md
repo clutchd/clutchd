@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.3.0
+
+### Minor Changes
+
+- 57159dd: Add asChild functionality
+
 ## 0.2.0
 
 ### Minor Changes
