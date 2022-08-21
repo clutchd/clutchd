@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.3.3
+
+### Patch Changes
+
+- 38b6357: Fix imports
+
 ## 0.3.2
 
 ### Patch Changes
