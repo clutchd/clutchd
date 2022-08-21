@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.3.1
+
+### Patch Changes
+
+- bed78e4: Export AsChild components
+
 ## 0.3.0
 
 ### Minor Changes
