@@ -1,6 +1,6 @@
 {
-  "name": "@clutchd/is-empty",
-  "version": "1.0.0",
+  "name": "@clutchd/protect",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -17,12 +17,30 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^13.2.0",
+    "@types/react": "^17.0.37",
+    "autoprefixer": "^10.4.8",
     "config": "*",
     "eslint-config-next": "^12.2.5",
     "eslint-config-prettier": "^8.5.0",
     "jest-environment-jsdom": "^28.1.2",
+    "next-auth": "^4.10.3",
+    "postcss": "^8.4.16",
+    "react": "^18.1.0",
+    "tailwindcss": "^3.1.8",
     "ts-jest": "^28.0.5",
     "tsup": "^5.12.6",
     "typescript": "^4.5.5"
+  },
+  "peerDependencies": {
+    "next": "^12.1.0",
+    "next-auth": "^4.10.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "dependencies": {
+    "@clutchd/component": "^0.3.0",
+    "clsx": "^1.2.1"
   }
 }
