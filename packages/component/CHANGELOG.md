@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.3.2
+
+### Patch Changes
+
+- 400186f: Utilize React.PropsWithoutRef
+
 ## 0.3.1
 
 ### Patch Changes
