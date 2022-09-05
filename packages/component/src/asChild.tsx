@@ -160,4 +160,3 @@ function mergeProps(props: AnyProps, newProps: AnyProps) {
 
 export { AsChild, Child };
 export type { AsChildProps };
-

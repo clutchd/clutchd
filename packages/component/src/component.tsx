@@ -35,7 +35,7 @@ type ComponentPropsWithRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component with the 'ref' prop
  */
 interface ForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> { }
+  extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> {}
 
 /**
  * Type to define the supported `Component` nodes
@@ -66,4 +66,3 @@ const Component = NODES.reduce((component, node) => {
 
 export { Component };
 export type { ComponentPropsWithRef, ReactPropsWithoutRef };
-
