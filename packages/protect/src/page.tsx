@@ -7,7 +7,7 @@ interface IProtectPage {
   children?: React.ReactNode;
 }
 
-function ProtectPage({ secret = false, ...props }: IProtectPage) {
+function ProtectPage({ secret = true, ...props }: IProtectPage) {
   const { status } = useSession();
   const loading = status === "loading";
   const router = useRouter();
