@@ -13,7 +13,7 @@
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --fix",
     "clean": "rm -rf .turbo node_modules dist coverage",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "prepublish": "npm run build"
   },
   "devDependencies": {
@@ -38,9 +38,5 @@
     "next-auth": "^4.10.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
-  },
-  "dependencies": {
-    "@clutchd/component": "^0.3.0",
-    "clsx": "^1.2.1"
   }
 }
