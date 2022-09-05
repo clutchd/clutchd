@@ -18,7 +18,7 @@ interface IWithLoading {
   loading?: React.ReactNode;
 }
 
-function Validate(component: React.ReactNode): React.ReactNode {
+function Validate(component: React.ReactNode): React.ReactElement | null {
   // null is a valid response for states that were not provided
   if (component == null) {
     return null;
