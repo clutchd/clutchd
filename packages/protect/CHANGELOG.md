@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.3.2
+
+### Patch Changes
+
+- 07352d8: Fix debug logs
+
 ## 0.3.1
 
 ### Patch Changes
