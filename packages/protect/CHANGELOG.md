@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.3.0
+
+### Minor Changes
+
+- 8241f35: Introduce Protect.Component
+
 ## 0.2.0
 
 ### Minor Changes
