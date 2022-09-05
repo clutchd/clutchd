@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.3.4
+
+### Patch Changes
+
+- bc7470a: Update dependencies
+
 ## 0.3.3
 
 ### Patch Changes
