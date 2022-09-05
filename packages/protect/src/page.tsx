@@ -24,13 +24,13 @@ function ProtectPage({
 
   // if authenticated, return authenticated page
   if (authenticatedState) {
-    props.debug ?? console.log("authenticated");
+    props.debug && console.log("authenticated");
     return Validate(props.children);
   }
 
   // if page is not secret (public loading), return authenticated page
   if (loadingState && !secret) {
-    props.debug ?? console.log("public loading");
+    props.debug && console.log("public loading");
     return Validate(props.children);
   }
 
@@ -42,13 +42,13 @@ function ProtectPage({
 
   // if unauthenticated, redirect to new url
   if (status == "unauthenticated" && !loadingState) {
-    props.debug ?? console.log("unauthenticated");
+    props.debug && console.log("unauthenticated");
     router.push(redirectRoute, undefined, { shallow: true });
   }
 
   // otherwise, page is not done loading (private loading)
   // TODO: Add default loading icon/options
-  props.debug ?? console.log("private loading");
+  props.debug && console.log("private loading");
   return Validate(loading);
 }
 

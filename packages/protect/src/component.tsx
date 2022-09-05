@@ -1,7 +1,7 @@
 import { useSession } from "next-auth/react";
 import { IDebuggable, IWithLoading, IWithUnauth, Validate } from "./protect";
 
-interface IProtectComponent extends IDebuggable, IWithLoading, IWithUnauth {}
+interface IProtectComponent extends IDebuggable, IWithLoading, IWithUnauth { }
 
 function ProtectComponent({
   isAuth = true,
@@ -20,18 +20,18 @@ function ProtectComponent({
 
   // if authenticated, return authenticated component
   if (authenticatedState) {
-    props.debug ?? console.log("authenticated");
+    props.debug && console.log("authenticated");
     return Validate(props.children);
   }
 
   // if not authenticated, and not loading, return unauthenticated component
   if (!authenticatedState && !loadingState) {
-    props.debug ?? console.log("unauthenticated");
+    props.debug && console.log("unauthenticated");
     return Validate(unauth);
   }
 
   // otherwise, still loading
-  props.debug ?? console.log("loading");
+  props.debug && console.log("loading");
   return Validate(loading);
 }
 
