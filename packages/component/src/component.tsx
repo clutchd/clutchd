@@ -17,18 +17,9 @@ const NODES = [
 ] as const;
 
 /**
- * Generic type to define `any` without the 'ref' prop
- */
-type PropsWithoutRef<P> = P extends any
-  ? "ref" extends keyof P
-    ? Pick<P, Exclude<keyof P, "ref">>
-    : P
-  : P;
-
-/**
  * Generic type to define `React.ElementType` props without the 'ref' prop
  */
-type ReactPropsWithoutRef<T extends React.ElementType> = PropsWithoutRef<
+type ReactPropsWithoutRef<T extends React.ElementType> = React.PropsWithoutRef<
   React.ComponentProps<T>
 >;
 
@@ -44,7 +35,7 @@ type ComponentPropsWithRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component with the 'ref' prop
  */
 interface ForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> {}
+  extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> { }
 
 /**
  * Type to define the supported `Component` nodes
@@ -75,3 +66,4 @@ const Component = NODES.reduce((component, node) => {
 
 export { Component };
 export type { ComponentPropsWithRef, ReactPropsWithoutRef };
+
