@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.3.1
+
+### Patch Changes
+
+- 78c3f72: Fix Validate() return type
+
 ## 0.3.0
 
 ### Minor Changes
