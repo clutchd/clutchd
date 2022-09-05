@@ -1,41 +1,55 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import React from "react";
+import { IDebuggable, IWithAuth, IWithLoading, Validate } from "./protect";
 
-interface IProtectPage {
+interface IProtectPage extends IDebuggable, IWithAuth, IWithLoading {
   secret?: boolean;
-  children?: React.ReactNode;
 }
 
-function ProtectPage({ secret = true, ...props }: IProtectPage) {
+function ProtectPage({
+  isAuth = true,
+  isLoading = false,
+  loading = null,
+  secret = true,
+  ...props
+}: IProtectPage) {
   const { status } = useSession();
-  const loading = status === "loading";
   const router = useRouter();
 
-  // return authenticated page
-  if (status == "authenticated") {
-    return <>{props.children}</>;
+  // page is loading when session is loading, or custom isLoading is true
+  const loadingState = status === "loading" || isLoading;
+
+  // page is authenticated when session is authenticated, and custom isAuth is true
+  const authenticatedState = status === "authenticated" && isAuth;
+
+  // if authenticated, return authenticated page
+  if (authenticatedState) {
+    props.debug ?? console.log("authenticated");
+    return Validate(props.children);
   }
 
-  // otherwise, if page is not a secret, return page while still loading (public loading)
-  if (loading && !secret) {
-    return <>{props.children}</>;
+  // if page is not secret (public loading), return authenticated page
+  if (loadingState && !secret) {
+    props.debug ?? console.log("public loading");
+    return Validate(props.children);
   }
 
   // otherwise, generate a potential redirect link
-  let redirectRoute = "login";
+  let redirectRoute = "login"; // TODO: Customize redirect link
   if (router.pathname) {
     redirectRoute += `?next=${encodeURIComponent(router.pathname)}`;
   }
 
-  // if session is not found, and is not loading, redirect (unauthenticated)
-  if (status == "unauthenticated") {
+  // if unauthenticated, redirect to new url
+  if (status == "unauthenticated" && !loadingState) {
+    props.debug ?? console.log("unauthenticated");
     router.push(redirectRoute, undefined, { shallow: true });
   }
 
   // otherwise, page is not done loading (private loading)
-  // TODO: Add loading icon/options
-  return null;
+  // TODO: Add default loading icon/options
+  props.debug ?? console.log("private loading");
+  return Validate(loading);
 }
 
 export { ProtectPage };
