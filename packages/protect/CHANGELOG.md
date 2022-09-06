@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.3.3
+
+### Patch Changes
+
+- 0cc6466: Fix authenticated loading state
+
 ## 0.3.2
 
 ### Patch Changes
