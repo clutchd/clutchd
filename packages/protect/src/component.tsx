@@ -18,8 +18,8 @@ function ProtectComponent({
   // page is authenticated when session is authenticated, and custom isAuth is true
   const authenticatedState = status === "authenticated" && isAuth;
 
-  // if authenticated, return authenticated component
-  if (authenticatedState) {
+  // if authenticated, and not loading, return authenticated component
+  if (authenticatedState && !loadingState) {
     props.debug && console.log("authenticated");
     return Validate(props.children);
   }
