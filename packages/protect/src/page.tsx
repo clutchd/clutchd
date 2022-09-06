@@ -22,8 +22,8 @@ function ProtectPage({
   // page is authenticated when session is authenticated, and custom isAuth is true
   const authenticatedState = status === "authenticated" && isAuth;
 
-  // if authenticated, return authenticated page
-  if (authenticatedState) {
+  // if authenticated, and not loading, return authenticated page
+  if (authenticatedState && !loadingState) {
     props.debug && console.log("authenticated");
     return Validate(props.children);
   }
@@ -40,8 +40,8 @@ function ProtectPage({
     redirectRoute += `?next=${encodeURIComponent(router.pathname)}`;
   }
 
-  // if unauthenticated, redirect to new url
-  if (status == "unauthenticated" && !loadingState) {
+  // if not authenticated, and not loading, redirect to new url
+  if (!authenticatedState && !loadingState) {
     props.debug && console.log("unauthenticated");
     router.push(redirectRoute, undefined, { shallow: true });
   }

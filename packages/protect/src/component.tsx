@@ -19,7 +19,7 @@ function ProtectComponent({
   const authenticatedState = status === "authenticated" && isAuth;
 
   // if authenticated, return authenticated component
-  if (authenticatedState) {
+  if (authenticatedState && !loadingState) {
     props.debug && console.log("authenticated");
     return Validate(props.children);
   }
