@@ -1,23 +1,24 @@
 import { Content } from "./content";
 import { Footer } from "./footer";
 import { Header } from "./header";
+import { Layout as InternalLayout } from "./layout";
 import { Page } from "./page";
-import { Section } from "./section";
+// import Sider from './Sider';
 
-type ILayout = {
+type InternalLayoutType = typeof InternalLayout;
+
+interface ILayout extends InternalLayoutType {
   Content: typeof Content;
   Footer: typeof Footer;
   Header: typeof Header;
   Page: typeof Page;
-  Section: typeof Section;
-};
+}
 
-const Layout: ILayout = {
-  Content: Content,
-  Footer: Footer,
-  Header: Header,
-  Page: Page,
-  Section: Section,
-};
+const Layout = InternalLayout as ILayout;
+
+Layout.Content = Content;
+Layout.Footer = Footer;
+Layout.Header = Header;
+// Layout.Sider = Sider;
 
 export { Layout };
