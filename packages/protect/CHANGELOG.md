@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.3.4
+
+### Patch Changes
+
+- d8e2528: Fix authenticated loading state
+
 ## 0.3.3
 
 ### Patch Changes

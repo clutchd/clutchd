@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.4.0
+
+### Minor Changes
+
+- d8e2528: Replace Layout.Section with new Layout type
+
 ## 0.3.4
 
 ### Patch Changes
