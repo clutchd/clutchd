@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.5.0
+
+### Minor Changes
+
+- 9e2ec9d: Implement Layout.Container
+
 ## 0.4.0
 
 ### Minor Changes
