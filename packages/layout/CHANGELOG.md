@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.5.2
+
+### Patch Changes
+
+- c2fd46a: Remove flex-col from Layout.Page
+
 ## 0.5.1
 
 ### Patch Changes
