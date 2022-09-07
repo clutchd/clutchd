@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.5.1
+
+### Patch Changes
+
+- dae2cc2: Remove flex-col from Layout.Container
+
 ## 0.5.0
 
 ### Minor Changes
