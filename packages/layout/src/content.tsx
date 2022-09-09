@@ -1,9 +1,20 @@
 import { Component, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
+import { ILayoutProps } from "./layout";
 
-function Content({ ...props }: ReactPropsWithoutRef<typeof Component.main>) {
+interface IContentProps
+  extends ILayoutProps,
+    ReactPropsWithoutRef<typeof Component.main> {}
+
+function Content({
+  col = true,
+  padding = true,
+  row = false,
+  ...props
+}: IContentProps) {
   const className = clsx(
-    "flex flex-col flex-1 p-6 sm:p-8",
+    "flex flex-1",
+    BuildStyle({ col, padding, row }),
     props.className
   );
   return <main {...props} className={className} />;

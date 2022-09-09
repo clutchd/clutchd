@@ -1,9 +1,20 @@
 import { Component, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
+import { BuildStyle, ILayoutProps } from "./layout";
 
-function Footer({ ...props }: ReactPropsWithoutRef<typeof Component.footer>) {
+interface IFooterProps
+  extends ILayoutProps,
+    ReactPropsWithoutRef<typeof Component.footer> {}
+
+function Footer({
+  col = true,
+  padding = true,
+  row = false,
+  ...props
+}: IFooterProps) {
   const className = clsx(
-    "flex flex-col grow-1 shrink-0 p-6 sm:p-8",
+    "flex grow-1 shrink-0",
+    BuildStyle({ col, padding, row }),
     props.className
   );
   return <footer {...props} className={className} />;

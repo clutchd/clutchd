@@ -1,7 +1,7 @@
 import { useSession } from "next-auth/react";
 import { IDebuggable, IWithLoading, IWithUnauth, Validate } from "./protect";
 
-interface IProtectComponent extends IDebuggable, IWithLoading, IWithUnauth { }
+interface IProtectComponent extends IDebuggable, IWithLoading, IWithUnauth {}
 
 function ProtectComponent({
   isAuth = true,
