@@ -1,10 +1,10 @@
 import { Component, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
-import { ILayoutProps } from "./layout";
+import { BuildStyle, ILayoutProps } from "./layout";
 
 interface IContentProps
   extends ILayoutProps,
-    ReactPropsWithoutRef<typeof Component.main> {}
+  ReactPropsWithoutRef<typeof Component.main> { }
 
 function Content({
   col = true,
