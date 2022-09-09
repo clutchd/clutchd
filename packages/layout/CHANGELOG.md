@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.6.0
+
+### Minor Changes
+
+- 49460b1: Introduce layout props
+
 ## 0.5.2
 
 ### Patch Changes
