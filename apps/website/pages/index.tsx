@@ -13,19 +13,32 @@ export default function Home() {
         </script>
       </Head>
       <Layout.Page className="flex-col">
-        <Layout.Header className="p-6">
+        <Layout.Header className="px-3 py-6 sm:px-6">
           <nav className="flex flex-row w-full">
-            <Link
-              className="mr-auto"
-              href="/">
-              <Image
-                width="200"
-                height="50"
-                src="/clutchd-logo.png"
-                alt="Clutchd, LLC Logo"
-                quality="100"
-              />
-            </Link>
+            <div className="hidden sm:block">
+              <Link
+                className="mr-auto"
+                href="/">
+                <Image
+
+                  width="200"
+                  height="50"
+                  src="/clutchd-logo.png"
+                  alt="Clutchd, LLC Logo"
+                />
+              </Link>
+            </div>
+            <div className="block sm:hidden">
+              <Link
+                href="/">
+                <Image
+                  width="50"
+                  height="50"
+                  src="/clutchd-icon.png"
+                  alt="Clutchd, LLC Logo"
+                />
+              </Link>
+            </div>
             <Link href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo">
               <button className="block px-4 ml-auto font-medium text-white transition-all duration-200 rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500">
                 Manage Subscription
@@ -41,6 +54,9 @@ export default function Home() {
           >
           </stripe-pricing-table>
         </Layout.Content>
+        <Layout.Footer className="p-6">
+          <p>© {new Date().getFullYear()} Clutchd, LLC</p>
+        </Layout.Footer>
       </Layout.Page>
     </>
   );
