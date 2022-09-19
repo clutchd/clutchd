@@ -1,0 +1,47 @@
+import { Layout } from "@clutchd/layout";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <script
+          async
+          src="https://js.stripe.com/v3/pricing-table.js">
+        </script>
+      </Head>
+      <Layout.Page className="flex-col">
+        <Layout.Header className="p-6">
+          <nav className="flex flex-row w-full">
+            <Link
+              className="mr-auto"
+              href="/">
+              <Image
+                width="200"
+                height="50"
+                src="/clutchd-logo.png"
+                alt="Clutchd, LLC Logo"
+                quality="100"
+              />
+            </Link>
+            <Link href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo">
+              <button className="block px-4 ml-auto font-medium text-white transition-all duration-200 rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500">
+                Manage Subscription
+              </button>
+            </Link>
+          </nav>
+        </Layout.Header>
+        <Layout.Content className="flex-col p-6">
+          <h1 className="pt-4 pb-16 text-3xl text-center">Professional design, development, and maintenance for all your web needs</h1>
+          <stripe-pricing-table
+            pricing-table-id="prctbl_1LjYcKExxz9r9gq2uHTtzabE"
+            publishable-key="pk_live_51KnXiKExxz9r9gq2q29FmChNykUYPIuokFLvpumZDlw15GB7GNaJpuB45iMQIbthpTm4O3AjjCfBhfmRhZeG8wfP00YCb9j0rC"
+          >
+          </stripe-pricing-table>
+        </Layout.Content>
+      </Layout.Page>
+    </>
+  );
+}
