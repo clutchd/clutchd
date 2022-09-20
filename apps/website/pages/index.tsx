@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
+        <title>Clutchd, LLC</title>
         <script
           async
           src="https://js.stripe.com/v3/pricing-table.js">
