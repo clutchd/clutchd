@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 0.7.0
+
+### Minor Changes
+
+- f697002: Improve configuration
+
+### Patch Changes
+
+- Updated dependencies [f697002]
+  - @clutchd/component@0.4.0
+
 ## 0.6.0
 
 ### Minor Changes
