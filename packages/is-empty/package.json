@@ -17,7 +17,8 @@
     "prepublish": "npm run build"
   },
   "devDependencies": {
-    "config": "*",
+    "@clutchd/config": "*",
+    "@clutchd/tsconfig": "*",
     "eslint-config-next": "^12.2.5",
     "eslint-config-prettier": "^8.5.0",
     "jest-environment-jsdom": "^28.1.2",

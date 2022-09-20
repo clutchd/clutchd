@@ -1,1 +1,1 @@
-module.exports = require("config/ts-jest.config");
+module.exports = require("@clutchd/config/ts-jest.config");
