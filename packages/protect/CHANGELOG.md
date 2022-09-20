@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.4.0
+
+### Minor Changes
+
+- f697002: Improve configuration
+
 ## 0.3.4
 
 ### Patch Changes
