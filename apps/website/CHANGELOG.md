@@ -1,5 +1,11 @@
 # @clutchd/website
 
+## 0.2.0
+
+### Minor Changes
+
+- 90cdae5: Add title and favicon
+
 ## 0.1.0
 
 ### Minor Changes
