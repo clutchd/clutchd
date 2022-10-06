@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.7.1
+
+### Patch Changes
+
+- 1f06a0c: Fix prop-based class generation
+
 ## 0.7.0
 
 ### Minor Changes
