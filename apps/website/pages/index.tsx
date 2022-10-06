@@ -10,8 +10,8 @@ export default function Home() {
         <title>Clutchd, LLC</title>
         <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
       </Head>
-      <Layout.Page className="flex-col">
-        <Layout.Header className="px-3 py-6 sm:px-6">
+      <Layout.Page col>
+        <Layout.Header>
           <nav className="flex flex-row w-full">
             <div className="hidden sm:block">
               <Link className="mr-auto" href="/">
@@ -40,7 +40,7 @@ export default function Home() {
             </Link>
           </nav>
         </Layout.Header>
-        <Layout.Content className="flex-col p-6">
+        <Layout.Content>
           <h1 className="pt-4 pb-16 text-3xl text-center">
             Professional design, development, and maintenance for all your web
             needs
@@ -50,7 +50,7 @@ export default function Home() {
             publishable-key="pk_live_51KnXiKExxz9r9gq2q29FmChNykUYPIuokFLvpumZDlw15GB7GNaJpuB45iMQIbthpTm4O3AjjCfBhfmRhZeG8wfP00YCb9j0rC"
           ></stripe-pricing-table>
         </Layout.Content>
-        <Layout.Footer className="p-6">
+        <Layout.Footer>
           <p>© {new Date().getFullYear()} Clutchd, LLC</p>
         </Layout.Footer>
       </Layout.Page>
