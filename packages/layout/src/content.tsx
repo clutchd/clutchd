@@ -4,7 +4,7 @@ import { BuildStyle, ILayoutProps } from "./layout";
 
 interface IContentProps
   extends ILayoutProps,
-  ReactPropsWithoutRef<typeof Component.main> { }
+    ReactPropsWithoutRef<typeof Component.main> {}
 
 function Content({
   col = true,

@@ -80,7 +80,6 @@ interface ChildProps {
  */
 const Child = React.forwardRef<any, ChildProps>(
   ({ children, ...props }, forwardedRef) => {
-
     // if children is a valid react element, clone the children
     if (React.isValidElement(children)) {
       return React.cloneElement<any>(children, {

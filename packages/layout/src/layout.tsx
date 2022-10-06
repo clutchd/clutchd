@@ -7,7 +7,11 @@ interface ILayoutProps {
 }
 
 function BuildStyle({ col, padding, row }: ILayoutProps): string {
-  return clsx(col ?? "flex-col", padding ?? "p-6 sm:p-8", row ?? "flex-row");
+  return clsx(
+    col ? "flex-col" : "",
+    padding ? "p-6 sm:p-8" : "",
+    row ? "flex-row" : ""
+  );
 }
 
 export { BuildStyle };
