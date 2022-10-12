@@ -1,23 +1,33 @@
 import * as React from "react";
 
-interface IDebuggable {
-  debug?: boolean; // TODO: Should be in the base Component props, all @clutchd components should allow some form of debugging
-}
-
-interface IWithAuth {
+/**
+ * Type to define props for a component with a authenticated state
+ */
+interface IWithAuthProps {
   isAuth?: boolean;
   children: React.ReactNode;
 }
 
-interface IWithUnauth extends IWithAuth {
+/**
+ * Type to define props for a component with a unauthenticated state
+ */
+interface IWithUnauthProps extends IWithAuthProps {
   unauth?: React.ReactNode;
 }
 
-interface IWithLoading {
+/**
+ * Type to define props for a component with a loading state
+ */
+interface IWithLoadingProps {
   isLoading?: boolean;
   loading?: React.ReactNode;
 }
 
+/**
+ * Validates a react element to ensure rendering
+ * @param component `ReactNode` to validate
+ * @returns A validated `ReactNode`
+ */
 function Validate(component: React.ReactNode): React.ReactElement | null {
   // null is a valid response for states that were not provided
   if (component == null) {
@@ -34,4 +44,4 @@ function Validate(component: React.ReactNode): React.ReactElement | null {
 }
 
 export { Validate };
-export type { IDebuggable, IWithAuth, IWithUnauth, IWithLoading };
+export type { IWithAuthProps, IWithUnauthProps, IWithLoadingProps };

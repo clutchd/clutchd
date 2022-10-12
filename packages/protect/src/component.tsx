@@ -1,15 +1,28 @@
 import { useSession } from "next-auth/react";
-import { IDebuggable, IWithLoading, IWithUnauth, Validate } from "./protect";
+import { IWithLoadingProps, IWithUnauthProps, Validate } from "./protect";
 
-interface IProtectComponent extends IDebuggable, IWithLoading, IWithUnauth {}
+/**
+ * Type to define `ProtectComponent` component
+ */
+type IProtectComponent = typeof ProtectComponent;
 
+/**
+ * Type to define `ProtectComponent` props
+ */
+interface IProtectComponentProps extends IWithLoadingProps, IWithUnauthProps {}
+
+/**
+ * `ProtectComponent` - A HOC that will protect a component from displaying sensitive data to an unauthenticated user
+ * @param props `IProtectComponentProps` used to render this `ProtectComponent`
+ * @returns `ProtectComponent` component
+ */
 function ProtectComponent({
   isAuth = true,
   isLoading = false,
   loading = null,
   unauth = null,
   ...props
-}: IProtectComponent) {
+}: IProtectComponentProps) {
   const { status } = useSession();
 
   // page is loading when session is loading, or custom isLoading is true
@@ -20,20 +33,17 @@ function ProtectComponent({
 
   // if authenticated, and not loading, return authenticated component
   if (authenticatedState && !loadingState) {
-    props.debug && console.log("authenticated");
     return Validate(props.children);
   }
 
   // if not authenticated, and not loading, return unauthenticated component
   if (!authenticatedState && !loadingState) {
-    props.debug && console.log("unauthenticated");
     return Validate(unauth);
   }
 
   // otherwise, still loading
-  props.debug && console.log("loading");
   return Validate(loading);
 }
 
 export { ProtectComponent };
-export type { IProtectComponent };
+export type { IProtectComponent, IProtectComponentProps };

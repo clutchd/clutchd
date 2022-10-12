@@ -1,18 +1,31 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import { IDebuggable, IWithAuth, IWithLoading, Validate } from "./protect";
+import { IWithAuthProps, IWithLoadingProps, Validate } from "./protect";
 
-interface IProtectPage extends IDebuggable, IWithAuth, IWithLoading {
+/**
+ * Type to define `ProtectPage` component
+ */
+type IProtectPage = typeof ProtectPage;
+
+/**
+ * Type to define `ProtectPage` props
+ */
+interface IProtectPageProps extends IWithAuthProps, IWithLoadingProps {
   secret?: boolean;
 }
 
+/**
+ * `ProtectPage` - A HOC that will protect a page from displaying sensitive data to an unauthenticated user
+ * @param props `IProtectPageProps` used to render this `ProtectPage`
+ * @returns `ProtectPage` component
+ */
 function ProtectPage({
   isAuth = true,
   isLoading = false,
   loading = null,
   secret = true,
   ...props
-}: IProtectPage) {
+}: IProtectPageProps) {
   const { status } = useSession();
   const router = useRouter();
 
@@ -24,13 +37,11 @@ function ProtectPage({
 
   // if authenticated, and not loading, return authenticated page
   if (authenticatedState && !loadingState) {
-    props.debug && console.log("authenticated");
     return Validate(props.children);
   }
 
   // if page is not secret (public loading), return authenticated page
   if (loadingState && !secret) {
-    props.debug && console.log("public loading");
     return Validate(props.children);
   }
 
@@ -42,15 +53,13 @@ function ProtectPage({
 
   // if not authenticated, and not loading, redirect to new url
   if (!authenticatedState && !loadingState) {
-    props.debug && console.log("unauthenticated");
     router.push(redirectRoute, undefined, { shallow: true });
   }
 
   // otherwise, page is not done loading (private loading)
   // TODO: Add default loading icon/options
-  props.debug && console.log("private loading");
   return Validate(loading);
 }
 
 export { ProtectPage };
-export type { IProtectPage };
+export type { IProtectPage, IProtectPageProps };
