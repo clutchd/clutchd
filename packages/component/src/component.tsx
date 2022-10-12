@@ -26,7 +26,7 @@ type ReactPropsWithoutRef<T extends React.ElementType> = React.PropsWithoutRef<
 /**
  * Type to define `Component` props with the 'ref' prop
  */
-type ComponentPropsWithRef<E extends React.ElementType> =
+type IComponentProps<E extends React.ElementType> =
   React.ComponentPropsWithRef<E> & {
     asChild?: boolean;
   };
@@ -35,19 +35,19 @@ type ComponentPropsWithRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component with the 'ref' prop
  */
 interface ForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> {}
+  extends React.ForwardRefExoticComponent<IComponentProps<E>> { }
 
 /**
  * Type to define the supported `Component` nodes
  */
-type Components = { [E in typeof NODES[number]]: ForwardRefComponent<E> };
+type IComponent = { [E in typeof NODES[number]]: ForwardRefComponent<E> };
 
 /**
  * `Component` - a higher-order component that extends standard html tags
  */
 const Component = NODES.reduce((component, node) => {
   const Node = React.forwardRef(
-    (props: ComponentPropsWithRef<typeof node>, forwardedRef: any) => {
+    (props: IComponentProps<typeof node>, forwardedRef: any) => {
       const { asChild, ...componentProps } = props;
       const Comp: any = asChild ? AsChild : node;
 
@@ -62,7 +62,8 @@ const Component = NODES.reduce((component, node) => {
   Node.displayName = `BaseComponent.${node}`;
 
   return { ...component, [node]: Node };
-}, {} as Components);
+}, {} as IComponent);
 
 export { Component };
-export type { ComponentPropsWithRef, ReactPropsWithoutRef };
+export type { IComponent, IComponentProps, ReactPropsWithoutRef };
+
