@@ -1,24 +1,40 @@
 import { Component, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
 
-interface ISkeleton extends ReactPropsWithoutRef<typeof Component.div> {
+/**
+ * Type to define `Skeleton` component
+ */
+type ISkeleton = typeof Skeleton;
+
+/**
+ * Type to define `Skeleton` props
+ */
+interface ISkeletonProps extends ReactPropsWithoutRef<typeof Component.div> {
   dark?: boolean;
 }
 
-function Skeleton({ dark = false, ...props }: ISkeleton) {
-  const internalClassNames = clsx(
-    dark ? "bg-white" : "bg-black",
-    "opacity-50 rounded w-full h-full m-auto inline-block"
-  );
-
+/**
+ * `Skeleton` - A generic component used to render content structures and loading states
+ * @param props `ISkeletonProps` used to render this `Skeleton`
+ * @returns `Skeleton` component
+ */
+function Skeleton({ dark = false, ...props }: ISkeletonProps) {
   return (
     <Component.div
       {...props}
       className={clsx("max-w-full max-h-full", props.className)}
     >
-      <span className={internalClassNames}>{"\u200b"}</span>
+      <span
+        className={clsx(
+          dark ? "bg-white" : "bg-black",
+          "opacity-50 rounded w-full h-full m-auto inline-block"
+        )}
+      >
+        {"\u200b"}
+      </span>
     </Component.div>
   );
 }
 
 export { Skeleton };
+export type { ISkeleton, ISkeletonProps };
