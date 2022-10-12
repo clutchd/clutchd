@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.6.0
+
+### Minor Changes
+
+- 8ce15fc: Improve exported types
+
 ## 0.5.0
 
 ### Minor Changes

@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 0.8.0
+
+### Minor Changes
+
+- f251f89: Improve exported types
+
+### Patch Changes
+
+- Updated dependencies [8ce15fc]
+  - @clutchd/component@0.6.0
+
 ## 0.7.2
 
 ### Patch Changes

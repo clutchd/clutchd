@@ -1,5 +1,16 @@
 # @clutchd/skeleton
 
+## 0.3.0
+
+### Minor Changes
+
+- 6c8f5d4: improve exported types
+
+### Patch Changes
+
+- Updated dependencies [8ce15fc]
+  - @clutchd/component@0.6.0
+
 ## 0.2.1
 
 ### Patch Changes

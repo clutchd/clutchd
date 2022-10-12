@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.5.0
+
+### Minor Changes
+
+- b2b4782: Improve exported types
+
 ## 0.4.0
 
 ### Minor Changes
