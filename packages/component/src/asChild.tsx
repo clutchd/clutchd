@@ -7,16 +7,21 @@ import React from "react";
 type AnyProps = Record<string, any>;
 
 /**
+ * Type to define `AsChild` component
+ */
+type IAsChild = typeof AsChild;
+
+/**
  * Type to define `AsChild` props
  */
-interface AsChildProps extends React.HTMLAttributes<HTMLElement> {
+interface IAsChildProps extends React.HTMLAttributes<HTMLElement> {
   children?: React.ReactNode;
 }
 
 /**
  * A higher-order component that allows rendering as any `React.Element`
  */
-const AsChild = React.forwardRef<HTMLElement, AsChildProps>(
+const AsChild = React.forwardRef<HTMLElement, IAsChildProps>(
   ({ children, ...asChildProps }, forwardedRef) => {
     // convert children to an array
     const childrenArray = React.Children.toArray(children);
@@ -69,16 +74,21 @@ const AsChild = React.forwardRef<HTMLElement, AsChildProps>(
 AsChild.displayName = "AsChild";
 
 /**
+ * Type to define `Child` component
+ */
+type IChild = typeof Child;
+
+/**
  * Type to define `Child` props
  */
-interface ChildProps {
+interface IChildProps {
   children: React.ReactNode;
 }
 
 /**
  * A utility component that renders the underlying child element for `AsChild`
  */
-const Child = React.forwardRef<any, ChildProps>(
+const Child = React.forwardRef<any, IChildProps>(
   ({ children, ...props }, forwardedRef) => {
     // if children is a valid react element, clone the children
     if (React.isValidElement(children)) {
@@ -159,4 +169,4 @@ function mergeProps(props: AnyProps, newProps: AnyProps) {
 }
 
 export { AsChild, Child };
-export type { AsChildProps };
+export type { IAsChild, IAsChildProps, IChild, IChildProps };
