@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.5.0
+
+### Minor Changes
+
+- 3b4167b: Improve type declarations
+
 ## 0.4.0
 
 ### Minor Changes
