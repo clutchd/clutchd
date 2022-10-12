@@ -1,5 +1,12 @@
 # @clutchd/layout
 
+## 0.7.2
+
+### Patch Changes
+
+- Updated dependencies [3b4167b]
+  - @clutchd/component@0.5.0
+
 ## 0.7.1
 
 ### Patch Changes
