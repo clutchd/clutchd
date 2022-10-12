@@ -1,5 +1,16 @@
 # @clutchd/avatar
 
+## 0.3.0
+
+### Minor Changes
+
+- d3f7029: Improve fallback colors
+
+### Patch Changes
+
+- Updated dependencies [8ce15fc]
+  - @clutchd/component@0.6.0
+
 ## 0.2.0
 
 ### Minor Changes
