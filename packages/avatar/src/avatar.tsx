@@ -54,7 +54,7 @@ function Avatar({ alt, src, fallback = "U", ...props }: IAvatarProps) {
         />
       )}
       {loadingState != "loaded" && (
-        <span className="block w-full h-full text-center leading-[48px] bg-gray-50 text-gray-500">
+        <span className="block w-full h-full text-center leading-[48px] bg-gray-200 text-gray-500">
           {fallback}
         </span>
       )}
