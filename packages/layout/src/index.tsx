@@ -1,17 +1,34 @@
-import { Container } from "./container";
-import { Content } from "./content";
-import { Footer } from "./footer";
-import { Header } from "./header";
-import { Page } from "./page";
+import { Container, IContainer, IContainerProps } from "./container";
+import { Content, IContent, IContentProps } from "./content";
+import { Footer, IFooter, IFooterProps } from "./footer";
+import { Header, IHeader, IHeaderProps } from "./header";
+import { IPage, IPageProps, Page } from "./page";
 
+/**
+ * Type to define `Layout` component
+ */
 type ILayout = {
-  Container: typeof Container;
-  Content: typeof Content;
-  Footer: typeof Footer;
-  Header: typeof Header;
-  Page: typeof Page;
+  Container: IContainer;
+  Content: IContent;
+  Footer: IFooter;
+  Header: IHeader;
+  Page: IPage;
 };
 
+/**
+ * Type to define `Container` props
+ */
+interface ILayoutProps {
+  IContainerProps: IContainerProps;
+  IContentProps: IContentProps;
+  IFooterProps: IFooterProps;
+  IHeaderProps: IHeaderProps;
+  IPageProps: IPageProps;
+}
+
+/**
+ * `Layout` - A component used to quickly setup various layouts and containers
+ */
 const Layout: ILayout = {
   Container: Container,
   Content: Content,
@@ -21,3 +38,4 @@ const Layout: ILayout = {
 };
 
 export { Layout };
+export type { ILayout, ILayoutProps };

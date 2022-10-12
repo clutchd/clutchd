@@ -2,10 +2,23 @@ import { Component, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
+/**
+ * Type to define `Content` component
+ */
+type IContent = typeof Content;
+
+/**
+ * Type to define `Content` props
+ */
 interface IContentProps
   extends ILayoutProps,
     ReactPropsWithoutRef<typeof Component.main> {}
 
+/**
+ * `Content` - A `Container` designed to contain a page's primary content. Renders as a `main` element
+ * @param props `IContentProps` used to render this `Content`
+ * @returns `Content` component
+ */
 function Content({
   col = true,
   padding = true,
@@ -21,3 +34,4 @@ function Content({
 }
 
 export { Content };
+export type { IContent, IContentProps };
