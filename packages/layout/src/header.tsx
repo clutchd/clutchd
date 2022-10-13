@@ -1,4 +1,4 @@
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
@@ -12,7 +12,7 @@ type IHeader = typeof Header;
  */
 interface IHeaderProps
   extends ILayoutProps,
-    ReactPropsWithoutRef<typeof Component.header> {}
+    ReactPropsWithoutRef<IComponent["header"]> {}
 
 /**
  * `Header` - A `Container` designed to contain a page's header content. Renders as a `header` element

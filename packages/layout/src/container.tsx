@@ -1,4 +1,4 @@
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
@@ -12,7 +12,7 @@ type IContainer = typeof Container;
  */
 interface IContainerProps
   extends ILayoutProps,
-    ReactPropsWithoutRef<typeof Component.div> {}
+    ReactPropsWithoutRef<IComponent["div"]> {}
 
 /**
  * `Container` - A generic flex container used to create consistent layouts

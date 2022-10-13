@@ -1,4 +1,4 @@
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
@@ -12,7 +12,7 @@ type IFooter = typeof Footer;
  */
 interface IFooterProps
   extends ILayoutProps,
-    ReactPropsWithoutRef<typeof Component.footer> {}
+    ReactPropsWithoutRef<IComponent["footer"]> {}
 
 /**
  * `Footer` - A `Container` designed to contain a page's footer content. Renders as a `footer` element

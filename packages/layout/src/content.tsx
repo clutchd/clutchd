@@ -1,4 +1,4 @@
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
@@ -12,7 +12,7 @@ type IContent = typeof Content;
  */
 interface IContentProps
   extends ILayoutProps,
-    ReactPropsWithoutRef<typeof Component.main> {}
+    ReactPropsWithoutRef<IComponent["main"]> {}
 
 /**
  * `Content` - A `Container` designed to contain a page's primary content. Renders as a `main` element

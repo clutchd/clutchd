@@ -1,4 +1,4 @@
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
@@ -12,7 +12,7 @@ type IPage = typeof Page;
  */
 interface IPageProps
   extends ILayoutProps,
-    ReactPropsWithoutRef<typeof Component.header> {}
+    ReactPropsWithoutRef<IComponent["header"]> {}
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen

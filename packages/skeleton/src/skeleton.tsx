@@ -1,4 +1,8 @@
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import {
+  Component,
+  IComponent,
+  ReactPropsWithoutRef,
+} from "@clutchd/component";
 import clsx from "clsx";
 
 /**
@@ -9,7 +13,7 @@ type ISkeleton = typeof Skeleton;
 /**
  * Type to define `Skeleton` props
  */
-interface ISkeletonProps extends ReactPropsWithoutRef<typeof Component.div> {
+interface ISkeletonProps extends ReactPropsWithoutRef<IComponent["div"]> {
   dark?: boolean;
 }
 
