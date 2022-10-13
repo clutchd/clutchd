@@ -1,5 +1,12 @@
 # @clutchd/website
 
+## 0.2.3
+
+### Patch Changes
+
+- Updated dependencies [11867ae]
+  - @clutchd/layout@0.9.0
+
 ## 0.2.2
 
 ### Patch Changes
