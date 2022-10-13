@@ -1,7 +1,6 @@
 import { Protect } from "@clutchd/protect";
 import { Skeleton } from "@clutchd/skeleton";
 import clsx from "clsx";
-import * as React from "react";
 import { ITextProps } from "./text";
 
 /**
@@ -95,11 +94,15 @@ type ITextClassMap = {
  * @returns skeleton class
  */
 function GetClass(className: string, map: ITextClassMap): string {
-  const classes = className.split(" ");
+  const classes: string[] = className.split(" ");
+
+  function isKey(key: string): key is keyof ITextClassMap {
+    return key in map;
+  }
 
   for (let i = 0; i < classes.length; i++) {
-    if (Object.keys(map).includes(classes[i])) {
-      return map[classes[i]];
+    if (isKey(classes[i])) {
+      return map[classes[i] as keyof ITextClassMap];
     }
   }
 
@@ -158,3 +161,4 @@ function GetWrapper(className: string): string {
 
 export { Base };
 export type { IBase, IBaseProps };
+
