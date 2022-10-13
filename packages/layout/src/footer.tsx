@@ -1,4 +1,8 @@
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import {
+  IComponent,
+  Component,
+  ReactPropsWithoutRef,
+} from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
@@ -30,7 +34,7 @@ function Footer({
     BuildStyle({ col, padding, row }),
     props.className
   );
-  return <footer {...props} className={className} />;
+  return <Component.footer {...props} className={className} />;
 }
 
 export { Footer };

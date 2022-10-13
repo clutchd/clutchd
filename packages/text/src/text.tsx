@@ -1,5 +1,4 @@
 import { IComponent, IComponentProps } from "@clutchd/component";
-import * as React from "react";
 import { Base } from "./base";
 
 /**

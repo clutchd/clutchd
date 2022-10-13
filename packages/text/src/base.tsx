@@ -1,3 +1,4 @@
+import { IComponent } from "@clutchd/component";
 import { Protect } from "@clutchd/protect";
 import { Skeleton } from "@clutchd/skeleton";
 import clsx from "clsx";
@@ -25,7 +26,7 @@ interface IBaseProps extends ITextProps {
  */
 function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
   // dynamically determine underlying text component
-  const InternalText = tag as keyof JSX.IntrinsicElements;
+  const InternalText = tag as keyof IComponent;
 
   // get class names
   const className = clsx(

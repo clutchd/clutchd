@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Base } from "./base";
 import { ITextProps } from "./text";
 

@@ -1,8 +1,5 @@
-import { Protect } from "@clutchd/protect";
-import { Skeleton } from "@clutchd/skeleton";
-import * as React from "react";
-import { ITextProps } from "./text";
 import { Base } from "./base";
+import { ITextProps } from "./text";
 
 /**
  * Type to define `Heading` component

@@ -1,4 +1,8 @@
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import {
+  Component,
+  IComponent,
+  ReactPropsWithoutRef,
+} from "@clutchd/component";
 import clsx from "clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
@@ -30,7 +34,7 @@ function Container({
     BuildStyle({ col, padding, row }),
     props.className
   );
-  return <div {...props} className={className} />;
+  return <Component.div {...props} className={className} />;
 }
 
 export { Container };
