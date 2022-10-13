@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.9.0
+
+### Minor Changes
+
+- 11867ae: Utilize @clutchd/component
+
 ## 0.8.0
 
 ### Minor Changes
