@@ -1,5 +1,6 @@
 import { Base, IBase, IBaseProps } from "./base";
 import { Bold, IBold, IBoldProps } from "./bold";
+import { Caption, ICaption, ICaptionProps } from "./caption";
 import { Heading, IHeading, IHeadingProps } from "./heading";
 import { IItalic, IItalicProps, Italic } from "./italic";
 import { ISubtitle, ISubtitleProps, Subtitle } from "./subtitle";
@@ -16,6 +17,7 @@ import { ITitle, ITitleProps, Title } from "./title";
 type IText = {
   Base: IBase;
   Bold: IBold;
+  Caption: ICaption;
   Heading: IHeading;
   Italic: IItalic;
   Subtitle: ISubtitle;
@@ -29,6 +31,7 @@ type IText = {
 interface ITextProps {
   IBaseProps: IBaseProps;
   IBoldProps: IBoldProps;
+  ICaptionProps: ICaptionProps;
   IHeadingProps: IHeadingProps;
   IItalicProps: IItalicProps;
   ISubtitleProps: ISubtitleProps;
@@ -42,6 +45,7 @@ interface ITextProps {
 const Text: IText = {
   Base: Base,
   Bold: Bold,
+  Caption: Caption,
   Heading: Heading,
   Italic: Italic,
   Subtitle: Subtitle,

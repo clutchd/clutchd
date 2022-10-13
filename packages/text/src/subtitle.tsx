@@ -13,7 +13,7 @@ interface ISubtitleProps extends ITextProps {}
 
 /**
  * `Subtitle` - A text component with a little more emphasis
- * @param props `ISubtitleProps` used to render this `Title`
+ * @param props `ISubtitleProps` used to render this `Subtitle`
  * @returns `Subtitle` component
  */
 function Subtitle(props: ISubtitleProps) {
