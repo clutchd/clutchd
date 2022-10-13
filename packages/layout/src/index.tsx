@@ -16,7 +16,7 @@ type ILayout = {
 };
 
 /**
- * Type to define `Container` props
+ * Type to define `Layout` props
  */
 interface ILayoutProps {
   IContainerProps: IContainerProps;

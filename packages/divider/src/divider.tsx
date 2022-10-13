@@ -7,6 +7,7 @@ type IDivider = typeof Divider;
  * Type to define `Divider` props
  */
 interface IDividerProps {
+  direction?: "horizontal" | "vertical";
   hr?: boolean;
 }
 
@@ -15,12 +16,20 @@ interface IDividerProps {
  * @param props `IDividerProps` used to render this `Divider`
  * @returns `Divider` component
  */
-function Divider({ hr = true, ...props }: IDividerProps) {
+function Divider({
+  direction = "horizontal",
+  hr = true,
+  ...props
+}: IDividerProps) {
+  const horizontal = "w-full mx-auto mt-6 mb-6 h-[3px]";
+  const vertical = "h-full my-auto ml-6 mr-6 w-[3px]";
+  const line = hr ? "bg-gray-200" : "bg-inherit";
+
   return (
     <div
       {...props}
-      className={`w-full mx-auto mt-6 mb-6 rounded-lg h-[3px] ${
-        hr ? "bg-gray-200" : "bg-inherit"
+      className={`transition-all duration-200 rounded-lg ${line} ${
+        direction === "horizontal" ? horizontal : vertical
       }`}
     />
   );
