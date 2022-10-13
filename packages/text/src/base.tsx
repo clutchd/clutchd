@@ -161,4 +161,3 @@ function GetWrapper(className: string): string {
 
 export { Base };
 export type { IBase, IBaseProps };
-
