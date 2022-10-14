@@ -55,7 +55,7 @@ export default function Home() {
           <div className="flex w-1/2">
             <Text.Caption>© {new Date().getFullYear()} Clutchd, LLC</Text.Caption>
           </div>
-          <div className="flex w-1/2 text-right">
+          <div className="flex flex-col w-1/2 text-right">
             <Text.Caption>
               <Link href="mailto:william@clutchd.com">Contact Us</Link>
             </Text.Caption>
