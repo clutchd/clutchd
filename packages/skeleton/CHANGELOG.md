@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 0.4.0
+
+### Minor Changes
+
+- 52dec31: Migrate clsx to @clutchd/clsx
+
 ## 0.3.0
 
 ### Minor Changes
