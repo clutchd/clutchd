@@ -3,7 +3,7 @@ import {
   Component,
   ReactPropsWithoutRef,
 } from "@clutchd/component";
-import clsx from "clsx";
+import { clsx } from "@clutchd/clsx";
 import { BuildStyle, ILayoutProps } from "./layout";
 
 /**

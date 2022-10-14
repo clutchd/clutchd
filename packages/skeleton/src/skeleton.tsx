@@ -3,7 +3,7 @@ import {
   IComponent,
   ReactPropsWithoutRef,
 } from "@clutchd/component";
-import clsx from "clsx";
+import { clsx } from "@clutchd/clsx";
 
 /**
  * Type to define `Skeleton` component

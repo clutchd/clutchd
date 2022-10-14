@@ -1,5 +1,5 @@
 import { Component, ReactPropsWithoutRef } from "@clutchd/component";
-import clsx from "clsx";
+import { clsx } from "@clutchd/clsx";
 import Image from "next/image";
 import { useState } from "react";
 

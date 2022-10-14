@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { clsx } from "@clutchd/clsx";
 
 /**
  * Type to define `Layout` props shared by all component
