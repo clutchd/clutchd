@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/font-size}
  */
 
-const fontSize = [
+export const fontSize = [
   "text-xs",
   "text-sm",
   "text-base",
@@ -18,11 +18,8 @@ const fontSize = [
   "text-9xl",
 ];
 
-type IFontSize = typeof fontSize[number];
+export type IFontSize = typeof fontSize[number];
 
-interface IWithFontSize {
+export interface IWithFontSize {
   fontSize: IFontSize;
 }
-
-export { fontSize };
-export type { IFontSize, IWithFontSize };

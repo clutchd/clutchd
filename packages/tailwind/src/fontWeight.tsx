@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/font-weight}
  */
 
-const fontWeight = [
+export const fontWeight = [
   "font-thin",
   "font-extralight",
   "font-light",
@@ -14,11 +14,8 @@ const fontWeight = [
   "font-black",
 ];
 
-type IFontWeight = typeof fontWeight[number];
+export type IFontWeight = typeof fontWeight[number];
 
-interface IWithFontWeight {
+export interface IWithFontWeight {
   fontWeight: IFontWeight;
 }
-
-export { fontWeight };
-export type { IFontWeight, IWithFontWeight };

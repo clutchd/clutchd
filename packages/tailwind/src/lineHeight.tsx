@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/line-height}
  */
 
-const lineHeight = [
+export const lineHeight = [
   "leading-3",
   "leading-4",
   "leading-5",
@@ -19,11 +19,8 @@ const lineHeight = [
   "leading-loose",
 ];
 
-type ILineHeight = typeof lineHeight[number];
+export type ILineHeight = typeof lineHeight[number];
 
-interface IWithLineHeight {
+export interface IWithLineHeight {
   lineHeight: ILineHeight;
 }
-
-export { lineHeight };
-export type { ILineHeight, IWithLineHeight };
