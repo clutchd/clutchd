@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.10.0
+
+### Minor Changes
+
+- 52dec31: Migrate clsx to @clutchd/clsx
+
 ## 0.9.0
 
 ### Minor Changes
