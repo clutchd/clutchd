@@ -1,6 +1,7 @@
 import { Layout } from "@clutchd/layout";
 import Head from "next/head";
 import Image from "next/image";
+import { Text } from "@clutchd/text";
 import Link from "next/link";
 
 export default function Home() {
@@ -50,8 +51,15 @@ export default function Home() {
             publishable-key="pk_live_51KnXiKExxz9r9gq2q29FmChNykUYPIuokFLvpumZDlw15GB7GNaJpuB45iMQIbthpTm4O3AjjCfBhfmRhZeG8wfP00YCb9j0rC"
           ></stripe-pricing-table>
         </Layout.Content>
-        <Layout.Footer>
-          <p>© {new Date().getFullYear()} Clutchd, LLC</p>
+        <Layout.Footer row col={false}>
+          <div className="flex w-1/2">
+            <Text.Caption>© {new Date().getFullYear()} Clutchd, LLC</Text.Caption>
+          </div>
+          <div className="flex w-1/2 text-right">
+            <Text.Caption>
+              <Link href="mailto:william@clutchd.com">Contact Us</Link>
+            </Text.Caption>
+          </div>
         </Layout.Footer>
       </Layout.Page>
     </>
