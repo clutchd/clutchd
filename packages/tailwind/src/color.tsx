@@ -27,7 +27,7 @@ export const color = [
 export type IColor = typeof color[number];
 
 export interface IWithColor {
-  color: IColor;
+  theme: IColor;
 }
 
 export type IColorVariants = {
