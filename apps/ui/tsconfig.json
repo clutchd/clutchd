@@ -1,0 +1,19 @@
+{
+  "extends": "@clutchd/tsconfig/react-library.json",
+  "include": [
+    ".",
+    "stripe.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve"
+  }
+}
