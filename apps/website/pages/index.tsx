@@ -53,7 +53,9 @@ export default function Home() {
         </Layout.Content>
         <Layout.Footer row col={false}>
           <div className="flex w-1/2">
-            <Text.Caption>© {new Date().getFullYear()} Clutchd, LLC</Text.Caption>
+            <Text.Caption>
+              © {new Date().getFullYear()} Clutchd, LLC
+            </Text.Caption>
           </div>
           <div className="flex flex-col w-1/2 text-right">
             <Text.Caption>
