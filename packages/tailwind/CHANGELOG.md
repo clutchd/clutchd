@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.1.3
+
+### Patch Changes
+
+- 679aa59: Make all tailwind props optional
+
 ## 0.1.2
 
 ### Patch Changes

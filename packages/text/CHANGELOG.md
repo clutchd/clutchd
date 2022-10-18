@@ -1,5 +1,12 @@
 # @clutchd/text
 
+## 0.3.1
+
+### Patch Changes
+
+- Updated dependencies [679aa59]
+  - @clutchd/tailwind@0.1.3
+
 ## 0.3.0
 
 ### Minor Changes
