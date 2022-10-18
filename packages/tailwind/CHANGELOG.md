@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.3.0
+
+### Minor Changes
+
+- 135b4a8: Add critical flex classes
+
 ## 0.2.2
 
 ### Patch Changes
