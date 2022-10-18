@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.1.2
+
+### Patch Changes
+
+- f9f78f4: Allow theme to be optional
+
 ## 0.1.1
 
 ### Patch Changes
