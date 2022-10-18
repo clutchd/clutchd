@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.2.1
+
+### Patch Changes
+
+- 96b40a6: Fix spaceX and spaceY exports
+
 ## 0.2.0
 
 ### Minor Changes
