@@ -44,5 +44,5 @@ export const spaceY = [
 export type ISpaceY = typeof spaceY[number];
 
 export interface IWithSpaceY {
-  spaceX?: ISpaceY;
+  spaceY?: ISpaceY;
 }
