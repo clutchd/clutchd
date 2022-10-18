@@ -1,3 +1,7 @@
+/**
+ * {@link https://tailwindcss.com/docs/customizing-colors}
+ */
+
 export const color = [
   "brand", // overridable color palette
   "slate",
@@ -27,7 +31,7 @@ export const color = [
 export type IColor = typeof color[number];
 
 export interface IWithColor {
-  theme: IColor;
+  theme?: IColor;
 }
 
 export type IColorVariants = {
