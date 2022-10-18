@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.3.1
+
+### Patch Changes
+
+- 897c8ee: Fix exports
+
 ## 0.3.0
 
 ### Minor Changes
