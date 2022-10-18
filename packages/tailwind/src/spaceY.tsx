@@ -38,7 +38,7 @@ export const spaceY = [
   "space-y-80",
   "space-y-96",
   "space-y-px",
-  "space-y-reverse"
+  "space-y-reverse",
 ];
 
 export type ISpaceY = typeof spaceY[number];

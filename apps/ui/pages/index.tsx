@@ -40,8 +40,12 @@ export default function Home() {
           <Text.Title>Text</Text.Title>
           <Text.Subtitle>Text</Text.Subtitle>
           <Text.Text>Text</Text.Text>
-          <Text.Text><Text.Bold>Text</Text.Bold></Text.Text>
-          <Text.Text><Text.Italic>Text</Text.Italic></Text.Text>
+          <Text.Text>
+            <Text.Bold>Text</Text.Bold>
+          </Text.Text>
+          <Text.Text>
+            <Text.Italic>Text</Text.Italic>
+          </Text.Text>
           <Text.Caption>Text</Text.Caption>
         </Layout.Content>
         <Layout.Footer row col={false}>

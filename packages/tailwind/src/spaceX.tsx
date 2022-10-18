@@ -38,7 +38,7 @@ export const spaceX = [
   "space-x-80",
   "space-x-96",
   "space-x-px",
-  "space-x-reverse"
+  "space-x-reverse",
 ];
 
 export type ISpaceX = typeof spaceX[number];
