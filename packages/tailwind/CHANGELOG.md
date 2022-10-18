@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.2.0
+
+### Minor Changes
+
+- f8415f8: Add space-x and space-y
+
 ## 0.1.3
 
 ### Patch Changes
