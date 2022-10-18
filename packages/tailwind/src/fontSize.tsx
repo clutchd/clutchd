@@ -21,5 +21,5 @@ export const fontSize = [
 export type IFontSize = typeof fontSize[number];
 
 export interface IWithFontSize {
-  fontSize: IFontSize;
+  fontSize?: IFontSize;
 }

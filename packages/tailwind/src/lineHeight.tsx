@@ -22,5 +22,5 @@ export const lineHeight = [
 export type ILineHeight = typeof lineHeight[number];
 
 export interface IWithLineHeight {
-  lineHeight: ILineHeight;
+  lineHeight?: ILineHeight;
 }
