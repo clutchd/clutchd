@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/website",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "private": true,
   "scripts": {
     "clean": "rm -rf .next node_modules coverage package-lock.json",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@clutchd/layout": "^0.10.0",
-    "@clutchd/text": "^0.2.1",
+    "@clutchd/text": "^0.3.0",
     "autoprefixer": "^10.4.8",
     "next": "^12.2.5",
     "postcss": "^8.4.16",

@@ -1,5 +1,16 @@
 # @clutchd/text
 
+## 0.3.0
+
+### Minor Changes
+
+- 0e26a5d: Introduce colors
+
+### Patch Changes
+
+- Updated dependencies [f9f78f4]
+  - @clutchd/tailwind@0.1.2
+
 ## 0.2.1
 
 ### Patch Changes
