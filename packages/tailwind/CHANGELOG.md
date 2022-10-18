@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.2.2
+
+### Patch Changes
+
+- eeec9bf: Fix space-y prop
+
 ## 0.2.1
 
 ### Patch Changes
