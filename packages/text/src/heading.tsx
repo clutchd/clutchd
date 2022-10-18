@@ -1,3 +1,5 @@
+import { clsx } from "@clutchd/clsx";
+import { getColor } from "@clutchd/tailwind";
 import { Base } from "./base";
 import { ITextProps } from "./text";
 
@@ -18,11 +20,19 @@ interface IHeadingProps extends ITextProps {
  * @param props `IHeadingProps` used to render this `Heading`
  * @returns `Heading` component
  */
-function Heading(props: IHeadingProps) {
+function Heading({
+  className,
+  fontSize = "text-4xl",
+  fontWeight = "font-semibold",
+  theme = "gray",
+  ...props
+}: IHeadingProps) {
+  const color = getColor(theme, "700").textColor;
   return (
     <Base
-      component="text-4xl font-semibold text-gray-800"
-      loadingComponent="w-48"
+      className={clsx(color, className)}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
       tag={GetType(props.level)}
       {...props}
     />

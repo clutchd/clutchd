@@ -1,3 +1,5 @@
+import { clsx } from "@clutchd/clsx";
+import { getColor } from "@clutchd/tailwind";
 import { Base } from "./base";
 import { ITextProps } from "./text";
 
@@ -16,8 +18,22 @@ interface ISubtitleProps extends ITextProps {}
  * @param props `ISubtitleProps` used to render this `Subtitle`
  * @returns `Subtitle` component
  */
-function Subtitle(props: ISubtitleProps) {
-  return <Base component="text-lg font-normal text-gray-400" {...props} />;
+function Subtitle({
+  className,
+  fontSize = "text-lg",
+  fontWeight = "font-normal",
+  theme = "gray",
+  ...props
+}: ISubtitleProps) {
+  const color = getColor(theme, "400").textColor;
+  return (
+    <Base
+      className={clsx(color, className)}
+      fontSize={fontSize}
+      fontWeight={fontWeight}
+      {...props}
+    />
+  );
 }
 
 export { Subtitle };

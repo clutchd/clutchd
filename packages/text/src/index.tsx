@@ -1,4 +1,3 @@
-import { Base, IBase, IBaseProps } from "./base";
 import { Bold, IBold, IBoldProps } from "./bold";
 import { Caption, ICaption, ICaptionProps } from "./caption";
 import { Heading, IHeading, IHeadingProps } from "./heading";
@@ -15,7 +14,6 @@ import { ITitle, ITitleProps, Title } from "./title";
  * Type to define `Text` component
  */
 type IText = {
-  Base: IBase;
   Bold: IBold;
   Caption: ICaption;
   Heading: IHeading;
@@ -29,7 +27,6 @@ type IText = {
  * Type to define `Text` props
  */
 interface ITextProps {
-  IBaseProps: IBaseProps;
   IBoldProps: IBoldProps;
   ICaptionProps: ICaptionProps;
   IHeadingProps: IHeadingProps;
@@ -43,7 +40,6 @@ interface ITextProps {
  * `Text` - A component used to quickly render consistent text
  */
 const Text: IText = {
-  Base: Base,
   Bold: Bold,
   Caption: Caption,
   Heading: Heading,

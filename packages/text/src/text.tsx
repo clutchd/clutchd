@@ -1,4 +1,12 @@
+import { clsx } from "@clutchd/clsx";
 import { IComponent, IComponentProps } from "@clutchd/component";
+import {
+  getColor,
+  IWithColor,
+  IWithFontSize,
+  IWithFontWeight,
+  IWithLineHeight,
+} from "@clutchd/tailwind";
 import { Base } from "./base";
 
 /**
@@ -9,7 +17,12 @@ type IText = typeof Text;
 /**
  * Type to define `Text` props
  */
-interface ITextProps extends IComponentProps<IComponent["p"]> {
+interface ITextProps
+  extends IComponentProps<IComponent["p"]>,
+    IWithFontSize,
+    IWithLineHeight,
+    IWithFontWeight,
+    IWithColor {
   protect?: boolean;
 }
 
@@ -18,8 +31,23 @@ interface ITextProps extends IComponentProps<IComponent["p"]> {
  * @param props `ITextProps` used to render this `Text`
  * @returns `Text` component
  */
-function Text(props: ITextProps) {
-  return <Base component="text-base font-normal text-gray-500" {...props} />;
+function Text({
+  fontSize = "text-base",
+  fontWeight = "font-normal",
+  lineHeight = "leading-normal",
+  theme = "gray",
+  ...props
+}: ITextProps) {
+  const color = getColor(theme, "500").textColor;
+  return (
+    <Base
+      fontSize={fontSize}
+      lineHeight={lineHeight}
+      fontWeight={fontWeight}
+      className={clsx(color, props.className)}
+      {...props}
+    />
+  );
 }
 
 export { Text };

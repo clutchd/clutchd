@@ -1,5 +1,5 @@
+import { IComponent, IComponentProps } from "@clutchd/component";
 import { Base } from "./base";
-import { ITextProps } from "./text";
 
 /**
  * Type to define `Bold` component
@@ -9,7 +9,9 @@ type IBold = typeof Bold;
 /**
  * Type to define `Bold` props
  */
-interface IBoldProps extends ITextProps {}
+interface IBoldProps extends IComponentProps<IComponent["p"]> {
+  protect?: boolean;
+}
 
 /**
  * `Bold` - A inline text component used to bold the provided text, intended to be used within the `Text` component
@@ -17,7 +19,15 @@ interface IBoldProps extends ITextProps {}
  * @returns `Bold` component
  */
 function Bold(props: IBoldProps) {
-  return <Base component="text-inherit font-bold" tag="span" {...props} />;
+  return (
+    <Base
+      fontSize=""
+      lineHeight=""
+      fontWeight="font-bold"
+      tag="span"
+      {...props}
+    />
+  );
 }
 
 export { Bold };

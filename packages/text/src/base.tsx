@@ -1,8 +1,13 @@
-import { IComponent } from "@clutchd/component";
+import { clsx } from "@clutchd/clsx";
+import { IComponent, IComponentProps } from "@clutchd/component";
 import { Protect } from "@clutchd/protect";
 import { Skeleton } from "@clutchd/skeleton";
-import clsx from "clsx";
-import { ITextProps } from "./text";
+import {
+  IFontSize,
+  IWithFontSize,
+  IWithFontWeight,
+  IWithLineHeight,
+} from "@clutchd/tailwind";
 
 /**
  * Type to define `Base` component
@@ -12,10 +17,12 @@ type IBase = typeof Base;
 /**
  * Type to define `Base` props
  */
-interface IBaseProps extends ITextProps {
-  component: string;
-  loadingWrapper?: string;
-  loadingComponent?: string;
+interface IBaseProps
+  extends IComponentProps<IComponent["p"]>,
+    IWithFontSize,
+    IWithLineHeight,
+    IWithFontWeight {
+  protect?: boolean;
   tag?: string;
 }
 
@@ -30,8 +37,10 @@ function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
 
   // get class names
   const className = clsx(
-    props.component,
-    "transition-all duration-200 leading-normal",
+    props.fontSize,
+    props.fontWeight,
+    props.lineHeight,
+    "transition-all duration-200",
     props.className
   );
 
@@ -42,18 +51,11 @@ function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
 
   // loading component to be rendered
   const loading = (
-    <div
-      className={clsx(
-        GetWrapper(className),
-        props.loadingWrapper,
-        "flex items-center"
-      )}
-    >
+    <div className={clsx(GetWrapper(className), "flex items-center")}>
       <Skeleton
         className={clsx(
           GetComponent(className),
           "min-w-[144px]",
-          props.loadingComponent,
           "animate-pulse"
         )}
       />
@@ -73,19 +75,7 @@ function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
  * Type to define a `TextClassMap` object
  */
 type ITextClassMap = {
-  "text-xs": string;
-  "text-sm": string;
-  "text-base": string;
-  "text-lg": string;
-  "text-xl": string;
-  "text-2xl": string;
-  "text-3xl": string;
-  "text-4xl": string;
-  "text-5xl": string;
-  "text-6xl": string;
-  "text-7xl": string;
-  "text-8xl": string;
-  "text-9xl": string;
+  [key in IFontSize]: string;
 };
 
 /**
@@ -116,7 +106,7 @@ function GetClass(className: string, map: ITextClassMap): string {
  * @returns component skeleton class
  */
 function GetComponent(className: string): string {
-  const map = {
+  const map: ITextClassMap = {
     "text-xs": "h-[12px]",
     "text-sm": "h-[14px]",
     "text-base": "h-[16px]",
@@ -141,7 +131,7 @@ function GetComponent(className: string): string {
  * @returns wrapper skeleton class
  */
 function GetWrapper(className: string): string {
-  const map = {
+  const map: ITextClassMap = {
     "text-xs": "h-[16px]",
     "text-sm": "h-[20px]",
     "text-base": "h-[24px]",
