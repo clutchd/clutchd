@@ -1,5 +1,12 @@
 # @clutchd/website
 
+## 0.2.5
+
+### Patch Changes
+
+- Updated dependencies [0e26a5d]
+  - @clutchd/text@0.3.0
+
 ## 0.2.4
 
 ### Patch Changes
