@@ -17,7 +17,7 @@ export const lineHeight = [
   "leading-normal",
   "leading-relaxed",
   "leading-loose",
-];
+] as const;
 
 export type ILineHeight = typeof lineHeight[number];
 

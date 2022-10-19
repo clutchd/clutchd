@@ -16,7 +16,7 @@ export const fontSize = [
   "text-7xl",
   "text-8xl",
   "text-9xl",
-];
+] as const;
 
 export type IFontSize = typeof fontSize[number];
 

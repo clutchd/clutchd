@@ -3136,4 +3136,4 @@ export const colorMap: {
       focusRingColor: "focus:ring-rose-900",
     },
   },
-};
+} as const;

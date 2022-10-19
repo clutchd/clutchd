@@ -7,7 +7,7 @@ export const flexDirection = [
   "flex-row-reverse",
   "flex-col",
   "flex-col-reverse",
-];
+] as const;
 
 export type IFlexDirection = typeof flexDirection[number];
 

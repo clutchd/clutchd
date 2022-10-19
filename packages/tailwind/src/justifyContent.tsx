@@ -9,7 +9,7 @@ export const justifyContent = [
   "justify-between",
   "justify-around",
   "justify-evenly",
-];
+] as const;
 
 export type IJustifyContent = typeof justifyContent[number];
 

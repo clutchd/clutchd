@@ -8,7 +8,7 @@ export const alignItems = [
   "items-center",
   "items-baseline",
   "items-stretch",
-];
+] as const;
 
 export type IAlignItems = typeof alignItems[number];
 

@@ -12,7 +12,7 @@ export const fontWeight = [
   "font-bold",
   "font-extrabold",
   "font-black",
-];
+] as const;
 
 export type IFontWeight = typeof fontWeight[number];
 
