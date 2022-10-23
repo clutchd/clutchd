@@ -22,9 +22,6 @@ function Italic({ className, ...props }: IItalicProps) {
   return (
     <Base
       className={clsx("italic", className)}
-      fontSize=""
-      lineHeight=""
-      fontWeight=""
       tag="span"
       {...props}
     />

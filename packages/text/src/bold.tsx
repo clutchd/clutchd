@@ -21,8 +21,6 @@ interface IBoldProps extends IComponentProps<IComponent["p"]> {
 function Bold(props: IBoldProps) {
   return (
     <Base
-      fontSize=""
-      lineHeight=""
       fontWeight="font-bold"
       tag="span"
       {...props}
