@@ -1,5 +1,13 @@
 # @clutchd/ui
 
+## 0.1.2
+
+### Patch Changes
+
+- 2470945: Update deps
+- Updated dependencies [71d2bb0]
+  - @clutchd/layout@0.11.0
+
 ## 0.1.1
 
 ### Patch Changes

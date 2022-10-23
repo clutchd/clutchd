@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.11.0
+
+### Minor Changes
+
+- 71d2bb0: Utilize @clutchd/flex
+
 ## 0.10.0
 
 ### Minor Changes
