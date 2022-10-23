@@ -1,5 +1,17 @@
 # @clutchd/tailwind
 
+## 0.4.0
+
+### Minor Changes
+
+- 556579c: Add gapX & gapY
+- 5b9819d: Add gridCols
+- ab36fff: Add colSpan & rowSpan
+
+### Patch Changes
+
+- e5d126c: Fixes tailwind types
+
 ## 0.3.1
 
 ### Patch Changes
