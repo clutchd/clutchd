@@ -4,6 +4,7 @@ export * from "./colSpan";
 export * from "./flexDirection";
 export * from "./fontSize";
 export * from "./fontWeight";
+export * from "./gridCols";
 export * from "./justifyContent";
 export * from "./lineHeight";
 export * from "./rowSpan";
