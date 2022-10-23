@@ -4,6 +4,8 @@ export * from "./colSpan";
 export * from "./flexDirection";
 export * from "./fontSize";
 export * from "./fontWeight";
+export * from "./gapX";
+export * from "./gapY";
 export * from "./gridCols";
 export * from "./justifyContent";
 export * from "./lineHeight";
