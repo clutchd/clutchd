@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "clean": "rm -rf .next node_modules coverage package-lock.json",
@@ -11,7 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@clutchd/layout": "^0.10.0",
+    "@clutchd/layout": "^0.11.0",
     "@clutchd/text": "^0.3.7",
     "autoprefixer": "^10.4.8",
     "next": "^12.2.5",
