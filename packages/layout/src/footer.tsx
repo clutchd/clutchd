@@ -1,10 +1,6 @@
-import {
-  IComponent,
-  Component,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
 import { clsx } from "@clutchd/clsx";
-import { BuildStyle, ILayoutProps } from "./layout";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Col, Row } from "@clutchd/flex";
 
 /**
  * Type to define `Footer` component
@@ -14,9 +10,10 @@ type IFooter = typeof Footer;
 /**
  * Type to define `Footer` props
  */
-interface IFooterProps
-  extends ILayoutProps,
-    ReactPropsWithoutRef<IComponent["footer"]> {}
+interface IFooterProps extends ReactPropsWithoutRef<IComponent["footer"]> {
+  direction?: "col" | "row";
+  padding?: boolean;
+}
 
 /**
  * `Footer` - A `Container` designed to contain a page's footer content. Renders as a `footer` element
@@ -24,17 +21,29 @@ interface IFooterProps
  * @returns `Footer` component
  */
 function Footer({
-  col = true,
+  children,
+  className,
+  direction = "row",
   padding = true,
-  row = false,
   ...props
 }: IFooterProps) {
-  const className = clsx(
-    "flex grow-1 shrink-0",
-    BuildStyle({ col, padding, row }),
-    props.className
+  const classNames = clsx(padding ? "p-6 sm:p-8" : "", className);
+
+  // if row, return row
+  if (direction === "row") {
+    return (
+      <Row asChild className={classNames} {...props}>
+        <footer>{children}</footer>
+      </Row>
+    );
+  }
+
+  // otherwise, return col
+  return (
+    <Col asChild className={classNames} {...props}>
+      <footer>{children}</footer>
+    </Col>
   );
-  return <Component.footer {...props} className={className} />;
 }
 
 export { Footer };

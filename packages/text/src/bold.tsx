@@ -19,13 +19,7 @@ interface IBoldProps extends IComponentProps<IComponent["p"]> {
  * @returns `Bold` component
  */
 function Bold(props: IBoldProps) {
-  return (
-    <Base
-      fontWeight="font-bold"
-      tag="span"
-      {...props}
-    />
-  );
+  return <Base fontWeight="font-bold" tag="span" {...props} />;
 }
 
 export { Bold };

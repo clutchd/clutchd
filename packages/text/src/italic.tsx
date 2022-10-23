@@ -19,13 +19,7 @@ interface IItalicProps extends IComponentProps<IComponent["p"]> {
  * @returns `Italic` component
  */
 function Italic({ className, ...props }: IItalicProps) {
-  return (
-    <Base
-      className={clsx("italic", className)}
-      tag="span"
-      {...props}
-    />
-  );
+  return <Base className={clsx("italic", className)} tag="span" {...props} />;
 }
 
 export { Italic };

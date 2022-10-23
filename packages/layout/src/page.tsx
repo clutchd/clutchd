@@ -1,10 +1,7 @@
-import {
-  IComponent,
-  Component,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
 import { clsx } from "@clutchd/clsx";
-import { BuildStyle, ILayoutProps } from "./layout";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Col, Row } from "@clutchd/flex";
+import { getColor, IWithColor } from "@clutchd/tailwind";
 
 /**
  * Type to define `Page` component
@@ -15,8 +12,11 @@ type IPage = typeof Page;
  * Type to define `Page` props
  */
 interface IPageProps
-  extends ILayoutProps,
-    ReactPropsWithoutRef<IComponent["header"]> {}
+  extends IWithColor,
+    ReactPropsWithoutRef<IComponent["div"]> {
+  direction?: "col" | "row";
+  padding?: boolean;
+}
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen
@@ -24,17 +24,21 @@ interface IPageProps
  * @returns `Page` component
  */
 function Page({
-  col = false,
-  padding = false,
-  row = false,
+  className,
+  direction = "col",
+  theme = "gray",
   ...props
 }: IPageProps) {
-  const className = clsx(
-    "flex flex-1 min-h-screen min-w-screen",
-    BuildStyle({ col, padding, row }),
-    props.className
-  );
-  return <Component.div {...props} className={className} />;
+  const color = getColor(theme, "50").bgColor;
+  const classNames = clsx(color, "min-h-screen min-w-screen", className);
+
+  // if row, return row
+  if (direction === "row") {
+    return <Row className={classNames} {...props} />;
+  }
+
+  // otherwise, return col
+  return <Col className={classNames} {...props} />;
 }
 
 export { Page };

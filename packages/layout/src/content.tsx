@@ -1,10 +1,6 @@
-import {
-  IComponent,
-  Component,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
 import { clsx } from "@clutchd/clsx";
-import { BuildStyle, ILayoutProps } from "./layout";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Col, Row } from "@clutchd/flex";
 
 /**
  * Type to define `Content` component
@@ -14,9 +10,10 @@ type IContent = typeof Content;
 /**
  * Type to define `Content` props
  */
-interface IContentProps
-  extends ILayoutProps,
-    ReactPropsWithoutRef<IComponent["main"]> {}
+interface IContentProps extends ReactPropsWithoutRef<IComponent["main"]> {
+  direction?: "col" | "row";
+  padding?: boolean;
+}
 
 /**
  * `Content` - A `Container` designed to contain a page's primary content. Renders as a `main` element
@@ -24,17 +21,29 @@ interface IContentProps
  * @returns `Content` component
  */
 function Content({
-  col = true,
+  children,
+  className,
+  direction = "col",
   padding = true,
-  row = false,
   ...props
 }: IContentProps) {
-  const className = clsx(
-    "flex flex-1",
-    BuildStyle({ col, padding, row }),
-    props.className
+  const classNames = clsx("flex-1", padding ? "p-6 sm:p-8" : "", className);
+
+  // if row, return row
+  if (direction === "row") {
+    return (
+      <Row asChild className={classNames} {...props}>
+        <main>{children}</main>
+      </Row>
+    );
+  }
+
+  // otherwise, return col
+  return (
+    <Col asChild className={classNames} {...props}>
+      <main>{children}</main>
+    </Col>
   );
-  return <Component.main {...props} className={className} />;
 }
 
 export { Content };
