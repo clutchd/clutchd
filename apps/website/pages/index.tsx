@@ -51,7 +51,7 @@ export default function Home() {
             publishable-key="pk_live_51KnXiKExxz9r9gq2q29FmChNykUYPIuokFLvpumZDlw15GB7GNaJpuB45iMQIbthpTm4O3AjjCfBhfmRhZeG8wfP00YCb9j0rC"
           ></stripe-pricing-table>
         </Content>
-        <Footer row col={false}>
+        <Footer>
           <div className="flex w-1/2">
             <Text.Caption>
               © {new Date().getFullYear()} Clutchd, LLC

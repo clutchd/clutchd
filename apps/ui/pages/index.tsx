@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>Clutchd, LLC</title>
       </Head>
-      <Page col>
+      <Page>
         <Header>
           <nav className="flex flex-row w-full">
             <div className="hidden sm:block">
@@ -48,7 +48,7 @@ export default function Home() {
           </Text.Text>
           <Text.Caption>Text</Text.Caption>
         </Content>
-        <Footer row col={false}>
+        <Footer>
           <div className="flex w-1/2">
             <Text.Caption>
               © {new Date().getFullYear()} Clutchd, LLC
