@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "lint": "eslint \"*.js\" --fix",
-    "clean": "rm -rf node_modules .turbo"
+    "clean": "rm -rf .next .turbo node_modules coverage package-lock.json"
   },
   "dependencies": {
     "eslint-config-next": "^12.2.5",

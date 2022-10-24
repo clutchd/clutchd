@@ -9,17 +9,14 @@
     "dev": "turbo run dev --no-cache --parallel --continue",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "clean": "turbo run clean && rm -rf node_modules package-lock.json",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo run clean && rm -rf .next .turbo node_modules coverage package-lock.json",
+    "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md}\"",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "turbo run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
-    "@clutchd/config": "*",
-    "eslint-config-next": "^12.2.5",
-    "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.5.1",
     "turbo": "latest"
   }

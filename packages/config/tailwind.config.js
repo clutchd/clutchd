@@ -1,7 +1,11 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: ["**/*.{js,ts,jsx,tsx}", "../../apps/**/*.{js,ts,jsx,tsx}", "../../packages/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "**/*.{js,ts,jsx,tsx}",
+    "../../apps/**/*.{js,ts,jsx,tsx}",
+    "../../packages/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: "class",
   theme: {
     extend: {
@@ -10,11 +14,11 @@ module.exports = {
           500: "#8805FF",
         },
         accent: {
-          500: "#1C2541"
-        }
+          500: "#1C2541",
+        },
       },
       fontFamily: {
-        'sans': ["Manrope", ...defaultTheme.fontFamily.sans],
+        sans: ["Manrope", ...defaultTheme.fontFamily.sans],
       },
       minHeight: {
         screen: "100vh",
