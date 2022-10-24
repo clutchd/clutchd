@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/grid",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -32,8 +32,8 @@
     "react-dom": "^18.1.0"
   },
   "dependencies": {
-    "@clutchd/component": "^0.6.0",
-    "@clutchd/clsx": "0.1.0",
-    "@clutchd/tailwind": "0.4.0"
+    "@clutchd/component": "^0.6.1",
+    "@clutchd/clsx": "0.1.1",
+    "@clutchd/tailwind": "0.4.1"
   }
 }
