@@ -18,8 +18,6 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "eslint-config-next": "^12.2.5",
-    "eslint-config-prettier": "^8.5.0",
     "ts-jest": "^28.0.5",
     "tsup": "^5.12.6",
     "typescript": "^4.5.5"

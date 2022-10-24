@@ -19,8 +19,6 @@
   "devDependencies": {
     "@clutchd/config": "*",
     "@types/react": "^18.0.17",
-    "eslint-config-next": "^12.2.5",
-    "eslint-config-prettier": "^8.5.0",
     "next-auth": "^4.10.3",
     "postcss": "^8.4.16",
     "react": "^18.1.0",
