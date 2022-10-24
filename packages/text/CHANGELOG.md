@@ -1,5 +1,17 @@
 # @clutchd/text
 
+## 0.3.8
+
+### Patch Changes
+
+- 6d9baff: Cleanup deps
+- Updated dependencies [6d9baff]
+  - @clutchd/clsx@0.1.1
+  - @clutchd/component@0.6.1
+  - @clutchd/protect@0.5.1
+  - @clutchd/skeleton@0.4.1
+  - @clutchd/tailwind@0.4.1
+
 ## 0.3.7
 
 ### Patch Changes

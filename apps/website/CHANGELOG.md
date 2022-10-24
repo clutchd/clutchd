@@ -1,5 +1,14 @@
 # @clutchd/website
 
+## 0.2.7
+
+### Patch Changes
+
+- 6d9baff: Cleanup deps
+- Updated dependencies [6d9baff]
+  - @clutchd/layout@0.11.1
+  - @clutchd/text@0.3.8
+
 ## 0.2.6
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @clutchd/avatar
 
+## 0.4.1
+
+### Patch Changes
+
+- 6d9baff: Cleanup deps
+- Updated dependencies [6d9baff]
+  - @clutchd/clsx@0.1.1
+  - @clutchd/component@0.6.1
+
 ## 0.4.0
 
 ### Minor Changes

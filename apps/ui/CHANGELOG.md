@@ -1,5 +1,14 @@
 # @clutchd/ui
 
+## 0.1.3
+
+### Patch Changes
+
+- 6d9baff: Cleanup deps
+- Updated dependencies [6d9baff]
+  - @clutchd/layout@0.11.1
+  - @clutchd/text@0.3.8
+
 ## 0.1.2
 
 ### Patch Changes
