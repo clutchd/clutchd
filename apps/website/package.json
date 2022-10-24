@@ -3,11 +3,10 @@
   "version": "0.2.7",
   "private": true,
   "scripts": {
-    "clean": "rm -rf .next .turbo node_modules coverage package-lock.json",
+    "build": "next build",
+    "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
     "dev": "next dev",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\"",
-    "build": "next build",
-    "lint": "next lint",
     "start": "next start"
   },
   "dependencies": {

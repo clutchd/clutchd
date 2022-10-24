@@ -1,15 +1,13 @@
 {
   "pipeline": {
     "build": {
-      "outputs": ["dist/**", ".next/**"],
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"]
     },
     "test": {
-      "outputs": ["coverage/**"],
-      "dependsOn": ["^build", "build"]
-    },
-    "lint": {
-      "outputs": []
+      "dependsOn": ["build"],
+      "inputs": ["**/*.ts", "**/*.tsx"],
+      "outputs": ["coverage/**"]
     },
     "dev": {
       "cache": false

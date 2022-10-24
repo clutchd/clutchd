@@ -7,7 +7,7 @@
   "scripts": {
     "build": "turbo run build",
     "changeset": "changeset",
-    "clean": "turbo run clean && rm -rf .next .turbo node_modules coverage package-lock.json",
+    "clean": "turbo run clean && rm -rf .next .turbo node_modules coverage dist package-lock.json",
     "dev": "turbo run dev --no-cache --parallel --continue",
     "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
