@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.5.0
+
+### Minor Changes
+
+- 0831ea5: Add transparent, black, & white themes
+
 ## 0.4.1
 
 ### Patch Changes
