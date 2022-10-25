@@ -3,6 +3,9 @@
  */
 
 export const color = [
+  "transparent",
+  "black",
+  "white",
   "brand", // overridable color palette
   "slate",
   "gray",
@@ -49,7 +52,15 @@ export type IColorVariants = {
 };
 
 export const getColor = (base: IColor, shade: string): IColorVariants => {
-  return colorMap[base][shade];
+  switch (base) {
+    case "transparent":
+    case "black":
+    case "white":
+      return colorMap[base]["none"];
+
+    default:
+      return colorMap[base][shade];
+  }
 };
 
 export const colorMap: {
