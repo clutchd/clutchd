@@ -10,6 +10,7 @@ const NODES = [
   "div",
   "footer",
   "header",
+  "input",
   "main",
   "p",
   "section",
