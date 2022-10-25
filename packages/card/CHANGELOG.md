@@ -1,5 +1,12 @@
 # @clutchd/card
 
+## 0.1.1
+
+### Patch Changes
+
+- Updated dependencies [0831ea5]
+  - @clutchd/tailwind@0.5.0
+
 ## 0.1.0
 
 ### Minor Changes
