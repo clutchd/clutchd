@@ -28,21 +28,22 @@ interface ICardProps
  */
 function Card({
   children,
+  className,
   decoration,
   hover = false,
   theme = "gray",
   ...props
 }: ICardProps) {
-  const className = clsx(
+  const classNames = clsx(
     "transition-all duration-200 relative p-6 bg-white rounded-lg shadow ring-gray-200 ring-1",
     getDecoration(decoration),
     getColor(theme, "400").borderColor,
     hover && "hover:shadow-lg",
-    props.className
+    className
   );
 
   return (
-    <Component.div className={className} {...props}>
+    <Component.div className={classNames} {...props}>
       {children}
     </Component.div>
   );

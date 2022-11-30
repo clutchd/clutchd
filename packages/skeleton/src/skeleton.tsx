@@ -22,11 +22,11 @@ interface ISkeletonProps extends ReactPropsWithoutRef<IComponent["div"]> {
  * @param props `ISkeletonProps` used to render this `Skeleton`
  * @returns `Skeleton` component
  */
-function Skeleton({ dark = false, ...props }: ISkeletonProps) {
+function Skeleton({ className, dark = false, ...props }: ISkeletonProps) {
   return (
     <Component.div
+      className={clsx("max-w-full max-h-full", className)}
       {...props}
-      className={clsx("max-w-full max-h-full", props.className)}
     >
       <span
         className={clsx(

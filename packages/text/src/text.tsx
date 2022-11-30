@@ -32,6 +32,7 @@ interface ITextProps
  * @returns `Text` component
  */
 function Text({
+  className,
   fontSize = "text-base",
   fontWeight = "font-normal",
   lineHeight = "leading-normal",
@@ -41,10 +42,10 @@ function Text({
   const color = getColor(theme, "500").textColor;
   return (
     <Base
+      className={clsx(color, className)}
       fontSize={fontSize}
-      lineHeight={lineHeight}
       fontWeight={fontWeight}
-      className={clsx(color, props.className)}
+      lineHeight={lineHeight}
       {...props}
     />
   );

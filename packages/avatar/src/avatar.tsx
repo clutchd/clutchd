@@ -27,16 +27,22 @@ interface IAvatarProps extends ReactPropsWithoutRef<typeof Component.span> {
  * @param props `IAvatarProps` used to render this `Avatar`
  * @returns `Avatar` component
  */
-function Avatar({ alt, src, fallback = "U", ...props }: IAvatarProps) {
+function Avatar({
+  alt,
+  className,
+  fallback = "U",
+  src,
+  ...props
+}: IAvatarProps) {
   const [loadingState, setLoadingState] = useState<loadingTypes>("idle");
 
-  const className = clsx(
+  const classNames = clsx(
     "h-12 w-12 rounded-full overflow-hidden relative",
-    props.className
+    className
   );
 
   return (
-    <Component.span {...props} className={className}>
+    <Component.span className={classNames} {...props}>
       {src != null && (
         <Image
           onLoadStart={() => {

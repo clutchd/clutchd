@@ -2,7 +2,7 @@ import { clsx } from "@clutchd/clsx";
 import {
   Component,
   IComponent,
-  ReactPropsWithoutRef
+  ReactPropsWithoutRef,
 } from "@clutchd/component";
 import { getColor, IWithColor } from "@clutchd/tailwind";
 
@@ -14,7 +14,9 @@ type IDivider = typeof Divider;
 /**
  * Type to define `Divider` props
  */
-interface IDividerProps extends IWithColor, ReactPropsWithoutRef<IComponent["div"]> {
+interface IDividerProps
+  extends IWithColor,
+    ReactPropsWithoutRef<IComponent["div"]> {
   direction?: "horizontal" | "vertical";
   hr?: boolean;
 }
@@ -25,21 +27,20 @@ interface IDividerProps extends IWithColor, ReactPropsWithoutRef<IComponent["div
  * @returns `Divider` component
  */
 function Divider({
+  className,
   direction = "horizontal",
   hr = true,
   theme = "gray",
   ...props
 }: IDividerProps) {
-  const className = clsx(
+  const classNames = clsx(
     "transition-all duration-200 rounded-lg",
     hr ? getColor(theme, "200").bgColor : "bg-inherit",
     direction === "horizontal" ? "mt-6 mb-6 h-[3px]" : "ml-6 mr-6 w-[3px]",
-    props.className
+    className
   );
 
-  return (
-    <Component.div className={className} {...props} />
-  );
+  return <Component.div className={classNames} {...props} />;
 }
 
 export { Divider };
