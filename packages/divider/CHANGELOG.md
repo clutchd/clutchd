@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 0.3.0
+
+### Minor Changes
+
+- 4ab9992: Add color and component support
+
 ## 0.2.2
 
 ### Patch Changes
