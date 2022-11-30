@@ -21,16 +21,15 @@ function Divider({
   hr = true,
   ...props
 }: IDividerProps) {
-  const horizontal = "w-full mx-auto mt-6 mb-6 h-[3px]";
-  const vertical = "h-full my-auto ml-6 mr-6 w-[3px]";
+  const horizontal = "mt-6 mb-6 h-[3px]";
+  const vertical = "ml-6 mr-6 w-[3px]";
   const line = hr ? "bg-gray-200" : "bg-inherit";
 
   return (
     <div
       {...props}
-      className={`transition-all duration-200 rounded-lg ${line} ${
-        direction === "horizontal" ? horizontal : vertical
-      }`}
+      className={`transition-all duration-200 rounded-lg ${line} ${direction === "horizontal" ? horizontal : vertical
+        }`}
     />
   );
 }
