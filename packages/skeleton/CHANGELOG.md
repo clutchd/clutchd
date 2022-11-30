@@ -1,5 +1,12 @@
 # @clutchd/skeleton
 
+## 0.4.2
+
+### Patch Changes
+
+- Updated dependencies [922509c]
+  - @clutchd/component@0.7.0
+
 ## 0.4.1
 
 ### Patch Changes

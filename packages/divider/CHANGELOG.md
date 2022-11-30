@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 0.2.2
+
+### Patch Changes
+
+- 53a9201: Fix bug with hr
+
 ## 0.2.1
 
 ### Patch Changes
