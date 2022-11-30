@@ -1,5 +1,11 @@
 # @clutchd/avatar
 
+## 0.4.3
+
+### Patch Changes
+
+- 2d40609: Fix className bug
+
 ## 0.4.2
 
 ### Patch Changes

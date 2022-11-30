@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/text",
-  "version": "0.3.10",
+  "version": "0.3.11",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -34,7 +34,7 @@
     "@clutchd/clsx": "0.1.1",
     "@clutchd/component": "^0.7.0",
     "@clutchd/protect": "^0.5.1",
-    "@clutchd/skeleton": "^0.4.2",
+    "@clutchd/skeleton": "^0.4.3",
     "@clutchd/tailwind": "0.5.0"
   }
 }

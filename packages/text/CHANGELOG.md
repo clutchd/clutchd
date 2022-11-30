@@ -1,5 +1,13 @@
 # @clutchd/text
 
+## 0.3.11
+
+### Patch Changes
+
+- 2d40609: Fix className bug
+- Updated dependencies [2d40609]
+  - @clutchd/skeleton@0.4.3
+
 ## 0.3.10
 
 ### Patch Changes
