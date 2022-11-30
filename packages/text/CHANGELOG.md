@@ -1,5 +1,13 @@
 # @clutchd/text
 
+## 0.3.10
+
+### Patch Changes
+
+- Updated dependencies [922509c]
+  - @clutchd/component@0.7.0
+  - @clutchd/skeleton@0.4.2
+
 ## 0.3.9
 
 ### Patch Changes

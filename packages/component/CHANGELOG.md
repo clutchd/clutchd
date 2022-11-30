@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.7.0
+
+### Minor Changes
+
+- 922509c: Add input component node
+
 ## 0.6.1
 
 ### Patch Changes

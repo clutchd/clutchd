@@ -1,5 +1,12 @@
 # @clutchd/card
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [922509c]
+  - @clutchd/component@0.7.0
+
 ## 0.1.1
 
 ### Patch Changes
