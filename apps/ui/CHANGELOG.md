@@ -1,5 +1,14 @@
 # @clutchd/ui
 
+## 0.1.4
+
+### Patch Changes
+
+- 9256aa2: Update dependencies
+- Updated dependencies [9256aa2]
+  - @clutchd/layout@0.11.4
+  - @clutchd/text@0.3.12
+
 ## 0.1.3
 
 ### Patch Changes

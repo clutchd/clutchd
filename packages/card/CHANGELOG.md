@@ -1,5 +1,13 @@
 # @clutchd/card
 
+## 0.1.4
+
+### Patch Changes
+
+- 9256aa2: Update dependencies
+- Updated dependencies [9256aa2]
+  - @clutchd/component@0.7.1
+
 ## 0.1.3
 
 ### Patch Changes
