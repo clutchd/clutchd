@@ -16,7 +16,7 @@
     "test": "jest --passWithNoTests"
   },
   "devDependencies": {
-    "tsup": "^5.12.6",
+    "tsup": "^6.5.0",
     "typescript": "^4.5.5"
   },
   "dependencies": {
