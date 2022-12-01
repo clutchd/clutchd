@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 0.3.2
+
+### Patch Changes
+
+- 9256aa2: Update dependencies
+
 ## 0.3.1
 
 ### Patch Changes

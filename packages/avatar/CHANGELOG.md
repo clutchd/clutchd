@@ -1,5 +1,13 @@
 # @clutchd/avatar
 
+## 0.4.4
+
+### Patch Changes
+
+- 9256aa2: Update dependencies
+- Updated dependencies [9256aa2]
+  - @clutchd/component@0.7.1
+
 ## 0.4.3
 
 ### Patch Changes

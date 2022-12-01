@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.5.2
+
+### Patch Changes
+
+- 9256aa2: Update dependencies
+
 ## 0.5.1
 
 ### Patch Changes
