@@ -1,5 +1,11 @@
 # @clutchd/card
 
+## 0.1.3
+
+### Patch Changes
+
+- 2d40609: Fix className bug
+
 ## 0.1.2
 
 ### Patch Changes
