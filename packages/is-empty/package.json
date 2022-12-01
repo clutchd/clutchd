@@ -19,7 +19,7 @@
     "@clutchd/config": "*",
     "jest-environment-jsdom": "^29.3.1",
     "ts-jest": "^29.0.3",
-    "tsup": "^5.12.6",
+    "tsup": "^6.5.0",
     "typescript": "^4.5.5"
   }
 }
