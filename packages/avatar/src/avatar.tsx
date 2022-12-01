@@ -53,7 +53,7 @@ function Avatar({
             console.log("done");
             setLoadingState("loaded");
           }}
-          alt={alt}
+          alt={alt ? alt : ""}
           layout="fill"
           objectFit="cover"
           src={src}
