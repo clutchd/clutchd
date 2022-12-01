@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@clutchd/config": "^0.1.1",
-    "eslint-config-next": "^12.3.1",
+    "eslint-config-next": "^13.0.5",
     "eslint-config-prettier": "^8.5.0"
   }
 }
