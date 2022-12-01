@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/divider",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@clutchd/clsx": "0.1.1",
-    "@clutchd/component": "^0.7.0",
+    "@clutchd/component": "^0.7.1",
     "@clutchd/config": "*",
     "@clutchd/tailwind": "0.5.0",
     "postcss": "^8.4.16",

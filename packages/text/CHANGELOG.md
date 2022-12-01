@@ -1,5 +1,15 @@
 # @clutchd/text
 
+## 0.3.12
+
+### Patch Changes
+
+- 9256aa2: Update dependencies
+- Updated dependencies [9256aa2]
+  - @clutchd/component@0.7.1
+  - @clutchd/protect@0.5.2
+  - @clutchd/skeleton@0.4.4
+
 ## 0.3.11
 
 ### Patch Changes
