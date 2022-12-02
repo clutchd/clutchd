@@ -7,7 +7,7 @@
     "*.js"
   ],
   "dependencies": {
-    "eslint-config-next": "^13.0.5",
+    "eslint-config-next": "^13.0.6",
     "eslint-config-prettier": "^8.3.0",
     "tailwindcss": "^3.1.8"
   }
