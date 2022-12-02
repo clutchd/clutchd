@@ -19,7 +19,7 @@
     "@clutchd/config": "*",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^13.2.0",
-    "@types/react": "^18.0.17",
+    "@types/react": "^18.0.26",
     "react": "^18.1.0",
     "ts-jest": "^29.0.3",
     "tsup": "^6.5.0",
