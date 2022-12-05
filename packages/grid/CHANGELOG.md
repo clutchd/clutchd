@@ -1,5 +1,12 @@
 # @clutchd/grid
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies [32573e7]
+  - @clutchd/tailwind@0.6.0
+
 ## 0.1.3
 
 ### Patch Changes
