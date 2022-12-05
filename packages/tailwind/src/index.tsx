@@ -9,6 +9,7 @@ export * from "./gapY";
 export * from "./gridCols";
 export * from "./justifyContent";
 export * from "./lineHeight";
+export * from "./maxWidth";
 export * from "./rowSpan";
 export * from "./spaceX";
 export * from "./spaceY";
