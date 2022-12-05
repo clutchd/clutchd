@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.6.0
+
+### Minor Changes
+
+- 32573e7: Add support for maxWidth
+
 ## 0.5.0
 
 ### Minor Changes
