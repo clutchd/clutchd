@@ -1,12 +1,16 @@
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
 import { clsx } from "@clutchd/clsx";
+import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import { IsEmpty } from "@clutchd/is-empty";
+import {
+  getColor,
+  IWithBorderRadius,
+  IWithColor,
+  IWithHeight,
+  IWithWidth,
+} from "@clutchd/tailwind";
+import { Text } from "@clutchd/text";
 import Image from "next/image";
 import { useState } from "react";
-
-/**
- * Types of loading states for an `Avatar`'s image
- */
-type loadingTypes = "idle" | "loading" | "loaded";
 
 /**
  * Type to define `Avatar` component
@@ -16,7 +20,12 @@ type IAvatar = typeof Avatar;
 /**
  * Type to define `Avatar` props
  */
-interface IAvatarProps extends ReactPropsWithoutRef<typeof Component.span> {
+interface IAvatarProps
+  extends IWithBorderRadius,
+    IWithColor,
+    IWithHeight,
+    IWithWidth,
+    ReactPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
   fallback?: string;
@@ -29,41 +38,64 @@ interface IAvatarProps extends ReactPropsWithoutRef<typeof Component.span> {
  */
 function Avatar({
   alt,
+  borderRadius = "rounded-full",
   className,
   fallback = "U",
+  height = "h-12",
   src,
+  theme = "gray",
+  width = "w-12",
   ...props
 }: IAvatarProps) {
-  const [loadingState, setLoadingState] = useState<loadingTypes>("idle");
+  const [loadingState, setLoadingState] = useState<boolean>(false);
+
+  const fallbackAvatar = (
+    <Text.Text
+      fontWeight="font-semibold"
+      lineHeight="leading-none"
+      className="absolute -translate-x-1/2 -translate-y-1/2 h-fit w-fit inset-1/2"
+    >
+      {fallback}
+    </Text.Text>
+  );
+
+  const imageAvatar = (
+    <Image
+      onLoadStart={() => setLoadingState(true)}
+      onLoadingComplete={() => setLoadingState(false)}
+      layout="fill"
+      objectFit="fill"
+      alt={alt ?? ""}
+      src={src}
+    />
+  );
 
   const classNames = clsx(
-    "h-12 w-12 rounded-full overflow-hidden relative",
+    "overflow-hidden relative border",
+    getColor(theme, "200").bgColor,
+    getColor(theme, "400").borderColor,
+    borderRadius,
+    height,
+    width,
     className
   );
 
+  function getAvatar() {
+    if (IsEmpty(src)) {
+      return fallbackAvatar;
+    }
+
+    return (
+      <>
+        {imageAvatar}
+        {loadingState && fallbackAvatar}
+      </>
+    );
+  }
+
   return (
     <Component.span className={classNames} {...props}>
-      {src != null && (
-        <Image
-          onLoadStart={() => {
-            console.log("start");
-            setLoadingState("loading");
-          }}
-          onLoadingComplete={() => {
-            console.log("done");
-            setLoadingState("loaded");
-          }}
-          alt={alt ? alt : ""}
-          layout="fill"
-          objectFit="cover"
-          src={src}
-        />
-      )}
-      {loadingState != "loaded" && (
-        <span className="block w-full h-full text-center leading-[48px] bg-gray-200 text-gray-500">
-          {fallback}
-        </span>
-      )}
+      {getAvatar()}
     </Component.span>
   );
 }

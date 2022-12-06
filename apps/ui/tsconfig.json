@@ -1,12 +1,12 @@
 {
-  "extends": "@clutchd/tsconfig/react-library.json",
-  "include": [".", "stripe.d.ts"],
-  "exclude": ["dist", "build", "node_modules"],
+  "extends": "@clutchd/tsconfig/nextjs.json",
+  "include": ["stripe.d.ts"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
-    "allowJs": true,
-    "noEmit": true,
-    "incremental": true,
-    "resolveJsonModule": true,
     "jsx": "preserve"
   }
 }

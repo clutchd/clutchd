@@ -17,21 +17,21 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/tailwind": "0.7.0",
-    "postcss": "^8.4.16",
-    "react": "^18.1.0",
+    "postcss": "^8.4.18",
+    "react": "^18.2.0",
     "ts-jest": "^29.0.3",
     "tsup": "^6.5.0",
-    "typescript": "^4.5.5"
+    "typescript": "^4.8.4"
   },
   "peerDependencies": {
     "next": "^13.0.5",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "@clutchd/clsx": "0.1.1",
     "@clutchd/component": "^0.7.1",
-    "@clutchd/flex": "0.1.6"
+    "@clutchd/flex": "0.1.6",
+    "@clutchd/tailwind": "0.7.0"
   }
 }

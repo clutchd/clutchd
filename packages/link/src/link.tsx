@@ -1,7 +1,6 @@
 import { clsx } from "@clutchd/clsx";
-import NextLink from "next/link";
 import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
-import React from "react";
+import NextLink from "next/link";
 
 /**
  * Type to define `Link` component
