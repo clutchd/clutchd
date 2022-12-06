@@ -1,9 +1,6 @@
 import { clsx } from "@clutchd/clsx";
 import NextLink from "next/link";
-import {
-  IComponent,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
+import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
 import React from "react";
 
 /**
@@ -11,13 +8,10 @@ import React from "react";
  */
 type ILink = typeof Link;
 
-
 /**
-* Type to define `Link` props
-*/
-interface ILinkProps
-  extends ReactPropsWithoutRef<IComponent["a"]> {
-}
+ * Type to define `Link` props
+ */
+interface ILinkProps extends ReactPropsWithoutRef<IComponent["a"]> {}
 
 /**
  * `Link` - A simple link component, leverages next/link
@@ -27,9 +21,7 @@ interface ILinkProps
 function Link({ className, href = "/", ...props }: ILinkProps) {
   const classNames = clsx("cursor-pointer", className);
 
-  return (
-    <NextLink className={classNames} href={href} {...props} />
-  );
+  return <NextLink className={classNames} href={href} {...props} />;
 }
 
 export { Link };
