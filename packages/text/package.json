@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
+    "@clutchd/tailwind": "0.7.0",
     "postcss": "^8.4.16",
     "react": "^18.1.0",
     "ts-jest": "^29.0.3",
@@ -34,7 +35,6 @@
     "@clutchd/clsx": "0.1.1",
     "@clutchd/component": "^0.7.1",
     "@clutchd/protect": "^0.5.2",
-    "@clutchd/skeleton": "^0.4.4",
-    "@clutchd/tailwind": "0.7.0"
+    "@clutchd/skeleton": "^0.4.4"
   }
 }
