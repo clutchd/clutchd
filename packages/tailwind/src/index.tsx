@@ -1,4 +1,5 @@
 export * from "./alignItems";
+export * from "./borderRadius";
 export * from "./color";
 export * from "./colSpan";
 export * from "./flexDirection";
@@ -7,9 +8,11 @@ export * from "./fontWeight";
 export * from "./gapX";
 export * from "./gapY";
 export * from "./gridCols";
+export * from "./height";
 export * from "./justifyContent";
 export * from "./lineHeight";
 export * from "./maxWidth";
 export * from "./rowSpan";
 export * from "./spaceX";
 export * from "./spaceY";
+export * from "./width";
