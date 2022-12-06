@@ -1,5 +1,15 @@
 # @clutchd/layout
 
+## 0.11.6
+
+### Patch Changes
+
+- Updated dependencies [a2d0619]
+- Updated dependencies [a2d0619]
+- Updated dependencies [a2d0619]
+  - @clutchd/tailwind@0.7.0
+  - @clutchd/flex@0.1.6
+
 ## 0.11.5
 
 ### Patch Changes

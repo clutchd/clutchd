@@ -1,5 +1,13 @@
 # @clutchd/tailwind
 
+## 0.7.0
+
+### Minor Changes
+
+- a2d0619: Add borderRadius
+- a2d0619: Add support for height
+- a2d0619: Add support for width
+
 ## 0.6.0
 
 ### Minor Changes
