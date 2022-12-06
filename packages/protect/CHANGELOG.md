@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.5.3
+
+### Patch Changes
+
+- 088a30e: Fix packages
+
 ## 0.5.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 1.1.2
+
+### Patch Changes
+
+- 088a30e: Fix packages
+
 ## 1.1.1
 
 ### Patch Changes

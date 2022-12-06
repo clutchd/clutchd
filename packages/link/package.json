@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/link",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -29,7 +29,7 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@clutchd/component": "^0.7.1",
-    "@clutchd/clsx": "0.1.1"
+    "@clutchd/component": "^0.7.2",
+    "@clutchd/clsx": "0.1.2"
   }
 }
