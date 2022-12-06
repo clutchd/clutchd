@@ -1,5 +1,16 @@
 # @clutchd/card
 
+## 0.1.7
+
+### Patch Changes
+
+- cc72d04: Reduce bundle size
+- 088a30e: Fix packages
+- Updated dependencies [088a30e]
+  - @clutchd/clsx@0.1.2
+  - @clutchd/component@0.7.2
+  - @clutchd/tailwind@0.7.1
+
 ## 0.1.6
 
 ### Patch Changes

@@ -1,5 +1,27 @@
 # @clutchd/website
 
+## 0.2.9
+
+### Patch Changes
+
+- 088a30e: Fix packages
+- Updated dependencies [cc72d04]
+- Updated dependencies [088a30e]
+- Updated dependencies [088a30e]
+  - @clutchd/card@0.1.7
+  - @clutchd/flex@0.1.7
+  - @clutchd/grid@0.1.6
+  - @clutchd/layout@0.11.7
+  - @clutchd/text@0.3.15
+  - @clutchd/avatar@0.5.0
+  - @clutchd/clsx@0.1.2
+  - @clutchd/component@0.7.2
+  - @clutchd/divider@0.3.3
+  - @clutchd/is-empty@1.1.2
+  - @clutchd/link@0.1.1
+  - @clutchd/protect@0.5.3
+  - @clutchd/skeleton@0.4.5
+
 ## 0.2.8
 
 ### Patch Changes

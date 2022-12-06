@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.7.1
+
+### Patch Changes
+
+- 088a30e: Fix packages
+
 ## 0.7.0
 
 ### Minor Changes

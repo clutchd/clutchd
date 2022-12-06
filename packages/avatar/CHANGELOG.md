@@ -1,5 +1,22 @@
 # @clutchd/avatar
 
+## 0.5.0
+
+### Minor Changes
+
+- 088a30e: Improve avatar flexibility
+
+### Patch Changes
+
+- 088a30e: Fix packages
+- Updated dependencies [cc72d04]
+- Updated dependencies [088a30e]
+  - @clutchd/text@0.3.15
+  - @clutchd/clsx@0.1.2
+  - @clutchd/component@0.7.2
+  - @clutchd/is-empty@1.1.2
+  - @clutchd/tailwind@0.7.1
+
 ## 0.4.4
 
 ### Patch Changes

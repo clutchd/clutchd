@@ -1,5 +1,14 @@
 # @clutchd/skeleton
 
+## 0.4.5
+
+### Patch Changes
+
+- 088a30e: Fix packages
+- Updated dependencies [088a30e]
+  - @clutchd/clsx@0.1.2
+  - @clutchd/component@0.7.2
+
 ## 0.4.4
 
 ### Patch Changes

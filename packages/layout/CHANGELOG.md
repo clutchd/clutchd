@@ -1,5 +1,18 @@
 # @clutchd/layout
 
+## 0.11.7
+
+### Patch Changes
+
+- cc72d04: Reduce bundle size
+- 088a30e: Fix packages
+- Updated dependencies [cc72d04]
+- Updated dependencies [088a30e]
+  - @clutchd/flex@0.1.7
+  - @clutchd/clsx@0.1.2
+  - @clutchd/component@0.7.2
+  - @clutchd/tailwind@0.7.1
+
 ## 0.11.6
 
 ### Patch Changes

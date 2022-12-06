@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.7.2
+
+### Patch Changes
+
+- 088a30e: Fix packages
+
 ## 0.7.1
 
 ### Patch Changes

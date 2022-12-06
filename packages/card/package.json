@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/card",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -29,8 +29,8 @@
     "react-dom": "^18.2.0"
   },
   "dependencies": {
-    "@clutchd/tailwind": "0.7.0",
-    "@clutchd/component": "^0.7.1",
-    "@clutchd/clsx": "0.1.1"
+    "@clutchd/tailwind": "0.7.1",
+    "@clutchd/component": "^0.7.2",
+    "@clutchd/clsx": "0.1.2"
   }
 }
