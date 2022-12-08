@@ -16,7 +16,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "typeRoots": ["./types"],
-    "jsx": "react"
+    "jsx": "preserve"
   },
   "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts"],
   "exclude": ["**/*.test.ts", "**/*.test.tsx", "node_modules"]

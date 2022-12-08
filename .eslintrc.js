@@ -1,1 +1,1 @@
-module.exports = require("@clutchd/config/eslint-preset");
+module.exports = require("@clutchd/config/eslintrc");

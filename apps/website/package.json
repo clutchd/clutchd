@@ -31,6 +31,7 @@
     "@clutchd/tailwind": "*",
     "@clutchd/tsconfig": "*",
     "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.9",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1",
