@@ -19,7 +19,7 @@
     "@clutchd/config": "*",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^13.2.0",
-    "next-auth": "^4.10.3",
+    "next-auth": "^4.18.3",
     "postcss": "^8.4.18",
     "react": "^18.2.0",
     "ts-jest": "^29.0.3",
@@ -28,7 +28,7 @@
   },
   "peerDependencies": {
     "next": "^13.0.5",
-    "next-auth": "^4.10.3",
+    "next-auth": "^4.18.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
