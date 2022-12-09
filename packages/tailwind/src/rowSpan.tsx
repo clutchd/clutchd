@@ -71,66 +71,66 @@ export interface IWithRowSpanValues {
 }
 
 /**
- * Gets the `standard` row span class for the span provided
- * @param span `IRowSpanValues` used to get this class
+ * Gets the `standard` row span class for the value provided
+ * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpan(span: IRowSpanValues | undefined) {
-  GetRowSpanValue(span, rowSpan);
+export function GetRowSpan(value: IRowSpanValues | undefined) {
+  return GetRowSpanValue(value, rowSpan);
 }
 
 /**
- * Gets the `sm` row span class for the span provided
- * @param span `IRowSpanValues` used to get this class
+ * Gets the `sm` row span class for the value provided
+ * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpanSm(span: IRowSpanValues | undefined) {
-  GetRowSpanValue(span, rowSpanSm);
+export function GetRowSpanSm(value: IRowSpanValues | undefined) {
+  return GetRowSpanValue(value, rowSpanSm);
 }
 
 /**
- * Gets the `md` row span class for the span provided
- * @param span `IRowSpanValues` used to get this class
+ * Gets the `md` row span class for the value provided
+ * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpanMd(span: IRowSpanValues | undefined) {
-  GetRowSpanValue(span, rowSpanMd);
+export function GetRowSpanMd(value: IRowSpanValues | undefined) {
+  return GetRowSpanValue(value, rowSpanMd);
 }
 
 /**
- * Gets the `lg` row span class for the span provided
- * @param span `IRowSpanValues` used to get this class
+ * Gets the `lg` row span class for the value provided
+ * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpanLg(span: IRowSpanValues | undefined) {
-  GetRowSpanValue(span, rowSpanLg);
+export function GetRowSpanLg(value: IRowSpanValues | undefined) {
+  return GetRowSpanValue(value, rowSpanLg);
 }
 
 /**
  * Helper function to get the proper row span classes
- * @param span Underlying `IRowSpanValues` we are targeting
+ * @param value Underlying `IRowSpanValues` we are targeting
  * @param type Type of span being generated (sm,md,lg,etc.)
- * @returns The appropriate tailwind class for the span and type combination
+ * @returns The appropriate tailwind class for the value and type combination
  */
 function GetRowSpanValue(
-  span: IRowSpanValues | undefined,
+  value: IRowSpanValues | undefined,
   type: typeof rowSpan | typeof rowSpanSm | typeof rowSpanMd | typeof rowSpanLg
 ): string {
-  if (span == null) {
+  if (value == null) {
     return "";
   }
 
-  // get underlying value
-  var value: number;
-  switch (span) {
+  // get resulting value
+  var result: number;
+  switch (value) {
     case "auto":
-      value = 0;
+      result = 0;
       break;
 
     case "full":
-      value = 7;
+      result = 7;
       break;
 
     default:
-      value = span as number;
+      result = value as number;
       break;
   }
 
-  return rowSpan[value];
+  return type[result];
 }

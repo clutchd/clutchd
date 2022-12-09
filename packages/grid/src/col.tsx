@@ -2,12 +2,9 @@ import { clsx } from "@clutchd/clsx";
 import {
   Component,
   IComponent,
-  ReactPropsWithoutRef,
+  ReactPropsWithoutRef
 } from "@clutchd/component";
-import {
-  IWithColSpanValues,
-  IWithRowSpanValues
-} from "@clutchd/tailwind";
+import { GetColSpan, GetColSpanLg, GetColSpanMd, GetColSpanSm, GetRowSpan, GetRowSpanLg, GetRowSpanMd, GetRowSpanSm, IWithColSpanValues, IWithRowSpanValues } from "@clutchd/tailwind";
 
 /**
  * Type to define `Col` component
@@ -17,8 +14,10 @@ type ICol = typeof Col;
 /**
  * Type to define `Col` props
  */
-interface IColProps extends IWithColSpanValues, IWithRowSpanValues, ReactPropsWithoutRef<IComponent["div"]> {
-}
+interface IColProps
+  extends IWithColSpanValues,
+  IWithRowSpanValues,
+  ReactPropsWithoutRef<IComponent["div"]> { }
 
 /**
  * `Col` - A primitive component used to render a column within a grid
@@ -53,3 +52,4 @@ function Col({
 
 export { Col };
 export type { ICol, IColProps };
+

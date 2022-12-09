@@ -109,66 +109,66 @@ export interface IWithColSpanValues {
 }
 
 /**
- * Gets the `standard` col span class for the span provided
- * @param span `IColSpanValues` used to get this class
+ * Gets the `standard` col span class for the value provided
+ * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpan(span: IColSpanValues | undefined) {
-  GetColSpanValue(span, colSpan);
+export function GetColSpan(value: IColSpanValues | undefined) {
+  return GetColSpanValue(value, colSpan);
 }
 
 /**
- * Gets the `sm` col span class for the span provided
- * @param span `IColSpanValues` used to get this class
+ * Gets the `sm` col span class for the value provided
+ * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpanSm(span: IColSpanValues | undefined) {
-  GetColSpanValue(span, colSpanSm);
+export function GetColSpanSm(value: IColSpanValues | undefined) {
+  return GetColSpanValue(value, colSpanSm);
 }
 
 /**
- * Gets the `md` col span class for the span provided
- * @param span `IColSpanValues` used to get this class
+ * Gets the `md` col span class for the value provided
+ * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpanMd(span: IColSpanValues | undefined) {
-  GetColSpanValue(span, colSpanMd);
+export function GetColSpanMd(value: IColSpanValues | undefined) {
+  return GetColSpanValue(value, colSpanMd);
 }
 
 /**
- * Gets the `lg` col span class for the span provided
- * @param span `IColSpanValues` used to get this class
+ * Gets the `lg` col span class for the value provided
+ * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpanLg(span: IColSpanValues | undefined) {
-  GetColSpanValue(span, colSpanLg);
+export function GetColSpanLg(value: IColSpanValues | undefined) {
+  return GetColSpanValue(value, colSpanLg);
 }
 
 /**
  * Helper function to get the proper col span classes
- * @param span Underlying `IColSpanValues` we are targeting
+ * @param value Underlying `IColSpanValues` we are targeting
  * @param type Type of span being generated (sm,md,lg,etc.)
- * @returns The appropriate tailwind class for the span and type combination
+ * @returns The appropriate tailwind class for the value and type combination
  */
 function GetColSpanValue(
-  span: IColSpanValues | undefined,
+  value: IColSpanValues | undefined,
   type: typeof colSpan | typeof colSpanSm | typeof colSpanMd | typeof colSpanLg
 ): string {
-  if (span == null) {
+  if (value == null) {
     return "";
   }
 
-  // get underlying value
-  var value: number;
-  switch (span) {
+  // get resulting value
+  var result: number;
+  switch (value) {
     case "auto":
-      value = 0;
+      result = 0;
       break;
 
     case "full":
-      value = 13;
+      result = 13;
       break;
 
     default:
-      value = span as number;
+      result = value as number;
       break;
   }
 
-  return colSpan[value];
+  return type[result];
 }
