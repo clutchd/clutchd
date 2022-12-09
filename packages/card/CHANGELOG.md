@@ -1,5 +1,11 @@
 # @clutchd/card
 
+## 0.1.8
+
+### Patch Changes
+
+- e568059: Reduce bundle sizes
+
 ## 0.1.7
 
 ### Patch Changes

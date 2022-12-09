@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 0.3.4
+
+### Patch Changes
+
+- e568059: Reduce bundle sizes
+
 ## 0.3.3
 
 ### Patch Changes

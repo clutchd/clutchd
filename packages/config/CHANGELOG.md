@@ -1,5 +1,11 @@
 # @clutchd/config
 
+## 0.2.0
+
+### Minor Changes
+
+- 49158d6: Stop transpiling modules
+
 ## 0.1.2
 
 ### Patch Changes
