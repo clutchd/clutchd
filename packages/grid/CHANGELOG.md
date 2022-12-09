@@ -1,5 +1,11 @@
 # @clutchd/grid
 
+## 0.2.0
+
+### Minor Changes
+
+- 38b8091: Add grid cols utils
+
 ## 0.1.7
 
 ### Patch Changes
