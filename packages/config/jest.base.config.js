@@ -7,9 +7,10 @@ const config = {
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
-    "<rootDir>/**/*.{js,ts,jsx,tsx}",
+    "<rootDir>/**/*.{js,ts,jsx,tsx}", // includes all files by default
     "!<rootDir>/**/*.config.*", // ignore config files
-    "!<rootDir>/**/\\.*.*", // ignore files that start with "."
+    // prettier-ignore
+    "!<rootDir>/**/\..*", // ignore files that start with "."
     "!<rootDir>/**/*.d.ts", // ignore types
   ],
 
@@ -18,9 +19,9 @@ const config = {
 
   // An array of regexp pattern strings used to skip coverage collection
   coveragePathIgnorePatterns: [
-    "<rootDir>/node_modules/", // ignore node_modules
-    "<rootDir>/coverage/", // ignore code coverage report
-    "<rootDir>/.next/", // ignore next builds
+    "/coverage/", // ignore code coverage report
+    "/dist/", // ignore dist
+    "/node_modules/", // ignore node_modules
   ],
 
   // Indicates which provider should be used to instrument code for coverage

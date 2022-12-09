@@ -21,8 +21,6 @@
   "devDependencies": {
     "@changesets/cli": "^2.22.0",
     "@clutchd/config": "*",
-    "@types/eslint": "^8.4.10",
-    "@types/jest": "^29.2.4",
     "@types/prettier": "^2.7.1",
     "prettier": "^2.7.1",
     "turbo": "latest"
