@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 0.3.16
+
+### Patch Changes
+
+- e568059: Reduce bundle sizes
+
 ## 0.3.15
 
 ### Patch Changes

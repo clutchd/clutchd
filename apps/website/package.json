@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/website",
-  "version": "0.2.9",
+  "version": "0.3.0",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -9,9 +9,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "@clutchd/layout": "^0.11.7",
+    "@clutchd/layout": "^0.11.8",
     "@clutchd/link": "^0.1.1",
-    "@clutchd/text": "^0.3.15",
+    "@clutchd/text": "^0.3.16",
     "next": "^13.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

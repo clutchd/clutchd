@@ -1,5 +1,18 @@
 # @clutchd/ui
 
+## 0.2.0
+
+### Minor Changes
+
+- 49158d6: Stop transpiling modules
+
+### Patch Changes
+
+- Updated dependencies [e568059]
+  - @clutchd/avatar@0.5.1
+  - @clutchd/text@0.3.16
+  - @clutchd/layout@0.11.8
+
 ## 0.1.5
 
 ### Patch Changes

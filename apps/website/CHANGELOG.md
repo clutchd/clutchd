@@ -1,5 +1,17 @@
 # @clutchd/website
 
+## 0.3.0
+
+### Minor Changes
+
+- 49158d6: Stop transpiling modules
+
+### Patch Changes
+
+- Updated dependencies [e568059]
+  - @clutchd/text@0.3.16
+  - @clutchd/layout@0.11.8
+
 ## 0.2.9
 
 ### Patch Changes

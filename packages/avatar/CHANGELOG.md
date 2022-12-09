@@ -1,5 +1,13 @@
 # @clutchd/avatar
 
+## 0.5.1
+
+### Patch Changes
+
+- e568059: Reduce bundle sizes
+- Updated dependencies [e568059]
+  - @clutchd/text@0.3.16
+
 ## 0.5.0
 
 ### Minor Changes

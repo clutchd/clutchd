@@ -1,5 +1,12 @@
 # @clutchd/grid
 
+## 0.1.7
+
+### Patch Changes
+
+- 975b9da: Utilize new tailwind colSpan and rowSpan utils
+- e568059: Reduce bundle sizes
+
 ## 0.1.6
 
 ### Patch Changes

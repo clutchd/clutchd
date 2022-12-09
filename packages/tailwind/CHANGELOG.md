@@ -1,5 +1,15 @@
 # @clutchd/tailwind
 
+## 0.8.0
+
+### Minor Changes
+
+- 4b0a791: Add helper functions for easier colspan and rowspan usage
+
+### Patch Changes
+
+- 140de85: Reduce bundle size
+
 ## 0.7.1
 
 ### Patch Changes
