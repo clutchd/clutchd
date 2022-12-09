@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 0.11.10
+
+### Patch Changes
+
+- de14d7d: Reduce bundle size
+
 ## 0.11.9
 
 ### Patch Changes
