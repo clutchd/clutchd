@@ -84,3 +84,91 @@ export interface IWithColSpan {
   colSpanMd?: IColSpanMd;
   colSpanLg?: IColSpanLg;
 }
+
+export type IColSpanValues =
+  | "auto"
+  | 1
+  | 2
+  | 3
+  | 4
+  | 5
+  | 6
+  | 7
+  | 8
+  | 9
+  | 10
+  | 11
+  | 12
+  | "full";
+
+export interface IWithColSpanValues {
+  colSpan?: IColSpanValues;
+  colSpanSm?: IColSpanValues;
+  colSpanMd?: IColSpanValues;
+  colSpanLg?: IColSpanValues;
+}
+
+/**
+ * Gets the `standard` col span class for the span provided
+ * @param span `IColSpanValues` used to get this class
+ */
+export function GetColSpan(span: IColSpanValues | undefined) {
+  GetColSpanValue(span, colSpan);
+}
+
+/**
+ * Gets the `sm` col span class for the span provided
+ * @param span `IColSpanValues` used to get this class
+ */
+export function GetColSpanSm(span: IColSpanValues | undefined) {
+  GetColSpanValue(span, colSpanSm);
+}
+
+/**
+ * Gets the `md` col span class for the span provided
+ * @param span `IColSpanValues` used to get this class
+ */
+export function GetColSpanMd(span: IColSpanValues | undefined) {
+  GetColSpanValue(span, colSpanMd);
+}
+
+/**
+ * Gets the `lg` col span class for the span provided
+ * @param span `IColSpanValues` used to get this class
+ */
+export function GetColSpanLg(span: IColSpanValues | undefined) {
+  GetColSpanValue(span, colSpanLg);
+}
+
+/**
+ * Helper function to get the proper col span classes
+ * @param span Underlying `IColSpanValues` we are targeting
+ * @param type Type of span being generated (sm,md,lg,etc.)
+ * @returns The appropriate tailwind class for the span and type combination
+ */
+function GetColSpanValue(
+  span: IColSpanValues | undefined,
+  type: typeof colSpan | typeof colSpanSm | typeof colSpanMd | typeof colSpanLg
+): string {
+  if (span == null) {
+    return "";
+  }
+
+  // get underlying value
+  var value: number;
+  switch (span) {
+    case "auto":
+      value = 0;
+      break;
+
+    case "full":
+      value = 13;
+      break;
+
+    default:
+      value = span as number;
+      break;
+  }
+
+  return colSpan[value];
+}
