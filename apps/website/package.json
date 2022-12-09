@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@clutchd/layout": "^0.11.8",
+    "@clutchd/layout": "^0.11.9",
     "@clutchd/link": "^0.1.1",
     "@clutchd/text": "^0.3.16",
     "next": "^13.0.5",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/tailwind": "^0.8.0",
+    "@clutchd/tailwind": "^0.9.0",
     "@clutchd/tsconfig": "*",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.9",

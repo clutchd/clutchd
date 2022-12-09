@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.9.0
+
+### Minor Changes
+
+- 38b8091: Add grid cols utils
+
 ## 0.8.0
 
 ### Minor Changes
