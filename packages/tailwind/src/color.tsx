@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/customizing-colors}
  */
 
-export const color = [
+const color = [
   "transparent",
   "black",
   "white",
@@ -63,7 +63,7 @@ export const getColor = (base: IColor, shade: string): IColorVariants => {
   }
 };
 
-export const colorMap: {
+const colorMap: {
   [baseColor: string]: { [colorVariant: string]: IColorVariants };
 } = {
   transparent: {

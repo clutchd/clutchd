@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/space}
  */
 
-export const spaceX = [
+const spaceX = [
   "space-x-0",
   "space-x-0.5",
   "space-x-1",

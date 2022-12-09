@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/flex-direction}
  */
 
-export const flexDirection = [
+const flexDirection = [
   "flex-row",
   "flex-row-reverse",
   "flex-col",

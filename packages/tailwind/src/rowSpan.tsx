@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/grid-row}
  */
 
-export const rowSpan = [
+const rowSpan = [
   "row-auto",
   "row-span-1",
   "row-span-2",
@@ -13,7 +13,7 @@ export const rowSpan = [
   "row-span-full",
 ] as const;
 
-export const rowSpanSm = [
+const rowSpanSm = [
   "sm:row-auto",
   "sm:row-span-1",
   "sm:row-span-2",
@@ -24,7 +24,7 @@ export const rowSpanSm = [
   "sm:row-span-full",
 ] as const;
 
-export const rowSpanMd = [
+const rowSpanMd = [
   "md:row-auto",
   "md:row-span-1",
   "md:row-span-2",
@@ -35,7 +35,7 @@ export const rowSpanMd = [
   "md:row-span-full",
 ] as const;
 
-export const rowSpanLg = [
+const rowSpanLg = [
   "lg:row-auto",
   "lg:row-span-1",
   "lg:row-span-2",

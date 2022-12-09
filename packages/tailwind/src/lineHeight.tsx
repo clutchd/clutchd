@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/line-height}
  */
 
-export const lineHeight = [
+const lineHeight = [
   "leading-3",
   "leading-4",
   "leading-5",

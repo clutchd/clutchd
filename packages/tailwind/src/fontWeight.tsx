@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/font-weight}
  */
 
-export const fontWeight = [
+const fontWeight = [
   "font-thin",
   "font-extralight",
   "font-light",

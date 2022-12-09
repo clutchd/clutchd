@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/width}
  */
 
-export const width = [
+const width = [
   "w-0",
   "w-px",
   "w-0.5",

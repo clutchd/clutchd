@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/border-radius}
  */
 
-export const borderRadius = [
+const borderRadius = [
   "rounded-none",
   "rounded-sm",
   "rounded",

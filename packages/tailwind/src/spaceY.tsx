@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/space}
  */
 
-export const spaceY = [
+const spaceY = [
   "space-y-0",
   "space-y-0.5",
   "space-y-1",
