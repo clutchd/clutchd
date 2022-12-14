@@ -1,5 +1,11 @@
 # @clutchd/avatar
 
+## 0.5.2
+
+### Patch Changes
+
+- 21a112c: Update deps
+
 ## 0.5.1
 
 ### Patch Changes
