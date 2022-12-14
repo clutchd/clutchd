@@ -1,12 +1,12 @@
-import { IsEmpty } from "@clutchd/is-empty";
+import { isEmpty } from "@clutchd/is-empty";
 
 function getInitials(...args: string[]) {
   let names: string[] = args
-    .filter((x) => !IsEmpty(x))
+    .filter((x) => !isEmpty(x))
     .join(" ")
     .split(" ");
 
-  if (names.length === 1 && IsEmpty(names[0])) {
+  if (names.length === 1 && isEmpty(names[0])) {
     return "U";
   }
 

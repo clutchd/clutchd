@@ -122,7 +122,7 @@ function getComponent(className: string): string {
     "text-9xl": "h-[128px]",
   };
 
-  return GetClass(className, map);
+  return getClass(className, map);
 }
 
 /**
