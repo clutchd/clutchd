@@ -1,5 +1,14 @@
 # @clutchd/text
 
+## 0.3.17
+
+### Patch Changes
+
+- b7088b9: Update next-auth
+- Updated dependencies [b7088b9]
+  - @clutchd/protect@0.5.4
+  - @clutchd/skeleton@0.4.6
+
 ## 0.3.16
 
 ### Patch Changes

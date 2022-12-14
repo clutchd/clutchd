@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/layout",
-  "version": "0.11.10",
+  "version": "0.11.11",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
   "dependencies": {
     "@clutchd/clsx": "0.1.2",
     "@clutchd/component": "^0.7.2",
-    "@clutchd/flex": "0.1.7"
+    "@clutchd/flex": "0.1.8"
   },
   "devDependencies": {
     "@clutchd/config": "*",

@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 0.4.6
+
+### Patch Changes
+
+- b7088b9: Update next-auth
+
 ## 0.4.5
 
 ### Patch Changes
