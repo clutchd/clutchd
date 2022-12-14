@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 0.2.0
+
+### Minor Changes
+
+- f683441: Update function names
+
 ## 0.1.1
 
 ### Patch Changes

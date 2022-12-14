@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 1.2.0
+
+### Minor Changes
+
+- f683441: Update function names
+
 ## 1.1.0
 
 ### Minor Changes
