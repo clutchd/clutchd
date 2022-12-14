@@ -1,5 +1,11 @@
 # @clutchd/flex
 
+## 0.1.8
+
+### Patch Changes
+
+- b7088b9: Update next-auth
+
 ## 0.1.7
 
 ### Patch Changes
