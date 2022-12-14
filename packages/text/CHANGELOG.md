@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 0.3.18
+
+### Patch Changes
+
+- f683441: Update function names
+
 ## 0.3.17
 
 ### Patch Changes
