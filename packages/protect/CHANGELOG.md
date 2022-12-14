@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.5.4
+
+### Patch Changes
+
+- b7088b9: Update next-auth
+
 ## 0.5.3
 
 ### Patch Changes
