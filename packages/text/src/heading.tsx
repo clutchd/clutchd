@@ -33,7 +33,7 @@ function Heading({
       className={clsx(color, className)}
       fontSize={fontSize}
       fontWeight={fontWeight}
-      tag={GetType(props.level)}
+      tag={getType(props.level)}
       {...props}
     />
   );
@@ -44,7 +44,7 @@ function Heading({
  * @param level heading level
  * @returns A `p` or `h(1-6)` tag
  */
-function GetType(level: IHeadingProps["level"]) {
+function getType(level: IHeadingProps["level"]) {
   if (level == 0 || level == null) {
     return "p";
   }

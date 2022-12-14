@@ -3,7 +3,7 @@
  * @param value - Value we are checking for emptiness
  * @returns True if empty, otherwise false
  */
-export function IsEmpty(value: any) {
+export function isEmpty(value: any) {
   // if value is a finite number, we are not empty
   if (Number.isFinite(value)) {
     return false;

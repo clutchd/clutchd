@@ -19,9 +19,9 @@ type IBase = typeof Base;
  */
 interface IBaseProps
   extends IComponentProps<IComponent["p"]>,
-    IWithFontSize,
-    IWithLineHeight,
-    IWithFontWeight {
+  IWithFontSize,
+  IWithLineHeight,
+  IWithFontWeight {
   protect?: boolean;
   tag?: string;
 }
@@ -51,10 +51,10 @@ function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
 
   // loading component to be rendered
   const loading = (
-    <div className={clsx(GetWrapper(className), "flex items-center")}>
+    <div className={clsx(getWrapper(className), "flex items-center")}>
       <Skeleton
         className={clsx(
-          GetComponent(className),
+          getComponent(className),
           "min-w-[144px]",
           "animate-pulse"
         )}
@@ -84,7 +84,7 @@ type ITextClassMap = {
  * @param map `ITextClassMap` object containing input class -> output class
  * @returns skeleton class
  */
-function GetClass(className: string, map: ITextClassMap): string {
+function getClass(className: string, map: ITextClassMap): string {
   const classes: string[] = className.split(" ");
 
   function isKey(key: string): key is keyof ITextClassMap {
@@ -105,7 +105,7 @@ function GetClass(className: string, map: ITextClassMap): string {
  * @param className className being used to generate skeleton classes
  * @returns component skeleton class
  */
-function GetComponent(className: string): string {
+function getComponent(className: string): string {
   const map: ITextClassMap = {
     "text-xs": "h-[12px]",
     "text-sm": "h-[14px]",
@@ -130,7 +130,7 @@ function GetComponent(className: string): string {
  * @param className className being used to generate skeleton classes
  * @returns wrapper skeleton class
  */
-function GetWrapper(className: string): string {
+function getWrapper(className: string): string {
   const map: ITextClassMap = {
     "text-xs": "h-[16px]",
     "text-sm": "h-[20px]",
@@ -147,7 +147,7 @@ function GetWrapper(className: string): string {
     "text-9xl": "h-[128px]",
   };
 
-  return GetClass(className, map);
+  return getClass(className, map);
 }
 
 export { Base };

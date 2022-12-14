@@ -14,7 +14,20 @@
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true
+    "strict": true,
+    "typeRoots": ["../../**/@types", "../../**/types"]
   },
-  "exclude": ["node_modules"]
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "include": ["/**/*.ts", "/**/*.tsx", "/**/*.d.ts"],
+  "exclude": [
+    "/**/build",
+    "/**/dist",
+    "/**/node_modules",
+    "/**/*.test.ts",
+    "/**/*.test.tsx"
+  ]
 }

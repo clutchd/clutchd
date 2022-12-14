@@ -1,35 +1,35 @@
-import { IsEmpty } from "./isEmpty";
+import { isEmpty } from "./isEmpty";
 
-describe("IsEmpty", () => {
+describe("isEmpty", () => {
   test("null is empty", async () => {
-    expect(IsEmpty(null)).toEqual(true);
+    expect(isEmpty(null)).toEqual(true);
   });
 
   test("undefined is empty", async () => {
-    expect(IsEmpty(undefined)).toEqual(true);
+    expect(isEmpty(undefined)).toEqual(true);
   });
 
   test('"" is empty', async () => {
-    expect(IsEmpty("")).toEqual(true);
+    expect(isEmpty("")).toEqual(true);
   });
 
   test("[] is empty", async () => {
-    expect(IsEmpty([])).toEqual(true);
+    expect(isEmpty([])).toEqual(true);
   });
 
   test("{} is empty", async () => {
-    expect(IsEmpty({})).toEqual(true);
+    expect(isEmpty({})).toEqual(true);
   });
 
   test('"test" is not empty', async () => {
-    expect(IsEmpty("test")).toEqual(false);
+    expect(isEmpty("test")).toEqual(false);
   });
 
   test("0 is not empty", async () => {
-    expect(IsEmpty(0)).toEqual(false);
+    expect(isEmpty(0)).toEqual(false);
   });
 
   test("1 is not empty", async () => {
-    expect(IsEmpty(1)).toEqual(false);
+    expect(isEmpty(1)).toEqual(false);
   });
 });

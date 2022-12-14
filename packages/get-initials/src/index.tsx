@@ -1,1 +1,1 @@
-export { GetInitials } from "./getInitials";
+export * from "./getInitials";

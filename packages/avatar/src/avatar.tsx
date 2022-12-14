@@ -1,6 +1,6 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, ReactPropsWithoutRef } from "@clutchd/component";
-import { IsEmpty } from "@clutchd/is-empty";
+import { isEmpty } from "@clutchd/is-empty";
 import {
   getColor,
   IWithBorderRadius,
@@ -22,10 +22,10 @@ type IAvatar = typeof Avatar;
  */
 interface IAvatarProps
   extends IWithBorderRadius,
-    IWithColor,
-    IWithHeight,
-    IWithWidth,
-    ReactPropsWithoutRef<typeof Component.span> {
+  IWithColor,
+  IWithHeight,
+  IWithWidth,
+  ReactPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
   fallback?: string;
@@ -81,7 +81,7 @@ function Avatar({
   );
 
   function getAvatar() {
-    if (IsEmpty(src)) {
+    if (isEmpty(src)) {
       return fallbackAvatar;
     }
 
