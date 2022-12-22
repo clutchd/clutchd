@@ -9,9 +9,9 @@ const config = {
   collectCoverageFrom: [
     "<rootDir>/**/*.{js,ts,jsx,tsx}", // includes all files by default
     "!<rootDir>/**/*.config.*", // ignore config files
-    // prettier-ignore
-    "!<rootDir>/**/\..*", // ignore files that start with "."
     "!<rootDir>/**/*.d.ts", // ignore types
+    // prettier-ignore
+    "!<rootDir>/**/\..*", // ignore files that start with ".",
   ],
 
   // The directory where Jest should output its coverage files
@@ -19,6 +19,8 @@ const config = {
 
   // An array of regexp pattern strings used to skip coverage collection
   coveragePathIgnorePatterns: [
+    "/.next/", // ignore next builds
+    "/.turbo/", // ignore turbo files
     "/coverage/", // ignore code coverage report
     "/dist/", // ignore dist
     "/node_modules/", // ignore node_modules

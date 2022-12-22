@@ -6,7 +6,6 @@ module.exports = {
     "../../apps/**/*.{js,ts,jsx,tsx}",
     "../../packages/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -19,12 +18,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Manrope", ...defaultTheme.fontFamily.sans],
-      },
-      minHeight: {
-        screen: "100vh",
-      },
-      minWidth: {
-        screen: "100vw",
       },
     },
   },

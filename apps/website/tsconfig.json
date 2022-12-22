@@ -1,3 +1,4 @@
 {
-  "extends": "@clutchd/tsconfig/nextjs.json"
+  "extends": "@clutchd/tsconfig/nextjs.json",
+  "include": ["stripe.d.ts"]
 }

@@ -1,12 +1,3 @@
 {
-  "extends": "@clutchd/tsconfig/nextjs.json",
-  "include": ["stripe.d.ts"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  },
-  "compilerOptions": {
-    "jsx": "preserve"
-  }
+  "extends": "@clutchd/tsconfig/nextjs.json"
 }

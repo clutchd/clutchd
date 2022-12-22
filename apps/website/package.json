@@ -9,16 +9,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@clutchd/layout": "^0.11.9",
-    "@clutchd/link": "^0.1.1",
-    "@clutchd/text": "^0.3.16",
+    "@clutchd/layout": "*",
+    "@clutchd/link": "*",
+    "@clutchd/text": "*",
     "next": "^13.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/tailwind": "^0.9.0",
+    "@clutchd/tailwind": "*",
     "@clutchd/tsconfig": "*",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.9",
