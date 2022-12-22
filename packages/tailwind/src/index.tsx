@@ -1,5 +1,6 @@
 export * from "./alignItems";
 export * from "./borderRadius";
+export * from "./borderWidth";
 export * from "./color";
 export * from "./colSpan";
 export * from "./flexDirection";
