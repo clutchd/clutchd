@@ -38,6 +38,7 @@ export default function Home() {
           </nav>
         </Header>
         <Content>
+          <Avatar src="" />
           <Avatar src="https://avatars.githubusercontent.com/u/22361526?s=40&v=4" />
           <Text.Heading>Heading</Text.Heading>
           <Text.Title>Title</Text.Title>
