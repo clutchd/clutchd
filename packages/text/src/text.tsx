@@ -19,10 +19,10 @@ type IText = typeof Text;
  */
 interface ITextProps
   extends IComponentProps<IComponent["p"]>,
-    IWithFontSize,
-    IWithLineHeight,
-    IWithFontWeight,
-    IWithColor {
+  IWithFontSize,
+  IWithLineHeight,
+  IWithFontWeight,
+  IWithColor {
   protect?: boolean;
 }
 
@@ -39,7 +39,7 @@ function Text({
   theme = "gray",
   ...props
 }: ITextProps) {
-  const color = getColor(theme, "500").textColor;
+  const color = getColor(theme, "700").textColor;
   return (
     <Base
       className={clsx(color, className)}

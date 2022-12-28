@@ -27,7 +27,7 @@ function Heading({
   theme = "gray",
   ...props
 }: IHeadingProps) {
-  const color = getColor(theme, "700").textColor;
+  const color = getColor(theme, "900").textColor;
   return (
     <Base
       className={clsx(color, className)}

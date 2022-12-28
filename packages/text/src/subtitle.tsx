@@ -11,7 +11,7 @@ type ISubtitle = typeof Subtitle;
 /**
  * Type to define `Subtitle` props
  */
-interface ISubtitleProps extends ITextProps {}
+interface ISubtitleProps extends ITextProps { }
 
 /**
  * `Subtitle` - A text component with a little more emphasis
@@ -25,7 +25,7 @@ function Subtitle({
   theme = "gray",
   ...props
 }: ISubtitleProps) {
-  const color = getColor(theme, "400").textColor;
+  const color = getColor(theme, "500").textColor;
   return (
     <Base
       className={clsx(color, className)}

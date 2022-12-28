@@ -1,53 +1,20 @@
-import { Bold, IBold, IBoldProps } from "./bold";
-import { Caption, ICaption, ICaptionProps } from "./caption";
-import { Heading, IHeading, IHeadingProps } from "./heading";
-import { IItalic, IItalicProps, Italic } from "./italic";
-import { ISubtitle, ISubtitleProps, Subtitle } from "./subtitle";
-import {
-  IText as ITextComponent,
-  ITextProps as ITextComponentProps,
-  Text as TextComponent,
-} from "./text";
-import { ITitle, ITitleProps, Title } from "./title";
+export { Bold } from "./bold";
+export type { IBold, IBoldProps } from "./bold"
 
-/**
- * Type to define `Text` component
- */
-type IText = {
-  Bold: IBold;
-  Caption: ICaption;
-  Heading: IHeading;
-  Italic: IItalic;
-  Subtitle: ISubtitle;
-  Text: ITextComponent;
-  Title: ITitle;
-};
+export { Caption } from "./caption";
+export type { ICaption, ICaptionProps } from "./caption"
 
-/**
- * Type to define `Text` props
- */
-interface ITextProps {
-  IBoldProps: IBoldProps;
-  ICaptionProps: ICaptionProps;
-  IHeadingProps: IHeadingProps;
-  IItalicProps: IItalicProps;
-  ISubtitleProps: ISubtitleProps;
-  ITextProps: ITextComponentProps;
-  ITitleProps: ITitleProps;
-}
+export { Heading } from "./heading";
+export type { IHeading, IHeadingProps } from "./heading"
 
-/**
- * `Text` - A component used to quickly render consistent text
- */
-const Text: IText = {
-  Bold: Bold,
-  Caption: Caption,
-  Heading: Heading,
-  Italic: Italic,
-  Subtitle: Subtitle,
-  Text: TextComponent,
-  Title: Title,
-};
+export { Italic } from "./italic";
+export type { IItalic, IItalicProps } from "./italic"
 
-export { Text };
-export type { IText, ITextProps };
+export { Subtitle } from "./subtitle";
+export type { ISubtitle, ISubtitleProps } from "./subtitle";
+
+export { Text } from "./text";
+export type { IText, ITextProps } from "./text";
+
+export { Title } from "./title";
+export type { ITitle, ITitleProps } from "./title";

@@ -1,6 +1,5 @@
 import { clsx } from "@clutchd/clsx";
 import { IComponent, IComponentProps } from "@clutchd/component";
-import { Protect } from "@clutchd/protect";
 import { Skeleton } from "@clutchd/skeleton";
 import {
   IFontSize,
@@ -44,31 +43,23 @@ function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
     props.className
   );
 
-  // text component to be rendered
-  const component = (
-    <InternalText className={className}>{children}</InternalText>
-  );
-
-  // loading component to be rendered
-  const loading = (
-    <div className={clsx(getWrapper(className), "flex items-center")}>
-      <Skeleton
-        className={clsx(
-          getComponent(className),
-          "min-w-[144px]",
-          "animate-pulse"
-        )}
-      />
-    </div>
-  );
-
-  // if protection is needed, return component with protection
+  // if protected, return skeleton
   if (protect) {
-    return <Protect.Component loading={loading}>{component}</Protect.Component>;
+    return (
+      <div className={clsx(getWrapper(className), "flex items-center")}>
+        <Skeleton
+          className={clsx(
+            getComponent(className),
+            "min-w-[144px]",
+            "animate-pulse"
+          )}
+        />
+      </div>
+    )
   }
 
   // otherwise, return component
-  return component;
+  return <InternalText className={className}>{children}</InternalText>;
 }
 
 /**
