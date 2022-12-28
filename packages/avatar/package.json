@@ -18,8 +18,7 @@
   "dependencies": {
     "@clutchd/component": "^0.7.2",
     "@clutchd/clsx": "0.1.2",
-    "@clutchd/is-empty": "^1.2.0",
-    "@clutchd/text": "^0.3.16"
+    "@clutchd/is-empty": "^1.2.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",

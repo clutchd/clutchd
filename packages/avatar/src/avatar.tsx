@@ -3,12 +3,12 @@ import { Component, ReactPropsWithoutRef } from "@clutchd/component";
 import { isEmpty } from "@clutchd/is-empty";
 import {
   getColor,
+  getSize,
   IWithBorderRadius,
+  IWithBorderWidth,
   IWithColor,
-  IWithHeight,
-  IWithWidth,
+  IWithSize
 } from "@clutchd/tailwind";
-import { Text } from "@clutchd/text";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -22,9 +22,9 @@ type IAvatar = typeof Avatar;
  */
 interface IAvatarProps
   extends IWithBorderRadius,
+  IWithBorderWidth,
   IWithColor,
-  IWithHeight,
-  IWithWidth,
+  IWithSize,
   ReactPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
@@ -39,44 +39,40 @@ interface IAvatarProps
 function Avatar({
   alt,
   borderRadius = "rounded-full",
+  borderWidth = "border",
   className,
   fallback = "U",
-  height = "h-12",
+  size = "12",
   src,
   theme = "gray",
-  width = "w-12",
   ...props
 }: IAvatarProps) {
   const [loadingState, setLoadingState] = useState<boolean>(false);
 
   const fallbackAvatar = (
-    <Text.Text
-      fontWeight="font-semibold"
-      lineHeight="leading-none"
-      className="absolute -translate-x-1/2 -translate-y-1/2 h-fit w-fit inset-1/2"
-    >
+    <span className="absolute max-w-full font-semibold leading-none truncate -translate-x-1/2 -translate-y-1/2 h-fit w-fit inset-1/2">
       {fallback}
-    </Text.Text>
+    </span>
   );
 
   const imageAvatar = (
     <Image
       onLoadStart={() => setLoadingState(true)}
       onLoadingComplete={() => setLoadingState(false)}
-      layout="fill"
-      objectFit="fill"
+      fill
       alt={alt ?? ""}
       src={src}
     />
   );
 
   const classNames = clsx(
-    "overflow-hidden relative border",
+    "overflow-hidden relative",
     getColor(theme, "200").bgColor,
-    getColor(theme, "400").borderColor,
+    getColor(theme, "500").borderColor,
+    getColor(theme, "500").textColor,
+    getSize(size),
     borderRadius,
-    height,
-    width,
+    borderWidth,
     className
   );
 
