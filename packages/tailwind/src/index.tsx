@@ -14,6 +14,7 @@ export * from "./justifyContent";
 export * from "./lineHeight";
 export * from "./maxWidth";
 export * from "./rowSpan";
+export * from "./size";
 export * from "./spaceX";
 export * from "./spaceY";
 export * from "./width";
