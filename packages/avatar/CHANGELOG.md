@@ -1,5 +1,11 @@
 # @clutchd/avatar
 
+## 0.6.0
+
+### Minor Changes
+
+- ac2bd66: Add border-width, reduce export size, simplify sizing
+
 ## 0.5.2
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 0.4.0
+
+### Minor Changes
+
+- 60f491d: Improve colors, reduce export size, simplify protection
+
 ## 0.3.18
 
 ### Patch Changes
