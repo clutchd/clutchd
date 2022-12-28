@@ -1,5 +1,13 @@
 # @clutchd/tailwind
 
+## 0.10.0
+
+### Minor Changes
+
+- f8b43f4: Add support for border-width
+- bb6ec0d: Export all tailwind const variables
+- 320c764: Add custom size helper
+
 ## 0.9.0
 
 ### Minor Changes

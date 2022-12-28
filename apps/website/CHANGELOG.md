@@ -1,5 +1,16 @@
 # @clutchd/website
 
+## 0.4.0
+
+### Minor Changes
+
+- 6810209: Update nextjs
+
+### Patch Changes
+
+- Updated dependencies [60f491d]
+  - @clutchd/text@0.4.0
+
 ## 0.3.0
 
 ### Minor Changes

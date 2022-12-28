@@ -1,5 +1,18 @@
 # @clutchd/ui
 
+## 0.3.0
+
+### Minor Changes
+
+- 6810209: Update nextjs
+
+### Patch Changes
+
+- Updated dependencies [ac2bd66]
+- Updated dependencies [60f491d]
+  - @clutchd/avatar@0.6.0
+  - @clutchd/text@0.4.0
+
 ## 0.2.0
 
 ### Minor Changes
