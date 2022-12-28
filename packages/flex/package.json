@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/flex",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -36,6 +36,6 @@
   },
   "dependencies": {
     "@clutchd/clsx": "0.1.2",
-    "@clutchd/component": "^0.7.2"
+    "@clutchd/component": "^0.8.0"
   }
 }

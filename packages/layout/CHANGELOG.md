@@ -1,5 +1,14 @@
 # @clutchd/layout
 
+## 0.11.12
+
+### Patch Changes
+
+- c24e543: Add text-smoothing to pages
+- Updated dependencies [c24e543]
+  - @clutchd/component@0.8.0
+  - @clutchd/flex@0.1.9
+
 ## 0.11.11
 
 ### Patch Changes
