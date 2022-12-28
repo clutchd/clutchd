@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.8.0
+
+### Minor Changes
+
+- c24e543: Add layout component
+
 ## 0.7.2
 
 ### Patch Changes

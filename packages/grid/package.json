@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/grid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,7 +16,7 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@clutchd/component": "^0.7.2",
+    "@clutchd/component": "^0.8.0",
     "@clutchd/clsx": "0.1.2"
   },
   "devDependencies": {
