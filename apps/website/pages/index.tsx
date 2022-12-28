@@ -1,8 +1,8 @@
 import { Content, Footer, Header, Page } from "@clutchd/layout";
-import { Text } from "@clutchd/text";
+import { Link } from "@clutchd/link";
+import { Caption, Text } from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";
-import { Link } from "@clutchd/link";
 import React from "react";
 
 export default function Home() {
@@ -34,13 +34,13 @@ export default function Home() {
             className="flex px-4 ml-auto transition-all duration-200 rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
             href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo"
           >
-            <Text.Text
+            <Text
               fontWeight="font-semibold"
               theme="white"
               className="self-center"
             >
               Manage Subscription
-            </Text.Text>
+            </Text>
           </Link>
         </Header>
         <Content>
@@ -56,14 +56,14 @@ export default function Home() {
         </Content>
         <Footer>
           <div className="flex w-1/2">
-            <Text.Caption>
+            <Caption>
               © {new Date().getFullYear()} Clutchd, LLC
-            </Text.Caption>
+            </Caption>
           </div>
           <div className="flex flex-col w-1/2 text-right">
-            <Text.Caption>
+            <Caption>
               <Link href="mailto:william@clutchd.com">Contact Us</Link>
-            </Text.Caption>
+            </Caption>
           </div>
         </Footer>
       </Page>

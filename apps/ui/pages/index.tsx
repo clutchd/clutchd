@@ -1,10 +1,9 @@
 import { Avatar } from "@clutchd/avatar";
 import { Content, Footer, Header, Page } from "@clutchd/layout";
-import { Text } from "@clutchd/text";
+import { Bold, Caption, Heading, Italic, Subtitle, Text, Title } from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default function Home() {
   return (
@@ -40,28 +39,29 @@ export default function Home() {
         <Content>
           <Avatar src="" />
           <Avatar src="https://avatars.githubusercontent.com/u/22361526?s=40&v=4" />
-          <Text.Heading>Heading</Text.Heading>
-          <Text.Title>Title</Text.Title>
-          <Text.Subtitle>Subtitle</Text.Subtitle>
-          <Text.Text>Text</Text.Text>
-          <Text.Text>
-            <Text.Bold>Bold Text</Text.Bold>
-          </Text.Text>
-          <Text.Text>
-            <Text.Italic>Italic Text</Text.Italic>
-          </Text.Text>
-          <Text.Caption>Caption Text</Text.Caption>
+          <Heading>Heading</Heading>
+          <Heading protect>Heading</Heading>
+          <Title>Title</Title>
+          <Subtitle>Subtitle</Subtitle>
+          <Text>Text</Text>
+          <Text>
+            <Bold>Bold Text</Bold>
+          </Text>
+          <Text>
+            <Italic>Italic Text</Italic>
+          </Text>
+          <Caption>Caption Text</Caption>
         </Content>
         <Footer>
           <div className="flex w-1/2">
-            <Text.Caption>
+            <Caption>
               © {new Date().getFullYear()} Clutchd, LLC
-            </Text.Caption>
+            </Caption>
           </div>
           <div className="flex flex-col w-1/2 text-right">
-            <Text.Caption>
+            <Caption>
               <Link href="mailto:william@clutchd.com">Contact Us</Link>
-            </Text.Caption>
+            </Caption>
           </div>
         </Footer>
       </Page>
