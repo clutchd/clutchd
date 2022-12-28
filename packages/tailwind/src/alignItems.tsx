@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/align-items}
  */
 
-const alignItems = [
+export const alignItems = [
   "items-start",
   "items-end",
   "items-center",

@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/justify-content}
  */
 
-const justifyContent = [
+export const justifyContent = [
   "justify-start",
   "justify-end",
   "justify-center",

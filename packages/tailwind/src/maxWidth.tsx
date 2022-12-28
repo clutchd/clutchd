@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/max-width}
  */
 
-const maxWidth = [
+export const maxWidth = [
   "max-w-0",
   "max-w-none",
   "max-w-xs",

@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/height}
  */
 
-const height = [
+export const height = [
   "h-0",
   "h-px",
   "h-0.5",

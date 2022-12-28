@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/"border-width}
  */
 
-const borderWidth = [
+export const borderWidth = [
   "border-0",
   "border-2",
   "border-4",

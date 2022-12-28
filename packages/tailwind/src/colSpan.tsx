@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/grid-column}
  */
 
-const colSpan = [
+export const colSpan = [
   "col-auto",
   "col-span-1",
   "col-span-2",
@@ -19,7 +19,7 @@ const colSpan = [
   "col-span-full",
 ] as const;
 
-const colSpanSm = [
+export const colSpanSm = [
   "sm:col-auto",
   "sm:col-span-1",
   "sm:col-span-2",
@@ -36,7 +36,7 @@ const colSpanSm = [
   "sm:col-span-full",
 ] as const;
 
-const colSpanMd = [
+export const colSpanMd = [
   "md:col-auto",
   "md:col-span-1",
   "md:col-span-2",
@@ -53,7 +53,7 @@ const colSpanMd = [
   "md:col-span-full",
 ] as const;
 
-const colSpanLg = [
+export const colSpanLg = [
   "lg:col-auto",
   "lg:col-span-1",
   "lg:col-span-2",

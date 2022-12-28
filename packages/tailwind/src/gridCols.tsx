@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/grid-template-columns}
  */
 
-const gridCols = [
+export const gridCols = [
   "grid-cols-none",
   "grid-cols-1",
   "grid-cols-2",
@@ -18,7 +18,7 @@ const gridCols = [
   "grid-cols-12",
 ] as const;
 
-const gridColsSm = [
+export const gridColsSm = [
   "sm:grid-cols-none",
   "sm:grid-cols-1",
   "sm:grid-cols-2",
@@ -34,7 +34,7 @@ const gridColsSm = [
   "sm:grid-cols-12",
 ] as const;
 
-const gridColsMd = [
+export const gridColsMd = [
   "md:grid-cols-none",
   "md:grid-cols-1",
   "md:grid-cols-2",
@@ -50,7 +50,7 @@ const gridColsMd = [
   "md:grid-cols-12",
 ] as const;
 
-const gridColsLg = [
+export const gridColsLg = [
   "lg:grid-cols-none",
   "lg:grid-cols-1",
   "lg:grid-cols-2",

@@ -1,7 +1,7 @@
 /**
  * {@link https://tailwindcss.com/docs/gap}
  */
-const gapY = [
+export const gapY = [
   "gap-y-0",
   "gap-y-px",
   "gap-y-0.5",

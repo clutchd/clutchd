@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/customizing-colors}
  */
 
-const color = [
+export const color = [
   "transparent",
   "black",
   "white",

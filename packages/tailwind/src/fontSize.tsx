@@ -2,7 +2,7 @@
  * {@link https://tailwindcss.com/docs/font-size}
  */
 
-const fontSize = [
+export const fontSize = [
   "text-xs",
   "text-sm",
   "text-base",
