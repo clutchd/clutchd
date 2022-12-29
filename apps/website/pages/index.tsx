@@ -56,9 +56,7 @@ export default function Home() {
         </Content>
         <Footer>
           <div className="flex w-1/2">
-            <Caption>
-              © {new Date().getFullYear()} Clutchd, LLC
-            </Caption>
+            <Caption>© {new Date().getFullYear()} Clutchd, LLC</Caption>
           </div>
           <div className="flex flex-col w-1/2 text-right">
             <Caption>

@@ -2,9 +2,17 @@ import { clsx } from "@clutchd/clsx";
 import {
   Component,
   IComponent,
-  ReactPropsWithoutRef
+  ReactPropsWithoutRef,
 } from "@clutchd/component";
-import { GetGridCols, GetGridColsLg, GetGridColsMd, GetGridColsSm, IWithGapX, IWithGapY, IWithGridColsValues } from "@clutchd/tailwind";
+import {
+  GetGridCols,
+  GetGridColsLg,
+  GetGridColsMd,
+  GetGridColsSm,
+  IWithGapX,
+  IWithGapY,
+  IWithGridColsValues,
+} from "@clutchd/tailwind";
 
 /**
  * Type to define `Grid` component
@@ -16,9 +24,9 @@ type IGrid = typeof Grid;
  */
 interface IGridProps
   extends IWithGapX,
-  IWithGapY,
-  IWithGridColsValues,
-  ReactPropsWithoutRef<IComponent["div"]> { }
+    IWithGapY,
+    IWithGridColsValues,
+    ReactPropsWithoutRef<IComponent["div"]> {}
 
 /**
  * `Grid` - A primitive grid container that powers various layouts

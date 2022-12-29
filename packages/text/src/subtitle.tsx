@@ -11,7 +11,7 @@ type ISubtitle = typeof Subtitle;
 /**
  * Type to define `Subtitle` props
  */
-interface ISubtitleProps extends ITextProps { }
+interface ISubtitleProps extends ITextProps {}
 
 /**
  * `Subtitle` - A text component with a little more emphasis

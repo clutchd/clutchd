@@ -1,4 +1,4 @@
-import { height, width } from "./"
+import { height, width } from "./";
 
 /**
  * A custom type use to simplify consistent height and width, only focuses on absolute sizing
@@ -40,14 +40,14 @@ export const size = [
   "64",
   "72",
   "80",
-  "96"
+  "96",
 ] as const;
 
 export type ISize = typeof size[number];
 
 export const getSize = (base: ISize) => {
   return `${height[size.indexOf(base)]} ${width[size.indexOf(base)]}`;
-}
+};
 
 export interface IWithSize {
   size?: ISize;

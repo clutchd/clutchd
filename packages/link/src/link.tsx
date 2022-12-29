@@ -10,7 +10,7 @@ type ILink = typeof Link;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps extends ReactPropsWithoutRef<IComponent["a"]> { }
+interface ILinkProps extends ReactPropsWithoutRef<IComponent["a"]> {}
 
 /**
  * `Link` - A simple link component, leverages next/link

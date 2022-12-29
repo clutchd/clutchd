@@ -7,7 +7,7 @@ import {
   IWithBorderRadius,
   IWithBorderWidth,
   IWithColor,
-  IWithSize
+  IWithSize,
 } from "@clutchd/tailwind";
 import Image from "next/image";
 import { useState } from "react";
@@ -22,10 +22,10 @@ type IAvatar = typeof Avatar;
  */
 interface IAvatarProps
   extends IWithBorderRadius,
-  IWithBorderWidth,
-  IWithColor,
-  IWithSize,
-  ReactPropsWithoutRef<typeof Component.span> {
+    IWithBorderWidth,
+    IWithColor,
+    IWithSize,
+    ReactPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
   fallback?: string;

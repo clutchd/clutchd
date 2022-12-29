@@ -13,7 +13,7 @@ type IPage = typeof Page;
  */
 interface IPageProps
   extends IWithColor,
-  ReactPropsWithoutRef<IComponent["div"]> {
+    ReactPropsWithoutRef<IComponent["div"]> {
   direction?: "col" | "row";
   padding?: boolean;
 }
@@ -30,7 +30,11 @@ function Page({
   ...props
 }: IPageProps) {
   const color = getColor(theme, "50").bgColor;
-  const classNames = clsx(color, "min-h-screen min-w-screen subpixel-antialiased", className);
+  const classNames = clsx(
+    color,
+    "min-h-screen min-w-screen subpixel-antialiased",
+    className
+  );
 
   // if row, return row
   if (direction === "row") {

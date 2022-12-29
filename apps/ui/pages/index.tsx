@@ -1,6 +1,14 @@
 import { Avatar } from "@clutchd/avatar";
 import { Content, Footer, Header, Page } from "@clutchd/layout";
-import { Bold, Caption, Heading, Italic, Subtitle, Text, Title } from "@clutchd/text";
+import {
+  Bold,
+  Caption,
+  Heading,
+  Italic,
+  Subtitle,
+  Text,
+  Title,
+} from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,9 +62,7 @@ export default function Home() {
         </Content>
         <Footer>
           <div className="flex w-1/2">
-            <Caption>
-              © {new Date().getFullYear()} Clutchd, LLC
-            </Caption>
+            <Caption>© {new Date().getFullYear()} Clutchd, LLC</Caption>
           </div>
           <div className="flex flex-col w-1/2 text-right">
             <Caption>

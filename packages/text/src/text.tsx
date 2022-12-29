@@ -19,10 +19,10 @@ type IText = typeof Text;
  */
 interface ITextProps
   extends IComponentProps<IComponent["p"]>,
-  IWithFontSize,
-  IWithLineHeight,
-  IWithFontWeight,
-  IWithColor {
+    IWithFontSize,
+    IWithLineHeight,
+    IWithFontWeight,
+    IWithColor {
   protect?: boolean;
 }
 

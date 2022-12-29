@@ -37,7 +37,7 @@ export const borderWidth = [
   "border-l-2",
   "border-l-4",
   "border-l-8",
-  "border-l"
+  "border-l",
 ] as const;
 
 export type IBorderWidth = typeof borderWidth[number];

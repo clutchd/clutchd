@@ -21,7 +21,7 @@ export function isEmpty(value: any) {
   }
 
   // if value is a date, we are not empty if valid
-  if (Object.prototype.toString.call(value) === '[object Date]') {
+  if (Object.prototype.toString.call(value) === "[object Date]") {
     return isNaN(value.getTime());
   }
 
