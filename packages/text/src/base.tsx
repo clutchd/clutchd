@@ -18,9 +18,9 @@ type IBase = typeof Base;
  */
 interface IBaseProps
   extends IComponentProps<IComponent["p"]>,
-  IWithFontSize,
-  IWithLineHeight,
-  IWithFontWeight {
+    IWithFontSize,
+    IWithLineHeight,
+    IWithFontWeight {
   protect?: boolean;
   tag?: string;
 }

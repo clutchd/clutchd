@@ -16,7 +16,7 @@ type ICard = typeof Card;
  */
 interface ICardProps
   extends IWithColor,
-  ReactPropsWithoutRef<IComponent["div"]> {
+    ReactPropsWithoutRef<IComponent["div"]> {
   decoration?: "top" | "right" | "bottom" | "left";
   hover?: boolean;
 }
