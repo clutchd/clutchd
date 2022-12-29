@@ -1,5 +1,12 @@
 # @clutchd/divider
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies [39df52a]
+  - @clutchd/component@0.9.0
+
 ## 1.0.0
 
 ### Major Changes

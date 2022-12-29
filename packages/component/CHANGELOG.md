@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 0.9.0
+
+### Minor Changes
+
+- 39df52a: Update node types, remove section, add form
+
 ## 0.8.0
 
 ### Minor Changes
