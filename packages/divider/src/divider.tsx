@@ -4,7 +4,14 @@ import {
   IComponent,
   ReactPropsWithoutRef,
 } from "@clutchd/component";
-import { getColor, IWithColor } from "@clutchd/tailwind";
+import {
+  getColor,
+  ISize,
+  IWithColor,
+  marginX,
+  marginY,
+  size,
+} from "@clutchd/tailwind";
 
 /**
  * Type to define `Divider` component
@@ -16,9 +23,11 @@ type IDivider = typeof Divider;
  */
 interface IDividerProps
   extends IWithColor,
-  ReactPropsWithoutRef<IComponent["div"]> {
-  direction?: "horizontal" | "vertical";
-  hr?: boolean;
+    ReactPropsWithoutRef<IComponent["div"]> {
+  decorative?: boolean;
+  hidden?: boolean;
+  orientation?: "horizontal" | "vertical";
+  spacing?: ISize;
 }
 
 /**
@@ -28,19 +37,29 @@ interface IDividerProps
  */
 function Divider({
   className,
-  direction = "horizontal",
-  hr = true,
+  decorative = false,
+  hidden = false,
+  orientation = "horizontal",
+  spacing = "4",
   theme = "gray",
   ...props
 }: IDividerProps) {
-  const classNames = clsx(
-    "transition-all rounded-lg",
-    hr ? getColor(theme, "200").bgColor : "bg-inherit",
-    direction === "horizontal" ? "mt-6 mb-6 h-[3px]" : "ml-6 mr-6 w-[3px]",
-    className
+  const aria = decorative
+    ? { role: "none" }
+    : { "aria-orientation": orientation, role: "separator" };
+  return (
+    <Component.div
+      className={clsx(
+        "transition-all rounded-lg",
+        hidden ? "bg-inherit" : getColor(theme, "200").bgColor,
+        orientation === "horizontal"
+          ? `${marginY[size.indexOf(spacing)]} h-[2px]`
+          : `${marginX[size.indexOf(spacing)]} w-[2px]`,
+        className
+      )}
+      {...props}
+    />
   );
-
-  return <Component.div className={classNames} {...props} />;
 }
 
 export { Divider };
