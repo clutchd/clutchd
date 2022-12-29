@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 1.0.0
+
+### Major Changes
+
+- bf5980e: Add aria roles, improve dynamic styling
+
 ## 0.3.6
 
 ### Patch Changes
