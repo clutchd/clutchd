@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 2.0.0
+
+### Major Changes
+
+- 40e8e39: Adds support for dates, optimizes order of value checking
+
 ## 1.2.0
 
 ### Minor Changes

@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/is-empty": "^1.2.0",
+    "@clutchd/is-empty": "^2.0.0",
     "@clutchd/tsconfig": "*",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
