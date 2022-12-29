@@ -16,7 +16,7 @@ type ICard = typeof Card;
  */
 interface ICardProps
   extends IWithColor,
-    ReactPropsWithoutRef<IComponent["div"]> {
+  ReactPropsWithoutRef<IComponent["div"]> {
   decoration?: "top" | "right" | "bottom" | "left";
   hover?: boolean;
 }
@@ -35,7 +35,7 @@ function Card({
   ...props
 }: ICardProps) {
   const classNames = clsx(
-    "transition-all duration-200 relative p-6 bg-white rounded-lg shadow ring-gray-200 ring-1",
+    "transition-all relative p-6 bg-white rounded-lg shadow ring-gray-200 ring-1",
     getDecoration(decoration),
     getColor(theme, "400").borderColor,
     hover && "hover:shadow-lg",

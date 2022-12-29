@@ -31,7 +31,7 @@ export default function Home() {
             />
           </Link>
           <Link
-            className="flex px-4 ml-auto transition-all duration-200 rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
+            className="flex px-4 ml-auto transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
             href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo"
           >
             <Text

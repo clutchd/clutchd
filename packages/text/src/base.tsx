@@ -18,9 +18,9 @@ type IBase = typeof Base;
  */
 interface IBaseProps
   extends IComponentProps<IComponent["p"]>,
-    IWithFontSize,
-    IWithLineHeight,
-    IWithFontWeight {
+  IWithFontSize,
+  IWithLineHeight,
+  IWithFontWeight {
   protect?: boolean;
   tag?: string;
 }
@@ -39,7 +39,7 @@ function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
     props.fontSize,
     props.fontWeight,
     props.lineHeight,
-    "transition-all duration-200",
+    "transition-all",
     props.className
   );
 

@@ -16,7 +16,7 @@ type IDivider = typeof Divider;
  */
 interface IDividerProps
   extends IWithColor,
-    ReactPropsWithoutRef<IComponent["div"]> {
+  ReactPropsWithoutRef<IComponent["div"]> {
   direction?: "horizontal" | "vertical";
   hr?: boolean;
 }
@@ -34,7 +34,7 @@ function Divider({
   ...props
 }: IDividerProps) {
   const classNames = clsx(
-    "transition-all duration-200 rounded-lg",
+    "transition-all rounded-lg",
     hr ? getColor(theme, "200").bgColor : "bg-inherit",
     direction === "horizontal" ? "mt-6 mb-6 h-[3px]" : "ml-6 mr-6 w-[3px]",
     className
