@@ -1,5 +1,12 @@
 # @clutchd/flex
 
+## 0.1.10
+
+### Patch Changes
+
+- Updated dependencies [39df52a]
+  - @clutchd/component@0.9.0
+
 ## 0.1.9
 
 ### Patch Changes
