@@ -1,5 +1,12 @@
 # @clutchd/avatar
 
+## 0.6.2
+
+### Patch Changes
+
+- Updated dependencies [40e8e39]
+  - @clutchd/is-empty@2.0.0
+
 ## 0.6.1
 
 ### Patch Changes
