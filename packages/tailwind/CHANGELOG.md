@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 0.11.0
+
+### Minor Changes
+
+- 26c8fb5: Add marginX and marginY
+
 ## 0.10.0
 
 ### Minor Changes
