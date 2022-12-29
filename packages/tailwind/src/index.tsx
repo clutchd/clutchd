@@ -12,6 +12,8 @@ export * from "./gridCols";
 export * from "./height";
 export * from "./justifyContent";
 export * from "./lineHeight";
+export * from "./marginX";
+export * from "./marginY";
 export * from "./maxWidth";
 export * from "./rowSpan";
 export * from "./size";
