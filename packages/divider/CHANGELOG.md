@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 0.3.6
+
+### Patch Changes
+
+- 0cb551f: Speed up animations
+
 ## 0.3.5
 
 ### Patch Changes
