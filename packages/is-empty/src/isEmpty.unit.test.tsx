@@ -32,4 +32,13 @@ describe("isEmpty", () => {
   test("1 is not empty", async () => {
     expect(isEmpty(1)).toEqual(false);
   });
+
+  test("Date is not empty", async () => {
+    expect(isEmpty(new Date())).toEqual(false);
+  });
+
+  test("Invalid date is empty", async () => {
+    console.log(new Date("invalid"));
+    expect(isEmpty(new Date("invalid"))).toEqual(true);
+  });
 });

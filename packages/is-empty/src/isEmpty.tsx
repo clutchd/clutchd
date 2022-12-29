@@ -4,11 +4,27 @@
  * @returns True if empty, otherwise false
  */
 export function isEmpty(value: any) {
+  // if undefined or null, we are empty
+  if (value == null) {
+    return true;
+  }
+
   // if value is a finite number, we are not empty
+  // 0 is considered falsy, so we must check for numbers here
   if (Number.isFinite(value)) {
     return false;
   }
 
-  // otherwise check for null
-  return value == null || Object.keys(value).length === 0 || !value;
+  // if value is falsy, we are empty
+  if (!value) {
+    return true;
+  }
+
+  // if value is a date, we are not empty if valid
+  if (Object.prototype.toString.call(value) === '[object Date]') {
+    return isNaN(value.getTime());
+  }
+
+  // otherwise check for key length to determine emptiness
+  return Object.keys(value).length === 0;
 }
