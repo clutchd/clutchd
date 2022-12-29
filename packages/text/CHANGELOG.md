@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 0.4.2
+
+### Patch Changes
+
+- 0cb551f: Speed up animations
+
 ## 0.4.1
 
 ### Patch Changes

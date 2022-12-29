@@ -1,5 +1,13 @@
 # @clutchd/website
 
+## 0.4.1
+
+### Patch Changes
+
+- 0cb551f: Speed up animations
+- Updated dependencies [0cb551f]
+  - @clutchd/text@0.4.2
+
 ## 0.4.0
 
 ### Minor Changes

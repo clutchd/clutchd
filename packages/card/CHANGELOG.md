@@ -1,5 +1,11 @@
 # @clutchd/card
 
+## 0.1.10
+
+### Patch Changes
+
+- 0cb551f: Speed up animations
+
 ## 0.1.9
 
 ### Patch Changes
