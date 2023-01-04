@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 2.0.1
+
+### Patch Changes
+
+- 3fc6510: Fix bug where functions were considered empty
+
 ## 2.0.0
 
 ### Major Changes
