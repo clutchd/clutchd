@@ -38,7 +38,10 @@ describe("isEmpty", () => {
   });
 
   test("Invalid date is empty", async () => {
-    console.log(new Date("invalid"));
     expect(isEmpty(new Date("invalid"))).toEqual(true);
+  });
+
+  test("Function is not empty", async () => {
+    expect(isEmpty((e) => { console.log(e) })).toEqual(false);
   });
 });

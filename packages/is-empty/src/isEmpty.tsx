@@ -25,6 +25,11 @@ export function isEmpty(value: any) {
     return isNaN(value.getTime());
   }
 
+  // if value is a function, we are not empty
+  if (value.call && value.apply) {
+    return false;
+  }
+
   // otherwise check for key length to determine emptiness
   return Object.keys(value).length === 0;
 }
