@@ -1,4 +1,4 @@
-import { height, width } from "./";
+import { height, width } from ".";
 
 /**
  * A custom type use to simplify consistent height and width, only focuses on absolute sizing
