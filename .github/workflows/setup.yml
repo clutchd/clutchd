@@ -16,8 +16,8 @@ jobs:
         run: npm ci --ignore-scripts
 
       - name: Cache dependencies
-      uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: npm-${{ hashFiles('package-lock.json') }}
-        restore-keys: npm-
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-
