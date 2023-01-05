@@ -1,7 +1,7 @@
 import { isEmpty } from "@clutchd/is-empty";
 
 /**
- * Returns a set of initials dervied from the provided names
+ * Returns a set of initials derived from the provided names
  * @param names Names which we need to derive initials from
  * @returns A single set of initials
  */

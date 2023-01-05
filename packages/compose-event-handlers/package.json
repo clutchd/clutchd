@@ -1,0 +1,29 @@
+{
+  "name": "@clutchd/compose-event-handlers",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@clutchd/is-empty": "^2.0.1"
+  },
+  "devDependencies": {
+    "@clutchd/config": "*",
+    "jest": "^29.3.1",
+    "jest-environment-jsdom": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "tsup": "^6.5.0",
+    "typescript": "^4.8.4"
+  }
+}
