@@ -1,5 +1,12 @@
 # @clutchd/divider
 
+## 1.0.2
+
+### Patch Changes
+
+- Updated dependencies [322bf0c]
+  - @clutchd/clsx@0.1.3
+
 ## 1.0.1
 
 ### Patch Changes
