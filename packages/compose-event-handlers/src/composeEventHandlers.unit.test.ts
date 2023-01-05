@@ -52,7 +52,7 @@ describe("composeEventHandlers", () => {
     const logSpy = jest.spyOn(console, "log");
     const handler = composeEventHandlers(
       (e) => console.log("first"),
-      //@ts-ignore
+      // @ts-ignore
       undefined,
       (e) => console.log("third")
     );
@@ -96,7 +96,7 @@ describe("composeEventHandlers", () => {
     const logSpy = jest.spyOn(console, "log");
     const handler = composeEventHandlers(
       (e) => console.log("first"),
-      //@ts-ignore
+      // @ts-ignore
       undefined,
       (e) => console.log("third")
     );

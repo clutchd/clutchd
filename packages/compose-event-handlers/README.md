@@ -1,6 +1,6 @@
 # @clutchd/compose-event-handlers
 
-A small utility intended to quickly compose multipe event handlers into a single handler.
+A small utility intended to quickly compose multiple event handlers into a single handler.
 
 ## Installation
 

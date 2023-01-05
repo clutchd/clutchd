@@ -54,7 +54,7 @@ describe("composePreventableEventHandlers", () => {
     const logSpy = jest.spyOn(console, "log");
     const handler = composePreventableEventHandlers(
       (e) => console.log("first"),
-      //@ts-ignore
+      // @ts-ignore
       undefined,
       (e) => console.log("third")
     );
@@ -95,7 +95,7 @@ describe("composePreventableEventHandlers", () => {
     const logSpy = jest.spyOn(console, "log");
     const handler = composePreventableEventHandlers(
       (e) => console.log("first"),
-      //@ts-ignore
+      // @ts-ignore
       undefined,
       (e) => console.log("third")
     );

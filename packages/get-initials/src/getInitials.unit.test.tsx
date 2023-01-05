@@ -2,12 +2,12 @@ import { getInitials } from "./getInitials";
 
 describe("getInitials", () => {
   test('null is "U"', async () => {
-    //@ts-ignore
+    // @ts-ignore
     expect(getInitials(null)).toEqual("U");
   });
 
   test('undefined is "U"', async () => {
-    //@ts-ignore
+    // @ts-ignore
     expect(getInitials(undefined)).toEqual("U");
   });
 
