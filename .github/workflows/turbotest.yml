@@ -3,14 +3,13 @@ name: Turbo Test
 on: [workflow_call, push]
 
 jobs:
-  setup:
-    uses: ./.github/workflows/setup.yml
   test:
-    needs: setup
+    name: Turbo Test
     runs-on: ubuntu-latest
     env:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     steps:
+      - uses: ./.github/workflows/setup.yml
       - name: Lint
         run: npm run lint
 
