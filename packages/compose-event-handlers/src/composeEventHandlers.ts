@@ -8,17 +8,19 @@ import { isEmpty } from "@clutchd/is-empty";
  */
 function composeEventHandlers<E>(
   original: (event: E) => void,
-  ...handlers: { (event: E): void; }[]
+  ...handlers: { (event: E): void }[]
 ) {
   return function (event: E) {
     original?.(event);
 
     if (!(event as Event)?.defaultPrevented) {
-      return handlers.filter(handler => !isEmpty(handler)).forEach(handler => {
-        return handler?.(event);
-      });
+      return handlers
+        .filter((handler) => !isEmpty(handler))
+        .forEach((handler) => {
+          return handler?.(event);
+        });
     }
-  }
+  };
 }
 
 export { composeEventHandlers };
