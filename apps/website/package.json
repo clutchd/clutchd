@@ -21,7 +21,7 @@
     "@clutchd/tailwind": "*",
     "@clutchd/tsconfig": "*",
     "@types/react": "^18.0.14",
-    "@types/react-dom": "^18.0.9",
+    "@types/react-dom": "^18.0.10",
     "typescript": "^4.8.4"
   }
 }
