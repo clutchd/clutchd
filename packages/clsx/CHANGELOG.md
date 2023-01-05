@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 0.1.3
+
+### Patch Changes
+
+- 322bf0c: Update exports
+
 ## 0.1.2
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @clutchd/skeleton
 
+## 0.4.9
+
+### Patch Changes
+
+- Updated dependencies [322bf0c]
+  - @clutchd/clsx@0.1.3
+
 ## 0.4.8
 
 ### Patch Changes
