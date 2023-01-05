@@ -1,5 +1,12 @@
 # @clutchd/grid
 
+## 0.2.3
+
+### Patch Changes
+
+- Updated dependencies [322bf0c]
+  - @clutchd/clsx@0.1.3
+
 ## 0.2.2
 
 ### Patch Changes

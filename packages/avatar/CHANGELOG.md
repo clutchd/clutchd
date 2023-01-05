@@ -1,5 +1,13 @@
 # @clutchd/avatar
 
+## 0.6.4
+
+### Patch Changes
+
+- e32ed39: Update deps
+- Updated dependencies [322bf0c]
+  - @clutchd/clsx@0.1.3
+
 ## 0.6.3
 
 ### Patch Changes

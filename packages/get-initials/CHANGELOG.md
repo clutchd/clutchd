@@ -1,5 +1,12 @@
 # @clutchd/get-initials
 
+## 1.2.1
+
+### Patch Changes
+
+- 7b870ad: Improve performance
+- e32ed39: Update deps
+
 ## 1.2.0
 
 ### Minor Changes

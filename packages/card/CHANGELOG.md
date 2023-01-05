@@ -1,5 +1,12 @@
 # @clutchd/card
 
+## 0.1.12
+
+### Patch Changes
+
+- Updated dependencies [322bf0c]
+  - @clutchd/clsx@0.1.3
+
 ## 0.1.11
 
 ### Patch Changes
