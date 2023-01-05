@@ -6,9 +6,7 @@ import { isEmpty } from "@clutchd/is-empty";
  * @returns A single set of initials
  */
 function getInitials(...names: string[]) {
-  let formatted: string[] = names
-    .join(" ")
-    .split(" ");
+  let formatted: string[] = names.join(" ").split(" ");
 
   if (formatted.length === 1 && isEmpty(formatted[0])) {
     return "U";

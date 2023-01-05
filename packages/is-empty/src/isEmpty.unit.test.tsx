@@ -42,6 +42,10 @@ describe("isEmpty", () => {
   });
 
   test("Function is not empty", async () => {
-    expect(isEmpty((e: any) => { console.log(e) })).toEqual(false);
+    expect(
+      isEmpty((e: any) => {
+        console.log(e);
+      })
+    ).toEqual(false);
   });
 });
