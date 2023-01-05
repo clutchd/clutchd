@@ -10,9 +10,12 @@ function composeEventHandlers<E>(
   original: (event: E) => void,
   ...handlers: { (event: E): void }[]
 ) {
+  // return the composed event handler
   return function (event: E) {
+    // original event handler will always execute
     original?.(event);
 
+    // additional event handlers will only execute when default is not prevented
     if (!(event as Event)?.defaultPrevented) {
       return handlers
         .filter((handler) => !isEmpty(handler))
