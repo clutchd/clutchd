@@ -1,6 +1,6 @@
 {
-  "name": "@clutchd/compose-event-handlers",
-  "version": "1.0.0",
+  "name": "@clutchd/compose-refs",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -9,9 +9,9 @@
   ],
   "sideEffects": false,
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "prepublish": "npm run build",
     "test": "jest"
   },
