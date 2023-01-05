@@ -7,7 +7,6 @@ import { isEmpty } from "@clutchd/is-empty";
  */
 function getInitials(...names: string[]) {
   let formatted: string[] = names
-    .filter((x) => !isEmpty(x))
     .join(" ")
     .split(" ");
 

@@ -19,6 +19,14 @@ describe("getInitials", () => {
     expect(getInitials("tim")).toEqual("T");
   });
 
+  test('("tim", "") is "T"', async () => {
+    expect(getInitials("tim", "")).toEqual("T");
+  });
+
+  test('("tim", " ") is "T"', async () => {
+    expect(getInitials("tim", " ")).toEqual("T");
+  });
+
   test('("Tim") is "T"', async () => {
     expect(getInitials("Tim")).toEqual("T");
   });
@@ -29,6 +37,18 @@ describe("getInitials", () => {
 
   test('("Tim", "Cook") is "TC"', async () => {
     expect(getInitials("Tim", "Cook")).toEqual("TC");
+  });
+
+  test('("Tim", "", "Cook") is "TC"', async () => {
+    expect(getInitials("Tim", "", "Cook")).toEqual("TC");
+  });
+
+  test('("Tim", " ", "Cook") is "TC"', async () => {
+    expect(getInitials("Tim", " ", "Cook")).toEqual("TC");
+  });
+
+  test('("tim", " ") is "T"', async () => {
+    expect(getInitials("tim", " ")).toEqual("T");
   });
 
   test('("Tim Apple Cook") is "TC"', async () => {
