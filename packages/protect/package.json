@@ -13,7 +13,7 @@
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "prepublish": "npm run build",
-    "test": "jest --passWithNoTests"
+    "test": "jest"
   },
   "devDependencies": {
     "@clutchd/config": "*",
