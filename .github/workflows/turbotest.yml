@@ -9,7 +9,7 @@ jobs:
     env:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     steps:
-      - uses: clutchd/clutchd/.github/actions/npm-start.yml@main
+      - uses: clutchd/turbostart-npm@v1
       - name: Lint
         run: npm run lint
 
