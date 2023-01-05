@@ -1,0 +1,23 @@
+name: npm-start
+description: Sets up node, installs npm dependencies, and caches them for later use.
+branding:
+  icon: package
+  color: red
+runs:
+  using: composite
+  steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3.3.0
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3.6.0
+
+    - name: Clean Install Dependencies
+      run: npm ci --ignore-scripts
+
+    - name: Cache Dependencies
+      uses: actions/cache@v3.2.2
+      with:
+        path: ~/.npm
+        key: npm-${{ hashFiles('package-lock.json') }}
+        restore-keys: npm-

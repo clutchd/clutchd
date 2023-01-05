@@ -9,7 +9,7 @@ jobs:
     env:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
     steps:
-      - uses: ./.github/workflows/setup.yml
+      - uses: ./.github/actions/npm-start.yml
       - name: Lint
         run: npm run lint
 
