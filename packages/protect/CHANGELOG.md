@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.5.5
+
+### Patch Changes
+
+- a513091: Reduce bundle size
+
 ## 0.5.4
 
 ### Patch Changes

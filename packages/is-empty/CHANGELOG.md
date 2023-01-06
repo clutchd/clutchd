@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 2.0.2
+
+### Patch Changes
+
+- e5e7fdb: Improve function check
+
 ## 2.0.1
 
 ### Patch Changes
