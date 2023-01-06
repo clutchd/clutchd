@@ -1,6 +1,12 @@
 import { composeProps } from ".";
 
 describe("composeProps", () => {
+  test("Compose no props", async () => {
+    const composed = composeProps();
+
+    expect(composed).toEqual({});
+  });
+
   test("Compose unique generic props", async () => {
     const original = { a: "1" };
     const props = { b: "2" };
