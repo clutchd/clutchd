@@ -26,3 +26,5 @@ function setRef<T>(ref: PossibleRef<T>, value: T) {
 function composeRefs<T>(...refs: PossibleRef<T>[]) {
   return (node: T) => refs.forEach((ref) => setRef(ref, node));
 }
+
+export { composeRefs };
