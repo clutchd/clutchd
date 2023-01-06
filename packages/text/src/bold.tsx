@@ -22,5 +22,7 @@ function Bold(props: IBoldProps) {
   return <Base fontWeight="font-bold" tag="span" {...props} />;
 }
 
+Bold.displayName = "TextBold";
+
 export { Bold };
 export type { IBold, IBoldProps };

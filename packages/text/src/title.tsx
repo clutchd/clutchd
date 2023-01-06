@@ -36,5 +36,7 @@ function Title({
   );
 }
 
+Title.displayName = "TextTitle";
+
 export { Title };
 export type { ITitle, ITitleProps };

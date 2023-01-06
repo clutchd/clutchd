@@ -36,5 +36,7 @@ function Caption({
   );
 }
 
+Caption.displayName = "TextCaption";
+
 export { Caption };
 export type { ICaption, ICaptionProps };

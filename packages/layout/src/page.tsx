@@ -45,5 +45,7 @@ function Page({
   return <Col className={classNames} {...props} />;
 }
 
+Page.displayName = "Page";
+
 export { Page };
 export type { IPage, IPageProps };

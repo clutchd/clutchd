@@ -45,5 +45,7 @@ function Row({
   );
 }
 
+Row.displayName = "FlexRow";
+
 export { Row };
 export type { IRow, IRowProps };

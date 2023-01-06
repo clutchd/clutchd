@@ -39,6 +39,8 @@ function Heading({
   );
 }
 
+Heading.displayName = "TextHeading";
+
 /**
  * Determines the type of html element to render based on heading level
  * @param level heading level

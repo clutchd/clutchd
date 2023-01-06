@@ -96,5 +96,7 @@ function Avatar({
   );
 }
 
+Avatar.displayName = "Avatar";
+
 export { Avatar };
 export type { IAvatarProps, IAvatar };

@@ -62,6 +62,8 @@ function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
   return <InternalText className={className}>{children}</InternalText>;
 }
 
+Base.displayName = "TextBase";
+
 /**
  * Type to define a `TextClassMap` object
  */

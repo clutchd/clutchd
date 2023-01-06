@@ -45,5 +45,7 @@ function ProtectComponent({
   return <>{loading}</>;
 }
 
+ProtectComponent.displayName = "ProtectComponent";
+
 export { ProtectComponent };
 export type { IProtectComponent, IProtectComponentProps };

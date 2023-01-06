@@ -47,6 +47,7 @@ function Divider({
   const aria = decorative
     ? { role: "none" }
     : { "aria-orientation": orientation, role: "separator" };
+
   return (
     <Component.div
       className={clsx(
@@ -61,6 +62,8 @@ function Divider({
     />
   );
 }
+
+Divider.displayName = "Divider";
 
 export { Divider };
 export type { IDivider, IDividerProps };

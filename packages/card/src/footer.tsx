@@ -32,5 +32,7 @@ function Footer({ children, ...props }: IFooterProps) {
   );
 }
 
+Footer.displayName = "CardFooter";
+
 export { Footer };
 export type { IFooterProps, IFooter };

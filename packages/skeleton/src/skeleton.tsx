@@ -40,5 +40,7 @@ function Skeleton({ className, dark = false, ...props }: ISkeletonProps) {
   );
 }
 
+Skeleton.displayName = "Skeleton";
+
 export { Skeleton };
 export type { ISkeleton, ISkeletonProps };

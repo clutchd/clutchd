@@ -56,5 +56,7 @@ function Grid({
   return <Component.div {...props} className={classNames} />;
 }
 
+Grid.displayName = "Grid";
+
 export { Grid };
 export type { IGrid, IGridProps };

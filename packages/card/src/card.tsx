@@ -49,6 +49,13 @@ function Card({
   );
 }
 
+Card.displayName = "Card";
+
+/**
+ * Gets the appropriate tailwind class based on the decoration prop
+ * @param decoration Prop used to determine the decoration of this Card
+ * @returns The appropriate tailwind class
+ */
 function getDecoration(decoration: ICardProps["decoration"]) {
   switch (decoration) {
     case "top":

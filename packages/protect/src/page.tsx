@@ -61,5 +61,7 @@ function ProtectPage({
   return <>{loading}</>;
 }
 
+ProtectPage.displayName = "ProtectPage";
+
 export { ProtectPage };
 export type { IProtectPage, IProtectPageProps };

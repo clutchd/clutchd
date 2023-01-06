@@ -23,5 +23,7 @@ function Link({ className, href = "/", ...props }: ILinkProps) {
   return <NextLink className={classNames} href={href} {...props} />;
 }
 
+Link.displayName = "Link";
+
 export { Link };
 export type { ILinkProps, ILink };

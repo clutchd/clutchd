@@ -46,5 +46,7 @@ function Footer({
   );
 }
 
+Footer.displayName = "Footer";
+
 export { Footer };
 export type { IFooter, IFooterProps };

@@ -22,5 +22,7 @@ function Italic({ className, ...props }: IItalicProps) {
   return <Base className={clsx("italic", className)} tag="span" {...props} />;
 }
 
+Italic.displayName = "TextItalic";
+
 export { Italic };
 export type { IItalic, IItalicProps };

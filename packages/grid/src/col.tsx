@@ -61,5 +61,7 @@ function Col({
   return <Component.div {...props} className={classNames} />;
 }
 
+Col.displayName = "GridCol";
+
 export { Col };
 export type { ICol, IColProps };

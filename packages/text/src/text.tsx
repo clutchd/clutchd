@@ -51,5 +51,7 @@ function Text({
   );
 }
 
+Text.displayName = "Text";
+
 export { Text };
 export type { IText, ITextProps };

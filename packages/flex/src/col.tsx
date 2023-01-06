@@ -44,5 +44,7 @@ function Col({
   );
 }
 
+Col.displayName = "FlexCol";
+
 export { Col };
 export type { ICol, IColProps };

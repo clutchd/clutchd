@@ -47,5 +47,7 @@ function Flex({
   return <Component.div {...props} className={classNames} />;
 }
 
+Flex.displayName = "Flex";
+
 export { Flex };
 export type { IFlex, IFlexProps };

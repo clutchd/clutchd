@@ -36,5 +36,7 @@ function Subtitle({
   );
 }
 
+Subtitle.displayName = "TextSubtitle";
+
 export { Subtitle };
 export type { ISubtitle, ISubtitleProps };

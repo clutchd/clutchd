@@ -46,5 +46,7 @@ function Content({
   );
 }
 
+Content.displayName = "Content";
+
 export { Content };
 export type { IContent, IContentProps };
