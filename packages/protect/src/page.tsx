@@ -1,6 +1,6 @@
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
-import { IWithAuthProps, IWithLoadingProps, Validate } from "./protect";
+import { IWithAuthProps, IWithLoadingProps } from "./protect";
 
 /**
  * Type to define `ProtectPage` component
@@ -37,12 +37,12 @@ function ProtectPage({
 
   // if authenticated, and not loading, return authenticated page
   if (authenticatedState && !loadingState) {
-    return Validate(props.children);
+    return <>{props.children}</>;
   }
 
   // if page is not secret (public loading), return authenticated page
   if (loadingState && !secret) {
-    return Validate(props.children);
+    return <>{props.children}</>;
   }
 
   // otherwise, generate a potential redirect link
@@ -58,7 +58,7 @@ function ProtectPage({
 
   // otherwise, page is not done loading (private loading)
   // TODO: Add default loading icon/options
-  return Validate(loading);
+  return <>{loading}</>;
 }
 
 export { ProtectPage };

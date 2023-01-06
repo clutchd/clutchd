@@ -23,25 +23,4 @@ interface IWithLoadingProps {
   loading?: React.ReactNode;
 }
 
-/**
- * Validates a react element to ensure rendering
- * @param component `ReactNode` to validate
- * @returns A validated `ReactNode`
- */
-function Validate(component: React.ReactNode): React.ReactElement | null {
-  // null is a valid response for states that were not provided
-  if (component == null) {
-    return null;
-  }
-
-  // ensure component is valid
-  if (!React.isValidElement(component)) {
-    return <>{component}</>;
-  }
-
-  // otherwise, component is already valid
-  return component;
-}
-
-export { Validate };
 export type { IWithAuthProps, IWithUnauthProps, IWithLoadingProps };

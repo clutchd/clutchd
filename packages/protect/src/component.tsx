@@ -1,5 +1,5 @@
 import { useSession } from "next-auth/react";
-import { IWithLoadingProps, IWithUnauthProps, Validate } from "./protect";
+import { IWithLoadingProps, IWithUnauthProps } from "./protect";
 
 /**
  * Type to define `ProtectComponent` component
@@ -9,7 +9,7 @@ type IProtectComponent = typeof ProtectComponent;
 /**
  * Type to define `ProtectComponent` props
  */
-interface IProtectComponentProps extends IWithLoadingProps, IWithUnauthProps {}
+interface IProtectComponentProps extends IWithLoadingProps, IWithUnauthProps { }
 
 /**
  * `ProtectComponent` - A HOC that will protect a component from displaying sensitive data to an unauthenticated user
@@ -33,16 +33,16 @@ function ProtectComponent({
 
   // if authenticated, and not loading, return authenticated component
   if (authenticatedState && !loadingState) {
-    return Validate(props.children);
+    return <>{props.children}</>;
   }
 
   // if not authenticated, and not loading, return unauthenticated component
   if (!authenticatedState && !loadingState) {
-    return Validate(unauth);
+    return <>{unauth}</>;
   }
 
   // otherwise, still loading
-  return Validate(loading);
+  return <>{loading}</>;
 }
 
 export { ProtectComponent };
