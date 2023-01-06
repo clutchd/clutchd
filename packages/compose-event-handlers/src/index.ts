@@ -1,2 +1,2 @@
-export * from "./composeEventHandlers";
-export * from "./composePreventableEventHandlers";
+export { composeEventHandlers } from "./composeEventHandlers";
+export { composePreventableEventHandlers } from "./composePreventableEventHandlers";

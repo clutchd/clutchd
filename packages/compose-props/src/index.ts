@@ -1,1 +1,1 @@
-export * from "./composeProps";
+export { composeProps } from "./composeProps";
