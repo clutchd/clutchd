@@ -25,7 +25,7 @@ function composeProps(
       }
 
       // if allProp is not null and currentProp is a handler, store prop for composing later
-      else if (allProps[key] && isFunction(currentProps[key])) {
+      else if (allProps[key] && typeof currentProps[key] === "function") {
         (handlers[key] = handlers[key] || []).push(currentProps[key]);
       }
 
@@ -38,7 +38,7 @@ function composeProps(
 
   // compose all found handlers
   for (const key in handlers) {
-    if (isFunction(allProps[key])) {
+    if (typeof allProps[key] === "function") {
       allProps[key] = composeEventHandlers(allProps[key], ...handlers[key]);
     } else {
       allProps[key] = composeEventHandlers(...handlers[key]);
@@ -47,15 +47,6 @@ function composeProps(
 
   // return composed props
   return allProps;
-}
-
-/**
- * Determines if the provided object is a function
- * @param object Object to determine
- * @returns true if object is a function, otherwise false
- */
-function isFunction(object: any) {
-  return object.call && object.apply;
 }
 
 export { composeProps };

@@ -26,7 +26,7 @@ export function isEmpty(value: any) {
   }
 
   // if value is a function, we are not empty
-  if (value.call && value.apply) {
+  if (typeof value === "function") {
     return false;
   }
 
