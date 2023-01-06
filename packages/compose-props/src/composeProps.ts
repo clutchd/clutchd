@@ -3,8 +3,8 @@ import { clsx } from "@clutchd/clsx";
 
 /**
  * Composes multiple prop objects into a single prop object
- * @param props Array of prop objects that should be merged
- * @returns A single prop object of all merged props
+ * @param props Array of prop objects that will be composed
+ * @returns A single prop object composed from all provided props
  */
 function composeProps(...props: Record<string, any>[]) {
   // create new props object for composed props

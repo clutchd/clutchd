@@ -2,7 +2,7 @@ import { mergeEventHandlers } from "./mergeEventHandlers";
 
 /**
  * Composes multiple event handlers into a single event handler function
- * @param handlers Event handlers that will be composed
+ * @param handlers Array of event handlers that will be composed
  * @returns A single event handler function composed from all provided handlers
  */
 function composeEventHandlers<E>(...handlers: { (event: E): void }[]) {
