@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 0.5.6
+
+### Patch Changes
+
+- 5cd46fa: Add explicit display names
+
 ## 0.5.5
 
 ### Patch Changes

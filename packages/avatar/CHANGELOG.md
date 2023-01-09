@@ -1,5 +1,14 @@
 # @clutchd/avatar
 
+## 0.6.5
+
+### Patch Changes
+
+- 5cd46fa: Add explicit display names
+- Updated dependencies [6a13ed2]
+- Updated dependencies [b76ffc8]
+  - @clutchd/component@1.0.0
+
 ## 0.6.4
 
 ### Patch Changes
