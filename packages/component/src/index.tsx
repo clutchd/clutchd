@@ -1,8 +1,5 @@
-export { AsChild, Child } from "./asChild";
-export type { IAsChild, IAsChildProps, IChild, IChildProps } from "./asChild";
 export { Component } from "./component";
 export type {
-  IComponent,
-  IComponentProps,
-  ReactPropsWithoutRef,
+  IComponentPropsWithoutRef,
+  IComponentPropsWithRef,
 } from "./component";

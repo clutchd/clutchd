@@ -1,9 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import {
-  Component,
-  IComponent,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   GetGridCols,
   GetGridColsLg,
@@ -26,7 +22,7 @@ interface IGridProps
   extends IWithGapX,
     IWithGapY,
     IWithGridColsValues,
-    ReactPropsWithoutRef<IComponent["div"]> {}
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Grid` - A primitive grid container that powers various layouts

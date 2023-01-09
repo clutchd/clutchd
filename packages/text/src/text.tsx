@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, IComponentProps } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   getColor,
   IWithColor,
@@ -18,7 +18,7 @@ type IText = typeof Text;
  * Type to define `Text` props
  */
 interface ITextProps
-  extends IComponentProps<IComponent["p"]>,
+  extends IComponentPropsWithoutRef<typeof Component.p>,
     IWithFontSize,
     IWithLineHeight,
     IWithFontWeight,

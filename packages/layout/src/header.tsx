@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Col, Row } from "@clutchd/flex";
 
 /**
@@ -10,7 +10,8 @@ type IHeader = typeof Header;
 /**
  * Type to define `Header` props
  */
-interface IHeaderProps extends ReactPropsWithoutRef<IComponent["header"]> {
+interface IHeaderProps
+  extends IComponentPropsWithoutRef<typeof Component.header> {
   direction?: "col" | "row";
   padding?: boolean;
 }

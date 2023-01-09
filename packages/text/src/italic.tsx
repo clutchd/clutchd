@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, IComponentProps } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Base } from "./base";
 
 /**
@@ -9,7 +9,8 @@ type IItalic = typeof Italic;
 /**
  * Type to define `Italic` props
  */
-interface IItalicProps extends IComponentProps<IComponent["p"]> {
+interface IItalicProps
+  extends IComponentPropsWithoutRef<typeof Component.span> {
   protect?: boolean;
 }
 

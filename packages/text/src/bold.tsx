@@ -1,4 +1,4 @@
-import { IComponent, IComponentProps } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Base } from "./base";
 
 /**
@@ -9,7 +9,7 @@ type IBold = typeof Bold;
 /**
  * Type to define `Bold` props
  */
-interface IBoldProps extends IComponentProps<IComponent["p"]> {
+interface IBoldProps extends IComponentPropsWithoutRef<typeof Component.span> {
   protect?: boolean;
 }
 

@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   IWithAlignItems,
   IWithJustifyContent,
@@ -19,7 +19,7 @@ interface IColProps
   extends IWithAlignItems,
     IWithJustifyContent,
     IWithSpaceY,
-    ReactPropsWithoutRef<IComponent["div"]> {}
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Col` - A flex container for a vertical layout

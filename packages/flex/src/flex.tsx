@@ -1,9 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import {
-  Component,
-  IComponent,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   IWithAlignItems,
   IWithFlexDirection,
@@ -22,7 +18,7 @@ interface IFlexProps
   extends IWithAlignItems,
     IWithFlexDirection,
     IWithJustifyContent,
-    ReactPropsWithoutRef<IComponent["div"]> {}
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Flex` - A primitive flex container that powers various layouts

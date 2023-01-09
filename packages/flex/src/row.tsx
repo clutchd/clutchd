@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   IWithAlignItems,
   IWithJustifyContent,
@@ -19,7 +19,7 @@ interface IRowProps
   extends IWithAlignItems,
     IWithJustifyContent,
     IWithSpaceX,
-    ReactPropsWithoutRef<IComponent["div"]> {}
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Row` - A flex container for a horizontal layout

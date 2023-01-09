@@ -1,9 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import {
-  Component,
-  IComponent,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { getColor, IWithColor } from "@clutchd/tailwind";
 
 /**
@@ -16,7 +12,7 @@ type ICard = typeof Card;
  */
 interface ICardProps
   extends IWithColor,
-    ReactPropsWithoutRef<IComponent["div"]> {
+    IComponentPropsWithoutRef<typeof Component.div> {
   decoration?: "top" | "right" | "bottom" | "left";
   hover?: boolean;
 }

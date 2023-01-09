@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import NextLink from "next/link";
 
 /**
@@ -10,7 +10,7 @@ type ILink = typeof Link;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps extends ReactPropsWithoutRef<IComponent["a"]> {}
+interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> {}
 
 /**
  * `Link` - A simple link component, leverages next/link

@@ -1,9 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import {
-  Component,
-  IComponent,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 
 /**
  * Type to define `Footer` component
@@ -13,7 +9,8 @@ type IFooter = typeof Footer;
 /**
  * Type to define `Card` props
  */
-interface IFooterProps extends ReactPropsWithoutRef<IComponent["div"]> {}
+interface IFooterProps
+  extends IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Card` - A building block component used to render contained elements such as forms

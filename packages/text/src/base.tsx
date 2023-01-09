@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, IComponentProps } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Skeleton } from "@clutchd/skeleton";
 import {
   IFontSize,
@@ -7,6 +7,7 @@ import {
   IWithFontWeight,
   IWithLineHeight,
 } from "@clutchd/tailwind";
+import { ElementType } from "react";
 
 /**
  * Type to define `Base` component
@@ -17,12 +18,12 @@ type IBase = typeof Base;
  * Type to define `Base` props
  */
 interface IBaseProps
-  extends IComponentProps<IComponent["p"]>,
+  extends IComponentPropsWithoutRef<typeof Component.p>,
     IWithFontSize,
     IWithLineHeight,
     IWithFontWeight {
   protect?: boolean;
-  tag?: string;
+  tag?: ElementType;
 }
 
 /**
@@ -30,10 +31,12 @@ interface IBaseProps
  * @param props `IBaseProps` used to render this `Base`
  * @returns `Base` component
  */
-function Base({ children, protect = false, tag = "p", ...props }: IBaseProps) {
-  // dynamically determine underlying text component
-  const InternalText = tag as keyof IComponent;
-
+function Base({
+  children,
+  protect = false,
+  tag: InternalText = "p",
+  ...props
+}: IBaseProps) {
   // get class names
   const className = clsx(
     props.fontSize,

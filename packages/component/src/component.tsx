@@ -1,8 +1,8 @@
 import * as React from "react";
-import { AsChild } from "./asChild";
+import { Slot } from "./slot";
 
 /**
- * Supported `BaseComponent` nodes
+ * Supported `Component` nodes
  */
 const NODES = [
   "a",
@@ -19,52 +19,58 @@ const NODES = [
 ] as const;
 
 /**
- * Generic type to define `React.ElementType` props without the 'ref' prop
+ * Type to define generic `Component` props
  */
-type ReactPropsWithoutRef<T extends React.ElementType> = React.PropsWithoutRef<
-  React.ComponentProps<T>
->;
+type IComponentProps = {
+  asChild?: boolean;
+};
 
 /**
  * Type to define `Component` props with the 'ref' prop
  */
-type IComponentProps<E extends React.ElementType> =
-  React.ComponentPropsWithRef<E> & {
-    asChild?: boolean;
-  };
+type IComponentPropsWithRef<E extends React.ElementType> =
+  React.ComponentPropsWithRef<E> & IComponentProps;
 
 /**
- * Type to define `Component` as a forwarded ref component with the 'ref' prop
+ * Type to define `Component` props without the 'ref' prop
  */
-interface ForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<IComponentProps<E>> { }
+type IComponentPropsWithoutRef<E extends React.ElementType> =
+  React.ComponentPropsWithoutRef<E> & IComponentProps;
+
+/**
+ * Type to define `Component` as a forwarded ref component
+ */
+interface IForwardRefComponent<E extends React.ElementType>
+  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
 
 /**
  * Type to define the supported `Component` nodes
  */
-type IComponent = { [E in typeof NODES[number]]: ForwardRefComponent<E> };
+type Components = { [E in typeof NODES[number]]: IForwardRefComponent<E> };
 
 /**
  * `Component` - a higher-order component that extends standard html tags
  */
-const Component = NODES.reduce((component, node) => {
+const Component = NODES.reduce((tag, node) => {
   const Node = React.forwardRef(
-    (props: IComponentProps<typeof node>, forwardedRef: any) => {
-      const { asChild, ...componentProps } = props;
-      const Comp: any = asChild ? AsChild : node;
+    (
+      { asChild, ...props }: IComponentPropsWithRef<typeof node>,
+      forwardedRef: any
+    ) => {
+      const Comp: any = asChild ? Slot : node;
 
       React.useEffect(() => {
         (window as any)[Symbol.for("clutchd")] = true;
       }, []);
 
-      return <Comp {...componentProps} ref={forwardedRef} />;
+      return <Comp {...props} ref={forwardedRef} />;
     }
   );
 
-  Node.displayName = `BaseComponent.${node}`;
+  Node.displayName = `Component.${node}`;
 
-  return { ...component, [node]: Node };
-}, {} as IComponent);
+  return { ...tag, [node]: Node };
+}, {} as Components);
 
 export { Component };
-export type { IComponent, IComponentProps, ReactPropsWithoutRef };
+export type { IComponentPropsWithRef, IComponentPropsWithoutRef };

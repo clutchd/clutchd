@@ -1,9 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import {
-  Component,
-  IComponent,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   GetColSpan,
   GetColSpanLg,
@@ -28,7 +24,7 @@ type ICol = typeof Col;
 interface IColProps
   extends IWithColSpanValues,
     IWithRowSpanValues,
-    ReactPropsWithoutRef<IComponent["div"]> {}
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Col` - A primitive component used to render a column within a grid

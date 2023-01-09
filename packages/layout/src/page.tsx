@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Col, Row } from "@clutchd/flex";
 import { getColor, IWithColor } from "@clutchd/tailwind";
 
@@ -13,7 +13,7 @@ type IPage = typeof Page;
  */
 interface IPageProps
   extends IWithColor,
-    ReactPropsWithoutRef<IComponent["div"]> {
+    IComponentPropsWithoutRef<typeof Component.div> {
   direction?: "col" | "row";
   padding?: boolean;
 }

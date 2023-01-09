@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Col, Row } from "@clutchd/flex";
 
 /**
@@ -10,7 +10,8 @@ type IFooter = typeof Footer;
 /**
  * Type to define `Footer` props
  */
-interface IFooterProps extends ReactPropsWithoutRef<IComponent["footer"]> {
+interface IFooterProps
+  extends IComponentPropsWithoutRef<typeof Component.footer> {
   direction?: "col" | "row";
   padding?: boolean;
 }

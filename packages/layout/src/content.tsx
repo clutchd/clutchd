@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { IComponent, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Col, Row } from "@clutchd/flex";
 
 /**
@@ -10,7 +10,8 @@ type IContent = typeof Content;
 /**
  * Type to define `Content` props
  */
-interface IContentProps extends ReactPropsWithoutRef<IComponent["main"]> {
+interface IContentProps
+  extends IComponentPropsWithoutRef<typeof Component.main> {
   direction?: "col" | "row";
   padding?: boolean;
 }

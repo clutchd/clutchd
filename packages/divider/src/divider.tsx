@@ -1,9 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import {
-  Component,
-  IComponent,
-  ReactPropsWithoutRef,
-} from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   getColor,
   ISize,
@@ -23,7 +19,7 @@ type IDivider = typeof Divider;
  */
 interface IDividerProps
   extends IWithColor,
-    ReactPropsWithoutRef<IComponent["div"]> {
+    IComponentPropsWithoutRef<typeof Component.div> {
   decorative?: boolean;
   hidden?: boolean;
   orientation?: "horizontal" | "vertical";

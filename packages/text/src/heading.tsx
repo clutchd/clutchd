@@ -1,5 +1,6 @@
 import { clsx } from "@clutchd/clsx";
 import { getColor } from "@clutchd/tailwind";
+import { ElementType } from "react";
 import { Base } from "./base";
 import { ITextProps } from "./text";
 
@@ -46,7 +47,7 @@ Heading.displayName = "TextHeading";
  * @param level heading level
  * @returns A `p` or `h(1-6)` tag
  */
-function getType(level: IHeadingProps["level"]) {
+function getType(level: IHeadingProps["level"]): ElementType {
   if (level == 0 || level == null) {
     return "p";
   }

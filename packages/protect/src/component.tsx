@@ -9,7 +9,7 @@ type IProtectComponent = typeof ProtectComponent;
 /**
  * Type to define `ProtectComponent` props
  */
-interface IProtectComponentProps extends IWithLoadingProps, IWithUnauthProps { }
+interface IProtectComponentProps extends IWithLoadingProps, IWithUnauthProps {}
 
 /**
  * `ProtectComponent` - A HOC that will protect a component from displaying sensitive data to an unauthenticated user

@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { Component, ReactPropsWithoutRef } from "@clutchd/component";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { isEmpty } from "@clutchd/is-empty";
 import {
   getColor,
@@ -25,7 +25,7 @@ interface IAvatarProps
     IWithBorderWidth,
     IWithColor,
     IWithSize,
-    ReactPropsWithoutRef<typeof Component.span> {
+    IComponentPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
   fallback?: string;
