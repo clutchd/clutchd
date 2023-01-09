@@ -1,5 +1,15 @@
 # @clutchd/component
 
+## 1.0.0
+
+### Major Changes
+
+- b76ffc8: Improve component performance, reduce bundle size, adds tests
+
+### Minor Changes
+
+- 6a13ed2: Add support for form nodes
+
 ## 0.9.0
 
 ### Minor Changes

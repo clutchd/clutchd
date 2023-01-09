@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 0.11.15
+
+### Patch Changes
+
+- 5cd46fa: Add explicit display names
+- Updated dependencies [6a13ed2]
+- Updated dependencies [5cd46fa]
+- Updated dependencies [b76ffc8]
+  - @clutchd/component@1.0.0
+  - @clutchd/flex@0.1.12
+
 ## 0.11.14
 
 ### Patch Changes
