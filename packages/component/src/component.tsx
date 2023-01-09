@@ -8,14 +8,20 @@ const NODES = [
   "a",
   "button",
   "div",
+  "fieldset",
   "footer",
   "form",
   "header",
   "input",
   "label",
   "main",
+  "optgroup",
+  "option",
+  "output",
   "p",
+  "select",
   "span",
+  "textarea",
 ] as const;
 
 /**
@@ -41,7 +47,7 @@ type IComponentPropsWithoutRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component
  */
 interface IForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
+  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> { }
 
 /**
  * Type to define the supported `Component` nodes
