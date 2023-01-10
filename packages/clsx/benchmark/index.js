@@ -1,12 +1,14 @@
 const { Suite } = require("benchmark");
-const { clsx: ogclsx } = require("clsx");
-const { clsx } = require("@clutchd/clsx");
+const { clsx: og } = require("clsx");
+const { clsx: prev } = require("@clutchd/clsx");
+const { clsx } = require("../dist/index");
 
 function bench(name, ...args) {
   console.log(`\n# ${name}`);
   new Suite()
-    .add("ogclsx      ", () => ogclsx.apply(clsx, args))
-    .add("clsx        ", () => clsx.apply(clsx, args))
+    .add("og      ", () => og.apply(og, args))
+    .add("prev    ", () => prev.apply(prev, args))
+    .add("clsx    ", () => clsx.apply(clsx, args))
     .on("cycle", (e) => console.log("  " + e.target))
     .run();
 }
