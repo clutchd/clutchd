@@ -1,4 +1,4 @@
-import { mergeEventHandlers } from "./mergeEventHandlers";
+import { IPossibleEventHandler, mergeEventHandlers } from "./common";
 
 /**
  * Composes multiple preventable event handlers into a single handler
@@ -7,8 +7,8 @@ import { mergeEventHandlers } from "./mergeEventHandlers";
  * @returns A single event handler function composed from all provided handlers
  */
 function composePreventableEventHandlers<E>(
-  original: (event: E) => void,
-  ...handlers: { (event: E): void }[]
+  original: IPossibleEventHandler<E>,
+  ...handlers: IPossibleEventHandler<E>[]
 ) {
   // return the composed event handler
   return function (event: E) {
