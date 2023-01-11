@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-props",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,8 +16,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "0.1.3",
-    "@clutchd/compose-event-handlers": "^1.0.1"
+    "@clutchd/clsx": "1.0.0",
+    "@clutchd/compose-event-handlers": "^1.0.2"
   },
   "devDependencies": {
     "@clutchd/config": "*",

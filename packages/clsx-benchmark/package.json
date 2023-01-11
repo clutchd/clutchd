@@ -7,7 +7,7 @@
     "benchmark": "node src/index.js"
   },
   "devDependencies": {
-    "@clutchd/clsx": "0.1.3",
+    "@clutchd/clsx": "1.0.0",
     "@clutchd/config": "*",
     "benchmark": "^2.1.4",
     "clsx": "^1.2.1",

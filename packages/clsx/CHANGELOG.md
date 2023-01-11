@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 1.0.0
+
+### Major Changes
+
+- 0fb255f: Implement custom clsx algorithm
+
 ## 0.1.3
 
 ### Patch Changes

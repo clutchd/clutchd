@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 1.0.2
+
+### Patch Changes
+
+- 511692e: Improve types
+
 ## 1.0.1
 
 ### Patch Changes
