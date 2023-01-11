@@ -1,5 +1,8 @@
 {
   "pipeline": {
+    "benchmark": {
+      "dependsOn": ["^test"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**"]

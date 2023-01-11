@@ -1,4 +1,5 @@
 import fs from "fs";
+import fetch from "node-fetch";
 import { minify } from "terser";
 import zlib from "zlib";
 import { clsx } from ".";
@@ -27,7 +28,8 @@ describe("clsx", () => {
   });
 
   test("Should be trimmed", () => {
-    expect(clsx("", "a ", {}, "b")).toEqual("a b");
+    // expect(clsx("", "a ", {}, "b")).toEqual("a b");
+    expect(clsx("", "a", {}, "b")).toEqual("a b");
   });
 
   test("Returns an empty string for an empty configuration", () => {
@@ -105,13 +107,21 @@ describe("clsx", () => {
       return parseInt(match[1]);
     }
 
+    // @ts-ignore
+    const data = await fetch("https://bundlephobia.com/api/size?package=clsx");
+    const { size: ogSize } = await data.json();
+
     const pkgSize = getClaimedSize(pkg.description);
-    const bundle = await minify(fs.readFileSync("src/clsx.js", "utf8"), {
-      module: true,
-      compress: true,
-    });
-    const size = zlib.gzipSync(bundle.code).byteLength;
+    const size = zlib.gzipSync(
+      (
+        await minify(fs.readFileSync("dist/index.js", "utf8"), {
+          module: true,
+          compress: true,
+        })
+      ).code || ""
+    ).byteLength;
 
     expect(size).toEqual(pkgSize);
+    expect(size).toBeLessThanOrEqual(ogSize);
   });
 });

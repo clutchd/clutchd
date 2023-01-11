@@ -1,4 +1,4 @@
-function toVal(mix) {
+function toVal(mix: any) {
   var k,
     y,
     str = "";
@@ -26,7 +26,7 @@ function toVal(mix) {
   return str;
 }
 
-function clsx(...args) {
+function clsx(...args: any[]) {
   var i = 0,
     tmp,
     x,

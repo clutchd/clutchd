@@ -1,11 +1,11 @@
 const { Suite } = require("benchmark");
 const { clsx: og } = require("clsx");
 const { clsx: prev } = require("@clutchd/clsx");
-const { clsx } = require("../dist/index");
+const { clsx } = require("../../clsx/dist");
 
 function bench(name, ...args) {
   console.log(`\n# ${name}`);
-  new Suite()
+  return new Suite()
     .add("og      ", () => og.apply(og, args))
     .add("prev    ", () => prev.apply(prev, args))
     .add("clsx    ", () => clsx.apply(clsx, args))
