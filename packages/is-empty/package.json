@@ -1,6 +1,20 @@
 {
   "name": "@clutchd/is-empty",
   "version": "2.0.2",
+  "keywords": [
+    "clutchd",
+    "is-empty",
+    "empty"
+  ],
+  "bugs": {
+    "url": "https://github.com/clutchd/clutchd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutchd/clutchd",
+    "directory": "packages/is-empty"
+  },
+  "author": "Clutchd, LLC",
   "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,13 +26,14 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "npm run build",
     "test": "jest"
   },
   "devDependencies": {
     "@clutchd/config": "*",
+    "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
-    "jest-environment-jsdom": "^29.3.1",
     "ts-jest": "^29.0.3",
     "tsup": "^6.5.0",
     "typescript": "^4.8.4"

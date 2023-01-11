@@ -1,1 +1,9 @@
-module.exports = require("@clutchd/config/eslintrc");
+module.exports = {
+  root: true,
+  extends: ["clutchd"],
+  // settings: {
+  //   next: {
+  //     rootDir: ["apps/*/", "packages/*/"],
+  //   },
+  // },
+};
