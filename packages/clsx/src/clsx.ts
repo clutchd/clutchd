@@ -6,7 +6,8 @@ function toVal(mix: any) {
     str += mix;
   } else if (typeof mix === "object") {
     if (Array.isArray(mix)) {
-      for (k = 0; k < mix.length; k++) {
+      var len = mix.length;
+      for (k = 0; k < len; k++) {
         if (mix[k]) {
           if ((y = toVal(mix[k]))) {
             str && (str += " ");
@@ -30,8 +31,9 @@ function clsx(...args: any[]) {
   var i = 0,
     tmp,
     x,
-    str = "";
-  while (i < args.length) {
+    str = "",
+    len = args.length;
+  for (; i < len; i++) {
     if ((tmp = args[i++])) {
       if ((x = toVal(tmp))) {
         str && (str += " ");

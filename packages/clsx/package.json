@@ -2,7 +2,7 @@
   "name": "@clutchd/clsx",
   "version": "1.0.0",
   "main": "dist/index.js",
-  "description": "A tinier (429B), more performant implementation of clsx.",
+  "description": "A tinier (440B), more performant implementation of clsx.",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
