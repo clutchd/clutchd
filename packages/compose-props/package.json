@@ -8,10 +8,25 @@
   "files": [
     "dist"
   ],
+  "keywords": [
+    "clutchd",
+    "compose-props",
+    "props"
+  ],
+  "bugs": {
+    "url": "https://github.com/clutchd/clutchd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutchd/clutchd",
+    "directory": "packages/compose-props"
+  },
+  "author": "Clutchd, LLC",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "npm run build",
     "test": "jest"
   },
@@ -21,6 +36,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
+    "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
     "ts-jest": "^29.0.3",

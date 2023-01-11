@@ -1,6 +1,21 @@
 {
   "name": "@clutchd/component",
   "version": "1.0.0",
+  "keywords": [
+    "clutchd",
+    "component",
+    "tailwind",
+    "next"
+  ],
+  "bugs": {
+    "url": "https://github.com/clutchd/clutchd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutchd/clutchd",
+    "directory": "packages/component"
+  },
+  "author": "Clutchd, LLC",
   "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -12,6 +27,7 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "npm run build",
     "test": "jest"
   },
@@ -23,9 +39,9 @@
     "@clutchd/config": "*",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^13.2.0",
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.9",
+    "@types/react": "^18.0.26",
     "@types/testing-library__jest-dom": "^5.14.5",
+    "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "react": "^18.2.0",
     "ts-jest": "^29.0.3",
@@ -33,8 +49,6 @@
     "typescript": "^4.8.4"
   },
   "peerDependencies": {
-    "next": "^13.0.5",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.2.0"
   }
 }
