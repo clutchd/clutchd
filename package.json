@@ -13,21 +13,22 @@
     "clean": "turbo run clean && rm -rf .next .turbo node_modules coverage package-lock.json",
     "dev": "turbo run dev --no-cache --parallel",
     "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",
+    "postinstall": "manypkg check",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
     "release": "turbo run build && changeset publish",
     "test": "turbo run test",
     "typesync": "npx typesync",
     "version-packages": "changeset version"
   },
-  "devDependencies": {
+  "dependencies": {
     "@changesets/cli": "^2.22.0",
     "@clutchd/config": "*",
-    "@types/prettier": "^2.7.1",
+    "@manypkg/cli": "^0.19.2",
     "prettier": "^2.7.1",
     "turbo": "latest"
   },
   "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=14.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
   }
 }
