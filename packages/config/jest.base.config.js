@@ -11,7 +11,7 @@ const config = {
     "!<rootDir>/**/*.config.*", // ignore config files
     "!<rootDir>/**/*.d.ts", // ignore types
     // prettier-ignore
-    "!<rootDir>/**/\..*", // ignore files that start with ".",
+    "!<rootDir>/**/\.*", // ignore files that start with ".",
   ],
 
   // The directory where Jest should output its coverage files
