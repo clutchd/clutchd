@@ -1,5 +1,12 @@
 # @clutchd/link
 
+## 0.1.6
+
+### Patch Changes
+
+- Updated dependencies [0fb255f]
+  - @clutchd/clsx@1.0.0
+
 ## 0.1.5
 
 ### Patch Changes

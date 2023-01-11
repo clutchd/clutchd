@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/text",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -16,10 +16,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "0.1.3",
+    "@clutchd/clsx": "1.0.0",
     "@clutchd/component": "^1.0.0",
     "@clutchd/protect": "^0.5.6",
-    "@clutchd/skeleton": "^0.4.10"
+    "@clutchd/skeleton": "^0.4.11"
   },
   "devDependencies": {
     "@clutchd/config": "*",

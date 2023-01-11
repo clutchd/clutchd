@@ -1,5 +1,12 @@
 # @clutchd/avatar
 
+## 0.6.6
+
+### Patch Changes
+
+- Updated dependencies [0fb255f]
+  - @clutchd/clsx@1.0.0
+
 ## 0.6.5
 
 ### Patch Changes
