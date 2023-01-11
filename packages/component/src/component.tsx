@@ -52,7 +52,7 @@ interface IForwardRefComponent<E extends React.ElementType>
 /**
  * Type to define the supported `Component` nodes
  */
-type Components = { [E in typeof NODES[number]]: IForwardRefComponent<E> };
+type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
 
 /**
  * `Component` - a higher-order component that extends standard html tags

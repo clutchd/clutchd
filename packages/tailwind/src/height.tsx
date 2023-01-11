@@ -61,7 +61,7 @@ export const height = [
   "h-fit",
 ] as const;
 
-export type IHeight = typeof height[number];
+export type IHeight = (typeof height)[number];
 
 export interface IWithHeight {
   height?: IHeight;

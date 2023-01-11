@@ -10,7 +10,7 @@ export const alignItems = [
   "items-stretch",
 ] as const;
 
-export type IAlignItems = typeof alignItems[number];
+export type IAlignItems = (typeof alignItems)[number];
 
 export interface IWithAlignItems {
   alignItems?: IAlignItems;

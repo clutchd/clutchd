@@ -86,7 +86,7 @@ const borderRadius = [
   "rounded-bl-full",
 ] as const;
 
-export type IBorderRadius = typeof borderRadius[number];
+export type IBorderRadius = (typeof borderRadius)[number];
 
 export interface IWithBorderRadius {
   borderRadius?: IBorderRadius;

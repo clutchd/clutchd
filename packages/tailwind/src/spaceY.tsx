@@ -41,7 +41,7 @@ export const spaceY = [
   "space-y-reverse",
 ] as const;
 
-export type ISpaceY = typeof spaceY[number];
+export type ISpaceY = (typeof spaceY)[number];
 
 export interface IWithSpaceY {
   spaceY?: ISpaceY;

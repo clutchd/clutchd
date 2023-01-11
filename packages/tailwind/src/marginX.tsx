@@ -40,7 +40,7 @@ export const marginX = [
   "mx-96",
 ] as const;
 
-export type IMarginX = typeof marginX[number];
+export type IMarginX = (typeof marginX)[number];
 
 export interface IWithMarginX {
   marginX?: IMarginX;

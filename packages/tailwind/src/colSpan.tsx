@@ -70,13 +70,13 @@ export const colSpanLg = [
   "lg:col-span-full",
 ] as const;
 
-export type IColSpan = typeof colSpan[number];
+export type IColSpan = (typeof colSpan)[number];
 
-export type IColSpanSm = typeof colSpanSm[number];
+export type IColSpanSm = (typeof colSpanSm)[number];
 
-export type IColSpanMd = typeof colSpanMd[number];
+export type IColSpanMd = (typeof colSpanMd)[number];
 
-export type IColSpanLg = typeof colSpanLg[number];
+export type IColSpanLg = (typeof colSpanLg)[number];
 
 export interface IWithColSpan {
   colSpan?: IColSpan;

@@ -72,7 +72,7 @@ export const width = [
   "w-fit",
 ] as const;
 
-export type IWidth = typeof width[number];
+export type IWidth = (typeof width)[number];
 
 export interface IWithWidth {
   width?: IWidth;

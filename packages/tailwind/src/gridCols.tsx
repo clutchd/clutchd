@@ -66,13 +66,13 @@ export const gridColsLg = [
   "lg:grid-cols-12",
 ] as const;
 
-export type IGridCols = typeof gridCols[number];
+export type IGridCols = (typeof gridCols)[number];
 
-export type IGridColsSm = typeof gridColsSm[number];
+export type IGridColsSm = (typeof gridColsSm)[number];
 
-export type IGridColsMd = typeof gridColsMd[number];
+export type IGridColsMd = (typeof gridColsMd)[number];
 
-export type IGridColsLg = typeof gridColsLg[number];
+export type IGridColsLg = (typeof gridColsLg)[number];
 
 export interface IWithGridCols {
   gridCols?: IGridCols;

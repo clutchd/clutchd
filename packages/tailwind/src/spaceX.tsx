@@ -41,7 +41,7 @@ export const spaceX = [
   "space-x-reverse",
 ] as const;
 
-export type ISpaceX = typeof spaceX[number];
+export type ISpaceX = (typeof spaceX)[number];
 
 export interface IWithSpaceX {
   spaceX?: ISpaceX;

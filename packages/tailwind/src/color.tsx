@@ -31,7 +31,7 @@ export const color = [
   "rose",
 ] as const;
 
-export type IColor = typeof color[number];
+export type IColor = (typeof color)[number];
 
 export interface IWithColor {
   theme?: IColor;

@@ -18,7 +18,7 @@ export const fontSize = [
   "text-9xl",
 ] as const;
 
-export type IFontSize = typeof fontSize[number];
+export type IFontSize = (typeof fontSize)[number];
 
 export interface IWithFontSize {
   fontSize?: IFontSize;

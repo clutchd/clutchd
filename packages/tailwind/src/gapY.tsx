@@ -39,7 +39,7 @@ export const gapY = [
   "gap-y-96",
 ] as const;
 
-export type IGapY = typeof gapY[number];
+export type IGapY = (typeof gapY)[number];
 
 export interface IWithGapY {
   gapY?: IGapY;

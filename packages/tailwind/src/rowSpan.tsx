@@ -46,13 +46,13 @@ export const rowSpanLg = [
   "lg:row-span-full",
 ] as const;
 
-export type IRowSpan = typeof rowSpan[number];
+export type IRowSpan = (typeof rowSpan)[number];
 
-export type IRowSpanSm = typeof rowSpanSm[number];
+export type IRowSpanSm = (typeof rowSpanSm)[number];
 
-export type IRowSpanMd = typeof rowSpanMd[number];
+export type IRowSpanMd = (typeof rowSpanMd)[number];
 
-export type IRowSpanLg = typeof rowSpanLg[number];
+export type IRowSpanLg = (typeof rowSpanLg)[number];
 
 export interface IWithRowSpan {
   rowSpan?: IRowSpan;

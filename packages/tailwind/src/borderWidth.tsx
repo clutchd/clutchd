@@ -40,7 +40,7 @@ export const borderWidth = [
   "border-l",
 ] as const;
 
-export type IBorderWidth = typeof borderWidth[number];
+export type IBorderWidth = (typeof borderWidth)[number];
 
 export interface IWithBorderWidth {
   borderWidth?: IBorderWidth;

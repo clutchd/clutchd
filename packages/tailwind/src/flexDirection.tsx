@@ -9,7 +9,7 @@ export const flexDirection = [
   "flex-col-reverse",
 ] as const;
 
-export type IFlexDirection = typeof flexDirection[number];
+export type IFlexDirection = (typeof flexDirection)[number];
 
 export interface IWithFlexDirection {
   flexDirection?: IFlexDirection;

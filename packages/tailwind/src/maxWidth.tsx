@@ -28,7 +28,7 @@ export const maxWidth = [
   "max-w-screen-2xl",
 ] as const;
 
-export type IMaxWidth = typeof maxWidth[number];
+export type IMaxWidth = (typeof maxWidth)[number];
 
 export interface IWithMaxWidth {
   maxWidth?: IMaxWidth;

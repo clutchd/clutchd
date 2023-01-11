@@ -11,7 +11,7 @@ export const justifyContent = [
   "justify-evenly",
 ] as const;
 
-export type IJustifyContent = typeof justifyContent[number];
+export type IJustifyContent = (typeof justifyContent)[number];
 
 export interface IWithJustifyContent {
   justifyContent?: IJustifyContent;

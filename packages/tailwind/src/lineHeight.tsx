@@ -19,7 +19,7 @@ export const lineHeight = [
   "leading-loose",
 ] as const;
 
-export type ILineHeight = typeof lineHeight[number];
+export type ILineHeight = (typeof lineHeight)[number];
 
 export interface IWithLineHeight {
   lineHeight?: ILineHeight;

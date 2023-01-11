@@ -14,7 +14,7 @@ export const fontWeight = [
   "font-black",
 ] as const;
 
-export type IFontWeight = typeof fontWeight[number];
+export type IFontWeight = (typeof fontWeight)[number];
 
 export interface IWithFontWeight {
   fontWeight?: IFontWeight;

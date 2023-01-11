@@ -43,7 +43,7 @@ export const size = [
   "96",
 ] as const;
 
-export type ISize = typeof size[number];
+export type ISize = (typeof size)[number];
 
 export const getSize = (base: ISize) => {
   return `${height[size.indexOf(base)]} ${width[size.indexOf(base)]}`;
