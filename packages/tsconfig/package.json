@@ -1,9 +1,22 @@
 {
   "name": "@clutchd/tsconfig",
   "version": "0.2.0",
-  "private": true,
-  "files": [
-    "*.json"
+  "keywords": [
+    "clutchd",
+    "tsconfig"
   ],
-  "devDependencies": {}
+  "bugs": {
+    "url": "https://github.com/clutchd/clutchd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutchd/clutchd",
+    "directory": "packages/tsconfig"
+  },
+  "author": "Clutchd, LLC",
+  "files": [
+    "base.json",
+    "nextjs.json",
+    "library.json"
+  ]
 }

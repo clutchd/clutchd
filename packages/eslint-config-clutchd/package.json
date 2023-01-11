@@ -1,0 +1,26 @@
+{
+  "name": "eslint-config-clutchd",
+  "version": "0.0.0",
+  "keywords": [
+    "clutchd",
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "bugs": {
+    "url": "https://github.com/clutchd/clutchd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutchd/clutchd",
+    "directory": "packages/eslint-config-clutchd"
+  },
+  "author": "Clutchd, LLC",
+  "main": "index.js",
+  "dependencies": {
+    "eslint-config-next": "^13.0.6",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-turbo": "^0.0.7",
+    "eslint-plugin-react": "^7.32.0"
+  }
+}
