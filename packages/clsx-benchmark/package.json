@@ -2,9 +2,9 @@
   "name": "@clutchd/clsx-benchmark",
   "private": true,
   "scripts": {
+    "benchmark": "node src/index.js",
     "build": "tsup src/index.js --format esm,cjs --dts --external react",
-    "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
-    "benchmark": "node src/index.js"
+    "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json"
   },
   "devDependencies": {
     "@clutchd/clsx": "1.0.0",

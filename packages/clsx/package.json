@@ -1,14 +1,14 @@
 {
   "name": "@clutchd/clsx",
   "version": "1.0.0",
-  "main": "dist/index.js",
   "description": "A tinier (440B), more performant implementation of clsx.",
+  "sideEffects": false,
+  "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",

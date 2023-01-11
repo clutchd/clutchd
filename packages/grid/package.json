@@ -1,13 +1,13 @@
 {
   "name": "@clutchd/grid",
   "version": "0.2.5",
+  "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
@@ -16,8 +16,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "^1.0.0",
-    "@clutchd/clsx": "1.0.0"
+    "@clutchd/clsx": "1.0.0",
+    "@clutchd/component": "^1.0.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",

@@ -1,19 +1,23 @@
 {
   "name": "@clutchd/flex",
   "version": "0.1.13",
+  "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "sideEffects": false,
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "prepublish": "npm run build",
     "test": "jest"
+  },
+  "dependencies": {
+    "@clutchd/clsx": "1.0.0",
+    "@clutchd/component": "^1.0.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",
@@ -33,9 +37,5 @@
     "next-auth": "^4.18.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "dependencies": {
-    "@clutchd/clsx": "1.0.0",
-    "@clutchd/component": "^1.0.0"
   }
 }
