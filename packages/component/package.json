@@ -44,7 +44,7 @@
     "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "react": "^18.2.0",
-    "ts-jest": "^29.0.3",
+    "ts-jest": "^29.0.4",
     "tsup": "^6.5.0",
     "typescript": "^4.8.4"
   },
