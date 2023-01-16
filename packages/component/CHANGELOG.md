@@ -1,5 +1,12 @@
 # @clutchd/component
 
+## 1.0.1
+
+### Patch Changes
+
+- f13cbd8: Update deps
+  - @clutchd/compose-props@1.1.2
+
 ## 1.0.0
 
 ### Major Changes

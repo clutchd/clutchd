@@ -1,5 +1,17 @@
 # @clutchd/config
 
+## 1.0.0
+
+### Major Changes
+
+- ec5a12a: Initial release, migrates eslint config to eslint-config-clutchd package
+
+### Patch Changes
+
+- f427c46: Fix coverage for files starting with "."
+- Updated dependencies [0d14cea]
+  - eslint-config-clutchd@1.0.0
+
 ## 0.2.0
 
 ### Minor Changes

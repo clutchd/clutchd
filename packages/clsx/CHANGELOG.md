@@ -1,5 +1,12 @@
 # @clutchd/clsx
 
+## 1.0.1
+
+### Patch Changes
+
+- 7089479: Improve performance
+- b78113a: Improve perf
+
 ## 1.0.0
 
 ### Major Changes

@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/text",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "keywords": [
     "clutchd",
     "text",
@@ -32,9 +32,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "1.0.0",
-    "@clutchd/component": "^1.0.0",
-    "@clutchd/skeleton": "^0.4.11"
+    "@clutchd/clsx": "1.0.1",
+    "@clutchd/component": "^1.0.1",
+    "@clutchd/skeleton": "^0.4.12"
   },
   "devDependencies": {
     "@clutchd/config": "*",

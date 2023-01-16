@@ -1,5 +1,17 @@
 # @clutchd/text
 
+## 0.4.7
+
+### Patch Changes
+
+- ec5a12a: Remove @clutchd/protect dependency
+- Updated dependencies [7089479]
+- Updated dependencies [b78113a]
+- Updated dependencies [f13cbd8]
+  - @clutchd/clsx@1.0.1
+  - @clutchd/component@1.0.1
+  - @clutchd/skeleton@0.4.12
+
 ## 0.4.6
 
 ### Patch Changes

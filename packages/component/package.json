@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "clutchd",
     "component",
@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/compose-props": "^1.1.1",
+    "@clutchd/compose-props": "^1.1.2",
     "@clutchd/compose-refs": "^1.0.1"
   },
   "devDependencies": {
