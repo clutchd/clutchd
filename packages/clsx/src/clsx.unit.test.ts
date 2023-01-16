@@ -3,9 +3,85 @@ import fetch from "node-fetch";
 import { minify } from "terser";
 import zlib from "zlib";
 import { clsx } from ".";
+import * as mod from ".";
 import pkg from "../package.json";
 
 describe("clsx", () => {
+  // test("exports", () => {
+  //   assert.type(mod.default, "function", "exports default function");
+  //   assert.type(mod.clsx, "function", "exports named function");
+  //   expect(mod.default).toEqual(mod.clsx);
+
+  //   assert.type(mod.default().toEqual("string", "~> returns string output");
+  //   assert.type(mod.clsx().toEqual("string", "~> returns string output");
+  // });
+
+  test("strings", () => {
+    expect(clsx("")).toEqual("");
+    expect(clsx("foo")).toEqual("foo");
+    expect(clsx(true && "foo")).toEqual("foo");
+    expect(clsx(false && "foo")).toEqual("");
+  });
+
+  test("strings (variadic)", () => {
+    expect(clsx("")).toEqual("");
+    expect(clsx("foo", "bar")).toEqual("foo bar");
+    expect(clsx(true && "foo", false && "bar", "baz")).toEqual("foo baz");
+    expect(clsx(false && "foo", "bar", "baz", "")).toEqual("bar baz");
+  });
+
+  test("objects", () => {
+    expect(clsx({})).toEqual("");
+    expect(clsx({ foo: true })).toEqual("foo");
+    expect(clsx({ foo: true, bar: false })).toEqual("foo");
+    expect(clsx({ foo: "hiya", bar: 1 })).toEqual("foo bar");
+    expect(clsx({ foo: 1, bar: 0, baz: 1 })).toEqual("foo baz");
+    expect(clsx({ "-foo": 1, "--bar": 1 })).toEqual("-foo --bar");
+  });
+
+  test("objects (variadic)", () => {
+    expect(clsx({}, {})).toEqual("");
+    expect(clsx({ foo: 1 }, { bar: 2 })).toEqual("foo bar");
+    expect(clsx({ foo: 1 }, null, { baz: 1, bat: 0 })).toEqual("foo baz");
+    expect(
+      clsx({ foo: 1 }, {}, {}, { bar: "a" }, { baz: null, bat: Infinity })
+    ).toEqual("foo bar bat");
+  });
+
+  test("arrays", () => {
+    expect(clsx([])).toEqual("");
+    expect(clsx(["foo"])).toEqual("foo");
+    expect(clsx(["foo", "bar"])).toEqual("foo bar");
+    expect(clsx(["foo", 0 && "bar", 1 && "baz"])).toEqual("foo baz");
+  });
+
+  test("arrays (nested)", () => {
+    expect(clsx([[[]]])).toEqual("");
+    expect(clsx([[["foo"]]])).toEqual("foo");
+    expect(clsx([true, [["foo"]]])).toEqual("foo");
+    expect(clsx(["foo", ["bar", ["", [["baz"]]]]])).toEqual("foo bar baz");
+  });
+
+  test("arrays (variadic)", () => {
+    expect(clsx([], [])).toEqual("");
+    expect(clsx(["foo"], ["bar"])).toEqual("foo bar");
+    expect(clsx(["foo"], null, ["baz", ""], true, "", [])).toEqual("foo baz");
+  });
+
+  test("arrays (no `push` escape)", () => {
+    expect(clsx({ push: 1 })).toEqual("push");
+    expect(clsx({ pop: true })).toEqual("pop");
+    expect(clsx({ push: true })).toEqual("push");
+    expect(clsx("hello", { world: 1, push: true })).toEqual("hello world push");
+  });
+
+  test("functions", () => {
+    const foo = () => {};
+    expect(clsx(foo, "hello")).toEqual("hello");
+    expect(clsx(foo, "hello", clsx)).toEqual("hello");
+    expect(clsx(foo, "hello", [[clsx], "world"])).toEqual("hello world");
+  });
+
   test("Keeps object keys with truthy values", () => {
     expect(
       clsx({
@@ -28,8 +104,8 @@ describe("clsx", () => {
   });
 
   test("Should be trimmed", () => {
-    // expect(clsx("", "a ", {}, "b")).toEqual("a b");
-    expect(clsx("", "a", {}, "b")).toEqual("a b");
+    // TODO: possible to do this without killing perf? => expect(clsx("", "a ", {}, "b", "c\td")).toEqual("a b c d");
+    expect(clsx("", "b", {}, "")).toEqual("b");
   });
 
   test("Returns an empty string for an empty configuration", () => {
@@ -112,14 +188,16 @@ describe("clsx", () => {
     const { size: ogSize } = await data.json();
 
     const pkgSize = getClaimedSize(pkg.description);
-    const size = zlib.gzipSync(
-      (
-        await minify(fs.readFileSync("dist/index.js", "utf8"), {
-          module: true,
-          compress: true,
-        })
-      ).code || ""
-    ).byteLength;
+
+    const input = fs.readFileSync("dist/index.js", "utf8");
+
+    const result = await minify(input, {
+      module: true,
+      compress: true,
+    });
+
+    // @ts-ignore
+    const size = zlib.gzipSync(result.code).byteLength;
 
     expect(size).toEqual(pkgSize);
     expect(size).toBeLessThanOrEqual(ogSize);

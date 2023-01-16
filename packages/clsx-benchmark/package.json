@@ -18,16 +18,17 @@
   "author": "Clutchd, LLC",
   "scripts": {
     "benchmark": "node index.js",
-    "build": "tsup index.js --format esm,cjs --dts --external react",
-    "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
+    "clean": "rm -rf out package-lock.json",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
   },
   "devDependencies": {
-    "@clutchd/clsx": "1.0.0",
+    "@clutchd/clsx": "*",
     "@clutchd/config": "*",
     "benchmark": "^2.1.4",
+    "classcat": "^3.2.5",
+    "classix": "^2.1.18",
+    "classnames": "^2.2.6",
     "clsx": "^1.2.1",
-    "eslint-config-clutchd": "*",
-    "tsup": "^6.5.0"
+    "eslint-config-clutchd": "*"
   }
 }

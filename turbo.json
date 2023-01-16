@@ -1,7 +1,7 @@
 {
   "pipeline": {
     "benchmark": {
-      "dependsOn": ["^test"]
+      "dependsOn": ["build"]
     },
     "build": {
       "dependsOn": ["^build"],
