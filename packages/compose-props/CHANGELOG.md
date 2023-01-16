@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 1.1.2
+
+### Patch Changes
+
+- Updated dependencies [7089479]
+- Updated dependencies [b78113a]
+  - @clutchd/clsx@1.0.1
+
 ## 1.1.1
 
 ### Patch Changes

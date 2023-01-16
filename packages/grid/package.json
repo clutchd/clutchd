@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/grid",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "keywords": [
     "clutchd",
     "grid",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "1.0.0",
-    "@clutchd/component": "^1.0.0"
+    "@clutchd/clsx": "1.0.1",
+    "@clutchd/component": "^1.0.1"
   },
   "devDependencies": {
     "@clutchd/config": "*",

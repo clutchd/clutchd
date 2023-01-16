@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/card",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "keywords": [
     "clutchd",
     "card",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "1.0.0",
-    "@clutchd/component": "^1.0.0"
+    "@clutchd/clsx": "1.0.1",
+    "@clutchd/component": "^1.0.1"
   },
   "devDependencies": {
     "@clutchd/config": "*",

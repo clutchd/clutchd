@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/avatar",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "keywords": [
     "clutchd",
     "avatar",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "1.0.0",
-    "@clutchd/component": "^1.0.0",
+    "@clutchd/clsx": "1.0.1",
+    "@clutchd/component": "^1.0.1",
     "@clutchd/is-empty": "^2.0.1"
   },
   "devDependencies": {
