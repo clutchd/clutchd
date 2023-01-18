@@ -24,9 +24,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "build": "prisma generate && tsup src/index.ts --format esm,cjs --dts --external react",
     "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "dev": "prisma generate && tsup src/index.ts --format esm,cjs --watch --dts --external react",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "npm run build",
     "test": "jest"
@@ -37,6 +37,7 @@
     "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "next-auth": "^4.18.6",
+    "prisma": "^4.9.0",
     "ts-jest": "^29.0.3",
     "tsup": "^6.5.0",
     "typescript": "^4.8.4"
