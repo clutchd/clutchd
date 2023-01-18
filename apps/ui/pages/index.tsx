@@ -48,7 +48,6 @@ export default function Home() {
           <Avatar src="" />
           <Avatar src="https://avatars.githubusercontent.com/u/22361526?s=40&v=4" />
           <Heading>Heading</Heading>
-          <Heading protect>Heading</Heading>
           <Title>Title</Title>
           <Subtitle>Subtitle</Subtitle>
           <Text>Text</Text>
