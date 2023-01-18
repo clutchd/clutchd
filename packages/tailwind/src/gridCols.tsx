@@ -107,32 +107,32 @@ export interface IWithGridColsValues {
  * Gets the `standard` grid col class for the value provided
  * @param value `IGridColsValues` used to get this class
  */
-export function GetGridCols(value: IGridColsValues | undefined) {
-  return GetGridColsValue(value, gridCols);
+export function getGridCols(value: IGridColsValues | undefined) {
+  return getGridColsValue(value, gridCols);
 }
 
 /**
  * Gets the `sm` grid col class for the value provided
  * @param value `IGridColsValues` used to get this class
  */
-export function GetGridColsSm(value: IGridColsValues | undefined) {
-  return GetGridColsValue(value, gridColsSm);
+export function getGridColsSm(value: IGridColsValues | undefined) {
+  return getGridColsValue(value, gridColsSm);
 }
 
 /**
  * Gets the `md` grid col class for the value provided
  * @param value `IGridColsValues` used to get this class
  */
-export function GetGridColsMd(value: IGridColsValues | undefined) {
-  return GetGridColsValue(value, gridColsMd);
+export function getGridColsMd(value: IGridColsValues | undefined) {
+  return getGridColsValue(value, gridColsMd);
 }
 
 /**
  * Gets the `lg` grid col class for the value provided
  * @param value `IGridColsValues` used to get this class
  */
-export function GetGridColsLg(value: IGridColsValues | undefined) {
-  return GetGridColsValue(value, gridColsLg);
+export function getGridColsLg(value: IGridColsValues | undefined) {
+  return getGridColsValue(value, gridColsLg);
 }
 
 /**
@@ -141,7 +141,7 @@ export function GetGridColsLg(value: IGridColsValues | undefined) {
  * @param type Type of grid col being generated (sm,md,lg,etc.)
  * @returns The appropriate tailwind class for the value and type combination
  */
-function GetGridColsValue(
+function getGridColsValue(
   value: IGridColsValues | undefined,
   type:
     | typeof gridCols

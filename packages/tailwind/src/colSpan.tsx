@@ -112,32 +112,32 @@ export interface IWithColSpanValues {
  * Gets the `standard` col span class for the value provided
  * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpan(value: IColSpanValues | undefined) {
-  return GetColSpanValue(value, colSpan);
+export function getColSpan(value: IColSpanValues | undefined) {
+  return getColSpanValue(value, colSpan);
 }
 
 /**
  * Gets the `sm` col span class for the value provided
  * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpanSm(value: IColSpanValues | undefined) {
-  return GetColSpanValue(value, colSpanSm);
+export function getColSpanSm(value: IColSpanValues | undefined) {
+  return getColSpanValue(value, colSpanSm);
 }
 
 /**
  * Gets the `md` col span class for the value provided
  * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpanMd(value: IColSpanValues | undefined) {
-  return GetColSpanValue(value, colSpanMd);
+export function getColSpanMd(value: IColSpanValues | undefined) {
+  return getColSpanValue(value, colSpanMd);
 }
 
 /**
  * Gets the `lg` col span class for the value provided
  * @param value `IColSpanValues` used to get this class
  */
-export function GetColSpanLg(value: IColSpanValues | undefined) {
-  return GetColSpanValue(value, colSpanLg);
+export function getColSpanLg(value: IColSpanValues | undefined) {
+  return getColSpanValue(value, colSpanLg);
 }
 
 /**
@@ -146,7 +146,7 @@ export function GetColSpanLg(value: IColSpanValues | undefined) {
  * @param type Type of span being generated (sm,md,lg,etc.)
  * @returns The appropriate tailwind class for the value and type combination
  */
-function GetColSpanValue(
+function getColSpanValue(
   value: IColSpanValues | undefined,
   type: typeof colSpan | typeof colSpanSm | typeof colSpanMd | typeof colSpanLg
 ): string {

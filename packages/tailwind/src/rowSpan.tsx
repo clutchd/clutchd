@@ -74,32 +74,32 @@ export interface IWithRowSpanValues {
  * Gets the `standard` row span class for the value provided
  * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpan(value: IRowSpanValues | undefined) {
-  return GetRowSpanValue(value, rowSpan);
+export function getRowSpan(value: IRowSpanValues | undefined) {
+  return getRowSpanValue(value, rowSpan);
 }
 
 /**
  * Gets the `sm` row span class for the value provided
  * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpanSm(value: IRowSpanValues | undefined) {
-  return GetRowSpanValue(value, rowSpanSm);
+export function getRowSpanSm(value: IRowSpanValues | undefined) {
+  return getRowSpanValue(value, rowSpanSm);
 }
 
 /**
  * Gets the `md` row span class for the value provided
  * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpanMd(value: IRowSpanValues | undefined) {
-  return GetRowSpanValue(value, rowSpanMd);
+export function getRowSpanMd(value: IRowSpanValues | undefined) {
+  return getRowSpanValue(value, rowSpanMd);
 }
 
 /**
  * Gets the `lg` row span class for the value provided
  * @param value `IRowSpanValues` used to get this class
  */
-export function GetRowSpanLg(value: IRowSpanValues | undefined) {
-  return GetRowSpanValue(value, rowSpanLg);
+export function getRowSpanLg(value: IRowSpanValues | undefined) {
+  return getRowSpanValue(value, rowSpanLg);
 }
 
 /**
@@ -108,7 +108,7 @@ export function GetRowSpanLg(value: IRowSpanValues | undefined) {
  * @param type Type of span being generated (sm,md,lg,etc.)
  * @returns The appropriate tailwind class for the value and type combination
  */
-function GetRowSpanValue(
+function getRowSpanValue(
   value: IRowSpanValues | undefined,
   type: typeof rowSpan | typeof rowSpanSm | typeof rowSpanMd | typeof rowSpanLg
 ): string {
