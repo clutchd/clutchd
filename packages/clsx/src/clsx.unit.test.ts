@@ -3,18 +3,13 @@ import fetch from "node-fetch";
 import { minify } from "terser";
 import zlib from "zlib";
 import { clsx } from ".";
-import * as mod from ".";
 import pkg from "../package.json";
 
 describe("clsx", () => {
-  // test("exports", () => {
-  //   assert.type(mod.default, "function", "exports default function");
-  //   assert.type(mod.clsx, "function", "exports named function");
-  //   expect(mod.default).toEqual(mod.clsx);
-
-  //   assert.type(mod.default().toEqual("string", "~> returns string output");
-  //   assert.type(mod.clsx().toEqual("string", "~> returns string output");
-  // });
+  test("exports", () => {
+    expect(typeof clsx).toEqual("function");
+    expect(typeof clsx()).toEqual("string");
+  });
 
   test("strings", () => {
     expect(clsx("")).toEqual("");
