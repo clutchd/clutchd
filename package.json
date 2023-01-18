@@ -24,7 +24,7 @@
     "@changesets/cli": "^2.22.0",
     "@manypkg/cli": "^0.19.2",
     "eslint-config-clutchd": "*",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.3",
     "turbo": "latest"
   },
   "engines": {
