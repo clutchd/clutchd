@@ -1,5 +1,11 @@
 # @clutchd/link
 
+## 0.1.8
+
+### Patch Changes
+
+- 883be6e: Fix bundle
+
 ## 0.1.7
 
 ### Patch Changes
