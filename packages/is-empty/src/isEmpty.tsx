@@ -3,31 +3,16 @@
  * @param value - Value we are checking for emptiness
  * @returns True if empty, otherwise false
  */
-export function isEmpty(value: any) {
+export function isEmpty(value?: any) {
+  let type = typeof value;
+  // if number, function, or valid date, we are not empty
+  if (type === "function" || type === "number" || (value instanceof Date && !isNaN(value.valueOf()))) {
+    return false;
+  }
+
   // if undefined or null, we are empty
-  if (value == null) {
+  if (value == null || !value) {
     return true;
-  }
-
-  // if value is a finite number, we are not empty
-  // 0 is considered falsy, so we must check for numbers here
-  if (Number.isFinite(value)) {
-    return false;
-  }
-
-  // if value is falsy, we are empty
-  if (!value) {
-    return true;
-  }
-
-  // if value is a date, we are not empty if valid
-  if (Object.prototype.toString.call(value) === "[object Date]") {
-    return isNaN(value.getTime());
-  }
-
-  // if value is a function, we are not empty
-  if (typeof value === "function") {
-    return false;
   }
 
   // otherwise check for key length to determine emptiness
