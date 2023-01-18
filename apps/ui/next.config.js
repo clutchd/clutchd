@@ -8,5 +8,10 @@ module.exports = {
     ],
   },
   reactStrictMode: true,
-  transpilePackages: ["@clutchd/avatar", "@clutchd/layout", "@clutchd/text"],
+  transpilePackages: [
+    "@clutchd/avatar",
+    "@clutchd/layout",
+    "@clutchd/link",
+    "@clutchd/text",
+  ],
 };

@@ -11,6 +11,7 @@
   "dependencies": {
     "@clutchd/avatar": "*",
     "@clutchd/layout": "*",
+    "@clutchd/link": "*",
     "@clutchd/text": "*",
     "@next/font": "^13.1.2",
     "next": "^13.1.2",
