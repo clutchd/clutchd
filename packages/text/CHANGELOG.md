@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 1.0.0
+
+### Major Changes
+
+- f88b362: Improves tailwind bundle sizes, removes the built-in skeleton from the text components
+
 ## 0.4.7
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @clutchd/layout
 
+## 0.11.18
+
+### Patch Changes
+
+- b687171: Update tailwind dep
+- Updated dependencies [b687171]
+  - @clutchd/flex@0.1.15
+
 ## 0.11.17
 
 ### Patch Changes

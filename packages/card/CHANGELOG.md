@@ -1,5 +1,11 @@
 # @clutchd/card
 
+## 0.1.16
+
+### Patch Changes
+
+- b687171: Update tailwind dep
+
 ## 0.1.15
 
 ### Patch Changes

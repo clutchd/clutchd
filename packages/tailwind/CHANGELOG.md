@@ -1,5 +1,12 @@
 # @clutchd/tailwind
 
+## 1.0.0
+
+### Major Changes
+
+- cd94fdd: Improves function names
+- f88b362: Improves tailwind bundle sizes, removes the built-in skeleton from the text components
+
 ## 0.11.0
 
 ### Minor Changes
