@@ -19,7 +19,7 @@ type IDivider = typeof Divider;
  */
 interface IDividerProps
   extends IWithColor,
-    IComponentPropsWithoutRef<typeof Component.div> {
+  IComponentPropsWithoutRef<typeof Component.div> {
   decorative?: boolean;
   hidden?: boolean;
   orientation?: "horizontal" | "vertical";
@@ -27,7 +27,7 @@ interface IDividerProps
 }
 
 /**
- * `Divider` - A separator used to create vertical space between elements
+ * `Divider` - A separator used to create space between elements
  * @param props `IDividerProps` used to render this `Divider`
  * @returns `Divider` component
  */
