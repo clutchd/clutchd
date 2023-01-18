@@ -1,5 +1,11 @@
 # @clutchd/config
 
+## 1.0.1
+
+### Patch Changes
+
+- 5fc9bd0: Utilize @next/font
+
 ## 1.0.0
 
 ### Major Changes

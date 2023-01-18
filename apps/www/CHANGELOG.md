@@ -1,5 +1,15 @@
 # @clutchd/website
 
+## 1.0.0
+
+### Major Changes
+
+- caccf08: Rename to www
+
+### Patch Changes
+
+- 5fc9bd0: Utilize @next/font
+
 ## 0.4.1
 
 ### Patch Changes

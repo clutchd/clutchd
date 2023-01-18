@@ -1,5 +1,12 @@
 # @clutchd/ui
 
+## 0.3.1
+
+### Patch Changes
+
+- 5fc9bd0: Utilize @next/font
+- 3adef66: update deps
+
 ## 0.3.0
 
 ### Minor Changes
