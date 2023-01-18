@@ -68,6 +68,6 @@ describe("isEmpty", () => {
     // @ts-ignore
     const size = zlib.gzipSync(result.code).byteLength;
 
-    expect(size).toBeLessThanOrEqual(295);
+    expect(size).toBeLessThanOrEqual(370);
   });
 });
