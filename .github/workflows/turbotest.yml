@@ -2,6 +2,10 @@ name: Turbo Test
 
 on: [workflow_call, push]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   test:
     name: Turbo Test
