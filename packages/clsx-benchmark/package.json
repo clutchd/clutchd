@@ -24,11 +24,11 @@
   "devDependencies": {
     "@clutchd/clsx": "*",
     "@clutchd/config": "*",
+    "@clutchd/eslint-config-clutchd": "*",
     "benchmark": "^2.1.4",
     "classcat": "^3.2.5",
     "classix": "^2.1.18",
     "classnames": "^2.2.6",
-    "clsx": "^1.2.1",
-    "eslint-config-clutchd": "*"
+    "clsx": "^1.2.1"
   }
 }

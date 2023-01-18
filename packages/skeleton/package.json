@@ -37,10 +37,10 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
+    "@clutchd/eslint-config-clutchd": "*",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^13.2.0",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "next-auth": "^4.18.6",
     "postcss": "^8.4.20",

@@ -38,10 +38,10 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
+    "@clutchd/eslint-config-clutchd": "*",
     "@clutchd/tailwind": "0.11.0",
     "@clutchd/tsconfig": "*",
     "@types/react": "^18.0.26",
-    "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "next": "^13.1.2",
     "postcss": "^8.4.20",

@@ -1,6 +1,6 @@
 {
-  "name": "eslint-config-clutchd",
-  "version": "1.0.0",
+  "name": "@clutchd/eslint-config-clutchd",
+  "version": "0.0.0",
   "keywords": [
     "clutchd",
     "eslint",

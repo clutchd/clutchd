@@ -11,7 +11,7 @@
       "cache": false
     },
     "dev": {
-      "dependsOn": ["^dev"],
+      "dependsOn": ["build", "^dev"],
       "cache": false
     },
     "lint": {

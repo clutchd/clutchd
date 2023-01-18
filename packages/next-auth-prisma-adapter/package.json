@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
+    "@clutchd/eslint-config-clutchd": "*",
     "@prisma/client": "^4.9.0",
-    "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "next-auth": "^4.18.6",
     "prisma": "^4.9.0",

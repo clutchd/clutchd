@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "eslint-config-clutchd": "*",
+    "@clutchd/eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "next": "^13.1.2",
     "postcss": "^8.4.20",

@@ -33,8 +33,8 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
+    "@clutchd/eslint-config-clutchd": "*",
     "@types/react": "^18.0.26",
-    "eslint-config-clutchd": "*",
     "jest": "^29.3.1",
     "next-auth": "^4.18.6",
     "postcss": "^8.4.20",
