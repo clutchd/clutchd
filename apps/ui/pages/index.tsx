@@ -1,5 +1,6 @@
 import { Avatar } from "@clutchd/avatar";
 import { Content, Footer, Header, Page } from "@clutchd/layout";
+import { Link } from "@clutchd/link";
 import {
   Bold,
   Caption,
@@ -11,7 +12,6 @@ import {
 } from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Home() {
   return (

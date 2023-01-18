@@ -8,12 +8,5 @@ module.exports = {
     ],
   },
   reactStrictMode: true,
-  transpilePackages: [
-    "@clutchd/config",
-    "@clutchd/layout",
-    "@clutchd/link",
-    "@clutchd/tailwind",
-    "@clutchd/text",
-    "@clutchd/tsconfig",
-  ],
+  transpilePackages: ["@clutchd/layout", "@clutchd/link", "@clutchd/text"],
 };
