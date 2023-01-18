@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["clutchd"],
+  extends: ["@clutchd/eslint-config-clutchd"],
 };

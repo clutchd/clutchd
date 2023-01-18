@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ["clutchd"],
+  extends: ["@clutchd/eslint-config-clutchd"],
   // settings: {
   //   next: {
   //     rootDir: ["apps/*/", "packages/*/"],
