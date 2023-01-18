@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/grid",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "keywords": [
     "clutchd",
     "grid",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@clutchd/config": "*",
     "@clutchd/eslint-config-clutchd": "*",
-    "@clutchd/tailwind": "0.11.0",
+    "@clutchd/tailwind": "1.0.0",
     "@clutchd/tsconfig": "*",
     "jest": "^29.3.1",
     "postcss": "^8.4.20",

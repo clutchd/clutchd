@@ -1,5 +1,11 @@
 # @clutchd/grid
 
+## 0.2.7
+
+### Patch Changes
+
+- b687171: Update tailwind dep
+
 ## 0.2.6
 
 ### Patch Changes

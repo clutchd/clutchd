@@ -1,5 +1,12 @@
 # @clutchd/is-empty
 
+## 2.0.3
+
+### Patch Changes
+
+- d8e3e45: Reduce bundle size
+- b687171: Update tailwind dep
+
 ## 2.0.2
 
 ### Patch Changes

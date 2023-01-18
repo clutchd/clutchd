@@ -1,5 +1,14 @@
 # @clutchd/avatar
 
+## 0.6.8
+
+### Patch Changes
+
+- b687171: Update tailwind dep
+- Updated dependencies [d8e3e45]
+- Updated dependencies [b687171]
+  - @clutchd/is-empty@2.0.3
+
 ## 0.6.7
 
 ### Patch Changes
