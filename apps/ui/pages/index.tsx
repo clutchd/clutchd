@@ -8,7 +8,7 @@ import {
   Italic,
   Subtitle,
   Text,
-  Title,
+  Title
 } from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";

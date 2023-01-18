@@ -17,7 +17,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Manrope", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans],
       },
     },
   },
