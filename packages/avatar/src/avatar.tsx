@@ -2,8 +2,10 @@ import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { isEmpty } from "@clutchd/is-empty";
 import {
-  getColor,
+  getBgColor,
+  getBorderColor,
   getSize,
+  getTextColor,
   IWithBorderRadius,
   IWithBorderWidth,
   IWithColor,
@@ -67,9 +69,9 @@ function Avatar({
 
   const classNames = clsx(
     "overflow-hidden relative",
-    getColor(theme, "200").bgColor,
-    getColor(theme, "500").borderColor,
-    getColor(theme, "500").textColor,
+    getBgColor(theme, "200"),
+    getBorderColor(theme, "500"),
+    getTextColor(theme, "500"),
     getSize(size),
     borderRadius,
     borderWidth,

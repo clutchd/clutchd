@@ -6,7 +6,11 @@
 export function isEmpty(value?: any) {
   let type = typeof value;
   // if number, function, or valid date, we are not empty
-  if (type === "function" || type === "number" || (value instanceof Date && !isNaN(value.valueOf()))) {
+  if (
+    type === "function" ||
+    type === "number" ||
+    (value instanceof Date && !isNaN(value.valueOf()))
+  ) {
     return false;
   }
 

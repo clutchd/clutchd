@@ -1,6 +1,6 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { getColor, IWithColor } from "@clutchd/tailwind";
+import { getBorderColor, IWithColor } from "@clutchd/tailwind";
 
 /**
  * Type to define `Card` component
@@ -33,7 +33,7 @@ function Card({
   const classNames = clsx(
     "transition-all relative p-6 bg-white rounded-lg shadow ring-gray-200 ring-1",
     getDecoration(decoration),
-    getColor(theme, "400").borderColor,
+    getBorderColor(theme, "400"),
     hover && "hover:shadow-lg",
     className
   );

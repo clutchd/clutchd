@@ -1,10 +1,10 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
-  GetGridCols,
-  GetGridColsLg,
-  GetGridColsMd,
-  GetGridColsSm,
+  getGridCols,
+  getGridColsLg,
+  getGridColsMd,
+  getGridColsSm,
   IWithGapX,
   IWithGapY,
   IWithGridColsValues,
@@ -41,10 +41,10 @@ function Grid({
 }: IGridProps) {
   const classNames = clsx(
     "grid h-full w-full",
-    GetGridCols(1),
-    GetGridColsSm(gridColsSm),
-    GetGridColsMd(gridColsMd),
-    GetGridColsLg(gridColsLg),
+    getGridCols(1),
+    getGridColsSm(gridColsSm),
+    getGridColsMd(gridColsMd),
+    getGridColsLg(gridColsLg),
     gapX,
     gapY,
     className

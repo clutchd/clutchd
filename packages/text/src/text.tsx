@@ -1,7 +1,7 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
-  getColor,
+  getTextColor,
   IWithColor,
   IWithFontSize,
   IWithFontWeight,
@@ -22,9 +22,7 @@ interface ITextProps
     IWithFontSize,
     IWithLineHeight,
     IWithFontWeight,
-    IWithColor {
-  protect?: boolean;
-}
+    IWithColor {}
 
 /**
  * `Text` - A standard text component used to render consistent copy
@@ -39,10 +37,9 @@ function Text({
   theme = "gray",
   ...props
 }: ITextProps) {
-  const color = getColor(theme, "700").textColor;
   return (
     <Base
-      className={clsx(color, className)}
+      className={clsx(getTextColor(theme, "700"), className)}
       fontSize={fontSize}
       fontWeight={fontWeight}
       lineHeight={lineHeight}

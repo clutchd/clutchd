@@ -1,14 +1,14 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
-  GetColSpan,
-  GetColSpanLg,
-  GetColSpanMd,
-  GetColSpanSm,
-  GetRowSpan,
-  GetRowSpanLg,
-  GetRowSpanMd,
-  GetRowSpanSm,
+  getColSpan,
+  getColSpanLg,
+  getColSpanMd,
+  getColSpanSm,
+  getRowSpan,
+  getRowSpanLg,
+  getRowSpanMd,
+  getRowSpanSm,
   IWithColSpanValues,
   IWithRowSpanValues,
 } from "@clutchd/tailwind";
@@ -44,14 +44,14 @@ function Col({
   ...props
 }: IColProps) {
   const classNames = clsx(
-    GetColSpan(colSpan),
-    GetColSpanSm(colSpanSm),
-    GetColSpanMd(colSpanMd),
-    GetColSpanLg(colSpanLg),
-    GetRowSpan(rowSpan),
-    GetRowSpanSm(rowSpanSm),
-    GetRowSpanMd(rowSpanMd),
-    GetRowSpanLg(rowSpanLg),
+    getColSpan(colSpan),
+    getColSpanSm(colSpanSm),
+    getColSpanMd(colSpanMd),
+    getColSpanLg(colSpanLg),
+    getRowSpan(rowSpan),
+    getRowSpanSm(rowSpanSm),
+    getRowSpanMd(rowSpanMd),
+    getRowSpanLg(rowSpanLg),
     className
   );
   return <Component.div {...props} className={classNames} />;

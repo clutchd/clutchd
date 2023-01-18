@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { getColor } from "@clutchd/tailwind";
+import { getTextColor } from "@clutchd/tailwind";
 import { ElementType } from "react";
 import { Base } from "./base";
 import { ITextProps } from "./text";
@@ -28,10 +28,9 @@ function Heading({
   theme = "gray",
   ...props
 }: IHeadingProps) {
-  const color = getColor(theme, "900").textColor;
   return (
     <Base
-      className={clsx(color, className)}
+      className={clsx(getTextColor(theme, "900"), className)}
       fontSize={fontSize}
       fontWeight={fontWeight}
       tag={getType(props.level)}

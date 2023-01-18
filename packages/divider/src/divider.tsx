@@ -1,7 +1,7 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
-  getColor,
+  getBgColor,
   ISize,
   IWithColor,
   marginX,
@@ -19,7 +19,7 @@ type IDivider = typeof Divider;
  */
 interface IDividerProps
   extends IWithColor,
-  IComponentPropsWithoutRef<typeof Component.div> {
+    IComponentPropsWithoutRef<typeof Component.div> {
   decorative?: boolean;
   hidden?: boolean;
   orientation?: "horizontal" | "vertical";
@@ -48,7 +48,7 @@ function Divider({
     <Component.div
       className={clsx(
         "transition-all rounded-lg",
-        hidden ? "bg-inherit" : getColor(theme, "200").bgColor,
+        hidden ? "bg-inherit" : getBgColor(theme, "200"),
         orientation === "horizontal"
           ? `${marginY[size.indexOf(spacing)]} h-[2px]`
           : `${marginX[size.indexOf(spacing)]} w-[2px]`,

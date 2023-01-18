@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { getColor, IWithColor } from "@clutchd/tailwind";
+import { getTextColor, IWithColor } from "@clutchd/tailwind";
 import { Base } from "./base";
 import { ITextProps } from "./text";
 
@@ -25,10 +25,9 @@ function Title({
   theme = "gray",
   ...props
 }: ITitleProps) {
-  const color = getColor(theme, "700").textColor;
   return (
     <Base
-      className={clsx(color, className)}
+      className={clsx(getTextColor(theme, "700"), className)}
       fontSize={fontSize}
       fontWeight={fontWeight}
       {...props}

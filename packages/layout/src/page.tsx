@@ -1,7 +1,7 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { Col, Row } from "@clutchd/flex";
-import { getColor, IWithColor } from "@clutchd/tailwind";
+import { getBgColor, IWithColor } from "@clutchd/tailwind";
 
 /**
  * Type to define `Page` component
@@ -29,7 +29,7 @@ function Page({
   theme = "gray",
   ...props
 }: IPageProps) {
-  const color = getColor(theme, "50").bgColor;
+  const color = getBgColor(theme, "50");
   const classNames = clsx(
     color,
     "min-h-screen min-w-screen subpixel-antialiased",
