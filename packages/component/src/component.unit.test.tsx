@@ -52,8 +52,12 @@ describe("Component", () => {
   });
 
   test("Render with invalid and undefined child", () => {
-    {/* @ts-ignore */ }
-    const { container } = render(<Component.div asChild asdf="asdf">{null}</Component.div>);
+    const { container } = render(
+      // @ts-ignore
+      <Component.div asChild asdf="asdf">
+        {null}
+      </Component.div>
+    );
 
     const div = container.querySelector("div");
 
