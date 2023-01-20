@@ -25,7 +25,7 @@
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@clutchd/eslint-config-clutchd": "*",
+    "@clutchd/eslint-config-clutchd": "^1.0.0",
     "autoprefixer": "^10.4.7",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.1"

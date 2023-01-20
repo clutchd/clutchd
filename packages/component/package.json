@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/eslint-config-clutchd": "*",
+    "@clutchd/eslint-config-clutchd": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^13.2.0",
     "@types/react": "^18.0.26",

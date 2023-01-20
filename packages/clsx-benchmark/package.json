@@ -24,7 +24,7 @@
   "devDependencies": {
     "@clutchd/clsx": "*",
     "@clutchd/config": "*",
-    "@clutchd/eslint-config-clutchd": "*",
+    "@clutchd/eslint-config-clutchd": "^1.0.0",
     "benchmark": "^2.1.4",
     "classcat": "^3.2.5",
     "classix": "^2.1.18",
