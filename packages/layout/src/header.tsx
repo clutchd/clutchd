@@ -29,9 +29,9 @@ function Header({
 }: IHeaderProps) {
   return (
     <Layout
+      asChild
       className={clsx(padding ? "p-6 sm:p-8" : "", className)}
       direction={direction}
-      padding={padding}
       {...props}
     >
       <header>{children}</header>

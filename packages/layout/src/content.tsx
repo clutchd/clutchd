@@ -29,9 +29,9 @@ function Content({
 }: IContentProps) {
   return (
     <Layout
+      asChild
       className={clsx("flex-1", padding ? "p-6 sm:p-8" : "", className)}
       direction={direction}
-      padding={padding}
       {...props}
     >
       <main>{children}</main>

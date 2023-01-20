@@ -29,14 +29,14 @@ interface ILayoutProps extends ILayoutWithDirection, Record<string, any> {}
  * @param props `ILayoutProps` used to render this `Layout`
  * @returns `Layout` component
  */
-function Layout({ direction, ...props }: ILayoutProps) {
+function Layout({ asChild, direction, ...props }: ILayoutProps) {
   // if row, return row
   if (direction === "row") {
-    return <FlexRow asChild {...props} />;
+    return <FlexRow asChild={asChild} {...props} />;
   }
 
   // otherwise, return col
-  return <FlexCol asChild {...props} />;
+  return <FlexCol asChild={asChild} {...props} />;
 }
 
 Layout.displayName = "Layout";
