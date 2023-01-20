@@ -43,11 +43,20 @@ export const size = [
   "96",
 ] as const;
 
+export const sizePx = [
+  0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64, 80,
+  96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 384,
+];
+
 export type ISize = (typeof size)[number];
 
-export const getSize = (base: ISize) => {
+export function getSize(base: ISize) {
   return `${height[size.indexOf(base)]} ${width[size.indexOf(base)]}`;
-};
+}
+
+export function getSizePx(base: ISize) {
+  return sizePx[size.indexOf(base)];
+}
 
 export interface IWithSize {
   size?: ISize;
