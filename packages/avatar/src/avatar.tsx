@@ -24,10 +24,10 @@ type IAvatar = typeof Avatar;
  */
 interface IAvatarProps
   extends IWithBorderRadius,
-  IWithBorderWidth,
-  IWithColor,
-  IWithSize,
-  IComponentPropsWithoutRef<typeof Component.span> {
+    IWithBorderWidth,
+    IWithColor,
+    IWithSize,
+    IComponentPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
 }
@@ -71,10 +71,7 @@ function Avatar({
       onLoadStart={() => setLoadingState("loading")}
       onLoadingComplete={() => setLoadingState("loaded")}
       onError={() => setLoadingState("error")}
-      className={clsx(
-        "flex-none object-cover",
-        borderRadius
-      )}
+      className={clsx("flex-none object-cover", borderRadius)}
       height={getSizePx(size)}
       width={getSizePx(size)}
       alt={alt}

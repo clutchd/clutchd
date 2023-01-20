@@ -32,26 +32,29 @@ interface IDividerProps
  * @returns `Divider` component
  */
 function Divider({
+  children,
   className,
   decorative = false,
   hidden = false,
   orientation = "horizontal",
-  spacing = "4",
+  spacing = "6",
   theme = "gray",
   ...props
 }: IDividerProps) {
+  // define aria props
   const aria = decorative
     ? { role: "none" }
     : { "aria-orientation": orientation, role: "separator" };
 
   return (
     <Component.div
+      {...aria}
       className={clsx(
         "rounded-lg",
         hidden ? "bg-inherit" : getBgColor(theme, "200"),
         orientation === "horizontal"
-          ? `${marginY[size.indexOf(spacing)]} h-[2px]`
-          : `${marginX[size.indexOf(spacing)]} w-[2px]`,
+          ? `${marginY[size.indexOf(spacing)]} h-px`
+          : `${marginX[size.indexOf(spacing)]} w-px`,
         className
       )}
       {...props}
