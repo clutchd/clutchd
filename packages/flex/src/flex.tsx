@@ -12,13 +12,17 @@ import {
 type IFlex = typeof Flex;
 
 /**
- * Type to define `Flex` props
+ * Type to define `Flex` props shared by all `Flex` components
  */
-interface IFlexProps
+interface IFlexPropsCommon
   extends IWithAlignItems,
-    IWithFlexDirection,
     IWithJustifyContent,
     IComponentPropsWithoutRef<typeof Component.div> {}
+
+/**
+ * Type to define `Flex` props
+ */
+interface IFlexProps extends IFlexPropsCommon, IWithFlexDirection {}
 
 /**
  * `Flex` - A primitive flex container that powers various layouts
@@ -28,7 +32,7 @@ interface IFlexProps
 function Flex({
   alignItems,
   className,
-  flexDirection = "flex-col",
+  flexDirection,
   justifyContent,
   ...props
 }: IFlexProps) {
@@ -46,4 +50,4 @@ function Flex({
 Flex.displayName = "Flex";
 
 export { Flex };
-export type { IFlex, IFlexProps };
+export type { IFlex, IFlexProps, IFlexPropsCommon };

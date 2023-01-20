@@ -1,11 +1,6 @@
 import { clsx } from "@clutchd/clsx";
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import {
-  IWithAlignItems,
-  IWithJustifyContent,
-  IWithSpaceX,
-} from "@clutchd/tailwind";
-import { Flex } from "./flex";
+import { IWithSpaceX } from "@clutchd/tailwind";
+import { Flex, IFlexPropsCommon } from "./flex";
 
 /**
  * Type to define `FlexRow` component
@@ -15,11 +10,7 @@ type IFlexRow = typeof FlexRow;
 /**
  * Type to define `FlexRow` props
  */
-interface IFlexRowProps
-  extends IWithAlignItems,
-    IWithJustifyContent,
-    IWithSpaceX,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+interface IFlexRowProps extends IFlexPropsCommon, IWithSpaceX {}
 
 /**
  * `FlexRow` - A flex container for a horizontal layout

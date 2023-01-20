@@ -1,11 +1,6 @@
 import { clsx } from "@clutchd/clsx";
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import {
-  IWithAlignItems,
-  IWithJustifyContent,
-  IWithSpaceY,
-} from "@clutchd/tailwind";
-import { Flex } from "./flex";
+import { IWithSpaceY } from "@clutchd/tailwind";
+import { Flex, IFlexPropsCommon } from "./flex";
 
 /**
  * Type to define `FlexCol` component
@@ -15,11 +10,7 @@ type IFlexCol = typeof FlexCol;
 /**
  * Type to define `FlexCol` props
  */
-interface IFlexColProps
-  extends IWithAlignItems,
-    IWithJustifyContent,
-    IWithSpaceY,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+interface IFlexColProps extends IFlexPropsCommon, IWithSpaceY {}
 
 /**
  * `FlexCol` - A flex container for a vertical layout
@@ -38,6 +29,7 @@ function FlexCol({
     <Flex
       alignItems={alignItems}
       className={classNames}
+      flexDirection="flex-col"
       justifyContent={justifyContent}
       {...props}
     />
