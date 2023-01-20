@@ -11,7 +11,7 @@ type ITitle = typeof Title;
 /**
  * Type to define `Title` props
  */
-interface ITitleProps extends ITextProps, IWithColor {}
+interface ITitleProps extends ITextProps {}
 
 /**
  * `Title` - A bolder text component to be used for titles

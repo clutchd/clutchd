@@ -10,9 +10,7 @@ type IItalic = typeof Italic;
  * Type to define `Italic` props
  */
 interface IItalicProps
-  extends IComponentPropsWithoutRef<typeof Component.span> {
-  protect?: boolean;
-}
+  extends IComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `Italic` - A inline text component used to italicize the provided text, intended to be used within the `Text` component

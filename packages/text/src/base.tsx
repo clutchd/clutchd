@@ -1,5 +1,5 @@
 import { clsx } from "@clutchd/clsx";
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   IWithFontSize,
   IWithFontWeight,
@@ -16,7 +16,7 @@ type IBase = typeof Base;
  * Type to define `Base` props
  */
 interface IBaseProps
-  extends IComponentPropsWithoutRef<typeof Component.p>,
+  extends IComponentPropsWithoutRef<any>,
     IWithFontSize,
     IWithLineHeight,
     IWithFontWeight {
@@ -28,7 +28,7 @@ interface IBaseProps
  * @param props `IBaseProps` used to render this `Base`
  * @returns `Base` component
  */
-function Base({ children, tag: InternalText = "p", ...props }: IBaseProps) {
+const Base = ({ children, tag: InternalText = "p", ...props }: IBaseProps) => {
   // get class names
   const className = clsx(
     props.fontSize,
@@ -40,7 +40,7 @@ function Base({ children, tag: InternalText = "p", ...props }: IBaseProps) {
 
   // otherwise, return component
   return <InternalText className={className}>{children}</InternalText>;
-}
+};
 
 Base.displayName = "TextBase";
 

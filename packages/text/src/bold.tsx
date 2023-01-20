@@ -9,9 +9,7 @@ type IBold = typeof Bold;
 /**
  * Type to define `Bold` props
  */
-interface IBoldProps extends IComponentPropsWithoutRef<typeof Component.span> {
-  protect?: boolean;
-}
+interface IBoldProps extends IComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `Bold` - A inline text component used to bold the provided text, intended to be used within the `Text` component
