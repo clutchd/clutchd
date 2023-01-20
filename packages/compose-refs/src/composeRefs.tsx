@@ -1,9 +1,9 @@
-import * as React from "react";
+import { MutableRefObject, Ref } from "react";
 
 /**
  * Type to define possible ref values
  */
-type PossibleRef<T> = React.Ref<T> | undefined;
+type PossibleRef<T> = Ref<T> | undefined;
 
 /**
  * Sets the value of the provided ref
@@ -14,7 +14,7 @@ function setRef<T>(ref: PossibleRef<T>, value: T) {
   if (typeof ref === "function") {
     ref(value);
   } else if (ref != null) {
-    (ref as React.MutableRefObject<T>).current = value;
+    (ref as MutableRefObject<T>).current = value;
   }
 }
 

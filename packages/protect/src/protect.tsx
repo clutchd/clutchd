@@ -1,18 +1,18 @@
-import * as React from "react";
+import { ReactNode } from "react";
 
 /**
  * Type to define props for a component with a authenticated state
  */
 interface IWithAuthProps {
   isAuth?: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 /**
  * Type to define props for a component with a unauthenticated state
  */
 interface IWithUnauthProps extends IWithAuthProps {
-  unauth?: React.ReactNode;
+  unauth?: ReactNode;
 }
 
 /**
@@ -20,7 +20,7 @@ interface IWithUnauthProps extends IWithAuthProps {
  */
 interface IWithLoadingProps {
   isLoading?: boolean;
-  loading?: React.ReactNode;
+  loading?: ReactNode;
 }
 
 export type { IWithAuthProps, IWithUnauthProps, IWithLoadingProps };
