@@ -1,7 +1,7 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { Col, Row } from "@clutchd/flex";
 import { getBgColor, IWithColor } from "@clutchd/tailwind";
+import { ILayoutWithDirection, Layout } from "./layout";
 
 /**
  * Type to define `Page` component
@@ -12,11 +12,9 @@ type IPage = typeof Page;
  * Type to define `Page` props
  */
 interface IPageProps
-  extends IWithColor,
-    IComponentPropsWithoutRef<typeof Component.div> {
-  direction?: "col" | "row";
-  padding?: boolean;
-}
+  extends ILayoutWithDirection,
+    IWithColor,
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen
@@ -29,20 +27,17 @@ function Page({
   theme = "gray",
   ...props
 }: IPageProps) {
-  const color = getBgColor(theme, "50");
-  const classNames = clsx(
-    color,
-    "min-h-screen min-w-screen subpixel-antialiased",
-    className
+  return (
+    <Layout
+      className={clsx(
+        getBgColor(theme, "50"),
+        "min-h-screen min-w-screen subpixel-antialiased",
+        className
+      )}
+      direction={direction}
+      {...props}
+    />
   );
-
-  // if row, return row
-  if (direction === "row") {
-    return <Row className={classNames} {...props} />;
-  }
-
-  // otherwise, return col
-  return <Col className={classNames} {...props} />;
 }
 
 Page.displayName = "Page";

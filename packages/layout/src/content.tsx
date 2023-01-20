@@ -1,6 +1,6 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { Col, Row } from "@clutchd/flex";
+import { ILayoutWithDirection, ILayoutWithPadding, Layout } from "./layout";
 
 /**
  * Type to define `Content` component
@@ -11,13 +11,12 @@ type IContent = typeof Content;
  * Type to define `Content` props
  */
 interface IContentProps
-  extends IComponentPropsWithoutRef<typeof Component.main> {
-  direction?: "col" | "row";
-  padding?: boolean;
-}
+  extends ILayoutWithDirection,
+    ILayoutWithPadding,
+    IComponentPropsWithoutRef<typeof Component.main> {}
 
 /**
- * `Content` - A `Container` designed to contain a page's primary content. Renders as a `main` element
+ * `Content` - A layout component designed to contain a page's primary content. Renders as a `main` element
  * @param props `IContentProps` used to render this `Content`
  * @returns `Content` component
  */
@@ -28,22 +27,15 @@ function Content({
   padding = true,
   ...props
 }: IContentProps) {
-  const classNames = clsx("flex-1", padding ? "p-6 sm:p-8" : "", className);
-
-  // if row, return row
-  if (direction === "row") {
-    return (
-      <Row asChild className={classNames} {...props}>
-        <main>{children}</main>
-      </Row>
-    );
-  }
-
-  // otherwise, return col
   return (
-    <Col asChild className={classNames} {...props}>
+    <Layout
+      className={clsx("flex-1", padding ? "p-6 sm:p-8" : "", className)}
+      direction={direction}
+      padding={padding}
+      {...props}
+    >
       <main>{children}</main>
-    </Col>
+    </Layout>
   );
 }
 
