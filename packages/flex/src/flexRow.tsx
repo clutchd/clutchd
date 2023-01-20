@@ -3,48 +3,49 @@ import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   IWithAlignItems,
   IWithJustifyContent,
-  IWithSpaceY,
+  IWithSpaceX,
 } from "@clutchd/tailwind";
 import { Flex } from "./flex";
 
 /**
- * Type to define `Col` component
+ * Type to define `FlexRow` component
  */
-type ICol = typeof Col;
+type IFlexRow = typeof FlexRow;
 
 /**
- * Type to define `Col` props
+ * Type to define `FlexRow` props
  */
-interface IColProps
+interface IFlexRowProps
   extends IWithAlignItems,
     IWithJustifyContent,
-    IWithSpaceY,
+    IWithSpaceX,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Col` - A flex container for a vertical layout
- * @param props `IColProps` used to render this `Col`
- * @returns `Col` component
+ * `FlexRow` - A flex container for a horizontal layout
+ * @param props `IFlexRowProps` used to render this `FlexRow`
+ * @returns `FlexRow` component
  */
-function Col({
+function FlexRow({
   alignItems,
   className,
   justifyContent,
-  spaceY,
+  spaceX,
   ...props
-}: IColProps) {
-  const classNames = clsx(spaceY, className);
+}: IFlexRowProps) {
+  const classNames = clsx(spaceX, className);
   return (
     <Flex
       alignItems={alignItems}
       className={classNames}
+      flexDirection="flex-row"
       justifyContent={justifyContent}
       {...props}
     />
   );
 }
 
-Col.displayName = "FlexCol";
+FlexRow.displayName = "FlexRow";
 
-export { Col };
-export type { ICol, IColProps };
+export { FlexRow };
+export type { IFlexRow, IFlexRowProps };

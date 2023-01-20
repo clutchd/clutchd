@@ -2,22 +2,22 @@ import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 
 /**
- * Type to define `Footer` component
+ * Type to define `CardFooter` component
  */
-type IFooter = typeof Footer;
+type ICardFooter = typeof CardFooter;
 
 /**
- * Type to define `Card` props
+ * Type to define `CardFooter` props
  */
-interface IFooterProps
+interface ICardFooterProps
   extends IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Card` - A building block component used to render contained elements such as forms
- * @param props `ICardProps` used to render this `Card`
- * @returns `Card` component
+ * `CardFooter` - A building block component used to render the footer of a `Card` component
+ * @param props `ICardFooterProps` used to render this `CardFooter`
+ * @returns `CardFooter` component
  */
-function Footer({ children, ...props }: IFooterProps) {
+function CardFooter({ children, ...props }: ICardFooterProps) {
   const className = clsx("px-6 pt-6", props.className);
 
   return (
@@ -29,7 +29,7 @@ function Footer({ children, ...props }: IFooterProps) {
   );
 }
 
-Footer.displayName = "CardFooter";
+CardFooter.displayName = "CardFooter";
 
-export { Footer };
-export type { IFooterProps, IFooter };
+export { CardFooter };
+export type { ICardFooterProps, ICardFooter };

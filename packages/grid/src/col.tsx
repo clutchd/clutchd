@@ -14,24 +14,24 @@ import {
 } from "@clutchd/tailwind";
 
 /**
- * Type to define `Col` component
+ * Type to define `GridCol` component
  */
-type ICol = typeof Col;
+type IGridCol = typeof GridCol;
 
 /**
- * Type to define `Col` props
+ * Type to define `GridCol` props
  */
-interface IColProps
+interface IGridColProps
   extends IWithColSpanValues,
     IWithRowSpanValues,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Col` - A primitive component used to render a column within a grid
+ * `GridCol` - A primitive component used to render a column within a grid
  * @param props `IColProps` used to render this `Col`
  * @returns `Col` component
  */
-function Col({
+function GridCol({
   className,
   colSpan = 1,
   colSpanSm,
@@ -42,7 +42,7 @@ function Col({
   rowSpanMd,
   rowSpanLg,
   ...props
-}: IColProps) {
+}: IGridColProps) {
   const classNames = clsx(
     getColSpan(colSpan),
     getColSpanSm(colSpanSm),
@@ -57,7 +57,7 @@ function Col({
   return <Component.div {...props} className={classNames} />;
 }
 
-Col.displayName = "GridCol";
+GridCol.displayName = "GridCol";
 
-export { Col };
-export type { ICol, IColProps };
+export { GridCol };
+export type { IGridCol, IGridColProps };
