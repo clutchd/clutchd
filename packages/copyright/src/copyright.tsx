@@ -8,8 +8,7 @@ type ICopyright = typeof Copyright;
 /**
  * Type to define `Copyright` props
  */
-interface ICopyrightProps extends ICaptionProps {
-}
+interface ICopyrightProps extends ICaptionProps {}
 
 /**
  * `Copyright` - A simple text component used to display the copyright of an entity for the current year

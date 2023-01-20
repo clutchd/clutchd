@@ -4,6 +4,8 @@ import { Caption, Text } from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import { FlexCol } from "@clutchd/flex";
+import { Copyright } from "@clutchd/copyright";
 
 export default function Home() {
   return (
@@ -55,14 +57,14 @@ export default function Home() {
           />
         </Content>
         <Footer>
-          <div className="flex w-1/2">
-            <Caption>© {new Date().getFullYear()} Clutchd, LLC</Caption>
-          </div>
-          <div className="flex flex-col w-1/2 text-right">
+          <FlexCol>
+            <Copyright>Clutchd, LLC</Copyright>
+          </FlexCol>
+          <FlexCol className="text-right">
             <Caption>
               <Link href="mailto:william@clutchd.com">Contact Us</Link>
             </Caption>
-          </div>
+          </FlexCol>
         </Footer>
       </Page>
     </>

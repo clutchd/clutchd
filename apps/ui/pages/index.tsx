@@ -2,6 +2,7 @@ import { Avatar } from "@clutchd/avatar";
 import { Card, CardFooter } from "@clutchd/card";
 import { Copyright } from "@clutchd/copyright";
 import { Divider } from "@clutchd/divider";
+import { FlexCol } from "@clutchd/flex";
 import { Content, Footer, Header, Page } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import {
@@ -86,14 +87,14 @@ export default function Home() {
           </Showcase>
         </Content>
         <Footer>
-          <div className="flex w-1/2">
+          <FlexCol>
             <Copyright>Clutchd, LLC</Copyright>
-          </div>
-          <div className="flex flex-col w-1/2 text-right">
+          </FlexCol>
+          <FlexCol className="text-right">
             <Caption>
               <Link href="mailto:william@clutchd.com">Contact Us</Link>
             </Caption>
-          </div>
+          </FlexCol>
         </Footer>
       </Page>
     </>

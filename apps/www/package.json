@@ -9,6 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@clutchd/copyright": "*",
+    "@clutchd/flex": "*",
     "@clutchd/layout": "*",
     "@clutchd/link": "*",
     "@clutchd/text": "*",
