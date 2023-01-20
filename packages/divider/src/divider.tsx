@@ -19,7 +19,7 @@ type IDivider = typeof Divider;
  */
 interface IDividerProps
   extends IWithColor,
-    IComponentPropsWithoutRef<typeof Component.div> {
+  IComponentPropsWithoutRef<typeof Component.div> {
   decorative?: boolean;
   hidden?: boolean;
   orientation?: "horizontal" | "vertical";
@@ -47,7 +47,7 @@ function Divider({
   return (
     <Component.div
       className={clsx(
-        "transition-all rounded-lg",
+        "rounded-lg",
         hidden ? "bg-inherit" : getBgColor(theme, "200"),
         orientation === "horizontal"
           ? `${marginY[size.indexOf(spacing)]} h-[2px]`
