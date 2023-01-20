@@ -1,4 +1,7 @@
 import { Avatar } from "@clutchd/avatar";
+import { Card, CardFooter } from "@clutchd/card";
+import { Copyright } from "@clutchd/copyright";
+import { Divider } from "@clutchd/divider";
 import { Content, Footer, Header, Page } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import {
@@ -12,6 +15,7 @@ import {
 } from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";
+import { Showcase } from "../components";
 
 export default function Home() {
   return (
@@ -45,23 +49,45 @@ export default function Home() {
           </nav>
         </Header>
         <Content>
-          <Avatar src="" />
-          <Avatar src="https://avatars.githubusercontent.com/u/22361526?s=40&v=4" />
-          <Heading>Heading</Heading>
-          <Title>Title</Title>
-          <Subtitle>Subtitle</Subtitle>
-          <Text>Text</Text>
-          <Text>
-            <Bold>Bold Text</Bold>
-          </Text>
-          <Text>
-            <Italic>Italic Text</Italic>
-          </Text>
-          <Caption>Caption Text</Caption>
+          <Heading>Components</Heading>
+          <Divider />
+          <Showcase title="Avatar">
+            <Avatar src="" />
+            <Avatar src="https://avatars.githubusercontent.com/u/22361526" />
+          </Showcase>
+          <Divider />
+          <Showcase title="Card">
+            <Card>
+              <Text>Card</Text>
+            </Card>
+            <Card>
+              <Text>Card with Footer</Text>
+              <CardFooter>CardFooter</CardFooter>
+            </Card>
+            <Card>
+              <Text>Card with Multiple Footers</Text>
+              <CardFooter>CardFooter</CardFooter>
+              <CardFooter>Another CardFooter</CardFooter>
+            </Card>
+          </Showcase>
+          <Divider />
+          <Showcase title="Text">
+            <Heading>The quick brown fox jumps over the lazy dog</Heading>
+            <Title>The quick brown fox jumps over the lazy dog</Title>
+            <Subtitle>The quick brown fox jumps over the lazy dog</Subtitle>
+            <Text>The quick brown fox jumps over the lazy dog</Text>
+            <Text>
+              <Bold>The quick brown fox jumps over the lazy dog</Bold>
+            </Text>
+            <Text>
+              <Italic>The quick brown fox jumps over the lazy dog</Italic>
+            </Text>
+            <Caption>The quick brown fox jumps over the lazy dog</Caption>
+          </Showcase>
         </Content>
         <Footer>
           <div className="flex w-1/2">
-            <Caption>© {new Date().getFullYear()} Clutchd, LLC</Caption>
+            <Copyright>Clutchd, LLC</Copyright>
           </div>
           <div className="flex flex-col w-1/2 text-right">
             <Caption>
