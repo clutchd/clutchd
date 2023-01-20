@@ -1,0 +1,5 @@
+---
+"@clutchd/component": patch
+---
+
+Bugfix

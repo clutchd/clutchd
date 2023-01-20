@@ -54,7 +54,7 @@ type IComponentPropsWithoutRef<E extends ElementType> =
  * Type to define `Component` as a forwarded ref component
  */
 interface IForwardRefComponent<E extends ElementType>
-  extends ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
+  extends ForwardRefExoticComponent<IComponentPropsWithRef<E>> { }
 
 /**
  * Type to define the supported `Component` nodes
@@ -72,7 +72,7 @@ const Component = NODES.reduce((tag, node) => {
     ) => {
       const Comp: any = asChild ? Slot : node;
 
-      suseEffect(() => {
+      useEffect(() => {
         (window as any)[Symbol.for("clutchd")] = true;
       }, []);
 
