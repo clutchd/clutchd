@@ -1,5 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { Base } from "./base";
+import { ITextPropsCommon, TextBase } from "./textBase";
 
 /**
  * Type to define `Bold` component
@@ -9,7 +9,9 @@ type IBold = typeof Bold;
 /**
  * Type to define `Bold` props
  */
-interface IBoldProps extends IComponentPropsWithoutRef<typeof Component.span> {}
+interface IBoldProps
+  extends Omit<ITextPropsCommon, "fontWeight">,
+    IComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `Bold` - A inline text component used to bold the provided text, intended to be used within the `Text` component
@@ -17,7 +19,7 @@ interface IBoldProps extends IComponentPropsWithoutRef<typeof Component.span> {}
  * @returns `Bold` component
  */
 function Bold(props: IBoldProps) {
-  return <Base fontWeight="font-bold" tag="span" {...props} />;
+  return <TextBase fontWeight="font-bold" tag="span" {...props} />;
 }
 
 Bold.displayName = "TextBold";

@@ -1,16 +1,18 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { Base } from "./base";
+import { ITextPropsCommon, TextBase } from "./textBase";
 
 /**
  * Type to define `Italic` component
  */
 type IItalic = typeof Italic;
+
 /**
  * Type to define `Italic` props
  */
 interface IItalicProps
-  extends IComponentPropsWithoutRef<typeof Component.span> {}
+  extends ITextPropsCommon,
+    IComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `Italic` - A inline text component used to italicize the provided text, intended to be used within the `Text` component
@@ -18,7 +20,9 @@ interface IItalicProps
  * @returns `Italic` component
  */
 function Italic({ className, ...props }: IItalicProps) {
-  return <Base className={clsx("italic", className)} tag="span" {...props} />;
+  return (
+    <TextBase className={clsx("italic", className)} tag="span" {...props} />
+  );
 }
 
 Italic.displayName = "TextItalic";

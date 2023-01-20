@@ -1,8 +1,6 @@
-import { clsx } from "@clutchd/clsx";
-import { getTextColor } from "@clutchd/tailwind";
+import { IComponentPropsWithoutRef } from "@clutchd/component";
 import { ElementType } from "react";
-import { Base } from "./base";
-import { ITextProps } from "./text";
+import { ITextPropsCommon, TextBase } from "./textBase";
 
 /**
  * Type to define `Heading` component
@@ -12,7 +10,9 @@ type IHeading = typeof Heading;
 /**
  * Type to define `Heading` props
  */
-interface IHeadingProps extends ITextProps {
+interface IHeadingProps
+  extends ITextPropsCommon,
+    IComponentPropsWithoutRef<any> {
   level?: 0 | 1 | 2 | 3 | 4 | 5 | 6;
 }
 
@@ -22,17 +22,15 @@ interface IHeadingProps extends ITextProps {
  * @returns `Heading` component
  */
 function Heading({
-  className,
   fontSize = "text-4xl",
   fontWeight = "font-semibold",
-  theme = "gray",
   ...props
 }: IHeadingProps) {
   return (
-    <Base
-      className={clsx(getTextColor(theme, "900"), className)}
+    <TextBase
       fontSize={fontSize}
       fontWeight={fontWeight}
+      shade="900"
       tag={getType(props.level)}
       {...props}
     />

@@ -1,7 +1,5 @@
-import { clsx } from "@clutchd/clsx";
-import { getTextColor, IWithColor } from "@clutchd/tailwind";
-import { Base } from "./base";
-import { ITextProps } from "./text";
+import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { ITextPropsCommon, TextBase } from "./textBase";
 
 /**
  * Type to define `Title` component
@@ -11,7 +9,9 @@ type ITitle = typeof Title;
 /**
  * Type to define `Title` props
  */
-interface ITitleProps extends ITextProps {}
+interface ITitleProps
+  extends ITextPropsCommon,
+    IComponentPropsWithoutRef<typeof Component.p> {}
 
 /**
  * `Title` - A bolder text component to be used for titles
@@ -19,17 +19,15 @@ interface ITitleProps extends ITextProps {}
  * @returns `Title` component
  */
 function Title({
-  className,
   fontSize = "text-xl",
   fontWeight = "font-medium",
-  theme = "gray",
   ...props
 }: ITitleProps) {
   return (
-    <Base
-      className={clsx(getTextColor(theme, "700"), className)}
+    <TextBase
       fontSize={fontSize}
       fontWeight={fontWeight}
+      shade="700"
       {...props}
     />
   );
