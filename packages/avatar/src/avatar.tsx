@@ -1,10 +1,10 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { isEmpty } from "@clutchd/is-empty";
 import {
   getBgColor,
   getBorderColor,
   getSize,
+  getSizePx,
   getTextColor,
   IWithBorderRadius,
   IWithBorderWidth,
@@ -30,8 +30,9 @@ interface IAvatarProps
     IComponentPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
-  fallback?: string;
 }
+
+type IAvatarLoadingStates = "idle" | "loading" | "loaded" | "error";
 
 /**
  * `Avatar` - An image based component used to render a user's profile picture
@@ -39,61 +40,60 @@ interface IAvatarProps
  * @returns `Avatar` component
  */
 function Avatar({
-  alt,
+  alt = "",
   borderRadius = "rounded-full",
   borderWidth = "border",
+  children = "U",
   className,
-  fallback = "U",
   size = "12",
   src,
   theme = "gray",
   ...props
 }: IAvatarProps) {
-  const [loadingState, setLoadingState] = useState<boolean>(false);
+  const [loadingState, setLoadingState] =
+    useState<IAvatarLoadingStates>("idle");
 
-  const fallbackAvatar = (
-    <span className="absolute max-w-full font-semibold leading-none truncate -translate-x-1/2 -translate-y-1/2 h-fit w-fit inset-1/2">
-      {fallback}
+  const fallback = (
+    <span
+      className={clsx(
+        "flex items-center justify-center w-full h-full font-semibold",
+        getBgColor(theme, "100"),
+        getTextColor(theme, "500"),
+        borderRadius
+      )}
+    >
+      {children}
     </span>
   );
 
-  const imageAvatar = (
+  const image = (
     <Image
-      onLoadStart={() => setLoadingState(true)}
-      onLoadingComplete={() => setLoadingState(false)}
-      fill
-      alt={alt ?? ""}
+      onLoadStart={() => setLoadingState("loading")}
+      onLoadingComplete={() => setLoadingState("loaded")}
+      onError={() => setLoadingState("error")}
+      className={clsx("object-cover", borderRadius)}
+      height={getSizePx(size)}
+      width={getSizePx(size)}
+      alt={alt}
       src={src}
+      quality={100}
     />
   );
 
-  const classNames = clsx(
-    "overflow-hidden relative",
-    getBgColor(theme, "200"),
-    getBorderColor(theme, "500"),
-    getTextColor(theme, "500"),
-    getSize(size),
-    borderRadius,
-    borderWidth,
-    className
-  );
-
-  function getAvatar() {
-    if (isEmpty(src)) {
-      return fallbackAvatar;
-    }
-
-    return (
-      <>
-        {imageAvatar}
-        {loadingState && fallbackAvatar}
-      </>
-    );
-  }
-
   return (
-    <Component.span className={classNames} {...props}>
-      {getAvatar()}
+    <Component.span
+      className={clsx(
+        "inline-flex items-center justify-center align-middle select-none",
+        getBorderColor(theme, "300"),
+        getSize(size),
+        borderRadius,
+        borderWidth,
+        className
+      )}
+      {...props}
+    >
+      {src && image}
+      {loadingState != "loaded" && fallback}
     </Component.span>
   );
 }
