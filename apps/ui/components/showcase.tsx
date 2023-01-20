@@ -1,23 +1,16 @@
+import { Divider } from "@clutchd/divider";
 import { FlexCol } from "@clutchd/flex";
 import { Title } from "@clutchd/text";
-import { default as React, ReactNode } from "react";
 
-/**
- * Type to define `Showcase` props
- */
-interface IShowcaseProps {
-  title: string;
-  children: ReactNode;
-}
-
-function Showcase({ title, children, ...props }: IShowcaseProps) {
+function Showcase({ title, children }) {
   return (
-    <FlexCol>
-      <Title className="pb-4">{title}</Title>
-      <FlexCol className="pl-4" spaceY="space-y-4">
+    <>
+      <Divider />
+      <FlexCol spaceY="space-y-4">
+        <Title>{title}</Title>
         {children}
       </FlexCol>
-    </FlexCol>
+    </>
   );
 }
 
