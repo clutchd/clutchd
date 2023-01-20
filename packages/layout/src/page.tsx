@@ -1,6 +1,5 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { getBgColor, IWithColor } from "@clutchd/tailwind";
 import { ILayoutWithDirection, Layout } from "./layout";
 
 /**
@@ -13,7 +12,6 @@ type IPage = typeof Page;
  */
 interface IPageProps
   extends ILayoutWithDirection,
-    IWithColor,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
@@ -21,16 +19,10 @@ interface IPageProps
  * @param props `IPageProps` used to render this `Page`
  * @returns `Page` component
  */
-function Page({
-  className,
-  direction = "col",
-  theme = "gray",
-  ...props
-}: IPageProps) {
+function Page({ className, direction = "col", ...props }: IPageProps) {
   return (
     <Layout
       className={clsx(
-        getBgColor(theme, "50"),
         "min-h-screen min-w-screen subpixel-antialiased",
         className
       )}
