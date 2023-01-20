@@ -19,7 +19,7 @@ type IDivider = typeof Divider;
  */
 interface IDividerProps
   extends IWithColor,
-  IComponentPropsWithoutRef<typeof Component.div> {
+    IComponentPropsWithoutRef<typeof Component.div> {
   decorative?: boolean;
   hidden?: boolean;
   orientation?: "horizontal" | "vertical";
