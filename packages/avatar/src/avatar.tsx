@@ -24,10 +24,10 @@ type IAvatar = typeof Avatar;
  */
 interface IAvatarProps
   extends IWithBorderRadius,
-    IWithBorderWidth,
-    IWithColor,
-    IWithSize,
-    IComponentPropsWithoutRef<typeof Component.span> {
+  IWithBorderWidth,
+  IWithColor,
+  IWithSize,
+  IComponentPropsWithoutRef<typeof Component.span> {
   src: string;
   alt?: string;
 }
@@ -56,7 +56,7 @@ function Avatar({
   const fallback = (
     <span
       className={clsx(
-        "flex items-center justify-center w-full h-full font-semibold",
+        "flex items-center justify-center w-full h-full font-semibold overflow-hidden",
         getBgColor(theme, "100"),
         getTextColor(theme, "500"),
         borderRadius
@@ -71,7 +71,10 @@ function Avatar({
       onLoadStart={() => setLoadingState("loading")}
       onLoadingComplete={() => setLoadingState("loaded")}
       onError={() => setLoadingState("error")}
-      className={clsx("object-cover", borderRadius)}
+      className={clsx(
+        "flex-none object-cover",
+        borderRadius
+      )}
       height={getSizePx(size)}
       width={getSizePx(size)}
       alt={alt}
@@ -83,7 +86,7 @@ function Avatar({
   return (
     <Component.span
       className={clsx(
-        "inline-flex items-center justify-center align-middle select-none",
+        "inline-flex items-center justify-center align-middle select-none overflow-hidden",
         getBorderColor(theme, "300"),
         getSize(size),
         borderRadius,
@@ -93,7 +96,7 @@ function Avatar({
       {...props}
     >
       {src && image}
-      {loadingState != "loaded" && fallback}
+      {loadingState !== "loaded" && fallback}
     </Component.span>
   );
 }
