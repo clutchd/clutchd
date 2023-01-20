@@ -25,12 +25,6 @@ interface ISlotProps extends HTMLAttributes<HTMLElement> {
  */
 const Slot = forwardRef<HTMLElement, ISlotProps>(
   ({ children, ...props }, forwardedRef) => {
-    // if children were not provided, warn
-    if (children == null) {
-      console.warn("Slot was unable to render children, no children provided.");
-      return null;
-    }
-
     // if valid children were provided, clone the children
     if (isValidElement(children)) {
       return cloneElement<any>(children, {

@@ -70,7 +70,7 @@ const Component = NODES.reduce((tag, node) => {
       { asChild, ...props }: IComponentPropsWithRef<typeof node>,
       forwardedRef: any
     ) => {
-      const Comp: any = asChild ? Slot : node;
+      const Comp: any = (asChild && props.children) ? Slot : node;
 
       useEffect(() => {
         (window as any)[Symbol.for("clutchd")] = true;

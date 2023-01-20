@@ -52,14 +52,15 @@ describe("Component", () => {
   });
 
   test("Render with invalid and undefined child", () => {
-    const logSpy = jest.spyOn(console, "warn");
-    const { container } = render(<Component.div asChild>{null}</Component.div>);
+    {/* @ts-ignore */ }
+    const { container } = render(<Component.div asChild asdf="asdf">{null}</Component.div>);
 
-    expect(logSpy).toBeCalledTimes(1);
-    expect(logSpy).toBeCalledWith(
-      "Slot was unable to render children, no children provided."
-    );
-    expect(container.hasChildNodes()).toEqual(false);
+    const div = container.querySelector("div");
+
+    expect(container.hasChildNodes()).toEqual(true);
+    expect(div).toBeInTheDocument();
+    expect(div).toHaveAttribute("asdf", "asdf");
+    expect(div?.hasChildNodes()).toEqual(false);
   });
 
   test("Render with invalid child", () => {
