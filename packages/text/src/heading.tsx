@@ -1,11 +1,12 @@
 import { IComponentPropsWithoutRef } from "@clutchd/component";
+import * as React from "react";
 import { ElementType } from "react";
 import { ITextPropsCommon, TextBase } from "./textBase";
 
 /**
- * Type to define `Heading` component
+ * Type to define `Heading` element
  */
-type IHeading = typeof Heading;
+type IHeading = HTMLElement;
 
 /**
  * Type to define `Heading` props
@@ -21,21 +22,23 @@ interface IHeadingProps
  * @param props `IHeadingProps` used to render this `Heading`
  * @returns `Heading` component
  */
-function Heading({
-  fontSize = "text-4xl",
-  fontWeight = "font-semibold",
-  ...props
-}: IHeadingProps) {
-  return (
-    <TextBase
-      fontSize={fontSize}
-      fontWeight={fontWeight}
-      shade="900"
-      tag={getType(props.level)}
-      {...props}
-    />
-  );
-}
+const Heading = React.forwardRef<IHeading, IHeadingProps>(
+  (
+    { fontSize = "text-4xl", fontWeight = "font-semibold", ...props },
+    forwardedRef
+  ) => {
+    return (
+      <TextBase
+        fontSize={fontSize}
+        fontWeight={fontWeight}
+        shade="900"
+        tag={getType(props.level)}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 Heading.displayName = "TextHeading";
 

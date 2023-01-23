@@ -1,26 +1,29 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { ITextPropsCommon, TextBase } from "./textBase";
+import * as React from "react";
+import { IText, ITextProps } from ".";
+import { TextBase } from "./textBase";
 
 /**
- * Type to define `Subtitle` component
+ * Type to define `Subtitle` element
  */
-type ISubtitle = typeof Subtitle;
+type ISubtitle = IText;
 
 /**
  * Type to define `Subtitle` props
  */
-interface ISubtitleProps
-  extends ITextPropsCommon,
-    IComponentPropsWithoutRef<typeof Component.p> {}
+interface ISubtitleProps extends ITextProps {}
 
 /**
  * `Subtitle` - A text component with a little more emphasis
  * @param props `ISubtitleProps` used to render this `Subtitle`
  * @returns `Subtitle` component
  */
-function Subtitle({ fontSize = "text-lg", ...props }: ISubtitleProps) {
-  return <TextBase fontSize={fontSize} shade="500" {...props} />;
-}
+const Subtitle = React.forwardRef<ISubtitle, ISubtitleProps>(
+  ({ fontSize = "text-lg", ...props }, forwardedRef) => {
+    return (
+      <TextBase fontSize={fontSize} shade="500" ref={forwardedRef} {...props} />
+    );
+  }
+);
 
 Subtitle.displayName = "TextSubtitle";
 

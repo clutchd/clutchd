@@ -7,12 +7,12 @@ import {
   IWithFontWeight,
   IWithLineHeight,
 } from "@clutchd/tailwind";
-import { ElementType } from "react";
+import * as React from "react";
 
 /**
- * Type to define `TextBase` component
+ * Type to define `TextBase` element
  */
-type ITextBase = typeof TextBase;
+type ITextBase = HTMLElement;
 
 /**
  * Type to define common props used by all `Text` components
@@ -32,7 +32,7 @@ interface IAnyTextProps extends ITextPropsCommon, Record<string, any> {}
  */
 interface ITextBaseProps extends IAnyTextProps {
   shade?: IColorShade;
-  tag?: ElementType;
+  tag?: React.ElementType;
 }
 
 /**
@@ -40,31 +40,37 @@ interface ITextBaseProps extends IAnyTextProps {
  * @param props `ITextBaseProps` used to render this `TextBase`
  * @returns `TextBase` component
  */
-const TextBase = ({
-  className,
-  fontSize = "text-base",
-  fontWeight = "font-normal",
-  lineHeight = "leading-normal",
-  shade,
-  theme = "gray",
-  truncate,
-  tag: InternalText = "p",
-  ...props
-}: ITextBaseProps) => {
-  return (
-    <InternalText
-      className={clsx(
-        shade && getTextColor(theme, shade),
-        fontSize,
-        fontWeight,
-        lineHeight,
-        truncate && "truncate",
-        className
-      )}
-      {...props}
-    />
-  );
-};
+const TextBase = React.forwardRef<ITextBase, ITextBaseProps>(
+  (
+    {
+      className,
+      fontSize = "text-base",
+      fontWeight = "font-normal",
+      lineHeight = "leading-normal",
+      shade,
+      theme = "gray",
+      truncate,
+      tag: InternalText = "p",
+      ...props
+    },
+    forwardedRef
+  ) => {
+    return (
+      <InternalText
+        className={clsx(
+          shade && getTextColor(theme, shade),
+          fontSize,
+          fontWeight,
+          lineHeight,
+          truncate && "truncate",
+          className
+        )}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 TextBase.displayName = "TextBase";
 

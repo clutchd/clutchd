@@ -1,10 +1,11 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import * as React from "react";
 import { ITextPropsCommon, TextBase } from "./textBase";
 
 /**
- * Type to define `Bold` component
+ * Type to define `Bold` element
  */
-type IBold = typeof Bold;
+type IBold = React.ElementRef<typeof Component.span>;
 
 /**
  * Type to define `Bold` props
@@ -18,9 +19,11 @@ interface IBoldProps
  * @param props `IBoldProps` used to render this `Bold`
  * @returns `Bold` component
  */
-function Bold(props: IBoldProps) {
-  return <TextBase fontWeight="font-bold" tag="span" {...props} />;
-}
+const Bold = React.forwardRef<IBold, IBoldProps>((props, forwardedRef) => {
+  return (
+    <TextBase fontWeight="font-bold" tag="span" ref={forwardedRef} {...props} />
+  );
+});
 
 Bold.displayName = "TextBold";
 

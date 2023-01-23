@@ -1,10 +1,11 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import * as React from "react";
 import { ITextPropsCommon, TextBase } from "./textBase";
 
 /**
- * Type to define `Text` component
+ * Type to define `Text` element
  */
-type IText = typeof Text;
+type IText = React.ElementRef<typeof Component.p>;
 
 /**
  * Type to define `Text` props
@@ -18,9 +19,9 @@ interface ITextProps
  * @param props `ITextProps` used to render this `Text`
  * @returns `Text` component
  */
-function Text({ ...props }: ITextProps) {
-  return <TextBase shade="700" {...props} />;
-}
+const Text = React.forwardRef<IText, ITextProps>((props, forwardRef) => {
+  return <TextBase shade="700" ref={forwardRef} {...props} />;
+});
 
 Text.displayName = "Text";
 

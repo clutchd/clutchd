@@ -1,26 +1,29 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { ITextPropsCommon, TextBase } from "./textBase";
+import * as React from "react";
+import { IText, ITextProps } from ".";
+import { TextBase } from "./textBase";
 
 /**
- * Type to define `Caption` component
+ * Type to define `Caption` element
  */
-type ICaption = typeof Caption;
+type ICaption = IText;
 
 /**
  * Type to define `Caption` props
  */
-interface ICaptionProps
-  extends ITextPropsCommon,
-    IComponentPropsWithoutRef<typeof Component.p> {}
+interface ICaptionProps extends ITextProps {}
 
 /**
  * `Caption` - A small text component intended caption copy
  * @param props `ICaptionProps` used to render this `Caption`
  * @returns `Caption` component
  */
-function Caption({ fontSize = "text-sm", ...props }: ICaptionProps) {
-  return <TextBase fontSize={fontSize} shade="500" {...props} />;
-}
+const Caption = React.forwardRef<ICaption, ICaptionProps>(
+  ({ fontSize = "text-sm", ...props }, forwardedRef) => {
+    return (
+      <TextBase fontSize={fontSize} shade="500" ref={forwardedRef} {...props} />
+    );
+  }
+);
 
 Caption.displayName = "TextCaption";
 
