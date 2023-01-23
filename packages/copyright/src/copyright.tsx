@@ -1,9 +1,10 @@
-import { Caption, ICaptionProps } from "@clutchd/text";
+import { Caption, ICaption, ICaptionProps } from "@clutchd/text";
+import * as React from "react";
 
 /**
- * Type to define `Copyright` component
+ * Type to define `Copyright` element
  */
-type ICopyright = typeof Copyright;
+type ICopyright = ICaption;
 
 /**
  * Type to define `Copyright` props
@@ -15,14 +16,16 @@ interface ICopyrightProps extends ICaptionProps {}
  * @param props `ICopyrightProps` used to render this `Copyright`
  * @returns `Copyright` component
  */
-function Copyright({ children, ...props }: ICopyrightProps) {
-  const year = new Date().getFullYear();
-  return (
-    <Caption {...props}>
-      © {year} {children}
-    </Caption>
-  );
-}
+const Copyright = React.forwardRef<ICopyright, ICopyrightProps>(
+  ({ children, ...props }, forwardedRef) => {
+    const year = new Date().getFullYear();
+    return (
+      <Caption ref={forwardedRef} {...props}>
+        © {year} {children}
+      </Caption>
+    );
+  }
+);
 
 Copyright.displayName = "Copyright";
 
