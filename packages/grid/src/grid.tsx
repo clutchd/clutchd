@@ -9,11 +9,12 @@ import {
   IWithGapY,
   IWithGridColsValues,
 } from "@clutchd/tailwind";
+import * as React from "react";
 
 /**
- * Type to define `Grid` component
+ * Type to define `Grid` element
  */
-type IGrid = typeof Grid;
+type IGrid = React.ElementRef<typeof Component.div>;
 
 /**
  * Type to define `Grid` props
@@ -29,28 +30,35 @@ interface IGridProps
  * @param props `IGridProps` used to render this `Grid`
  * @returns `Grid` component
  */
-function Grid({
-  className,
-  gridCols = 1,
-  gridColsSm,
-  gridColsMd,
-  gridColsLg,
-  gapX = "gap-x-0",
-  gapY = "gap-y-0",
-  ...props
-}: IGridProps) {
-  const classNames = clsx(
-    "grid h-full w-full",
-    getGridCols(1),
-    getGridColsSm(gridColsSm),
-    getGridColsMd(gridColsMd),
-    getGridColsLg(gridColsLg),
-    gapX,
-    gapY,
-    className
-  );
-  return <Component.div {...props} className={classNames} />;
-}
+const Grid = React.forwardRef<IGrid, IGridProps>(
+  (
+    {
+      className,
+      gridCols = 1,
+      gridColsSm,
+      gridColsMd,
+      gridColsLg,
+      gapX = "gap-x-0",
+      gapY = "gap-y-0",
+      ...props
+    },
+    forwardedRef
+  ) => {
+    const classNames = clsx(
+      "grid h-full w-full",
+      getGridCols(1),
+      getGridColsSm(gridColsSm),
+      getGridColsMd(gridColsMd),
+      getGridColsLg(gridColsLg),
+      gapX,
+      gapY,
+      className
+    );
+    return (
+      <Component.div className={classNames} ref={forwardedRef} {...props} />
+    );
+  }
+);
 
 Grid.displayName = "Grid";
 

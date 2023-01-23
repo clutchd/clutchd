@@ -12,11 +12,12 @@ import {
   IWithColSpanValues,
   IWithRowSpanValues,
 } from "@clutchd/tailwind";
+import * as React from "react";
 
 /**
- * Type to define `GridCol` component
+ * Type to define `GridCol` element
  */
-type IGridCol = typeof GridCol;
+type IGridCol = React.ElementRef<typeof Component.div>;
 
 /**
  * Type to define `GridCol` props
@@ -31,31 +32,38 @@ interface IGridColProps
  * @param props `IColProps` used to render this `Col`
  * @returns `Col` component
  */
-function GridCol({
-  className,
-  colSpan = 1,
-  colSpanSm,
-  colSpanMd,
-  colSpanLg,
-  rowSpan,
-  rowSpanSm,
-  rowSpanMd,
-  rowSpanLg,
-  ...props
-}: IGridColProps) {
-  const classNames = clsx(
-    getColSpan(colSpan),
-    getColSpanSm(colSpanSm),
-    getColSpanMd(colSpanMd),
-    getColSpanLg(colSpanLg),
-    getRowSpan(rowSpan),
-    getRowSpanSm(rowSpanSm),
-    getRowSpanMd(rowSpanMd),
-    getRowSpanLg(rowSpanLg),
-    className
-  );
-  return <Component.div {...props} className={classNames} />;
-}
+const GridCol = React.forwardRef<IGridCol, IGridColProps>(
+  (
+    {
+      className,
+      colSpan = 1,
+      colSpanSm,
+      colSpanMd,
+      colSpanLg,
+      rowSpan,
+      rowSpanSm,
+      rowSpanMd,
+      rowSpanLg,
+      ...props
+    },
+    forwardedRef
+  ) => {
+    const classNames = clsx(
+      getColSpan(colSpan),
+      getColSpanSm(colSpanSm),
+      getColSpanMd(colSpanMd),
+      getColSpanLg(colSpanLg),
+      getRowSpan(rowSpan),
+      getRowSpanSm(rowSpanSm),
+      getRowSpanMd(rowSpanMd),
+      getRowSpanLg(rowSpanLg),
+      className
+    );
+    return (
+      <Component.div className={classNames} ref={forwardedRef} {...props} />
+    );
+  }
+);
 
 GridCol.displayName = "GridCol";
 
