@@ -1,10 +1,11 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { clsx } from "@clutchd/clsx";
+import * as React from "react";
 
 /**
- * Type to define `Skeleton` component
+ * Type to define `Skeleton` element
  */
-type ISkeleton = typeof Skeleton;
+type ISkeleton = React.ElementRef<typeof Component.div>;
 
 /**
  * Type to define `Skeleton` props
@@ -19,23 +20,26 @@ interface ISkeletonProps
  * @param props `ISkeletonProps` used to render this `Skeleton`
  * @returns `Skeleton` component
  */
-function Skeleton({ className, dark = false, ...props }: ISkeletonProps) {
-  return (
-    <Component.div
-      className={clsx("max-w-full max-h-full", className)}
-      {...props}
-    >
-      <span
-        className={clsx(
-          dark ? "bg-white" : "bg-black",
-          "opacity-50 rounded w-full h-full m-auto inline-block"
-        )}
+const Skeleton = React.forwardRef<ISkeleton, ISkeletonProps>(
+  ({ className, dark = false, ...props }, forwardedRef) => {
+    return (
+      <Component.div
+        className={clsx("max-w-full max-h-full", className)}
+        ref={forwardedRef}
+        {...props}
       >
-        {"\u200b"}
-      </span>
-    </Component.div>
-  );
-}
+        <span
+          className={clsx(
+            dark ? "bg-white" : "bg-black",
+            "opacity-50 rounded w-full h-full m-auto inline-block"
+          )}
+        >
+          {"\u200b"}
+        </span>
+      </Component.div>
+    );
+  }
+);
 
 Skeleton.displayName = "Skeleton";
 
