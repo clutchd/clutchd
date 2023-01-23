@@ -1,11 +1,12 @@
 import { clsx } from "@clutchd/clsx";
 import { IWithSpaceY } from "@clutchd/tailwind";
-import { Flex, IFlexPropsCommon } from "./flex";
+import * as React from "react";
+import { Flex, IFlex, IFlexPropsCommon } from "./flex";
 
 /**
- * Type to define `FlexCol` component
+ * Type to define `FlexCol` element
  */
-type IFlexCol = typeof FlexCol;
+type IFlexCol = IFlex;
 
 /**
  * Type to define `FlexCol` props
@@ -17,24 +18,24 @@ interface IFlexColProps extends IFlexPropsCommon, IWithSpaceY {}
  * @param props `IFlexColProps` used to render this `FlexCol`
  * @returns `FlexCol` component
  */
-function FlexCol({
-  alignItems,
-  className,
-  justifyContent,
-  spaceY,
-  ...props
-}: IFlexColProps) {
-  const classNames = clsx(spaceY, className);
-  return (
-    <Flex
-      alignItems={alignItems}
-      className={classNames}
-      flexDirection="flex-col"
-      justifyContent={justifyContent}
-      {...props}
-    />
-  );
-}
+const FlexCol = React.forwardRef<IFlexCol, IFlexColProps>(
+  (
+    { alignItems, className, justifyContent, spaceY, ...props },
+    forwardedRef
+  ) => {
+    const classNames = clsx(spaceY, className);
+    return (
+      <Flex
+        alignItems={alignItems}
+        className={classNames}
+        flexDirection="flex-col"
+        justifyContent={justifyContent}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 FlexCol.displayName = "FlexCol";
 

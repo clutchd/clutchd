@@ -5,11 +5,12 @@ import {
   IWithFlexDirection,
   IWithJustifyContent,
 } from "@clutchd/tailwind";
+import * as React from "react";
 
 /**
- * Type to define `Flex` component
+ * Type to define `Flex` element
  */
-type IFlex = typeof Flex;
+type IFlex = React.ElementRef<typeof Component.div>;
 
 /**
  * Type to define `Flex` props shared by all `Flex` components
@@ -29,23 +30,26 @@ interface IFlexProps extends IFlexPropsCommon, IWithFlexDirection {}
  * @param props `IFlexProps` used to render this `Flex`
  * @returns `Flex` component
  */
-function Flex({
-  alignItems,
-  className,
-  flexDirection,
-  justifyContent,
-  ...props
-}: IFlexProps) {
-  const classNames = clsx(
-    "flex h-full w-full",
-    alignItems,
-    flexDirection,
-    justifyContent,
-    className
-  );
-
-  return <Component.div {...props} className={classNames} />;
-}
+const Flex = React.forwardRef<IFlex, IFlexProps>(
+  (
+    { alignItems, className, flexDirection, justifyContent, ...props },
+    forwardedRef
+  ) => {
+    return (
+      <Component.div
+        className={clsx(
+          "flex h-full w-full",
+          alignItems,
+          flexDirection,
+          justifyContent,
+          className
+        )}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 Flex.displayName = "Flex";
 

@@ -1,11 +1,12 @@
 import { clsx } from "@clutchd/clsx";
 import { IWithSpaceX } from "@clutchd/tailwind";
-import { Flex, IFlexPropsCommon } from "./flex";
+import * as React from "react";
+import { Flex, IFlex, IFlexPropsCommon } from "./flex";
 
 /**
- * Type to define `FlexRow` component
+ * Type to define `FlexRow` element
  */
-type IFlexRow = typeof FlexRow;
+type IFlexRow = IFlex;
 
 /**
  * Type to define `FlexRow` props
@@ -17,24 +18,24 @@ interface IFlexRowProps extends IFlexPropsCommon, IWithSpaceX {}
  * @param props `IFlexRowProps` used to render this `FlexRow`
  * @returns `FlexRow` component
  */
-function FlexRow({
-  alignItems,
-  className,
-  justifyContent,
-  spaceX,
-  ...props
-}: IFlexRowProps) {
-  const classNames = clsx(spaceX, className);
-  return (
-    <Flex
-      alignItems={alignItems}
-      className={classNames}
-      flexDirection="flex-row"
-      justifyContent={justifyContent}
-      {...props}
-    />
-  );
-}
+const FlexRow = React.forwardRef<IFlexRow, IFlexRowProps>(
+  (
+    { alignItems, className, justifyContent, spaceX, ...props },
+    forwardedRef
+  ) => {
+    const classNames = clsx(spaceX, className);
+    return (
+      <Flex
+        alignItems={alignItems}
+        className={classNames}
+        flexDirection="flex-row"
+        justifyContent={justifyContent}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 FlexRow.displayName = "FlexRow";
 
