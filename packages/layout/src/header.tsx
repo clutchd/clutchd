@@ -1,11 +1,12 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import * as React from "react";
 import { ILayoutWithDirection, ILayoutWithPadding, Layout } from "./layout";
 
 /**
- * Type to define `Header` component
+ * Type to define `Header` element
  */
-type IHeader = typeof Header;
+type IHeader = React.ElementRef<typeof Component.header>;
 
 /**
  * Type to define `Header` props
@@ -20,24 +21,23 @@ interface IHeaderProps
  * @param props `IHeaderProps` used to render this `Header`
  * @returns `Header` component
  */
-function Header({
-  children,
-  className,
-  direction = "row",
-  padding = true,
-  ...props
-}: IHeaderProps) {
-  return (
-    <Layout
-      asChild
-      className={clsx(padding ? "p-6 sm:p-8" : "", className)}
-      direction={direction}
-      {...props}
-    >
-      <header>{children}</header>
-    </Layout>
-  );
-}
+const Header = React.forwardRef<IHeader, IHeaderProps>(
+  (
+    { children, className, direction = "row", padding = true, ...props },
+    forwardedRef
+  ) => {
+    return (
+      <Layout
+        asChild
+        className={clsx(padding ? "p-6 sm:p-8" : "", className)}
+        direction={direction}
+        {...props}
+      >
+        <header ref={forwardedRef}>{children}</header>
+      </Layout>
+    );
+  }
+);
 
 Header.displayName = "Header";
 

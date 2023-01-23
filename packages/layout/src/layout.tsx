@@ -1,9 +1,10 @@
-import { FlexCol, FlexRow } from "@clutchd/flex";
+import { FlexCol, FlexRow, IFlexCol, IFlexRow } from "@clutchd/flex";
+import * as React from "react";
 
 /**
- * Type to define `Layout` component
+ * Type to define `Layout` element
  */
-type ILayout = typeof Layout;
+type ILayout = IFlexCol & IFlexRow;
 
 /**
  * Type to define the direction prop used by multiple `Layout` components
@@ -29,15 +30,17 @@ interface ILayoutProps extends ILayoutWithDirection, Record<string, any> {}
  * @param props `ILayoutProps` used to render this `Layout`
  * @returns `Layout` component
  */
-function Layout({ asChild, direction, ...props }: ILayoutProps) {
-  // if row, return row
-  if (direction === "row") {
-    return <FlexRow asChild={asChild} {...props} />;
-  }
+const Layout = React.forwardRef<ILayout, ILayoutProps>(
+  ({ asChild, direction, ...props }, forwardedRef) => {
+    // if row, return row
+    if (direction === "row") {
+      return <FlexRow asChild={asChild} ref={forwardedRef} {...props} />;
+    }
 
-  // otherwise, return col
-  return <FlexCol asChild={asChild} {...props} />;
-}
+    // otherwise, return col
+    return <FlexCol asChild={asChild} ref={forwardedRef} {...props} />;
+  }
+);
 
 Layout.displayName = "Layout";
 

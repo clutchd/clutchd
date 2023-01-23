@@ -1,11 +1,12 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { ILayoutWithDirection, Layout } from "./layout";
+import * as React from "react";
 
 /**
- * Type to define `Page` component
+ * Type to define `Page` element
  */
-type IPage = typeof Page;
+type IPage = React.ElementRef<typeof Component.div>;
 
 /**
  * Type to define `Page` props
@@ -19,18 +20,21 @@ interface IPageProps
  * @param props `IPageProps` used to render this `Page`
  * @returns `Page` component
  */
-function Page({ className, direction = "col", ...props }: IPageProps) {
-  return (
-    <Layout
-      className={clsx(
-        "min-h-screen min-w-screen subpixel-antialiased",
-        className
-      )}
-      direction={direction}
-      {...props}
-    />
-  );
-}
+const Page = React.forwardRef<IPage, IPageProps>(
+  ({ className, direction = "col", ...props }, forwardedRef) => {
+    return (
+      <Layout
+        className={clsx(
+          "min-h-screen min-w-screen subpixel-antialiased",
+          className
+        )}
+        direction={direction}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 Page.displayName = "Page";
 

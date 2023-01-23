@@ -1,11 +1,12 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { ILayoutWithDirection, ILayoutWithPadding, Layout } from "./layout";
+import * as React from "react";
 
 /**
- * Type to define `Content` component
+ * Type to define `Content` element
  */
-type IContent = typeof Content;
+type IContent = React.ElementRef<typeof Component.main>;
 
 /**
  * Type to define `Content` props
@@ -20,24 +21,23 @@ interface IContentProps
  * @param props `IContentProps` used to render this `Content`
  * @returns `Content` component
  */
-function Content({
-  children,
-  className,
-  direction = "col",
-  padding = true,
-  ...props
-}: IContentProps) {
-  return (
-    <Layout
-      asChild
-      className={clsx("flex-1", padding ? "p-6 sm:p-8" : "", className)}
-      direction={direction}
-      {...props}
-    >
-      <main>{children}</main>
-    </Layout>
-  );
-}
+const Content = React.forwardRef<IContent, IContentProps>(
+  (
+    { children, className, direction = "col", padding = true, ...props },
+    forwardedRef
+  ) => {
+    return (
+      <Layout
+        asChild
+        className={clsx("flex-1", padding ? "p-6 sm:p-8" : "", className)}
+        direction={direction}
+        {...props}
+      >
+        <main ref={forwardedRef}>{children}</main>
+      </Layout>
+    );
+  }
+);
 
 Content.displayName = "Content";
 
