@@ -52,7 +52,7 @@ const Avatar = React.forwardRef<IAvatar, IAvatarProps>(
       theme = "gray",
       ...props
     },
-    forwardRef
+    forwardedRef
   ) => {
     const [loadingState, setLoadingState] =
       React.useState<IAvatarLoadingStates>("idle");
@@ -100,7 +100,7 @@ const Avatar = React.forwardRef<IAvatar, IAvatarProps>(
           borderWidth,
           className
         )}
-        ref={forwardRef}
+        ref={forwardedRef}
         {...props}
       >
         <>

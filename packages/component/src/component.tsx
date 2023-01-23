@@ -1,11 +1,4 @@
-import {
-  ComponentPropsWithoutRef,
-  ComponentPropsWithRef,
-  ElementType,
-  forwardRef,
-  ForwardRefExoticComponent,
-  useEffect,
-} from "react";
+import * as React from "react";
 import { Slot } from "./slot";
 
 /**
@@ -41,20 +34,20 @@ type IComponentProps = {
 /**
  * Type to define `Component` props with the 'ref' prop
  */
-type IComponentPropsWithRef<E extends ElementType> = ComponentPropsWithRef<E> &
-  IComponentProps;
+type IComponentPropsWithRef<E extends React.ElementType> =
+  React.ComponentPropsWithRef<E> & IComponentProps;
 
 /**
  * Type to define `Component` props without the 'ref' prop
  */
-type IComponentPropsWithoutRef<E extends ElementType> =
-  ComponentPropsWithoutRef<E> & IComponentProps;
+type IComponentPropsWithoutRef<E extends React.ElementType> =
+  React.ComponentPropsWithoutRef<E> & IComponentProps;
 
 /**
  * Type to define `Component` as a forwarded ref component
  */
-interface IForwardRefComponent<E extends ElementType>
-  extends ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
+interface IForwardRefComponent<E extends React.ElementType>
+  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
 
 /**
  * Type to define the supported `Component` nodes
@@ -65,14 +58,14 @@ type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
  * `Component` - a higher-order component that extends standard html tags
  */
 const Component = NODES.reduce((tag, node) => {
-  const Node = forwardRef(
+  const Node = React.forwardRef(
     (
       { asChild, ...props }: IComponentPropsWithRef<typeof node>,
       forwardedRef: any
     ) => {
       const Comp: any = asChild && props.children ? Slot : node;
 
-      useEffect(() => {
+      React.useEffect(() => {
         (window as any)[Symbol.for("clutchd")] = true;
       }, []);
 

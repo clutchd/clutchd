@@ -1,33 +1,27 @@
 import { composeProps } from "@clutchd/compose-props";
 import { composeRefs } from "@clutchd/compose-refs";
-import {
-  cloneElement,
-  forwardRef,
-  HTMLAttributes,
-  isValidElement,
-  ReactNode,
-} from "react";
+import * as React from "react";
 
 /**
- * Type to define `Slot` component
+ * Type to define `Slot` element
  */
-type ISlot = typeof Slot;
+type ISlot = HTMLElement;
 
 /**
  * Type to define `Slot` props
  */
-interface ISlotProps extends HTMLAttributes<HTMLElement> {
-  children?: ReactNode;
+interface ISlotProps extends React.HTMLAttributes<ISlot> {
+  children?: React.ReactNode;
 }
 
 /**
  * A higher-order component that allows rendering as any `React.Element`
  */
-const Slot = forwardRef<HTMLElement, ISlotProps>(
+const Slot = React.forwardRef<ISlot, ISlotProps>(
   ({ children, ...props }, forwardedRef) => {
     // if valid children were provided, clone the children
-    if (isValidElement(children)) {
-      return cloneElement<any>(children, {
+    if (React.isValidElement(children)) {
+      return React.cloneElement<any>(children, {
         ...composeProps(props, children.props),
         ref: composeRefs(forwardedRef, (children as any).ref),
       });

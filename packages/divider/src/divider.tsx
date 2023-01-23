@@ -8,11 +8,12 @@ import {
   marginY,
   size,
 } from "@clutchd/tailwind";
+import * as React from "react";
 
 /**
- * Type to define `Divider` component
+ * Type to define `Divider` element
  */
-type IDivider = typeof Divider;
+type IDivider = React.ElementRef<typeof Component.div>;
 
 /**
  * Type to define `Divider` props
@@ -31,36 +32,42 @@ interface IDividerProps
  * @param props `IDividerProps` used to render this `Divider`
  * @returns `Divider` component
  */
-function Divider({
-  children,
-  className,
-  decorative = false,
-  hidden = false,
-  orientation = "horizontal",
-  spacing = "6",
-  theme = "gray",
-  ...props
-}: IDividerProps) {
-  // define aria props
-  const aria = decorative
-    ? { role: "none" }
-    : { "aria-orientation": orientation, role: "separator" };
+const Divider = React.forwardRef<IDivider, IDividerProps>(
+  (
+    {
+      children,
+      className,
+      decorative = false,
+      hidden = false,
+      orientation = "horizontal",
+      spacing = "6",
+      theme = "gray",
+      ...props
+    },
+    forwardedRef
+  ) => {
+    // define aria props
+    const aria = decorative
+      ? { role: "none" }
+      : { "aria-orientation": orientation, role: "separator" };
 
-  return (
-    <Component.div
-      {...aria}
-      className={clsx(
-        "rounded-lg",
-        hidden ? "bg-inherit" : getBgColor(theme, "200"),
-        orientation === "horizontal"
-          ? `${marginY[size.indexOf(spacing)]} h-px`
-          : `${marginX[size.indexOf(spacing)]} w-px`,
-        className
-      )}
-      {...props}
-    />
-  );
-}
+    return (
+      <Component.div
+        {...aria}
+        className={clsx(
+          "rounded-lg",
+          hidden ? "bg-inherit" : getBgColor(theme, "200"),
+          orientation === "horizontal"
+            ? `${marginY[size.indexOf(spacing)]} h-px`
+            : `${marginX[size.indexOf(spacing)]} w-px`,
+          className
+        )}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 Divider.displayName = "Divider";
 
