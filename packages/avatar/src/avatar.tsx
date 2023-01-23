@@ -24,10 +24,10 @@ type IAvatar = typeof Avatar;
  */
 interface IAvatarProps
   extends IWithBorderRadius,
-    IWithBorderWidth,
-    IWithColor,
-    IWithSize,
-    IComponentPropsWithoutRef<typeof Component.span> {
+  IWithBorderWidth,
+  IWithColor,
+  IWithSize,
+  IComponentPropsWithoutRef<typeof Component.div> {
   src: string;
   alt?: string;
 }
@@ -81,7 +81,7 @@ function Avatar({
   );
 
   return (
-    <Component.span
+    <Component.div
       className={clsx(
         "inline-flex items-center justify-center align-middle select-none overflow-hidden",
         getBorderColor(theme, "300"),
@@ -94,7 +94,7 @@ function Avatar({
     >
       {src && image}
       {loadingState !== "loaded" && fallback}
-    </Component.span>
+    </Component.div>
   );
 }
 
