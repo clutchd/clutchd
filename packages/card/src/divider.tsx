@@ -1,10 +1,11 @@
-import { Divider, IDividerProps } from "@clutchd/divider";
+import { Divider, IDivider, IDividerProps } from "@clutchd/divider";
 import { clsx } from "@clutchd/clsx";
+import * as React from "react";
 
 /**
- * Type to define `CardDivider` component
+ * Type to define `CardDivider` element
  */
-type ICardDivider = typeof CardDivider;
+type ICardDivider = IDivider;
 
 /**
  * Type to define `CardDivider` props
@@ -16,9 +17,17 @@ interface ICardDividerProps extends IDividerProps {}
  * @param props `ICardDividerProps` used to render this `CardDivider`
  * @returns `CardDivider` component
  */
-function CardDivider({ className, ...props }: ICardDividerProps) {
-  return <Divider className={clsx("-mx-6", className)} {...props} />;
-}
+const CardDivider = React.forwardRef<ICardDivider, ICardDividerProps>(
+  ({ className, ...props }, forwardedRef) => {
+    return (
+      <Divider
+        className={clsx("-mx-6", className)}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 CardDivider.displayName = "CardDivider";
 

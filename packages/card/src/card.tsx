@@ -1,11 +1,12 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { getBorderColor, IWithColor } from "@clutchd/tailwind";
+import * as React from "react";
 
 /**
- * Type to define `Card` component
+ * Type to define `Card` element
  */
-type ICard = typeof Card;
+type ICard = React.ElementRef<typeof Component.div>;
 
 /**
  * Type to define `Card` props
@@ -22,28 +23,33 @@ interface ICardProps
  * @param props `ICardProps` used to render this `Card`
  * @returns `Card` component
  */
-function Card({
-  children,
-  className,
-  decoration,
-  hover = false,
-  theme = "gray",
-  ...props
-}: ICardProps) {
-  const classNames = clsx(
-    "transition-all relative p-6 bg-white rounded-lg shadow ring-gray-200 ring-1",
-    getDecoration(decoration),
-    getBorderColor(theme, "400"),
-    hover && "hover:shadow-lg",
-    className
-  );
+const Card = React.forwardRef<ICard, ICardProps>(
+  (
+    {
+      children,
+      className,
+      decoration,
+      hover = false,
+      theme = "gray",
+      ...props
+    },
+    forwardedRef
+  ) => {
+    const classNames = clsx(
+      "transition-all relative p-6 bg-white rounded-lg shadow ring-gray-200 ring-1",
+      getDecoration(decoration),
+      getBorderColor(theme, "400"),
+      hover && "hover:shadow-lg",
+      className
+    );
 
-  return (
-    <Component.div className={classNames} {...props}>
-      {children}
-    </Component.div>
-  );
-}
+    return (
+      <Component.div className={classNames} ref={forwardedRef} {...props}>
+        {children}
+      </Component.div>
+    );
+  }
+);
 
 Card.displayName = "Card";
 
