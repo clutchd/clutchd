@@ -1,11 +1,12 @@
 import { clsx } from "@clutchd/clsx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import NextLink from "next/link";
+import * as React from "react";
 
 /**
- * Type to define `Link` component
+ * Type to define `Link` element
  */
-type ILink = typeof Link;
+type ILink = React.ElementRef<typeof Component.a>;
 
 /**
  * Type to define `Link` props
@@ -17,11 +18,20 @@ interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> {}
  * @param props `ILinkProps` used to render this `Link`
  * @returns `Link` component
  */
-function Link({ className, href = "/", ...props }: ILinkProps) {
-  const classNames = clsx("cursor-pointer", className);
+const Link = React.forwardRef<ILink, ILinkProps>(
+  ({ className, href = "/", ...props }, forwardedRef) => {
+    const classNames = clsx("cursor-pointer", className);
 
-  return <NextLink className={classNames} href={href} {...props} />;
-}
+    return (
+      <NextLink
+        className={classNames}
+        href={href}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
+  }
+);
 
 Link.displayName = "Link";
 
