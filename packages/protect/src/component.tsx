@@ -2,7 +2,7 @@ import { useSession } from "next-auth/react";
 import { IWithLoadingProps, IWithUnauthProps } from "./protect";
 
 /**
- * Type to define `ProtectComponent` component
+ * Type to define `ProtectComponent` element
  */
 type IProtectComponent = typeof ProtectComponent;
 

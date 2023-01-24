@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { IWithAuthProps, IWithLoadingProps } from "./protect";
 
 /**
- * Type to define `ProtectPage` component
+ * Type to define `ProtectPage` element
  */
 type IProtectPage = typeof ProtectPage;
 

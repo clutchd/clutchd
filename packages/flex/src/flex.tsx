@@ -13,7 +13,7 @@ import * as React from "react";
 type IFlex = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `Flex` props shared by all `Flex` components
+ * Type to define common props used by all `Flex` components
  */
 interface IFlexPropsCommon
   extends IWithAlignItems,

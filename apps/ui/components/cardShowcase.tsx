@@ -15,7 +15,7 @@ function CardShowcase() {
         <Text>Divider</Text>
       </Card>
       <Card>
-        <Text>Card with Multiple Footers</Text>
+        <Text>Card with Multiple Dividers</Text>
         <CardDivider />
         <Text>Divider</Text>
         <CardDivider />
