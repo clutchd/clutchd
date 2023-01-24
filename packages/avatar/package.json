@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/avatar",
-  "version": "0.6.8",
+  "version": "1.0.0",
   "keywords": [
     "clutchd",
     "avatar",
@@ -32,14 +32,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "^1.0.1",
-    "@clutchd/component": "^1.0.1",
-    "@clutchd/is-empty": "^2.0.3"
+    "@clutchd/clsx": "^1.0.2",
+    "@clutchd/component": "^1.0.2",
+    "@clutchd/is-empty": "^2.0.4"
   },
   "devDependencies": {
     "@clutchd/config": "*",
     "@clutchd/eslint-config-clutchd": "^1.0.0",
-    "@clutchd/tailwind": "^1.0.0",
+    "@clutchd/tailwind": "^1.1.0",
     "@clutchd/tsconfig": "^1.0.0",
     "@types/react": "^18.0.26",
     "jest": "^29.3.1",

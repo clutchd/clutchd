@@ -1,5 +1,12 @@
 # @clutchd/compose-refs
 
+## 1.0.2
+
+### Patch Changes
+
+- 54775b6: Explicit imports
+- 920d084: Update deps
+
 ## 1.0.1
 
 ### Patch Changes

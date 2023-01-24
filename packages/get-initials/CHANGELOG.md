@@ -1,5 +1,16 @@
 # @clutchd/get-initials
 
+## 1.2.3
+
+### Patch Changes
+
+- dfdc6b9: Update more deps
+- 920d084: Update deps
+- b688d07: Update deps
+- 50e626b: Fix deps
+- Updated dependencies [920d084]
+  - @clutchd/is-empty@2.0.4
+
 ## 1.2.2
 
 ### Patch Changes

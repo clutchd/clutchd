@@ -1,5 +1,28 @@
 # @clutchd/text
 
+## 1.1.0
+
+### Minor Changes
+
+- 5ccd37e: Improve text prop consistency
+- e54f7e2: Add ref support
+
+### Patch Changes
+
+- f79efb5: Remove transition default styles
+- dfdc6b9: Update more deps
+- 920d084: Update deps
+- 78de357: Fix prop types
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [54775b6]
+- Updated dependencies [9291690]
+- Updated dependencies [e2cc50b]
+- Updated dependencies [7cc7a2d]
+- Updated dependencies [920d084]
+  - @clutchd/clsx@1.0.2
+  - @clutchd/component@1.0.2
+  - @clutchd/skeleton@0.5.0
+
 ## 1.0.0
 
 ### Major Changes

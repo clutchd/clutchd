@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/get-initials",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "keywords": [
     "clutchd",
     "get-initials",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/is-empty": "^2.0.3"
+    "@clutchd/is-empty": "^2.0.4"
   },
   "devDependencies": {
     "@clutchd/config": "*",

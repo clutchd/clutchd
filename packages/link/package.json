@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/link",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "keywords": [
     "clutchd",
     "link",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "^1.0.1",
-    "@clutchd/component": "^1.0.1"
+    "@clutchd/clsx": "^1.0.2",
+    "@clutchd/component": "^1.0.2"
   },
   "devDependencies": {
     "@clutchd/config": "*",

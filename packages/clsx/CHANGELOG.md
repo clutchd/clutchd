@@ -1,5 +1,12 @@
 # @clutchd/clsx
 
+## 1.0.2
+
+### Patch Changes
+
+- dfdc6b9: Update more deps
+- 920d084: Update deps
+
 ## 1.0.1
 
 ### Patch Changes

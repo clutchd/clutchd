@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 1.0.3
+
+### Patch Changes
+
+- 920d084: Update deps
+
 ## 1.0.2
 
 ### Patch Changes

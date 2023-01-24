@@ -1,5 +1,15 @@
 # @clutchd/tailwind
 
+## 1.1.0
+
+### Minor Changes
+
+- fa5b730: Add getSizePx utility
+
+### Patch Changes
+
+- 920d084: Update deps
+
 ## 1.0.0
 
 ### Major Changes

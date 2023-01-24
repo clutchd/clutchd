@@ -1,5 +1,29 @@
 # @clutchd/flex
 
+## 1.0.0
+
+### Major Changes
+
+- c250c55: Initial release, fixes name collisions
+
+### Minor Changes
+
+- 46d3c3b: Add ref support
+
+### Patch Changes
+
+- b648e87: export IFlex
+- 920d084: Update deps
+- 9cc6442: Remove IFlex export
+- a765736: Simplify props
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [54775b6]
+- Updated dependencies [e2cc50b]
+- Updated dependencies [7cc7a2d]
+- Updated dependencies [920d084]
+  - @clutchd/clsx@1.0.2
+  - @clutchd/component@1.0.2
+
 ## 0.1.15
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @clutchd/component
 
+## 1.0.2
+
+### Patch Changes
+
+- 54775b6: Explicit imports
+- e2cc50b: Bugfix
+- 7cc7a2d: asChild prop only accepted if children are provided
+- 920d084: Update deps
+- Updated dependencies [54775b6]
+- Updated dependencies [920d084]
+  - @clutchd/compose-refs@1.0.2
+  - @clutchd/compose-props@1.1.3
+
 ## 1.0.1
 
 ### Patch Changes
