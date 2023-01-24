@@ -5,38 +5,56 @@ import React from "react";
 import { Showcase } from ".";
 
 function InputShowcase() {
-  const [error, setError] = React.useState("An error has occurred!");
-  const inputRef = React.useRef(null);
+  const [generalError, setGeneralError] = React.useState(
+    "An error has occurred!"
+  );
+  const generalInput = React.useRef(null);
 
   return (
     <Showcase title="Input">
       <Card asChild>
         <form>
+          <Title>Input (General)</Title>
+          <CardDivider />
+          <Text>With Help Text</Text>
+          <TextInput helpText="An input with help text" />
+          <CardDivider />
+          <Text>With Placeholder</Text>
+          <TextInput placeholder="Placeholder..." />
+          <CardDivider />
+          <Text>Disabled</Text>
+          <TextInput disabled />
+          <CardDivider />
+          <Text>Read Only</Text>
+          <TextInput readOnly />
+          <CardDivider />
+          <Text>Forced Error</Text>
+          <TextInput error={"An error has occurred"} />
+          <CardDivider />
+          <Text>Dynamic Error</Text>
+          <TextInput
+            ref={generalInput}
+            error={generalError}
+            onChange={() =>
+              setGeneralError(
+                !generalInput.current?.value ? "An error has occurred!" : ""
+              )
+            }
+          />
+          <CardDivider />
+        </form>
+      </Card>
+      <Card asChild>
+        <form>
           <Title>Text Input</Title>
           <CardDivider />
           <Text>Default</Text>
-          <TextInput description="A default text input" />
+          <TextInput />
           <CardDivider />
-          <Text>Disabled</Text>
-          <TextInput description="This is a disabled text input" disabled />
-          <CardDivider />
-          <Text>Read Only</Text>
-          <TextInput description="This is a read only text input" readOnly />
-          <CardDivider />
-          <Text>Errored</Text>
+          <Text>Default with props</Text>
           <TextInput
-            description="This is a text input with an error"
-            error={"An error has occurred"}
-          />
-          <CardDivider />
-          <Text>Errored and Fixable</Text>
-          <TextInput
-            ref={inputRef}
-            description="This is a text input with a dynamic error state"
-            error={error}
-            onChange={() =>
-              setError(!inputRef.current?.value ? "An error has occurred!" : "")
-            }
+            helpText="A default text input"
+            placeholder="Placeholder..."
           />
         </form>
       </Card>

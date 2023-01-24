@@ -6,8 +6,8 @@ import * as React from "react";
  * Type to define `InputInfo` props
  */
 interface IInputInfoProps {
-  description?: string;
   error?: string | boolean;
+  helpText?: string;
 }
 
 /**
@@ -15,13 +15,13 @@ interface IInputInfoProps {
  * @param props `IInputInfoProps` used to render this `InputInfo`
  * @returns `InputInfo` component
  */
-function InputInfo({ error, description }: IInputInfoProps) {
-  const [descriptionVisible, setDescriptionVisible] = React.useState(false);
+function InputInfo({ error, helpText }: IInputInfoProps) {
+  const [helpTextVisible, setHelpTextVisible] = React.useState(false);
   const [errorVisible, setErrorVisible] = React.useState(false);
 
   React.useEffect(() => {
-    setDescriptionVisible(!isEmpty(description));
-  }, [description]);
+    setHelpTextVisible(!isEmpty(helpText));
+  }, [helpText]);
 
   React.useEffect(() => {
     setErrorVisible(!isEmpty(error));
@@ -29,9 +29,9 @@ function InputInfo({ error, description }: IInputInfoProps) {
 
   return (
     <FlexCol className="block overflow-hidden text-sm">
-      {descriptionVisible && (
+      {helpTextVisible && (
         <FlexRow asChild>
-          <span className="text-gray-500">{description}</span>
+          <span className="text-gray-500">{helpText}</span>
         </FlexRow>
       )}
       {errorVisible && (

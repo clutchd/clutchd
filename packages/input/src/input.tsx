@@ -3,7 +3,6 @@ import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
 import * as React from "react";
 import { IInputInfoProps, InputInfo } from "./inputInfo";
-import { validateName } from "./validate";
 
 /**
  * Type to define `Input` element
@@ -28,7 +27,7 @@ type IInputValidationStates = "valid" | "invalid" | "fixed" | undefined;
  * @returns `Input` component
  */
 const Input = React.forwardRef<IInput, IInputProps>(
-  ({ className, description, error, onBlur, ...props }, forwardedRef) => {
+  ({ className, error, helpText, onBlur, ...props }, forwardedRef) => {
     // track validation state of this input
     const [validated, setValidated] =
       React.useState<IInputValidationStates>(undefined);
@@ -49,17 +48,9 @@ const Input = React.forwardRef<IInput, IInputProps>(
       updateValidationState();
     }, [error]);
 
-    // validate props on mount
+    // ! input components should manage their own validation
+    // validate props
     React.useEffect(() => {
-      validateName(props.name);
-
-      // // validate readOnly and required props
-      // if (inputProps.required && inputProps.readOnly) {
-      //   console.warn(
-      //     "The `required` attribute is not permitted on inputs with the `readonly` attribute."
-      //   );
-      // }
-
       // // validate value prop
       // if (
       //   isEmpty(inputProps.value) &&
@@ -93,7 +84,7 @@ const Input = React.forwardRef<IInput, IInputProps>(
           ref={forwardedRef}
           {...props}
         />
-        <InputInfo error={error} description={description} />
+        <InputInfo error={error} helpText={helpText} />
       </>
     );
   }

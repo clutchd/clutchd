@@ -18,6 +18,7 @@
     "@clutchd/layout": "*",
     "@clutchd/link": "*",
     "@clutchd/text": "*",
+    "@heroicons/react": "^2.0.13",
     "@next/font": "^13.1.2",
     "next": "^13.1.2",
     "react": "^18.2.0",

@@ -1,5 +1,10 @@
 import * as React from "react";
 import { IInput, IInputProps, Input } from "./input";
+import {
+  validateName,
+  validateReadOnlyRequired,
+  validateType,
+} from "./validate";
 
 /**
  * Type to define `TextInput` element
@@ -25,7 +30,7 @@ const TextInput = React.forwardRef<ITextInput, ITextInputProps>(
       accept,
       alt,
       autoComplete,
-      //autoCorrect,
+      autoCorrect,
       capture,
       checked,
       //dirname,
@@ -37,7 +42,7 @@ const TextInput = React.forwardRef<ITextInput, ITextInputProps>(
       formNoValidate,
       formTarget,
       height,
-      //inputMode,
+      inputMode,
       list,
       max,
       maxLength,
@@ -52,8 +57,7 @@ const TextInput = React.forwardRef<ITextInput, ITextInputProps>(
       size,
       src,
       step,
-      //tabIndex,
-      //title,
+      title,
       type = "text",
       value,
       width,
@@ -64,8 +68,10 @@ const TextInput = React.forwardRef<ITextInput, ITextInputProps>(
     // trim all unsupported input props
     let inputProps: Partial<ITextInputProps> = {
       autoComplete,
+      autoCorrect,
       disabled,
       form,
+      inputMode,
       list,
       maxLength,
       minLength,
@@ -75,12 +81,16 @@ const TextInput = React.forwardRef<ITextInput, ITextInputProps>(
       readOnly,
       required,
       size,
-      type,
+      title,
       value,
     };
 
     // validate props
-    React.useEffect(() => {}, []);
+    React.useEffect(() => {
+      validateName(name);
+      validateReadOnlyRequired(readOnly, required);
+      validateType("text", type);
+    }, []);
 
     return <Input type="text" ref={forwardedRef} {...inputProps} {...props} />;
   }
