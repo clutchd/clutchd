@@ -1,5 +1,34 @@
 # @clutchd/website
 
+## 1.0.1
+
+### Patch Changes
+
+- 6ee078a: Use copyright component
+- Updated dependencies [f79efb5]
+- Updated dependencies [5ccd37e]
+- Updated dependencies [c250c55]
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [b648e87]
+- Updated dependencies [96b224d]
+- Updated dependencies [46d3c3b]
+- Updated dependencies [061c69d]
+- Updated dependencies [52ef5f1]
+- Updated dependencies [e54f7e2]
+- Updated dependencies [920d084]
+- Updated dependencies [9cc6442]
+- Updated dependencies [838fd62]
+- Updated dependencies [6f0c23e]
+- Updated dependencies [78de357]
+- Updated dependencies [7f7bc78]
+- Updated dependencies [a765736]
+- Updated dependencies [9cc6442]
+  - @clutchd/text@1.1.0
+  - @clutchd/flex@1.0.0
+  - @clutchd/copyright@2.0.0
+  - @clutchd/link@0.2.0
+  - @clutchd/layout@0.12.0
+
 ## 1.0.0
 
 ### Major Changes

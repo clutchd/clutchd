@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 2.0.4
+
+### Patch Changes
+
+- 920d084: Update deps
+
 ## 2.0.3
 
 ### Patch Changes

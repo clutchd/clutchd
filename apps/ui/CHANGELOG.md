@@ -1,5 +1,54 @@
 # @clutchd/ui
 
+## 0.4.0
+
+### Minor Changes
+
+- 5dc00a3: Improve input validation
+- 6d1532e: Adds simple component showcase
+- a669ca7: Add input showcase
+
+### Patch Changes
+
+- 6ee078a: Use copyright component
+- Updated dependencies [ec594a3]
+- Updated dependencies [f79efb5]
+- Updated dependencies [5ccd37e]
+- Updated dependencies [c250c55]
+- Updated dependencies [1665f2c]
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [b648e87]
+- Updated dependencies [96b224d]
+- Updated dependencies [47026a2]
+- Updated dependencies [46d3c3b]
+- Updated dependencies [061c69d]
+- Updated dependencies [52ef5f1]
+- Updated dependencies [e9498f1]
+- Updated dependencies [0a3a571]
+- Updated dependencies [5dc00a3]
+- Updated dependencies [e54f7e2]
+- Updated dependencies [920d084]
+- Updated dependencies [9cc6442]
+- Updated dependencies [838fd62]
+- Updated dependencies [6f0c23e]
+- Updated dependencies [a669ca7]
+- Updated dependencies [78de357]
+- Updated dependencies [7f7bc78]
+- Updated dependencies [a765736]
+- Updated dependencies [906e3b4]
+- Updated dependencies [14a0e20]
+- Updated dependencies [9bf475b]
+- Updated dependencies [9cc6442]
+  - @clutchd/card@1.0.0
+  - @clutchd/divider@1.1.0
+  - @clutchd/text@1.1.0
+  - @clutchd/flex@1.0.0
+  - @clutchd/copyright@2.0.0
+  - @clutchd/avatar@1.0.0
+  - @clutchd/link@0.2.0
+  - @clutchd/input@0.1.0
+  - @clutchd/layout@0.12.0
+
 ## 0.3.1
 
 ### Patch Changes

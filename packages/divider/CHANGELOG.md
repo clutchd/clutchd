@@ -1,5 +1,25 @@
 # @clutchd/divider
 
+## 1.1.0
+
+### Minor Changes
+
+- 0a3a571: Add ref support
+
+### Patch Changes
+
+- f79efb5: Remove transition default styles
+- 1665f2c: Improve styles
+- dfdc6b9: Update more deps
+- 920d084: Update deps
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [54775b6]
+- Updated dependencies [e2cc50b]
+- Updated dependencies [7cc7a2d]
+- Updated dependencies [920d084]
+  - @clutchd/clsx@1.0.2
+  - @clutchd/component@1.0.2
+
 ## 1.0.6
 
 ### Patch Changes

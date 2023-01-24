@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/tailwind-merge",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Merge Tailwind CSS classes without style conflicts",
   "keywords": [
     "clutchd",
@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "^1.0.1",
+    "@clutchd/clsx": "^1.0.2",
     "tailwind-merge": "^1.8.1"
   },
   "devDependencies": {

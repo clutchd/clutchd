@@ -1,5 +1,28 @@
 # @clutchd/card
 
+## 1.0.0
+
+### Major Changes
+
+- c250c55: Initial release, fixes name collisions
+- 47026a2: Initial release, replace CardFooter with the new CardDivider component
+
+### Minor Changes
+
+- ec594a3: Add ref support
+
+### Patch Changes
+
+- dfdc6b9: Update more deps
+- 920d084: Update deps
+- Updated dependencies [f79efb5]
+- Updated dependencies [1665f2c]
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [0a3a571]
+- Updated dependencies [920d084]
+  - @clutchd/divider@1.1.0
+  - @clutchd/clsx@1.0.2
+
 ## 0.1.16
 
 ### Patch Changes

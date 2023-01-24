@@ -1,5 +1,15 @@
 # @clutchd/compose-props
 
+## 1.1.3
+
+### Patch Changes
+
+- 920d084: Update deps
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [920d084]
+  - @clutchd/clsx@1.0.2
+  - @clutchd/compose-event-handlers@1.0.3
+
 ## 1.1.2
 
 ### Patch Changes

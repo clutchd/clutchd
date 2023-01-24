@@ -1,5 +1,30 @@
 # @clutchd/avatar
 
+## 1.0.0
+
+### Major Changes
+
+- 14a0e20: Improve consistency, replace fallback prop with children prop
+
+### Minor Changes
+
+- e9498f1: Support refs
+
+### Patch Changes
+
+- dfdc6b9: Update more deps
+- 920d084: Update deps
+- 906e3b4: Render as div
+- 9bf475b: Improve loading state changes
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [54775b6]
+- Updated dependencies [e2cc50b]
+- Updated dependencies [7cc7a2d]
+- Updated dependencies [920d084]
+  - @clutchd/clsx@1.0.2
+  - @clutchd/component@1.0.2
+  - @clutchd/is-empty@2.0.4
+
 ## 0.6.8
 
 ### Patch Changes

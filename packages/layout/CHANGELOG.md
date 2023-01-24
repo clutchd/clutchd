@@ -1,5 +1,31 @@
 # @clutchd/layout
 
+## 0.12.0
+
+### Minor Changes
+
+- 9cc6442: Add ref support
+
+### Patch Changes
+
+- 920d084: Update deps
+- 838fd62: Fix rendered props
+- 6f0c23e: Utilize base layout component
+- 7f7bc78: Remove page color
+- Updated dependencies [c250c55]
+- Updated dependencies [dfdc6b9]
+- Updated dependencies [b648e87]
+- Updated dependencies [54775b6]
+- Updated dependencies [e2cc50b]
+- Updated dependencies [46d3c3b]
+- Updated dependencies [7cc7a2d]
+- Updated dependencies [920d084]
+- Updated dependencies [9cc6442]
+- Updated dependencies [a765736]
+  - @clutchd/flex@1.0.0
+  - @clutchd/clsx@1.0.2
+  - @clutchd/component@1.0.2
+
 ## 0.11.18
 
 ### Patch Changes

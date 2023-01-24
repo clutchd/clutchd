@@ -1,5 +1,16 @@
 # @clutchd/protect
 
+## 1.0.0
+
+### Major Changes
+
+- c250c55: Initial release, fixes name collisions
+
+### Patch Changes
+
+- 54775b6: Explicit imports
+- 920d084: Update deps
+
 ## 0.5.6
 
 ### Patch Changes
