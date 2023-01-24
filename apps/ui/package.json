@@ -18,7 +18,7 @@
     "@clutchd/layout": "*",
     "@clutchd/link": "*",
     "@clutchd/text": "*",
-    "@next/font": "^13.1.2",
+    "@next/font": "^13.1.5",
     "next": "^13.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
