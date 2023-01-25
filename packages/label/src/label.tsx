@@ -1,7 +1,10 @@
 import { clsx } from "@clutchd/clsx";
 import * as React from "react";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { composeEventHandlers, composePreventableEventHandlers } from "@clutchd/compose-event-handlers";
+import {
+  composeEventHandlers,
+  composePreventableEventHandlers,
+} from "@clutchd/compose-event-handlers";
 
 /**
  * Type to define `Label` component
@@ -54,7 +57,7 @@ const Label = React.forwardRef<ILabel, ILabelProps>(
       <>
         <span
           className={clsx(
-            "block mb-1 font-medium text-gray-700 text-base focus-within:text-gray-900",
+            "flex h-full w-full mb-1 font-medium text-gray-700 text-base focus-within:text-gray-900",
             required && "after:content-['*'] after:ml-1 after:text-red-400"
           )}
           ref={spanRef}
@@ -69,15 +72,21 @@ const Label = React.forwardRef<ILabel, ILabelProps>(
     const disableLabelHighlight = (
       event: React.MouseEvent<HTMLLabelElement, MouseEvent>
     ) => {
-      if ((event.target === this || event.target === spanRef.current) && event.detail > 1) {
+      if (
+        (event.target === this || event.target === spanRef.current) &&
+        event.detail > 1
+      ) {
         event.preventDefault();
       }
     };
 
     return (
       <Component.label
-        className={clsx("block", className)}
-        onMouseDown={composePreventableEventHandlers(onMouseDown, disableLabelHighlight)}
+        className={clsx("flex flex-col h-full w-full", className)}
+        onMouseDown={composePreventableEventHandlers(
+          onMouseDown,
+          disableLabelHighlight
+        )}
         ref={forwardedRef}
         {...props}
       >

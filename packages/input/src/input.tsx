@@ -67,7 +67,7 @@ const Input = React.forwardRef<IInput, IInputProps>(
         <Component.input
           aria-invalid={validated === "invalid" ? "true" : "false"}
           className={clsx(
-            "block w-full px-2 py-1 text-base font-normal bg-white border rounded-md shadow-sm appearance-none focus:outline-none focus:ring my-1",
+            "flex w-full px-2 py-1 text-base font-normal bg-white border rounded-md shadow-sm appearance-none focus:outline-none focus:ring my-1",
             "disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-400 disabled:shadow-none",
             "read-only:border-gray-200 read-only:shadow-none",
             "placeholder:text-gray-400",

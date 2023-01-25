@@ -1,4 +1,3 @@
-import { FlexCol, FlexRow } from "@clutchd/flex";
 import { isEmpty } from "@clutchd/is-empty";
 import * as React from "react";
 
@@ -28,20 +27,21 @@ function InputInfo({ error, helpText }: IInputInfoProps) {
   }, [error]);
 
   return (
-    <FlexCol className="block overflow-hidden text-sm">
+    <div className="flex flex-col w-full h-full overflow-hidden text-sm font-normal">
       {helpTextVisible && (
-        <FlexRow asChild>
-          <span className="text-gray-500">{helpText}</span>
-        </FlexRow>
+        <span className="flex flex-row w-full h-full text-gray-500">
+          {helpText}
+        </span>
       )}
       {errorVisible && (
-        <FlexRow asChild>
-          <span role="alert" className="mt-1 text-red-500">
-            {error}
-          </span>
-        </FlexRow>
+        <span
+          className="flex flex-row w-full h-full mt-1 text-red-500"
+          role="alert"
+        >
+          {error}
+        </span>
       )}
-    </FlexCol>
+    </div>
   );
 }
 
