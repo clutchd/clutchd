@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 1.2.0
+
+### Minor Changes
+
+- 5067dca: Add brand color
+
 ## 1.1.0
 
 ### Minor Changes
