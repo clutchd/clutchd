@@ -1,7 +1,7 @@
 import { clsx } from "@clutchd/clsx";
 import * as React from "react";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { composePreventableEventHandlers } from "@clutchd/compose-event-handlers";
+import { composeEventHandlers, composePreventableEventHandlers } from "@clutchd/compose-event-handlers";
 
 /**
  * Type to define `Label` component
@@ -27,59 +27,59 @@ const Label = React.forwardRef<ILabel, ILabelProps>(
     { className, children, content, onMouseDown, required = false, ...props },
     forwardedRef
   ) => {
-    // label content
-    const [labelContent, setLabelContent] = React.useState(content);
+    // content states
+    const [spanContent, setSpanContent] = React.useState(content);
+    const [childrenContent, setChildrenContent] = React.useState(children);
 
-    // update label content based on prop and children
+    // update content states based on props
     React.useEffect(() => {
       if (content) {
-        setLabelContent(
-          <>
-            {innerComponent(content)}
-            {children}
-          </>
-        );
+        setSpanContent(content);
+        setChildrenContent(children);
       } else if (children) {
-        setLabelContent(innerComponent(children));
+        setSpanContent(children);
+        setChildrenContent(null);
       } else {
+        setSpanContent(null);
+        setChildrenContent(null);
         console.warn("No content provided for label.");
       }
     }, [children, content]);
 
-    // create component for inner content
-    const innerRef = React.createRef<HTMLSpanElement>();
-    const innerComponent = (innerContent: React.ReactNode) => (
-      <span
-        className={clsx(
-          "block mb-1 font-semibold text-gray-700 text-base focus-within:text-gray-900",
-          required && "after:content-['*'] after:ml-1 after:text-red-400"
-        )}
-        ref={innerRef}
-      >
-        {innerContent}
-      </span>
+    // create ref for label span
+    const spanRef = React.createRef<HTMLSpanElement>();
+
+    // create component for label content
+    let labelContent = (
+      <>
+        <span
+          className={clsx(
+            "block mb-1 font-medium text-gray-700 text-base focus-within:text-gray-900",
+            required && "after:content-['*'] after:ml-1 after:text-red-400"
+          )}
+          ref={spanRef}
+        >
+          {spanContent}
+        </span>
+        {childrenContent}
+      </>
     );
 
     // disable the label's text highlight
     const disableLabelHighlight = (
       event: React.MouseEvent<HTMLLabelElement, MouseEvent>
     ) => {
-      if (
-        (event.target === this || event.target === innerRef.current) &&
-        event.detail > 1
-      )
+      if ((event.target === this || event.target === spanRef.current) && event.detail > 1) {
         event.preventDefault();
+      }
     };
 
     return (
       <Component.label
-        className={clsx("block transition-all", className)}
+        className={clsx("block", className)}
+        onMouseDown={composePreventableEventHandlers(onMouseDown, disableLabelHighlight)}
         ref={forwardedRef}
         {...props}
-        onMouseDown={composePreventableEventHandlers(
-          onMouseDown,
-          disableLabelHighlight
-        )}
       >
         {labelContent}
       </Component.label>

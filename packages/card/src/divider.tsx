@@ -1,5 +1,5 @@
-import { Divider, IDivider, IDividerProps } from "@clutchd/divider";
 import { clsx } from "@clutchd/clsx";
+import { Divider, IDivider, IDividerProps } from "@clutchd/divider";
 import * as React from "react";
 
 /**
@@ -18,10 +18,14 @@ interface ICardDividerProps extends IDividerProps {}
  * @returns `CardDivider` component
  */
 const CardDivider = React.forwardRef<ICardDivider, ICardDividerProps>(
-  ({ className, ...props }, forwardedRef) => {
+  ({ className, orientation = "horizontal", ...props }, forwardedRef) => {
     return (
       <Divider
-        className={clsx("-mx-6", className)}
+        className={clsx(
+          orientation === "horizontal" ? "-mx-6" : "-my-6",
+          className
+        )}
+        orientation={orientation}
         ref={forwardedRef}
         {...props}
       />
