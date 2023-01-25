@@ -3,3 +3,4 @@ export { CardShowcase } from "./cardShowcase";
 export { Showcase } from "./showcase";
 export { TextShowcase } from "./textShowcase";
 export { InputShowcase } from "./inputShowcase";
+export { ThemeSwitch } from "./themeSwitch";

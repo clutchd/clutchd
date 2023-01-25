@@ -10,6 +10,7 @@ import {
   CardShowcase,
   InputShowcase,
   TextShowcase,
+  ThemeSwitch,
 } from "../components";
 
 export default function Home() {
@@ -19,8 +20,8 @@ export default function Home() {
         <title>Clutchd, LLC</title>
       </Head>
       <Page>
-        {/* <Header>
-          <nav className="flex flex-row w-full">
+        <Header>
+          {/* <nav className="flex flex-row w-full">
             <div className="hidden sm:block">
               <Link className="mr-auto" href="/">
                 <Image
@@ -41,8 +42,9 @@ export default function Home() {
                 />
               </Link>
             </div>
-          </nav>
-        </Header> */}
+          </nav> */}
+          <ThemeSwitch />
+        </Header>
         <Content>
           <Heading>Components</Heading>
           <AvatarShowcase />

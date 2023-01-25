@@ -1,5 +1,6 @@
 import { AppProps } from "next/app";
 import React from "react";
+import { ThemeProvider } from "next-themes";
 import { Manrope } from "@next/font/google";
 import "../styles.css";
 
@@ -11,7 +12,7 @@ const manrope = Manrope({
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider>
       <style jsx global>
         {`
           :root {
@@ -20,6 +21,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         `}
       </style>
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   );
 }
