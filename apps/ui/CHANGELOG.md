@@ -1,5 +1,21 @@
 # @clutchd/ui
 
+## 0.5.0
+
+### Minor Changes
+
+- 4477c57: Add more form layouts
+
+### Patch Changes
+
+- Updated dependencies [d7e32a5]
+- Updated dependencies [9af411a]
+- Updated dependencies [4477c57]
+- Updated dependencies [9af411a]
+  - @clutchd/label@1.0.0
+  - @clutchd/input@0.1.1
+  - @clutchd/card@1.0.1
+
 ## 0.4.0
 
 ### Minor Changes

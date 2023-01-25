@@ -1,5 +1,11 @@
 # @clutchd/card
 
+## 1.0.1
+
+### Patch Changes
+
+- 9af411a: Fix divider vertical orientation
+
 ## 1.0.0
 
 ### Major Changes

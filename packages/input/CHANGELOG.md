@@ -1,5 +1,11 @@
 # @clutchd/input
 
+## 0.1.1
+
+### Patch Changes
+
+- 4477c57: Improve visuals and fix bugs
+
 ## 0.1.0
 
 ### Minor Changes
