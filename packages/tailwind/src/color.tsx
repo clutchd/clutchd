@@ -7,6 +7,7 @@ export const color = [
   "transparent",
   "black",
   "white",
+  "brand",
   "slate",
   "gray",
   "zinc",
@@ -145,6 +146,18 @@ const bgColorMap: IColorMap = {
   },
   white: {
     none: "bg-white",
+  },
+  brand: {
+    "50": "bg-brand-50",
+    "100": "bg-brand-100",
+    "200": "bg-brand-200",
+    "300": "bg-brand-300",
+    "400": "bg-brand-400",
+    "500": "bg-brand-500",
+    "600": "bg-brand-600",
+    "700": "bg-brand-700",
+    "800": "bg-brand-800",
+    "900": "bg-brand-900",
   },
   slate: {
     "50": "bg-slate-50",
@@ -422,6 +435,18 @@ const hoverBgColorMap: IColorMap = {
   white: {
     none: "hover:bg-white",
   },
+  brand: {
+    "50": "hover:bg-brand-50",
+    "100": "hover:bg-brand-100",
+    "200": "hover:bg-brand-200",
+    "300": "hover:bg-brand-300",
+    "400": "hover:bg-brand-400",
+    "500": "hover:bg-brand-500",
+    "600": "hover:bg-brand-600",
+    "700": "hover:bg-brand-700",
+    "800": "hover:bg-brand-800",
+    "900": "hover:bg-brand-900",
+  },
   slate: {
     "50": "hover:bg-slate-50",
     "100": "hover:bg-slate-100",
@@ -697,6 +722,18 @@ const textColorMap: IColorMap = {
   },
   white: {
     none: "text-white",
+  },
+  brand: {
+    "50": "text-brand-50",
+    "100": "text-brand-100",
+    "200": "text-brand-200",
+    "300": "text-brand-300",
+    "400": "text-brand-400",
+    "500": "text-brand-500",
+    "600": "text-brand-600",
+    "700": "text-brand-700",
+    "800": "text-brand-800",
+    "900": "text-brand-900",
   },
   slate: {
     "50": "text-slate-50",
@@ -974,6 +1011,18 @@ const hoverTextColorMap: IColorMap = {
   white: {
     none: "hover:text-white",
   },
+  brand: {
+    "50": "hover:text-brand-50",
+    "100": "hover:text-brand-100",
+    "200": "hover:text-brand-200",
+    "300": "hover:text-brand-300",
+    "400": "hover:text-brand-400",
+    "500": "hover:text-brand-500",
+    "600": "hover:text-brand-600",
+    "700": "hover:text-brand-700",
+    "800": "hover:text-brand-800",
+    "900": "hover:text-brand-900",
+  },
   slate: {
     "50": "hover:text-slate-50",
     "100": "hover:text-slate-100",
@@ -1249,6 +1298,18 @@ const borderColorMap: IColorMap = {
   },
   white: {
     none: "border-white",
+  },
+  brand: {
+    "50": "border-brand-50",
+    "100": "border-brand-100",
+    "200": "border-brand-200",
+    "300": "border-brand-300",
+    "400": "border-brand-400",
+    "500": "border-brand-500",
+    "600": "border-brand-600",
+    "700": "border-brand-700",
+    "800": "border-brand-800",
+    "900": "border-brand-900",
   },
   slate: {
     "50": "border-slate-50",
@@ -1526,6 +1587,18 @@ const hoverBorderColorMap: IColorMap = {
   white: {
     none: "hover:border-white",
   },
+  brand: {
+    "50": "hover:border-brand-50",
+    "100": "hover:border-brand-100",
+    "200": "hover:border-brand-200",
+    "300": "hover:border-brand-300",
+    "400": "hover:border-brand-400",
+    "500": "hover:border-brand-500",
+    "600": "hover:border-brand-600",
+    "700": "hover:border-brand-700",
+    "800": "hover:border-brand-800",
+    "900": "hover:border-brand-900",
+  },
   slate: {
     "50": "hover:border-slate-50",
     "100": "hover:border-slate-100",
@@ -1801,6 +1874,18 @@ const ringColorMap: IColorMap = {
   },
   white: {
     none: "ring-white",
+  },
+  brand: {
+    "50": "ring-brand-50",
+    "100": "ring-brand-100",
+    "200": "ring-brand-200",
+    "300": "ring-brand-300",
+    "400": "ring-brand-400",
+    "500": "ring-brand-500",
+    "600": "ring-brand-600",
+    "700": "ring-brand-700",
+    "800": "ring-brand-800",
+    "900": "ring-brand-900",
   },
   slate: {
     "50": "ring-slate-50",
@@ -2078,6 +2163,18 @@ const focusRingColorMap: IColorMap = {
   white: {
     none: "focus:ring-white",
   },
+  brand: {
+    "50": "focus:ring-brand-50",
+    "100": "focus:ring-brand-100",
+    "200": "focus:ring-brand-200",
+    "300": "focus:ring-brand-300",
+    "400": "focus:ring-brand-400",
+    "500": "focus:ring-brand-500",
+    "600": "focus:ring-brand-600",
+    "700": "focus:ring-brand-700",
+    "800": "focus:ring-brand-800",
+    "900": "focus:ring-brand-900",
+  },
   slate: {
     "50": "focus:ring-slate-50",
     "100": "focus:ring-slate-100",
@@ -2353,6 +2450,18 @@ const hoverRingColorMap: IColorMap = {
   },
   white: {
     none: "hover:ring-white",
+  },
+  brand: {
+    "50": "hover:ring-brand-50",
+    "100": "hover:ring-brand-100",
+    "200": "hover:ring-brand-200",
+    "300": "hover:ring-brand-300",
+    "400": "hover:ring-brand-400",
+    "500": "hover:ring-brand-500",
+    "600": "hover:ring-brand-600",
+    "700": "hover:ring-brand-700",
+    "800": "hover:ring-brand-800",
+    "900": "hover:ring-brand-900",
   },
   slate: {
     "50": "hover:ring-slate-50",
@@ -2630,6 +2739,18 @@ const divideColorMap: IColorMap = {
   white: {
     none: "divide-white",
   },
+  brand: {
+    "50": "divide-brand-50",
+    "100": "divide-brand-100",
+    "200": "divide-brand-200",
+    "300": "divide-brand-300",
+    "400": "divide-brand-400",
+    "500": "divide-brand-500",
+    "600": "divide-brand-600",
+    "700": "divide-brand-700",
+    "800": "divide-brand-800",
+    "900": "divide-brand-900",
+  },
   slate: {
     "50": "divide-slate-50",
     "100": "divide-slate-100",
@@ -2904,6 +3025,18 @@ const outlineColorMap: IColorMap = {
   },
   white: {
     none: "outline-white",
+  },
+  brand: {
+    "50": "outline-brand-50",
+    "100": "outline-brand-100",
+    "200": "outline-brand-200",
+    "300": "outline-brand-300",
+    "400": "outline-brand-400",
+    "500": "outline-brand-500",
+    "600": "outline-brand-600",
+    "700": "outline-brand-700",
+    "800": "outline-brand-800",
+    "900": "outline-brand-900",
   },
   slate: {
     "50": "outline-slate-50",
