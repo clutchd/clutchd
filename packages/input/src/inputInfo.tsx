@@ -29,13 +29,13 @@ function InputInfo({ error, helpText }: IInputInfoProps) {
   return (
     <div className="flex flex-col w-full h-full overflow-hidden text-sm font-normal">
       {helpTextVisible && (
-        <span className="flex flex-row w-full h-full text-gray-500">
+        <span className="flex flex-row w-full h-full text-gray-500 dark:text-gray-400">
           {helpText}
         </span>
       )}
       {errorVisible && (
         <span
-          className="flex flex-row w-full h-full mt-1 text-red-500"
+          className="flex flex-row w-full h-full mt-1 text-red-500 dark:text-red-400"
           role="alert"
         >
           {error}
