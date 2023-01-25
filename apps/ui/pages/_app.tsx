@@ -12,7 +12,7 @@ const manrope = Manrope({
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider>
+    <ThemeProvider attribute="class">
       <style jsx global>
         {`
           :root {

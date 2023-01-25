@@ -42,6 +42,10 @@ function InputShowcase() {
             <TextInput readOnly />
           </Label>
           <CardDivider />
+          <Label content="Required" required>
+            <TextInput required />
+          </Label>
+          <CardDivider />
           <Label content="Forced Error">
             <TextInput error={"An error has occurred"} />
           </Label>
