@@ -43,5 +43,5 @@ export const marginTop = [
 export type IMarginTop = (typeof marginTop)[number];
 
 export interface IWithMarginTop {
-  marginBottom?: IMarginTop;
+  marginTop?: IMarginTop;
 }
