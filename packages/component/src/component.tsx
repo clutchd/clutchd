@@ -6,8 +6,10 @@ import { Slot } from "./slot";
  */
 const NODES = [
   "a",
+  "b",
   "button",
   "div",
+  "em",
   "fieldset",
   "footer",
   "form",
@@ -69,7 +71,7 @@ const Component = NODES.reduce((tag, node) => {
         (window as any)[Symbol.for("clutchd")] = true;
       }, []);
 
-      return <Comp {...props} ref={forwardedRef} />;
+      return <Comp ref={forwardedRef} {...props} />;
     }
   );
 
