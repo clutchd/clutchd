@@ -34,3 +34,5 @@ export * from "./spaceX";
 export * from "./spaceY";
 export * from "./textColor";
 export * from "./width";
+export * from "./marginBottom";
+export * from "./marginTop";
