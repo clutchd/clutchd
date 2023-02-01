@@ -1,4 +1,4 @@
-import { ColorAccent, ColorMap, ColorVariants, Opacity } from "..";
+import { ColorAccent, Opacity } from "..";
 
 /**
  * Colors
@@ -42,26 +42,41 @@ export type ColorWithAccent = `${PaletteColor}-${ColorAccent}`;
 
 export type ColorWithOpacity = `${ColorWithAccent | StaticColor}/${Opacity}`;
 
-export function getColor(
-  map: ColorMap<ColorVariants>,
-  color: Color,
-  accent: ColorAccent = "500"
-) {
-  switch (color) {
-    case "none":
-      return "";
-    case "inherit":
-    case "current":
-    case "transparent":
-    case "black":
-    case "white":
-      return map[color];
-
-    default:
-      return map[`${color}-${accent}`];
-  }
+export interface WithColor {
+  theme?: "none" | PaletteColor;
 }
 
-export interface WithColor {
-  theme?: Color;
+export function getTheme(
+  theme: "none" | PaletteColor,
+  classes: {
+    slate: string;
+    gray: string;
+    zinc: string;
+    neutral: string;
+    stone: string;
+    red: string;
+    orange: string;
+    amber: string;
+    yellow: string;
+    lime: string;
+    green: string;
+    emerald: string;
+    teal: string;
+    cyan: string;
+    sky: string;
+    blue: string;
+    indigo: string;
+    violet: string;
+    purple: string;
+    fuchsia: string;
+    pink: string;
+    rose: string;
+  }
+) {
+  switch (theme) {
+    case "none":
+      return "";
+    default:
+      return classes?.[theme];
+  }
 }
