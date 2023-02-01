@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/twx",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Combining the powers of @clutchd/clsx and @clutchd/tw-merge.",
   "keywords": [
     "clutchd",
