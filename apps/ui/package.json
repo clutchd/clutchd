@@ -20,7 +20,7 @@
     "@clutchd/layout": "*",
     "@clutchd/link": "*",
     "@clutchd/text": "*",
-    "@heroicons/react": "^2.0.13",
+    "@heroicons/react": "^2.0.14",
     "@next/font": "^13.1.2",
     "next": "^13.1.2",
     "next-themes": "^0.2.1",
