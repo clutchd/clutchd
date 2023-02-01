@@ -22,10 +22,19 @@ type ColorMapValue<
   Variant extends ColorVariants,
   Color extends StaticColor | ColorWithAccent
 > = Color extends StaticColor
-  ? `${Variant}-${Color}`
+  ? StaticColorMapValue<Variant, Color>
   : Color extends ColorWithAccent
   ? ColorWithAccentMapValue<Variant, Color>
   : never;
+
+type StaticColorMapValue<
+  Variant extends ColorVariants,
+  Color extends StaticColor
+> = `${Variant}-${Color}${Color extends "white"
+  ? ` dark:${Variant}-gray-900`
+  : Color extends "black"
+  ? ` dark:${Variant}-gray-50`
+  : ""}`;
 
 type DarkColorMapValue<
   Variant extends ColorVariants,
