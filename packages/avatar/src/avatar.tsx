@@ -4,7 +4,6 @@ import {
   getSizePx,
   getTheme,
   WithBorderRadius,
-  WithBorderWidth,
   WithColor,
   WithSize,
 } from "@clutchd/tailwind";
@@ -22,7 +21,6 @@ type IAvatar = React.ElementRef<typeof Component.span>;
  */
 interface IAvatarProps
   extends WithBorderRadius,
-    WithBorderWidth,
     WithColor,
     WithSize,
     IComponentPropsWithoutRef<typeof Component.span> {
@@ -42,7 +40,6 @@ const Avatar = React.forwardRef<IAvatar, IAvatarProps>(
     {
       alt = "",
       borderRadius = "rounded-full",
-      borderWidth = "border",
       children = "U",
       className,
       size = "12",
@@ -89,7 +86,7 @@ const Avatar = React.forwardRef<IAvatar, IAvatarProps>(
     return (
       <Component.span
         className={twx(
-          "inline-flex items-center justify-center w-full h-full align-middle select-none font-semibold overflow-hidden",
+          "inline-flex items-center justify-center w-full h-full align-middle select-none font-semibold overflow-hidden border",
           getTheme(theme, {
             slate:
               "bg-slate-100 dark:bg-slate-800 border-slate-300 dark:border-slate-400 text-slate-500 dark:text-slate-400 ",
@@ -128,7 +125,6 @@ const Avatar = React.forwardRef<IAvatar, IAvatarProps>(
           }),
           getSize(size),
           borderRadius,
-          borderWidth,
           className
         )}
         ref={forwardedRef}
