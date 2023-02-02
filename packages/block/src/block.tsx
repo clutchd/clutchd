@@ -1,5 +1,4 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { WithSpaceY } from "@clutchd/tailwind";
 import { twx } from "@clutchd/twx";
 import * as React from "react";
 
@@ -11,9 +10,7 @@ type IBlock = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Block` props
  */
-interface IBlockProps
-  extends WithSpaceY,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+interface IBlockProps extends IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Block` - A block container for a vertical layout
@@ -21,10 +18,10 @@ interface IBlockProps
  * @returns `Block` component
  */
 const Block = React.forwardRef<IBlock, IBlockProps>(
-  ({ className, spaceY, ...props }, forwardedRef) => {
+  ({ className, ...props }, forwardedRef) => {
     return (
       <div
-        className={twx("block h-full w-full", spaceY, className)}
+        className={twx("block h-full w-full", className)}
         ref={forwardedRef}
         {...props}
       />
