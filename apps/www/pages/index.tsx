@@ -1,11 +1,11 @@
+import { Copyright } from "@clutchd/copyright";
+import { FlexCol } from "@clutchd/flex";
 import { Content, Footer, Header, Page } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
-import { Caption, Text } from "@clutchd/text";
+import { P, Subtle } from "@clutchd/text";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import { FlexCol } from "@clutchd/flex";
-import { Copyright } from "@clutchd/copyright";
 
 export default function Home() {
   return (
@@ -33,16 +33,10 @@ export default function Home() {
             />
           </Link>
           <Link
-            className="flex px-4 ml-auto transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
+            className="flex px-4 ml-auto no-underline transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
             href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo"
           >
-            <Text
-              fontWeight="font-semibold"
-              theme="white"
-              className="self-center"
-            >
-              Manage Subscription
-            </Text>
+            <P className="self-center text-white">Manage Subscription</P>
           </Link>
         </Header>
         <Content>
@@ -61,9 +55,9 @@ export default function Home() {
             <Copyright>Clutchd, LLC</Copyright>
           </FlexCol>
           <FlexCol className="text-right">
-            <Caption>
+            <Subtle>
               <Link href="mailto:william@clutchd.com">Contact Us</Link>
-            </Caption>
+            </Subtle>
           </FlexCol>
         </Footer>
       </Page>
