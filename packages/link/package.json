@@ -32,12 +32,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "^1.0.2",
-    "@clutchd/component": "^1.0.2"
+    "@clutchd/component": "^1.0.2",
+    "@clutchd/twx": "^1.0.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",
     "@clutchd/eslint-config-clutchd": "^1.0.0",
+    "@clutchd/tailwind": "^1.1.0",
     "jest": "^29.3.1",
     "next": "^13.1.2",
     "postcss": "^8.4.20",
