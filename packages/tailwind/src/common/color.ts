@@ -12,12 +12,10 @@ export type StaticColor =
   | "black"
   | "white";
 
+export type GrayColor = "slate" | "gray" | "zinc" | "neutral" | "stone";
+
 export type PaletteColor =
-  | "slate"
-  | "gray"
-  | "zinc"
-  | "neutral"
-  | "stone"
+  | GrayColor
   | "red"
   | "orange"
   | "amber"
@@ -42,8 +40,30 @@ export type ColorWithAccent = `${PaletteColor}-${ColorAccent}`;
 
 export type ColorWithOpacity = `${ColorWithAccent | StaticColor}/${Opacity}`;
 
+export interface WithGrayColor {
+  theme?: "none" | GrayColor;
+}
+
 export interface WithColor {
   theme?: "none" | PaletteColor;
+}
+
+export function getGrayTheme(
+  theme: "none" | GrayColor,
+  classes: {
+    slate: string;
+    gray: string;
+    zinc: string;
+    neutral: string;
+    stone: string;
+  }
+) {
+  switch (theme) {
+    case "none":
+      return "";
+    default:
+      return classes?.[theme];
+  }
 }
 
 export function getTheme(
