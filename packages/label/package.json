@@ -34,9 +34,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "^1.0.2",
     "@clutchd/component": "^1.0.2",
-    "@clutchd/compose-event-handlers": "^1.0.3"
+    "@clutchd/compose-event-handlers": "^1.0.3",
+    "@clutchd/twx": "^1.0.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",
