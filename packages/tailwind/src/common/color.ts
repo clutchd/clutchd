@@ -58,12 +58,15 @@ export function getGrayTheme(
     stone: string;
   }
 ) {
-  switch (theme) {
-    case "none":
-      return "";
-    default:
-      return classes?.[theme];
+  if (theme === "none") {
+    return "";
   }
+
+  if (theme in classes) {
+    return classes[theme];
+  }
+
+  return classes["gray"];
 }
 
 export function getTheme(
@@ -93,10 +96,13 @@ export function getTheme(
     rose: string;
   }
 ) {
-  switch (theme) {
-    case "none":
-      return "";
-    default:
-      return classes?.[theme];
+  if (theme === "none") {
+    return "";
   }
+
+  if (theme in classes) {
+    return classes[theme];
+  }
+
+  return classes["gray"];
 }
