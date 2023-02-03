@@ -15,8 +15,8 @@ type IInput = React.ElementRef<typeof Component.input>;
  */
 interface IInputProps
   extends IInputInfoProps,
-  WithGrayColor,
-  IComponentPropsWithoutRef<typeof Component.input> { }
+    WithGrayColor,
+    IComponentPropsWithoutRef<typeof Component.input> {}
 
 /**
  * Type to define possible `Input` validation states
