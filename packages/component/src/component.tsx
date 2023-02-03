@@ -6,7 +6,6 @@ import { Slot } from "./slot";
  */
 const NODES = [
   "a",
-  "b",
   "blockquote",
   "button",
   "div",
@@ -24,6 +23,8 @@ const NODES = [
   "input",
   "label",
   "main",
+  "small",
+  "strong",
   "optgroup",
   "option",
   "output",
