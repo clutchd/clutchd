@@ -1,5 +1,5 @@
-import { clsx } from "@clutchd/clsx";
-import { IWithSpaceY } from "@clutchd/tailwind";
+import { twx } from "@clutchd/twx";
+import { WithSpaceY } from "@clutchd/tailwind";
 import * as React from "react";
 import { Flex, IFlex, IFlexPropsCommon } from "./flex";
 
@@ -11,7 +11,7 @@ type IFlexCol = IFlex;
 /**
  * Type to define `FlexCol` props
  */
-interface IFlexColProps extends IFlexPropsCommon, IWithSpaceY {}
+interface IFlexColProps extends IFlexPropsCommon, WithSpaceY {}
 
 /**
  * `FlexCol` - A flex container for a vertical layout
@@ -23,11 +23,10 @@ const FlexCol = React.forwardRef<IFlexCol, IFlexColProps>(
     { alignItems, className, justifyContent, spaceY, ...props },
     forwardedRef
   ) => {
-    const classNames = clsx(spaceY, className);
     return (
       <Flex
         alignItems={alignItems}
-        className={classNames}
+        className={twx(spaceY, className)}
         flexDirection="flex-col"
         justifyContent={justifyContent}
         ref={forwardedRef}

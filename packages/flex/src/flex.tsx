@@ -1,9 +1,9 @@
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
-  IWithAlignItems,
-  IWithFlexDirection,
-  IWithJustifyContent,
+  WithAlignItems,
+  WithFlexDirection,
+  WithJustifyContent,
 } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -16,14 +16,14 @@ type IFlex = React.ElementRef<typeof Component.div>;
  * Type to define common props used by all `Flex` components
  */
 interface IFlexPropsCommon
-  extends IWithAlignItems,
-    IWithJustifyContent,
+  extends WithAlignItems,
+    WithJustifyContent,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * Type to define `Flex` props
  */
-interface IFlexProps extends IFlexPropsCommon, IWithFlexDirection {}
+interface IFlexProps extends IFlexPropsCommon, WithFlexDirection {}
 
 /**
  * `Flex` - A primitive flex container that powers various layouts
@@ -37,7 +37,7 @@ const Flex = React.forwardRef<IFlex, IFlexProps>(
   ) => {
     return (
       <Component.div
-        className={clsx(
+        className={twx(
           "flex h-full w-full",
           alignItems,
           flexDirection,
