@@ -36,7 +36,7 @@ const Card = React.forwardRef<ICard, ICardProps>(
     forwardedRef
   ) => {
     const classNames = twx(
-      "relative p-6 rounded-lg shadow ring-1",
+      "relative p-6 rounded-lg shadow ring-1 bg-white dark:bg-gray-900",
       getTheme(theme, {
         slate:
           "border-slate-400 dark:border-slate-500 ring-slate-200 dark:ring-slate-700",
