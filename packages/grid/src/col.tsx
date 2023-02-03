@@ -1,4 +1,4 @@
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   getColSpan,
@@ -9,8 +9,8 @@ import {
   getRowSpanLg,
   getRowSpanMd,
   getRowSpanSm,
-  IWithColSpanValues,
-  IWithRowSpanValues,
+  WithColSpan,
+  WithRowSpan,
 } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -23,8 +23,8 @@ type IGridCol = React.ElementRef<typeof Component.div>;
  * Type to define `GridCol` props
  */
 interface IGridColProps
-  extends IWithColSpanValues,
-    IWithRowSpanValues,
+  extends WithColSpan,
+    WithRowSpan,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
@@ -48,7 +48,7 @@ const GridCol = React.forwardRef<IGridCol, IGridColProps>(
     },
     forwardedRef
   ) => {
-    const classNames = clsx(
+    const classNames = twx(
       getColSpan(colSpan),
       getColSpanSm(colSpanSm),
       getColSpanMd(colSpanMd),

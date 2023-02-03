@@ -1,13 +1,13 @@
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   getGridCols,
   getGridColsLg,
   getGridColsMd,
   getGridColsSm,
-  IWithGapX,
-  IWithGapY,
-  IWithGridColsValues,
+  WithGapX,
+  WithGapY,
+  WithGridCols,
 } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -20,9 +20,9 @@ type IGrid = React.ElementRef<typeof Component.div>;
  * Type to define `Grid` props
  */
 interface IGridProps
-  extends IWithGapX,
-    IWithGapY,
-    IWithGridColsValues,
+  extends WithGapX,
+    WithGapY,
+    WithGridCols,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
@@ -44,7 +44,7 @@ const Grid = React.forwardRef<IGrid, IGridProps>(
     },
     forwardedRef
   ) => {
-    const classNames = clsx(
+    const classNames = twx(
       "grid h-full w-full",
       getGridCols(1),
       getGridColsSm(gridColsSm),

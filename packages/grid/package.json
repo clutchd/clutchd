@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "^1.0.2",
-    "@clutchd/component": "^1.0.2"
+    "@clutchd/component": "^1.0.2",
+    "@clutchd/twx": "^1.0.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",
