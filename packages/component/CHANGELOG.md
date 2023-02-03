@@ -1,5 +1,17 @@
 # @clutchd/component
 
+## 1.1.0
+
+### Minor Changes
+
+- 87552c6: Add b and em tags
+- e30240c: Add support for blockquote
+
+### Patch Changes
+
+- 08b143d: Add small support
+- 29fe8b5: Add h tag support
+
 ## 1.0.2
 
 ### Patch Changes

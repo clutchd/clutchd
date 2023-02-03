@@ -1,5 +1,14 @@
 # @clutchd/card
 
+## 1.0.2
+
+### Patch Changes
+
+- 67e68df: Add bg to match page
+- 5b782b0: Update deps, improve class merge
+- Updated dependencies [e053dbf]
+  - @clutchd/divider@1.1.1
+
 ## 1.0.1
 
 ### Patch Changes

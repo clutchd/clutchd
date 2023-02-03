@@ -1,5 +1,19 @@
 # @clutchd/skeleton
 
+## 1.0.0
+
+### Major Changes
+
+- aff481a: Initial Release, simplify props
+
+### Patch Changes
+
+- Updated dependencies [87552c6]
+- Updated dependencies [08b143d]
+- Updated dependencies [e30240c]
+- Updated dependencies [29fe8b5]
+  - @clutchd/component@1.1.0
+
 ## 0.5.0
 
 ### Minor Changes

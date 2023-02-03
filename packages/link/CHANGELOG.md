@@ -1,5 +1,19 @@
 # @clutchd/link
 
+## 0.3.0
+
+### Minor Changes
+
+- 40a709d: Add theme
+
+### Patch Changes
+
+- Updated dependencies [87552c6]
+- Updated dependencies [08b143d]
+- Updated dependencies [e30240c]
+- Updated dependencies [29fe8b5]
+  - @clutchd/component@1.1.0
+
 ## 0.2.0
 
 ### Minor Changes

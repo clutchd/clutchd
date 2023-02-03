@@ -1,5 +1,21 @@
 # @clutchd/website
 
+## 1.0.2
+
+### Patch Changes
+
+- 5be4de7: update deps
+- Updated dependencies [4ea552b]
+- Updated dependencies [77a0f9c]
+- Updated dependencies [bca1aaa]
+- Updated dependencies [40a709d]
+- Updated dependencies [2e37e99]
+  - @clutchd/flex@1.0.1
+  - @clutchd/layout@1.0.0
+  - @clutchd/text@2.0.0
+  - @clutchd/link@0.3.0
+  - @clutchd/copyright@2.0.1
+
 ## 1.0.1
 
 ### Patch Changes

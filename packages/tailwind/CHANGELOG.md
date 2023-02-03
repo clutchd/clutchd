@@ -1,5 +1,26 @@
 # @clutchd/tailwind
 
+## 2.0.0
+
+### Major Changes
+
+- 7b63f09: Remove need for color maps
+- d857f1a: Major rewrite
+
+### Minor Changes
+
+- e1020f9: Add dark mode support
+- ba8d1bd: Add margin top
+- 51bf0c3: Improve types
+- 5ef6e14: Add margin bottom
+- 13ef9cf: Add gray themes
+
+### Patch Changes
+
+- 5f64478: Fix invalid themes
+- 32de678: Fix black and white dark modes
+- fce41ad: Fix margin top export
+
 ## 1.2.0
 
 ### Minor Changes
