@@ -1,11 +1,11 @@
+import { clsx } from "@clutchd/clsx";
 import { createConfigUtils } from "./config-utils";
 import { mergeClassList } from "./merge-classlist";
-import { ClassNameValue, twJoin } from "./tw-join";
 import { Config } from "./types";
 
 type CreateConfigFirst = () => Config;
 type CreateConfigSubsequent = (config: Config) => Config;
-type TailwindMerge = (...classLists: ClassNameValue[]) => string;
+type TailwindMerge = (...classLists: any[]) => string;
 type ConfigUtils = ReturnType<typeof createConfigUtils>;
 
 export function createTailwindMerge(
@@ -47,6 +47,6 @@ export function createTailwindMerge(
   }
 
   return function callTailwindMerge() {
-    return functionToCall(twJoin.apply(null, arguments as any));
+    return functionToCall(clsx.apply(null, arguments as any));
   };
 }
