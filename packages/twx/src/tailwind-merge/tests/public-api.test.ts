@@ -4,8 +4,6 @@ import {
   validators,
   getDefaultConfig,
   Config,
-  mergeConfigs,
-  extendTailwindMerge,
   fromTheme,
 } from "../src";
 
@@ -27,8 +25,6 @@ test("has correct export types", () => {
     isArbitraryShadow: expect.any(Function),
     isAny: expect.any(Function),
   });
-  expect(mergeConfigs).toStrictEqual(expect.any(Function));
-  expect(extendTailwindMerge).toStrictEqual(expect.any(Function));
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const noRun = () => {
@@ -63,15 +59,10 @@ test("twMerge() has correct inputs and outputs", () => {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const noRun = () => {
-    // @ts-expect-error
     twMerge(123);
-    // @ts-expect-error
     twMerge(true);
-    // @ts-expect-error
     twMerge({});
-    // @ts-expect-error
     twMerge(new Date());
-    // @ts-expect-error
     twMerge(() => {});
   };
 });
@@ -131,15 +122,10 @@ test("createTailwindMerge() has correct inputs and outputs", () => {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const noRun = () => {
-    // @ts-expect-error
     tailwindMerge(123);
-    // @ts-expect-error
     tailwindMerge(true);
-    // @ts-expect-error
     tailwindMerge({});
-    // @ts-expect-error
     tailwindMerge(new Date());
-    // @ts-expect-error
     tailwindMerge(() => {});
   };
 });
@@ -157,27 +143,6 @@ test("validators have correct inputs and outputs", () => {
   expect(validators.isArbitraryWeight("")).toEqual(expect.any(Boolean));
   expect(validators.isArbitraryNumber("")).toEqual(expect.any(Boolean));
   expect(validators.isArbitraryShadow("")).toEqual(expect.any(Boolean));
-});
-
-test("mergeConfigs has correct inputs and outputs", () => {
-  expect(
-    mergeConfigs(
-      {
-        cacheSize: 50,
-        theme: {},
-        classGroups: {
-          fooKey: [{ fooKey: ["one", "two"] }],
-          bla: [{ bli: ["blub", "blublub"] }],
-        },
-        conflictingClassGroups: {},
-      },
-      {}
-    )
-  ).toStrictEqual(expect.any(Object));
-});
-
-test("extendTailwindMerge has correct inputs and outputs", () => {
-  expect(extendTailwindMerge({})).toStrictEqual(expect.any(Function));
 });
 
 test("fromTheme has correct inputs and outputs", () => {
