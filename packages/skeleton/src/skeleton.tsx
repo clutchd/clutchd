@@ -1,5 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import * as React from "react";
 
 /**
@@ -11,9 +11,7 @@ type ISkeleton = React.ElementRef<typeof Component.div>;
  * Type to define `Skeleton` props
  */
 interface ISkeletonProps
-  extends IComponentPropsWithoutRef<typeof Component.div> {
-  dark?: boolean;
-}
+  extends IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Skeleton` - A generic component used to render content structures and loading states
@@ -21,22 +19,16 @@ interface ISkeletonProps
  * @returns `Skeleton` component
  */
 const Skeleton = React.forwardRef<ISkeleton, ISkeletonProps>(
-  ({ className, dark = false, ...props }, forwardedRef) => {
+  ({ children = "\u200b", className, ...props }, forwardedRef) => {
     return (
       <Component.div
-        className={clsx("max-w-full max-h-full", className)}
+        className={twx(
+          "rounded m-auto inline-block bg-gray-200 dark:bg-gray-800 w-[50%] h-6 animate-pulse motion-reduce:animate-none",
+          className
+        )}
         ref={forwardedRef}
         {...props}
-      >
-        <span
-          className={clsx(
-            dark ? "bg-white" : "bg-black",
-            "opacity-50 rounded w-full h-full m-auto inline-block"
-          )}
-        >
-          {"\u200b"}
-        </span>
-      </Component.div>
+      />
     );
   }
 );
