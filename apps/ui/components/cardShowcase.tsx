@@ -1,25 +1,32 @@
+import { Block } from "@clutchd/block";
 import { Card, CardDivider } from "@clutchd/card";
-import { Text } from "@clutchd/text";
+import { P } from "@clutchd/text";
 import React from "react";
 import { Showcase } from ".";
 
-function CardShowcase() {
+function CardShowcase({ color }) {
   return (
     <Showcase title="Card">
-      <Card>
-        <Text>Card</Text>
+      <Card theme={color}>
+        <Block>
+          <P>Card</P>
+        </Block>
       </Card>
-      <Card>
-        <Text>Card with Divider</Text>
-        <CardDivider />
-        <Text>Divider</Text>
+      <Card theme={color}>
+        <Block>
+          <P>Card with Divider</P>
+        </Block>
+        <CardDivider theme={color} />
+        <Block>
+          <P>Divider</P>
+        </Block>
       </Card>
-      <Card>
-        <Text>Card with Multiple Dividers</Text>
-        <CardDivider />
-        <Text>Divider</Text>
-        <CardDivider />
-        <Text>Another Divider</Text>
+      <Card theme={color}>
+        <P>Card with Multiple Dividers</P>
+        <CardDivider theme={color} />
+        <P>Divider</P>
+        <CardDivider theme={color} />
+        <P>Another Divider</P>
       </Card>
     </Showcase>
   );

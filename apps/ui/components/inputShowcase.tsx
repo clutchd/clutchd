@@ -2,12 +2,13 @@ import { Card, CardDivider } from "@clutchd/card";
 import { TextInput } from "@clutchd/input";
 import { Grid, GridCol } from "@clutchd/grid";
 import { Label } from "@clutchd/label";
-import { Title } from "@clutchd/text";
+// import { Lead } from "@clutchd/text";
 import { FlexRow } from "@clutchd/flex";
 import React from "react";
 import { Showcase } from ".";
+import { Lead } from "@clutchd/text";
 
-function InputShowcase() {
+function InputShowcase({ color }) {
   const [generalError, setGeneralError] = React.useState(
     "An error has occurred!"
   );
@@ -17,41 +18,64 @@ function InputShowcase() {
     <Showcase title="Input">
       <Card asChild>
         <form>
-          <Title>Input (General)</Title>
+          <Lead>Input (General)</Lead>
           <CardDivider />
-          <Label content="With Wrapped Label">
-            <TextInput />
-          </Label>
-          <CardDivider />
-          <Label htmlFor="label_test">With Label Sibling</Label>
-          <TextInput id="label_test" helpText="An input with help text" />
-          <CardDivider />
-          <Label content="With Help Text">
-            <TextInput helpText="An input with help text" />
-          </Label>
-          <CardDivider />
-          <Label content="With Placeholder">
-            <TextInput placeholder="Placeholder..." />
-          </Label>
-          <CardDivider />
-          <Label content="Disabled">
-            <TextInput disabled />
-          </Label>
-          <CardDivider />
-          <Label content="Read Only">
-            <TextInput readOnly />
-          </Label>
-          <CardDivider />
-          <Label content="Required" required>
-            <TextInput required />
-          </Label>
-          <CardDivider />
-          <Label content="Forced Error">
-            <TextInput error={"An error has occurred"} />
-          </Label>
-          <CardDivider />
-          <Label content="Dynamic Error">
+          <Label theme={color} content="Dynamic Error">
             <TextInput
+              theme={color}
+              ref={generalInput}
+              error={generalError}
+              disabled
+              helpText="helloooooo?"
+              onChange={() =>
+                setGeneralError(
+                  !generalInput.current?.value ? "An error has occurred!" : ""
+                )
+              }
+              placeholder="Placeholder..."
+            />
+          </Label>
+          <CardDivider />
+          <Label theme={color} content="With Wrapped Label">
+            <TextInput theme={color} />
+          </Label>
+          <CardDivider />
+          <Label theme={color} htmlFor="label_test">
+            With Label Sibling
+          </Label>
+          <TextInput
+            theme={color}
+            id="label_test"
+            helpText="An input with help text"
+          />
+          <CardDivider />
+          <Label theme={color} content="With Help Text">
+            <TextInput theme={color} helpText="An input with help text" />
+          </Label>
+          <CardDivider />
+          <Label theme={color} content="With Placeholder">
+            <TextInput theme={color} placeholder="Placeholder..." />
+          </Label>
+          <CardDivider />
+          <Label theme={color} content="Disabled">
+            <TextInput theme={color} disabled />
+          </Label>
+          <CardDivider />
+          <Label theme={color} content="Read Only">
+            <TextInput theme={color} readOnly />
+          </Label>
+          <CardDivider />
+          <Label theme={color} content="Required" required>
+            <TextInput theme={color} required />
+          </Label>
+          <CardDivider />
+          <Label theme={color} content="Forced Error">
+            <TextInput theme={color} error={"An error has occurred"} />
+          </Label>
+          <CardDivider />
+          <Label theme={color} content="Dynamic Error">
+            <TextInput
+              theme={color}
               ref={generalInput}
               error={generalError}
               onChange={() =>
@@ -65,18 +89,19 @@ function InputShowcase() {
       </Card>
       <Card asChild>
         <form>
-          <Title>Text Input</Title>
+          <Lead>Text Input</Lead>
           <CardDivider />
           <Card>
-            <Title>Flex Layout</Title>
+            <Lead>Flex Layout</Lead>
             <CardDivider />
             <FlexRow>
-              <Label content="Default">
-                <TextInput />
+              <Label theme={color} content="Default">
+                <TextInput theme={color} />
               </Label>
               <CardDivider orientation="vertical" />
-              <Label content="With Props">
+              <Label theme={color} content="With Props">
                 <TextInput
+                  theme={color}
                   helpText="A default text input"
                   placeholder="Placeholder..."
                 />
@@ -85,7 +110,7 @@ function InputShowcase() {
           </Card>
           <CardDivider />
           <Card>
-            <Title>Grid Layout</Title>
+            <Lead>Grid Layout</Lead>
             <CardDivider />
             <Grid
               gridCols={1}
@@ -94,13 +119,14 @@ function InputShowcase() {
               gapY={"gap-y-12"}
             >
               <GridCol>
-                <Label content="Default">
-                  <TextInput />
+                <Label theme={color} content="Default">
+                  <TextInput theme={color} />
                 </Label>
               </GridCol>
               <GridCol>
-                <Label content="With Props">
+                <Label theme={color} content="With Props">
                   <TextInput
+                    theme={color}
                     helpText="A default text input"
                     placeholder="Placeholder..."
                   />
