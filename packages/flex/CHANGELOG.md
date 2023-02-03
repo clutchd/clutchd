@@ -1,5 +1,16 @@
 # @clutchd/flex
 
+## 1.0.1
+
+### Patch Changes
+
+- 4ea552b: Update deps, improve class merges
+- Updated dependencies [87552c6]
+- Updated dependencies [08b143d]
+- Updated dependencies [e30240c]
+- Updated dependencies [29fe8b5]
+  - @clutchd/component@1.1.0
+
 ## 1.0.0
 
 ### Major Changes

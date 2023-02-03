@@ -1,5 +1,23 @@
 # @clutchd/avatar
 
+## 2.0.0
+
+### Major Changes
+
+- aaea11c: Simplify avatar props
+
+### Minor Changes
+
+- b0fae00: Update for new theming
+
+### Patch Changes
+
+- Updated dependencies [87552c6]
+- Updated dependencies [08b143d]
+- Updated dependencies [e30240c]
+- Updated dependencies [29fe8b5]
+  - @clutchd/component@1.1.0
+
 ## 1.0.0
 
 ### Major Changes

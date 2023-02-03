@@ -1,5 +1,43 @@
 # @clutchd/ui
 
+## 0.6.0
+
+### Minor Changes
+
+- a523894: New showcases
+- dcb5e10: Add theme switcher
+
+### Patch Changes
+
+- Updated dependencies [67e68df]
+- Updated dependencies [4ea552b]
+- Updated dependencies [77a0f9c]
+- Updated dependencies [6aacd8d]
+- Updated dependencies [bca1aaa]
+- Updated dependencies [b0fae00]
+- Updated dependencies [4e08959]
+- Updated dependencies [502f2cd]
+- Updated dependencies [40a709d]
+- Updated dependencies [5b782b0]
+- Updated dependencies [7fabcc1]
+- Updated dependencies [aa8af53]
+- Updated dependencies [2e37e99]
+- Updated dependencies [aaea11c]
+- Updated dependencies [1417f64]
+- Updated dependencies [e053dbf]
+  - @clutchd/card@1.0.2
+  - @clutchd/flex@1.0.1
+  - @clutchd/layout@1.0.0
+  - @clutchd/label@1.0.1
+  - @clutchd/text@2.0.0
+  - @clutchd/avatar@2.0.0
+  - @clutchd/block@1.0.0
+  - @clutchd/grid@1.0.1
+  - @clutchd/link@0.3.0
+  - @clutchd/input@0.2.0
+  - @clutchd/copyright@2.0.1
+  - @clutchd/divider@1.1.1
+
 ## 0.5.0
 
 ### Minor Changes

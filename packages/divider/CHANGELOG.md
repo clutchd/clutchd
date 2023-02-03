@@ -1,5 +1,16 @@
 # @clutchd/divider
 
+## 1.1.1
+
+### Patch Changes
+
+- e053dbf: Update deps
+- Updated dependencies [87552c6]
+- Updated dependencies [08b143d]
+- Updated dependencies [e30240c]
+- Updated dependencies [29fe8b5]
+  - @clutchd/component@1.1.0
+
 ## 1.1.0
 
 ### Minor Changes

@@ -1,5 +1,13 @@
 # @clutchd/copyright
 
+## 2.0.1
+
+### Patch Changes
+
+- 2e37e99: Update deps
+- Updated dependencies [bca1aaa]
+  - @clutchd/text@2.0.0
+
 ## 2.0.0
 
 ### Major Changes

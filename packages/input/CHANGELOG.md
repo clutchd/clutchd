@@ -1,5 +1,20 @@
 # @clutchd/input
 
+## 0.2.0
+
+### Minor Changes
+
+- 1417f64: Add theme support, improve class merge
+
+### Patch Changes
+
+- aa8af53: Add dark mode
+- Updated dependencies [87552c6]
+- Updated dependencies [08b143d]
+- Updated dependencies [e30240c]
+- Updated dependencies [29fe8b5]
+  - @clutchd/component@1.1.0
+
 ## 0.1.1
 
 ### Patch Changes
