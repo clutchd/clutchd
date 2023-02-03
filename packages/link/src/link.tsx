@@ -14,7 +14,7 @@ type ILink = React.ElementRef<typeof Component.a>;
  */
 interface ILinkProps
   extends WithColor,
-  IComponentPropsWithoutRef<typeof Component.a> { }
+    IComponentPropsWithoutRef<typeof Component.a> {}
 
 /**
  * `Link` - A simple link component, leverages next/link
