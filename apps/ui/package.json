@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@clutchd/avatar": "*",
+    "@clutchd/block": "*",
     "@clutchd/card": "*",
     "@clutchd/copyright": "*",
     "@clutchd/divider": "*",
