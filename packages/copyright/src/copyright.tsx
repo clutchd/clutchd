@@ -1,15 +1,15 @@
-import { Caption, ICaption, ICaptionProps } from "@clutchd/text";
+import { Subtle, ISubtle, ISubtleProps } from "@clutchd/text";
 import * as React from "react";
 
 /**
  * Type to define `Copyright` element
  */
-type ICopyright = ICaption;
+type ICopyright = ISubtle;
 
 /**
  * Type to define `Copyright` props
  */
-interface ICopyrightProps extends ICaptionProps {}
+interface ICopyrightProps extends ISubtleProps {}
 
 /**
  * `Copyright` - A simple text component used to display the copyright of an entity for the current year
@@ -18,11 +18,10 @@ interface ICopyrightProps extends ICaptionProps {}
  */
 const Copyright = React.forwardRef<ICopyright, ICopyrightProps>(
   ({ children, ...props }, forwardedRef) => {
-    const year = new Date().getFullYear();
     return (
-      <Caption ref={forwardedRef} {...props}>
-        © {year} {children}
-      </Caption>
+      <Subtle ref={forwardedRef} {...props}>
+        © {new Date().getFullYear()} {children}
+      </Subtle>
     );
   }
 );
