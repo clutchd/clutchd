@@ -1,7 +1,7 @@
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { ILayoutWithDirection, Layout } from "./layout";
 import * as React from "react";
+import { ILayoutWithDirection, Layout } from "./layout";
 
 /**
  * Type to define `Page` element
@@ -24,8 +24,8 @@ const Page = React.forwardRef<IPage, IPageProps>(
   ({ className, direction = "col", ...props }, forwardedRef) => {
     return (
       <Layout
-        className={clsx(
-          "min-h-screen min-w-screen subpixel-antialiased",
+        className={twx(
+          "min-h-screen min-w-screen subpixel-antialiased bg-white dark:bg-gray-900",
           className
         )}
         direction={direction}

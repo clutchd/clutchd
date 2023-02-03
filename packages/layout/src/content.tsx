@@ -1,6 +1,6 @@
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { ILayoutWithDirection, ILayoutWithPadding, Layout } from "./layout";
+import { ILayoutWithDirection, Layout } from "./layout";
 import * as React from "react";
 
 /**
@@ -13,7 +13,6 @@ type IContent = React.ElementRef<typeof Component.main>;
  */
 interface IContentProps
   extends ILayoutWithDirection,
-    ILayoutWithPadding,
     IComponentPropsWithoutRef<typeof Component.main> {}
 
 /**
@@ -22,14 +21,11 @@ interface IContentProps
  * @returns `Content` component
  */
 const Content = React.forwardRef<IContent, IContentProps>(
-  (
-    { children, className, direction = "col", padding = true, ...props },
-    forwardedRef
-  ) => {
+  ({ children, className, direction = "col", ...props }, forwardedRef) => {
     return (
       <Layout
         asChild
-        className={clsx("flex-1", padding ? "p-6 sm:p-8" : "", className)}
+        className={twx("flex-1 p-6 sm:p-8", className)}
         direction={direction}
         {...props}
       >

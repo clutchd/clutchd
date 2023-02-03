@@ -1,7 +1,7 @@
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import * as React from "react";
-import { ILayoutWithDirection, ILayoutWithPadding, Layout } from "./layout";
+import { ILayoutWithDirection, Layout } from "./layout";
 
 /**
  * Type to define `Header` element
@@ -13,7 +13,6 @@ type IHeader = React.ElementRef<typeof Component.header>;
  */
 interface IHeaderProps
   extends ILayoutWithDirection,
-    ILayoutWithPadding,
     IComponentPropsWithoutRef<typeof Component.header> {}
 
 /**
@@ -22,14 +21,11 @@ interface IHeaderProps
  * @returns `Header` component
  */
 const Header = React.forwardRef<IHeader, IHeaderProps>(
-  (
-    { children, className, direction = "row", padding = true, ...props },
-    forwardedRef
-  ) => {
+  ({ children, className, direction = "row", ...props }, forwardedRef) => {
     return (
       <Layout
         asChild
-        className={clsx(padding ? "p-6 sm:p-8" : "", className)}
+        className={twx("p-6 sm:p-8", className)}
         direction={direction}
         {...props}
       >

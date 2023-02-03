@@ -1,6 +1,6 @@
-import { clsx } from "@clutchd/clsx";
+import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { ILayoutWithDirection, ILayoutWithPadding, Layout } from "./layout";
+import { ILayoutWithDirection, Layout } from "./layout";
 import * as React from "react";
 
 /**
@@ -13,7 +13,6 @@ type IFooter = React.ElementRef<typeof Component.footer>;
  */
 interface IFooterProps
   extends ILayoutWithDirection,
-    ILayoutWithPadding,
     IComponentPropsWithoutRef<typeof Component.footer> {}
 
 /**
@@ -22,14 +21,11 @@ interface IFooterProps
  * @returns `Footer` component
  */
 const Footer = React.forwardRef<IFooter, IFooterProps>(
-  (
-    { children, className, direction = "row", padding = true, ...props },
-    forwardedRef
-  ) => {
+  ({ children, className, direction = "row", ...props }, forwardedRef) => {
     return (
       <Layout
         asChild
-        className={clsx(padding ? "p-6 sm:p-8" : "", className)}
+        className={twx("p-6 sm:p-8", className)}
         direction={direction}
         {...props}
       >

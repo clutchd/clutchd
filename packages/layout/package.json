@@ -32,9 +32,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "^1.0.2",
     "@clutchd/component": "^1.0.2",
-    "@clutchd/flex": "1.0.0"
+    "@clutchd/flex": "1.0.0",
+    "@clutchd/twx": "^1.0.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",

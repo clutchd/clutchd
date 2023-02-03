@@ -14,13 +14,6 @@ interface ILayoutWithDirection {
 }
 
 /**
- * Type to define the padding prop used by multiple `Layout` components
- */
-interface ILayoutWithPadding {
-  padding?: boolean;
-}
-
-/**
  * Type to define `Layout` props
  */
 interface ILayoutProps extends ILayoutWithDirection, Record<string, any> {}
@@ -45,4 +38,4 @@ const Layout = React.forwardRef<ILayout, ILayoutProps>(
 Layout.displayName = "Layout";
 
 export { Layout };
-export type { ILayout, ILayoutProps, ILayoutWithDirection, ILayoutWithPadding };
+export type { ILayout, ILayoutProps, ILayoutWithDirection };
