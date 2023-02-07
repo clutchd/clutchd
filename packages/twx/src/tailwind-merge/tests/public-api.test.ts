@@ -1,7 +1,6 @@
-import { twMerge, validators, getDefaultConfig, fromTheme } from "../src";
+import { validators, getDefaultConfig, fromTheme } from "../src";
 
 test("has correct export types", () => {
-  expect(twMerge).toStrictEqual(expect.any(Function));
   expect(getDefaultConfig).toStrictEqual(expect.any(Function));
   expect(validators).toEqual({
     isLength: expect.any(Function),
@@ -16,40 +15,6 @@ test("has correct export types", () => {
     isArbitraryShadow: expect.any(Function),
     isAny: expect.any(Function),
   });
-});
-
-test("twMerge() has correct inputs and outputs", () => {
-  expect(twMerge("")).toStrictEqual(expect.any(String));
-  expect(twMerge("hello world")).toStrictEqual(expect.any(String));
-  expect(twMerge("-:-:-:::---h-")).toStrictEqual(expect.any(String));
-  expect(twMerge("hello world", "-:-:-:::---h-")).toStrictEqual(
-    expect.any(String)
-  );
-  expect(
-    twMerge("hello world", "-:-:-:::---h-", "", "something")
-  ).toStrictEqual(expect.any(String));
-  expect(twMerge("hello world", undefined)).toStrictEqual(expect.any(String));
-  expect(twMerge("hello world", undefined, null)).toStrictEqual(
-    expect.any(String)
-  );
-  expect(twMerge("hello world", undefined, null, false)).toStrictEqual(
-    expect.any(String)
-  );
-  expect(twMerge("hello world", [undefined], [null, false])).toStrictEqual(
-    expect.any(String)
-  );
-  expect(
-    twMerge("hello world", [undefined], [null, [false, "some-class"], []])
-  ).toStrictEqual(expect.any(String));
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const noRun = () => {
-    twMerge(123);
-    twMerge(true);
-    twMerge({});
-    twMerge(new Date());
-    twMerge(() => {});
-  };
 });
 
 test("validators have correct inputs and outputs", () => {
