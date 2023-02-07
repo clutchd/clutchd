@@ -1,30 +1,27 @@
 import { clsx } from "@clutchd/clsx";
-import { createConfigUtils } from "./config-utils";
 import { mergeClassList } from "./merge-classlist";
 import { getDefaultConfig } from "./default-config";
+import { createLruCache } from "./lru-cache";
+import { createSplitModifiers } from "./modifier-utils";
+import { createClassUtils } from "./class-utils";
 
 type TailwindMerge = (...classLists: any[]) => string;
-type ConfigUtils = ReturnType<typeof createConfigUtils>;
 
 export function createTailwindMerge(): TailwindMerge {
-  let configUtils: ConfigUtils;
-  let cacheGet: ConfigUtils["cache"]["get"];
-  let cacheSet: ConfigUtils["cache"]["set"];
-  let functionToCall = initTailwindMerge;
-
-  function initTailwindMerge(classList: string) {
-    configUtils = createConfigUtils(getDefaultConfig());
-    cacheGet = configUtils.cache.get;
-    cacheSet = configUtils.cache.set;
-    functionToCall = tailwindMerge;
-
-    return tailwindMerge(classList);
-  }
+  let configUtils = {
+    cache: createLruCache<string, string>(getDefaultConfig().cacheSize),
+    splitModifiers: createSplitModifiers(getDefaultConfig()),
+    ...createClassUtils(getDefaultConfig()),
+  };
+  let cacheGet = configUtils.cache.get;
+  let cacheSet = configUtils.cache.set;
+  let functionToCall = tailwindMerge;
 
   function tailwindMerge(classList: string) {
     const cachedResult = cacheGet(classList);
 
     if (cachedResult) {
+      console.log(classList + " => " + cachedResult);
       return cachedResult;
     }
 
