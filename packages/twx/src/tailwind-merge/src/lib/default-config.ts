@@ -95,7 +95,6 @@ export function getDefaultConfig() {
     ] as const;
 
   return {
-    cacheSize: 500,
     theme: {
       colors: [isAny],
       spacing: [isLength],

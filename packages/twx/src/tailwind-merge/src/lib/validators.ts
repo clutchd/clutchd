@@ -58,11 +58,6 @@ export function isArbitraryNumber(classPart: string) {
     : false;
 }
 
-/**
- * @deprecated Will be removed in next major version. Use `isArbitraryNumber` instead.
- */
-export const isArbitraryWeight = isArbitraryNumber;
-
 export function isInteger(classPart: string) {
   const arbitraryValue = arbitraryValueRegex.exec(classPart)?.[1];
 

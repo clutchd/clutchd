@@ -1,11 +1,5 @@
 export interface Config {
   /**
-   * Integer indicating size of LRU cache used for memoizing results.
-   * - Cache might be up to twice as big as `cacheSize`
-   * - No cache is used for values <= 0
-   */
-  cacheSize: number;
-  /**
    * Prefix added to Tailwind-generated classes
    * @see https://tailwindcss.com/docs/configuration#prefix
    */

@@ -1,12 +1,13 @@
-import { ConfigUtils } from "./config-utils";
-import { IMPORTANT_MODIFIER, sortModifiers } from "./modifier-utils";
+import { getClassGroupId, getConflictingClassGroupIds } from "./class-utils";
+import {
+  IMPORTANT_MODIFIER,
+  sortModifiers,
+  splitModifiers,
+} from "./modifier-utils";
 
 const SPLIT_CLASSES_REGEX = /\s+/;
 
-export function mergeClassList(classList: string, configUtils: ConfigUtils) {
-  const { splitModifiers, getClassGroupId, getConflictingClassGroupIds } =
-    configUtils;
-
+export function mergeClassList(classList: string) {
   /**
    * Set of classGroupIds in following format:
    * `{importantModifier}{variantModifiers}{classGroupId}`

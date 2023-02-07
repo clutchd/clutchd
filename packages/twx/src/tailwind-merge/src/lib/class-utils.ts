@@ -1,3 +1,4 @@
+import { getDefaultConfig } from "./default-config";
 import {
   ClassGroup,
   ClassGroupId,
@@ -20,31 +21,25 @@ interface ClassValidatorObject {
 
 const CLASS_PART_SEPARATOR = "-";
 
-export function createClassUtils(config: Config) {
-  const classMap = createClassMap(config);
+const classMap = createClassMap(getDefaultConfig());
 
-  function getClassGroupId(className: string) {
-    const classParts = className.split(CLASS_PART_SEPARATOR);
+export function getClassGroupId(className: string) {
+  const classParts = className.split(CLASS_PART_SEPARATOR);
 
-    // Classes like `-inset-1` produce an empty string as first classPart. We assume that classes for negative values are used correctly and remove it from classParts.
-    if (classParts[0] === "" && classParts.length !== 1) {
-      classParts.shift();
-    }
-
-    return (
-      getGroupRecursive(classParts, classMap) ||
-      getGroupIdForArbitraryProperty(className)
-    );
+  // Classes like `-inset-1` produce an empty string as first classPart. We assume that classes for negative values are used correctly and remove it from classParts.
+  if (classParts[0] === "" && classParts.length !== 1) {
+    classParts.shift();
   }
 
-  function getConflictingClassGroupIds(classGroupId: ClassGroupId) {
-    return config.conflictingClassGroups[classGroupId] || [];
-  }
+  return (
+    getGroupRecursive(classParts, classMap) ||
+    getGroupIdForArbitraryProperty(className)
+  );
+}
 
-  return {
-    getClassGroupId,
-    getConflictingClassGroupIds,
-  };
+export function getConflictingClassGroupIds(classGroupId: ClassGroupId) {
+  const config: Config = getDefaultConfig();
+  return config.conflictingClassGroups[classGroupId] || [];
 }
 
 function getGroupRecursive(
