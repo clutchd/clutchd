@@ -1,6 +1,5 @@
 export const IMPORTANT_MODIFIER = "!";
 
-// splitModifiers inspired by https://github.com/tailwindlabs/tailwindcss/blob/v3.2.2/src/util/splitAtTopLevelOnly.js
 export function splitModifiers(className: string) {
   const separator = ":";
   let bracketDepth = 0;

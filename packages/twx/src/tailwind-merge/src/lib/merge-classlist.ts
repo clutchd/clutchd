@@ -3,7 +3,7 @@ import {
   IMPORTANT_MODIFIER,
   sortModifiers,
   splitModifiers,
-} from "./modifier-utils";
+} from "../../../modifier-utils";
 
 const SPLIT_CLASSES_REGEX = /\s+/;
 
