@@ -68,9 +68,7 @@ test("twMerge() has correct inputs and outputs", () => {
 });
 
 test("createTailwindMerge() has correct inputs and outputs", () => {
-  expect(createTailwindMerge(getDefaultConfig)).toStrictEqual(
-    expect.any(Function)
-  );
+  expect(createTailwindMerge()).toStrictEqual(expect.any(Function));
   expect(
     createTailwindMerge(() => ({
       cacheSize: 0,

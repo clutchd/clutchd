@@ -1,31 +1,19 @@
 import { clsx } from "@clutchd/clsx";
 import { createConfigUtils } from "./config-utils";
 import { mergeClassList } from "./merge-classlist";
-import { Config } from "./types";
+import { getDefaultConfig } from "./default-config";
 
-type CreateConfigFirst = () => Config;
-type CreateConfigSubsequent = (config: Config) => Config;
 type TailwindMerge = (...classLists: any[]) => string;
 type ConfigUtils = ReturnType<typeof createConfigUtils>;
 
-export function createTailwindMerge(
-  ...createConfig: [CreateConfigFirst, ...CreateConfigSubsequent[]]
-): TailwindMerge {
+export function createTailwindMerge(): TailwindMerge {
   let configUtils: ConfigUtils;
   let cacheGet: ConfigUtils["cache"]["get"];
   let cacheSet: ConfigUtils["cache"]["set"];
   let functionToCall = initTailwindMerge;
 
   function initTailwindMerge(classList: string) {
-    const [firstCreateConfig, ...restCreateConfig] = createConfig;
-
-    const config = restCreateConfig.reduce(
-      (previousConfig, createConfigCurrent) =>
-        createConfigCurrent(previousConfig),
-      firstCreateConfig()
-    );
-
-    configUtils = createConfigUtils(config);
+    configUtils = createConfigUtils(getDefaultConfig());
     cacheGet = configUtils.cache.get;
     cacheSet = configUtils.cache.set;
     functionToCall = tailwindMerge;
