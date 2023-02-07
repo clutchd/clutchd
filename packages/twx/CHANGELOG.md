@@ -1,5 +1,12 @@
 # @clutchd/twx
 
+## 1.0.2
+
+### Patch Changes
+
+- Reduce bundle
+- f149804: Reduce bundle size
+
 ## 1.0.1
 
 ### Patch Changes
