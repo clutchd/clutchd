@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 1.0.1
+
+### Patch Changes
+
+- 4b2d78a: Update lib
+
 ## 1.0.0
 
 ### Major Changes
