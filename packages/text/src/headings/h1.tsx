@@ -26,7 +26,7 @@ const H1 = React.forwardRef<IH1, IH1Props>(
     return (
       <h1
         className={twx(
-          "font-extrabold text-3xl sm:text-4xl mt-0 [&:not(:last-child)]:mb-8",
+          "font-extrabold text-3xl sm:text-4xl mt-0 mb-8",
           getHeadingTheme(theme),
           className
         )}

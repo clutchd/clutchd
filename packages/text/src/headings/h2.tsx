@@ -26,7 +26,7 @@ const H2 = React.forwardRef<IH2, IH2Props>(
     return (
       <h2
         className={twx(
-          "font-bold text-2xl sm:text-3xl [&:not(:first-child)]:mt-10 [&:not(:last-child)]:mb-6",
+          "font-bold text-2xl sm:text-3xl mt-10 mb-6",
           getHeadingTheme(theme),
           className
         )}

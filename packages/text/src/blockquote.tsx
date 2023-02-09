@@ -25,7 +25,7 @@ const Blockquote = React.forwardRef<IBlockquote, IBlockquoteProps>(
     return (
       <blockquote
         className={twx(
-          "font-medium text-sm sm:text-base lg:text-lg [&:not(:first-child)]:mt-6 [&:not(:last-child)]:mb-6 leading-normal pl-6 italic border-l-4",
+          "font-medium text-sm sm:text-base lg:text-lg my-6 leading-normal pl-6 italic border-l-4",
           getTheme(theme, {
             slate:
               "text-slate-900 dark:text-slate-100 border-slate-200 dark:border-slate-700",

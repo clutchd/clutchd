@@ -25,7 +25,7 @@ const P = React.forwardRef<IP, IPProps>(
     return (
       <p
         className={twx(
-          "font-baseline text-sm sm:text-base lg:text-lg [&:not(:first-child)]:mt-6 [&:not(:last-child)]:mb-6",
+          "font-baseline text-sm sm:text-base lg:text-lg my-6",
           getTheme(theme, {
             slate: "text-slate-700 dark:text-slate-300",
             gray: "text-gray-700 dark:text-gray-300",

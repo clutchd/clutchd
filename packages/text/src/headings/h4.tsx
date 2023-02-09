@@ -26,7 +26,7 @@ const H4 = React.forwardRef<IH4, IH4Props>(
     return (
       <h4
         className={twx(
-          "font-semibold text-lg sm:text-xl [&:not(:first-child)]:mt-8 [&:not(:last-child)]:mb-2",
+          "font-semibold text-lg sm:text-xl mt-8 mb-2",
           getHeadingTheme(theme),
           className
         )}

@@ -25,7 +25,7 @@ const Lead = React.forwardRef<ILead, ILeadProps>(
     return (
       <p
         className={twx(
-          "font-baseline text-base sm:text-lg [&:not(:first-child)]:mt-6 [&:not(:last-child)]:mb-6",
+          "font-baseline text-base sm:text-lg my-6",
           getTheme(theme, {
             slate: "text-slate-600 dark:text-slate-400",
             gray: "text-gray-600 dark:text-gray-400",
