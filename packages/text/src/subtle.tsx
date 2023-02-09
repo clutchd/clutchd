@@ -13,7 +13,7 @@ type ISubtle = React.ElementRef<typeof Component.p>;
  */
 interface ISubtleProps
   extends WithColor,
-  IComponentPropsWithoutRef<typeof Component.p> { }
+    IComponentPropsWithoutRef<typeof Component.p> {}
 
 /**
  * `Subtle` - A small text component intended for subtle copy

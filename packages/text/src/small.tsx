@@ -11,7 +11,7 @@ type ISmall = React.ElementRef<typeof Component.small>;
  * Type to define `Small` props
  */
 interface ISmallProps
-  extends IComponentPropsWithoutRef<typeof Component.small> { }
+  extends IComponentPropsWithoutRef<typeof Component.small> {}
 
 /**
  * `Small` - A inline text component used to make the provided text small
