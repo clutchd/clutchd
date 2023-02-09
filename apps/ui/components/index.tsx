@@ -1,4 +1,5 @@
 export { AvatarShowcase } from "./avatarShowcase";
+export { ButtonShowcase } from "./buttonShowcase";
 export { CardShowcase } from "./cardShowcase";
 export { ColorSwitch } from "./colorSwitch";
 export { InputShowcase } from "./inputShowcase";

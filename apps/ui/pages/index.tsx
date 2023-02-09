@@ -10,6 +10,7 @@ import Image from "next/image";
 import * as React from "react";
 import {
   AvatarShowcase,
+  ButtonShowcase,
   CardShowcase,
   ColorSwitch,
   InputShowcase,
@@ -60,6 +61,7 @@ export default function Home() {
             <Divider />
             <TextShowcase color={color} />
             <AvatarShowcase color={color} />
+            <ButtonShowcase color={color} />
             <CardShowcase color={color} />
             <InputShowcase color={color} />
           </Block>
