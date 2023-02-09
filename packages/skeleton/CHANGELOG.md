@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 1.0.1
+
+### Patch Changes
+
+- 2b075c2: Render as block by default
+
 ## 1.0.0
 
 ### Major Changes
