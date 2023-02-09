@@ -390,11 +390,7 @@ function TextShowcase({ color }) {
           <H2 theme={color}>The King&apos;s Plan</H2>
           <P theme={color}>
             The king thought long and hard, and finally came up with{" "}
-            <Link
-              theme={color}
-              href="#"
-              className="font-medium underline text-slate-900 underline-offset-4 dark:text-slate-50"
-            >
+            <Link theme={color} href="#">
               a brilliant plan
             </Link>
             : he would tax the jokes in the kingdom.
