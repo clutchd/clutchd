@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 2.0.2
+
+### Patch Changes
+
+- d3f2f78: Improve small device subtle text
+
 ## 2.0.1
 
 ### Patch Changes
