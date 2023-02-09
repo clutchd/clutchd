@@ -1,5 +1,15 @@
 # @clutchd/protect
 
+## 2.0.0
+
+### Major Changes
+
+- 75c077d: Rewrite with improve props and stability
+
+### Patch Changes
+
+- 5a4c992: Fix peer deps
+
 ## 1.0.0
 
 ### Major Changes
