@@ -13,7 +13,7 @@ type ISubtle = React.ElementRef<typeof Component.p>;
  */
 interface ISubtleProps
   extends WithColor,
-    IComponentPropsWithoutRef<typeof Component.p> {}
+  IComponentPropsWithoutRef<typeof Component.p> { }
 
 /**
  * `Subtle` - A small text component intended for subtle copy
@@ -25,7 +25,7 @@ const Subtle = React.forwardRef<ISubtle, ISubtleProps>(
     return (
       <p
         className={twx(
-          "text-sm",
+          "text-xs sm:text-sm",
           getTheme(theme, {
             slate: "text-slate-500 dark:text-slate-400",
             gray: "text-gray-500 dark:text-gray-400",

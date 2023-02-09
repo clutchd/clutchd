@@ -11,7 +11,7 @@ type ISmall = React.ElementRef<typeof Component.small>;
  * Type to define `Small` props
  */
 interface ISmallProps
-  extends IComponentPropsWithoutRef<typeof Component.small> {}
+  extends IComponentPropsWithoutRef<typeof Component.small> { }
 
 /**
  * `Small` - A inline text component used to make the provided text small
@@ -21,7 +21,7 @@ interface ISmallProps
 const Small = React.forwardRef<ISmall, ISmallProps>((props, forwardedRef) => {
   return (
     <small
-      className={twx("text-sm font-medium leading-none")}
+      className={twx("text-xs sm:text-sm font-medium leading-none")}
       {...props}
       ref={forwardedRef}
     />
