@@ -11,7 +11,7 @@ type ISkeleton = React.ElementRef<typeof Component.div>;
  * Type to define `Skeleton` props
  */
 interface ISkeletonProps
-  extends IComponentPropsWithoutRef<typeof Component.div> {}
+  extends IComponentPropsWithoutRef<typeof Component.div> { }
 
 /**
  * `Skeleton` - A generic component used to render content structures and loading states
@@ -23,7 +23,7 @@ const Skeleton = React.forwardRef<ISkeleton, ISkeletonProps>(
     return (
       <Component.div
         className={twx(
-          "rounded m-auto block bg-gray-200 dark:bg-gray-800 w-full h-full animate-pulse motion-reduce:animate-none",
+          "rounded block bg-black/10 dark:bg-white/10 w-full h-full animate-pulse motion-reduce:animate-none",
           className
         )}
         ref={forwardedRef}
