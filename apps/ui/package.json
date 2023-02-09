@@ -11,6 +11,7 @@
   "dependencies": {
     "@clutchd/avatar": "*",
     "@clutchd/block": "*",
+    "@clutchd/button": "*",
     "@clutchd/card": "*",
     "@clutchd/copyright": "*",
     "@clutchd/divider": "*",
