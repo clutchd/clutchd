@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 1.0.3
+
+### Patch Changes
+
+- 3027867: Improve colors, remove margin
+
 ## 1.0.2
 
 ### Patch Changes
