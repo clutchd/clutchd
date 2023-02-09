@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 2.0.1
+
+### Patch Changes
+
+- 47540e1: Update margins for easier overrides
+
 ## 2.0.0
 
 ### Major Changes
