@@ -1,17 +1,19 @@
-import { useSession } from "next-auth/react";
-import { useRouter } from "next/router";
-import { IWithAuthProps, IWithLoadingProps } from "./protect";
+import { NextRouter } from "next/router";
+import * as React from "react";
 
 /**
  * Type to define `ProtectPage` element
  */
-type IProtectPage = typeof ProtectPage;
+type IProtectPage = React.ElementRef<typeof React.Fragment>;
 
 /**
  * Type to define `ProtectPage` props
  */
-interface IProtectPageProps extends IWithAuthProps, IWithLoadingProps {
-  secret?: boolean;
+interface IProtectPageProps {
+  children: React.ReactNode;
+  loading?: React.ReactNode;
+  status: "loading" | "authenticated" | "unauthenticated";
+  router: NextRouter;
 }
 
 /**
@@ -19,47 +21,34 @@ interface IProtectPageProps extends IWithAuthProps, IWithLoadingProps {
  * @param props `IProtectPageProps` used to render this `ProtectPage`
  * @returns `ProtectPage` component
  */
-function ProtectPage({
-  isAuth = true,
-  isLoading = false,
-  loading = null,
-  secret = true,
-  ...props
-}: IProtectPageProps) {
-  const { status } = useSession();
-  const router = useRouter();
+const ProtectPage = React.forwardRef<IProtectPage, IProtectPageProps>(
+  ({ children, loading = null, status, router }) => {
+    // if authenticated, return authenticated page
+    if (status === "authenticated") {
+      return <>{children}</>;
+    }
 
-  // page is loading when session is loading, or custom isLoading is true
-  const loadingState = status === "loading" || isLoading;
+    // // if page is not secret (public loading), return authenticated page
+    // if (loadingState && !secret) {
+    //   return <>{props.children}</>;
+    // }
 
-  // page is authenticated when session is authenticated, and custom isAuth is true
-  const authenticatedState = status === "authenticated" && isAuth;
+    // if unauthenticated, redirect to new url
+    if (status === "unauthenticated") {
+      router.push(
+        `login${
+          router.pathname && `?next=${encodeURIComponent(router.pathname)}`
+        }`,
+        undefined,
+        { shallow: true }
+      );
+    }
 
-  // if authenticated, and not loading, return authenticated page
-  if (authenticatedState && !loadingState) {
-    return <>{props.children}</>;
+    // otherwise, page is not done loading (private loading)
+    // TODO: Add default loading icon/options
+    return <>{loading}</>;
   }
-
-  // if page is not secret (public loading), return authenticated page
-  if (loadingState && !secret) {
-    return <>{props.children}</>;
-  }
-
-  // otherwise, generate a potential redirect link
-  let redirectRoute = "login"; // TODO: Customize redirect link
-  if (router.pathname) {
-    redirectRoute += `?next=${encodeURIComponent(router.pathname)}`;
-  }
-
-  // if not authenticated, and not loading, redirect to new url
-  if (!authenticatedState && !loadingState) {
-    router.push(redirectRoute, undefined, { shallow: true });
-  }
-
-  // otherwise, page is not done loading (private loading)
-  // TODO: Add default loading icon/options
-  return <>{loading}</>;
-}
+);
 
 ProtectPage.displayName = "ProtectPage";
 

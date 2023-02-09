@@ -1,49 +1,42 @@
-import { useSession } from "next-auth/react";
-import { IWithLoadingProps, IWithUnauthProps } from "./protect";
+import * as React from "react";
 
 /**
  * Type to define `ProtectComponent` element
  */
-type IProtectComponent = typeof ProtectComponent;
+type IProtectComponent = React.ElementRef<typeof React.Fragment>;
 
 /**
  * Type to define `ProtectComponent` props
  */
-interface IProtectComponentProps extends IWithLoadingProps, IWithUnauthProps {}
+interface IProtectComponentProps {
+  children: React.ReactNode;
+  loading?: React.ReactNode;
+  status: "loading" | "authenticated" | "unauthenticated";
+  unauthenticated?: React.ReactNode;
+}
 
 /**
  * `ProtectComponent` - A HOC that will protect a component from displaying sensitive data to an unauthenticated user
  * @param props `IProtectComponentProps` used to render this `ProtectComponent`
  * @returns `ProtectComponent` component
  */
-function ProtectComponent({
-  isAuth = true,
-  isLoading = false,
-  loading = null,
-  unauth = null,
-  ...props
-}: IProtectComponentProps) {
-  const { status } = useSession();
-
-  // page is loading when session is loading, or custom isLoading is true
-  const loadingState = status === "loading" || isLoading;
-
-  // page is authenticated when session is authenticated, and custom isAuth is true
-  const authenticatedState = status === "authenticated" && isAuth;
-
-  // if authenticated, and not loading, return authenticated component
-  if (authenticatedState && !loadingState) {
-    return <>{props.children}</>;
+const ProtectComponent = React.forwardRef<
+  IProtectComponent,
+  IProtectComponentProps
+>(({ children, loading, status, unauthenticated }) => {
+  // if authenticated, return authenticated component
+  if (status === "authenticated") {
+    return <>{children}</>;
   }
 
-  // if not authenticated, and not loading, return unauthenticated component
-  if (!authenticatedState && !loadingState) {
-    return <>{unauth}</>;
+  // if unauthenticated, return unauthenticated component
+  if (status === "unauthenticated") {
+    return <>{unauthenticated}</>;
   }
 
   // otherwise, still loading
   return <>{loading}</>;
-}
+});
 
 ProtectComponent.displayName = "ProtectComponent";
 
