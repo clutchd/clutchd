@@ -21,35 +21,37 @@ interface IProtectPageProps {
  * @param props `IProtectPageProps` used to render this `ProtectPage`
  * @returns `ProtectPage` component
  */
-const ProtectPage = React.forwardRef<IProtectPage, IProtectPageProps>(
-  ({ children, loading = null, status, router }) => {
-    // if authenticated, return authenticated page
-    if (status === "authenticated") {
-      return <>{children}</>;
-    }
-
-    // // if page is not secret (public loading), return authenticated page
-    // if (loadingState && !secret) {
-    //   return <>{props.children}</>;
-    // }
-
-    // if unauthenticated, redirect to new url
-    if (status === "unauthenticated") {
-      router.push(
-        `login${
-          router.pathname && `?next=${encodeURIComponent(router.pathname)}`
-        }`,
-        undefined,
-        { shallow: true }
-      );
-    }
-
-    // otherwise, page is not done loading (private loading)
-    // TODO: Add default loading icon/options
-    return <>{loading}</>;
+function ProtectPage({
+  children,
+  loading = null,
+  status,
+  router,
+}: IProtectPageProps) {
+  // if authenticated, return authenticated page
+  if (status === "authenticated") {
+    return <>{children}</>;
   }
-);
 
+  // // if page is not secret (public loading), return authenticated page
+  // if (loadingState && !secret) {
+  //   return <>{props.children}</>;
+  // }
+
+  // if unauthenticated, redirect to new url
+  if (status === "unauthenticated") {
+    router.push(
+      `login${
+        router.pathname && `?next=${encodeURIComponent(router.pathname)}`
+      }`,
+      undefined,
+      { shallow: true }
+    );
+  }
+
+  // otherwise, page is not done loading (private loading)
+  // TODO: Add default loading icon/options
+  return <>{loading}</>;
+}
 ProtectPage.displayName = "ProtectPage";
 
 export { ProtectPage };

@@ -20,10 +20,12 @@ interface IProtectComponentProps {
  * @param props `IProtectComponentProps` used to render this `ProtectComponent`
  * @returns `ProtectComponent` component
  */
-const ProtectComponent = React.forwardRef<
-  IProtectComponent,
-  IProtectComponentProps
->(({ children, loading, status, unauthenticated }) => {
+function ProtectComponent({
+  children,
+  loading,
+  status,
+  unauthenticated,
+}: IProtectComponentProps) {
   // if authenticated, return authenticated component
   if (status === "authenticated") {
     return <>{children}</>;
@@ -36,7 +38,7 @@ const ProtectComponent = React.forwardRef<
 
   // otherwise, still loading
   return <>{loading}</>;
-});
+}
 
 ProtectComponent.displayName = "ProtectComponent";
 
