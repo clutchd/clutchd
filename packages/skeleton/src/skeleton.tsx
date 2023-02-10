@@ -11,7 +11,7 @@ type ISkeleton = React.ElementRef<typeof Component.div>;
  * Type to define `Skeleton` props
  */
 interface ISkeletonProps
-  extends IComponentPropsWithoutRef<typeof Component.div> { }
+  extends IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Skeleton` - A generic component used to render content structures and loading states

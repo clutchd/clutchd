@@ -21,14 +21,18 @@ interface IButtonProps
  * @returns `Button` component
  */
 const Button = React.forwardRef<IButton, IButtonProps>(
-  ({ href, ...props }, forwardedRef) => {
-    const button = <Component.button ref={forwardedRef} {...props} />;
-
+  ({ className, href, ...props }, forwardedRef) => {
     if (href) {
-      <Link href={href}>{button}</Link>;
+      return (
+        <Link className={className} href={href}>
+          <Component.button ref={forwardedRef} {...props} />
+        </Link>
+      );
     }
 
-    return button;
+    return (
+      <Component.button className={className} ref={forwardedRef} {...props} />
+    );
   }
 );
 
