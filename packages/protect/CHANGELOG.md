@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 2.0.1
+
+### Patch Changes
+
+- 633d1db: Fix forwardRef
+
 ## 2.0.0
 
 ### Major Changes
