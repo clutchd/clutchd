@@ -8,7 +8,7 @@ function ButtonShowcase({ color }) {
     <Showcase title="Button">
       <Card className="mb-6">
         <Button className="block mb-6">Click me!</Button>
-        <Button href="#">Click me!</Button>
+        <Button href="https://www.google.com">Click me!</Button>
       </Card>
     </Showcase>
   );
