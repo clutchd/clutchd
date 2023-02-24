@@ -1,5 +1,11 @@
 # @clutchd/button
 
+## 0.1.2
+
+### Patch Changes
+
+- f65f7d6: Improve href styles
+
 ## 0.1.1
 
 ### Patch Changes
