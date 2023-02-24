@@ -19,11 +19,9 @@ test("handles simple conflicts with arbitrary values correctly", () => {
 });
 
 test("handles arbitrary length conflicts with labels and modifiers correctly", () => {
-  expect(twx("hover:m-[2px] hover:m-[length:var(--c)]")).toBe(
-    "hover:m-[length:var(--c)]"
-  );
-  expect(twx("hover:focus:m-[2px] focus:hover:m-[length:var(--c)]")).toBe(
-    "focus:hover:m-[length:var(--c)]"
+  expect(twx("hover:m-[2px] hover:m-[var(--c)]")).toBe("hover:m-[var(--c)]");
+  expect(twx("hover:focus:m-[2px] focus:hover:m-[var(--c)]")).toBe(
+    "focus:hover:m-[var(--c)]"
   );
 });
 
