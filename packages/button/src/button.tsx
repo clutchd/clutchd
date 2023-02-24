@@ -24,8 +24,8 @@ const Button = React.forwardRef<IButton, IButtonProps>(
   ({ className, href, ...props }, forwardedRef) => {
     if (href) {
       return (
-        <Link className={className} href={href}>
-          <Component.button ref={forwardedRef} {...props} />
+        <Link className="cursor-pointer" href={href}>
+          <Component.button className={className} ref={forwardedRef} {...props} />
         </Link>
       );
     }
