@@ -1,5 +1,11 @@
 # @clutchd/link
 
+## 1.0.0
+
+### Major Changes
+
+- 96ca1c7: Initial release, no more ui constraints
+
 ## 0.3.0
 
 ### Minor Changes
