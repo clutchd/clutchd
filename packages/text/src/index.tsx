@@ -1,3 +1,5 @@
+export { A } from "./a";
+export type { IA, IAProps } from "./a";
 export { Blockquote } from "./blockquote";
 export type { IBlockquote, IBlockquoteProps } from "./blockquote";
 export { Em } from "./em";

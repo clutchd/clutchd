@@ -10,8 +10,7 @@ type ILink = React.ElementRef<typeof Component.a>;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps
-  extends IComponentPropsWithoutRef<typeof Component.a> { }
+interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> {}
 
 /**
  * `Link` - A simple link component, leverages next/link
@@ -20,13 +19,7 @@ interface ILinkProps
  */
 const Link = React.forwardRef<ILink, ILinkProps>(
   ({ href = "/", ...props }, forwardedRef) => {
-    return (
-      <NextLink
-        href={href}
-        ref={forwardedRef}
-        {...props}
-      />
-    );
+    return <NextLink href={href} ref={forwardedRef} {...props} />;
   }
 );
 
@@ -34,4 +27,3 @@ Link.displayName = "Link";
 
 export { Link };
 export type { ILinkProps, ILink };
-

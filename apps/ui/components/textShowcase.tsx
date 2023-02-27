@@ -1,8 +1,8 @@
 import { Block } from "@clutchd/block";
 import { Card } from "@clutchd/card";
 import { Divider } from "@clutchd/divider";
-import { Link } from "@clutchd/link";
 import {
+  A,
   Blockquote,
   Em,
   H1,
@@ -82,12 +82,12 @@ function TextShowcase({ color }) {
           <P theme={color}>
             For more information about how to use the plugin and the features it
             includes,{" "}
-            {/* <Link
+            <A
               theme={color}
               href="https://github.com/tailwindcss/typography/blob/master/README.md"
             >
               read the documentation
-            </Link> */}
+            </A>
             .
           </P>
           <Divider theme={color} />
@@ -180,13 +180,13 @@ function TextShowcase({ color }) {
           <H2 theme={color}>Code should look okay by default.</H2>
           <P theme={color}>
             I think most people are going to use{" "}
-            {/* <Link theme={color} href="https://highlightjs.org/">
+            <A theme={color} href="https://highlightjs.org/">
               highlight.js
-            </Link>{" "}
+            </A>{" "}
             or{" "}
-            <Link theme={color} href="https://prismjs.com/">
+            <A theme={color} href="https://prismjs.com/">
               Prism
-            </Link>{" "} */}
+            </A>{" "}
             or something if they want to style their code blocks but it
             wouldn&apos;t hurt to make them look <Em>okay</Em> out of the box,
             even with no syntax highlighting.
@@ -271,9 +271,9 @@ function TextShowcase({ color }) {
           <H2 theme={color}>There are other elements we need to style</H2>
           <P theme={color}>
             I almost forgot to mention links, like{" "}
-            {/* <Link theme={color} href="https://tailwindcss.com">
+            <A theme={color} href="https://tailwindcss.com">
               this link to the Tailwind CSS website
-            </Link> */}
+            </A>
             . We almost made them blue but that&apos;s so yesterday, so we went
             with dark gray, feels edgier.
           </P>
@@ -331,9 +331,9 @@ function TextShowcase({ color }) {
           <P theme={color}>
             Another thing I&apos;ve done in the past is put a <code>code</code>{" "}
             tag inside of a link, like if I wanted to tell you about the{" "}
-            {/* <Link theme={color} href="https://github.com/tailwindcss/docs">
+            <A theme={color} href="https://github.com/tailwindcss/docs">
               <code>tailwindcss/docs</code>
-            </Link>{" "} */}
+            </A>{" "}
             repository. I don&apos;t love that there is an underline below the
             backticks but it is absolutely not worth the madness it would
             require to avoid it.
@@ -390,9 +390,9 @@ function TextShowcase({ color }) {
           <H2 theme={color}>The King&apos;s Plan</H2>
           <P theme={color}>
             The king thought long and hard, and finally came up with{" "}
-            {/* <Link theme={color} href="#">
+            <A theme={color} href="#">
               a brilliant plan
-            </Link> */}
+            </A>
             : he would tax the jokes in the kingdom.
           </P>
           <Blockquote theme={color}>

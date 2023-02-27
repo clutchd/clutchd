@@ -26,7 +26,11 @@ const Button = React.forwardRef<IButton, IButtonProps>(
       // TODO: Need a better solution, not valid html5
       return (
         <Link className="cursor-pointer" href={href}>
-          <Component.button className={className} ref={forwardedRef} {...props} />
+          <Component.button
+            className={className}
+            ref={forwardedRef}
+            {...props}
+          />
         </Link>
       );
     }
