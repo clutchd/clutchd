@@ -33,7 +33,6 @@
   },
   "dependencies": {
     "@clutchd/component": "^1.1.0",
-    "@clutchd/is-empty": "^2.0.4",
     "@clutchd/twx": "^1.0.0"
   },
   "devDependencies": {

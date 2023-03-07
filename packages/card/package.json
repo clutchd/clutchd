@@ -4,8 +4,8 @@
   "keywords": [
     "clutchd",
     "card",
-    "tailwind",
-    "next"
+    "react",
+    "tailwind"
   ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "clean": "rm -rf .next .turbo node_modules coverage dist package-lock.json",
+    "clean": "rm -rf .turbo node_modules coverage dist package-lock.json",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "npm run build",
