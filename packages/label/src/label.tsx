@@ -14,8 +14,8 @@ type ILabel = React.ElementRef<typeof Component.label>;
  */
 interface ILabelProps
   extends WithColor,
-    IComponentPropsWithoutRef<typeof Component.label> {
-  content?: React.ReactNode;
+  IComponentPropsWithoutRef<typeof Component.label> {
+  text?: React.ReactNode;
   required?: boolean;
 }
 
@@ -29,7 +29,7 @@ const Label = React.forwardRef<ILabel, ILabelProps>(
     {
       className,
       children,
-      content,
+      text,
       onMouseDown,
       required = false,
       theme = "gray",
@@ -38,13 +38,13 @@ const Label = React.forwardRef<ILabel, ILabelProps>(
     forwardedRef
   ) => {
     // content states
-    const [spanContent, setSpanContent] = React.useState(content);
+    const [spanContent, setSpanContent] = React.useState(text);
     const [childrenContent, setChildrenContent] = React.useState(children);
 
     // update content states based on props
     React.useEffect(() => {
-      if (content) {
-        setSpanContent(content);
+      if (text) {
+        setSpanContent(text);
         setChildrenContent(children);
       } else if (children) {
         setSpanContent(children);
@@ -54,7 +54,7 @@ const Label = React.forwardRef<ILabel, ILabelProps>(
         setChildrenContent(null);
         console.warn("No content provided for label.");
       }
-    }, [children, content]);
+    }, [children, text]);
 
     // create ref for label span
     const spanRef = React.createRef<HTMLSpanElement>();
