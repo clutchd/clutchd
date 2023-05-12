@@ -25,7 +25,7 @@
     "@clutchd/eslint-config-clutchd": "^1.0.0",
     "@manypkg/cli": "^0.19.2",
     "prettier": "^2.8.4",
-    "turbo": "^1.8.2"
+    "turbo": "^1.9.4"
   },
   "engines": {
     "node": ">=14.0.0",
