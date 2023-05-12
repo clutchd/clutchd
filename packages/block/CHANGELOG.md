@@ -1,5 +1,11 @@
 # @clutchd/block
 
+## 1.0.1
+
+### Patch Changes
+
+- b5a68cb: Remove unneeded deps
+
 ## 1.0.0
 
 ### Major Changes

@@ -1,5 +1,13 @@
 # @clutchd/card
 
+## 1.0.3
+
+### Patch Changes
+
+- b5a68cb: Remove unneeded deps
+- Updated dependencies [7c63db3]
+  - @clutchd/divider@1.2.0
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/text",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "keywords": [
     "clutchd",
     "text",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/eslint-config-clutchd": "^1.0.0",
+    "@clutchd/eslint-config-clutchd": "^1.1.0",
     "@clutchd/tailwind": "^2.0.0",
     "@clutchd/tsconfig": "^1.0.0",
     "@types/react": "^18.0.26",

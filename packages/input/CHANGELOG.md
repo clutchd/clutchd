@@ -1,5 +1,15 @@
 # @clutchd/input
 
+## 0.3.0
+
+### Minor Changes
+
+- 7c63db3: Update deps
+
+### Patch Changes
+
+- 4958cf0: Improve error message padding
+
 ## 0.2.0
 
 ### Minor Changes

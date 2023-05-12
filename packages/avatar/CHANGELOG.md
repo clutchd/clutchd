@@ -1,5 +1,15 @@
 # @clutchd/avatar
 
+## 2.1.0
+
+### Minor Changes
+
+- 7c63db3: Update deps
+
+### Patch Changes
+
+- b5a68cb: Remove unneeded deps
+
 ## 2.0.0
 
 ### Major Changes
