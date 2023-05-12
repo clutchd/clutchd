@@ -35,7 +35,7 @@ function InputInfo({ error, helpText }: IInputInfoProps) {
       )}
       {errorVisible && (
         <span
-          className="flex flex-row w-full h-full mt-1 text-red-500 dark:text-red-400"
+          className={`flex flex-row w-full h-full text-red-500 dark:text-red-400 ${helpTextVisible && `mt-1`}`}
           role="alert"
         >
           {error}
