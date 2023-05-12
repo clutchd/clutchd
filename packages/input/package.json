@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/input",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "keywords": [
     "clutchd",
     "input",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/eslint-config-clutchd": "^1.0.0",
+    "@clutchd/eslint-config-clutchd": "^1.1.0",
     "@clutchd/tailwind": "^2.0.0",
     "@clutchd/tsconfig": "^1.0.0",
     "jest": "^29.3.1",

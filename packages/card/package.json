@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/card",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "clutchd",
     "card",
@@ -32,12 +32,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/divider": "^1.1.1",
+    "@clutchd/divider": "^1.2.0",
     "@clutchd/twx": "^1.0.0"
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/eslint-config-clutchd": "^1.0.0",
+    "@clutchd/eslint-config-clutchd": "^1.1.0",
     "@clutchd/tailwind": "^2.0.0",
     "@clutchd/tsconfig": "^1.0.0",
     "jest": "^29.3.1",

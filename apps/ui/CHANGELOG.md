@@ -1,5 +1,30 @@
 # @clutchd/ui
 
+## 0.7.0
+
+### Minor Changes
+
+- 7c63db3: Update deps
+
+### Patch Changes
+
+- Updated dependencies [4958cf0]
+- Updated dependencies [7c63db3]
+- Updated dependencies [2a4649a]
+- Updated dependencies [b5a68cb]
+  - @clutchd/input@0.3.0
+  - @clutchd/copyright@2.1.0
+  - @clutchd/divider@1.2.0
+  - @clutchd/avatar@2.1.0
+  - @clutchd/button@0.2.0
+  - @clutchd/label@1.1.0
+  - @clutchd/flex@1.1.0
+  - @clutchd/link@1.1.0
+  - @clutchd/text@2.1.0
+  - @clutchd/block@1.0.1
+  - @clutchd/card@1.0.3
+  - @clutchd/layout@1.0.1
+
 ## 0.6.0
 
 ### Minor Changes

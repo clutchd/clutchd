@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 1.2.0
+
+### Minor Changes
+
+- 7c63db3: Update deps
+
 ## 1.1.1
 
 ### Patch Changes
