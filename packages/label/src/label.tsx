@@ -14,7 +14,7 @@ type ILabel = React.ElementRef<typeof Component.label>;
  */
 interface ILabelProps
   extends WithColor,
-  IComponentPropsWithoutRef<typeof Component.label> {
+    IComponentPropsWithoutRef<typeof Component.label> {
   text?: React.ReactNode;
   required?: boolean;
 }
