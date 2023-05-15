@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/arbitrary-variants.test.ts
+
 import { twx } from ".";
 
 test("basic arbitrary variants", () => {

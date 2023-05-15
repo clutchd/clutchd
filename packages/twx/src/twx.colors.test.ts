@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/colors.test.ts
+
 import { twx } from ".";
 
 test("handles color conflicts properly", () => {

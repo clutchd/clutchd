@@ -1,9 +1,11 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/merge-classlist.ts
+
 import { getClassGroupId, getConflictingClassGroupIds } from "./class-utils";
 import {
   IMPORTANT_MODIFIER,
   sortModifiers,
   splitModifiers,
-} from "../../../modifier-utils";
+} from "./modifier-utils";
 
 const SPLIT_CLASSES_REGEX = /\s+/;
 
@@ -22,16 +24,39 @@ export function mergeClassList(classList: string) {
       .trim()
       .split(SPLIT_CLASSES_REGEX)
       .map((originalClassName) => {
-        const { modifiers, hasImportantModifier, baseClassName } =
-          splitModifiers(originalClassName);
+        const {
+          modifiers,
+          hasImportantModifier,
+          baseClassName,
+          maybePostfixModifierPosition,
+        } = splitModifiers(originalClassName);
 
-        const classGroupId = getClassGroupId(baseClassName);
+        let classGroupId = getClassGroupId(
+          maybePostfixModifierPosition
+            ? baseClassName.substring(0, maybePostfixModifierPosition)
+            : baseClassName
+        );
+
+        let hasPostfixModifier = Boolean(maybePostfixModifierPosition);
 
         if (!classGroupId) {
-          return {
-            isTailwindClass: false as const,
-            originalClassName,
-          };
+          if (!maybePostfixModifierPosition) {
+            return {
+              isTailwindClass: false as const,
+              originalClassName,
+            };
+          }
+
+          classGroupId = getClassGroupId(baseClassName);
+
+          if (!classGroupId) {
+            return {
+              isTailwindClass: false as const,
+              originalClassName,
+            };
+          }
+
+          hasPostfixModifier = false;
         }
 
         const variantModifier = sortModifiers(modifiers).join(":");
@@ -45,6 +70,7 @@ export function mergeClassList(classList: string) {
           modifierId,
           classGroupId,
           originalClassName,
+          hasPostfixModifier,
         };
       })
       .reverse()
@@ -54,7 +80,7 @@ export function mergeClassList(classList: string) {
           return true;
         }
 
-        const { modifierId, classGroupId } = parsed;
+        const { modifierId, classGroupId, hasPostfixModifier } = parsed;
 
         const classId = modifierId + classGroupId;
 
@@ -64,8 +90,8 @@ export function mergeClassList(classList: string) {
 
         classGroupsInConflict.add(classId);
 
-        getConflictingClassGroupIds(classGroupId).forEach((group) =>
-          classGroupsInConflict.add(modifierId + group)
+        getConflictingClassGroupIds(classGroupId, hasPostfixModifier).forEach(
+          (group) => classGroupsInConflict.add(modifierId + group)
         );
 
         return true;

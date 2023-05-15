@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/class-utils.ts
+
 import { getDefaultConfig } from "./default-config";
 import {
   ClassGroup,
@@ -37,9 +39,21 @@ export function getClassGroupId(className: string) {
   );
 }
 
-export function getConflictingClassGroupIds(classGroupId: ClassGroupId) {
+export function getConflictingClassGroupIds(
+  classGroupId: ClassGroupId,
+  hasPostfixModifier: boolean
+) {
   const config: Config = getDefaultConfig();
-  return config.conflictingClassGroups[classGroupId] || [];
+  const conflicts = config.conflictingClassGroups[classGroupId] || [];
+  const conflictingClassGroupModifiers = config.conflictingClassGroupModifiers
+    ? config.conflictingClassGroupModifiers[classGroupId]
+    : [];
+
+  if (hasPostfixModifier && conflictingClassGroupModifiers) {
+    return [...conflicts, ...conflictingClassGroupModifiers!];
+  }
+
+  return conflicts;
 }
 
 function getGroupRecursive(
@@ -93,15 +107,18 @@ function getGroupIdForArbitraryProperty(className: string) {
  * Exported for testing only
  */
 export function createClassMap(config: Config) {
-  const { theme } = config;
+  const { theme, prefix } = config;
   const classMap: ClassPartObject = {
     nextPart: new Map<string, ClassPartObject>(),
     validators: [],
   };
 
-  const classGroupEntries = Object.entries(config.classGroups);
+  const prefixedClassGroupEntries = getPrefixedClassGroupEntries(
+    Object.entries(config.classGroups),
+    prefix
+  );
 
-  classGroupEntries.forEach(([classGroupId, classGroup]) => {
+  prefixedClassGroupEntries.forEach(([classGroupId, classGroup]) => {
     processClassesRecursively(classGroup, classMap, classGroupId, theme);
   });
 
@@ -175,4 +192,34 @@ function isThemeGetter(
   func: ClassValidator | ThemeGetter
 ): func is ThemeGetter {
   return (func as ThemeGetter).isThemeGetter;
+}
+
+function getPrefixedClassGroupEntries(
+  classGroupEntries: Array<[classGroupId: string, classGroup: ClassGroup]>,
+  prefix: string | undefined
+): Array<[classGroupId: string, classGroup: ClassGroup]> {
+  if (!prefix) {
+    return classGroupEntries;
+  }
+
+  return classGroupEntries.map(([classGroupId, classGroup]) => {
+    const prefixedClassGroup = classGroup.map((classDefinition) => {
+      if (typeof classDefinition === "string") {
+        return prefix + classDefinition;
+      }
+
+      if (typeof classDefinition === "object") {
+        return Object.fromEntries(
+          Object.entries(classDefinition).map(([key, value]) => [
+            prefix + key,
+            value,
+          ])
+        );
+      }
+
+      return classDefinition;
+    });
+
+    return [classGroupId, prefixedClassGroup];
+  });
 }

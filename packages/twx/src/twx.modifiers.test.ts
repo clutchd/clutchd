@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/modifiers.test.ts
+
 import { twx } from ".";
 
 test("conflicts across prefix modifiers", () => {

@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/validators.ts
+
 const arbitraryValueRegex = /^\[(?:([a-z-]+):)?(.+)\]$/i;
 const fractionRegex = /^\d+\/\d+$/;
 const stringLengths = new Set(["px", "full", "screen"]);

@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/arbitrary-properties.test.ts
+
 import { twx } from ".";
 
 test("handles arbitrary property conflicts correctly", () => {

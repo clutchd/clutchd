@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/non-tailwind-classes.test.ts
+
 import { twx } from ".";
 
 test("does not alter non-tailwind classes", () => {

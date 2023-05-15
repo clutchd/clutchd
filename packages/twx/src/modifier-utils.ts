@@ -1,27 +1,43 @@
-export const IMPORTANT_MODIFIER = "!";
+// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/modifier-utils.ts
 
+// make values configurable?
+export const IMPORTANT_MODIFIER = "!";
+export const SEPARATOR = ":";
+const isSeparatorSingleCharacter = SEPARATOR.length === 1;
+const firstSeparatorCharacter = SEPARATOR[0];
+const separatorLength = SEPARATOR.length;
+
+// splitModifiers inspired by https://github.com/tailwindlabs/tailwindcss/blob/v3.2.2/src/util/splitAtTopLevelOnly.js
 export function splitModifiers(className: string) {
-  const separator = ":";
+  const modifiers = [];
+
   let bracketDepth = 0;
-  let modifiers = [];
   let modifierStart = 0;
+  let postfixModifierPosition: number | undefined;
 
   for (let index = 0; index < className.length; index++) {
-    let char = className[index];
+    let currentCharacter = className[index];
 
-    if (bracketDepth === 0 && char === separator[0]) {
+    if (bracketDepth === 0) {
       if (
-        separator.length === 1 ||
-        className.slice(index, index + separator.length) === separator
+        currentCharacter === firstSeparatorCharacter &&
+        (isSeparatorSingleCharacter ||
+          className.slice(index, index + separatorLength) === SEPARATOR)
       ) {
         modifiers.push(className.slice(modifierStart, index));
-        modifierStart = index + separator.length;
+        modifierStart = index + separatorLength;
+        continue;
+      }
+
+      if (currentCharacter === "/") {
+        postfixModifierPosition = index;
+        continue;
       }
     }
 
-    if (char === "[") {
+    if (currentCharacter === "[") {
       bracketDepth++;
-    } else if (char === "]") {
+    } else if (currentCharacter === "]") {
       bracketDepth--;
     }
   }
@@ -34,10 +50,16 @@ export function splitModifiers(className: string) {
     ? baseClassNameWithImportantModifier.substring(1)
     : baseClassNameWithImportantModifier;
 
+  const maybePostfixModifierPosition =
+    postfixModifierPosition && postfixModifierPosition > modifierStart
+      ? postfixModifierPosition - modifierStart
+      : undefined;
+
   return {
     modifiers,
     hasImportantModifier,
     baseClassName,
+    maybePostfixModifierPosition,
   };
 }
 

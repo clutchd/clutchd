@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/types.ts
+
 export interface Config {
   /**
    * Integer indicating size of LRU cache used for memoizing results.

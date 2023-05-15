@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/non-conflicting-classes.test.ts
+
 import { twx } from ".";
 
 test("merges non-conflicting classes correctly", () => {

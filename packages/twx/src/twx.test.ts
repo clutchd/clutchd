@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/tw-merge.test.ts
+
 import { twx } from ".";
 
 test("twx", () => {

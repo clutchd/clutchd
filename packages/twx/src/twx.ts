@@ -1,17 +1,19 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/tw-merge.ts
+
 import { clsx } from "@clutchd/clsx";
-import { cacheGet, cacheSet } from "./lru-cache";
-import { mergeClassList } from "./tailwind-merge/src/lib/merge-classlist";
+import { get, set } from "./lru-cache";
+import { mergeClassList } from "./merge-classlist";
 
 function twx(...args: any[]) {
   let classList = clsx(...args);
-  const cachedResult = cacheGet(classList);
+  let result = get(classList);
 
-  if (cachedResult) {
-    return cachedResult;
+  if (result) {
+    return result;
   }
 
-  const result = mergeClassList(classList);
-  cacheSet(classList, result);
+  result = mergeClassList(classList);
+  set(classList, result);
 
   return result;
 }

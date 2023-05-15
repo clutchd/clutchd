@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/pseudo-variants.test.ts
+
 import { twx } from ".";
 
 test("handles pseudo variants conflicts properly", () => {

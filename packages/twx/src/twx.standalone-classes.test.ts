@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/standalone-classes.test.ts
+
 import { twx } from ".";
 
 test("merges standalone classes from same group correctly", () => {

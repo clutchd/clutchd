@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/class-group-conflicts.test.ts
+
 import { twx } from ".";
 
 test("merges classes from same group correctly", () => {

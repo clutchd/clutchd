@@ -1,4 +1,6 @@
-import { validators } from "../src";
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/validators.test.ts
+
+import * as validators from "./validators";
 
 const {
   isLength,

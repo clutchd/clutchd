@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/conflicts-across-class-groups.test.ts
+
 import { twx } from ".";
 
 test("handles conflicts across class groups correctly", () => {

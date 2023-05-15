@@ -1,8 +1,10 @@
-let cacheSize = 0;
-let cache = new Map<string, string>();
-let previousCache = new Map<string, string>();
+// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/lru-cache.ts
 
-function updateCache(key: string, value: any) {
+let cacheSize = 0;
+let cache = new Map<string, any>();
+let previousCache = new Map<string, any>();
+
+function update(key: string, value: any) {
   cache.set(key, value);
   cacheSize++;
   if (cacheSize > 500) {
@@ -12,22 +14,22 @@ function updateCache(key: string, value: any) {
   }
 }
 
-export function cacheGet(key: string) {
+export function get(key: string) {
   let value = cache.get(key);
 
   if (value !== undefined) {
     return value;
   }
   if ((value = previousCache.get(key)) !== undefined) {
-    updateCache(key, value);
+    update(key, value);
     return value;
   }
 }
 
-export function cacheSet(key: string, value: any) {
+export function set(key: string, value: any) {
   if (cache.has(key)) {
     cache.set(key, value);
   } else {
-    updateCache(key, value);
+    update(key, value);
   }
 }

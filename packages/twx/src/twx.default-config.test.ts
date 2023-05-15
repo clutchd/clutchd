@@ -1,8 +1,14 @@
-import { getDefaultConfig } from "../src";
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/default-config.test.ts
+
+import { getDefaultConfig, Config } from ".";
 
 test("default config has correct types", () => {
   const defaultConfig = getDefaultConfig();
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const genericConfig: Config = defaultConfig;
+
+  expect(defaultConfig.cacheSize).toBe(500);
   // @ts-expect-error
   expect(defaultConfig.nonExistent).toBeUndefined();
   expect(defaultConfig.classGroups.display[0]).toBe("block");

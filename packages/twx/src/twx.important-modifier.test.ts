@@ -1,3 +1,5 @@
+// https://github.com/dcastil/tailwind-merge/blob/main/tests/important-modifier.test.ts
+
 import { twx } from ".";
 
 test("merges tailwind classes with important modifier correctly", () => {
