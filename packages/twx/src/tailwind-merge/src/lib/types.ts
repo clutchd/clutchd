@@ -1,5 +1,11 @@
 export interface Config {
   /**
+   * Integer indicating size of LRU cache used for memoizing results.
+   * - Cache might be up to twice as big as `cacheSize`
+   * - No cache is used for values <= 0
+   */
+  cacheSize: number;
+  /**
    * Prefix added to Tailwind-generated classes
    * @see https://tailwindcss.com/docs/configuration#prefix
    */
@@ -28,10 +34,19 @@ export interface Config {
   /**
    * Conflicting classes across groups.
    * The key is ID of class group which creates conflict, values are IDs of class groups which receive a conflict.
-   * A class group is ID is the key of a class group in classGroups object.
+   * A class group ID is the key of a class group in classGroups object.
    * @example { gap: ['gap-x', 'gap-y'] }
    */
   conflictingClassGroups: Record<ClassGroupId, readonly ClassGroupId[]>;
+  /**
+   * Postfix modifiers conflicting with other class groups.
+   * A class group ID is the key of a class group in classGroups object.
+   * @example { 'font-size': ['leading'] }
+   */
+  conflictingClassGroupModifiers?: Record<
+    ClassGroupId,
+    readonly ClassGroupId[]
+  >;
 }
 
 export type ThemeObject = Record<string, ClassGroup>;
