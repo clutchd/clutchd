@@ -1,1 +1,6 @@
-module.exports = require("@clutchd/config/postcss.config");
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
