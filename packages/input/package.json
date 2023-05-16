@@ -34,26 +34,26 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "^1.1.0",
-    "@clutchd/compose-event-handlers": "^1.0.3",
-    "@clutchd/is-empty": "^2.0.4",
-    "@clutchd/twx": "^1.0.0"
+    "@clutchd/component": "1.1.0",
+    "@clutchd/compose-event-handlers": "1.0.3",
+    "@clutchd/is-empty": "2.0.4",
+    "@clutchd/twx": "1.0.2"
   },
   "devDependencies": {
     "@clutchd/config": "*",
-    "@clutchd/eslint-config-clutchd": "^1.1.0",
-    "@clutchd/tailwind": "^2.0.0",
-    "@clutchd/tsconfig": "^1.0.0",
-    "jest": "^29.3.1",
-    "next": "^13.4.2",
-    "postcss": "^8.4.20",
-    "react": "^18.2.0",
-    "ts-jest": "^29.0.3",
-    "tsup": "^6.5.0",
-    "typescript": "^5.0.4"
+    "@clutchd/eslint-config-clutchd": "1.1.0",
+    "@clutchd/tailwind": "2.0.0",
+    "@clutchd/tsconfig": "1.0.1",
+    "jest": "29.3.1",
+    "next": "13.4.2",
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "ts-jest": "29.0.3",
+    "tsup": "6.7.0",
+    "typescript": "5.0.4"
   },
   "peerDependencies": {
-    "next": "^13.4.2",
-    "react": "^18.2.0"
+    "next": "13.4.2",
+    "react": "18.2.0"
   }
 }
