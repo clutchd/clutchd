@@ -23,7 +23,7 @@
   "dependencies": {
     "@changesets/cli": "2.22.0",
     "@clutchd/eslint-config-clutchd": "1.1.0",
-    "@manypkg/cli": "0.19.2",
+    "@manypkg/cli": "0.20.0",
     "prettier": "2.8.4",
     "turbo": "latest"
   },
