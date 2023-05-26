@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@clutchd/clsx": "*",
-    "@clutchd/config": "*",
+    "@clutchd/config": "1.0.2",
     "@clutchd/eslint-config-clutchd": "1.1.0",
     "benchmark": "2.1.4",
     "classcat": "5.0.4",

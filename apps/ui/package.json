@@ -9,7 +9,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@clutchd/config": "*",
+    "@clutchd/config": "1.0.2",
+    "@clutchd/tsconfig": "1.0.1",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",

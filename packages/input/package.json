@@ -40,7 +40,7 @@
     "@clutchd/twx": "1.0.2"
   },
   "devDependencies": {
-    "@clutchd/config": "*",
+    "@clutchd/config": "1.0.2",
     "@clutchd/eslint-config-clutchd": "1.1.0",
     "@clutchd/tailwind": "2.0.0",
     "@clutchd/tsconfig": "1.0.1",
