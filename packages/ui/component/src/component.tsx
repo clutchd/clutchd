@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Slot } from "./slot";
+import { Slot } from "@clutchd/slot";
 
 /**
  * Supported `Component` nodes

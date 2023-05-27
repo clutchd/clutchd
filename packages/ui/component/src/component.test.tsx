@@ -16,7 +16,6 @@ test("render with valid child", () => {
   const { container } = render(
     // @ts-ignore
     <Component.div asChild asdf={"1234"}>
-      {/* @ts-ignore */}
       <p>Rendering a component as a valid paragraph!</p>
     </Component.div>
   );
@@ -63,10 +62,15 @@ test("render with invalid and undefined child", () => {
 });
 
 test("render with invalid child", () => {
+  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     <Component.div asChild>Rendering a div as an invalid string!</Component.div>
   );
 
+  expect(logSpy).toBeCalledTimes(1);
+  expect(logSpy).toBeCalledWith(
+    "Invalid children, Slot forcefully rendered as a fragment."
+  );
   expect(container.hasChildNodes()).toEqual(true);
   expect(container.textContent).toEqual(
     "Rendering a div as an invalid string!"
@@ -86,7 +90,7 @@ test("render with invalid child and props", () => {
 
   expect(logSpy).toBeCalledTimes(1);
   expect(logSpy).toBeCalledWith(
-    "Slot forcefully rendered invalid children as div."
+    "Invalid children with props, Slot forcefully rendered as a div."
   );
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
@@ -95,8 +99,8 @@ test("render with invalid child and props", () => {
 });
 
 test("render with multiple children", () => {
+  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
-    // @ts-ignore
     <Component.div asChild>
       {/* @ts-ignore */}
       <p asdf="asdf">Rendering a div as a paragraph!</p>
@@ -108,6 +112,10 @@ test("render with multiple children", () => {
   const p = container.querySelector("p");
   const div = container.querySelector("div");
 
+  expect(logSpy).toBeCalledTimes(1);
+  expect(logSpy).toBeCalledWith(
+    "Invalid children, Slot forcefully rendered as a fragment."
+  );
   expect(p).toBeInTheDocument();
   expect(p).toHaveAttribute("asdf", "asdf");
   expect(p?.textContent).toEqual("Rendering a div as a paragraph!");
@@ -134,7 +142,7 @@ test("Render with multiple children and props", () => {
 
   expect(logSpy).toBeCalledTimes(1);
   expect(logSpy).toBeCalledWith(
-    "Slot forcefully rendered invalid children as div."
+    "Invalid children with props, Slot forcefully rendered as a div."
   );
   expect(root).toBeInTheDocument();
   expect(root).toHaveAttribute("asdf", "1234");
