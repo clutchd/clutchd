@@ -1,6 +1,5 @@
 ---
 "@clutchd/ui": patch
-"@clutchd/www": patch
 "@clutchd/avatar": patch
 "@clutchd/block": patch
 "@clutchd/button": patch
