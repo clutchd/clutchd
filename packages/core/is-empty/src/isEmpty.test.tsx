@@ -1,4 +1,4 @@
-import { isEmpty } from "./isEmpty";
+import { isEmpty } from ".";
 
 test("null is empty", async () => {
   expect(isEmpty(null)).toEqual(true);
@@ -32,15 +32,15 @@ test("1 is not empty", async () => {
   expect(isEmpty(1)).toEqual(false);
 });
 
-test("Date is not empty", async () => {
+test("date is not empty", async () => {
   expect(isEmpty(new Date())).toEqual(false);
 });
 
-test("Invalid date is empty", async () => {
+test("invalid date is empty", async () => {
   expect(isEmpty(new Date("invalid"))).toEqual(true);
 });
 
-test("Function is not empty", async () => {
+test("function is not empty", async () => {
   expect(
     isEmpty((e: any) => {
       console.log(e);

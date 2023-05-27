@@ -1,14 +1,14 @@
 import fs from "fs";
 import { minify } from "terser";
 import zlib from "zlib";
-import { isEmpty } from "./isEmpty";
+import { isEmpty } from ".";
 
 test("exports", () => {
   expect(typeof isEmpty).toEqual("function");
   expect(typeof isEmpty()).toEqual("boolean");
 });
 
-test("Ensures the bundle size is accurate", async () => {
+test("ensures the bundle size is accurate", async () => {
   const input = fs.readFileSync("dist/index.js", "utf8");
 
   const result = await minify(input, {
