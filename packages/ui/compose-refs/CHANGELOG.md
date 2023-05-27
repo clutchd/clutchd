@@ -1,5 +1,16 @@
 # @clutchd/compose-refs
 
+## 1.1.0
+
+### Minor Changes
+
+- d79dd26: Add useComposedRefs hook
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+
 ## 1.0.2
 
 ### Patch Changes

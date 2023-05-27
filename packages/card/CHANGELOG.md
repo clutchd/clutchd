@@ -1,5 +1,21 @@
 # @clutchd/card
 
+## 1.0.4
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- 6f27817: Update deps
+- 3effd42: Fix builds
+- Updated dependencies [a6138a7]
+- Updated dependencies [8ca1bc5]
+- Updated dependencies [b512919]
+- Updated dependencies [6f27817]
+- Updated dependencies [3effd42]
+  - @clutchd/divider@1.2.1
+  - @clutchd/twx@1.1.0
+
 ## 1.0.3
 
 ### Patch Changes

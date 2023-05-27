@@ -1,5 +1,19 @@
 # @clutchd/block
 
+## 1.0.2
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- 6f27817: Update deps
+- 3effd42: Fix builds
+- Updated dependencies [a6138a7]
+- Updated dependencies [8ca1bc5]
+- Updated dependencies [b512919]
+  - @clutchd/component@1.1.1
+  - @clutchd/twx@1.1.0
+
 ## 1.0.1
 
 ### Patch Changes

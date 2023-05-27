@@ -1,5 +1,22 @@
 # @clutchd/input
 
+## 0.3.1
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- 6f27817: Update deps
+- 3effd42: Fix builds
+- Updated dependencies [6c6b704]
+- Updated dependencies [a6138a7]
+- Updated dependencies [8ca1bc5]
+- Updated dependencies [b512919]
+  - @clutchd/is-empty@2.0.5
+  - @clutchd/component@1.1.1
+  - @clutchd/compose-event-handlers@1.0.4
+  - @clutchd/twx@1.1.0
+
 ## 0.3.0
 
 ### Minor Changes

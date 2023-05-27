@@ -1,5 +1,12 @@
 # @clutchd/tailwind
 
+## 2.0.1
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+
 ## 2.0.0
 
 ### Major Changes

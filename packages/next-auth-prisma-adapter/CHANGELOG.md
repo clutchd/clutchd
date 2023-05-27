@@ -1,5 +1,12 @@
 # @clutchd/next-auth-prisma-adapter
 
+## 1.0.2
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/ui",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@clutchd/config": "1.0.2",
+    "@clutchd/config": "1.0.3",
     "@clutchd/tsconfig": "1.0.1",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",

@@ -1,5 +1,17 @@
 # @clutchd/component
 
+## 1.1.1
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- Updated dependencies [d79dd26]
+- Updated dependencies [a6138a7]
+- Updated dependencies [b512919]
+  - @clutchd/compose-refs@1.1.0
+  - @clutchd/compose-props@1.1.4
+
 ## 1.1.0
 
 ### Minor Changes

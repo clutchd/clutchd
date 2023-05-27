@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/button",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "keywords": [
     "clutchd",
     "button",
@@ -32,13 +32,13 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "1.1.0",
-    "@clutchd/twx": "1.0.2"
+    "@clutchd/component": "1.1.1",
+    "@clutchd/twx": "1.1.0"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.2",
-    "@clutchd/eslint-config-clutchd": "1.1.0",
-    "@clutchd/tailwind": "2.0.0",
+    "@clutchd/config": "1.0.3",
+    "@clutchd/eslint-config-clutchd": "1.1.1",
+    "@clutchd/tailwind": "2.0.1",
     "@clutchd/tsconfig": "1.0.1",
     "jest": "29.3.1",
     "next": "13.4.4",

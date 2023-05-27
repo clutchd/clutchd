@@ -1,5 +1,16 @@
 # @clutchd/get-initials
 
+## 1.2.4
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- Updated dependencies [6c6b704]
+- Updated dependencies [a6138a7]
+- Updated dependencies [b512919]
+  - @clutchd/is-empty@2.0.5
+
 ## 1.2.3
 
 ### Patch Changes

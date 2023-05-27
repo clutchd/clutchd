@@ -1,5 +1,14 @@
 # @clutchd/protect
 
+## 2.1.1
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- 6f27817: Update deps
+- 3effd42: Fix builds
+
 ## 2.1.0
 
 ### Minor Changes

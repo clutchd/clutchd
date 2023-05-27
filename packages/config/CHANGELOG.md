@@ -1,5 +1,17 @@
 # @clutchd/config
 
+## 1.0.3
+
+### Patch Changes
+
+- b512919: Update tailwind
+- a6138a7: Pin config package
+- b512919: Update packages
+- 6f27817: Update deps
+- Updated dependencies [b512919]
+- Updated dependencies [3effd42]
+  - @clutchd/eslint-config-clutchd@1.1.1
+
 ## 1.0.2
 
 ### Patch Changes
