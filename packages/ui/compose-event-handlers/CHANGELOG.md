@@ -1,5 +1,12 @@
 # @clutchd/compose-event-handlers
 
+## 1.0.4
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+
 ## 1.0.3
 
 ### Patch Changes

@@ -1,5 +1,18 @@
 # @clutchd/ui
 
+## 0.7.1
+
+### Patch Changes
+
+- b512919: Update tailwind
+- b512919: Update packages
+- 3effd42: Fix builds
+- Updated dependencies [b512919]
+- Updated dependencies [a6138a7]
+- Updated dependencies [b512919]
+- Updated dependencies [6f27817]
+  - @clutchd/config@1.0.3
+
 ## 0.7.0
 
 ### Minor Changes

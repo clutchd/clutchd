@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/protect",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "keywords": [
     "clutchd",
     "protect",
@@ -32,8 +32,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.2",
-    "@clutchd/eslint-config-clutchd": "1.1.0",
+    "@clutchd/config": "1.0.3",
+    "@clutchd/eslint-config-clutchd": "1.1.1",
     "@types/react": "18.2.7",
     "jest": "29.3.1",
     "next": "13.4.4",

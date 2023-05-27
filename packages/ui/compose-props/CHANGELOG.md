@@ -1,5 +1,16 @@
 # @clutchd/compose-props
 
+## 1.1.4
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- Updated dependencies [a6138a7]
+- Updated dependencies [b512919]
+  - @clutchd/clsx@1.0.3
+  - @clutchd/compose-event-handlers@1.0.4
+
 ## 1.1.3
 
 ### Patch Changes

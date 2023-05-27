@@ -1,5 +1,13 @@
 # @clutchd/is-empty
 
+## 2.0.5
+
+### Patch Changes
+
+- 6c6b704: Update tests
+- a6138a7: Pin config package
+- b512919: Update packages
+
 ## 2.0.4
 
 ### Patch Changes

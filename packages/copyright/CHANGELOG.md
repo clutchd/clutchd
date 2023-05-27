@@ -1,5 +1,19 @@
 # @clutchd/copyright
 
+## 2.1.1
+
+### Patch Changes
+
+- a6138a7: Pin config package
+- b512919: Update packages
+- 6f27817: Update deps
+- 3effd42: Fix builds
+- Updated dependencies [a6138a7]
+- Updated dependencies [b512919]
+- Updated dependencies [6f27817]
+- Updated dependencies [3effd42]
+  - @clutchd/text@2.1.1
+
 ## 2.1.0
 
 ### Minor Changes
