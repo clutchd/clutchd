@@ -4,7 +4,6 @@
 "@clutchd/button": patch
 "@clutchd/card": patch
 "@clutchd/clsx": patch
-"@clutchd/clsx-benchmark": patch
 "@clutchd/component": patch
 "@clutchd/compose-event-handlers": patch
 "@clutchd/compose-props": patch
