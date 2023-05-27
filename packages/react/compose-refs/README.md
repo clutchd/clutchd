@@ -1,6 +1,6 @@
 # @clutchd/compose-refs
 
-A small utility intended to
+A small utility intended to compose multiple refs into a single ref.
 
 ## Installation
 

@@ -1,4 +1,4 @@
-import { MutableRefObject, Ref } from "react";
+import { MutableRefObject, Ref, useCallback } from "react";
 
 /**
  * Type to define possible ref values
@@ -27,4 +27,14 @@ function composeRefs<T>(...refs: PossibleRef<T>[]) {
   return (node: T) => refs.forEach((ref) => setRef(ref, node));
 }
 
-export { composeRefs };
+
+/**
+ * Custom hook that composes multiple ref objects into a single ref object
+ * @param refs Array of ref objects that will be composed
+ * @returns A single ref object composed from all provided refs
+ */
+function useComposedRefs<T>(...refs: PossibleRef<T>[]) {
+  return useCallback(composeRefs(...refs), refs);
+}
+
+export { composeRefs, useComposedRefs };
