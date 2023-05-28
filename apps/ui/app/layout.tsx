@@ -1,6 +1,6 @@
 import { Manrope } from "next/font/google";
 import React from "react";
-import './globals.css';
+import "./globals.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -9,18 +9,18 @@ const manrope = Manrope({
 });
 
 export const metadata = {
-  title: 'Clutchd, LLC - UI',
-  description: 'An open source UI library for NextJS, built with TailwindCSS.',
-}
+  title: "Clutchd, LLC - UI",
+  description: "An open source UI library for NextJS, built with TailwindCSS.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={manrope.className}>{children}</body>
     </html>
-  )
+  );
 }

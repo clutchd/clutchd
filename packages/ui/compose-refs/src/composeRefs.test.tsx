@@ -1,5 +1,5 @@
 import * as React from "react";
-import {composeRefs, useComposedRefs} from "."
+import { composeRefs, useComposedRefs } from ".";
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
@@ -12,10 +12,7 @@ test("composeRefs", () => {
   const composed = composeRefs(ref1, ref2);
 
   const Component = () => {
-    return (
-      <div ref={composed}>
-      </div>
-    );
+    return <div ref={composed}></div>;
   };
 
   render(<Component />);
@@ -33,10 +30,7 @@ test("useComposedRefs", () => {
 
   const Component = () => {
     const composed = useComposedRefs(ref1, ref2);
-    return (
-      <div ref={composed}>
-      </div>
-    );
+    return <div ref={composed}></div>;
   };
 
   render(<Component />);

@@ -29,7 +29,9 @@ const Slot = React.forwardRef<ISlot, ISlotProps>(
 
     // if invalid children and props were provided, wrap in a div and warn
     if (Object.keys(props).length > 0) {
-      console.warn("Invalid children with props, Slot forcefully rendered as a div.");
+      console.warn(
+        "Invalid children with props, Slot forcefully rendered as a div."
+      );
       return (
         <Slot>
           <div {...props} ref={forwardedRef as any}>

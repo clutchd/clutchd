@@ -27,7 +27,6 @@ function composeRefs<T>(...refs: PossibleRef<T>[]) {
   return (node: T) => refs.forEach((ref) => setRef(ref, node));
 }
 
-
 /**
  * Custom hook that composes multiple ref objects into a single ref object
  * @param refs Array of ref objects that will be composed

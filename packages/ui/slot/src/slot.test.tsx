@@ -54,9 +54,7 @@ test("render with invalid and undefined child", () => {
   const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     // @ts-ignore
-    <Slot asdf="asdf">
-      {null}
-    </Slot>
+    <Slot asdf="asdf">{null}</Slot>
   );
 
   const div = container.querySelector("div");
@@ -91,9 +89,7 @@ test("render with invalid child and props", () => {
   const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     // @ts-ignore
-    <Slot asdf={"1234"}>
-      Rendering a div as an invalid string!
-    </Slot>
+    <Slot asdf={"1234"}>Rendering a div as an invalid string!</Slot>
   );
 
   const div = container.querySelector("div");
