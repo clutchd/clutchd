@@ -14,26 +14,14 @@ export async function getLocalSize(path: string) {
   return zlib.gzipSync(result.code).byteLength;
 }
 
-//   /**
-//    * Get the size of a package from bundlejs.com
-//    * @param pkg Package name we are looking for
-//    * @returns
-//    */
-//   export async function getRemoteSize(pkg: string) {
-//     // @ts-ignore
-//     const data = await fetch(`https://edge.bundlejs.com/?q=${pkg}`);
-//     const { size } = await data.json();
-//     return size?.rawCompressedSize;
-//   }
-
 /**
- * Get the size of a package from bundlephobia.com
+ * Get the size of a package from bundlejs.com
  * @param pkg Package name we are looking for
  * @returns
  */
 export async function getRemoteSize(pkg: string) {
   // @ts-ignore
-  const data = await fetch(`https://bundlephobia.com/api/size?package=${pkg}`);
+  const data = await fetch(`https://edge.bundlejs.com/?q=${pkg}`);
   const { size } = await data.json();
-  return size;
+  return size?.rawCompressedSize;
 }
