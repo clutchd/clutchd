@@ -1,5 +1,13 @@
 # @clutchd/card
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies [29b79c1]
+  - @clutchd/twx@1.1.1
+  - @clutchd/divider@1.2.2
+
 ## 1.0.4
 
 ### Patch Changes

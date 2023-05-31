@@ -1,5 +1,11 @@
 # @clutchd/twx
 
+## 1.1.1
+
+### Patch Changes
+
+- 29b79c1: reduce bundle size
+
 ## 1.1.0
 
 ### Minor Changes

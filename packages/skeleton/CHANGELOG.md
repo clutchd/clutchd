@@ -1,5 +1,14 @@
 # @clutchd/skeleton
 
+## 1.0.5
+
+### Patch Changes
+
+- Updated dependencies [29b79c1]
+- Updated dependencies [87a20b8]
+  - @clutchd/twx@1.1.1
+  - @clutchd/component@2.0.0
+
 ## 1.0.4
 
 ### Patch Changes

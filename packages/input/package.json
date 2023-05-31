@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/input",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "keywords": [
     "clutchd",
     "input",
@@ -34,10 +34,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "1.1.1",
+    "@clutchd/component": "2.0.0",
     "@clutchd/compose-event-handlers": "1.0.4",
     "@clutchd/is-empty": "2.0.5",
-    "@clutchd/twx": "1.1.0"
+    "@clutchd/twx": "1.1.1"
   },
   "devDependencies": {
     "@clutchd/config": "1.0.3",

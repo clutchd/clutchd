@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/layout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "clutchd",
     "layout",
@@ -32,9 +32,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "1.1.1",
-    "@clutchd/flex": "1.1.1",
-    "@clutchd/twx": "1.1.0"
+    "@clutchd/component": "2.0.0",
+    "@clutchd/flex": "1.1.2",
+    "@clutchd/twx": "1.1.1"
   },
   "devDependencies": {
     "@clutchd/config": "1.0.3",
