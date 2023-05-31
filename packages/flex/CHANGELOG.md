@@ -1,5 +1,14 @@
 # @clutchd/flex
 
+## 1.1.2
+
+### Patch Changes
+
+- Updated dependencies [29b79c1]
+- Updated dependencies [87a20b8]
+  - @clutchd/twx@1.1.1
+  - @clutchd/component@2.0.0
+
 ## 1.1.1
 
 ### Patch Changes

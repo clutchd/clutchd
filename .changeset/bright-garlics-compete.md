@@ -1,5 +1,0 @@
----
-"@clutchd/bundlejs": minor
----
-
-init
