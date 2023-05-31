@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/clutchd/clutchd",
-    "directory": "packages/compose-props"
+    "directory": "packages/ui/compose-props"
   },
   "author": "Clutchd, LLC",
   "scripts": {
