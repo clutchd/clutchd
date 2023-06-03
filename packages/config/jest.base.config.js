@@ -30,7 +30,7 @@ const config = {
   coverageProvider: "v8",
 
   // The test environment that will be used for testing
-  testEnvironment: "jsdom",
+  testEnvironment: required("@clutchd/config/jsdom.cjs"),
 
   // A map from regular expressions to paths to transformers
   transform: {
