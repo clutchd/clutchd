@@ -1,5 +1,16 @@
 # @clutchd/config
 
+## 1.1.0
+
+### Minor Changes
+
+- 6ec87f0: Add custom jest jsdom env
+
+### Patch Changes
+
+- b9acc90: Update default jest jsdom env
+- 6a09a85: Fix config
+
 ## 1.0.3
 
 ### Patch Changes

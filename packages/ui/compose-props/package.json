@@ -35,7 +35,7 @@
     "@clutchd/compose-event-handlers": "1.0.4"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.3",
+    "@clutchd/config": "1.1.0",
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "jest": "29.3.1",
     "jest-environment-jsdom": "29.3.1",

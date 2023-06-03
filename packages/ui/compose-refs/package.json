@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-refs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "clutchd",
     "compose-refs",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.3",
+    "@clutchd/config": "1.1.0",
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "@testing-library/react": "13.2.0",
     "@types/react": "18.2.7",

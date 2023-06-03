@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/component",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "keywords": [
     "clutchd",
     "component",
@@ -31,10 +31,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/slot": "1.0.0"
+    "@clutchd/slot": "1.0.1"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.3",
+    "@clutchd/config": "1.1.0",
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "13.2.0",
