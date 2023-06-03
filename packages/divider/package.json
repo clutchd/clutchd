@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/divider",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "keywords": [
     "clutchd",
     "divider",
@@ -33,11 +33,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.0",
+    "@clutchd/component": "2.0.1",
     "@clutchd/twx": "1.1.1"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.3",
+    "@clutchd/config": "1.1.0",
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "@clutchd/tailwind": "2.0.1",
     "@clutchd/tsconfig": "1.0.1",

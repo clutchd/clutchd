@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/skeleton",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "keywords": [
     "clutchd",
     "skeleton",
@@ -32,11 +32,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.0",
+    "@clutchd/component": "2.0.1",
     "@clutchd/twx": "1.1.1"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.3",
+    "@clutchd/config": "1.1.0",
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "13.2.0",

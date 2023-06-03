@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/slot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "clutchd",
     "slot",
@@ -32,10 +32,10 @@
   },
   "dependencies": {
     "@clutchd/compose-props": "1.1.4",
-    "@clutchd/compose-refs": "1.1.0"
+    "@clutchd/compose-refs": "1.1.1"
   },
   "devDependencies": {
-    "@clutchd/config": "1.0.3",
+    "@clutchd/config": "1.1.0",
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "13.2.0",
