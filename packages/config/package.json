@@ -19,7 +19,8 @@
   "author": "Clutchd, LLC",
   "main": "index.js",
   "files": [
-    "*.config.js"
+    "*.config.js",
+    "jsdom.cjs"
   ],
   "scripts": {
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
