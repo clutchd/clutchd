@@ -1,5 +1,12 @@
 # @clutchd/ui
 
+## 0.7.3
+
+### Patch Changes
+
+- Updated dependencies [85bf39f]
+  - @clutchd/config@1.1.1
+
 ## 0.7.2
 
 ### Patch Changes

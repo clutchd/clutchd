@@ -36,7 +36,7 @@
     "@clutchd/twx": "1.1.1"
   },
   "devDependencies": {
-    "@clutchd/config": "1.1.0",
+    "@clutchd/config": "1.1.1",
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "13.2.0",
