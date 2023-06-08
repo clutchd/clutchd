@@ -1,7 +1,6 @@
 {
   "name": "@clutchd/config",
   "version": "1.1.0",
-  "private": true,
   "keywords": [
     "clutchd",
     "config",
