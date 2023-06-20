@@ -1,6 +1,5 @@
 import * as React from "react";
 import { composeRefs, useComposedRefs } from ".";
-import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
 test("composeRefs", () => {
