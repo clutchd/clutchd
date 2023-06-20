@@ -22,12 +22,12 @@
       "module": "CommonJS"
     }
   },
-  "include": ["/**/*.ts", "/**/*.tsx", "/**/*.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.d.ts"],
   "exclude": [
-    "/**/build",
-    "/**/dist",
-    "/**/node_modules",
-    "/**/*.test.ts",
-    "/**/*.test.tsx"
+    "**/build",
+    "**/dist",
+    "**/node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx"
   ]
 }
