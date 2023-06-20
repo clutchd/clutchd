@@ -40,7 +40,7 @@
     "@clutchd/eslint-config-clutchd": "1.1.1",
     "@clutchd/tailwind": "2.0.1",
     "jest": "29.3.1",
-    "next": "13.4.4",
+    "next": "13.4.6",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "ts-jest": "29.0.3",
@@ -48,7 +48,7 @@
     "typescript": "5.0.4"
   },
   "peerDependencies": {
-    "next": "13.4.4",
+    "next": "13.4.6",
     "react": "18.2.0"
   }
 }
