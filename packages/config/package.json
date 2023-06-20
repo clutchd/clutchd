@@ -26,5 +26,11 @@
   },
   "dependencies": {
     "@clutchd/eslint-config-clutchd": "1.1.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.5"
+  },
+  "peerDependencies": {
+    "@testing-library/jest-dom": "5.16.5"
   }
 }
