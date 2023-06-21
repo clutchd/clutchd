@@ -29,6 +29,9 @@ const config = {
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: "v8",
 
+  // An array of file extensions your modules use
+  setupFilesAfterEnv: ["@clutchd/jest/setup-jest.js"],
+
   // The test environment that will be used for testing
   testEnvironment: "@clutchd/jest/jsdom.cjs",
 
