@@ -34,7 +34,6 @@
     "@clutchd/slot": "1.0.2"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.2",
     "@clutchd/jest": "1.0.0",
     "@testing-library/react": "13.2.0",
     "@types/react": "18.2.7",

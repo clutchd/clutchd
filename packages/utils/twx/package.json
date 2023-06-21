@@ -36,7 +36,6 @@
     "@clutchd/clsx": "1.0.4"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.2",
     "@clutchd/jest": "1.0.0",
     "@clutchd/tsconfig": "1.1.0",
     "node-fetch": "2.6.1",

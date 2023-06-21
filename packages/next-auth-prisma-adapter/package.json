@@ -32,7 +32,6 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.2",
     "@clutchd/jest": "1.0.0",
     "@prisma/client": "4.9.0",
     "next-auth": "4.18.6",

@@ -31,7 +31,6 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.2",
     "@clutchd/jest": "1.0.0",
     "@clutchd/tsconfig": "1.1.0",
     "@types/node-fetch": "^2.6.4",

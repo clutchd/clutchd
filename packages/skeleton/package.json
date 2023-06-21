@@ -36,7 +36,6 @@
     "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.2",
     "@clutchd/jest": "1.0.0",
     "next-auth": "4.18.6",
     "postcss": "8.4.23",

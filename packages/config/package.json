@@ -22,7 +22,5 @@
   "scripts": {
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
   },
-  "dependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.2"
-  }
+  "dependencies": {}
 }

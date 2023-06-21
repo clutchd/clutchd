@@ -36,7 +36,6 @@
     "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.2",
     "@clutchd/jest": "1.0.0",
     "@clutchd/tailwind": "2.0.2",
     "next": "13.4.6",
