@@ -34,7 +34,7 @@
     "@clutchd/slot": "1.0.2"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/jest": "1.0.1",
     "@testing-library/react": "13.2.0",
     "@types/react": "18.2.7",
     "react": "18.2.0",

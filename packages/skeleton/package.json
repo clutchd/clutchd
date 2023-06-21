@@ -36,7 +36,7 @@
     "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/jest": "1.0.1",
     "next-auth": "4.18.6",
     "postcss": "8.4.23",
     "react": "18.2.0",

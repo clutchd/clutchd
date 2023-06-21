@@ -35,7 +35,7 @@
     "@clutchd/text": "2.1.4"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/jest": "1.0.1",
     "@clutchd/tsconfig": "1.1.0",
     "next": "13.4.6",
     "postcss": "8.4.23",
