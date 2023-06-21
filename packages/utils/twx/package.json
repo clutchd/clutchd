@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "*",
+    "@clutchd/jest": "1.0.0",
     "@clutchd/tsconfig": "1.0.1",
     "node-fetch": "2.6.1",
     "terser": "5.16.1",
