@@ -37,7 +37,7 @@
     "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/jest": "1.0.1",
     "@clutchd/tailwind": "2.0.2",
     "@clutchd/tsconfig": "1.1.0",
     "next": "13.4.6",

@@ -34,7 +34,7 @@
     "@clutchd/is-empty": "2.0.6"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/jest": "1.0.1",
     "@clutchd/tsconfig": "1.1.0",
     "tsup": "6.7.0",
     "typescript": "5.0.4"
