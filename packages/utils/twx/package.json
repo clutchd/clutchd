@@ -36,7 +36,7 @@
     "@clutchd/clsx": "1.0.4"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/jest": "1.0.1",
     "@clutchd/tsconfig": "1.1.0",
     "node-fetch": "2.6.1",
     "terser": "5.16.1",
