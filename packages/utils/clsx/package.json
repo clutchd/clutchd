@@ -1,7 +1,7 @@
 {
   "name": "@clutchd/clsx",
   "version": "1.0.4",
-  "description": "A tinier (430B), more performant implementation of clsx.",
+  "description": "A tinier (322B), more performant implementation of clsx.",
   "keywords": [
     "clutchd",
     "clsx"

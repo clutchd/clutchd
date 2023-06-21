@@ -23,7 +23,7 @@ export async function getLocalSize(inputs: Uint8Array[] | string[]): Promise<{
     // Wait for WASM to load
     Foras.initSyncBundledOnce();
 
-    return async (code: Uint8Array) => await gzip(code, 9);
+    return async (code: Uint8Array) => gzip(code, 9);
   })();
 
   // Compress all binary contents according to the compression map

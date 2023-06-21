@@ -9,7 +9,6 @@ const nextConfig = {
     ],
   },
   reactStrictMode: true,
-  transpilePackages: ["@clutchd/*"],
 };
 
 module.exports = nextConfig;

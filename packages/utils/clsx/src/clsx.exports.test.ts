@@ -1,9 +1,7 @@
-import fs from "fs";
-import fetch from "node-fetch";
-import { minify } from "terser";
-import zlib from "zlib";
 import { clsx } from ".";
+import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
 import pkg from "../package.json";
+import { readFileSync } from "fs";
 
 test("exports", () => {
   expect(typeof clsx).toEqual("function");
@@ -16,23 +14,13 @@ test("ensures the bundle size is accurate", async () => {
     if (match == null) return "";
     return parseInt(match[1]);
   }
-
-  // @ts-ignore
-  const data = await fetch("https://bundlephobia.com/api/size?package=clsx");
-  const { size: ogSize } = await data.json();
-
   const pkgSize = getClaimedSize(pkg.description);
+  const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
+  expect(size.rawCompressedSize).toEqual(pkgSize);
+});
 
-  const input = fs.readFileSync("dist/index.js", "utf8");
-
-  const result = await minify(input, {
-    module: true,
-    compress: true,
-  });
-
-  // @ts-ignore
-  const size = zlib.gzipSync(result.code).byteLength;
-
-  expect(size).toEqual(pkgSize);
-  expect(size).toBeLessThanOrEqual(ogSize);
+test("ensures the bundle size is not bigger than the original size", async () => {
+  const og = await getRemoteSize("clsx");
+  const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
+  expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
 });

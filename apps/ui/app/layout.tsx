@@ -4,7 +4,6 @@ import "./globals.css";
 
 const manrope = Manrope({
   subsets: ["latin"],
-  display: "optional",
   variable: "--font-manrope",
 });
 
@@ -16,11 +15,11 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={manrope.className}>{children}</body>
+    <html lang="en" className={manrope.variable}>
+      <body>{children}</body>
     </html>
-  );
+  )
 }

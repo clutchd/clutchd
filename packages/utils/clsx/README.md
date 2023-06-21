@@ -1,3 +1,3 @@
 # `@clutchd/clsx`
 
-A tinier (430B), more performant implementation of clsx.
+A tinier (322B), more performant implementation of clsx.
