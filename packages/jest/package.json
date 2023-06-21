@@ -19,7 +19,8 @@
   "main": "index.js",
   "files": [
     "*.config.js",
-    "jsdom.cjs"
+    "jsdom.cjs",
+    "setup-jest.js"
   ],
   "scripts": {
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
