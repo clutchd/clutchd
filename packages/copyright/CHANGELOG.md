@@ -1,5 +1,19 @@
 # @clutchd/copyright
 
+## 2.1.4
+
+### Patch Changes
+
+- aecdd5f: Update jest pkg ref
+- 45fbf85: Migrate to new @clutchd/jest package
+- 04ed016: Update next
+- 465de04: Update jest config
+- Updated dependencies [aecdd5f]
+- Updated dependencies [45fbf85]
+- Updated dependencies [04ed016]
+- Updated dependencies [465de04]
+  - @clutchd/text@2.1.4
+
 ## 2.1.3
 
 ### Patch Changes

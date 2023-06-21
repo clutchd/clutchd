@@ -1,5 +1,17 @@
 # @clutchd/tsconfig
 
+## 1.1.0
+
+### Minor Changes
+
+- b7ce904: Update for next 13.4
+
+### Patch Changes
+
+- 59f85dc: Fix includes
+- 04ed016: Update next
+- 465de04: Update jest config
+
 ## 1.0.1
 
 ### Patch Changes

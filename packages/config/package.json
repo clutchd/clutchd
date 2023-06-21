@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/config",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "keywords": [
     "clutchd",
     "config",
@@ -23,6 +23,6 @@
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1"
+    "@clutchd/eslint-config-clutchd": "1.1.2"
   }
 }

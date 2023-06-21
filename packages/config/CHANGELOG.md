@@ -1,5 +1,20 @@
 # @clutchd/config
 
+## 2.0.0
+
+### Major Changes
+
+- bc69ec2: Init jest
+
+### Minor Changes
+
+- 3d876dc: Migrate to @testing-library/jest-dom
+
+### Patch Changes
+
+- Updated dependencies [04ed016]
+  - @clutchd/eslint-config-clutchd@1.1.2
+
 ## 1.1.1
 
 ### Patch Changes

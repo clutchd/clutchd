@@ -1,5 +1,19 @@
 # @clutchd/grid
 
+## 1.0.5
+
+### Patch Changes
+
+- aecdd5f: Update jest pkg ref
+- 45fbf85: Migrate to new @clutchd/jest package
+- 465de04: Update jest config
+- Updated dependencies [ea083a0]
+- Updated dependencies [aecdd5f]
+- Updated dependencies [45fbf85]
+- Updated dependencies [465de04]
+  - @clutchd/component@2.0.2
+  - @clutchd/twx@1.1.2
+
 ## 1.0.4
 
 ### Patch Changes

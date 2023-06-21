@@ -1,5 +1,17 @@
 # @clutchd/get-initials
 
+## 1.2.5
+
+### Patch Changes
+
+- aecdd5f: Update jest pkg ref
+- 45fbf85: Migrate to new @clutchd/jest package
+- 465de04: Update jest config
+- Updated dependencies [aecdd5f]
+- Updated dependencies [45fbf85]
+- Updated dependencies [465de04]
+  - @clutchd/is-empty@2.0.6
+
 ## 1.2.4
 
 ### Patch Changes

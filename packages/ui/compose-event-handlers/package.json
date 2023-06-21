@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-event-handlers",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "keywords": [
     "clutchd",
     "compose-event-handlers",
@@ -31,8 +31,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
+    "@clutchd/jest": "2.0.0",
     "tsup": "6.7.0",
     "typescript": "5.0.4"
   }
