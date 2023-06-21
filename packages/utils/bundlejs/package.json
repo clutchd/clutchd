@@ -39,6 +39,6 @@
   },
   "dependencies": {
     "@hazae41/foras": "^2.0.8",
-    "node-fetch": "2.6.1"
+    "node-fetch": "2.6.7"
   }
 }
