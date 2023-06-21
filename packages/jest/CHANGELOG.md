@@ -1,5 +1,11 @@
 # @clutchd/jest
 
+## 1.0.1
+
+### Patch Changes
+
+- 4bc7a14: Fix exports
+
 ## 1.0.0
 
 ### Major Changes
