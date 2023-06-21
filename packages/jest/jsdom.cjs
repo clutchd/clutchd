@@ -6,7 +6,7 @@ const { TextEncoder, TextDecoder } = require("util");
 const {
   default: $JSDOMEnvironment,
   TestEnvironment,
-} = require("@testing-library/jest-dom");
+} = require("jest-environment-jsdom");
 
 Object.defineProperty(exports, "__esModule", {
   value: true,
