@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/get-initials",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "keywords": [
     "clutchd",
     "get-initials",
@@ -31,12 +31,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/is-empty": "2.0.5"
+    "@clutchd/is-empty": "2.0.6"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "1.0.0",
-    "@clutchd/tsconfig": "1.0.1",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
+    "@clutchd/jest": "2.0.0",
+    "@clutchd/tsconfig": "1.1.0",
     "tsup": "6.7.0",
     "typescript": "5.0.4"
   }

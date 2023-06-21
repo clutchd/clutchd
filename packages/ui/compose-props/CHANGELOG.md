@@ -1,5 +1,19 @@
 # @clutchd/compose-props
 
+## 1.1.5
+
+### Patch Changes
+
+- aecdd5f: Update jest pkg ref
+- 45fbf85: Migrate to new @clutchd/jest package
+- 465de04: Update jest config
+- Updated dependencies [aecdd5f]
+- Updated dependencies [45fbf85]
+- Updated dependencies [04ed016]
+- Updated dependencies [465de04]
+  - @clutchd/compose-event-handlers@1.0.5
+  - @clutchd/clsx@1.0.4
+
 ## 1.1.4
 
 ### Patch Changes

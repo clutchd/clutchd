@@ -1,5 +1,13 @@
 # @clutchd/compose-event-handlers
 
+## 1.0.5
+
+### Patch Changes
+
+- aecdd5f: Update jest pkg ref
+- 45fbf85: Migrate to new @clutchd/jest package
+- 465de04: Update jest config
+
 ## 1.0.4
 
 ### Patch Changes

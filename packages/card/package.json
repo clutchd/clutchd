@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/card",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "keywords": [
     "clutchd",
     "card",
@@ -32,14 +32,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/divider": "1.2.3",
-    "@clutchd/twx": "1.1.1"
+    "@clutchd/divider": "1.2.4",
+    "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "1.0.0",
-    "@clutchd/tailwind": "2.0.1",
-    "@clutchd/tsconfig": "1.0.1",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
+    "@clutchd/jest": "2.0.0",
+    "@clutchd/tailwind": "2.0.2",
+    "@clutchd/tsconfig": "1.1.0",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "tsup": "6.7.0",

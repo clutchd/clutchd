@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/twx",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Combining the powers of @clutchd/clsx and tailwind-merge.",
   "keywords": [
     "clutchd",
@@ -33,12 +33,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "1.0.3"
+    "@clutchd/clsx": "1.0.4"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "1.0.0",
-    "@clutchd/tsconfig": "1.0.1",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
+    "@clutchd/jest": "2.0.0",
+    "@clutchd/tsconfig": "1.1.0",
     "node-fetch": "2.6.1",
     "terser": "5.16.1",
     "tsup": "6.7.0",

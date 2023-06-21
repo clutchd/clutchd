@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/layout",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "keywords": [
     "clutchd",
     "layout",
@@ -32,14 +32,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.1",
-    "@clutchd/flex": "1.1.3",
-    "@clutchd/twx": "1.1.1"
+    "@clutchd/component": "2.0.2",
+    "@clutchd/flex": "1.1.4",
+    "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "1.0.0",
-    "@clutchd/tailwind": "2.0.1",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
+    "@clutchd/jest": "2.0.0",
+    "@clutchd/tailwind": "2.0.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "tsup": "6.7.0",

@@ -1,5 +1,11 @@
 # @clutchd/eslint-config-clutchd
 
+## 1.1.2
+
+### Patch Changes
+
+- 04ed016: Update next
+
 ## 1.1.1
 
 ### Patch Changes

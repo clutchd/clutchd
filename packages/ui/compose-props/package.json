@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-props",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "sideEffects": false,
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -31,12 +31,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "1.0.3",
-    "@clutchd/compose-event-handlers": "1.0.4"
+    "@clutchd/clsx": "1.0.4",
+    "@clutchd/compose-event-handlers": "1.0.5"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "1.0.0",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
+    "@clutchd/jest": "2.0.0",
     "tsup": "6.7.0",
     "typescript": "5.0.4"
   }

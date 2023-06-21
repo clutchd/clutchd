@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/input",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "keywords": [
     "clutchd",
     "input",
@@ -34,16 +34,16 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.1",
-    "@clutchd/compose-event-handlers": "1.0.4",
-    "@clutchd/is-empty": "2.0.5",
-    "@clutchd/twx": "1.1.1"
+    "@clutchd/component": "2.0.2",
+    "@clutchd/compose-event-handlers": "1.0.5",
+    "@clutchd/is-empty": "2.0.6",
+    "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
-    "@clutchd/jest": "1.0.0",
-    "@clutchd/tailwind": "2.0.1",
-    "@clutchd/tsconfig": "1.0.1",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
+    "@clutchd/jest": "2.0.0",
+    "@clutchd/tailwind": "2.0.2",
+    "@clutchd/tsconfig": "1.1.0",
     "next": "13.4.6",
     "postcss": "8.4.23",
     "react": "18.2.0",

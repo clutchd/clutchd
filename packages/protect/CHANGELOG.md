@@ -1,5 +1,14 @@
 # @clutchd/protect
 
+## 2.1.2
+
+### Patch Changes
+
+- aecdd5f: Update jest pkg ref
+- 45fbf85: Migrate to new @clutchd/jest package
+- 04ed016: Update next
+- 465de04: Update jest config
+
 ## 2.1.1
 
 ### Patch Changes

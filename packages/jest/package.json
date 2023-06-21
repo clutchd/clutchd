@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/jest",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "keywords": [
     "clutchd",
     "config",
@@ -31,7 +31,7 @@
     "ts-jest": "29.0.3"
   },
   "devDependencies": {
-    "@clutchd/eslint-config-clutchd": "1.1.1",
+    "@clutchd/eslint-config-clutchd": "1.1.2",
     "@types/jest": "29.5.2"
   }
 }

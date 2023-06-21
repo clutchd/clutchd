@@ -1,5 +1,18 @@
 # @clutchd/ui
 
+## 0.7.4
+
+### Patch Changes
+
+- Updated dependencies [3d876dc]
+- Updated dependencies [b7ce904]
+- Updated dependencies [59f85dc]
+- Updated dependencies [04ed016]
+- Updated dependencies [465de04]
+- Updated dependencies [bc69ec2]
+  - @clutchd/config@2.0.0
+  - @clutchd/tsconfig@1.1.0
+
 ## 0.7.3
 
 ### Patch Changes

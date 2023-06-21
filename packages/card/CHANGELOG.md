@@ -1,5 +1,19 @@
 # @clutchd/card
 
+## 1.0.7
+
+### Patch Changes
+
+- aecdd5f: Update jest pkg ref
+- 45fbf85: Migrate to new @clutchd/jest package
+- 465de04: Update jest config
+- Updated dependencies [aecdd5f]
+- Updated dependencies [45fbf85]
+- Updated dependencies [04ed016]
+- Updated dependencies [465de04]
+  - @clutchd/divider@1.2.4
+  - @clutchd/twx@1.1.2
+
 ## 1.0.6
 
 ### Patch Changes
