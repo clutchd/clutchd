@@ -18,7 +18,7 @@
     "version-packages": "changeset version"
   },
   "dependencies": {
-    "@changesets/cli": "2.22.0",
+    "@changesets/cli": "2.26.1",
     "@clutchd/eslint-config-clutchd": "1.1.2",
     "@manypkg/cli": "0.21.0",
     "eslint": "8.41.0",
