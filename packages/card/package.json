@@ -25,13 +25,13 @@
   ],
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "clean": "rm -rf .turbo node_modules coverage dist package-lock.json",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
-    "prepublish": "npm run build",
+    "prepublish": "pnpm run build",
     "test": "jest"
   },
   "dependencies": {
+    "@clutchd/component": "2.0.2",
     "@clutchd/divider": "1.2.4",
     "@clutchd/twx": "1.1.2"
   },
@@ -39,6 +39,7 @@
     "@clutchd/jest": "1.0.1",
     "@clutchd/tailwind": "2.0.2",
     "@clutchd/tsconfig": "1.1.0",
+    "@types/react": "18.2.7",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "tsup": "6.7.0",
