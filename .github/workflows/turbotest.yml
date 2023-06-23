@@ -16,13 +16,13 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Setup Environment
-        uses: clutchd/turbostart-npm@v1.0.2
+        uses: clutchd/turbostart-pnpm@v1.0.1
 
       - name: Lint
-        run: npm run lint
+        run: pnpm run lint
 
       - name: Test
-        run: npm run test
+        run: pnpm run test
 
       - name: Upload Code Coverage
         uses: codecov/codecov-action@v3
@@ -36,4 +36,4 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
-          publish: npm run release
+          publish: pnpm run release
