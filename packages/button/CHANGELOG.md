@@ -1,5 +1,11 @@
 # @clutchd/button
 
+## 0.2.5
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 0.2.4
 
 ### Patch Changes

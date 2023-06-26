@@ -1,5 +1,11 @@
 # @clutchd/input
 
+## 0.3.5
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 0.3.4
 
 ### Patch Changes

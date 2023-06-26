@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 2.0.3
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 2.0.2
 
 ### Patch Changes

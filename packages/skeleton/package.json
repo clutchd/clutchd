@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/skeleton",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "keywords": [
     "clutchd",
     "skeleton",
@@ -35,7 +35,7 @@
     "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.1",
+    "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.1.0",
     "@testing-library/react": "14.0.0",
     "@types/react": "18.2.7",

@@ -1,5 +1,13 @@
 # @clutchd/copyright
 
+## 2.1.5
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+- Updated dependencies [13e29c8]
+  - @clutchd/text@2.1.5
+
 ## 2.1.4
 
 ### Patch Changes

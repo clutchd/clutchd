@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 2.1.3
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 2.1.2
 
 ### Patch Changes
