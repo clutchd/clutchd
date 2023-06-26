@@ -46,7 +46,7 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../../packages/jest
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -71,10 +71,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -111,10 +111,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -148,10 +148,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -184,17 +184,17 @@ importers:
         specifier: 2.0.2
         version: 2.0.2(react@18.2.0)
       '@clutchd/divider':
-        specifier: 1.2.4
+        specifier: 1.2.5
         version: link:../divider
       '@clutchd/twx':
         specifier: 1.1.2
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -223,11 +223,11 @@ importers:
   packages/copyright:
     dependencies:
       '@clutchd/text':
-        specifier: 2.1.4
+        specifier: 2.1.5
         version: link:../text
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -264,10 +264,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -319,10 +319,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -359,10 +359,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -402,10 +402,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -464,10 +464,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -500,17 +500,17 @@ importers:
         specifier: 2.0.2
         version: 2.0.2(react@18.2.0)
       '@clutchd/flex':
-        specifier: 1.1.4
+        specifier: 1.1.5
         version: link:../flex
       '@clutchd/twx':
         specifier: 1.1.2
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -541,7 +541,7 @@ importers:
         version: 2.0.2(react@18.2.0)
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -571,7 +571,7 @@ importers:
   packages/next-auth-prisma-adapter:
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -601,7 +601,7 @@ importers:
   packages/protect:
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -641,7 +641,7 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -674,7 +674,7 @@ importers:
   packages/tailwind:
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tsconfig':
         specifier: 1.1.0
@@ -699,10 +699,10 @@ importers:
         version: 1.1.2
     devDependencies:
       '@clutchd/jest':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../jest
       '@clutchd/tailwind':
-        specifier: 2.0.2
+        specifier: 2.0.3
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.1.0
