@@ -1,5 +1,11 @@
 # @clutchd/next-auth-prisma-adapter
 
+## 1.0.4
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 1.0.3
 
 ### Patch Changes

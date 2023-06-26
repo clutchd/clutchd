@@ -1,5 +1,11 @@
 # @clutchd/avatar
 
+## 2.1.5
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 2.1.4
 
 ### Patch Changes

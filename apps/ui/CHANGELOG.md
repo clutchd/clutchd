@@ -1,5 +1,15 @@
 # @clutchd/ui
 
+## 0.8.0
+
+### Minor Changes
+
+- 13e29c8: Migrate to nextra
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 0.7.4
 
 ### Patch Changes

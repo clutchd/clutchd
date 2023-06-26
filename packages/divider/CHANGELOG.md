@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 1.2.5
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 1.2.4
 
 ### Patch Changes

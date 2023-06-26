@@ -1,5 +1,14 @@
 # @clutchd/jest
 
+## 1.0.2
+
+### Patch Changes
+
+- f7eacc0: Fix jest package config
+- 13e29c8: Update dependencies
+- cb7c56f: Fix jest-setup
+- a96dd51: Make jest a peerdep
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/grid
 
+## 1.0.6
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 1.0.5
 
 ### Patch Changes

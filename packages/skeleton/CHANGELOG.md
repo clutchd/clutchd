@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 1.0.8
+
+### Patch Changes
+
+- 13e29c8: Update dependencies
+
 ## 1.0.7
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/next-auth-prisma-adapter",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "keywords": [
     "clutchd",
     "next-auth",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.1",
+    "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.1.0",
     "@prisma/client": "4.9.0",
     "@types/react": "18.2.7",
