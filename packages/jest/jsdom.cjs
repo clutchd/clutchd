@@ -1,4 +1,4 @@
-// A custom jest environment for jsdom that fixes the missing TextEncoder and TextDecoder.
+// A custom jest environment for jsdom that fixes TextEncoder, TextDecoder, Request, and Response.
 
 "use strict";
 
@@ -18,6 +18,8 @@ class JSDOMEnvironment extends $JSDOMEnvironment {
     if (!global.TextEncoder) global.TextEncoder = TextEncoder;
     if (!global.TextDecoder) global.TextDecoder = TextDecoder;
     if (!global.Uint8Array) global.Uint8Array = Uint8Array;
+    if (!global.Request) global.Request = Request;
+    if (!global.Response) global.Response = Response;
   }
 }
 
