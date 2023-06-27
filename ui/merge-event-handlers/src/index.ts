@@ -1,2 +1,2 @@
-export { mergeEventHandlers } from "./merge-event-handlers";
-export type { IPossibleEventHandler } from "./merge-event-handlers";
+export { mergeEventHandlers } from "./mergeEventHandlers";
+export type { IPossibleEventHandler } from "./mergeEventHandlers";

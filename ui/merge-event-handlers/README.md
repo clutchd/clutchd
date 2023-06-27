@@ -1,6 +1,6 @@
 # @clutchd/merge-event-handlers
 
-A small utility intended to quickly merge multiple event handlers into a single event handler array.
+A small utility intended to quickly merge multiple event handlers for a provided event.
 
 ## Installation
 
