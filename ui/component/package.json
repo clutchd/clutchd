@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/component",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "keywords": [
     "clutchd",
     "component",
@@ -30,7 +30,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/slot": "1.0.2"
+    "@clutchd/slot": "1.0.3"
   },
   "devDependencies": {
     "@clutchd/jest": "1.0.2",

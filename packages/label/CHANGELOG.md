@@ -1,5 +1,12 @@
 # @clutchd/label
 
+## 1.1.6
+
+### Patch Changes
+
+- afbca0c: Update deps
+  - @clutchd/component@2.0.3
+
 ## 1.1.5
 
 ### Patch Changes

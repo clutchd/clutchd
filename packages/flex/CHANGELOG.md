@@ -1,5 +1,11 @@
 # @clutchd/flex
 
+## 1.1.6
+
+### Patch Changes
+
+- @clutchd/component@2.0.3
+
 ## 1.1.5
 
 ### Patch Changes

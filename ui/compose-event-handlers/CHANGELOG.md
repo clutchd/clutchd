@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 2.0.0
+
+### Major Changes
+
+- afbca0c: Migrate into multiple packages
+
 ## 1.0.5
 
 ### Patch Changes
