@@ -248,6 +248,9 @@ importers:
 
   packages/clsx:
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.2
+        version: link:../bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../jest
@@ -511,6 +514,9 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../tsconfig
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -857,6 +863,9 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../../packages/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -881,6 +890,9 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../../packages/tsconfig
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -903,6 +915,9 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../../packages/tsconfig
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -918,6 +933,9 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../../packages/tsconfig
       '@types/react':
         specifier: 18.2.7
         version: 18.2.7
@@ -946,6 +964,9 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../../packages/tsconfig
       '@types/react':
         specifier: 18.2.7
         version: 18.2.7
