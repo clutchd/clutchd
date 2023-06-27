@@ -80,8 +80,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -120,8 +120,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -185,8 +185,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -228,8 +228,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -288,8 +288,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -328,8 +328,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -383,8 +383,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -445,8 +445,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -488,8 +488,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -568,8 +568,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -611,8 +611,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -642,8 +642,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -675,8 +675,8 @@ importers:
         specifier: 4.9.0
         version: 4.9.0(prisma@4.16.0)
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -702,8 +702,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -745,8 +745,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -803,8 +803,8 @@ importers:
         specifier: 1.1.0
         version: link:../tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -870,8 +870,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -937,8 +937,8 @@ importers:
         specifier: 1.1.0
         version: link:../../packages/tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -968,8 +968,8 @@ importers:
         specifier: 1.1.0
         version: link:../../packages/tsconfig
       '@types/react':
-        specifier: 18.2.7
-        version: 18.2.7
+        specifier: 18.2.14
+        version: 18.2.14
       jest:
         specifier: 29.5.0
         version: 29.5.0(@types/node@20.3.1)
@@ -2103,7 +2103,7 @@ packages:
       react: '>=16'
     dependencies:
       '@types/mdx': 2.0.5
-      '@types/react': 18.2.7
+      '@types/react': 18.2.14
       react: 18.2.0
     dev: false
 
@@ -2621,11 +2621,11 @@ packages:
   /@types/react-dom@18.2.4:
     resolution: {integrity: sha512-G2mHoTMTL4yoydITgOGwWdWMVd8sNgyEP85xVmMKAPUBwQWm9wBPQUmvbeF4V3WBY1P7mmL4BkjQ0SqUpf1snw==}
     dependencies:
-      '@types/react': 18.2.7
+      '@types/react': 18.2.14
     dev: true
 
-  /@types/react@18.2.7:
-    resolution: {integrity: sha512-ojrXpSH2XFCmHm7Jy3q44nXDyN54+EYKP2lBhJ2bqfyPj6cIUW/FZW/Csdia34NQgq7KYcAlHi5184m4X88+yw==}
+  /@types/react@18.2.14:
+    resolution: {integrity: sha512-A0zjq+QN/O0Kpe30hA1GidzyFjatVvrpIvWLxD+xv67Vt91TWWgco9IvrJBkeyHm1trGaFS/FSGqPlhyeZRm0g==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
