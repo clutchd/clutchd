@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/divider",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "keywords": [
     "clutchd",
     "divider",
@@ -32,7 +32,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.2",
+    "@clutchd/component": "2.0.3",
     "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {

@@ -1,5 +1,11 @@
 # @clutchd/slot
 
+## 1.0.3
+
+### Patch Changes
+
+- @clutchd/compose-props@1.1.6
+
 ## 1.0.2
 
 ### Patch Changes

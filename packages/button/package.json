@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/button",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "keywords": [
     "clutchd",
     "button",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.2",
+    "@clutchd/component": "2.0.3",
     "@clutchd/twx": "1.1.2"
   },
   "devDependencies": {

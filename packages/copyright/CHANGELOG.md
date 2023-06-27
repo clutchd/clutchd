@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 2.1.6
+
+### Patch Changes
+
+- @clutchd/text@2.1.6
+
 ## 2.1.5
 
 ### Patch Changes
