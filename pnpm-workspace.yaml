@@ -3,3 +3,5 @@ packages:
   - "apps/*"
   # all packages in direct sub directories of packages/
   - "packages/*"
+    # all packages in direct sub directories of ui/
+  - "ui/*"

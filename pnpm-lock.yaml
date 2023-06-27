@@ -65,10 +65,10 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -105,10 +105,10 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -138,14 +138,42 @@ importers:
         specifier: 5.1.3
         version: 5.1.3
 
+  packages/bundlejs:
+    dependencies:
+      '@hazae41/foras':
+        specifier: 2.0.8
+        version: 2.0.8
+      node-fetch:
+        specifier: 2.6.1
+        version: 2.6.1
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../tsconfig
+      '@types/node-fetch':
+        specifier: 2.6.4
+        version: 2.6.4
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
   packages/button:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -182,13 +210,13 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/divider':
         specifier: 1.2.5
         version: link:../divider
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -211,6 +239,30 @@ importers:
       react:
         specifier: 18.2.0
         version: 18.2.0
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
+  packages/clsx:
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../tsconfig
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      node-fetch:
+        specifier: 2.6.1
+        version: 2.6.1
+      terser:
+        specifier: 5.16.1
+        version: 5.16.1
       tsup:
         specifier: 6.7.0
         version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
@@ -258,10 +310,10 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -313,10 +365,10 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -349,14 +401,36 @@ importers:
         specifier: 5.1.3
         version: 5.1.3
 
+  packages/get-initials:
+    dependencies:
+      '@clutchd/is-empty':
+        specifier: 2.0.6
+        version: link:../is-empty
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../tsconfig
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
   packages/grid:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -390,16 +464,16 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/compose-event-handlers':
         specifier: 1.0.5
-        version: 1.0.5
+        version: link:../../ui/compose-event-handlers
       '@clutchd/is-empty':
         specifier: 2.0.6
-        version: 2.0.6
+        version: link:../is-empty
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -432,6 +506,21 @@ importers:
         specifier: 5.1.3
         version: 5.1.3
 
+  packages/is-empty:
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../jest
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
   packages/jest:
     dependencies:
       '@testing-library/jest-dom':
@@ -455,13 +544,13 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/compose-event-handlers':
         specifier: 1.0.5
-        version: 1.0.5
+        version: link:../../ui/compose-event-handlers
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -498,13 +587,13 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/flex':
         specifier: 1.1.5
         version: link:../flex
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -538,7 +627,7 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -635,10 +724,10 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -693,10 +782,10 @@ importers:
     dependencies:
       '@clutchd/component':
         specifier: 2.0.2
-        version: 2.0.2(react@18.2.0)
+        version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
-        version: 1.1.2
+        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
@@ -730,6 +819,148 @@ importers:
         version: 5.1.3
 
   packages/tsconfig: {}
+
+  packages/twx:
+    dependencies:
+      '@clutchd/clsx':
+        specifier: 1.0.4
+        version: link:../clsx
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../jest
+      '@clutchd/tsconfig':
+        specifier: 1.1.0
+        version: link:../tsconfig
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      node-fetch:
+        specifier: 2.6.1
+        version: 2.6.1
+      terser:
+        specifier: 5.16.1
+        version: 5.16.1
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
+  ui/component:
+    dependencies:
+      '@clutchd/slot':
+        specifier: 1.0.2
+        version: link:../slot
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../../packages/jest
+      '@testing-library/react':
+        specifier: 14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/react':
+        specifier: 18.2.7
+        version: 18.2.7
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
+  ui/compose-event-handlers:
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../../packages/jest
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
+  ui/compose-props:
+    dependencies:
+      '@clutchd/clsx':
+        specifier: 1.0.4
+        version: link:../../packages/clsx
+      '@clutchd/compose-event-handlers':
+        specifier: 1.0.5
+        version: link:../compose-event-handlers
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../../packages/jest
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
+  ui/compose-refs:
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../../packages/jest
+      '@types/react':
+        specifier: 18.2.7
+        version: 18.2.7
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
+
+  ui/slot:
+    dependencies:
+      '@clutchd/compose-props':
+        specifier: 1.1.5
+        version: link:../compose-props
+      '@clutchd/compose-refs':
+        specifier: 1.1.2
+        version: link:../compose-refs
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.2
+        version: link:../../packages/jest
+      '@types/react':
+        specifier: 18.2.7
+        version: 18.2.7
+      jest:
+        specifier: 29.5.0
+        version: 29.5.0(@types/node@20.3.1)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 6.7.0
+        version: 6.7.0(postcss@8.4.23)(typescript@5.1.3)
+      typescript:
+        specifier: 5.1.3
+        version: 5.1.3
 
 packages:
 
@@ -1234,58 +1465,6 @@ packages:
       prettier: 2.8.8
     dev: false
 
-  /@clutchd/clsx@1.0.4:
-    resolution: {integrity: sha512-Rdm60jeQbXlAOuiCajL94rvKAswF2ZuH5v3dah9jIMLMJAtI7k5Gu58lp+nLEx8dEFKB3QxYkqbgKGm5/+rlig==}
-    dev: false
-
-  /@clutchd/component@2.0.2(react@18.2.0):
-    resolution: {integrity: sha512-dUoSL+4LI5gkGr5N9Q/nOV5Qqx2+cm+Biqj6subEC5dxPKQAA71HeH37lbLlwbdAYeX1byg/Ad75fL8RNIr5Wg==}
-    peerDependencies:
-      react: 18.2.0
-    dependencies:
-      '@clutchd/slot': 1.0.2(react@18.2.0)
-      react: 18.2.0
-    dev: false
-
-  /@clutchd/compose-event-handlers@1.0.5:
-    resolution: {integrity: sha512-LjLkptjm81SJ/+yLtHvxveQ7D9aKNznXjI5UOATKxMfe/0+TITMnfnmu6HCiXxbJ+M2XzcnORJJjNRdlt4fl0Q==}
-    dev: false
-
-  /@clutchd/compose-props@1.1.5:
-    resolution: {integrity: sha512-BPRHyFJKGZubyfNUHf807BO0Z7TmqhjMuJkxyjFjPjVrQNV7BBLZjv2WS4/Gt3qcCWdE5olCNHnaCHxV7Mkpag==}
-    dependencies:
-      '@clutchd/clsx': 1.0.4
-      '@clutchd/compose-event-handlers': 1.0.5
-    dev: false
-
-  /@clutchd/compose-refs@1.1.2(react@18.2.0):
-    resolution: {integrity: sha512-OZLIGP34Dhzn4X5rBqo2beIHSobTHwfcqmqAlcmujqSAhGGsVnnxPGqWZWzuHQ+zqB848g2sHoPVl3WCDjlXbg==}
-    peerDependencies:
-      react: 18.2.0
-    dependencies:
-      react: 18.2.0
-    dev: false
-
-  /@clutchd/is-empty@2.0.6:
-    resolution: {integrity: sha512-18vMw9Ux3xl1Z7PjWZJxCUJHg2l1JpcQldFvIASvAl7uPPIx/uwt8n8XXVvdiukgr7YuAHHGldZJCQBLtqkWrg==}
-    dev: false
-
-  /@clutchd/slot@1.0.2(react@18.2.0):
-    resolution: {integrity: sha512-YUuKcgrMyyMBwlov56vqO6qetxwYjzGcc9Ta7E9mGcB+nTDy41U1xls2FzWnEhAgRCGDHLbMrad+9xEhIVPx/Q==}
-    peerDependencies:
-      react: 18.2.0
-    dependencies:
-      '@clutchd/compose-props': 1.1.5
-      '@clutchd/compose-refs': 1.1.2(react@18.2.0)
-      react: 18.2.0
-    dev: false
-
-  /@clutchd/twx@1.1.2:
-    resolution: {integrity: sha512-shU/3W0+2k6U4Ys79A0ln2v4/X1MrM5DGW3alvBY3e6RNIw6+oEEVtzKVrMyPyn8QythvgsqD0XHwQGkup01yQ==}
-    dependencies:
-      '@clutchd/clsx': 1.0.4
-    dev: false
-
   /@esbuild/android-arm64@0.17.19:
     resolution: {integrity: sha512-KBMWvEZooR7+kzY0BtbTQn0OAYY7CsiydT63pVEaPtVYF0hXbUaOyZog37DKxK7NF3XacBJOpYT4adIJh+avxA==}
     engines: {node: '>=12'}
@@ -1519,6 +1698,10 @@ packages:
   /@eslint/js@8.43.0:
     resolution: {integrity: sha512-s2UHCoiXfxMvmfzqoN+vrQ84ahUSYde9qNO1MdxmoEhyHWsfmwOpFlwYV+ePJEVc7gFnATGUi376WowX1N7tFg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    dev: false
+
+  /@hazae41/foras@2.0.8:
+    resolution: {integrity: sha512-pOKMyBsD1moMJBxc9q3TeeuDPE8yBmsmRRUC4b5s0qxd8UBfJgw9kMF3lqBUr9ZYr4u4o26tffmXgt2CGkExNQ==}
     dev: false
 
   /@headlessui/react@1.7.15(react-dom@18.2.0)(react@18.2.0):
@@ -1781,6 +1964,13 @@ packages:
   /@jridgewell/set-array@1.1.2:
     resolution: {integrity: sha512-xnkseuNADM0gt2bs+BvhO0p78Mk762YnZdsuzFV018NoG1Sj1SCQvpSqa7XUaTam5vAGasABV9qXASMKnFMwMw==}
     engines: {node: '>=6.0.0'}
+
+  /@jridgewell/source-map@0.3.3:
+    resolution: {integrity: sha512-b+fsZXeLYi9fEULmfBrhxn4IrPlINf8fiNarzTof004v3lFdntdwa9PF7vFJqm3mg7s+ScJMxXaE3Acp1irZcg==}
+    dependencies:
+      '@jridgewell/gen-mapping': 0.3.3
+      '@jridgewell/trace-mapping': 0.3.18
+    dev: true
 
   /@jridgewell/sourcemap-codec@1.4.14:
     resolution: {integrity: sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==}
@@ -2383,6 +2573,13 @@ packages:
     resolution: {integrity: sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==}
     dev: false
 
+  /@types/node-fetch@2.6.4:
+    resolution: {integrity: sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg==}
+    dependencies:
+      '@types/node': 20.3.1
+      form-data: 3.0.1
+    dev: true
+
   /@types/node@12.20.55:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: false
@@ -2541,7 +2738,6 @@ packages:
     resolution: {integrity: sha512-jaVNAFBHNLXspO543WnNNPZFRtavh3skAkITqD0/2aeMkKZTN+254PyhwxFYrk3vQ1xfY+2wbesJMs/JC8/PwQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: false
 
   /agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -2703,7 +2899,6 @@ packages:
 
   /asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
-    dev: false
 
   /available-typed-arrays@1.0.5:
     resolution: {integrity: sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==}
@@ -3090,11 +3285,14 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       delayed-stream: 1.0.0
-    dev: false
 
   /comma-separated-tokens@2.0.3:
     resolution: {integrity: sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==}
     dev: false
+
+  /commander@2.20.3:
+    resolution: {integrity: sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==}
+    dev: true
 
   /commander@4.1.1:
     resolution: {integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==}
@@ -3639,7 +3837,6 @@ packages:
   /delayed-stream@1.0.0:
     resolution: {integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==}
     engines: {node: '>=0.4.0'}
-    dev: false
 
   /dequal@2.0.3:
     resolution: {integrity: sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==}
@@ -4415,6 +4612,15 @@ packages:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
       is-callable: 1.2.7
+
+  /form-data@3.0.1:
+    resolution: {integrity: sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==}
+    engines: {node: '>= 6'}
+    dependencies:
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
+    dev: true
 
   /form-data@4.0.0:
     resolution: {integrity: sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==}
@@ -6624,14 +6830,12 @@ packages:
   /mime-db@1.52.0:
     resolution: {integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==}
     engines: {node: '>= 0.6'}
-    dev: false
 
   /mime-types@2.1.35:
     resolution: {integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==}
     engines: {node: '>= 0.6'}
     dependencies:
       mime-db: 1.52.0
-    dev: false
 
   /mimic-fn@2.1.0:
     resolution: {integrity: sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==}
@@ -6875,6 +7079,10 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: false
+
+  /node-fetch@2.6.1:
+    resolution: {integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==}
+    engines: {node: 4.x || >=6.0.0}
 
   /node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
@@ -7861,6 +8069,13 @@ packages:
       buffer-from: 1.1.2
       source-map: 0.6.1
 
+  /source-map-support@0.5.21:
+    resolution: {integrity: sha512-uBHU3L3czsIyYXKX88fdrGovxdSCoTGDRZ6SYXtSRxLZUzHg5P/66Ht6uoUlHu9EZod+inXhKo3qQgwXUT/y1w==}
+    dependencies:
+      buffer-from: 1.1.2
+      source-map: 0.6.1
+    dev: true
+
   /source-map@0.6.1:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
@@ -8137,6 +8352,17 @@ packages:
     resolution: {integrity: sha512-wK0Ri4fOGjv/XPy8SBHZChl8CM7uMc5VML7SqiQ0zG7+J5Vr+RMQDoHa2CNT6KHUnTGIXH34UDMkPzAUyapBZg==}
     engines: {node: '>=8'}
     dev: false
+
+  /terser@5.16.1:
+    resolution: {integrity: sha512-xvQfyfA1ayT0qdK47zskQgRZeWLoOQ8JQ6mIgRGVNwZKdQMU+5FkCBjmv4QjcrTzyZquRw2FVtlJSRUmMKQslw==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      '@jridgewell/source-map': 0.3.3
+      acorn: 8.9.0
+      commander: 2.20.3
+      source-map-support: 0.5.21
+    dev: true
 
   /test-exclude@6.0.0:
     resolution: {integrity: sha512-cAGWPIyOHU6zlmg88jwm7VRyXnMN7iV68OGAbYDk/Mh/xC/pzVPlQtY6ngoIH/5/tciuhGfvESU8GrHrcxD56w==}
