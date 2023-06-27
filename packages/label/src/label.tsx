@@ -1,6 +1,6 @@
 import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { composePreventableEventHandlers } from "@clutchd/compose-event-handlers";
+import { composePreventableEventHandlers } from "@clutchd/compose-preventable-event-handlers";
 import { getTheme, WithColor } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -14,7 +14,7 @@ type ILabel = React.ElementRef<typeof Component.label>;
  */
 interface ILabelProps
   extends WithColor,
-    IComponentPropsWithoutRef<typeof Component.label> {
+  IComponentPropsWithoutRef<typeof Component.label> {
   text?: React.ReactNode;
   required?: boolean;
 }

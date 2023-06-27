@@ -551,9 +551,9 @@ importers:
       '@clutchd/component':
         specifier: 2.0.2
         version: link:../../ui/component
-      '@clutchd/compose-event-handlers':
-        specifier: 1.0.5
-        version: link:../../ui/compose-event-handlers
+      '@clutchd/compose-preventable-event-handlers':
+        specifier: 1.0.0
+        version: link:../../ui/compose-preventable-event-handlers
       '@clutchd/twx':
         specifier: 1.1.2
         version: link:../twx
@@ -886,6 +886,10 @@ importers:
         version: 5.1.3
 
   ui/compose-event-handlers:
+    dependencies:
+      '@clutchd/merge-event-handlers':
+        specifier: 1.0.0
+        version: link:../merge-event-handlers
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.2
