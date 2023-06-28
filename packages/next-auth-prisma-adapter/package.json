@@ -45,7 +45,7 @@
     "typescript": "5.1.3"
   },
   "peerDependencies": {
-    "@prisma/client": "4.9.0",
-    "next-auth": "4.18.6"
+    "@prisma/client": "^4.9",
+    "next-auth": "^4.18"
   }
 }
