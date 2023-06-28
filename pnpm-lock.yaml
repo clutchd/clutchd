@@ -1252,6 +1252,9 @@ importers:
         specifier: 1.1.2
         version: link:../compose-refs
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.2
+        version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
