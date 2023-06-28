@@ -5,14 +5,14 @@
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "dev": {
-      "dependsOn": ["build", "^dev"],
+      "dependsOn": ["^dev"],
       "cache": false
     },
     "lint": {
       "cache": false
     },
     "test": {
-      "dependsOn": ["build"],
+      "dependsOn": ["^build"],
       "outputs": ["coverage/**"]
     }
   }
