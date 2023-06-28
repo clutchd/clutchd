@@ -891,6 +891,9 @@ importers:
         specifier: 1.0.0
         version: link:../merge-event-handlers
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.2
+        version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
@@ -913,6 +916,9 @@ importers:
         specifier: 1.0.0
         version: link:../merge-event-handlers
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.2
+        version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
@@ -983,6 +989,9 @@ importers:
 
   ui/merge-event-handlers:
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.2
+        version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
