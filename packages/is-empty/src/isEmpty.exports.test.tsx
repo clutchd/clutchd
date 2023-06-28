@@ -1,6 +1,5 @@
-import fs from "fs";
-import { minify } from "terser";
-import zlib from "zlib";
+import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
+import { readFileSync } from "fs";
 import { isEmpty } from ".";
 
 test("exports", () => {
@@ -8,16 +7,8 @@ test("exports", () => {
   expect(typeof isEmpty()).toEqual("boolean");
 });
 
-test("ensures the bundle size is accurate", async () => {
-  const input = fs.readFileSync("dist/index.js", "utf8");
-
-  const result = await minify(input, {
-    module: true,
-    compress: true,
-  });
-
-  // @ts-ignore
-  const size = zlib.gzipSync(result.code).byteLength;
-
-  expect(size).toBeLessThanOrEqual(370);
+test("ensures the bundle size is not bigger than the original size", async () => {
+  const og = await getRemoteSize("@clutchd/is-empty");
+  const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
+  expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
 });
