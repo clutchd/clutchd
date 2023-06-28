@@ -16,7 +16,7 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
     steps:
       - name: Setup Environment
-        uses: clutchd/turbostart-pnpm@v2.0.0
+        uses: clutchd/turbostart-pnpm@v2.0.1
 
       - name: Lint
         run: pnpm run lint
