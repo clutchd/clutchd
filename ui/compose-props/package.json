@@ -1,13 +1,7 @@
 {
   "name": "@clutchd/compose-props",
   "version": "1.1.6",
-  "sideEffects": false,
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "description": "A small utility intended to merge and compose a single props object from the provided prop objects.",
   "keywords": [
     "clutchd",
     "compose-props",
@@ -22,6 +16,13 @@
     "directory": "ui/compose-props"
   },
   "author": "Clutchd, LLC",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --external react",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
@@ -30,10 +31,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/clsx": "1.0.4",
     "@clutchd/compose-event-handlers": "2.0.0"
   },
   "devDependencies": {
+    "@clutchd/bundlejs": "0.1.2",
     "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.2.0",
     "@types/jest": "29.5.2",

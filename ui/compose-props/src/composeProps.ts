@@ -1,5 +1,4 @@
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
-import { clsx } from "@clutchd/clsx";
 
 /**
  * Composes multiple prop objects into a single prop object
@@ -18,7 +17,9 @@ function composeProps(...props: Record<string, any>[]) {
     for (const key in currentProps) {
       // if a className prop, merge classes
       if (key === "className") {
-        composed[key] = clsx(composed[key], currentProps[key]);
+        composed[key] = [composed[key], currentProps[key]]
+          .filter(Boolean)
+          .join(" ");
       }
 
       // if a style prop, merge styles

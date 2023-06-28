@@ -1148,13 +1148,13 @@ importers:
 
   ui/compose-props:
     dependencies:
-      '@clutchd/clsx':
-        specifier: 1.0.4
-        version: link:../../packages/clsx
       '@clutchd/compose-event-handlers':
         specifier: 2.0.0
         version: link:../compose-event-handlers
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.2
+        version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
@@ -1179,6 +1179,9 @@ importers:
 
   ui/compose-refs:
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.2
+        version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest

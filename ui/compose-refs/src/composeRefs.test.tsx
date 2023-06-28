@@ -1,6 +1,6 @@
-import * as React from "react";
-import { composeRefs, useComposedRefs } from ".";
 import { render } from "@testing-library/react";
+import React from "react";
+import { composeRefs, useComposedRefs } from ".";
 
 test("composeRefs", () => {
   const ref1: React.RefObject<HTMLDivElement> = React.createRef();

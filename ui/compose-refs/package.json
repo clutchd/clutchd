@@ -1,6 +1,7 @@
 {
   "name": "@clutchd/compose-refs",
   "version": "1.1.2",
+  "description": "A small utility intended to compose multiple refs into a single ref.",
   "keywords": [
     "clutchd",
     "compose-refs",
@@ -30,6 +31,7 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@clutchd/bundlejs": "0.1.2",
     "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.2.0",
     "@testing-library/react": "14.0.0",
