@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 1.1.3
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+
 ## 1.1.2
 
 ### Patch Changes

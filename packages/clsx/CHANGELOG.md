@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 1.0.5
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+
 ## 1.0.4
 
 ### Patch Changes

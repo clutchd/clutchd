@@ -1,5 +1,16 @@
 # @clutchd/input
 
+## 0.3.8
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+- Updated dependencies [0e006b2]
+  - @clutchd/compose-event-handlers@2.0.1
+  - @clutchd/is-empty@2.0.7
+  - @clutchd/twx@1.1.3
+  - @clutchd/component@2.0.5
+
 ## 0.3.7
 
 ### Patch Changes

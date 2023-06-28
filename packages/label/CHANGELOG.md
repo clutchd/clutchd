@@ -1,5 +1,15 @@
 # @clutchd/label
 
+## 1.1.8
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+- Updated dependencies [0e006b2]
+  - @clutchd/compose-preventable-event-handlers@1.0.1
+  - @clutchd/twx@1.1.3
+  - @clutchd/component@2.0.5
+
 ## 1.1.7
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.1.3
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+
 ## 0.1.2
 
 ### Patch Changes
