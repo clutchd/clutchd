@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 1.0.10
+
+### Patch Changes
+
+- @clutchd/component@2.0.4
+
 ## 1.0.9
 
 ### Patch Changes
