@@ -64,7 +64,7 @@ importers:
   packages/avatar:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -113,7 +113,7 @@ importers:
   packages/block:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -193,7 +193,7 @@ importers:
   packages/button:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -242,10 +242,10 @@ importers:
   packages/card:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/divider':
-        specifier: 1.2.6
+        specifier: 1.2.7
         version: link:../divider
       '@clutchd/twx':
         specifier: 1.1.2
@@ -323,7 +323,7 @@ importers:
   packages/copyright:
     dependencies:
       '@clutchd/text':
-        specifier: 2.1.6
+        specifier: 2.1.7
         version: link:../text
     devDependencies:
       '@clutchd/jest':
@@ -366,7 +366,7 @@ importers:
   packages/divider:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -430,7 +430,7 @@ importers:
   packages/flex:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -507,7 +507,7 @@ importers:
   packages/grid:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -553,7 +553,7 @@ importers:
   packages/input:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/compose-event-handlers':
         specifier: 2.0.0
@@ -654,7 +654,7 @@ importers:
   packages/label:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/compose-preventable-event-handlers':
         specifier: 1.0.0
@@ -706,10 +706,10 @@ importers:
   packages/layout:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/flex':
-        specifier: 1.1.6
+        specifier: 1.1.7
         version: link:../flex
       '@clutchd/twx':
         specifier: 1.1.2
@@ -755,7 +755,7 @@ importers:
   packages/link:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
     devDependencies:
       '@clutchd/jest':
@@ -879,7 +879,7 @@ importers:
   packages/skeleton:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -952,7 +952,7 @@ importers:
   packages/text:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.3
+        specifier: 2.0.4
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.2
@@ -1047,7 +1047,7 @@ importers:
   ui/component:
     dependencies:
       '@clutchd/slot':
-        specifier: 1.0.3
+        specifier: 1.0.4
         version: link:../slot
     devDependencies:
       '@clutchd/jest':
@@ -1246,7 +1246,7 @@ importers:
   ui/slot:
     dependencies:
       '@clutchd/compose-props':
-        specifier: 1.1.6
+        specifier: 1.2.0
         version: link:../compose-props
       '@clutchd/compose-refs':
         specifier: 1.1.2
