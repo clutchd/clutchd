@@ -8,9 +8,7 @@
       "dependsOn": ["^dev"],
       "cache": false
     },
-    "lint": {
-      "cache": false
-    },
+    "lint": {},
     "test": {
       "dependsOn": ["^build"],
       "outputs": ["coverage/**"]
