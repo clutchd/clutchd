@@ -37,7 +37,7 @@
   "devDependencies": {
     "@clutchd/jest": "1.0.2",
     "@clutchd/tailwind": "2.0.3",
-    "@clutchd/tsconfig": "1.1.0",
+    "@clutchd/tsconfig": "1.2.0",
     "@types/jest": "29.5.2",
     "@types/node": "20.3.1",
     "@types/react": "18.2.14",

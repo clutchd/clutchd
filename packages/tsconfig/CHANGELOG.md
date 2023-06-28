@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 1.2.0
+
+### Minor Changes
+
+- 2bb56bb: Add react-library config, fix types
+
 ## 1.1.0
 
 ### Minor Changes
