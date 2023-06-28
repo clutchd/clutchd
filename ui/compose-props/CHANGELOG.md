@@ -1,5 +1,11 @@
 # @clutchd/compose-props
 
+## 1.2.0
+
+### Minor Changes
+
+- de1ee04: Remove clsx dep
+
 ## 1.1.6
 
 ### Patch Changes
