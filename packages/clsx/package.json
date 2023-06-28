@@ -1,7 +1,7 @@
 {
   "name": "@clutchd/clsx",
   "version": "1.0.4",
-  "description": "A tinier (322B), more performant implementation of clsx.",
+  "description": "A tinier (225B), more performant implementation of clsx.",
   "keywords": [
     "clutchd",
     "clsx"
@@ -23,8 +23,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.ts --format esm,cjs --dts --minify",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "pnpm run build",
     "test": "jest"

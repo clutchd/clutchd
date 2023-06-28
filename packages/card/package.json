@@ -24,8 +24,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "build": "tsup src/index.tsx --format esm,cjs --dts --minify",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "pnpm run build",
     "test": "jest"

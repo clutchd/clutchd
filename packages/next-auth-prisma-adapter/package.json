@@ -24,8 +24,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "prisma generate && tsup src/index.ts --format esm,cjs --dts --external react",
-    "dev": "prisma generate && tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "build": "prisma generate && tsup src/index.ts --format esm,cjs --dts --minify",
+    "dev": "prisma generate && tsup src/index.ts --format esm,cjs --watch --dts",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "pnpm run build",
     "test": "jest"
