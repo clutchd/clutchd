@@ -32,7 +32,7 @@
     "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.2.0",
     "@types/jest": "29.5.2",
-    "@types/node": "20.3.1",
+    "@types/node": "20.3.2",
     "jest": "29.5.0",
     "tsup": "7.1.0",
     "typescript": "5.1.3"
