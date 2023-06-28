@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 2.0.7
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+
 ## 2.0.6
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-preventable-event-handlers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small utility intended to quickly compose multiple preventable event handlers into a single handler.",
   "keywords": [
     "clutchd",
@@ -31,10 +31,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/merge-event-handlers": "1.0.0"
+    "@clutchd/merge-event-handlers": "1.0.1"
   },
   "devDependencies": {
-    "@clutchd/bundlejs": "0.1.2",
+    "@clutchd/bundlejs": "0.1.3",
     "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.2.0",
     "@types/jest": "29.5.2",

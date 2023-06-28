@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/is-empty",
-  "version": "2.0.6",
+  "version": "2.0.7",
   "keywords": [
     "clutchd",
     "is-empty",
@@ -30,7 +30,7 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/bundlejs": "0.1.2",
+    "@clutchd/bundlejs": "0.1.3",
     "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.2.0",
     "@types/jest": "29.5.2",

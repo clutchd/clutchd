@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 1.1.3
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+- Updated dependencies [0e006b2]
+  - @clutchd/clsx@1.0.5
+
 ## 1.1.2
 
 ### Patch Changes

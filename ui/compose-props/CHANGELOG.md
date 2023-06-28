@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 1.2.1
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+- Updated dependencies [0e006b2]
+  - @clutchd/compose-event-handlers@2.0.1
+
 ## 1.2.0
 
 ### Minor Changes

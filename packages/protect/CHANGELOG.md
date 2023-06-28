@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 2.1.4
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+
 ## 2.1.3
 
 ### Patch Changes

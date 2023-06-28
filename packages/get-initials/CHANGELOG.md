@@ -1,5 +1,13 @@
 # @clutchd/get-initials
 
+## 1.2.6
+
+### Patch Changes
+
+- 0e006b2: Improve build outputs
+- Updated dependencies [0e006b2]
+  - @clutchd/is-empty@2.0.7
+
 ## 1.2.5
 
 ### Patch Changes
