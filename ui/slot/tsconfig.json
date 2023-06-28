@@ -1,3 +1,3 @@
 {
-  "extends": "@clutchd/tsconfig/library.json"
+  "extends": "@clutchd/tsconfig/react-library.json"
 }
