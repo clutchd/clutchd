@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.2.0
+
+### Minor Changes
+
+- e1c395e: Change remote provider to bundlephobia
+
 ## 0.1.3
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 1.1.6
+
+### Patch Changes
+
+- 56084dc: Optimize outputs
+
 ## 1.1.5
 
 ### Patch Changes

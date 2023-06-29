@@ -1,5 +1,13 @@
 # @clutchd/component
 
+## 2.0.10
+
+### Patch Changes
+
+- 56084dc: Optimize outputs
+- Updated dependencies [56084dc]
+  - @clutchd/slot@1.0.10
+
 ## 2.0.9
 
 ### Patch Changes

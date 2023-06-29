@@ -1,5 +1,12 @@
 # @clutchd/compose-preventable-event-handlers
 
+## 1.0.3
+
+### Patch Changes
+
+- Updated dependencies [56084dc]
+  - @clutchd/merge-event-handlers@1.0.3
+
 ## 1.0.2
 
 ### Patch Changes

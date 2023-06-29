@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/copyright",
-  "version": "2.1.12",
+  "version": "2.1.13",
   "keywords": [
     "clutchd",
     "copyright",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/text": "2.1.12"
+    "@clutchd/text": "2.1.13"
   },
   "devDependencies": {
     "@clutchd/jest": "1.0.2",
