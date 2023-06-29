@@ -1,5 +1,13 @@
 # @clutchd/slot
 
+## 1.0.8
+
+### Patch Changes
+
+- 503e22e: Only forward ref when needed
+- Updated dependencies [503e22e]
+  - @clutchd/compose-props@1.3.0
+
 ## 1.0.7
 
 ### Patch Changes
