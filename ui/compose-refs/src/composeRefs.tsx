@@ -1,21 +1,14 @@
-import { MutableRefObject, Ref, useCallback } from "react";
-
-/**
- * Type to define possible ref values
- */
-type PossibleRef<T> = Ref<T> | undefined;
+import { Ref, MutableRefObject, useCallback } from "react";
 
 /**
  * Sets the value of the provided ref
  * @param ref Ref to have it's value set
  * @param value Value to be used for the provided ref
  */
-function setRef<T>(ref: PossibleRef<T>, value: T) {
-  if (typeof ref === "function") {
-    ref(value);
-  } else if (ref != null) {
-    (ref as MutableRefObject<T>).current = value;
-  }
+function setRef<T>(ref: Ref<T> | undefined, value: T) {
+  if (!ref) return;
+  if (typeof ref === "function") ref(value);
+  else (ref as React.MutableRefObject<T>).current = value;
 }
 
 /**
@@ -23,7 +16,7 @@ function setRef<T>(ref: PossibleRef<T>, value: T) {
  * @param refs Array of ref objects that will be composed
  * @returns A single ref object composed from all provided refs
  */
-function composeRefs<T>(...refs: PossibleRef<T>[]) {
+function composeRefs<T>(...refs: (Ref<T> | undefined)[]) {
   return (node: T) => refs.forEach((ref) => setRef(ref, node));
 }
 
@@ -32,7 +25,7 @@ function composeRefs<T>(...refs: PossibleRef<T>[]) {
  * @param refs Array of ref objects that will be composed
  * @returns A single ref object composed from all provided refs
  */
-function useComposedRefs<T>(...refs: PossibleRef<T>[]) {
+function useComposedRefs<T>(...refs: (Ref<T> | undefined)[]) {
   return useCallback(composeRefs(...refs), refs);
 }
 
