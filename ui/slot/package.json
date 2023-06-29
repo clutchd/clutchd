@@ -29,7 +29,7 @@
       }
     }
   },
-  "source": "./src/index.ts",
+  "source": "./src/index.tsx",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
