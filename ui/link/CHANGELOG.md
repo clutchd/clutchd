@@ -1,5 +1,13 @@
 # @clutchd/link
 
+## 1.2.2
+
+### Patch Changes
+
+- 240ccc7: Better target exports
+- Updated dependencies [240ccc7]
+  - @clutchd/component@2.0.7
+
 ## 1.2.1
 
 ### Patch Changes

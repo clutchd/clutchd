@@ -1,5 +1,13 @@
 # @clutchd/compose-preventable-event-handlers
 
+## 1.0.2
+
+### Patch Changes
+
+- 240ccc7: Better target exports
+- Updated dependencies [240ccc7]
+  - @clutchd/merge-event-handlers@1.0.2
+
 ## 1.0.1
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @clutchd/card
 
+## 1.0.13
+
+### Patch Changes
+
+- Updated dependencies [240ccc7]
+  - @clutchd/component@2.0.7
+  - @clutchd/divider@1.2.10
+
 ## 1.0.12
 
 ### Patch Changes

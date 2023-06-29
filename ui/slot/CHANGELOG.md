@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 1.0.7
+
+### Patch Changes
+
+- 240ccc7: Better target exports
+- Updated dependencies [240ccc7]
+  - @clutchd/compose-props@1.2.2
+  - @clutchd/compose-refs@1.1.4
+
 ## 1.0.6
 
 ### Patch Changes
