@@ -1,5 +1,11 @@
 # @clutchd/compose-props
 
+## 1.3.0
+
+### Minor Changes
+
+- 503e22e: Improve compose aglo
+
 ## 1.2.2
 
 ### Patch Changes

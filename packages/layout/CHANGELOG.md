@@ -1,5 +1,12 @@
 # @clutchd/layout
 
+## 1.0.12
+
+### Patch Changes
+
+- @clutchd/component@2.0.8
+- @clutchd/flex@1.1.11
+
 ## 1.0.11
 
 ### Patch Changes

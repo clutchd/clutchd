@@ -1,5 +1,12 @@
 # @clutchd/component
 
+## 2.0.8
+
+### Patch Changes
+
+- Updated dependencies [503e22e]
+  - @clutchd/slot@1.0.8
+
 ## 2.0.7
 
 ### Patch Changes

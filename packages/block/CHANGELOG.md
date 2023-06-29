@@ -1,5 +1,11 @@
 # @clutchd/block
 
+## 1.0.12
+
+### Patch Changes
+
+- @clutchd/component@2.0.8
+
 ## 1.0.11
 
 ### Patch Changes

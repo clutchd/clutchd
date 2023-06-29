@@ -1,5 +1,11 @@
 # @clutchd/link
 
+## 1.2.3
+
+### Patch Changes
+
+- @clutchd/component@2.0.8
+
 ## 1.2.2
 
 ### Patch Changes
