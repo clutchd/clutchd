@@ -1,0 +1,9 @@
+{
+  "link": "Link",
+  "---": {
+    "title": "Core",
+    "type": "separator"
+  },
+  "component": "Component",
+  "slot": "Slot"
+}

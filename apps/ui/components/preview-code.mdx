@@ -1,0 +1,12 @@
+import { Tab, Tabs } from "nextra-theme-docs";
+import React from "react";
+
+<Tabs items={["Preview", "Code"]}>
+  <Tab>
+    <div className="relative nx-bg-primary-700/5 nx-rounded-xl dark:nx-bg-primary-300/10 contrast-more:nx-border contrast-more:nx-border-primary-900/20 contrast-more:nx-contrast-150 contrast-more:dark:nx-border-primary-100/40">
+      <div className="absolute h-full w-full bg-[url('/grid.svg')] opacity-10 [background-position:calc(100%+5px)_calc(100%+29px)]"></div>
+      <div className="relative nx-p-8">{props.preview}</div>
+    </div>
+  </Tab>
+  <Tab>{props.code}</Tab>
+</Tabs>

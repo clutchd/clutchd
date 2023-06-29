@@ -2,16 +2,13 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Clutchd UI</span>,
   project: {
-    link: "https://github.com/shuding/nextra-docs-template",
+    link: "https://github.com/clutchd/clutchd",
   },
-  chat: {
-    link: "https://discord.com",
-  },
-  docsRepositoryBase: "https://github.com/shuding/nextra-docs-template",
+  docsRepositoryBase: "https://github.com/clutchd/clutchd/tree/main/apps/ui",
   footer: {
-    text: "Nextra Docs Template",
+    text: "© 2023 Clutchd, LLC",
   },
 };
 
