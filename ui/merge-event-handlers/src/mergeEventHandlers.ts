@@ -8,14 +8,13 @@ type IPossibleEventHandler<E> = ((event: E) => void) | undefined;
  * @param event Shared event for all merged event handlers
  * @param handlers Event handlers that will be merged for the provided event
  */
-function mergeEventHandlers<E>(
+const mergeEventHandlers = <E>(
   event: E,
   ...handlers: IPossibleEventHandler<E>[]
-) {
-  return handlers.forEach((handler) => {
-    return handler?.(event);
+) =>
+  handlers.forEach((handler) => {
+    if (handler) handler(event);
   });
-}
 
 export { mergeEventHandlers };
 export type { IPossibleEventHandler };

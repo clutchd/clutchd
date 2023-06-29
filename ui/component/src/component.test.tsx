@@ -68,7 +68,7 @@ test("render with invalid child", () => {
 
   expect(logSpy).toBeCalledTimes(1);
   expect(logSpy).toBeCalledWith(
-    "Invalid children, Slot forcefully rendered as a fragment."
+    "Invalid children, rendering as fragment."
   );
   expect(container.hasChildNodes()).toEqual(true);
   expect(container.textContent).toEqual(
@@ -89,7 +89,7 @@ test("render with invalid child and props", () => {
 
   expect(logSpy).toBeCalledTimes(1);
   expect(logSpy).toBeCalledWith(
-    "Invalid children with props, Slot forcefully rendered as a div."
+    "Invalid children with props, rendering as div."
   );
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
@@ -113,7 +113,7 @@ test("render with multiple children", () => {
 
   expect(logSpy).toBeCalledTimes(1);
   expect(logSpy).toBeCalledWith(
-    "Invalid children, Slot forcefully rendered as a fragment."
+    "Invalid children, rendering as fragment."
   );
   expect(p).toBeInTheDocument();
   expect(p).toHaveAttribute("asdf", "asdf");
@@ -141,7 +141,7 @@ test("Render with multiple children and props", () => {
 
   expect(logSpy).toBeCalledTimes(1);
   expect(logSpy).toBeCalledWith(
-    "Invalid children with props, Slot forcefully rendered as a div."
+    "Invalid children with props, rendering as div."
   );
   expect(root).toBeInTheDocument();
   expect(root).toHaveAttribute("asdf", "1234");

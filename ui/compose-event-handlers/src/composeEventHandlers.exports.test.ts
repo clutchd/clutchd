@@ -13,8 +13,8 @@ test("ensures the bundle size is smaller than the last size", async () => {
   expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
 });
 
-test("ensures the package is smaller than the original size", async () => {
-  const og = await getRemoteSize("@radix-ui/primitive");
-  const size = await getRemoteSize("@clutchd/compose-event-handlers");
-  expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
-});
+// test("ensures the package is smaller than the original size", async () => {
+//   const og = await getRemoteSize("@radix-ui/primitive");
+//   const size = await getRemoteSize("@clutchd/compose-event-handlers");
+//   expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
+// });

@@ -8,11 +8,9 @@ import {
  * @param handlers Array of event handlers that will be composed
  * @returns A single event handler function composed from all provided handlers
  */
-function composeEventHandlers<E>(...handlers: IPossibleEventHandler<E>[]) {
-  // return the composed event handler
-  return function (event: E) {
-    return mergeEventHandlers(event, ...handlers);
-  };
-}
+const composeEventHandlers =
+  <E>(...handlers: IPossibleEventHandler<E>[]) =>
+  (event: E) =>
+    mergeEventHandlers(event, ...handlers);
 
 export { composeEventHandlers };
