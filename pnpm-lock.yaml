@@ -73,7 +73,7 @@ importers:
   packages/avatar:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -122,7 +122,7 @@ importers:
   packages/block:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -202,7 +202,7 @@ importers:
   packages/button:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -251,10 +251,10 @@ importers:
   packages/card:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/divider':
-        specifier: 1.2.11
+        specifier: 1.2.12
         version: link:../divider
       '@clutchd/twx':
         specifier: 1.1.3
@@ -332,7 +332,7 @@ importers:
   packages/copyright:
     dependencies:
       '@clutchd/text':
-        specifier: 2.1.11
+        specifier: 2.1.12
         version: link:../text
     devDependencies:
       '@clutchd/jest':
@@ -375,7 +375,7 @@ importers:
   packages/divider:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -439,7 +439,7 @@ importers:
   packages/flex:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -516,7 +516,7 @@ importers:
   packages/grid:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -562,7 +562,7 @@ importers:
   packages/input:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/compose-event-handlers':
         specifier: 2.0.2
@@ -663,7 +663,7 @@ importers:
   packages/label:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/compose-preventable-event-handlers':
         specifier: 1.0.2
@@ -715,10 +715,10 @@ importers:
   packages/layout:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/flex':
-        specifier: 1.1.11
+        specifier: 1.1.12
         version: link:../flex
       '@clutchd/twx':
         specifier: 1.1.3
@@ -845,7 +845,7 @@ importers:
   packages/skeleton:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -918,7 +918,7 @@ importers:
   packages/text:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -1013,7 +1013,7 @@ importers:
   ui/component:
     dependencies:
       '@clutchd/slot':
-        specifier: 1.0.8
+        specifier: 1.0.9
         version: link:../slot
     devDependencies:
       '@clutchd/bundlejs':
@@ -1188,7 +1188,7 @@ importers:
   ui/link:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.8
+        specifier: 2.0.9
         version: link:../component
     devDependencies:
       '@clutchd/bundlejs':
@@ -1270,7 +1270,7 @@ importers:
         specifier: 1.3.0
         version: link:../compose-props
       '@clutchd/compose-refs':
-        specifier: 1.1.4
+        specifier: 1.1.5
         version: link:../compose-refs
     devDependencies:
       '@clutchd/bundlejs':
