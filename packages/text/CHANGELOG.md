@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 2.1.9
+
+### Patch Changes
+
+- @clutchd/component@2.0.6
+
 ## 2.1.8
 
 ### Patch Changes

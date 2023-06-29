@@ -1,5 +1,11 @@
 # @clutchd/slot
 
+## 1.0.6
+
+### Patch Changes
+
+- a3a6a00: Attempt to reduce bundle size
+
 ## 1.0.5
 
 ### Patch Changes

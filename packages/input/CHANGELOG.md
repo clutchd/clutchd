@@ -1,5 +1,11 @@
 # @clutchd/input
 
+## 0.3.9
+
+### Patch Changes
+
+- @clutchd/component@2.0.6
+
 ## 0.3.8
 
 ### Patch Changes
