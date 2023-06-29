@@ -23,7 +23,9 @@ const Slot = React.forwardRef<ISlot, ISlotProps>(
     if (React.isValidElement(children)) {
       return React.cloneElement<any>(children, {
         ...composeProps(props, children.props),
-        ref: composeRefs(forwardedRef, (children as any).ref),
+        ref: forwardedRef
+          ? composeRefs(forwardedRef, (children as any).ref)
+          : (children as any).ref,
       });
     }
 

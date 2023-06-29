@@ -25,7 +25,9 @@ test("render with merged classes", () => {
 });
 
 test("render with custom link and custom cursor", () => {
-  const { container } = render(<Link href="/next-page" className="text-red-500 cursor-default" />);
+  const { container } = render(
+    <Link href="/next-page" className="text-red-500 cursor-default" />
+  );
 
   const link = container.querySelector("a");
 
