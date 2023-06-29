@@ -73,7 +73,7 @@ importers:
   packages/avatar:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -122,7 +122,7 @@ importers:
   packages/block:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -202,7 +202,7 @@ importers:
   packages/button:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -251,10 +251,10 @@ importers:
   packages/card:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/divider':
-        specifier: 1.2.9
+        specifier: 1.2.10
         version: link:../divider
       '@clutchd/twx':
         specifier: 1.1.3
@@ -332,7 +332,7 @@ importers:
   packages/copyright:
     dependencies:
       '@clutchd/text':
-        specifier: 2.1.9
+        specifier: 2.1.10
         version: link:../text
     devDependencies:
       '@clutchd/jest':
@@ -375,7 +375,7 @@ importers:
   packages/divider:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -439,7 +439,7 @@ importers:
   packages/flex:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -516,7 +516,7 @@ importers:
   packages/grid:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -562,10 +562,10 @@ importers:
   packages/input:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/compose-event-handlers':
-        specifier: 2.0.1
+        specifier: 2.0.2
         version: link:../../ui/compose-event-handlers
       '@clutchd/is-empty':
         specifier: 2.0.7
@@ -663,10 +663,10 @@ importers:
   packages/label:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/compose-preventable-event-handlers':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../../ui/compose-preventable-event-handlers
       '@clutchd/twx':
         specifier: 1.1.3
@@ -715,10 +715,10 @@ importers:
   packages/layout:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/flex':
-        specifier: 1.1.9
+        specifier: 1.1.10
         version: link:../flex
       '@clutchd/twx':
         specifier: 1.1.3
@@ -845,7 +845,7 @@ importers:
   packages/skeleton:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -918,7 +918,7 @@ importers:
   packages/text:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../../ui/component
       '@clutchd/twx':
         specifier: 1.1.3
@@ -1013,7 +1013,7 @@ importers:
   ui/component:
     dependencies:
       '@clutchd/slot':
-        specifier: 1.0.6
+        specifier: 1.0.7
         version: link:../slot
     devDependencies:
       '@clutchd/bundlejs':
@@ -1056,7 +1056,7 @@ importers:
   ui/compose-event-handlers:
     dependencies:
       '@clutchd/merge-event-handlers':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../merge-event-handlers
     devDependencies:
       '@clutchd/bundlejs':
@@ -1087,7 +1087,7 @@ importers:
   ui/compose-preventable-event-handlers:
     dependencies:
       '@clutchd/merge-event-handlers':
-        specifier: 1.0.1
+        specifier: 1.0.2
         version: link:../merge-event-handlers
     devDependencies:
       '@clutchd/bundlejs':
@@ -1118,7 +1118,7 @@ importers:
   ui/compose-props:
     dependencies:
       '@clutchd/compose-event-handlers':
-        specifier: 2.0.1
+        specifier: 2.0.2
         version: link:../compose-event-handlers
     devDependencies:
       '@clutchd/bundlejs':
@@ -1188,7 +1188,7 @@ importers:
   ui/link:
     dependencies:
       '@clutchd/component':
-        specifier: 2.0.6
+        specifier: 2.0.7
         version: link:../component
     devDependencies:
       '@clutchd/bundlejs':
@@ -1267,10 +1267,10 @@ importers:
   ui/slot:
     dependencies:
       '@clutchd/compose-props':
-        specifier: 1.2.1
+        specifier: 1.2.2
         version: link:../compose-props
       '@clutchd/compose-refs':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../compose-refs
     devDependencies:
       '@clutchd/bundlejs':
