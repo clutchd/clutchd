@@ -1,5 +1,13 @@
 # @clutchd/label
 
+## 1.1.13
+
+### Patch Changes
+
+- Updated dependencies [56084dc]
+  - @clutchd/component@2.0.10
+  - @clutchd/compose-preventable-event-handlers@1.0.3
+
 ## 1.1.12
 
 ### Patch Changes

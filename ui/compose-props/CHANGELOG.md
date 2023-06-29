@@ -1,5 +1,12 @@
 # @clutchd/compose-props
 
+## 1.3.1
+
+### Patch Changes
+
+- Updated dependencies [56084dc]
+  - @clutchd/compose-event-handlers@2.0.3
+
 ## 1.3.0
 
 ### Minor Changes

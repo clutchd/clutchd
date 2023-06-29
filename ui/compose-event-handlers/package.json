@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-event-handlers",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "A small utility intended to quickly compose multiple event handlers into a single handler.",
   "keywords": [
     "clutchd",
@@ -44,10 +44,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/merge-event-handlers": "1.0.2"
+    "@clutchd/merge-event-handlers": "1.0.3"
   },
   "devDependencies": {
-    "@clutchd/bundlejs": "0.1.3",
+    "@clutchd/bundlejs": "0.2.0",
     "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.2.1",
     "@types/jest": "29.5.2",

@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 1.0.10
+
+### Patch Changes
+
+- 56084dc: Optimize outputs
+- Updated dependencies [56084dc]
+  - @clutchd/compose-refs@1.1.6
+  - @clutchd/compose-props@1.3.1
+
 ## 1.0.9
 
 ### Patch Changes

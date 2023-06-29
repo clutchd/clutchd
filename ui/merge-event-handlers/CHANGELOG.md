@@ -1,5 +1,11 @@
 # @clutchd/merge-event-handlers
 
+## 1.0.3
+
+### Patch Changes
+
+- 56084dc: Optimize outputs
+
 ## 1.0.2
 
 ### Patch Changes

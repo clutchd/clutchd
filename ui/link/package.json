@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/link",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A next/link powered component with additional features and default styling.",
   "keywords": [
     "clutchd",
@@ -45,10 +45,10 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.9"
+    "@clutchd/component": "2.0.10"
   },
   "devDependencies": {
-    "@clutchd/bundlejs": "0.1.3",
+    "@clutchd/bundlejs": "0.2.0",
     "@clutchd/jest": "1.0.2",
     "@clutchd/tsconfig": "1.2.1",
     "@clutchd/twx": "1.1.3",
