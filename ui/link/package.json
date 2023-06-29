@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/link",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A next/link powered component with additional features and default styling.",
   "keywords": [
     "clutchd",
@@ -45,7 +45,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.8"
+    "@clutchd/component": "2.0.9"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "0.1.3",

@@ -1,5 +1,11 @@
 # @clutchd/avatar
 
+## 2.1.12
+
+### Patch Changes
+
+- @clutchd/component@2.0.9
+
 ## 2.1.11
 
 ### Patch Changes

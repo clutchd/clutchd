@@ -1,5 +1,12 @@
 # @clutchd/slot
 
+## 1.0.9
+
+### Patch Changes
+
+- Updated dependencies [d24b66f]
+  - @clutchd/compose-refs@1.1.5
+
 ## 1.0.8
 
 ### Patch Changes
