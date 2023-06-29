@@ -1191,6 +1191,9 @@ importers:
         specifier: 2.0.5
         version: link:../component
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: 0.1.3
+        version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: 1.0.2
         version: link:../../packages/jest
