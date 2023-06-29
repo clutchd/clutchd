@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/skeleton",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "keywords": [
     "clutchd",
     "skeleton",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.5",
+    "@clutchd/component": "2.0.6",
     "@clutchd/twx": "1.1.3"
   },
   "devDependencies": {

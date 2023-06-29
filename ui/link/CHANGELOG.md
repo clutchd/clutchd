@@ -1,5 +1,11 @@
 # @clutchd/link
 
+## 1.2.1
+
+### Patch Changes
+
+- @clutchd/component@2.0.6
+
 ## 1.2.0
 
 ### Minor Changes
