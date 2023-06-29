@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/slot",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A utility component that merges it's props onto it's child.",
   "keywords": [
     "clutchd",
@@ -44,8 +44,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/compose-props": "1.2.1",
-    "@clutchd/compose-refs": "1.1.3"
+    "@clutchd/compose-props": "1.2.2",
+    "@clutchd/compose-refs": "1.1.4"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "0.1.3",

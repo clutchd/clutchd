@@ -1,5 +1,13 @@
 # @clutchd/input
 
+## 0.3.10
+
+### Patch Changes
+
+- Updated dependencies [240ccc7]
+  - @clutchd/compose-event-handlers@2.0.2
+  - @clutchd/component@2.0.7
+
 ## 0.3.9
 
 ### Patch Changes

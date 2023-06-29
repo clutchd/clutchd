@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-props",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "A small utility intended to merge and compose a single props object from the provided prop objects.",
   "keywords": [
     "clutchd",
@@ -44,7 +44,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/compose-event-handlers": "2.0.1"
+    "@clutchd/compose-event-handlers": "2.0.2"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "0.1.3",

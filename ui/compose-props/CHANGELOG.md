@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 1.2.2
+
+### Patch Changes
+
+- 240ccc7: Better target exports
+- Updated dependencies [240ccc7]
+  - @clutchd/compose-event-handlers@2.0.2
+
 ## 1.2.1
 
 ### Patch Changes

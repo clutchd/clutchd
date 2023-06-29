@@ -1,5 +1,12 @@
 # @clutchd/text
 
+## 2.1.10
+
+### Patch Changes
+
+- Updated dependencies [240ccc7]
+  - @clutchd/component@2.0.7
+
 ## 2.1.9
 
 ### Patch Changes

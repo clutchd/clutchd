@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/grid",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "keywords": [
     "clutchd",
     "grid",
@@ -31,7 +31,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.6",
+    "@clutchd/component": "2.0.7",
     "@clutchd/twx": "1.1.3"
   },
   "devDependencies": {
