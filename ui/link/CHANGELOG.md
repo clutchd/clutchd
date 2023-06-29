@@ -1,5 +1,16 @@
 # @clutchd/link
 
+## 1.2.0
+
+### Minor Changes
+
+- abfd53c: Better class merging
+
+### Patch Changes
+
+- b5389af: Add export tests
+  - @clutchd/twx@1.1.3
+
 ## 1.1.8
 
 ### Patch Changes
