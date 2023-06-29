@@ -1,5 +1,11 @@
 # @clutchd/button
 
+## 0.2.12
+
+### Patch Changes
+
+- @clutchd/component@2.0.9
+
 ## 0.2.11
 
 ### Patch Changes

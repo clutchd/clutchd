@@ -1,5 +1,11 @@
 # @clutchd/label
 
+## 1.1.12
+
+### Patch Changes
+
+- @clutchd/component@2.0.9
+
 ## 1.1.11
 
 ### Patch Changes

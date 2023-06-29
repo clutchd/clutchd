@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 1.1.5
+
+### Patch Changes
+
+- d24b66f: Optimize further
+
 ## 1.1.4
 
 ### Patch Changes

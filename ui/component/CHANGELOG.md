@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 2.0.9
+
+### Patch Changes
+
+- @clutchd/slot@1.0.9
+
 ## 2.0.8
 
 ### Patch Changes
