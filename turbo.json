@@ -13,7 +13,7 @@
     },
     "lint": {},
     "test": {
-      "dependsOn": ["benchmark", "build"],
+      "dependsOn": ["build"],
       "outputs": ["coverage/**"]
     }
   }
