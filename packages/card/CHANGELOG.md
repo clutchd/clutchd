@@ -1,5 +1,12 @@
 # @clutchd/card
 
+## 1.0.18
+
+### Patch Changes
+
+- @clutchd/component@2.1.1
+- @clutchd/divider@1.2.15
+
 ## 1.0.17
 
 ### Patch Changes
