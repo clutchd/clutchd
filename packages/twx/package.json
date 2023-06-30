@@ -35,7 +35,7 @@
     "@clutchd/clsx": "1.0.5"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.2",
+    "@clutchd/jest": "1.0.3",
     "@clutchd/tsconfig": "1.2.1",
     "@types/jest": "29.5.2",
     "@types/node": "20.3.2",
