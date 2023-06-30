@@ -36,3 +36,19 @@ test("render with custom link and custom cursor", () => {
   expect(link).toHaveAttribute("href", "/next-page");
   expect(link).toHaveAttribute("class", "text-red-500 cursor-default");
 });
+
+test("render with children", () => {
+  const { container } = render(
+    <Link href="/next-page" className="text-red-500 cursor-default"><div>This is my custom div wrapped in a link!</div></Link>
+  );
+
+  const link = container.querySelector("a");
+  const div = link.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(link).toBeInTheDocument();
+  expect(link).toHaveAttribute("href", "/next-page");
+  expect(link).toHaveAttribute("class", "text-red-500 cursor-default");
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveTextContent("This is my custom div wrapped in a link!");
+});

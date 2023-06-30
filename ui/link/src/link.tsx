@@ -21,7 +21,7 @@ type ILink = React.ElementRef<typeof Component.a>;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> {}
+interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> { }
 
 /**
  * Class names used to style the `Link` component
@@ -34,14 +34,14 @@ const LinkClassNames = `cursor-pointer`;
  * @returns `Link` component
  */
 const Link = React.forwardRef<ILink, ILinkProps>(
-  ({ href = "/", className, ...props }, forwardedRef) => {
+  ({ href = "/", className, children, ...props }, forwardedRef) => {
     return (
       <Component.a
         className={twx(LinkClassNames, className)}
         asChild
         {...props}
       >
-        <NextLink href={href} ref={forwardedRef} />
+        <NextLink href={href} ref={forwardedRef}>{children}</NextLink>
       </Component.a>
     );
   }
