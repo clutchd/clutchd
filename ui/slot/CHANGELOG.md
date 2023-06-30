@@ -1,5 +1,11 @@
 # @clutchd/slot
 
+## 1.0.11
+
+### Patch Changes
+
+- 70941d0: Remove warning logs to reduce bundle
+
 ## 1.0.10
 
 ### Patch Changes

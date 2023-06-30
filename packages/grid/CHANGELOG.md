@@ -1,5 +1,11 @@
 # @clutchd/grid
 
+## 1.0.16
+
+### Patch Changes
+
+- @clutchd/component@2.1.1
+
 ## 1.0.15
 
 ### Patch Changes
