@@ -3,13 +3,10 @@ import * as React from "react";
 import { Slot } from ".";
 
 test("render empty slot", () => {
-  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(<Slot />);
 
   const div = container.querySelector("div");
 
-  expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith("Invalid children, rendering as fragment.");
   expect(container.hasChildNodes()).toEqual(false);
   expect(div).not.toBeInTheDocument();
 });
@@ -48,7 +45,6 @@ test("render with valid child and props", () => {
 });
 
 test("render with invalid and undefined child", () => {
-  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     // @ts-ignore
     <Slot asdf="asdf">{null}</Slot>
@@ -56,10 +52,6 @@ test("render with invalid and undefined child", () => {
 
   const div = container.querySelector("div");
 
-  expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith(
-    "Invalid children with props, rendering as div."
-  );
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveAttribute("asdf", "asdf");
@@ -67,13 +59,9 @@ test("render with invalid and undefined child", () => {
 });
 
 test("render with invalid child", () => {
-  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     <Slot>Rendering a div as an invalid string!</Slot>
   );
-
-  expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith("Invalid children, rendering as fragment.");
   expect(container.hasChildNodes()).toEqual(true);
   expect(container.textContent).toEqual(
     "Rendering a div as an invalid string!"
@@ -81,7 +69,6 @@ test("render with invalid child", () => {
 });
 
 test("render with invalid child and props", () => {
-  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     // @ts-ignore
     <Slot asdf={"1234"}>Rendering a div as an invalid string!</Slot>
@@ -89,10 +76,6 @@ test("render with invalid child and props", () => {
 
   const div = container.querySelector("div");
 
-  expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith(
-    "Invalid children with props, rendering as div."
-  );
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveAttribute("asdf", "1234");
@@ -100,7 +83,6 @@ test("render with invalid child and props", () => {
 });
 
 test("render with multiple children", () => {
-  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     <Slot>
       {/* @ts-ignore */}
@@ -113,8 +95,6 @@ test("render with multiple children", () => {
   const p = container.querySelector("p");
   const div = container.querySelector("div");
 
-  expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith("Invalid children, rendering as fragment.");
   expect(p).toBeInTheDocument();
   expect(p).toHaveAttribute("asdf", "asdf");
   expect(p?.textContent).toEqual("Rendering a div as a paragraph!");
@@ -124,7 +104,6 @@ test("render with multiple children", () => {
 });
 
 test("Render with multiple children and props", () => {
-  const logSpy = jest.spyOn(console, "warn");
   const { container } = render(
     // @ts-ignore
     <Slot asdf="1234">
@@ -139,10 +118,6 @@ test("Render with multiple children and props", () => {
   const p = root?.querySelector("p");
   const div = root?.querySelector("div");
 
-  expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith(
-    "Invalid children with props, rendering as div."
-  );
   expect(root).toBeInTheDocument();
   expect(root).toHaveAttribute("asdf", "1234");
   expect(p).toBeInTheDocument();
