@@ -21,7 +21,7 @@ async function bench(name, ...args) {
         .writeFile("src/clsx.benchmark.json", JSON.stringify(results))
         .catch((e) => console.error(e));
     })
-    .run();
+    .run({ async: true });
 }
 
 bench("strings", "foo", "", "bar", "baz", "bax", "bux");
