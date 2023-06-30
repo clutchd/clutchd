@@ -1,5 +1,12 @@
 # @clutchd/skeleton
 
+## 1.0.17
+
+### Patch Changes
+
+- Updated dependencies [e3d35ae]
+  - @clutchd/component@2.1.0
+
 ## 1.0.16
 
 ### Patch Changes

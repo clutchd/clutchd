@@ -1,5 +1,12 @@
 # @clutchd/link
 
+## 1.2.7
+
+### Patch Changes
+
+- Updated dependencies [e3d35ae]
+  - @clutchd/component@2.1.0
+
 ## 1.2.6
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @clutchd/block
 
+## 1.0.15
+
+### Patch Changes
+
+- Updated dependencies [e3d35ae]
+  - @clutchd/component@2.1.0
+
 ## 1.0.14
 
 ### Patch Changes
