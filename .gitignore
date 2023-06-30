@@ -1,14 +1,35 @@
-.DS_Store
+# dependencies
 node_modules
-.turbo
-*.log
-.next
-dist
-dist-ssr
-*.local
-.env
-.cache
-server/dist
-public/dist
-storybook-static/
+
+# testing
 coverage
+
+# dist
+dist
+.next
+out
+build
+.expo
+web-build
+
+# misc
+.DS_Store
+*.pem
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# debug
+npm-debug.log*
+
+# local env files
+.env*
+
+# turbo
+.turbo
+
+# benchmarking
+*.benchmark.json

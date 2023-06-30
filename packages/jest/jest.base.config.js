@@ -8,6 +8,7 @@ const config = {
   // An array of glob patterns indicating a set of files for which coverage information should be collected
   collectCoverageFrom: [
     "<rootDir>/**/*.{js,ts,jsx,tsx}", // includes all files by default
+    "!<rootDir>/**/*.benchmark.{js,ts,jsx,tsx}", // ignore benchmark files
     "!<rootDir>/**/*.config.*", // ignore config files
     "!<rootDir>/**/*.d.ts", // ignore types
     // prettier-ignore
