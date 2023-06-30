@@ -1,5 +1,13 @@
 # @clutchd/card
 
+## 1.0.17
+
+### Patch Changes
+
+- Updated dependencies [e3d35ae]
+  - @clutchd/component@2.1.0
+  - @clutchd/divider@1.2.14
+
 ## 1.0.16
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/label",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "keywords": [
     "clutchd",
     "label",
@@ -33,7 +33,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.0.10",
+    "@clutchd/component": "2.1.0",
     "@clutchd/compose-preventable-event-handlers": "1.0.3",
     "@clutchd/twx": "1.1.3"
   },

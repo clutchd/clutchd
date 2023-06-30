@@ -1,5 +1,12 @@
 # @clutchd/text
 
+## 2.1.14
+
+### Patch Changes
+
+- Updated dependencies [e3d35ae]
+  - @clutchd/component@2.1.0
+
 ## 2.1.13
 
 ### Patch Changes

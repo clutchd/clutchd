@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/component",
-  "version": "2.0.10",
+  "version": "2.1.0",
   "description": "A primitive component intended to be used as a foundation for all other ui components.",
   "keywords": [
     "clutchd",

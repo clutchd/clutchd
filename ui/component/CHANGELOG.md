@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 2.1.0
+
+### Minor Changes
+
+- e3d35ae: Remove useEffect from component
+
 ## 2.0.10
 
 ### Patch Changes
