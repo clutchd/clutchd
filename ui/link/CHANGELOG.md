@@ -1,5 +1,11 @@
 # @clutchd/link
 
+## 1.2.6
+
+### Patch Changes
+
+- 4e0fa3a: Fix child rendering bug
+
 ## 1.2.5
 
 ### Patch Changes
