@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@clutchd/bundlejs": "0.2.0",
-    "@clutchd/jest": "1.0.2",
+    "@clutchd/jest": "1.0.3",
     "@clutchd/tsconfig": "1.2.1",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.2",

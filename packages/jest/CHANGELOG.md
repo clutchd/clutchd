@@ -1,5 +1,11 @@
 # @clutchd/jest
 
+## 1.0.3
+
+### Patch Changes
+
+- 85a40a6: Ignore benchmarking files
+
 ## 1.0.2
 
 ### Patch Changes
