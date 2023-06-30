@@ -9,9 +9,7 @@ test("render empty slot", () => {
   const div = container.querySelector("div");
 
   expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith(
-    "Invalid children, rendering as fragment."
-  );
+  expect(logSpy).toBeCalledWith("Invalid children, rendering as fragment.");
   expect(container.hasChildNodes()).toEqual(false);
   expect(div).not.toBeInTheDocument();
 });
@@ -75,9 +73,7 @@ test("render with invalid child", () => {
   );
 
   expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith(
-    "Invalid children, rendering as fragment."
-  );
+  expect(logSpy).toBeCalledWith("Invalid children, rendering as fragment.");
   expect(container.hasChildNodes()).toEqual(true);
   expect(container.textContent).toEqual(
     "Rendering a div as an invalid string!"
@@ -118,9 +114,7 @@ test("render with multiple children", () => {
   const div = container.querySelector("div");
 
   expect(logSpy).toBeCalledTimes(1);
-  expect(logSpy).toBeCalledWith(
-    "Invalid children, rendering as fragment."
-  );
+  expect(logSpy).toBeCalledWith("Invalid children, rendering as fragment.");
   expect(p).toBeInTheDocument();
   expect(p).toHaveAttribute("asdf", "asdf");
   expect(p?.textContent).toEqual("Rendering a div as a paragraph!");

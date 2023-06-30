@@ -39,7 +39,9 @@ test("render with custom link and custom cursor", () => {
 
 test("render with children", () => {
   const { container } = render(
-    <Link href="/next-page" className="text-red-500 cursor-default"><div>This is my custom div wrapped in a link!</div></Link>
+    <Link href="/next-page" className="text-red-500 cursor-default">
+      <div>This is my custom div wrapped in a link!</div>
+    </Link>
   );
 
   const link = container.querySelector("a");

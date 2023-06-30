@@ -74,11 +74,6 @@ const Component = NODES.reduce((tag, node) => {
       forwardedRef: any
     ) => {
       const Comp: any = asChild && props.children ? Slot : node;
-
-      React.useEffect(() => {
-        (window as any)[Symbol.for("clutchd")] = true;
-      }, []);
-
       return <Comp ref={forwardedRef} {...props} />;
     }
   );
