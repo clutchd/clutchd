@@ -22,7 +22,7 @@ test("supports heterogenous arguments", () => {
 });
 
 test("should be trimmed", () => {
-  // TODO: possible to do this without killing perf? => expect(clsx("", "a ", {}, "b", "c\td")).toEqual("a b c d");
+  // TODO: possible to do this without killing perf? => expect(clsx(" ", "a ", {}, "b", "c\td")).toEqual("a b c d");
   expect(clsx("", "b", {}, "")).toEqual("b");
 });
 
