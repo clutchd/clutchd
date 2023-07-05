@@ -1,0 +1,14 @@
+{
+  "name": "@clutchd/clsx-benchmark",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
+  },
+  "devDependencies": {
+    "@clutchd/clsx": "1.0.5",
+    "benchmark": "^2.1.4",
+    "classcat": "^5.0.4",
+    "classnames": "^2.3.2",
+    "clsx": "1.2.1"
+  }
+}

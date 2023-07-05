@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "benchmark": "turbo run benchmark --concurrency=1",
+    "benchmark": "turbo run benchmark",
     "build": "turbo run build",
     "changeset": "changeset",
     "clean": "find . -type d \\( -name 'node_modules' -o -name '.turbo' -o -name 'dist' -o -name 'coverage' \\) -prune -print -exec rm -rf '{}' \\;",

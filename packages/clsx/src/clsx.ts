@@ -22,7 +22,7 @@ function toVal(args: any) {
   return out;
 }
 
-function clsx(...args: any[]) {
+export function clsx(...args: any[]) {
   let str = "",
     i = 0,
     arg;
@@ -34,4 +34,4 @@ function clsx(...args: any[]) {
   return str;
 }
 
-export { clsx };
+export default clsx;

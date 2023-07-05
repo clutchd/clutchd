@@ -1,7 +1,7 @@
 let data;
 
 try {
-  data = require("./clsx.benchmark.json");
+  data = require("../clsx.benchmark.json");
 } catch (e) {
   console.warn(
     "clsx.benchmark.json not found. Please run `pnpm run benchmark` first."
