@@ -1,19 +1,26 @@
 const fsp = require("fs").promises;
 const { Suite } = require("benchmark");
-const og = require("clsx").clsx;
-const clsx = require("../dist").clsx;
+const classnames = require("classnames");
+const classcat = require("classcat");
+const clsx = require("clsx");
+const prev = require("@clutchd/clsx").clsx;
+const clutchd = require("../dist").clsx;
 
 let results = {};
 
 function bench(name, ...args) {
+  console.log(`\n# ${name}`);
   new Suite()
-    .add("clsx", () => og.apply(og, args))
-    .add("clutchd", () => clsx.apply(clsx, args))
+    .add("classcat", () => classcat.apply(classcat, [args]))
+    .add("classnames", () => classnames.apply(classnames, args))
+    .add("clsx", () => clsx.apply(clsx, args))
+    .add("prev", () => prev.apply(prev, args))
+    .add("clutchd", () => clutchd.apply(clutchd, args))
     .on("cycle", (e) => {
       results[name] == null
         ? (results[name] = { [e.target.name]: e.target.hz })
         : (results[name][e.target.name] = e.target.hz);
-      console.log(name + ": " + e.target);
+      console.log(" " + e.target);
     })
     .run();
 }
@@ -48,7 +55,7 @@ async function main() {
     ["baz", { bax: false, bux: true, abc: null }, {}]
   );
   await fsp
-    .writeFile("src/clsx.benchmark.json", JSON.stringify(results))
+    .writeFile("./clsx.benchmark.json", JSON.stringify(results))
     .catch((e) => console.error(e));
 }
 

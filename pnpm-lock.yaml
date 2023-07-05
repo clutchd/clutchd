@@ -314,9 +314,6 @@ importers:
       '@types/node':
         specifier: 20.3.2
         version: 20.3.2
-      benchmark:
-        specifier: 2.1.4
-        version: 2.1.4
       clsx:
         specifier: 1.2.1
         version: 1.2.1
@@ -332,6 +329,24 @@ importers:
       typescript:
         specifier: 5.1.6
         version: 5.1.6
+
+  packages/clsx/benchmark:
+    devDependencies:
+      '@clutchd/clsx':
+        specifier: 1.0.5
+        version: link:..
+      benchmark:
+        specifier: ^2.1.4
+        version: 2.1.4
+      classcat:
+        specifier: ^5.0.4
+        version: 5.0.4
+      classnames:
+        specifier: ^2.3.2
+        version: 2.3.2
+      clsx:
+        specifier: 1.2.1
+        version: 1.2.1
 
   packages/config: {}
 
@@ -3597,6 +3612,14 @@ packages:
 
   /cjs-module-lexer@1.2.3:
     resolution: {integrity: sha512-0TNiGstbQmCFwt4akjjBg5pLRTSyj/PkWQ1ZoO2zntmg9yLqSRxwEa4iCfQLGjqhiqBfOJa7W/E8wfGrTDmlZQ==}
+
+  /classcat@5.0.4:
+    resolution: {integrity: sha512-sbpkOw6z413p+HDGcBENe498WM9woqWHiJxCq7nvmxe9WmrUmqfAcxpIwAiMtM5Q3AhYkzXcNQHqsWq0mND51g==}
+    dev: true
+
+  /classnames@2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
+    dev: true
 
   /client-only@0.0.1:
     resolution: {integrity: sha512-IV3Ou0jSMzZrd3pZ48nLkT9DA7Ag1pnPzaiQhpW7c3RbcqqzvzzVu+L8gfqMp/8IM2MQtSiqaCxrrcfu8I8rMA==}

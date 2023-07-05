@@ -36,7 +36,7 @@
     "dist"
   ],
   "scripts": {
-    "benchmark": "node src/clsx.benchmark.js",
+    "benchmark": "node ./benchmark/clsx.benchmark.js",
     "build": "tsup src/index.ts --format esm,cjs --dts --minify",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
@@ -50,7 +50,6 @@
     "@clutchd/tsconfig": "1.2.1",
     "@types/jest": "29.5.2",
     "@types/node": "20.3.2",
-    "benchmark": "2.1.4",
     "clsx": "1.2.1",
     "jest": "29.5.0",
     "node-fetch": "2.6.1",
