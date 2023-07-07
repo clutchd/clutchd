@@ -42,7 +42,7 @@ function mergeProps(
         .join(" ");
     }
 
-    // id a style prop, merge styles
+    // if a style prop, merge styles
     else if (propName === "style") {
       newProps[propName] = {
         ...originalProps[propName],
