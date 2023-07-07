@@ -1,5 +1,13 @@
 # @clutchd/layout
 
+## 1.0.17
+
+### Patch Changes
+
+- Updated dependencies [75fa1b7]
+  - @clutchd/flex@2.0.0
+  - @clutchd/twx@1.1.4
+
 ## 1.0.16
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/flex
 
+## 2.0.0
+
+### Major Changes
+
+- 75fa1b7: Remove tailwind props
+
 ## 1.1.15
 
 ### Patch Changes

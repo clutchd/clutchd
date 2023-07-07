@@ -1,5 +1,11 @@
 # @clutchd/grid
 
+## 1.0.17
+
+### Patch Changes
+
+- @clutchd/twx@1.1.4
+
 ## 1.0.16
 
 ### Patch Changes

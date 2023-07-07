@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 1.0.6
+
+### Patch Changes
+
+- 74da27a: Minor perf improvements
+
 ## 1.0.5
 
 ### Patch Changes
