@@ -1,5 +1,16 @@
 # @clutchd/landing
 
+## 2.0.0
+
+### Major Changes
+
+- f62d212: Landing revamp
+
+### Patch Changes
+
+- Updated dependencies [6addffd]
+  - @clutchd/layout@1.1.1
+
 ## 1.0.2
 
 ### Patch Changes

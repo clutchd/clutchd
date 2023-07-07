@@ -1,5 +1,11 @@
 # @clutchd/layout
 
+## 1.1.1
+
+### Patch Changes
+
+- 6addffd: Remove colors
+
 ## 1.1.0
 
 ### Minor Changes
