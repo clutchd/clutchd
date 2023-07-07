@@ -1,5 +1,17 @@
 # @clutchd/block
 
+## 1.1.0
+
+### Minor Changes
+
+- 2cecc8c: Remove twx
+
+### Patch Changes
+
+- Updated dependencies [309f2fa]
+- Updated dependencies [762d147]
+  - @clutchd/component@2.2.0
+
 ## 1.0.17
 
 ### Patch Changes

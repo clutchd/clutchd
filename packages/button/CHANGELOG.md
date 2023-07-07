@@ -1,5 +1,13 @@
 # @clutchd/button
 
+## 0.2.17
+
+### Patch Changes
+
+- Updated dependencies [309f2fa]
+- Updated dependencies [762d147]
+  - @clutchd/component@2.2.0
+
 ## 0.2.16
 
 ### Patch Changes

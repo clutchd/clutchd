@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/component",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "A primitive component intended to be used as a foundation for all other ui components.",
   "keywords": [
     "clutchd",
@@ -44,7 +44,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/slot": "1.0.11"
+    "@clutchd/slot": "1.0.12"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "0.2.0",

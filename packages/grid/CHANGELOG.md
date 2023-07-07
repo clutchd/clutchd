@@ -1,5 +1,13 @@
 # @clutchd/grid
 
+## 1.0.18
+
+### Patch Changes
+
+- Updated dependencies [309f2fa]
+- Updated dependencies [762d147]
+  - @clutchd/component@2.2.0
+
 ## 1.0.17
 
 ### Patch Changes
