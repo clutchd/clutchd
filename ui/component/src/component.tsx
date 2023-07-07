@@ -18,7 +18,6 @@ try {
 const NODES = [
   "a",
   "blockquote",
-  "body",
   "button",
   "div",
   "em",
