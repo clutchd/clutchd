@@ -76,7 +76,7 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -125,7 +125,7 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -205,7 +205,7 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -254,10 +254,10 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/divider':
-        specifier: 1.2.15
+        specifier: 1.2.16
         version: link:../divider
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -333,7 +333,7 @@ importers:
   packages/clsx/benchmark:
     devDependencies:
       '@clutchd/clsx':
-        specifier: 1.0.5
+        specifier: 1.0.6
         version: link:..
       benchmark:
         specifier: ^2.1.4
@@ -353,7 +353,7 @@ importers:
   packages/copyright:
     dependencies:
       '@clutchd/text':
-        specifier: 2.1.15
+        specifier: 2.1.16
         version: link:../text
     devDependencies:
       '@clutchd/jest':
@@ -399,7 +399,7 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -491,7 +491,7 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -543,7 +543,7 @@ importers:
         specifier: 2.0.7
         version: link:../is-empty
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -641,7 +641,7 @@ importers:
         specifier: 1.0.3
         version: link:../../ui/compose-preventable-event-handlers
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -690,10 +690,10 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/flex':
-        specifier: 1.1.15
+        specifier: 2.0.0
         version: link:../../ui/flex
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -820,7 +820,7 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -893,7 +893,7 @@ importers:
         specifier: 2.1.1
         version: link:../../ui/component
       '@clutchd/twx':
-        specifier: 1.1.3
+        specifier: 1.1.4
         version: link:../twx
     devDependencies:
       '@clutchd/jest':
@@ -954,7 +954,7 @@ importers:
   packages/twx:
     dependencies:
       '@clutchd/clsx':
-        specifier: 1.0.5
+        specifier: 1.0.6
         version: link:../clsx
     devDependencies:
       '@clutchd/jest':
