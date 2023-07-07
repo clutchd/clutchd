@@ -33,7 +33,7 @@ importers:
         specifier: 2.1.0
         version: link:../../ui/flex
       '@clutchd/layout':
-        specifier: 1.1.0
+        specifier: 1.1.1
         version: link:../../ui/layout
       '@clutchd/link':
         specifier: 1.3.0
