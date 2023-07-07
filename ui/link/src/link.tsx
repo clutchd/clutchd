@@ -3,17 +3,6 @@ import NextLink from "next/link";
 import * as React from "react";
 
 /**
- * Import `twx` if it exists, otherwise use simple merge function
- */
-try {
-  var twx = require("@clutchd/twx")?.twx;
-} catch (er) {
-  twx = (...args: any[]) => {
-    return args.filter(Boolean).join(" ");
-  };
-}
-
-/**
  * Type to define `Link` element
  */
 type ILink = React.ElementRef<typeof Component.a>;
@@ -21,7 +10,7 @@ type ILink = React.ElementRef<typeof Component.a>;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> {}
+interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> { }
 
 /**
  * Class names used to style the `Link` component
@@ -37,7 +26,7 @@ const Link = React.forwardRef<ILink, ILinkProps>(
   ({ href = "/", className, children, ...props }, forwardedRef) => {
     return (
       <Component.a
-        className={twx(LinkClassNames, className)}
+        className={[LinkClassNames, className].join(" ")}
         asChild
         {...props}
       >
