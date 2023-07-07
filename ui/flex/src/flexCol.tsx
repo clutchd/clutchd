@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Flex, FlexClassNames, IFlex, IFlexProps } from "./flex";
+import { Flex, IFlex, IFlexProps } from "./flex";
 
 /**
  * Type to define `FlexCol` element
@@ -9,12 +9,7 @@ type IFlexCol = IFlex;
 /**
  * Type to define `FlexCol` props
  */
-interface IFlexColProps extends IFlexProps { }
-
-/**
- * Class names used to style the `FlexCol` component
- */
-const FlexColClassNames = [FlexClassNames, `flex-col`].join(" ");
+interface IFlexColProps extends IFlexProps {}
 
 /**
  * `FlexCol` - A flex container for a vertical layout
@@ -25,7 +20,7 @@ const FlexCol = React.forwardRef<IFlexCol, IFlexColProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <Flex
-        className={[FlexColClassNames, className].filter(Boolean).join(" ")}
+        className={["flex-col", className].filter(Boolean).join(" ")}
         ref={forwardedRef}
         {...props}
       />
@@ -35,5 +30,5 @@ const FlexCol = React.forwardRef<IFlexCol, IFlexColProps>(
 
 FlexCol.displayName = "FlexCol";
 
-export { FlexCol, FlexColClassNames };
+export { FlexCol };
 export type { IFlexCol, IFlexColProps };

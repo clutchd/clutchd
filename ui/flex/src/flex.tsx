@@ -12,11 +12,6 @@ type IFlex = React.ElementRef<typeof Component.div>;
 interface IFlexProps extends IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * Class names used to style the `Flex` component
- */
-const FlexClassNames = `flex h-full w-full`;
-
-/**
  * `Flex` - A primitive flex container that powers various layouts
  * @param props `IFlexProps` used to render this `Flex`
  * @returns `Flex` component
@@ -25,7 +20,7 @@ const Flex = React.forwardRef<IFlex, IFlexProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <Component.div
-        className={[FlexClassNames, className].filter(Boolean).join(" ")}
+        className={["flex h-full w-full", className].filter(Boolean).join(" ")}
         ref={forwardedRef}
         {...props}
       />
@@ -35,5 +30,5 @@ const Flex = React.forwardRef<IFlex, IFlexProps>(
 
 Flex.displayName = "Flex";
 
-export { Flex, FlexClassNames };
+export { Flex };
 export type { IFlex, IFlexProps };

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Flex, FlexClassNames, IFlex, IFlexProps } from "./flex";
+import { Flex, IFlex, IFlexProps } from "./flex";
 
 /**
  * Type to define `FlexRow` element
@@ -9,12 +9,7 @@ type IFlexRow = IFlex;
 /**
  * Type to define `FlexRow` props
  */
-interface IFlexRowProps extends IFlexProps { }
-
-/**
- * Class names used to style the `FlexRow` component
- */
-const FlexRowClassNames = [FlexClassNames, `flex-row`].join(" ");
+interface IFlexRowProps extends IFlexProps {}
 
 /**
  * `FlexRow` - A flex container for a horizontal layout
@@ -25,7 +20,7 @@ const FlexRow = React.forwardRef<IFlexRow, IFlexRowProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <Flex
-        className={[FlexRowClassNames, className].filter(Boolean).join(" ")}
+        className={["flex-row", className].filter(Boolean).join(" ")}
         ref={forwardedRef}
         {...props}
       />
@@ -35,5 +30,5 @@ const FlexRow = React.forwardRef<IFlexRow, IFlexRowProps>(
 
 FlexRow.displayName = "FlexRow";
 
-export { FlexRow, FlexRowClassNames };
+export { FlexRow };
 export type { IFlexRow, IFlexRowProps };
