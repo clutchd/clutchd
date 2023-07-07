@@ -1166,9 +1166,6 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.3
         version: link:../../packages/jest
-      '@clutchd/tailwind':
-        specifier: 2.0.4
-        version: link:../../packages/tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
