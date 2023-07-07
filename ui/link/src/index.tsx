@@ -1,2 +1,2 @@
-export { Link, LinkClassNames } from "./link";
+export { Link } from "./link";
 export type { ILink, ILinkProps } from "./link";
