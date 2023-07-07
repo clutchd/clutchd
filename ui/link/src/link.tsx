@@ -10,7 +10,7 @@ type ILink = React.ElementRef<typeof Component.a>;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> { }
+interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> {}
 
 /**
  * Class names used to style the `Link` component

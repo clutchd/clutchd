@@ -1,7 +1,5 @@
-import { twx } from "@clutchd/twx";
-import { WithSpaceY } from "@clutchd/tailwind";
 import * as React from "react";
-import { Flex, IFlex, IFlexPropsCommon } from "./flex";
+import { Flex, FlexClassNames, IFlex, IFlexProps } from "./flex";
 
 /**
  * Type to define `FlexCol` element
@@ -11,7 +9,12 @@ type IFlexCol = IFlex;
 /**
  * Type to define `FlexCol` props
  */
-interface IFlexColProps extends IFlexPropsCommon, WithSpaceY {}
+interface IFlexColProps extends IFlexProps { }
+
+/**
+ * Class names used to style the `FlexCol` component
+ */
+const FlexColClassNames = [FlexClassNames, `flex-col`].join(" ");
 
 /**
  * `FlexCol` - A flex container for a vertical layout
@@ -19,16 +22,10 @@ interface IFlexColProps extends IFlexPropsCommon, WithSpaceY {}
  * @returns `FlexCol` component
  */
 const FlexCol = React.forwardRef<IFlexCol, IFlexColProps>(
-  (
-    { alignItems, className, justifyContent, spaceY, ...props },
-    forwardedRef
-  ) => {
+  ({ className, ...props }, forwardedRef) => {
     return (
       <Flex
-        alignItems={alignItems}
-        className={twx(spaceY, className)}
-        flexDirection="flex-col"
-        justifyContent={justifyContent}
+        className={[FlexColClassNames, className].filter(Boolean).join(" ")}
         ref={forwardedRef}
         {...props}
       />
@@ -38,5 +35,5 @@ const FlexCol = React.forwardRef<IFlexCol, IFlexColProps>(
 
 FlexCol.displayName = "FlexCol";
 
-export { FlexCol };
+export { FlexCol, FlexColClassNames };
 export type { IFlexCol, IFlexColProps };

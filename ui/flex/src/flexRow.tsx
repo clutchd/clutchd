@@ -1,7 +1,5 @@
-import { WithSpaceX } from "@clutchd/tailwind";
-import { twx } from "@clutchd/twx";
 import * as React from "react";
-import { Flex, IFlex, IFlexPropsCommon } from "./flex";
+import { Flex, FlexClassNames, IFlex, IFlexProps } from "./flex";
 
 /**
  * Type to define `FlexRow` element
@@ -11,7 +9,12 @@ type IFlexRow = IFlex;
 /**
  * Type to define `FlexRow` props
  */
-interface IFlexRowProps extends IFlexPropsCommon, WithSpaceX {}
+interface IFlexRowProps extends IFlexProps { }
+
+/**
+ * Class names used to style the `FlexRow` component
+ */
+const FlexRowClassNames = [FlexClassNames, `flex-row`].join(" ");
 
 /**
  * `FlexRow` - A flex container for a horizontal layout
@@ -19,16 +22,10 @@ interface IFlexRowProps extends IFlexPropsCommon, WithSpaceX {}
  * @returns `FlexRow` component
  */
 const FlexRow = React.forwardRef<IFlexRow, IFlexRowProps>(
-  (
-    { alignItems, className, justifyContent, spaceX, ...props },
-    forwardedRef
-  ) => {
+  ({ className, ...props }, forwardedRef) => {
     return (
       <Flex
-        alignItems={alignItems}
-        className={twx(spaceX, className)}
-        flexDirection="flex-row"
-        justifyContent={justifyContent}
+        className={[FlexRowClassNames, className].filter(Boolean).join(" ")}
         ref={forwardedRef}
         {...props}
       />
@@ -38,5 +35,5 @@ const FlexRow = React.forwardRef<IFlexRow, IFlexRowProps>(
 
 FlexRow.displayName = "FlexRow";
 
-export { FlexRow };
+export { FlexRow, FlexRowClassNames };
 export type { IFlexRow, IFlexRowProps };
