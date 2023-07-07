@@ -1,4 +1,3 @@
-import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { ILayoutWithDirection, Layout } from "./layout";
 import * as React from "react";
@@ -25,7 +24,7 @@ const Content = React.forwardRef<IContent, IContentProps>(
     return (
       <Layout
         asChild
-        className={twx("flex-1 p-6 sm:p-8", className)}
+        className={["flex-1 p-6 sm:p-8", className].filter(Boolean).join(" ")}
         direction={direction}
         {...props}
       >

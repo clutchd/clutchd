@@ -1,4 +1,3 @@
-import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import * as React from "react";
 import { ILayoutWithDirection, Layout } from "./layout";
@@ -24,10 +23,12 @@ const Page = React.forwardRef<IPage, IPageProps>(
   ({ className, direction = "col", ...props }, forwardedRef) => {
     return (
       <Layout
-        className={twx(
+        className={[
           "min-h-screen min-w-screen subpixel-antialiased bg-white dark:bg-gray-900",
-          className
-        )}
+          className,
+        ]
+          .filter(Boolean)
+          .join(" ")}
         direction={direction}
         ref={forwardedRef}
         {...props}

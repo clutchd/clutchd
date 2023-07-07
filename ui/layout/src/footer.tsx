@@ -1,4 +1,3 @@
-import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { ILayoutWithDirection, Layout } from "./layout";
 import * as React from "react";
@@ -25,7 +24,7 @@ const Footer = React.forwardRef<IFooter, IFooterProps>(
     return (
       <Layout
         asChild
-        className={twx("p-6 sm:p-8", className)}
+        className={["p-6 sm:p-8", className].filter(Boolean).join(" ")}
         direction={direction}
         {...props}
       >
