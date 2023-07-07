@@ -1,3 +1,4 @@
+import { Page } from "@clutchd/layout";
 import { Analytics } from "@vercel/analytics/react";
 import { Manrope } from "next/font/google";
 import React from "react";
@@ -20,10 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={manrope.variable}>
-      <body>
-        {children}
-        <Analytics />
-      </body>
+      <Page asChild className="bg-white">
+        <body>
+          {children}
+          <Analytics />
+        </body>
+      </Page>
     </html>
   );
 }

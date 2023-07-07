@@ -1,5 +1,5 @@
 import { FlexCol } from "@clutchd/flex";
-import { Page, Content, Footer, Header } from "@clutchd/layout";
+import { Content, Footer, Header } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { Metadata } from 'next';
 import Image from "next/image";
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <Page>
+    <>
       <Script async src="https://js.stripe.com/v3/pricing-table.js" />
       <Header>
         <Link className="hidden mr-auto sm:block" href="/">
@@ -57,6 +57,6 @@ export default function Home() {
           <Link href="mailto:william@clutchd.com">Contact Us</Link>
         </FlexCol>
       </Footer>
-    </Page>
+    </>
   );
 }

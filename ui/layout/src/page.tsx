@@ -24,7 +24,7 @@ const Page = React.forwardRef<IPage, IPageProps>(
     return (
       <Layout
         className={[
-          "min-h-screen min-w-screen subpixel-antialiased bg-white dark:bg-gray-900",
+          "min-h-screen min-w-screen subpixel-antialiased",
           className,
         ]
           .filter(Boolean)
