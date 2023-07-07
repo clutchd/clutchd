@@ -1,5 +1,16 @@
-import * as React from "react";
 import { Slot } from "@clutchd/slot";
+import * as React from "react";
+
+/**
+ * Import `tailwind-merge` if it exists, otherwise use simple merge function
+ */
+try {
+  var twx = require("tailwind-merge")?.twMerge;
+} catch (er) {
+  twx = (...args: any[]) => {
+    return args.filter(Boolean).join(" ");
+  };
+}
 
 /**
  * Supported `Component` nodes
@@ -70,11 +81,11 @@ type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
 const Component = NODES.reduce((tag, node) => {
   const Node = React.forwardRef(
     (
-      { asChild, ...props }: IComponentPropsWithRef<typeof node>,
+      { asChild, className, ...props }: IComponentPropsWithRef<typeof node>,
       forwardedRef: any
     ) => {
       const Comp: any = asChild && props.children ? Slot : node;
-      return <Comp ref={forwardedRef} {...props} />;
+      return <Comp className={twx(className)} ref={forwardedRef} {...props} />;
     }
   );
 
