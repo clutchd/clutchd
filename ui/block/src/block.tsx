@@ -1,5 +1,4 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { twx } from "@clutchd/twx";
 import * as React from "react";
 
 /**
@@ -21,7 +20,7 @@ const Block = React.forwardRef<IBlock, IBlockProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <div
-        className={twx("block h-full w-full", className)}
+        className={["block h-full w-full", className].filter(Boolean).join(" ")}
         ref={forwardedRef}
         {...props}
       />
