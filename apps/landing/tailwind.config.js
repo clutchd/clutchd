@@ -9,6 +9,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        brand: {
+          500: "#830DF2",
+        },
+        accent: {
+          500: "#1C2541",
+        },
+      },
       fontFamily: {
         sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans],
       },

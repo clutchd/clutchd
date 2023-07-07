@@ -32,7 +32,7 @@ export default function Home() {
           />
         </Link>
         <Link
-          className="flex px-4 ml-auto no-underline transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
+          className="flex items-center px-4 ml-auto text-white no-underline transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
           href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo"
         >
           Manage Subscription
@@ -50,11 +50,11 @@ export default function Home() {
         />
       </Content>
       <Footer>
-        <FlexCol>
-          Clutchd, LLC
+        <FlexCol className="text-gray-500">
+          © 2023 Clutchd, LLC
         </FlexCol>
         <FlexCol className="text-right">
-          <Link href="mailto:william@clutchd.com">Contact Us</Link>
+          <Link className="underline underline-offset-4" href="mailto:william@clutchd.com">Contact Us</Link>
         </FlexCol>
       </Footer>
     </>
