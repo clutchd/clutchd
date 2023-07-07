@@ -25,14 +25,13 @@
     "dist"
   ],
   "scripts": {
+    "benchmark": "node ./benchmark/twx.benchmark.js",
     "build": "tsup src/index.ts --format esm,cjs --dts --minify",
     "dev": "tsup src/index.ts --format esm,cjs --watch --dts",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "pnpm run build",
-    "test": "jest"
-  },
-  "dependencies": {
-    "@clutchd/clsx": "1.0.5"
+    "test": "jest",
+    "validate": "pnpm run build && pnpm run benchmark && pnpm run test"
   },
   "devDependencies": {
     "@clutchd/jest": "1.0.3",
