@@ -1,5 +1,20 @@
 # @clutchd/layout
 
+## 1.1.0
+
+### Minor Changes
+
+- 8a94090: Remove twx
+
+### Patch Changes
+
+- Updated dependencies [309f2fa]
+- Updated dependencies [a29d78f]
+- Updated dependencies [762d147]
+- Updated dependencies [309f2fa]
+  - @clutchd/component@2.2.0
+  - @clutchd/flex@2.1.0
+
 ## 1.0.17
 
 ### Patch Changes

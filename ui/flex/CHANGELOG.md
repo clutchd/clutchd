@@ -1,5 +1,18 @@
 # @clutchd/flex
 
+## 2.1.0
+
+### Minor Changes
+
+- a29d78f: Remove classname exports
+
+### Patch Changes
+
+- 309f2fa: Fix exports
+- Updated dependencies [309f2fa]
+- Updated dependencies [762d147]
+  - @clutchd/component@2.2.0
+
 ## 2.0.0
 
 ### Major Changes

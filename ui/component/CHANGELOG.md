@@ -1,5 +1,16 @@
 # @clutchd/component
 
+## 2.2.0
+
+### Minor Changes
+
+- 762d147: Merge tailwind classes automatically
+
+### Patch Changes
+
+- 309f2fa: Remove unneccesary children check
+  - @clutchd/slot@1.0.12
+
 ## 2.1.1
 
 ### Patch Changes
