@@ -1,5 +1,11 @@
 # @clutchd/avatar
 
+## 2.1.16
+
+### Patch Changes
+
+- @clutchd/twx@1.1.4
+
 ## 2.1.15
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 1.2.16
+
+### Patch Changes
+
+- @clutchd/twx@1.1.4
+
 ## 1.2.15
 
 ### Patch Changes

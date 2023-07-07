@@ -1,5 +1,12 @@
 # @clutchd/link
 
+## 1.2.9
+
+### Patch Changes
+
+- 6ec70eb: Simplify class merging
+- 85d2d5e: Improve class merge
+
 ## 1.2.8
 
 ### Patch Changes
