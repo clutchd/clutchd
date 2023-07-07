@@ -1,6 +1,17 @@
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
 
 /**
+ * Import `tailwind-merge` if it exists, otherwise use simple merge function
+ */
+try {
+  var twx = require("tailwind-merge").twMerge;
+} catch (e) {
+  twx = (...args: any[]) => {
+    return args.filter(Boolean).join(" ");
+  };
+}
+
+/**
  * Composes multiple prop objects into a single prop object
  * @param props Array of prop objects that will be composed
  * @returns A single prop object composed from all provided props
@@ -37,9 +48,7 @@ function mergeProps(
 
     // if a className prop, merge classes
     else if (propName === "className") {
-      newProps[propName] = [originalProps[propName], newProps[propName]]
-        .filter(Boolean)
-        .join(" ");
+      newProps[propName] = twx(originalProps[propName], newProps[propName]);
     }
 
     // if a style prop, merge styles

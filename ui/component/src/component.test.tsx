@@ -132,3 +132,29 @@ test("Render with multiple children and props", () => {
   expect(div).toHaveAttribute("asdf", "qwerty");
   expect(div?.textContent).toEqual("Rendering a div as another div!");
 });
+
+test("Render with tailwindcss className", () => {
+  const { container } = render(
+    <Component.div className="bg-red-500">With tailwindcss!</Component.div>
+  );
+
+  const root = container.querySelector("div");
+
+  expect(root).toBeInTheDocument();
+  expect(root).toHaveAttribute("class", "bg-red-500");
+  expect(root?.textContent).toEqual("With tailwindcss!");
+});
+
+test("Render with merged tailwindcss className", () => {
+  const { container, debug } = render(
+    <Component.div className="bg-red-500 bg-blue-500">
+      With tailwindcss!
+    </Component.div>
+  );
+
+  const root = container.querySelector("div");
+
+  expect(root).toBeInTheDocument();
+  expect(root).toHaveAttribute("class", "bg-blue-500");
+  expect(root?.textContent).toEqual("With tailwindcss!");
+});
