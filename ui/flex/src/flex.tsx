@@ -9,10 +9,13 @@ type IFlex = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Flex` props
  */
-interface IFlexProps extends IComponentPropsWithoutRef<typeof Component.div> {
+interface IFlexProps {
   direction: "row" | "col" | "row-reverse" | "col-reverse";
 }
 
+/**
+ * Map of `Flex` directions to Tailwind CSS classes
+ */
 const twDirection = {
   row: "flex-row",
   col: "flex-col",
@@ -25,21 +28,20 @@ const twDirection = {
  * @param props `IFlexProps` used to render this `Flex`
  * @returns `Flex` component
  */
-const Flex = React.forwardRef<IFlex, IFlexProps>(
-  ({ className, direction = "col", ...props }, forwardedRef) => {
-    return (
-      <Component.div
-        className={[
-          "flex h-full w-full",
-          twDirection[direction],
-          className,
-        ].join(" ")}
-        ref={forwardedRef}
-        {...props}
-      />
-    );
-  }
-);
+const Flex = React.forwardRef<
+  IFlex,
+  IFlexProps & IComponentPropsWithoutRef<typeof Component.div>
+>(({ className, direction = "col", ...props }, forwardedRef) => {
+  return (
+    <Component.div
+      className={["flex h-full w-full", twDirection[direction], className].join(
+        " "
+      )}
+      ref={forwardedRef}
+      {...props}
+    />
+  );
+});
 
 Flex.displayName = "Flex";
 
