@@ -1,14 +1,14 @@
 import { FlexCol } from "@clutchd/flex";
 import { Content, Footer, Header } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
-import { Metadata } from 'next';
+import { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: 'Clutchd, LLC',
-}
+  title: "Clutchd, LLC",
+};
 
 export default function Home() {
   return (
@@ -50,11 +50,14 @@ export default function Home() {
         />
       </Content>
       <Footer>
-        <FlexCol className="text-gray-500">
-          © 2023 Clutchd, LLC
-        </FlexCol>
+        <FlexCol className="text-gray-500">© 2023 Clutchd, LLC</FlexCol>
         <FlexCol className="text-right">
-          <Link className="underline underline-offset-4" href="mailto:william@clutchd.com">Contact Us</Link>
+          <Link
+            className="underline underline-offset-4"
+            href="mailto:william@clutchd.com"
+          >
+            Contact Us
+          </Link>
         </FlexCol>
       </Footer>
     </>
