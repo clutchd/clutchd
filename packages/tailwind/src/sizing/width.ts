@@ -1,4 +1,5 @@
-import { Arbitrary, SpacingVariants, WithVariants } from "..";
+import { Arbitrary, WithVariants } from "../core";
+import { CommonSizeVariants } from "./common";
 
 /**
  * Width
@@ -6,23 +7,7 @@ import { Arbitrary, SpacingVariants, WithVariants } from "..";
  */
 
 type WidthVariants =
-  | SpacingVariants
-  | "auto"
-  | "1/2"
-  | "1/3"
-  | "2/3"
-  | "1/4"
-  | "2/4"
-  | "3/4"
-  | "1/5"
-  | "2/5"
-  | "3/5"
-  | "4/5"
-  | "1/6"
-  | "2/6"
-  | "3/6"
-  | "4/6"
-  | "5/6"
+  | CommonSizeVariants
   | "1/12"
   | "2/12"
   | "3/12"
@@ -34,11 +19,6 @@ type WidthVariants =
   | "9/12"
   | "10/12"
   | "11/12"
-  | "full"
-  | "screen"
-  | "min"
-  | "max"
-  | "fit"
   | Arbitrary;
 
 export type Width = WithVariants<"w", WidthVariants>;
