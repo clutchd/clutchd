@@ -37,6 +37,7 @@
     "@clutchd/jest": "1.0.3",
     "@clutchd/tailwind": "2.0.4",
     "@clutchd/tsconfig": "1.2.1",
+    "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.2",
     "@types/node": "20.4.0",
     "@types/react": "18.2.14",

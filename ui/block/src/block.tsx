@@ -9,14 +9,14 @@ type IBlock = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Block` props
  */
-interface IBlockProps extends IComponentPropsWithoutRef<typeof Component.div> {}
+interface IBlockProps { }
 
 /**
  * `Block` - A block container for a vertical layout
  * @param props `IBlockProps` used to render this `Block`
  * @returns `Block` component
  */
-const Block = React.forwardRef<IBlock, IBlockProps>(
+const Block = React.forwardRef<IBlock, IBlockProps & IComponentPropsWithoutRef<typeof Component.div>>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <div
