@@ -10,7 +10,7 @@ type IPage = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Page` props
  */
-interface IPageProps extends IFlexProps { }
+interface IPageProps extends IFlexProps {}
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen

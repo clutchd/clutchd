@@ -1,5 +1,9 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { WithAlignItems, WithFlexDirection, WithJustifyContent } from "@clutchd/tailwind";
+import {
+  WithAlignItems,
+  WithFlexDirection,
+  WithJustifyContent,
+} from "@clutchd/tailwind";
 import * as React from "react";
 
 /**
@@ -10,8 +14,10 @@ type IFlex = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Flex` props
  */
-interface IFlexProps extends WithAlignItems, WithJustifyContent, WithFlexDirection {
-}
+interface IFlexProps
+  extends WithAlignItems,
+    WithJustifyContent,
+    WithFlexDirection {}
 
 /**
  * `Flex` - A primitive flex container that powers various layouts
