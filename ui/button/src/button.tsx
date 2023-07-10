@@ -28,9 +28,10 @@ const Button = React.forwardRef<IButton, IButtonProps>(
           asChild
           className={className}
           ref={forwardedRef}
-          {...props}>
+          {...props}
+        >
           <Link href={href} />
-        </Component.button >
+        </Component.button>
       );
     }
 

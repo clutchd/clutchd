@@ -20,7 +20,10 @@ interface IDividerProps {
  * @param props `IDividerProps` used to render this `Divider`
  * @returns `Divider` component
  */
-const Divider = React.forwardRef<IDivider, IDividerProps & IComponentPropsWithoutRef<typeof Component.div>>(
+const Divider = React.forwardRef<
+  IDivider,
+  IDividerProps & IComponentPropsWithoutRef<typeof Component.div>
+>(
   (
     {
       children,
@@ -43,14 +46,10 @@ const Divider = React.forwardRef<IDivider, IDividerProps & IComponentPropsWithou
         {...aria}
         className={[
           "rounded-lg",
-          hidden
-            ? "bg-inherit"
-            : "bg-gray-200 dark:bg-gray-700",
-          orientation === "horizontal"
-            ? `my-6 h-px`
-            : `mx-6 w-px`,
-          className].join(" ")
-        }
+          hidden ? "bg-inherit" : "bg-gray-200 dark:bg-gray-700",
+          orientation === "horizontal" ? `my-6 h-px` : `mx-6 w-px`,
+          className,
+        ].join(" ")}
         ref={forwardedRef}
         {...props}
       />
