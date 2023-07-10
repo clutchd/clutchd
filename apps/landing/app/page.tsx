@@ -1,10 +1,9 @@
-import { FlexCol } from "@clutchd/flex";
-import { Content, Footer, Header } from "@clutchd/layout";
+import { Flex } from "@clutchd/flex";
+import { Footer, Header, Main } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
-import React from "react";
 
 export const metadata: Metadata = {
   title: "Clutchd, LLC",
@@ -38,7 +37,7 @@ export default function Home() {
           Manage Subscription
         </Link>
       </Header>
-      <Content>
+      <Main>
         <h1 className="pt-4 pb-16 text-3xl text-center">
           Professional design, development, and maintenance for all your web
           needs
@@ -48,17 +47,17 @@ export default function Home() {
           pricing-table-id="prctbl_1LjYcKExxz9r9gq2uHTtzabE"
           publishable-key="pk_live_51KnXiKExxz9r9gq2q29FmChNykUYPIuokFLvpumZDlw15GB7GNaJpuB45iMQIbthpTm4O3AjjCfBhfmRhZeG8wfP00YCb9j0rC"
         />
-      </Content>
+      </Main>
       <Footer>
-        <FlexCol className="text-gray-500">© 2023 Clutchd, LLC</FlexCol>
-        <FlexCol className="text-right">
+        <Flex className="text-gray-500">© 2023 Clutchd, LLC</Flex>
+        <Flex className="text-right">
           <Link
             className="underline underline-offset-4"
             href="mailto:william@clutchd.com"
           >
             Contact Us
           </Link>
-        </FlexCol>
+        </Flex>
       </Footer>
     </>
   );

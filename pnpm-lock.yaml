@@ -1178,9 +1178,15 @@ importers:
       '@clutchd/jest':
         specifier: 1.0.3
         version: link:../../packages/jest
+      '@clutchd/tailwind':
+        specifier: 2.0.4
+        version: link:../../packages/tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
+      '@testing-library/react':
+        specifier: 14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
