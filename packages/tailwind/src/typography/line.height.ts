@@ -1,4 +1,4 @@
-import { WithVariants } from "..";
+import { WithVariants } from "../core";
 
 /**
  * Line Height
