@@ -1,5 +1,4 @@
-import { WithModifier, WithVariants } from "../core";
-import { OneThroughTwelve } from "./common";
+import { WithModifier, WithVariants, OneThroughTwelve } from "../core";
 
 /**
  * Grid Column Start / End

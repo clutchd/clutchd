@@ -1,5 +1,4 @@
-import { WithModifier, WithVariants } from "../core";
-import { OneTwoThreeFourFiveSix } from "./common";
+import { WithModifier, WithVariants, OneTwoThreeFourFiveSix } from "../core";
 
 /**
  * Grid Row Start / End

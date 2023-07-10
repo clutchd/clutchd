@@ -1,5 +1,4 @@
-import { WithVariants, WithModifier } from "../core";
-import { OneThroughTwelve } from "./common";
+import { WithVariants, WithModifier, OneThroughTwelve } from "../core";
 
 /**
  * Grid Template Columns
