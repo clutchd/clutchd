@@ -1,4 +1,4 @@
-import { WithVariants, ScreenVariants } from "..";
+import { WithVariants, ScreenVariants } from "../core";
 
 /**
  * Max-Width

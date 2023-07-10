@@ -1,32 +1,21 @@
-import {
-  Arbitrary,
-  ExtractKeyWithNegativeVariants,
-  SpacingVariants,
-  WithNegative,
-  WithVariants,
-} from "..";
+import { ExtractKeyWithVariants, SpacingVariants } from "../core";
 
 /**
  * Margin
  * @see https://tailwindcss.com/docs/margin
  */
 
-type MarginKeys =
-  | WithNegative<"m">
-  | WithNegative<"mx">
-  | WithNegative<"my">
-  | WithNegative<"mt">
-  | WithNegative<"mr">
-  | WithNegative<"mb">
-  | WithNegative<"ml">;
+type MarginKeys = "m" | "mx" | "my" | "mt" | "mr" | "mb" | "ml" | "ms" | "me";
 
-type MarginVariants = SpacingVariants | "auto" | Arbitrary;
+type MarginVariants = SpacingVariants | "auto";
 
-type ExtractMargin<T extends MarginKeys> = ExtractKeyWithNegativeVariants<
+type ExtractMargin<T extends MarginKeys> = ExtractKeyWithVariants<
   MarginKeys,
   T,
   MarginVariants
 >;
+
+export type Margin = ExtractMargin<"m">;
 
 export type MarginX = ExtractMargin<"mx">;
 
@@ -40,7 +29,13 @@ export type MarginB = ExtractMargin<"mb">;
 
 export type MarginL = ExtractMargin<"ml">;
 
-export type Margin = WithVariants<MarginKeys, MarginVariants>;
+export type MarginS = ExtractMargin<"ms">;
+
+export type MarginE = ExtractMargin<"me">;
+
+export interface WithMargin {
+  margin?: Margin;
+}
 
 export interface WithMarginX {
   marginX?: MarginX;
@@ -66,6 +61,10 @@ export interface WithMarginL {
   marginL?: MarginL;
 }
 
-export interface WithMargin {
-  margin?: Margin;
+export interface WithMarginS {
+  marginS?: MarginS;
+}
+
+export interface WithMarginE {
+  marginE?: MarginE;
 }

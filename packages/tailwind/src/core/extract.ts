@@ -1,4 +1,4 @@
-import { WithNegative, WithOptionalVariants, WithVariants } from ".";
+import { WithNegative, WithOptVariants, WithVariants } from ".";
 
 /**
  * Extracts a Key from a type and combines with all provided required variants
@@ -14,11 +14,11 @@ export type ExtractKeyWithVariants<
  * Extracts a Key from a type and combines with all provided optional variants
  */
 
-export type ExtractKeyWithOptionalVariants<
+export type ExtractKeyWithOptVariants<
   KeyType extends string,
   KeyUnion extends KeyType,
   Variants extends string
-> = WithOptionalVariants<Extract<KeyType, KeyUnion>, Variants>;
+> = WithOptVariants<Extract<KeyType, KeyUnion>, Variants>;
 
 /**
  * Extracts a Key from a type and combines with it's negative
@@ -43,8 +43,8 @@ export type ExtractKeyWithNegativeVariants<
  * Extracts a Key from a type and combines with it's negative as well as all provided optional variants
  */
 
-export type ExtractKeyWithOptionalNegativeVariants<
+export type ExtractKeyWithOptNegativeVariants<
   KeyType extends string,
   KeyUnion extends KeyType,
   Variants extends string
-> = WithOptionalVariants<ExtractKeyWithNegative<KeyType, KeyUnion>, Variants>;
+> = WithOptVariants<ExtractKeyWithNegative<KeyType, KeyUnion>, Variants>;

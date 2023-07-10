@@ -1,4 +1,4 @@
-import { Arbitrary, WithOptionalVariants } from "..";
+import { ExtractKeyWithOptVariants } from "../core";
 
 /**
  * Border Width
@@ -14,13 +14,52 @@ type BorderWidthKeys =
   | "border-b"
   | "border-l";
 
-type BorderWidthVariants = "0" | "2" | "4" | "8" | Arbitrary;
+type BorderWidthVariants = "0" | "2" | "4" | "8";
 
-export type BorderWidth = WithOptionalVariants<
+type ExtractBorderWidth<T extends BorderWidthKeys> = ExtractKeyWithOptVariants<
   BorderWidthKeys,
+  T,
   BorderWidthVariants
 >;
 
+export type BorderWidth = ExtractBorderWidth<"border">;
+
+export type BorderWidthX = ExtractBorderWidth<"border-x">;
+
+export type BorderWidthY = ExtractBorderWidth<"border-y">;
+
+export type BorderWidthT = ExtractBorderWidth<"border-t">;
+
+export type BorderWidthR = ExtractBorderWidth<"border-r">;
+
+export type BorderWidthB = ExtractBorderWidth<"border-b">;
+
+export type BorderWidthL = ExtractBorderWidth<"border-l">;
+
 export interface WithBorderWidth {
   borderWidth?: BorderWidth;
+}
+
+export interface WithBorderWidthX {
+  borderWidthX?: BorderWidthX;
+}
+
+export interface WithBorderWidthY {
+  borderWidthY?: BorderWidthY;
+}
+
+export interface WithBorderWidthT {
+  borderWidthT?: BorderWidthT;
+}
+
+export interface WithBorderWidthR {
+  borderWidthR?: BorderWidthR;
+}
+
+export interface WithBorderWidthB {
+  borderWidthB?: BorderWidthB;
+}
+
+export interface WithBorderWidthL {
+  borderWidthL?: BorderWidthL;
 }

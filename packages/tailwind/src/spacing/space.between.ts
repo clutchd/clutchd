@@ -1,28 +1,20 @@
-import {
-  Arbitrary,
-  ExtractKeyWithNegativeVariants,
-  SpacingVariants,
-  WithNegative,
-  WithVariants,
-} from "..";
+import { SpacingVariants, WithVariants } from "../core";
 
 /**
  * Space Between
  * @see https://tailwindcss.com/docs/space
  */
 
-type SpaceBetweenKeys = WithNegative<"space-x"> | WithNegative<"space-y">;
+type SpaceBetweenVariants = SpacingVariants | "reverse";
 
-type SpaceBetweenVariants = SpacingVariants | "reverse" | Arbitrary;
+export type SpaceX = WithVariants<"space-x", SpaceBetweenVariants>;
 
-type ExtractSpaceBetween<T extends SpaceBetweenKeys> =
-  ExtractKeyWithNegativeVariants<SpaceBetweenKeys, T, SpaceBetweenVariants>;
+export type SpaceY = WithVariants<"space-y", SpaceBetweenVariants>;
 
-export type SpaceX = ExtractSpaceBetween<"space-x">;
-
-export type SpaceY = ExtractSpaceBetween<"space-y">;
-
-export type SpaceBetween = WithVariants<SpaceBetweenKeys, SpaceBetweenVariants>;
+export type SpaceBetween = WithVariants<
+  "space-x" | "space-y",
+  SpaceBetweenVariants
+>;
 
 export interface WithSpaceX {
   spaceX?: SpaceX;
