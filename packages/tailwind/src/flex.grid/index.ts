@@ -1,3 +1,4 @@
+export * from "./align.content";
 export * from "./align.items";
 export * from "./flex.direction";
 export * from "./gap";

@@ -1,30 +1,15 @@
-import {
-  Arbitrary,
-  ExtractKeyWithNegativeVariants,
-  SpacingVariants,
-  WithVariants,
-} from "..";
+import { SpacingVariants, WithVariants } from "../core";
 
 /**
  * Gap
  * @see https://tailwindcss.com/docs/gap
  */
 
-type GapKeys = "gap" | "gap-x" | "gap-y";
+export type GapX = WithVariants<"gap-x", SpacingVariants>;
 
-type GapVariants = SpacingVariants | Arbitrary;
+export type GapY = WithVariants<"gap-y", SpacingVariants>;
 
-type ExtractGap<T extends GapKeys> = ExtractKeyWithNegativeVariants<
-  GapKeys,
-  T,
-  GapVariants
->;
-
-export type GapX = ExtractGap<"gap-x">;
-
-export type GapY = ExtractGap<"gap-y">;
-
-export type Gap = WithVariants<GapKeys, GapVariants>;
+export type Gap = WithVariants<"gap", SpacingVariants>;
 
 export interface WithGapX {
   gapX?: GapX;

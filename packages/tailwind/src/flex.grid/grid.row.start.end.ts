@@ -1,29 +1,26 @@
-import { WithModifier, WithVariants } from "..";
+import { WithModifier, WithVariants } from "../core";
+import { OneTwoThreeFourFiveSix } from "./common";
 
 /**
  * Grid Row Start / End
  * @see https://tailwindcss.com/docs/grid-row
  */
 
-type GridRowCommonVariants = "1" | "2" | "3" | "4" | "5" | "6";
-
-type GridRowStartEndVariants = GridRowCommonVariants | "7" | "auto";
+type GridRowStartEndVariants = OneTwoThreeFourFiveSix | "7" | "auto";
 
 /**
  * Row Span
  */
 
-export type RowSpanVariants = GridRowCommonVariants | "full";
-
-export type RowSpanNumberVariants = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7;
+type RowSpanVariants = OneTwoThreeFourFiveSix | "full";
 
 export type RowSpan = "row-auto" | WithVariants<"row-span", RowSpanVariants>;
 
 export interface WithRowSpan {
-  rowSpan?: RowSpan | RowSpanNumberVariants;
-  rowSpanSm?: WithModifier<"sm", RowSpan> | RowSpanNumberVariants;
-  rowSpanMd?: WithModifier<"md", RowSpan> | RowSpanNumberVariants;
-  rowSpanLg?: WithModifier<"lg", RowSpan> | RowSpanNumberVariants;
+  rowSpan?: RowSpan;
+  rowSpanSm?: WithModifier<"sm", RowSpan>;
+  rowSpanMd?: WithModifier<"md", RowSpan>;
+  rowSpanLg?: WithModifier<"lg", RowSpan>;
 }
 
 /**
