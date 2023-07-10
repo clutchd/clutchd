@@ -10,7 +10,7 @@ type IPage = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Page` props
  */
-interface IPageProps extends IFlexProps {}
+interface IPageProps extends IFlexProps { }
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen
@@ -20,14 +20,14 @@ interface IPageProps extends IFlexProps {}
 const Page = React.forwardRef<
   IPage,
   IPageProps & IComponentPropsWithoutRef<typeof Component.div>
->(({ className, direction = "col", ...props }, forwardedRef) => {
+>(({ className, flexDirection = "flex-col", ...props }, forwardedRef) => {
   return (
     <Flex
       className={[
         "min-h-screen min-w-screen subpixel-antialiased",
         className,
       ].join(" ")}
-      direction={direction}
+      flexDirection={flexDirection}
       ref={forwardedRef}
       {...props}
     />

@@ -10,7 +10,7 @@ type IMain = React.ElementRef<typeof Component.main>;
 /**
  * Type to define `Main` props
  */
-interface IMainProps extends IFlexProps {}
+interface IMainProps extends IFlexProps { }
 
 /**
  * `Main` - A layout component designed to contain a page's primary Main. Renders as a `main` element
@@ -20,12 +20,12 @@ interface IMainProps extends IFlexProps {}
 const Main = React.forwardRef<
   IMain,
   IMainProps & IComponentPropsWithoutRef<typeof Component.main>
->(({ children, className, direction = "col", ...props }, forwardedRef) => {
+>(({ children, className, flexDirection = "flex-col", ...props }, forwardedRef) => {
   return (
     <Flex
       asChild
       className={["flex-1 p-6 sm:p-8", className].join(" ")}
-      direction={direction}
+      flexDirection={flexDirection}
       {...props}
     >
       <main ref={forwardedRef}>{children}</main>
