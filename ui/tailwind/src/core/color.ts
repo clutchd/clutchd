@@ -1,4 +1,4 @@
-import { ColorAccent, Opacity } from "../core";
+import { ColorAccent, Opacity } from ".";
 
 /**
  * Colors

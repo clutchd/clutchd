@@ -1,4 +1,4 @@
-import { ScreenVariants } from "./";
+import { ScreenVariants } from ".";
 
 /**
  * Modifier Values

@@ -142,7 +142,7 @@ importers:
         version: link:../jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../tailwind
+        version: link:../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../tsconfig
@@ -228,7 +228,7 @@ importers:
         version: link:../jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../tailwind
+        version: link:../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../tsconfig
@@ -419,7 +419,7 @@ importers:
         version: link:../jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../tailwind
+        version: link:../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../tsconfig
@@ -517,7 +517,7 @@ importers:
         version: link:../jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../tailwind
+        version: link:../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../tsconfig
@@ -682,30 +682,6 @@ importers:
         specifier: 5.1.6
         version: 5.1.6
 
-  packages/tailwind:
-    devDependencies:
-      '@clutchd/jest':
-        specifier: 1.0.3
-        version: link:../jest
-      '@clutchd/tsconfig':
-        specifier: 1.2.1
-        version: link:../tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
-      jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
-      tsup:
-        specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
-      typescript:
-        specifier: 5.1.6
-        version: 5.1.6
-
   packages/text:
     dependencies:
       '@clutchd/component':
@@ -720,7 +696,7 @@ importers:
         version: link:../jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../tailwind
+        version: link:../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../tsconfig
@@ -812,7 +788,7 @@ importers:
         version: link:../../packages/jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../../packages/tailwind
+        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
@@ -861,7 +837,7 @@ importers:
         version: link:../../packages/jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../../packages/tailwind
+        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
@@ -1091,7 +1067,7 @@ importers:
         version: link:../../packages/jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../../packages/tailwind
+        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
@@ -1140,7 +1116,7 @@ importers:
         version: link:../../packages/jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../../packages/tailwind
+        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
@@ -1189,7 +1165,7 @@ importers:
         version: link:../../packages/jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../../packages/tailwind
+        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
@@ -1238,7 +1214,7 @@ importers:
         version: link:../../packages/jest
       '@clutchd/tailwind':
         specifier: 2.0.4
-        version: link:../../packages/tailwind
+        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: 1.2.1
         version: link:../../packages/tsconfig
@@ -1385,6 +1361,30 @@ importers:
       react:
         specifier: 18.2.0
         version: 18.2.0
+      tsup:
+        specifier: 7.1.0
+        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+      typescript:
+        specifier: 5.1.6
+        version: 5.1.6
+
+  ui/tailwind:
+    devDependencies:
+      '@clutchd/jest':
+        specifier: 1.0.3
+        version: link:../../packages/jest
+      '@clutchd/tsconfig':
+        specifier: 1.2.1
+        version: link:../../packages/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.4.0
+        version: 20.4.0
+      jest:
+        specifier: 29.6.0
+        version: 29.6.0(@types/node@20.4.0)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
