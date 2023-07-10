@@ -1,5 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import Link from "next/link";
+import { Link } from "@clutchd/link";
 import * as React from "react";
 
 /**
@@ -23,15 +23,14 @@ interface IButtonProps
 const Button = React.forwardRef<IButton, IButtonProps>(
   ({ className, href, ...props }, forwardedRef) => {
     if (href) {
-      // TODO: Need a better solution, not valid html5
       return (
-        <Link className="cursor-pointer" href={href}>
-          <Component.button
-            className={className}
-            ref={forwardedRef}
-            {...props}
-          />
-        </Link>
+        <Component.button
+          asChild
+          className={className}
+          ref={forwardedRef}
+          {...props}>
+          <Link href={href} />
+        </Component.button >
       );
     }
 
