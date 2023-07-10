@@ -10,7 +10,7 @@ type IFlex = React.ElementRef<typeof Component.div>;
  * Type to define `Flex` props
  */
 interface IFlexProps {
-  direction: "row" | "col" | "row-reverse" | "col-reverse";
+  direction?: "row" | "col" | "row-reverse" | "col-reverse";
 }
 
 /**
