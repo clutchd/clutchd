@@ -11,6 +11,6 @@ export type WithVariants<
  * Generates a Key with optional Variants
  */
 
-export type WithOptionalVariants<Key extends string, Variants extends string> =
+export type WithOptVariants<Key extends string, Variants extends string> =
   | Key
   | `${Key}-${Variants}`;

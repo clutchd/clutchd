@@ -3,7 +3,7 @@
  * @see https://tailwindcss.com/docs/customizing-spacing
  */
 
-export const spacing = [
+const spacing = [
   "0",
   "px",
   "0.5",
@@ -41,15 +41,4 @@ export const spacing = [
   "96",
 ] as const;
 
-export interface WithSpacing {
-  spacing?: SpacingVariants;
-}
-
 export type SpacingVariants = (typeof spacing)[number];
-
-export const spacingPx = [
-  0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 20, 24, 28, 32, 36, 40, 44, 48, 56, 64, 80,
-  96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 256, 288, 320, 384,
-] as const;
-
-export type SpacingPxVariants = (typeof spacingPx)[number];
