@@ -1,17 +1,5 @@
-import { twx } from "@clutchd/twx";
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import {
-  getColSpan,
-  getColSpanLg,
-  getColSpanMd,
-  getColSpanSm,
-  getRowSpan,
-  getRowSpanLg,
-  getRowSpanMd,
-  getRowSpanSm,
-  WithColSpan,
-  WithRowSpan,
-} from "@clutchd/tailwind";
+import { WithColSpan, WithRowSpan } from "@clutchd/tailwind";
 import * as React from "react";
 
 /**
@@ -36,7 +24,7 @@ const GridCol = React.forwardRef<IGridCol, IGridColProps>(
   (
     {
       className,
-      colSpan = 1,
+      colSpan = "col-auto",
       colSpanSm,
       colSpanMd,
       colSpanLg,
@@ -48,19 +36,22 @@ const GridCol = React.forwardRef<IGridCol, IGridColProps>(
     },
     forwardedRef
   ) => {
-    const classNames = twx(
-      getColSpan(colSpan),
-      getColSpanSm(colSpanSm),
-      getColSpanMd(colSpanMd),
-      getColSpanLg(colSpanLg),
-      getRowSpan(rowSpan),
-      getRowSpanSm(rowSpanSm),
-      getRowSpanMd(rowSpanMd),
-      getRowSpanLg(rowSpanLg),
-      className
-    );
     return (
-      <Component.div className={classNames} ref={forwardedRef} {...props} />
+      <Component.div
+        className={[
+          colSpan,
+          colSpanSm,
+          colSpanMd,
+          colSpanLg,
+          rowSpan,
+          rowSpanSm,
+          rowSpanMd,
+          rowSpanLg,
+          className,
+        ].join(" ")}
+        ref={forwardedRef}
+        {...props}
+      />
     );
   }
 );
