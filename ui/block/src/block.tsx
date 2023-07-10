@@ -20,7 +20,7 @@ const Block = React.forwardRef<IBlock, IBlockProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <div
-        className={["block h-full w-full", className].filter(Boolean).join(" ")}
+        className={["block h-full w-full", className].join(" ")}
         ref={forwardedRef}
         {...props}
       />

@@ -12,7 +12,7 @@ type IPage = React.ElementRef<typeof Component.div>;
  */
 interface IPageProps
   extends ILayoutWithDirection,
-  IComponentPropsWithoutRef<typeof Component.div> { }
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen
@@ -26,9 +26,7 @@ const Page = React.forwardRef<IPage, IPageProps>(
         className={[
           "min-h-screen min-w-screen subpixel-antialiased",
           className,
-        ]
-          .filter(Boolean)
-          .join(" ")}
+        ].join(" ")}
         direction={direction}
         ref={forwardedRef}
         {...props}

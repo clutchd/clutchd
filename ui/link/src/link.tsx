@@ -21,7 +21,7 @@ const Link = React.forwardRef<ILink, ILinkProps>(
   ({ href = "/", className, children, ...props }, forwardedRef) => {
     return (
       <Component.a
-        className={["cursor-pointer", className].filter(Boolean).join(" ")}
+        className={["cursor-pointer", className].join(" ")}
         asChild
         {...props}
       >

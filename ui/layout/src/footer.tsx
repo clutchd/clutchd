@@ -24,7 +24,7 @@ const Footer = React.forwardRef<IFooter, IFooterProps>(
     return (
       <Layout
         asChild
-        className={["p-6 sm:p-8", className].filter(Boolean).join(" ")}
+        className={["p-6 sm:p-8", className].join(" ")}
         direction={direction}
         {...props}
       >

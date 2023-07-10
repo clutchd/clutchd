@@ -24,7 +24,7 @@ const Content = React.forwardRef<IContent, IContentProps>(
     return (
       <Layout
         asChild
-        className={["flex-1 p-6 sm:p-8", className].filter(Boolean).join(" ")}
+        className={["flex-1 p-6 sm:p-8", className].join(" ")}
         direction={direction}
         {...props}
       >
