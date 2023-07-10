@@ -1177,9 +1177,6 @@ importers:
       '@clutchd/component':
         specifier: 2.2.0
         version: link:../component
-      '@clutchd/twx':
-        specifier: 1.1.4
-        version: link:../../packages/twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.3
