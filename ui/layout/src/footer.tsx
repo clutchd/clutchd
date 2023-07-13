@@ -13,14 +13,18 @@ type IFooter = React.ElementRef<typeof Component.footer>;
 interface IFooterProps extends IFlexProps {}
 
 /**
+ * Type to define `Footer` props with html attributes
+ */
+interface IFooterHtmlProps
+  extends IFooterProps,
+    IComponentPropsWithoutRef<typeof Component.footer> {}
+
+/**
  * `Footer` - A layout component designed to contain a page's footer content. Renders as a `footer` element
  * @param props `IFooterProps` used to render this `Footer`
  * @returns `Footer` component
  */
-const Footer = React.forwardRef<
-  IFooter,
-  IFooterProps & IComponentPropsWithoutRef<typeof Component.footer>
->(
+const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
   (
     { children, className, flexDirection = "flex-row", ...props },
     forwardedRef
@@ -41,4 +45,4 @@ const Footer = React.forwardRef<
 Footer.displayName = "Footer";
 
 export { Footer };
-export type { IFooter, IFooterProps };
+export type { IFooter, IFooterProps, IFooterHtmlProps };

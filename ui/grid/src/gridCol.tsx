@@ -16,11 +16,18 @@ interface IGridColProps
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
+ * Type to define `GridCol` props with html attributes
+ */
+interface IGridColHtmlProps
+  extends IGridColProps,
+    IComponentPropsWithoutRef<typeof Component.div> {}
+
+/**
  * `GridCol` - A primitive component used to render a column within a grid
  * @param props `IColProps` used to render this `Col`
  * @returns `Col` component
  */
-const GridCol = React.forwardRef<IGridCol, IGridColProps>(
+const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
   (
     {
       className,
@@ -59,4 +66,4 @@ const GridCol = React.forwardRef<IGridCol, IGridColProps>(
 GridCol.displayName = "GridCol";
 
 export { GridCol };
-export type { IGridCol, IGridColProps };
+export type { IGridCol, IGridColProps, IGridColHtmlProps };

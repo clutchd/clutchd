@@ -13,14 +13,18 @@ type IMain = React.ElementRef<typeof Component.main>;
 interface IMainProps extends IFlexProps {}
 
 /**
+ * Type to define `Main` props with html attributes
+ */
+interface IMainHtmlProps
+  extends IMainProps,
+    IComponentPropsWithoutRef<typeof Component.main> {}
+
+/**
  * `Main` - A layout component designed to contain a page's primary Main. Renders as a `main` element
  * @param props `IMainProps` used to render this `Main`
  * @returns `Main` component
  */
-const Main = React.forwardRef<
-  IMain,
-  IMainProps & IComponentPropsWithoutRef<typeof Component.main>
->(
+const Main = React.forwardRef<IMain, IMainHtmlProps>(
   (
     { children, className, flexDirection = "flex-col", ...props },
     forwardedRef
@@ -41,4 +45,4 @@ const Main = React.forwardRef<
 Main.displayName = "Main";
 
 export { Main };
-export type { IMain, IMainProps };
+export type { IMain, IMainProps, IMainHtmlProps };

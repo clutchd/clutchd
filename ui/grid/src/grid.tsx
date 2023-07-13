@@ -13,14 +13,18 @@ type IGrid = React.ElementRef<typeof Component.div>;
 interface IGridProps extends WithGridCols, WithGap {}
 
 /**
+ * Type to define `Grid` props with html attributes
+ */
+interface IGridHtmlProps
+  extends IGridProps,
+    IComponentPropsWithoutRef<typeof Component.div> {}
+
+/**
  * `Grid` - A primitive grid container that powers various layouts
  * @param props `IGridProps` used to render this `Grid`
  * @returns `Grid` component
  */
-const Grid = React.forwardRef<
-  IGrid,
-  IGridProps & IComponentPropsWithoutRef<typeof Component.div>
->(
+const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
   (
     {
       className,
@@ -54,4 +58,4 @@ const Grid = React.forwardRef<
 Grid.displayName = "Grid";
 
 export { Grid };
-export type { IGrid, IGridProps };
+export type { IGrid, IGridProps, IGridHtmlProps };

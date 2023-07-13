@@ -16,14 +16,18 @@ interface IDividerProps {
 }
 
 /**
+ * Type to define `Divider` props with html attributes
+ */
+interface IDividerHtmlProps
+  extends IDividerProps,
+    IComponentPropsWithoutRef<typeof Component.div> {}
+
+/**
  * `Divider` - A separator used to create space between elements
  * @param props `IDividerProps` used to render this `Divider`
  * @returns `Divider` component
  */
-const Divider = React.forwardRef<
-  IDivider,
-  IDividerProps & IComponentPropsWithoutRef<typeof Component.div>
->(
+const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
   (
     {
       children,
@@ -60,4 +64,4 @@ const Divider = React.forwardRef<
 Divider.displayName = "Divider";
 
 export { Divider };
-export type { IDivider, IDividerProps };
+export type { IDivider, IDividerProps, IDividerHtmlProps };

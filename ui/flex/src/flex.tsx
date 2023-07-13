@@ -20,14 +20,18 @@ interface IFlexProps
     WithFlexDirection {}
 
 /**
+ * Type to define `Flex` props with html attributes
+ */
+interface IFlexHtmlProps
+  extends IFlexProps,
+    IComponentPropsWithoutRef<typeof Component.div> {}
+
+/**
  * `Flex` - A primitive flex container that powers various layouts
  * @param props `IFlexProps` used to render this `Flex`
  * @returns `Flex` component
  */
-const Flex = React.forwardRef<
-  IFlex,
-  IFlexProps & IComponentPropsWithoutRef<typeof Component.div>
->(
+const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
   (
     {
       alignItems = "items-center",
@@ -57,4 +61,4 @@ const Flex = React.forwardRef<
 Flex.displayName = "Flex";
 
 export { Flex };
-export type { IFlex, IFlexProps };
+export type { IFlex, IFlexProps, IFlexHtmlProps };

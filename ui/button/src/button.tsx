@@ -10,17 +10,23 @@ type IButton = React.ElementRef<typeof Component.button>;
 /**
  * Type to define `Button` props
  */
-interface IButtonProps
-  extends IComponentPropsWithoutRef<typeof Component.button> {
+interface IButtonProps {
   href?: string;
 }
+
+/**
+ * Type to define `Button` props with html attributes
+ */
+interface IButtonHtmlProps
+  extends IButtonProps,
+    IComponentPropsWithoutRef<typeof Component.button> {}
 
 /**
  * `Button` - A button component used to render consistent buttons
  * @param props `IButtonProps` used to render this `Button`
  * @returns `Button` component
  */
-const Button = React.forwardRef<IButton, IButtonProps>(
+const Button = React.forwardRef<IButton, IButtonHtmlProps>(
   ({ className, href, ...props }, forwardedRef) => {
     if (href) {
       return (
@@ -42,4 +48,4 @@ const Button = React.forwardRef<IButton, IButtonProps>(
 );
 
 export { Button };
-export type { IButton, IButtonProps };
+export type { IButton, IButtonProps, IButtonHtmlProps };
