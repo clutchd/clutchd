@@ -87,9 +87,6 @@ importers:
 
   apps/ui:
     dependencies:
-      '@clutchd/avatar':
-        specifier: 2.1.17
-        version: link:../../packages/avatar
       '@vercel/analytics':
         specifier: 1.0.1
         version: 1.0.1

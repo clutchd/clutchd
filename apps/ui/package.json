@@ -10,7 +10,6 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@clutchd/avatar": "2.1.17",
     "@vercel/analytics": "1.0.1",
     "next": "13.4.9",
     "nextra": "2.9.0",
