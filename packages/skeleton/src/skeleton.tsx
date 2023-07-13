@@ -1,5 +1,4 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { twx } from "@clutchd/twx";
 import * as React from "react";
 
 /**
@@ -22,10 +21,10 @@ const Skeleton = React.forwardRef<ISkeleton, ISkeletonProps>(
   ({ children = "\u200b", className, ...props }, forwardedRef) => {
     return (
       <Component.div
-        className={twx(
+        className={[
           "rounded block bg-black/10 dark:bg-white/10 w-full h-full animate-pulse motion-reduce:animate-none",
-          className
-        )}
+          className,
+        ].join(" ")}
         ref={forwardedRef}
         {...props}
       />

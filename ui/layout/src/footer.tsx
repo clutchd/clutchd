@@ -1,5 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { ILayoutWithDirection, Layout } from "./layout";
+import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
 /**
@@ -10,8 +10,13 @@ type IFooter = React.ElementRef<typeof Component.footer>;
 /**
  * Type to define `Footer` props
  */
-interface IFooterProps
-  extends ILayoutWithDirection,
+interface IFooterProps extends IFlexProps {}
+
+/**
+ * Type to define `Footer` props with html attributes
+ */
+interface IFooterHtmlProps
+  extends IFooterProps,
     IComponentPropsWithoutRef<typeof Component.footer> {}
 
 /**
@@ -19,17 +24,20 @@ interface IFooterProps
  * @param props `IFooterProps` used to render this `Footer`
  * @returns `Footer` component
  */
-const Footer = React.forwardRef<IFooter, IFooterProps>(
-  ({ children, className, direction = "row", ...props }, forwardedRef) => {
+const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
+  (
+    { children, className, flexDirection = "flex-row", ...props },
+    forwardedRef
+  ) => {
     return (
-      <Layout
+      <Flex
         asChild
-        className={["p-6 sm:p-8", className].filter(Boolean).join(" ")}
-        direction={direction}
+        className={["p-6 sm:p-8", className].join(" ")}
+        flexDirection={flexDirection}
         {...props}
       >
         <footer ref={forwardedRef}>{children}</footer>
-      </Layout>
+      </Flex>
     );
   }
 );
@@ -37,4 +45,4 @@ const Footer = React.forwardRef<IFooter, IFooterProps>(
 Footer.displayName = "Footer";
 
 export { Footer };
-export type { IFooter, IFooterProps };
+export type { IFooter, IFooterProps, IFooterHtmlProps };

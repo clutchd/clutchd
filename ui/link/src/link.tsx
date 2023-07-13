@@ -10,18 +10,25 @@ type ILink = React.ElementRef<typeof Component.a>;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps extends IComponentPropsWithoutRef<typeof Component.a> {}
+interface ILinkProps {}
+
+/**
+ * Type to define `Link` props with html attributes
+ */
+interface ILinkHtmlProps
+  extends ILinkProps,
+    IComponentPropsWithoutRef<typeof Component.a> {}
 
 /**
  * `Link` - A simple link component, leverages next/link
  * @param props `ILinkProps` used to render this `Link`
  * @returns `Link` component
  */
-const Link = React.forwardRef<ILink, ILinkProps>(
+const Link = React.forwardRef<ILink, ILinkHtmlProps>(
   ({ href = "/", className, children, ...props }, forwardedRef) => {
     return (
       <Component.a
-        className={["cursor-pointer", className].filter(Boolean).join(" ")}
+        className={["cursor-pointer", className].join(" ")}
         asChild
         {...props}
       >
@@ -36,4 +43,4 @@ const Link = React.forwardRef<ILink, ILinkProps>(
 Link.displayName = "Link";
 
 export { Link };
-export type { ILink, ILinkProps };
+export type { ILink, ILinkProps, ILinkHtmlProps };

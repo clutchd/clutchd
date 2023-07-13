@@ -1,6 +1,6 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
-import { ILayoutWithDirection, Layout } from "./layout";
 
 /**
  * Type to define `Header` element
@@ -10,8 +10,13 @@ type IHeader = React.ElementRef<typeof Component.header>;
 /**
  * Type to define `Header` props
  */
-interface IHeaderProps
-  extends ILayoutWithDirection,
+interface IHeaderProps extends IFlexProps {}
+
+/**
+ * Type to define `Header` props with html attributes
+ */
+interface IHeaderHtmlProps
+  extends IHeaderProps,
     IComponentPropsWithoutRef<typeof Component.header> {}
 
 /**
@@ -19,17 +24,20 @@ interface IHeaderProps
  * @param props `IHeaderProps` used to render this `Header`
  * @returns `Header` component
  */
-const Header = React.forwardRef<IHeader, IHeaderProps>(
-  ({ children, className, direction = "row", ...props }, forwardedRef) => {
+const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
+  (
+    { children, className, flexDirection = "flex-row", ...props },
+    forwardedRef
+  ) => {
     return (
-      <Layout
+      <Flex
         asChild
-        className={["p-6 sm:p-8", className].filter(Boolean).join(" ")}
-        direction={direction}
+        className={["p-6 sm:p-8", className].join(" ")}
+        flexDirection={flexDirection}
         {...props}
       >
         <header ref={forwardedRef}>{children}</header>
-      </Layout>
+      </Flex>
     );
   }
 );
@@ -37,4 +45,4 @@ const Header = React.forwardRef<IHeader, IHeaderProps>(
 Header.displayName = "Header";
 
 export { Header };
-export type { IHeader, IHeaderProps };
+export type { IHeader, IHeaderProps, IHeaderHtmlProps };

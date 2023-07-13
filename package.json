@@ -6,7 +6,7 @@
     "benchmark": "turbo run benchmark",
     "build": "turbo run build",
     "changeset": "changeset",
-    "clean": "find . -type d \\( -name 'node_modules' -o -name '.turbo' -o -name 'dist' -o -name 'coverage' \\) -prune -print -exec rm -rf '{}' \\;",
+    "clean": "find . -type d \\( -name '.next'  -o -name '.turbo' -o -name 'coverage' -o -name 'dist' -o -name 'node_modules' \\) -prune -print -exec rm -rf '{}' \\;",
     "dev": "turbo run dev",
     "preinstall": "npx only-allow pnpm",
     "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",

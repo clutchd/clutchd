@@ -1,5 +1,4 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { twx } from "@clutchd/twx";
 import * as React from "react";
 
 /**
@@ -20,7 +19,11 @@ interface IEmProps extends IComponentPropsWithoutRef<typeof Component.em> {}
 const Em = React.forwardRef<IEm, IEmProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
-      <em className={twx("italic", className)} ref={forwardedRef} {...props} />
+      <em
+        className={["italic", className].join(" ")}
+        ref={forwardedRef}
+        {...props}
+      />
     );
   }
 );

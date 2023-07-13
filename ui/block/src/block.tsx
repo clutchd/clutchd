@@ -9,18 +9,25 @@ type IBlock = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Block` props
  */
-interface IBlockProps extends IComponentPropsWithoutRef<typeof Component.div> {}
+interface IBlockProps {}
+
+/**
+ * Type to define `Block` props with html attributes
+ */
+interface IBlockHtmlProps
+  extends IBlockProps,
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Block` - A block container for a vertical layout
  * @param props `IBlockProps` used to render this `Block`
  * @returns `Block` component
  */
-const Block = React.forwardRef<IBlock, IBlockProps>(
+const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <div
-        className={["block h-full w-full", className].filter(Boolean).join(" ")}
+        className={["block h-full w-full", className].join(" ")}
         ref={forwardedRef}
         {...props}
       />
@@ -31,4 +38,4 @@ const Block = React.forwardRef<IBlock, IBlockProps>(
 Block.displayName = "Block";
 
 export { Block };
-export type { IBlock, IBlockProps };
+export type { IBlock, IBlockProps, IBlockHtmlProps };
