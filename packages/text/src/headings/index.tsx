@@ -1,4 +1,3 @@
-export { getHeadingTheme } from "./getHeadingTheme";
 export * from "./h1";
 export * from "./h2";
 export * from "./h3";

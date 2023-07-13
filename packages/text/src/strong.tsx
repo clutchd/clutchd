@@ -1,5 +1,4 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { twx } from "@clutchd/twx";
 import * as React from "react";
 
 /**
@@ -10,21 +9,21 @@ type IStrong = React.ElementRef<typeof Component.strong>;
 /**
  * Type to define `Strong` props
  */
-interface IStrongProps
-  extends IComponentPropsWithoutRef<typeof Component.strong> {}
+interface IStrongProps {}
 
 /**
  * `Strong` - A inline text component used to bold the provided text
  * @param props `IStrongProps` used to render this `Strong`
  * @returns `Strong` component
  */
-const Strong = React.forwardRef<IStrong, IStrongProps>(
-  (props, forwardedRef) => {
-    return (
-      <strong className={twx("font-bold")} {...props} ref={forwardedRef} />
-    );
-  }
-);
+const Strong = React.forwardRef<
+  IStrong,
+  IStrongProps & IComponentPropsWithoutRef<typeof Component.strong>
+>((props, forwardedRef) => {
+  return (
+    <strong className={["font-bold"].join(" ")} {...props} ref={forwardedRef} />
+  );
+});
 
 Strong.displayName = "TextStrong";
 
