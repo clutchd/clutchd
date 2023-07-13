@@ -58,8 +58,8 @@ importers:
         specifier: 1.2.1
         version: link:../../packages/tsconfig
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -73,8 +73,8 @@ importers:
         specifier: 7.2.1
         version: 7.2.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       postcss:
         specifier: 8.4.25
         version: 8.4.25
@@ -87,15 +87,21 @@ importers:
 
   apps/ui:
     dependencies:
+      '@clutchd/avatar':
+        specifier: 2.1.17
+        version: link:../../packages/avatar
+      '@vercel/analytics':
+        specifier: 1.0.1
+        version: 1.0.1
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       nextra:
-        specifier: 2.8.0
-        version: 2.8.0(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 2.9.0
+        version: 2.9.0(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       nextra-theme-docs:
-        specifier: 2.8.0
-        version: 2.8.0(next@13.4.9)(nextra@2.8.0)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 2.9.0
+        version: 2.9.0(next@13.4.9)(nextra@2.9.0)(react-dom@18.2.0)(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -110,14 +116,20 @@ importers:
         specifier: 1.2.1
         version: link:../../packages/tsconfig
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
+      '@types/react':
+        specifier: 18.2.14
+        version: 18.2.14
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
       autoprefixer:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.25)
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       postcss:
         specifier: 8.4.25
         version: 8.4.25
@@ -133,9 +145,6 @@ importers:
       '@clutchd/component':
         specifier: 2.2.0
         version: link:../../ui/component
-      '@clutchd/twx':
-        specifier: 1.1.4
-        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.3
@@ -150,8 +159,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -159,8 +168,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -196,14 +205,14 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/node-fetch':
         specifier: 2.6.4
         version: 2.6.4
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
@@ -219,9 +228,6 @@ importers:
       '@clutchd/divider':
         specifier: 1.2.17
         version: link:../../ui/divider
-      '@clutchd/twx':
-        specifier: 1.1.4
-        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.3
@@ -236,8 +242,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -245,8 +251,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       postcss:
         specifier: 8.4.25
         version: 8.4.25
@@ -275,14 +281,14 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       clsx:
         specifier: 1.2.1
         version: 1.2.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       node-fetch:
         specifier: 2.6.1
         version: 2.6.1
@@ -315,6 +321,9 @@ importers:
 
   packages/copyright:
     dependencies:
+      '@clutchd/component':
+        specifier: 2.2.0
+        version: link:../../ui/component
       '@clutchd/text':
         specifier: 2.1.17
         version: link:../text
@@ -329,8 +338,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -338,8 +347,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -387,11 +396,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
@@ -410,9 +419,6 @@ importers:
       '@clutchd/is-empty':
         specifier: 2.0.7
         version: link:../is-empty
-      '@clutchd/twx':
-        specifier: 1.1.4
-        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.3
@@ -427,8 +433,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -436,8 +442,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -469,11 +475,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
@@ -491,14 +497,14 @@ importers:
         version: 29.5.0
       ts-jest:
         specifier: 29.1.0
-        version: 29.1.0(@babel/core@7.22.5)(jest@29.6.0)(typescript@5.1.6)
+        version: 29.1.0(@babel/core@7.22.5)(jest@29.6.1)(typescript@5.1.6)
     devDependencies:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
 
   packages/label:
     dependencies:
@@ -508,9 +514,6 @@ importers:
       '@clutchd/compose-preventable-event-handlers':
         specifier: 1.0.3
         version: link:../../ui/compose-preventable-event-handlers
-      '@clutchd/twx':
-        specifier: 1.1.4
-        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.3
@@ -525,8 +528,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -534,8 +537,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -567,8 +570,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -576,8 +579,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next-auth:
         specifier: 4.18.6
         version: 4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
@@ -603,8 +606,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -612,8 +615,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -638,9 +641,6 @@ importers:
       '@clutchd/component':
         specifier: 2.2.0
         version: link:../../ui/component
-      '@clutchd/twx':
-        specifier: 1.1.4
-        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.3
@@ -655,8 +655,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -664,8 +664,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next-auth:
         specifier: 4.18.6
         version: 4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
@@ -687,9 +687,6 @@ importers:
       '@clutchd/component':
         specifier: 2.2.0
         version: link:../../ui/component
-      '@clutchd/twx':
-        specifier: 1.1.4
-        version: link:../twx
     devDependencies:
       '@clutchd/jest':
         specifier: 1.0.3
@@ -704,8 +701,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -713,8 +710,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -737,8 +734,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -762,11 +759,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       node-fetch:
         specifier: 2.6.1
         version: 2.6.1
@@ -799,8 +796,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -808,8 +805,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       postcss:
         specifier: 8.4.25
         version: 8.4.25
@@ -848,8 +845,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -857,8 +854,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -897,8 +894,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -906,8 +903,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -940,11 +937,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
@@ -971,11 +968,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
@@ -1002,11 +999,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tailwind-merge:
         specifier: 1.13.2
         version: 1.13.2
@@ -1035,8 +1032,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -1044,8 +1041,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1078,8 +1075,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -1087,8 +1084,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -1127,8 +1124,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -1136,8 +1133,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -1176,8 +1173,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -1185,8 +1182,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       postcss:
         specifier: 8.4.25
         version: 8.4.25
@@ -1222,8 +1219,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -1231,8 +1228,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       postcss:
         specifier: 8.4.25
         version: 8.4.25
@@ -1268,8 +1265,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -1277,8 +1274,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       next:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
@@ -1310,11 +1307,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
@@ -1347,8 +1344,8 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       '@types/react':
         specifier: 18.2.14
         version: 18.2.14
@@ -1356,8 +1353,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1380,11 +1377,11 @@ importers:
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
-        specifier: 20.4.0
-        version: 20.4.0
+        specifier: 20.4.1
+        version: 20.4.1
       jest:
-        specifier: 29.6.0
-        version: 29.6.0(@types/node@20.4.0)
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
         version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
@@ -2195,7 +2192,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       jest-message-util: 29.6.1
       jest-util: 29.6.1
@@ -2215,14 +2212,14 @@ packages:
       '@jest/test-result': 29.6.1
       '@jest/transform': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       ci-info: 3.8.0
       exit: 0.1.2
       graceful-fs: 4.2.11
       jest-changed-files: 29.5.0
-      jest-config: 29.6.1(@types/node@20.4.0)
+      jest-config: 29.6.1(@types/node@20.4.1)
       jest-haste-map: 29.6.1
       jest-message-util: 29.6.1
       jest-regex-util: 29.4.3
@@ -2248,7 +2245,7 @@ packages:
     dependencies:
       '@jest/fake-timers': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-mock: 29.6.1
     dev: false
 
@@ -2258,7 +2255,7 @@ packages:
     dependencies:
       '@jest/fake-timers': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-mock: 29.6.1
 
   /@jest/expect-utils@29.6.1:
@@ -2282,7 +2279,7 @@ packages:
     dependencies:
       '@jest/types': 29.6.1
       '@sinonjs/fake-timers': 10.3.0
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-message-util: 29.6.1
       jest-mock: 29.6.1
       jest-util: 29.6.1
@@ -2294,7 +2291,7 @@ packages:
     dependencies:
       '@jest/types': 29.6.1
       '@sinonjs/fake-timers': 10.3.0
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-message-util: 29.6.1
       jest-mock: 29.6.1
       jest-util: 29.6.1
@@ -2325,7 +2322,7 @@ packages:
       '@jest/transform': 29.6.1
       '@jest/types': 29.6.1
       '@jridgewell/trace-mapping': 0.3.18
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       collect-v8-coverage: 1.0.1
       exit: 0.1.2
@@ -2407,7 +2404,7 @@ packages:
       '@jest/schemas': 29.6.0
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       '@types/yargs': 17.0.24
       chalk: 4.1.2
     dev: false
@@ -2419,7 +2416,7 @@ packages:
       '@jest/schemas': 29.6.0
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       '@types/yargs': 17.0.24
       chalk: 4.1.2
 
@@ -2959,12 +2956,12 @@ packages:
   /@types/graceful-fs@4.1.6:
     resolution: {integrity: sha512-Sig0SNORX9fdW+bQuTEovKj3uHcUL6LQKbCrrqb1X7J6/ReAbhCXRAhc+SMejhLELFj2QcyuxmUooZ4bt5ReSw==}
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
 
   /@types/hast@2.3.4:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
     dependencies:
-      '@types/unist': 2.0.6
+      '@types/unist': 3.0.0
     dev: false
 
   /@types/is-ci@3.0.0:
@@ -2989,8 +2986,8 @@ packages:
   /@types/jest@29.5.2:
     resolution: {integrity: sha512-mSoZVJF5YzGVCk+FsDxzDuH7s+SCkzrgKZzf0Z0T2WudhBUPoF6ktoTPC4R0ZoCPCV5xUvuU6ias5NvxcBcMMg==}
     dependencies:
-      expect: 29.5.0
-      pretty-format: 29.5.0
+      expect: 29.6.1
+      pretty-format: 29.6.1
 
   /@types/js-yaml@4.0.5:
     resolution: {integrity: sha512-FhpRzf927MNQdRZP0J5DLIdTXhjLYzeUTmLAu69mnVksLH9CJY3IuSeEgbKUki7GQZm0WqDkGzyxju2EZGD2wA==}
@@ -2999,7 +2996,7 @@ packages:
   /@types/jsdom@20.0.1:
     resolution: {integrity: sha512-d0r18sZPmMQr1eG35u12FZfhIXNrnsPU/g5wvRKCUf/tOGilKKwYMYGqh33BNR6ba+2gkHw1EUiHoN3mn7E5IQ==}
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       '@types/tough-cookie': 4.0.2
       parse5: 7.1.2
     dev: false
@@ -3019,13 +3016,13 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
     dev: false
 
   /@types/mdast@3.0.11:
     resolution: {integrity: sha512-Y/uImid8aAwrEA24/1tcRZwpxX3pIFTSilcNDKSPn+Y2iDywSEachzRuvgAYYLR3wpGXAsMbv5lvKLDZLeYPAw==}
     dependencies:
-      '@types/unist': 2.0.6
+      '@types/unist': 3.0.0
     dev: false
 
   /@types/mdx@2.0.5:
@@ -3043,7 +3040,7 @@ packages:
   /@types/node-fetch@2.6.4:
     resolution: {integrity: sha512-1ZX9fcN4Rvkvgv4E6PAY5WXUFWFcRWxZa3EW83UjycOB9ljJCedb2CupIP4RZMEwF/M3eTcCihbBRgwtGbg5Rg==}
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       form-data: 3.0.1
     dev: true
 
@@ -3051,8 +3048,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: false
 
-  /@types/node@20.4.0:
-    resolution: {integrity: sha512-jfT7iTf/4kOQ9S7CHV9BIyRaQqHu67mOjsIQBC3BKZvzvUB6zLxEwJ6sBE3ozcvP8kF6Uk5PXN0Q+c0dfhGX0g==}
+  /@types/node@20.4.1:
+    resolution: {integrity: sha512-JIzsAvJeA/5iY6Y/OxZbv1lUcc8dNSE77lb2gnBH+/PJ3lFR1Ccvgwl5JWnHAkNHcRsT0TbpVOsiMKZ1F/yyJg==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -3080,7 +3077,7 @@ packages:
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
     dev: false
 
   /@types/scheduler@0.16.3:
@@ -3105,6 +3102,10 @@ packages:
 
   /@types/unist@2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
+    dev: false
+
+  /@types/unist@3.0.0:
+    resolution: {integrity: sha512-MFETx3tbTjE7Uk6vvnWINA/1iJ7LuMdO4fcq8UfF0pRbj01aGLduVvQcRyswuACJdpnHgg8E3rQLhaRdNEJS0w==}
     dev: false
 
   /@types/yargs-parser@21.0.0:
@@ -5029,22 +5030,12 @@ packages:
     resolution: {integrity: sha512-Zk/eNKV2zbjpKzrsQ+n1G6poVbErQxJ0LBOJXaKZ1EViLzH+hrLu9cdXI4zw9dBQJslwBEpbQ2P1oS7nDxs6jQ==}
     engines: {node: '>= 0.8.0'}
 
-  /expect@29.5.0:
-    resolution: {integrity: sha512-yM7xqUrCO2JdpFo4XpM82t+PJBFybdqoQuJLDGeDX2ij8NZzqRHyu3Hp188/JX7SWqud+7t4MUdvcgGBICMHZg==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/expect-utils': 29.6.1
-      jest-get-type: 29.4.3
-      jest-matcher-utils: 29.6.1
-      jest-message-util: 29.6.1
-      jest-util: 29.6.1
-
   /expect@29.6.1:
     resolution: {integrity: sha512-XEdDLonERCU1n9uR56/Stx9OqojaLAQtZf9PrCHH9Hl8YXiEIka3H4NXJ3NOIBmQJTg7+j7buh34PMHfJujc8g==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/expect-utils': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-get-type: 29.4.3
       jest-matcher-utils: 29.6.1
       jest-message-util: 29.6.1
@@ -6058,7 +6049,7 @@ packages:
       '@jest/expect': 29.6.1
       '@jest/test-result': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       co: 4.6.0
       dedent: 0.7.0
@@ -6077,7 +6068,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /jest-cli@29.6.1(@types/node@20.4.0):
+  /jest-cli@29.6.1(@types/node@20.4.1):
     resolution: {integrity: sha512-607dSgTA4ODIN6go9w6xY3EYkyPFGicx51a69H7yfvt7lN53xNswEVLovq+E77VsTRi5fWprLH0yl4DJgE8Ing==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -6094,7 +6085,7 @@ packages:
       exit: 0.1.2
       graceful-fs: 4.2.11
       import-local: 3.1.0
-      jest-config: 29.6.1(@types/node@20.4.0)
+      jest-config: 29.6.1(@types/node@20.4.1)
       jest-util: 29.6.1
       jest-validate: 29.6.1
       prompts: 2.4.2
@@ -6104,7 +6095,7 @@ packages:
       - supports-color
       - ts-node
 
-  /jest-config@29.6.1(@types/node@20.4.0):
+  /jest-config@29.6.1(@types/node@20.4.1):
     resolution: {integrity: sha512-XdjYV2fy2xYixUiV2Wc54t3Z4oxYPAELUzWnV6+mcbq0rh742X2p52pii5A3oeRzYjLnQxCsZmp0qpI6klE2cQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -6119,7 +6110,7 @@ packages:
       '@babel/core': 7.22.5
       '@jest/test-sequencer': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       babel-jest: 29.6.1(@babel/core@7.22.5)
       chalk: 4.1.2
       ci-info: 3.8.0
@@ -6180,7 +6171,7 @@ packages:
       '@jest/fake-timers': 29.5.0
       '@jest/types': 29.5.0
       '@types/jsdom': 20.0.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-mock: 29.5.0
       jest-util: 29.5.0
       jsdom: 20.0.3
@@ -6197,7 +6188,7 @@ packages:
       '@jest/environment': 29.6.1
       '@jest/fake-timers': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-mock: 29.6.1
       jest-util: 29.6.1
 
@@ -6211,7 +6202,7 @@ packages:
     dependencies:
       '@jest/types': 29.6.1
       '@types/graceful-fs': 4.1.6
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -6258,7 +6249,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-util: 29.6.1
     dev: false
 
@@ -6267,7 +6258,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-util: 29.6.1
 
   /jest-pnp-resolver@1.2.3(jest-resolve@29.6.1):
@@ -6317,7 +6308,7 @@ packages:
       '@jest/test-result': 29.6.1
       '@jest/transform': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       emittery: 0.13.1
       graceful-fs: 4.2.11
@@ -6347,7 +6338,7 @@ packages:
       '@jest/test-result': 29.6.1
       '@jest/transform': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       cjs-module-lexer: 1.2.3
       collect-v8-coverage: 1.0.1
@@ -6398,7 +6389,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       ci-info: 3.8.0
       graceful-fs: 4.2.11
@@ -6410,7 +6401,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       chalk: 4.1.2
       ci-info: 3.8.0
       graceful-fs: 4.2.11
@@ -6433,7 +6424,7 @@ packages:
     dependencies:
       '@jest/test-result': 29.6.1
       '@jest/types': 29.6.1
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.13.1
@@ -6444,13 +6435,13 @@ packages:
     resolution: {integrity: sha512-U+Wrbca7S8ZAxAe9L6nb6g8kPdia5hj32Puu5iOqBCMTMWFHXuK6dOV2IFrpedbTV8fjMFLdWNttQTBL6u2MRA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
-      '@types/node': 20.4.0
+      '@types/node': 20.4.1
       jest-util: 29.6.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  /jest@29.6.0(@types/node@20.4.0):
-    resolution: {integrity: sha512-do1J9gGrQ68E4UfMz/4OM71p9qCqQxu32N/9ZfeYFSSlx0uUOuxeyZxtJZNaUTW12ZA11ERhmBjBhy1Ho96R4g==}
+  /jest@29.6.1(@types/node@20.4.1):
+    resolution: {integrity: sha512-Nirw5B4nn69rVUZtemCQhwxOBhm0nsp3hmtF4rzCeWD7BkjAXRIji7xWQfnTNbz9g0aVsBX6aZK3n+23LM6uDw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
@@ -6462,7 +6453,7 @@ packages:
       '@jest/core': 29.6.1
       '@jest/types': 29.6.1
       import-local: 3.1.0
-      jest-cli: 29.6.1(@types/node@20.4.0)
+      jest-cli: 29.6.1(@types/node@20.4.1)
     transitivePeerDependencies:
       - '@types/node'
       - supports-color
@@ -7593,11 +7584,11 @@ packages:
       - '@babel/core'
       - babel-plugin-macros
 
-  /nextra-theme-docs@2.8.0(next@13.4.9)(nextra@2.8.0)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-JoSAILDVp0GxeVWWZBFGoRijE2RcjZcXrMa47Fssi254T5wF+gm0HvEOSwrTaKaPaUL+IfshAiKglvXNKGzbNw==}
+  /nextra-theme-docs@2.9.0(next@13.4.9)(nextra@2.9.0)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Gbjx5atl63JKWOEV2hAefP4X0wmJoLtFX4NekvNu9Y9fAdvtFdW0O2p0f8ISMS1JJgAl1ZmXm411J7rHnRnhmg==}
     peerDependencies:
       next: '>=9.5.3'
-      nextra: 2.8.0
+      nextra: 2.9.0
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
     dependencies:
@@ -7612,21 +7603,22 @@ packages:
       next: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       next-seo: 6.1.0(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       next-themes: 0.2.1(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
-      nextra: 2.8.0(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
+      nextra: 2.9.0(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       scroll-into-view-if-needed: 3.0.10
       zod: 3.21.4
     dev: false
 
-  /nextra@2.8.0(next@13.4.9)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-WyRNzw1IM/eF3M1H3LSsbZH97QsYYgj8upjx0f8hY6GspmPyPRAvBBscmXRt+7vye2oIYjfVwSiD1rj9amqq9Q==}
+  /nextra@2.9.0(next@13.4.9)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-GwYFwuS0UzCXAUVvs9sVAFe4AQeZ0VACbqW8rzw2goxHvpTXAWbIdXShPGz+MEPB8aAckfHy1p39XbfcVU3cRA==}
     engines: {node: '>=16'}
     peerDependencies:
       next: '>=9.5.3'
       react: '>=16.13.1'
       react-dom: '>=16.13.1'
     dependencies:
+      '@headlessui/react': 1.7.15(react-dom@18.2.0)(react@18.2.0)
       '@mdx-js/mdx': 2.3.0
       '@mdx-js/react': 2.3.0(react@18.2.0)
       '@napi-rs/simple-git': 0.1.8
@@ -7643,15 +7635,15 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       rehype-katex: 6.0.3
-      rehype-pretty-code: 0.9.9(shiki@0.14.2)
+      rehype-pretty-code: 0.9.11(shiki@0.14.2)
       remark-gfm: 3.0.1
       remark-math: 5.1.1
       remark-reading-time: 2.0.1
       shiki: 0.14.2
       slash: 3.0.0
       title: 3.5.3
-      unist-util-remove: 3.1.1
-      unist-util-visit: 4.1.2
+      unist-util-remove: 4.0.0
+      unist-util-visit: 5.0.0
       zod: 3.21.4
     transitivePeerDependencies:
       - supports-color
@@ -8186,14 +8178,6 @@ packages:
       react-is: 17.0.2
     dev: true
 
-  /pretty-format@29.5.0:
-    resolution: {integrity: sha512-V2mGkI31qdttvTFX7Mt4efOqHXqJWMu4/r66Xh3Z3BwZaPfPJgp6/gbwoujRpPUtfEF6AUUWx3Jim3GCw5g/Qw==}
-    engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
-    dependencies:
-      '@jest/schemas': 29.6.0
-      ansi-styles: 5.2.0
-      react-is: 18.2.0
-
   /pretty-format@29.6.1:
     resolution: {integrity: sha512-7jRj+yXO0W7e4/tSJKoR7HRIHLPPjtNaUGG2xxKQnGvPNRkgWcQ0AZX6P4KBRJN4FcTBWb3sa7DVUJmocYuoog==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -8398,8 +8382,8 @@ packages:
       unist-util-visit: 4.1.2
     dev: false
 
-  /rehype-pretty-code@0.9.9(shiki@0.14.2):
-    resolution: {integrity: sha512-mlU2Qgupn9MMK31CTmWk0Ie5Vp0od+jh2vCkGDBMlPAMeAvYASn6Ois6xRmosutMT4yH/COc3R4r/PELpuUoWg==}
+  /rehype-pretty-code@0.9.11(shiki@0.14.2):
+    resolution: {integrity: sha512-Eq90eCYXQJISktfRZ8PPtwc5SUyH6fJcxS8XOMnHPUQZBtC6RYo67gGlley9X2nR8vlniPj0/7oCDEYHKQa/oA==}
     engines: {node: '>=16'}
     peerDependencies:
       shiki: '*'
@@ -9156,7 +9140,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-jest@29.1.0(@babel/core@7.22.5)(jest@29.6.0)(typescript@5.1.6):
+  /ts-jest@29.1.0(@babel/core@7.22.5)(jest@29.6.1)(typescript@5.1.6):
     resolution: {integrity: sha512-ZhNr7Z4PcYa+JjMl62ir+zPiNJfXJN6E8hSLnaUKhOgqcn8vb3e537cpkd0FuAfRK3sR1LSqM1MOhliXNgOFPA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -9180,7 +9164,7 @@ packages:
       '@babel/core': 7.22.5
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
-      jest: 29.6.0(@types/node@20.4.0)
+      jest: 29.6.1(@types/node@20.4.1)
       jest-util: 29.5.0
       json5: 2.2.3
       lodash.memoize: 4.1.2
@@ -9426,6 +9410,12 @@ packages:
       '@types/unist': 2.0.6
     dev: false
 
+  /unist-util-is@6.0.0:
+    resolution: {integrity: sha512-2qCTHimwdxLfz+YzdGfkqNlH0tLi9xjTnHddPmJwtIG9MGsdbutfTc4P+haPD7l7Cjxf/WZj+we5qfVPvvxfYw==}
+    dependencies:
+      '@types/unist': 3.0.0
+    dev: false
+
   /unist-util-position-from-estree@1.1.2:
     resolution: {integrity: sha512-poZa0eXpS+/XpoQwGwl79UUdea4ol2ZuCYguVaJS4qzIOMDzbqz8a3erUCOmubSZkaOuGamb3tX790iwOIROww==}
     dependencies:
@@ -9445,12 +9435,12 @@ packages:
       unist-util-visit: 4.1.2
     dev: false
 
-  /unist-util-remove@3.1.1:
-    resolution: {integrity: sha512-kfCqZK5YVY5yEa89tvpl7KnBBHu2c6CzMkqHUrlOqaRgGOMp0sMvwWOVrbAtj03KhovQB7i96Gda72v/EFE0vw==}
+  /unist-util-remove@4.0.0:
+    resolution: {integrity: sha512-b4gokeGId57UVRX/eVKej5gXqGlc9+trkORhFJpu9raqZkZhU0zm8Doi05+HaiBsMEIJowL+2WtQ5ItjsngPXg==}
     dependencies:
-      '@types/unist': 2.0.6
-      unist-util-is: 5.2.1
-      unist-util-visit-parents: 5.1.3
+      '@types/unist': 3.0.0
+      unist-util-is: 6.0.0
+      unist-util-visit-parents: 6.0.1
     dev: false
 
   /unist-util-stringify-position@3.0.3:
@@ -9473,6 +9463,13 @@ packages:
       unist-util-is: 5.2.1
     dev: false
 
+  /unist-util-visit-parents@6.0.1:
+    resolution: {integrity: sha512-L/PqWzfTP9lzzEa6CKs0k2nARxTdZduw3zyh8d2NVBnsyvHjSX4TWse388YrrQKbvI8w20fGjGlhgT96WwKykw==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-is: 6.0.0
+    dev: false
+
   /unist-util-visit@3.1.0:
     resolution: {integrity: sha512-Szoh+R/Ll68QWAyQyZZpQzZQm2UPbxibDvaY8Xc9SUtYgPsDzx5AWSk++UUt2hJuow8mvwR+rG+LQLw+KsuAKA==}
     dependencies:
@@ -9487,6 +9484,14 @@ packages:
       '@types/unist': 2.0.6
       unist-util-is: 5.2.1
       unist-util-visit-parents: 5.1.3
+    dev: false
+
+  /unist-util-visit@5.0.0:
+    resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
+    dependencies:
+      '@types/unist': 3.0.0
+      unist-util-is: 6.0.0
+      unist-util-visit-parents: 6.0.1
     dev: false
 
   /universalify@0.1.2:

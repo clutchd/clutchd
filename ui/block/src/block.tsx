@@ -9,7 +9,7 @@ type IBlock = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Block` props
  */
-interface IBlockProps {}
+interface IBlockProps { }
 
 /**
  * `Block` - A block container for a vertical layout
