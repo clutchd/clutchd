@@ -2,6 +2,7 @@ export * from "./align.content";
 export * from "./align.items";
 export * from "./flex";
 export * from "./flex.direction";
+export * from "./flex.wrap";
 export * from "./gap";
 export * from "./grid.column.start.end";
 export * from "./grid.row.start.end";
