@@ -1,5 +1,5 @@
 ---
-"@clutchd/tailwind": patch
+"@clutchd/tailwind": minor
 ---
 
 Add flex util
