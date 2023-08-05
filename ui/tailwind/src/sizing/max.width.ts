@@ -1,4 +1,5 @@
-import { WithVariants, ScreenVariants } from "../core";
+import { ScreenVariants, WithVariants } from "../core";
+import { ContentSizeVariants } from "./common";
 
 /**
  * Max-Width
@@ -16,9 +17,7 @@ type MaxWidthVariants =
   | "6xl"
   | "7xl"
   | "full"
-  | "min"
-  | "max"
-  | "fit"
+  | ContentSizeVariants
   | "prose"
   | WithVariants<"screen", ScreenVariants>;
 
