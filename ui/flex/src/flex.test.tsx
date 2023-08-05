@@ -10,9 +10,9 @@ test("render flex", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
+  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
+  expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
   expect(div).toHaveClass("items-center");
 });
@@ -25,14 +25,45 @@ test("render flex with custom alignItems", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
+  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
+  expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
   expect(div).toHaveClass("items-start");
 });
 
-test("render flex with custom direction", () => {
+test("render flex with custom flex", () => {
+  const { container } = render(<Flex flex="flex-none" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("flex");
+  expect(div).toHaveClass("flex-none");
+  expect(div).toHaveClass("flex-col");
+  expect(div).toHaveClass("flex-wrap");
+  expect(div).toHaveClass("justify-normal");
+  expect(div).toHaveClass("items-center");
+});
+
+test("render flex with custom flexBasis", () => {
+  const { container } = render(<Flex flexBasis="basis-1/2" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("flex");
+  expect(div).toHaveClass("flex-1");
+  expect(div).toHaveClass("basis-1/2");
+  expect(div).toHaveClass("flex-col");
+  expect(div).toHaveClass("flex-wrap");
+  expect(div).toHaveClass("justify-normal");
+  expect(div).toHaveClass("items-center");
+});
+
+test("render flex with custom flexDirection", () => {
   const { container } = render(<Flex flexDirection="flex-col-reverse" />);
 
   const div = container.querySelector("div");
@@ -40,9 +71,41 @@ test("render flex with custom direction", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
+  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col-reverse");
+  expect(div).toHaveClass("flex-wrap");
+  expect(div).toHaveClass("justify-normal");
+  expect(div).toHaveClass("items-center");
+});
+
+test("render flex with custom flexGrow", () => {
+  const { container } = render(<Flex flexGrow="grow-0" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("flex");
+  expect(div).toHaveClass("flex-1");
+  expect(div).toHaveClass("flex-col");
+  expect(div).toHaveClass("grow-0");
+  expect(div).toHaveClass("flex-wrap");
+  expect(div).toHaveClass("justify-normal");
+  expect(div).toHaveClass("items-center");
+});
+
+test("render flex with custom flexShrink", () => {
+  const { container } = render(<Flex flexShrink="shrink-0" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("flex");
+  expect(div).toHaveClass("flex-1");
+  expect(div).toHaveClass("flex-col");
+  expect(div).toHaveClass("shrink-0");
+  expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
   expect(div).toHaveClass("items-center");
 });
@@ -55,9 +118,9 @@ test("render flex with custom justifyContent", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
+  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
+  expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-evenly");
   expect(div).toHaveClass("items-center");
 });

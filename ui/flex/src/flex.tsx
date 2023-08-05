@@ -1,7 +1,12 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import {
   WithAlignItems,
+  WithFlex,
+  WithFlexBasis,
   WithFlexDirection,
+  WithFlexGrow,
+  WithFlexShrink,
+  WithFlexWrap,
   WithJustifyContent,
 } from "@clutchd/tailwind";
 import * as React from "react";
@@ -16,8 +21,13 @@ type IFlex = React.ElementRef<typeof Component.div>;
  */
 interface IFlexProps
   extends WithAlignItems,
-    WithJustifyContent,
-    WithFlexDirection {}
+    WithFlex,
+    WithFlexBasis,
+    WithFlexDirection,
+    WithFlexGrow,
+    WithFlexShrink,
+    WithFlexWrap,
+    WithJustifyContent {}
 
 /**
  * Type to define `Flex` props with html attributes
@@ -36,7 +46,12 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
     {
       alignItems = "items-center",
       className,
+      flex = "flex-1",
+      flexBasis,
       flexDirection = "flex-col",
+      flexGrow,
+      flexShrink,
+      flexWrap = "flex-wrap",
       justifyContent = "justify-normal",
       ...props
     },
@@ -45,9 +60,14 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
     return (
       <Component.div
         className={[
-          "flex h-full w-full",
+          "flex",
           alignItems,
+          flex,
+          flexBasis,
           flexDirection,
+          flexGrow,
+          flexShrink,
+          flexWrap,
           justifyContent,
           className,
         ].join(" ")}
