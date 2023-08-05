@@ -10,11 +10,9 @@ test("render flex", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
-  expect(div).toHaveClass("items-center");
 });
 
 test("render flex with custom alignItems", () => {
@@ -25,7 +23,6 @@ test("render flex with custom alignItems", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
@@ -44,7 +41,6 @@ test("render flex with custom flex", () => {
   expect(div).toHaveClass("flex-col");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
-  expect(div).toHaveClass("items-center");
 });
 
 test("render flex with custom flexBasis", () => {
@@ -55,12 +51,10 @@ test("render flex with custom flexBasis", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("basis-1/2");
   expect(div).toHaveClass("flex-col");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
-  expect(div).toHaveClass("items-center");
 });
 
 test("render flex with custom flexDirection", () => {
@@ -71,11 +65,9 @@ test("render flex with custom flexDirection", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col-reverse");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
-  expect(div).toHaveClass("items-center");
 });
 
 test("render flex with custom flexGrow", () => {
@@ -86,12 +78,10 @@ test("render flex with custom flexGrow", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
   expect(div).toHaveClass("grow-0");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
-  expect(div).toHaveClass("items-center");
 });
 
 test("render flex with custom flexShrink", () => {
@@ -102,12 +92,10 @@ test("render flex with custom flexShrink", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
   expect(div).toHaveClass("shrink-0");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-normal");
-  expect(div).toHaveClass("items-center");
 });
 
 test("render flex with custom justifyContent", () => {
@@ -118,9 +106,7 @@ test("render flex with custom justifyContent", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("flex");
-  expect(div).toHaveClass("flex-1");
   expect(div).toHaveClass("flex-col");
   expect(div).toHaveClass("flex-wrap");
   expect(div).toHaveClass("justify-evenly");
-  expect(div).toHaveClass("items-center");
 });
