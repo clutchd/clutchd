@@ -10,7 +10,6 @@
     "test": "dotenv -- jest --passWithNoTests"
   },
   "dependencies": {
-    "@clutchd/flex": "workspace:*",
     "@clutchd/layout": "workspace:*",
     "@clutchd/link": "workspace:*",
     "@vercel/analytics": "1.0.1",

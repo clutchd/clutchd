@@ -26,7 +26,13 @@ interface IHeaderHtmlProps
  */
 const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
   (
-    { children, className, flexDirection = "flex-row", ...props },
+    {
+      children,
+      className,
+      flexDirection = "flex-row",
+      justifyContent = "justify-between",
+      ...props
+    },
     forwardedRef
   ) => {
     return (
@@ -34,6 +40,7 @@ const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
         asChild
         className={["p-6 sm:p-8", className].join(" ")}
         flexDirection={flexDirection}
+        justifyContent={justifyContent}
         {...props}
       >
         <header ref={forwardedRef}>{children}</header>

@@ -1,4 +1,3 @@
-import { Flex } from "@clutchd/flex";
 import { Footer, Header, Main } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { Metadata } from "next";
@@ -14,10 +13,11 @@ export default function Home() {
     <>
       <Script async src="https://js.stripe.com/v3/pricing-table.js" />
       <Header>
-        <Link className="hidden mr-auto sm:block" href="/">
+        <Link className="hidden sm:block" href="/">
           <Image
-            width="200"
+            width="194"
             height="50"
+            priority
             src="/clutchd-logo.png"
             alt="Clutchd, LLC Logo"
           />
@@ -26,12 +26,13 @@ export default function Home() {
           <Image
             width="50"
             height="50"
+            priority
             src="/clutchd-icon.png"
             alt="Clutchd, LLC Logo"
           />
         </Link>
         <Link
-          className="flex items-center px-4 ml-auto text-white no-underline transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
+          className="flex items-center px-4 text-white no-underline transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
           href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo"
         >
           Manage Subscription
@@ -49,15 +50,13 @@ export default function Home() {
         />
       </Main>
       <Footer>
-        <Flex className="text-gray-500">© 2023 Clutchd, LLC</Flex>
-        <Flex className="text-right">
-          <Link
-            className="underline underline-offset-4"
-            href="mailto:william@clutchd.com"
-          >
-            Contact Us
-          </Link>
-        </Flex>
+        <div className="text-gray-500">© 2023 Clutchd, LLC</div>
+        <Link
+          className="text-right underline underline-offset-4"
+          href="mailto:william@clutchd.com"
+        >
+          Contact Us
+        </Link>
       </Footer>
     </>
   );

@@ -44,9 +44,9 @@ interface IFlexHtmlProps
 const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
   (
     {
-      alignItems = "items-center",
+      alignItems,
       className,
-      flex = "flex-1",
+      flex,
       flexBasis,
       flexDirection = "flex-col",
       flexGrow,

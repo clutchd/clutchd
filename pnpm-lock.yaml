@@ -29,9 +29,6 @@ importers:
 
   apps/landing:
     dependencies:
-      '@clutchd/flex':
-        specifier: workspace:*
-        version: link:../../ui/flex
       '@clutchd/layout':
         specifier: workspace:*
         version: link:../../ui/layout

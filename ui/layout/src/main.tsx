@@ -32,7 +32,8 @@ const Main = React.forwardRef<IMain, IMainHtmlProps>(
     return (
       <Flex
         asChild
-        className={["flex-1 p-6 sm:p-8", className].join(" ")}
+        className={["p-6 sm:p-8", className].join(" ")}
+        flex="flex-1"
         flexDirection={flexDirection}
         {...props}
       >

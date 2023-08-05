@@ -26,7 +26,13 @@ interface IFooterHtmlProps
  */
 const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
   (
-    { children, className, flexDirection = "flex-row", ...props },
+    {
+      children,
+      className,
+      flexDirection = "flex-row",
+      justifyContent = "justify-between",
+      ...props
+    },
     forwardedRef
   ) => {
     return (
@@ -34,6 +40,7 @@ const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
         asChild
         className={["p-6 sm:p-8", className].join(" ")}
         flexDirection={flexDirection}
+        justifyContent={justifyContent}
         {...props}
       >
         <footer ref={forwardedRef}>{children}</footer>
