@@ -1,5 +1,19 @@
 # @clutchd/block
 
+## 1.2.0
+
+### Minor Changes
+
+- 6795421: Add a separate html interface
+
+### Patch Changes
+
+- 8d346df: Remove unneeded .filter when joining classes
+- c6a6990: Add tests
+- 62186ab: Improve test coverage
+- Updated dependencies [62186ab]
+  - @clutchd/component@2.2.1
+
 ## 1.1.0
 
 ### Minor Changes

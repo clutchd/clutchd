@@ -1,5 +1,18 @@
 # @clutchd/landing
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [8d346df]
+- Updated dependencies [6795421]
+- Updated dependencies [9e9c54d]
+- Updated dependencies [62186ab]
+- Updated dependencies [8e3bf0a]
+- Updated dependencies [2c003b3]
+  - @clutchd/layout@2.0.0
+  - @clutchd/link@1.4.0
+
 ## 2.0.0
 
 ### Major Changes

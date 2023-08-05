@@ -1,5 +1,22 @@
 # @clutchd/grid
 
+## 2.0.0
+
+### Major Changes
+
+- c1fff61: Revamp grid with new tailwind
+
+### Minor Changes
+
+- 6795421: Add a separate html interface
+
+### Patch Changes
+
+- 75f9e76: Remove unneeded dep
+- 62186ab: Improve test coverage
+- Updated dependencies [62186ab]
+  - @clutchd/component@2.2.1
+
 ## 1.0.18
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @clutchd/component
 
+## 2.2.1
+
+### Patch Changes
+
+- 62186ab: Improve test coverage
+- Updated dependencies [62186ab]
+  - @clutchd/slot@1.0.13
+
 ## 2.2.0
 
 ### Minor Changes

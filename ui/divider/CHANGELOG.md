@@ -1,5 +1,20 @@
 # @clutchd/divider
 
+## 2.0.0
+
+### Major Changes
+
+- 927a382: Divider revamp
+
+### Minor Changes
+
+- 6795421: Add a separate html interface
+
+### Patch Changes
+
+- Updated dependencies [62186ab]
+  - @clutchd/component@2.2.1
+
 ## 1.2.17
 
 ### Patch Changes

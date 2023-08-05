@@ -1,5 +1,22 @@
 # @clutchd/button
 
+## 1.0.0
+
+### Major Changes
+
+- 4127275: Remove href prop, use Link instead
+- dd55d55: Initial release
+
+### Minor Changes
+
+- 6795421: Add a separate html interface
+
+### Patch Changes
+
+- ddb60cf: Update deps
+- Updated dependencies [62186ab]
+  - @clutchd/component@2.2.1
+
 ## 0.2.17
 
 ### Patch Changes

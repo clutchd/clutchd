@@ -1,5 +1,32 @@
 # @clutchd/layout
 
+## 2.0.0
+
+### Major Changes
+
+- 9e9c54d: Rename content to main, use new flex package
+
+### Minor Changes
+
+- 6795421: Add a separate html interface
+- 8e3bf0a: Update flex
+- 2c003b3: Imrpove style defaults
+
+### Patch Changes
+
+- 8d346df: Remove unneeded .filter when joining classes
+- 62186ab: Improve test coverage
+- Updated dependencies [b001724]
+- Updated dependencies [6795421]
+- Updated dependencies [8a1b6d1]
+- Updated dependencies [62186ab]
+- Updated dependencies [8479624]
+- Updated dependencies [c836a72]
+- Updated dependencies [762b475]
+- Updated dependencies [2c003b3]
+  - @clutchd/flex@3.0.0
+  - @clutchd/component@2.2.1
+
 ## 1.1.1
 
 ### Patch Changes

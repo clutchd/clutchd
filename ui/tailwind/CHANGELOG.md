@@ -1,5 +1,23 @@
 # @clutchd/tailwind
 
+## 3.0.0
+
+### Major Changes
+
+- 7f52152: Update tailwind, revamp flex.grid
+
+### Minor Changes
+
+- 41148c2: Add flex grow and flex shrink utils
+- 68c3f94: Add flex basis utils
+- d23ed8d: Add flex util
+- 636c7d6: Add flex wrap util
+- a4f1541: Add more sizing utils
+
+### Patch Changes
+
+- 378a03c: Fix borders export
+
 ## 2.0.4
 
 ### Patch Changes

@@ -1,5 +1,26 @@
 # @clutchd/flex
 
+## 3.0.0
+
+### Major Changes
+
+- b001724: Merge FlexCol and FlexRow into single Flex component
+- 8a1b6d1: Utilize flex-1 over h-full and w-full
+- c836a72: Use tailwind props
+
+### Minor Changes
+
+- 6795421: Add a separate html interface
+- 2c003b3: Imrpove style defaults
+
+### Patch Changes
+
+- 62186ab: Improve test coverage
+- 8479624: Improved props
+- 762b475: Fix prop requirements
+- Updated dependencies [62186ab]
+  - @clutchd/component@2.2.1
+
 ## 2.1.0
 
 ### Minor Changes

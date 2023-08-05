@@ -1,5 +1,11 @@
 # @clutchd/slot
 
+## 1.0.13
+
+### Patch Changes
+
+- 62186ab: Improve test coverage
+
 ## 1.0.12
 
 ### Patch Changes
