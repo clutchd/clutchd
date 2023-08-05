@@ -773,13 +773,13 @@ importers:
       '@clutchd/component':
         specifier: workspace:*
         version: link:../component
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -819,13 +819,13 @@ importers:
       '@clutchd/component':
         specifier: workspace:*
         version: link:../component
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -1049,13 +1049,13 @@ importers:
       '@clutchd/component':
         specifier: workspace:*
         version: link:../component
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -1098,13 +1098,13 @@ importers:
       '@clutchd/component':
         specifier: workspace:*
         version: link:../component
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -1147,13 +1147,13 @@ importers:
       '@clutchd/component':
         specifier: workspace:*
         version: link:../component
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
@@ -1196,13 +1196,13 @@ importers:
       '@clutchd/flex':
         specifier: workspace:*
         version: link:../flex
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
