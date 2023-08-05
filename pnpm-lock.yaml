@@ -819,9 +819,6 @@ importers:
       '@clutchd/component':
         specifier: workspace:*
         version: link:../component
-      '@clutchd/link':
-        specifier: workspace:*
-        version: link:../link
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*

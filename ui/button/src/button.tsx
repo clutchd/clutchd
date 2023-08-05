@@ -1,5 +1,4 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { Link } from "@clutchd/link";
 import * as React from "react";
 
 /**
@@ -10,9 +9,7 @@ type IButton = React.ElementRef<typeof Component.button>;
 /**
  * Type to define `Button` props
  */
-interface IButtonProps {
-  href?: string;
-}
+interface IButtonProps {}
 
 /**
  * Type to define `Button` props with html attributes
@@ -27,22 +24,13 @@ interface IButtonHtmlProps
  * @returns `Button` component
  */
 const Button = React.forwardRef<IButton, IButtonHtmlProps>(
-  ({ className, href, ...props }, forwardedRef) => {
-    if (href) {
-      return (
-        <Component.button
-          asChild
-          className={className}
-          ref={forwardedRef}
-          {...props}
-        >
-          <Link href={href} />
-        </Component.button>
-      );
-    }
-
+  ({ className, ...props }, forwardedRef) => {
     return (
-      <Component.button className={className} ref={forwardedRef} {...props} />
+      <Component.button
+        className={["cursor-pointer", className].join(" ")}
+        ref={forwardedRef}
+        {...props}
+      />
     );
   }
 );

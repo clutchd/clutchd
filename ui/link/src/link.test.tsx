@@ -54,3 +54,32 @@ test("render with children", () => {
   expect(div).toBeInTheDocument();
   expect(div).toHaveTextContent("This is my custom div wrapped in a link!");
 });
+
+test("render with onClick", () => {
+  const logSpy = jest.spyOn(console, "log");
+  const { container } = render(
+    <Link
+      href="/next-page"
+      className="text-red-500 cursor-default"
+      onClick={() => {
+        console.log("click!");
+      }}
+    >
+      <div>This is my custom div wrapped in a link!</div>
+    </Link>
+  );
+
+  const link = container.querySelector("a");
+  const div = link.querySelector("div");
+
+  link?.click();
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(link).toBeInTheDocument();
+  expect(link).toHaveAttribute("href", "/next-page");
+  expect(link).toHaveAttribute("class", "text-red-500 cursor-default");
+  expect(logSpy).toHaveBeenCalledWith("click!");
+  expect(logSpy).toHaveBeenCalledTimes(1);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveTextContent("This is my custom div wrapped in a link!");
+});
