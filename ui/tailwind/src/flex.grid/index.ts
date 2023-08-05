@@ -1,6 +1,7 @@
 export * from "./align.content";
 export * from "./align.items";
 export * from "./flex";
+export * from "./flex.basis";
 export * from "./flex.direction";
 export * from "./flex.grow";
 export * from "./flex.shrink";
