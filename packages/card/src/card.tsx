@@ -19,17 +19,14 @@ interface ICardProps {
  */
 interface ICardHtmlProps
   extends ICardProps,
-  IComponentPropsWithoutRef<typeof Component.div> { }
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Card` - A building block component used to render contained elements such as forms
  * @param props `ICardProps` used to render this `Card`
  * @returns `Card` component
  */
-const Card = React.forwardRef<
-  ICard,
-  ICardHtmlProps
->(
+const Card = React.forwardRef<ICard, ICardHtmlProps>(
   (
     { children, className, decoration, hover = false, ...props },
     forwardedRef
