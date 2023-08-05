@@ -45,9 +45,9 @@
     "validate": "pnpm run build && pnpm run benchmark && pnpm run test"
   },
   "devDependencies": {
-    "@clutchd/bundlejs": "0.2.0",
-    "@clutchd/jest": "1.0.3",
-    "@clutchd/tsconfig": "1.2.1",
+    "@clutchd/bundlejs": "workspace:*",
+    "@clutchd/jest": "workspace:*",
+    "@clutchd/tsconfig": "workspace:*",
     "@types/jest": "29.5.2",
     "@types/node": "20.4.1",
     "clsx": "1.2.1",

@@ -33,14 +33,14 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "2.2.0",
-    "@clutchd/compose-event-handlers": "2.0.3",
-    "@clutchd/is-empty": "2.0.7"
+    "@clutchd/component": "workspace:*",
+    "@clutchd/compose-event-handlers": "workspace:*",
+    "@clutchd/is-empty": "workspace:*"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.3",
-    "@clutchd/tailwind": "2.0.4",
-    "@clutchd/tsconfig": "1.2.1",
+    "@clutchd/jest": "workspace:*",
+    "@clutchd/tailwind": "workspace:*",
+    "@clutchd/tsconfig": "workspace:*",
     "@types/jest": "29.5.2",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",

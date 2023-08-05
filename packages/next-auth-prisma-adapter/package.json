@@ -31,8 +31,8 @@
     "test": "jest"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.3",
-    "@clutchd/tsconfig": "1.2.1",
+    "@clutchd/jest": "workspace:*",
+    "@clutchd/tsconfig": "workspace:*",
     "@prisma/client": "4.9.0",
     "@types/jest": "29.5.2",
     "@types/node": "20.4.1",

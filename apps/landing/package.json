@@ -10,17 +10,17 @@
     "test": "dotenv -- jest --passWithNoTests"
   },
   "dependencies": {
-    "@clutchd/flex": "2.1.0",
-    "@clutchd/layout": "1.1.1",
-    "@clutchd/link": "1.3.0",
+    "@clutchd/flex": "workspace:*",
+    "@clutchd/layout": "workspace:*",
+    "@clutchd/link": "workspace:*",
     "@vercel/analytics": "1.0.1",
     "next": "13.4.9",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@clutchd/jest": "1.0.3",
-    "@clutchd/tsconfig": "1.2.1",
+    "@clutchd/jest": "workspace:*",
+    "@clutchd/tsconfig": "workspace:*",
     "@types/node": "20.4.1",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
