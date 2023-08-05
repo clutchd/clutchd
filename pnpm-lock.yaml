@@ -576,8 +576,8 @@ importers:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       next-auth:
-        specifier: 4.18.6
-        version: 4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 4.22.3
+        version: 4.22.3(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       prisma:
         specifier: 4.16.0
         version: 4.16.0
@@ -615,8 +615,8 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       next-auth:
-        specifier: 4.18.6
-        version: 4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 4.22.3
+        version: 4.22.3(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       postcss:
         specifier: 8.4.27
         version: 8.4.27
@@ -661,8 +661,8 @@ importers:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       next-auth:
-        specifier: 4.18.6
-        version: 4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
+        specifier: 4.22.3
+        version: 4.22.3(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       postcss:
         specifier: 8.4.27
         version: 8.4.27
@@ -7473,9 +7473,8 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  /next-auth@4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-0TQwbq5X9Jyd1wUVYUoyvHJh4JWXeW9UOcMEl245Er/Y5vsSbyGJHt8M7xjRMzk9mORVMYehoMdERgyiq/jCgA==}
-    engines: {node: ^12.19.0 || ^14.15.0 || ^16.13.0 || ^18.12.0}
+  /next-auth@4.22.3(next@13.4.9)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-XAgy9xV3J2eJOXrQhmxdjV6MLM29ibm6WtMXc3KY6IPZeApf+SuBuPvlqCUfbu5YsAzlg9WSw6u01dChTfeZOA==}
     peerDependencies:
       next: ^12.2.5 || ^13
       nodemailer: ^6.6.5
