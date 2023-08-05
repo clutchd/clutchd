@@ -32,11 +32,11 @@
   },
   "dependencies": {
     "@clutchd/component": "workspace:*",
-    "@clutchd/flex": "workspace:*"
+    "@clutchd/flex": "workspace:*",
+    "@clutchd/tailwind": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
-    "@clutchd/tailwind": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
     "@types/jest": "29.5.2",
     "@types/node": "20.4.1",

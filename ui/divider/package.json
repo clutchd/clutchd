@@ -32,11 +32,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "workspace:*"
+    "@clutchd/component": "workspace:*",
+    "@clutchd/tailwind": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
-    "@clutchd/tailwind": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.2",
