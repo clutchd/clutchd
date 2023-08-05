@@ -10,14 +10,14 @@ type IHeader = React.ElementRef<typeof Component.header>;
 /**
  * Type to define `Header` props
  */
-interface IHeaderProps extends IFlexProps {}
+interface IHeaderProps extends IFlexProps { }
 
 /**
  * Type to define `Header` props with html attributes
  */
 interface IHeaderHtmlProps
   extends IHeaderProps,
-    IComponentPropsWithoutRef<typeof Component.header> {}
+  IComponentPropsWithoutRef<typeof Component.header> { }
 
 /**
  * `Header` - A layout component designed to contain a page's header content. Renders as a `header` element
@@ -38,7 +38,7 @@ const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
     return (
       <Flex
         asChild
-        className={["p-6 sm:p-8", className].join(" ")}
+        className={[className].join(" ")}
         flexDirection={flexDirection}
         justifyContent={justifyContent}
         {...props}
