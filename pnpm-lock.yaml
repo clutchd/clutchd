@@ -65,7 +65,7 @@ importers:
         version: 18.2.6
       autoprefixer:
         specifier: 10.4.14
-        version: 10.4.14(postcss@8.4.25)
+        version: 10.4.14(postcss@8.4.27)
       dotenv-cli:
         specifier: 7.2.1
         version: 7.2.1
@@ -73,8 +73,8 @@ importers:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       tailwindcss:
         specifier: 3.3.2
         version: 3.3.2
@@ -120,13 +120,13 @@ importers:
         version: 18.2.6
       autoprefixer:
         specifier: 10.4.14
-        version: 10.4.14(postcss@8.4.25)
+        version: 10.4.14(postcss@8.4.27)
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       tailwindcss:
         specifier: 3.3.2
         version: 3.3.2
@@ -168,14 +168,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -209,7 +209,7 @@ importers:
         version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -248,14 +248,14 @@ importers:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -288,7 +288,7 @@ importers:
         version: 2.6.1
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -347,14 +347,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -397,7 +397,7 @@ importers:
         version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -442,14 +442,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -476,7 +476,7 @@ importers:
         version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -537,14 +537,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -583,7 +583,7 @@ importers:
         version: 4.16.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -618,14 +618,14 @@ importers:
         specifier: 4.18.6
         version: 4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -664,14 +664,14 @@ importers:
         specifier: 4.18.6
         version: 4.18.6(next@13.4.9)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -710,14 +710,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -763,7 +763,7 @@ importers:
         version: 2.6.1
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -802,14 +802,14 @@ importers:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -854,14 +854,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -907,7 +907,7 @@ importers:
         version: 1.13.2
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -938,7 +938,7 @@ importers:
         version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -969,7 +969,7 @@ importers:
         version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1003,7 +1003,7 @@ importers:
         version: 1.13.2
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1042,7 +1042,7 @@ importers:
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1084,14 +1084,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1133,14 +1133,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1179,14 +1179,14 @@ importers:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1225,14 +1225,14 @@ importers:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1274,14 +1274,14 @@ importers:
         specifier: 13.4.9
         version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
-        specifier: 8.4.25
-        version: 8.4.25
+        specifier: 8.4.27
+        version: 8.4.27
       react:
         specifier: 18.2.0
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1308,7 +1308,7 @@ importers:
         version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1354,7 +1354,7 @@ importers:
         version: 18.2.0
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -1378,7 +1378,7 @@ importers:
         version: 29.6.1(@types/node@20.4.1)
       tsup:
         specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.25)(typescript@5.1.6)
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
       typescript:
         specifier: 5.1.6
         version: 5.1.6
@@ -3375,7 +3375,7 @@ packages:
   /asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  /autoprefixer@10.4.14(postcss@8.4.25):
+  /autoprefixer@10.4.14(postcss@8.4.27):
     resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
@@ -3387,7 +3387,7 @@ packages:
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
-      postcss: 8.4.25
+      postcss: 8.4.27
       postcss-value-parser: 4.2.0
     dev: true
 
@@ -8045,29 +8045,29 @@ packages:
     resolution: {integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==}
     dev: true
 
-  /postcss-import@15.1.0(postcss@8.4.25):
+  /postcss-import@15.1.0(postcss@8.4.27):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       postcss: ^8.0.0
     dependencies:
-      postcss: 8.4.25
+      postcss: 8.4.27
       postcss-value-parser: 4.2.0
       read-cache: 1.0.0
       resolve: 1.22.2
     dev: true
 
-  /postcss-js@4.0.1(postcss@8.4.25):
+  /postcss-js@4.0.1(postcss@8.4.27):
     resolution: {integrity: sha512-dDLF8pEO191hJMtlHFPRa8xsizHaM82MLfNkUHdUtVEV3tgTp5oj+8qbEqYM57SLfc74KSbw//4SeJma2LRVIw==}
     engines: {node: ^12 || ^14 || >= 16}
     peerDependencies:
       postcss: ^8.4.21
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.4.25
+      postcss: 8.4.27
     dev: true
 
-  /postcss-load-config@4.0.1(postcss@8.4.25):
+  /postcss-load-config@4.0.1(postcss@8.4.27):
     resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
     engines: {node: '>= 14'}
     peerDependencies:
@@ -8080,17 +8080,17 @@ packages:
         optional: true
     dependencies:
       lilconfig: 2.1.0
-      postcss: 8.4.25
+      postcss: 8.4.27
       yaml: 2.3.1
     dev: true
 
-  /postcss-nested@6.0.1(postcss@8.4.25):
+  /postcss-nested@6.0.1(postcss@8.4.27):
     resolution: {integrity: sha512-mEp4xPMi5bSWiMbsgoPfcP74lsWLHkQbZc3sY+jWYd65CUwXrUaTp0fmNpa01ZcETKlIgUdFN/MpS2xZtqL9dQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
-      postcss: 8.4.25
+      postcss: 8.4.27
       postcss-selector-parser: 6.0.13
     dev: true
 
@@ -8114,8 +8114,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /postcss@8.4.25:
-    resolution: {integrity: sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==}
+  /postcss@8.4.27:
+    resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -8995,11 +8995,11 @@ packages:
       normalize-path: 3.0.0
       object-hash: 3.0.0
       picocolors: 1.0.0
-      postcss: 8.4.25
-      postcss-import: 15.1.0(postcss@8.4.25)
-      postcss-js: 4.0.1(postcss@8.4.25)
-      postcss-load-config: 4.0.1(postcss@8.4.25)
-      postcss-nested: 6.0.1(postcss@8.4.25)
+      postcss: 8.4.27
+      postcss-import: 15.1.0(postcss@8.4.27)
+      postcss-js: 4.0.1(postcss@8.4.27)
+      postcss-load-config: 4.0.1(postcss@8.4.27)
+      postcss-nested: 6.0.1(postcss@8.4.27)
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
       resolve: 1.22.2
@@ -9188,7 +9188,7 @@ packages:
   /tslib@2.5.3:
     resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
 
-  /tsup@7.1.0(postcss@8.4.25)(typescript@5.1.6):
+  /tsup@7.1.0(postcss@8.4.27)(typescript@5.1.6):
     resolution: {integrity: sha512-mazl/GRAk70j8S43/AbSYXGgvRP54oQeX8Un4iZxzATHt0roW0t6HYDVZIXMw0ZQIpvr1nFMniIVnN5186lW7w==}
     engines: {node: '>=16.14'}
     hasBin: true
@@ -9212,8 +9212,8 @@ packages:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss: 8.4.25
-      postcss-load-config: 4.0.1(postcss@8.4.25)
+      postcss: 8.4.27
+      postcss-load-config: 4.0.1(postcss@8.4.27)
       resolve-from: 5.0.0
       rollup: 3.25.1
       source-map: 0.8.0-beta.0
