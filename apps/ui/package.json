@@ -10,6 +10,7 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
+    "@clutchd/component": "workspace:*",
     "@vercel/analytics": "1.0.1",
     "next": "13.4.9",
     "nextra": "2.9.0",

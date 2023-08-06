@@ -84,6 +84,9 @@ importers:
 
   apps/ui:
     dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../../ui/component
       '@vercel/analytics':
         specifier: 1.0.1
         version: 1.0.1
