@@ -18,24 +18,28 @@ jobs:
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
       - name: Setup Environment
+        id: setup
         uses: clutchd/turbostart-pnpm@v3.0.0
 
       - name: Lint
+        id: lint
         run: pnpm run lint
 
       - name: Test
+        id: test
         run: pnpm run test
 
       - name: Upload Code Coverage
+        id: codecov
         uses: codecov/codecov-action@v3
-        if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
+        if: ${{ github.ref == 'refs/heads/main' && steps.test.outcome == 'success' }}
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: "**/clover.xml"
 
       - name: Create Release Pull Request or Publish to npm
-        if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
         id: changesets
+        if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
         uses: changesets/action@v1
         with:
           publish: pnpm run release

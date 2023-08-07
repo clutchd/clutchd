@@ -12,7 +12,7 @@ test("render grid", () => {
   expect(div).toHaveClass("grid");
   expect(div).toHaveClass("h-full");
   expect(div).toHaveClass("w-full");
-  expect(div).toHaveClass("gap-4");
+  expect(div).toHaveClass("gap-6");
   expect(div).toHaveClass("grid-cols-1");
 });
 
@@ -47,7 +47,7 @@ test("render grid with custom cols", () => {
   expect(div).toHaveClass("grid");
   expect(div).toHaveClass("h-full");
   expect(div).toHaveClass("w-full");
-  expect(div).toHaveClass("gap-4");
+  expect(div).toHaveClass("gap-6");
   expect(div).toHaveClass("grid-cols-2");
   expect(div).toHaveClass("sm:grid-cols-4");
   expect(div).toHaveClass("md:grid-cols-8");
