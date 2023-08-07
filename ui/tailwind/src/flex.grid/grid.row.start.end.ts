@@ -20,6 +20,8 @@ export interface WithRowSpan {
   rowSpanSm?: WithModifier<"sm", RowSpan>;
   rowSpanMd?: WithModifier<"md", RowSpan>;
   rowSpanLg?: WithModifier<"lg", RowSpan>;
+  rowSpanXl?: WithModifier<"xl", RowSpan>;
+  rowSpan2xl?: WithModifier<"2xl", RowSpan>;
 }
 
 /**

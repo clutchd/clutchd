@@ -33,6 +33,8 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
       gridColsSm,
       gridColsMd,
       gridColsLg,
+      gridColsXl,
+      gridCols2xl,
       ...props
     },
     forwardedRef
@@ -46,6 +48,8 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
           gridColsSm,
           gridColsMd,
           gridColsLg,
+          gridColsXl,
+          gridCols2xl,
           className,
         ].join(" ")}
         ref={forwardedRef}

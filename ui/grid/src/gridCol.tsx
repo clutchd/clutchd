@@ -35,10 +35,14 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
       colSpanSm,
       colSpanMd,
       colSpanLg,
+      colSpanXl,
+      colSpan2xl,
       rowSpan,
       rowSpanSm,
       rowSpanMd,
       rowSpanLg,
+      rowSpanXl,
+      rowSpan2xl,
       ...props
     },
     forwardedRef
@@ -50,10 +54,14 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
           colSpanSm,
           colSpanMd,
           colSpanLg,
+          colSpanXl,
+          colSpan2xl,
           rowSpan,
           rowSpanSm,
           rowSpanMd,
           rowSpanLg,
+          rowSpanXl,
+          rowSpan2xl,
           className,
         ].join(" ")}
         ref={forwardedRef}

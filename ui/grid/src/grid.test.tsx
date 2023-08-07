@@ -35,8 +35,10 @@ test("render grid with custom cols", () => {
     <Grid
       gridCols="grid-cols-2"
       gridColsSm="sm:grid-cols-4"
-      gridColsMd="md:grid-cols-8"
-      gridColsLg="lg:grid-cols-12"
+      gridColsMd="md:grid-cols-6"
+      gridColsLg="lg:grid-cols-8"
+      gridColsXl="xl:grid-cols-10"
+      gridCols2xl="2xl:grid-cols-12"
     />
   );
 
@@ -50,6 +52,8 @@ test("render grid with custom cols", () => {
   expect(div).toHaveClass("gap-6");
   expect(div).toHaveClass("grid-cols-2");
   expect(div).toHaveClass("sm:grid-cols-4");
-  expect(div).toHaveClass("md:grid-cols-8");
-  expect(div).toHaveClass("lg:grid-cols-12");
+  expect(div).toHaveClass("md:grid-cols-6");
+  expect(div).toHaveClass("lg:grid-cols-8");
+  expect(div).toHaveClass("xl:grid-cols-10");
+  expect(div).toHaveClass("2xl:grid-cols-12");
 });

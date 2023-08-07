@@ -20,6 +20,8 @@ export interface WithColSpan {
   colSpanSm?: WithModifier<"sm", ColSpan>;
   colSpanMd?: WithModifier<"md", ColSpan>;
   colSpanLg?: WithModifier<"lg", ColSpan>;
+  colSpanXl?: WithModifier<"xl", ColSpan>;
+  colSpan2xl?: WithModifier<"2xl", ColSpan>;
 }
 
 /**

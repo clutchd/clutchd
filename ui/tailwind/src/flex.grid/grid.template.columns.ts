@@ -14,4 +14,6 @@ export interface WithGridCols {
   gridColsSm?: WithModifier<"sm", GridCols>;
   gridColsMd?: WithModifier<"md", GridCols>;
   gridColsLg?: WithModifier<"lg", GridCols>;
+  gridColsXl?: WithModifier<"xl", GridCols>;
+  gridCols2xl?: WithModifier<"2xl", GridCols>;
 }
