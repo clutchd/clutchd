@@ -1,5 +1,17 @@
 # @clutchd/layout
 
+## 2.1.0
+
+### Minor Changes
+
+- 2aea473: Improve default styling, remove layout padding
+
+### Patch Changes
+
+- b5b745f: Update tailwind dep
+- Updated dependencies [b5b745f]
+  - @clutchd/flex@3.0.1
+
 ## 2.0.0
 
 ### Major Changes

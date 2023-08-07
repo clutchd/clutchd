@@ -1,5 +1,13 @@
 # @clutchd/copyright
 
+## 2.1.18
+
+### Patch Changes
+
+- d82dc63: Update deps
+- Updated dependencies [db20ddf]
+  - @clutchd/text@3.0.0
+
 ## 2.1.17
 
 ### Patch Changes

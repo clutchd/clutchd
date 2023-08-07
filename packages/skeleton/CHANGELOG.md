@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 1.0.21
+
+### Patch Changes
+
+- d82dc63: Update deps
+
 ## 1.0.20
 
 ### Patch Changes
