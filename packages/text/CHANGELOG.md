@@ -1,5 +1,11 @@
 # @clutchd/text
 
+## 3.0.0
+
+### Major Changes
+
+- db20ddf: Remove themeing
+
 ## 2.1.17
 
 ### Patch Changes

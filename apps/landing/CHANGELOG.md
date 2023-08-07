@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.0.2
+
+### Patch Changes
+
+- f16108c: Improve tailwind config
+- Updated dependencies [b5b745f]
+- Updated dependencies [2aea473]
+  - @clutchd/layout@2.1.0
+
 ## 2.0.1
 
 ### Patch Changes

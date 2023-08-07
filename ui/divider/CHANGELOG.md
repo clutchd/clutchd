@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 2.0.1
+
+### Patch Changes
+
+- b5b745f: Update tailwind dep
+
 ## 2.0.0
 
 ### Major Changes

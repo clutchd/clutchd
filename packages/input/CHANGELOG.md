@@ -1,5 +1,11 @@
 # @clutchd/input
 
+## 0.4.0
+
+### Minor Changes
+
+- db20ddf: Remove themeing
+
 ## 0.3.17
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/label
 
+## 2.0.0
+
+### Major Changes
+
+- db20ddf: Remove themeing
+
 ## 1.1.17
 
 ### Patch Changes

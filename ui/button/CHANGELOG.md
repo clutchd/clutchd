@@ -1,5 +1,11 @@
 # @clutchd/button
 
+## 1.0.1
+
+### Patch Changes
+
+- b5b745f: Update tailwind dep
+
 ## 1.0.0
 
 ### Major Changes

@@ -1,5 +1,11 @@
 # @clutchd/block
 
+## 1.2.1
+
+### Patch Changes
+
+- b5b745f: Update tailwind dep
+
 ## 1.2.0
 
 ### Minor Changes

@@ -1,5 +1,16 @@
 # @clutchd/card
 
+## 2.0.0
+
+### Major Changes
+
+- 72a82d4: Migrate Card
+
+### Patch Changes
+
+- Updated dependencies [b5b745f]
+  - @clutchd/divider@2.0.1
+
 ## 1.0.20
 
 ### Patch Changes

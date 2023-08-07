@@ -1,5 +1,32 @@
 # @clutchd/ui
 
+## 0.10.0
+
+### Minor Changes
+
+- f16108c: Migrate back to nextjs app
+
+### Patch Changes
+
+- f16108c: Improve tailwind config
+- Updated dependencies [b5b745f]
+- Updated dependencies [d82dc63]
+- Updated dependencies [72a82d4]
+- Updated dependencies [db20ddf]
+- Updated dependencies [2aea473]
+  - @clutchd/divider@2.0.1
+  - @clutchd/button@1.0.1
+  - @clutchd/layout@2.1.0
+  - @clutchd/block@1.2.1
+  - @clutchd/flex@3.0.1
+  - @clutchd/grid@2.1.0
+  - @clutchd/copyright@2.1.18
+  - @clutchd/card@2.0.0
+  - @clutchd/avatar@3.0.0
+  - @clutchd/input@0.4.0
+  - @clutchd/label@2.0.0
+  - @clutchd/text@3.0.0
+
 ## 0.9.0
 
 ### Minor Changes
