@@ -10,14 +10,14 @@ type IMain = React.ElementRef<typeof Component.main>;
 /**
  * Type to define `Main` props
  */
-interface IMainProps extends IFlexProps { }
+interface IMainProps extends IFlexProps {}
 
 /**
  * Type to define `Main` props with html attributes
  */
 interface IMainHtmlProps
   extends IMainProps,
-  IComponentPropsWithoutRef<typeof Component.main> { }
+    IComponentPropsWithoutRef<typeof Component.main> {}
 
 /**
  * `Main` - A layout component designed to contain a page's primary Main. Renders as a `main` element

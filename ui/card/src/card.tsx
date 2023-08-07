@@ -9,10 +9,7 @@ type ICard = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Card` props
  */
-interface ICardProps {
-  decoration?: "top" | "right" | "bottom" | "left";
-  hover?: boolean;
-}
+interface ICardProps {}
 
 /**
  * Type to define `Card` props with html attributes
@@ -27,16 +24,10 @@ interface ICardHtmlProps
  * @returns `Card` component
  */
 const Card = React.forwardRef<ICard, ICardHtmlProps>(
-  (
-    { children, className, decoration, hover = false, ...props },
-    forwardedRef
-  ) => {
+  ({ children, className, ...props }, forwardedRef) => {
     // TODO: Bring back theming
     const classNames = [
-      "relative p-6 rounded-lg shadow ring-1 bg-white dark:bg-gray-900",
-      "border-gray-400 dark:border-gray-500 ring-gray-200 dark:ring-gray-700",
-      getDecoration(decoration),
-      hover && "hover:shadow-lg",
+      "relative p-6 rounded-lg shadow border border-gray-200 bg-white",
       className,
     ].join(" ");
 
@@ -49,26 +40,6 @@ const Card = React.forwardRef<ICard, ICardHtmlProps>(
 );
 
 Card.displayName = "Card";
-
-/**
- * Gets the appropriate tailwind class based on the decoration prop
- * @param decoration Prop used to determine the decoration of this Card
- * @returns The appropriate tailwind class
- */
-function getDecoration(decoration: ICardProps["decoration"]) {
-  switch (decoration) {
-    case "top":
-      return "border-t-4";
-    case "right":
-      return "border-r-4";
-    case "bottom":
-      return "border-b-4";
-    case "left":
-      return "border-l-4";
-    default:
-      return "";
-  }
-}
 
 export { Card };
 export type { ICardProps, ICard, ICardHtmlProps };

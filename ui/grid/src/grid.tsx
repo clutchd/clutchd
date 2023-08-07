@@ -10,14 +10,14 @@ type IGrid = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Grid` props
  */
-interface IGridProps extends WithGridCols, WithGap { }
+interface IGridProps extends WithGridCols, WithGap {}
 
 /**
  * Type to define `Grid` props with html attributes
  */
 interface IGridHtmlProps
   extends IGridProps,
-  IComponentPropsWithoutRef<typeof Component.div> { }
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Grid` - A primitive grid container that powers various layouts
