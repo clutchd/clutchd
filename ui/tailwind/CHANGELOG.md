@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 3.1.0
+
+### Minor Changes
+
+- a72598c: Add xl and 2xl breakpoints to grid and gridCol
+
 ## 3.0.0
 
 ### Major Changes
