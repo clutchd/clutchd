@@ -1,5 +1,12 @@
 # @clutchd/block
 
+## 1.2.2
+
+### Patch Changes
+
+- Updated dependencies [a72598c]
+  - @clutchd/tailwind@3.1.0
+
 ## 1.2.1
 
 ### Patch Changes

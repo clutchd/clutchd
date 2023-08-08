@@ -1,5 +1,12 @@
 # @clutchd/divider
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [a72598c]
+  - @clutchd/tailwind@3.1.0
+
 ## 2.0.1
 
 ### Patch Changes
