@@ -1,5 +1,13 @@
 # @clutchd/divider
 
+## 2.0.3
+
+### Patch Changes
+
+- d411aa0: Remove dark styling
+- Updated dependencies [e8e9937]
+  - @clutchd/component@2.2.2
+
 ## 2.0.2
 
 ### Patch Changes

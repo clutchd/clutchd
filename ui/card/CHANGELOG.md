@@ -1,5 +1,14 @@
 # @clutchd/card
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [e8e9937]
+- Updated dependencies [d411aa0]
+  - @clutchd/component@2.2.2
+  - @clutchd/divider@2.0.3
+
 ## 2.0.1
 
 ### Patch Changes

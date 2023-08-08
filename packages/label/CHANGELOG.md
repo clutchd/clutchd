@@ -1,5 +1,12 @@
 # @clutchd/label
 
+## 2.0.1
+
+### Patch Changes
+
+- Updated dependencies [e8e9937]
+  - @clutchd/component@2.2.2
+
 ## 2.0.0
 
 ### Major Changes

@@ -1,5 +1,12 @@
 # @clutchd/block
 
+## 1.2.3
+
+### Patch Changes
+
+- Updated dependencies [e8e9937]
+  - @clutchd/component@2.2.2
+
 ## 1.2.2
 
 ### Patch Changes
