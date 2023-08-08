@@ -1,5 +1,12 @@
 # @clutchd/input
 
+## 0.4.1
+
+### Patch Changes
+
+- Updated dependencies [e8e9937]
+  - @clutchd/component@2.2.2
+
 ## 0.4.0
 
 ### Minor Changes

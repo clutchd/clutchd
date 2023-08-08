@@ -1,5 +1,13 @@
 # @clutchd/copyright
 
+## 2.1.19
+
+### Patch Changes
+
+- Updated dependencies [e8e9937]
+  - @clutchd/component@2.2.2
+  - @clutchd/text@3.0.1
+
 ## 2.1.18
 
 ### Patch Changes

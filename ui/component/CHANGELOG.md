@@ -1,5 +1,11 @@
 # @clutchd/component
 
+## 2.2.2
+
+### Patch Changes
+
+- e8e9937: Fix className spacing bug
+
 ## 2.2.1
 
 ### Patch Changes
