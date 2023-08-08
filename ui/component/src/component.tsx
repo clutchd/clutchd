@@ -4,6 +4,7 @@ import * as React from "react";
 /**
  * Import `tailwind-merge` if it exists, otherwise use simple merge function
  */
+// TODO: need to make this overridable
 try {
   var twx = require("tailwind-merge").twMerge;
 } catch (e) {
@@ -68,7 +69,7 @@ type IComponentPropsWithoutRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component
  */
 interface IForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
+  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> { }
 
 /**
  * Type to define the supported `Component` nodes
