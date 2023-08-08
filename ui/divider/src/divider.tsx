@@ -50,7 +50,7 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
         {...aria}
         className={[
           "rounded-lg",
-          hidden ? "bg-inherit" : "bg-gray-200 dark:bg-gray-700",
+          hidden ? "bg-inherit" : "bg-gray-200",
           orientation === "horizontal" ? `my-6 h-px` : `mx-6 w-px`,
           className,
         ].join(" ")}
