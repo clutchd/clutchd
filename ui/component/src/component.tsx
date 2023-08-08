@@ -84,7 +84,9 @@ const Component = NODES.reduce((tag, node) => {
       { asChild, ...props }: IComponentPropsWithRef<typeof node>,
       forwardedRef: any
     ) => {
-      if (props?.className) props.className = twx(props.className);
+      // TODO: replacing all spaces with single space due to inconsistency with tailwind-merge
+      if (props?.className)
+        props.className = twx(props.className).replace(/\s/g, " ");
       const Comp: any = asChild ? Slot : node;
       return <Comp ref={forwardedRef} {...props} />;
     }

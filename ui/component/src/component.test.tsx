@@ -146,7 +146,7 @@ test("Render with tailwindcss className", () => {
 });
 
 test("Render with merged tailwindcss className", () => {
-  const { container, debug } = render(
+  const { container } = render(
     <Component.div className="bg-red-500 bg-blue-500">
       With tailwindcss!
     </Component.div>
@@ -156,5 +156,20 @@ test("Render with merged tailwindcss className", () => {
 
   expect(root).toBeInTheDocument();
   expect(root).toHaveAttribute("class", "bg-blue-500");
+  expect(root?.textContent).toEqual("With tailwindcss!");
+});
+
+test("Render with merged tailwindcss className and inconsistent spaces", () => {
+  const { container } = render(
+    // prettier-ignore
+    <Component.div className="bg-red-500  bg-blue-500    shadow      rounded-xl">
+      With tailwindcss!
+    </Component.div>
+  );
+
+  const root = container.querySelector("div");
+
+  expect(root).toBeInTheDocument();
+  expect(root).toHaveAttribute("class", "bg-blue-500 shadow rounded-xl");
   expect(root?.textContent).toEqual("With tailwindcss!");
 });
