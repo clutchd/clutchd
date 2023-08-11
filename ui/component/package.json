@@ -62,12 +62,6 @@
     "typescript": "5.1.6"
   },
   "peerDependencies": {
-    "react": "^18.2",
-    "tailwind-merge": "^1.13"
-  },
-  "peerDependenciesMeta": {
-    "tailwind-merge": {
-      "optional": true
-    }
+    "react": "^18.2"
   }
 }

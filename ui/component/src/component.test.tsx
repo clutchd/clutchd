@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import * as React from "react";
 import { Component } from ".";
+import { twMerge } from "tailwind-merge";
 
 test("render component", () => {
   const { container } = render(<Component.div />);
@@ -147,7 +148,7 @@ test("Render with tailwindcss className", () => {
 
 test("Render with merged tailwindcss className", () => {
   const { container } = render(
-    <Component.div className="bg-red-500 bg-blue-500">
+    <Component.div twx={twMerge} className="bg-red-500 bg-blue-500">
       With tailwindcss!
     </Component.div>
   );
@@ -162,7 +163,7 @@ test("Render with merged tailwindcss className", () => {
 test("Render with merged tailwindcss className and inconsistent spaces", () => {
   const { container } = render(
     // prettier-ignore
-    <Component.div className="bg-red-500  bg-blue-500    shadow      rounded-xl">
+    <Component.div twx={twMerge} className="bg-red-500 bg-blue-500 shadow rounded-xl">
       With tailwindcss!
     </Component.div>
   );
