@@ -127,3 +127,20 @@ test("Render with multiple children and props", () => {
   expect(div).toHaveAttribute("asdf", "qwerty");
   expect(div?.textContent).toEqual("Rendering a div as another div!");
 });
+
+test("render with valid child and className props", () => {
+  const { container } = render(
+    // @ts-ignore
+    <Slot className="bg-red-500">
+      {/* @ts-ignore */}
+      <p className="shadow-xl">Rendering a component as a valid paragraph!</p>
+    </Slot>
+  );
+
+  const p = container.querySelector("p");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(p).toBeInTheDocument();
+  expect(p).toHaveAttribute("class", "bg-red-500 shadow-xl");
+  expect(p?.textContent).toEqual("Rendering a component as a valid paragraph!");
+});
