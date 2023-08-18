@@ -1,4 +1,4 @@
-// https://github.com/dcastil/tailwind-merge/blob/main/tests/arbitrary-variants.test.ts
+// unmodified from https://github.com/dcastil/tailwind-merge/blob/main/tests/arbitrary-variants.test.ts v1.14.0
 
 import { twx } from ".";
 

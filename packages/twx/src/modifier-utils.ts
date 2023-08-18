@@ -1,65 +1,69 @@
-// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/modifier-utils.ts
+// unmodified from https://github.com/dcastil/tailwind-merge/blob/main/src/lib/modifier-utils.ts v1.14.0
 
-// make values configurable?
+import { Config } from "./twx.types";
+
 export const IMPORTANT_MODIFIER = "!";
-export const SEPARATOR = ":";
-const isSeparatorSingleCharacter = SEPARATOR.length === 1;
-const firstSeparatorCharacter = SEPARATOR[0];
-const separatorLength = SEPARATOR.length;
 
-// splitModifiers inspired by https://github.com/tailwindlabs/tailwindcss/blob/v3.2.2/src/util/splitAtTopLevelOnly.js
-export function splitModifiers(className: string) {
-  const modifiers = [];
+export function createSplitModifiers(config: Config) {
+  const separator = config.separator || ":";
+  const isSeparatorSingleCharacter = separator.length === 1;
+  const firstSeparatorCharacter = separator[0];
+  const separatorLength = separator.length;
 
-  let bracketDepth = 0;
-  let modifierStart = 0;
-  let postfixModifierPosition: number | undefined;
+  // splitModifiers inspired by https://github.com/tailwindlabs/tailwindcss/blob/v3.2.2/src/util/splitAtTopLevelOnly.js
+  return function splitModifiers(className: string) {
+    const modifiers = [];
 
-  for (let index = 0; index < className.length; index++) {
-    let currentCharacter = className[index];
+    let bracketDepth = 0;
+    let modifierStart = 0;
+    let postfixModifierPosition: number | undefined;
 
-    if (bracketDepth === 0) {
-      if (
-        currentCharacter === firstSeparatorCharacter &&
-        (isSeparatorSingleCharacter ||
-          className.slice(index, index + separatorLength) === SEPARATOR)
-      ) {
-        modifiers.push(className.slice(modifierStart, index));
-        modifierStart = index + separatorLength;
-        continue;
+    for (let index = 0; index < className.length; index++) {
+      let currentCharacter = className[index];
+
+      if (bracketDepth === 0) {
+        if (
+          currentCharacter === firstSeparatorCharacter &&
+          (isSeparatorSingleCharacter ||
+            className.slice(index, index + separatorLength) === separator)
+        ) {
+          modifiers.push(className.slice(modifierStart, index));
+          modifierStart = index + separatorLength;
+          continue;
+        }
+
+        if (currentCharacter === "/") {
+          postfixModifierPosition = index;
+          continue;
+        }
       }
 
-      if (currentCharacter === "/") {
-        postfixModifierPosition = index;
-        continue;
+      if (currentCharacter === "[") {
+        bracketDepth++;
+      } else if (currentCharacter === "]") {
+        bracketDepth--;
       }
     }
 
-    if (currentCharacter === "[") {
-      bracketDepth++;
-    } else if (currentCharacter === "]") {
-      bracketDepth--;
-    }
-  }
+    const baseClassNameWithImportantModifier =
+      modifiers.length === 0 ? className : className.substring(modifierStart);
+    const hasImportantModifier =
+      baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER);
+    const baseClassName = hasImportantModifier
+      ? baseClassNameWithImportantModifier.substring(1)
+      : baseClassNameWithImportantModifier;
 
-  const baseClassNameWithImportantModifier =
-    modifiers.length === 0 ? className : className.substring(modifierStart);
-  const hasImportantModifier =
-    baseClassNameWithImportantModifier.startsWith(IMPORTANT_MODIFIER);
-  const baseClassName = hasImportantModifier
-    ? baseClassNameWithImportantModifier.substring(1)
-    : baseClassNameWithImportantModifier;
+    const maybePostfixModifierPosition =
+      postfixModifierPosition && postfixModifierPosition > modifierStart
+        ? postfixModifierPosition - modifierStart
+        : undefined;
 
-  const maybePostfixModifierPosition =
-    postfixModifierPosition && postfixModifierPosition > modifierStart
-      ? postfixModifierPosition - modifierStart
-      : undefined;
-
-  return {
-    modifiers,
-    hasImportantModifier,
-    baseClassName,
-    maybePostfixModifierPosition,
+    return {
+      modifiers,
+      hasImportantModifier,
+      baseClassName,
+      maybePostfixModifierPosition,
+    };
   };
 }
 

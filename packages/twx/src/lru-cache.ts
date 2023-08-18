@@ -1,35 +1,56 @@
-// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/lru-cache.ts
+// unmodified from https://github.com/dcastil/tailwind-merge/blob/main/src/lib/lru-cache.ts v1.14.0
 
-let cacheSize = 0;
-let cache = new Map<string, any>();
-let previousCache = new Map<string, any>();
-
-function update(key: string, value: any) {
-  cache.set(key, value);
-  cacheSize++;
-  if (cacheSize > 500) {
-    cacheSize = 0;
-    previousCache = cache;
-    cache = new Map();
-  }
+// Export is needed because TypeScript complains about an error otherwise:
+// Error: …/tailwind-merge/src/config-utils.ts(8,17): semantic error TS4058: Return type of exported function has or is using name 'LruCache' from external module "…/tailwind-merge/src/lru-cache" but cannot be named.
+export interface LruCache<Key, Value> {
+  get(key: Key): Value | undefined;
+  set(key: Key, value: Value): void;
 }
 
-export function get(key: string) {
-  let value = cache.get(key);
-
-  if (value !== undefined) {
-    return value;
+// LRU cache inspired from hashlru (https://github.com/dominictarr/hashlru/blob/v1.0.4/index.js) but object replaced with Map to improve performance
+export function createLruCache<Key, Value>(
+  maxCacheSize: number
+): LruCache<Key, Value> {
+  if (maxCacheSize < 1) {
+    return {
+      get: () => undefined,
+      set: () => {},
+    };
   }
-  if ((value = previousCache.get(key)) !== undefined) {
-    update(key, value);
-    return value;
-  }
-}
 
-export function set(key: string, value: any) {
-  if (cache.has(key)) {
+  let cacheSize = 0;
+  let cache = new Map<Key, Value>();
+  let previousCache = new Map<Key, Value>();
+
+  function update(key: Key, value: Value) {
     cache.set(key, value);
-  } else {
-    update(key, value);
+    cacheSize++;
+
+    if (cacheSize > maxCacheSize) {
+      cacheSize = 0;
+      previousCache = cache;
+      cache = new Map();
+    }
   }
+
+  return {
+    get(key) {
+      let value = cache.get(key);
+
+      if (value !== undefined) {
+        return value;
+      }
+      if ((value = previousCache.get(key)) !== undefined) {
+        update(key, value);
+        return value;
+      }
+    },
+    set(key, value) {
+      if (cache.has(key)) {
+        cache.set(key, value);
+      } else {
+        update(key, value);
+      }
+    },
+  };
 }

@@ -1,4 +1,4 @@
-// https://github.com/dcastil/tailwind-merge/blob/main/tests/arbitrary-values.test.ts
+// unmodified from https://github.com/dcastil/tailwind-merge/blob/main/tests/arbitrary-values.test.ts v1.14.0
 
 import { twx } from ".";
 
@@ -26,6 +26,13 @@ test("handles simple conflicts with arbitrary values correctly", () => {
   expect(twx("opacity-10 opacity-[0.025]")).toBe("opacity-[0.025]");
   expect(twx("scale-75 scale-[1.7]")).toBe("scale-[1.7]");
   expect(twx("brightness-90 brightness-[1.75]")).toBe("brightness-[1.75]");
+
+  // Handling of value `0`
+  expect(twx("min-h-[0.5px] min-h-[0]")).toBe("min-h-[0]");
+  expect(twx("text-[0.5px] text-[color:0]")).toBe(
+    "text-[0.5px] text-[color:0]"
+  );
+  expect(twx("text-[0.5px] text-[--my-0]")).toBe("text-[0.5px] text-[--my-0]");
 });
 
 test("handles arbitrary length conflicts with labels and modifiers correctly", () => {
@@ -52,5 +59,26 @@ test("handles complex arbitrary value conflicts correctly", () => {
   expect(twx("grid-rows-[1fr,auto] grid-rows-2")).toBe("grid-rows-2");
   expect(twx("grid-rows-[repeat(20,minmax(0,1fr))] grid-rows-3")).toBe(
     "grid-rows-3"
+  );
+});
+
+test("handles ambiguous arbitrary values correctly", () => {
+  expect(twx("mt-2 mt-[calc(theme(fontSize.4xl)/1.125)]")).toBe(
+    "mt-[calc(theme(fontSize.4xl)/1.125)]"
+  );
+  expect(twx("p-2 p-[calc(theme(fontSize.4xl)/1.125)_10px]")).toBe(
+    "p-[calc(theme(fontSize.4xl)/1.125)_10px]"
+  );
+  expect(twx("mt-2 mt-[length:theme(someScale.someValue)]")).toBe(
+    "mt-[length:theme(someScale.someValue)]"
+  );
+  expect(twx("mt-2 mt-[theme(someScale.someValue)]")).toBe(
+    "mt-[theme(someScale.someValue)]"
+  );
+  expect(twx("text-2xl text-[length:theme(someScale.someValue)]")).toBe(
+    "text-[length:theme(someScale.someValue)]"
+  );
+  expect(twx("text-2xl text-[calc(theme(fontSize.4xl)/1.125)]")).toBe(
+    "text-[calc(theme(fontSize.4xl)/1.125)]"
   );
 });

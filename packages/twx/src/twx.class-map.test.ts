@@ -1,6 +1,6 @@
-// https://github.com/dcastil/tailwind-merge/blob/main/tests/class-map.test.ts
+// unmodified from https://github.com/dcastil/tailwind-merge/blob/main/tests/class-map.test.ts v1.14.0
 
-import { getDefaultConfig } from ".";
+import { getDefaultConfig } from "tailwind-merge";
 import { ClassPartObject, createClassMap } from "./class-utils";
 
 test("class map has correct class groups at first part", () => {

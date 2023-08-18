@@ -1,6 +1,5 @@
-// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/class-utils.ts
+// unmodified from https://github.com/dcastil/tailwind-merge/blob/main/src/lib/class-utils.ts v1.14.0
 
-import { getDefaultConfig } from "./default-config";
 import {
   ClassGroup,
   ClassGroupId,
@@ -8,7 +7,7 @@ import {
   Config,
   ThemeGetter,
   ThemeObject,
-} from "./types";
+} from "./twx.types";
 
 export interface ClassPartObject {
   nextPart: Map<string, ClassPartObject>;
@@ -23,37 +22,42 @@ interface ClassValidatorObject {
 
 const CLASS_PART_SEPARATOR = "-";
 
-const classMap = createClassMap(getDefaultConfig());
+export function createClassUtils(config: Config) {
+  const classMap = createClassMap(config);
+  const { conflictingClassGroups, conflictingClassGroupModifiers = {} } =
+    config;
 
-export function getClassGroupId(className: string) {
-  const classParts = className.split(CLASS_PART_SEPARATOR);
+  function getClassGroupId(className: string) {
+    const classParts = className.split(CLASS_PART_SEPARATOR);
 
-  // Classes like `-inset-1` produce an empty string as first classPart. We assume that classes for negative values are used correctly and remove it from classParts.
-  if (classParts[0] === "" && classParts.length !== 1) {
-    classParts.shift();
+    // Classes like `-inset-1` produce an empty string as first classPart. We assume that classes for negative values are used correctly and remove it from classParts.
+    if (classParts[0] === "" && classParts.length !== 1) {
+      classParts.shift();
+    }
+
+    return (
+      getGroupRecursive(classParts, classMap) ||
+      getGroupIdForArbitraryProperty(className)
+    );
   }
 
-  return (
-    getGroupRecursive(classParts, classMap) ||
-    getGroupIdForArbitraryProperty(className)
-  );
-}
+  function getConflictingClassGroupIds(
+    classGroupId: ClassGroupId,
+    hasPostfixModifier: boolean
+  ) {
+    const conflicts = conflictingClassGroups[classGroupId] || [];
 
-export function getConflictingClassGroupIds(
-  classGroupId: ClassGroupId,
-  hasPostfixModifier: boolean
-) {
-  const config: Config = getDefaultConfig();
-  const conflicts = config.conflictingClassGroups[classGroupId] || [];
-  const conflictingClassGroupModifiers = config.conflictingClassGroupModifiers
-    ? config.conflictingClassGroupModifiers[classGroupId]
-    : [];
+    if (hasPostfixModifier && conflictingClassGroupModifiers[classGroupId]) {
+      return [...conflicts, ...conflictingClassGroupModifiers[classGroupId]!];
+    }
 
-  if (hasPostfixModifier && conflictingClassGroupModifiers) {
-    return [...conflicts, ...conflictingClassGroupModifiers!];
+    return conflicts;
   }
 
-  return conflicts;
+  return {
+    getClassGroupId,
+    getConflictingClassGroupIds,
+  };
 }
 
 function getGroupRecursive(

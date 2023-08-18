@@ -1,15 +1,14 @@
-// https://github.com/dcastil/tailwind-merge/blob/main/src/lib/merge-classlist.ts
+// unmodified from https://github.com/dcastil/tailwind-merge/blob/main/src/lib/merge-classlist.ts v1.14.0
 
-import { getClassGroupId, getConflictingClassGroupIds } from "./class-utils";
-import {
-  IMPORTANT_MODIFIER,
-  sortModifiers,
-  splitModifiers,
-} from "./modifier-utils";
+import { ConfigUtils } from "./config-utils";
+import { IMPORTANT_MODIFIER, sortModifiers } from "./modifier-utils";
 
 const SPLIT_CLASSES_REGEX = /\s+/;
 
-export function mergeClassList(classList: string) {
+export function mergeClassList(classList: string, configUtils: ConfigUtils) {
+  const { splitModifiers, getClassGroupId, getConflictingClassGroupIds } =
+    configUtils;
+
   /**
    * Set of classGroupIds in following format:
    * `{importantModifier}{variantModifiers}{classGroupId}`
