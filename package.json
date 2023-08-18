@@ -7,7 +7,7 @@
     "build": "turbo run build",
     "changeset": "changeset",
     "clean": "find . -type d \\( -name '.next'  -o -name '.turbo' -o -name 'coverage' -o -name 'dist' -o -name 'node_modules' \\) -prune -print -exec rm -rf '{}' \\;",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --parallel",
     "preinstall": "npx only-allow pnpm",
     "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",
     "postinstall": "manypkg check",
