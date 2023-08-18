@@ -52,7 +52,7 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
       flexGrow,
       flexShrink,
       flexWrap = "flex-wrap",
-      justifyContent = "justify-normal",
+      justifyContent,
       ...props
     },
     forwardedRef

@@ -28,7 +28,6 @@ const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
   (
     {
       children,
-      className,
       flexDirection = "flex-row",
       justifyContent = "justify-between",
       ...props
@@ -38,7 +37,6 @@ const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
     return (
       <Flex
         asChild
-        className={[className].join(" ")}
         flexDirection={flexDirection}
         justifyContent={justifyContent}
         {...props}

@@ -27,7 +27,7 @@ const Card = React.forwardRef<ICard, ICardHtmlProps>(
   ({ children, className, ...props }, forwardedRef) => {
     // TODO: Bring back theming
     const classNames = [
-      "relative p-6 rounded-lg shadow border border-gray-200 bg-white",
+      "relative rounded-lg shadow border border-gray-200 bg-white",
       className,
     ].join(" ");
 

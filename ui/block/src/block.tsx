@@ -27,7 +27,7 @@ const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <div
-        className={["block h-full w-full", className].join(" ")}
+        className={["block", className].join(" ")}
         ref={forwardedRef}
         {...props}
       />

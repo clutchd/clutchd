@@ -10,6 +10,4 @@ test("render block", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("block");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
 });

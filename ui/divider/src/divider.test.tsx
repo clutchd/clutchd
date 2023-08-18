@@ -12,7 +12,6 @@ test("render divider", () => {
   expect(div).toHaveAttribute("aria-orientation", "horizontal");
   expect(div).toHaveAttribute("role", "separator");
   expect(div).toHaveClass("rounded-lg");
-  expect(div).toHaveClass("my-6");
   expect(div).toHaveClass("h-px");
 });
 
@@ -26,7 +25,6 @@ test("render divider with custom orientation", () => {
   expect(div).toHaveAttribute("aria-orientation", "vertical");
   expect(div).toHaveAttribute("role", "separator");
   expect(div).toHaveClass("rounded-lg");
-  expect(div).toHaveClass("mx-6");
   expect(div).toHaveClass("w-px");
 });
 
@@ -39,7 +37,6 @@ test("render divider as decoration", () => {
   expect(div).toBeInTheDocument();
   expect(div).toHaveAttribute("role", "none");
   expect(div).toHaveClass("rounded-lg");
-  expect(div).toHaveClass("my-6");
   expect(div).toHaveClass("h-px");
 });
 
@@ -54,6 +51,5 @@ test("render hidden divider", () => {
   expect(div).toHaveAttribute("role", "separator");
   expect(div).toHaveClass("bg-inherit");
   expect(div).toHaveClass("rounded-lg");
-  expect(div).toHaveClass("my-6");
   expect(div).toHaveClass("h-px");
 });

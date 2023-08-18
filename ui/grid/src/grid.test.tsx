@@ -10,10 +10,6 @@ test("render grid", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("grid");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
-  expect(div).toHaveClass("gap-6");
-  expect(div).toHaveClass("grid-cols-1");
 });
 
 test("render grid with custom gap", () => {
@@ -24,10 +20,7 @@ test("render grid with custom gap", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("grid");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
   expect(div).toHaveClass("gap-0");
-  expect(div).toHaveClass("grid-cols-1");
 });
 
 test("render grid with custom cols", () => {
@@ -47,9 +40,6 @@ test("render grid with custom cols", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("grid");
-  expect(div).toHaveClass("h-full");
-  expect(div).toHaveClass("w-full");
-  expect(div).toHaveClass("gap-6");
   expect(div).toHaveClass("grid-cols-2");
   expect(div).toHaveClass("sm:grid-cols-4");
   expect(div).toHaveClass("md:grid-cols-6");

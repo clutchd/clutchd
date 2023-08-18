@@ -28,8 +28,8 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
   (
     {
       className,
-      gap = "gap-6",
-      gridCols = "grid-cols-1",
+      gap,
+      gridCols,
       gridColsSm,
       gridColsMd,
       gridColsLg,
@@ -42,7 +42,7 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
     return (
       <Component.div
         className={[
-          "grid h-full w-full",
+          "grid",
           gap,
           gridCols,
           gridColsSm,

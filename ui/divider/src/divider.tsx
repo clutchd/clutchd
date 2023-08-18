@@ -51,7 +51,7 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
         className={[
           "rounded-lg",
           hidden ? "bg-inherit" : "bg-gray-200",
-          orientation === "horizontal" ? `my-6 h-px` : `mx-6 w-px`,
+          orientation === "horizontal" ? `h-px` : `w-px`,
           className,
         ].join(" ")}
         ref={forwardedRef}

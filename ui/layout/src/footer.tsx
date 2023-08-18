@@ -28,7 +28,6 @@ const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
   (
     {
       children,
-      className,
       flexDirection = "flex-row",
       justifyContent = "justify-between",
       ...props
@@ -38,7 +37,6 @@ const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
     return (
       <Flex
         asChild
-        className={[className].join(" ")}
         flexDirection={flexDirection}
         justifyContent={justifyContent}
         {...props}
