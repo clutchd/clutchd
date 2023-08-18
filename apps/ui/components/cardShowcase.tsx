@@ -1,4 +1,5 @@
-import { Card, CardDivider } from "@clutchd/card";
+import { Card } from "@clutchd/card";
+import { Divider } from "@clutchd/divider";
 import React from "react";
 import { Showcase } from ".";
 
@@ -8,14 +9,14 @@ function CardShowcase() {
       <Card>Card</Card>
       <Card>
         Card with Divider
-        <CardDivider />
+        <Divider />
         Divider
       </Card>
       <Card>
         Card with Multiple Dividers
-        <CardDivider />
+        <Divider />
         Divider
-        <CardDivider />
+        <Divider />
         Another Divider
       </Card>
     </Showcase>
