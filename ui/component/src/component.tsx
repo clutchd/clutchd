@@ -2,6 +2,15 @@ import { Slot } from "@clutchd/slot";
 import * as React from "react";
 
 /**
+ * Import `@clutchd/twx` if it exists, otherwise use simple merge function
+ */
+try {
+  var tx = require("@clutchd/twx").twx;
+} catch (e) {
+  tx = false;
+}
+
+/**
  * Supported `Component` nodes
  */
 const NODES = [
@@ -58,7 +67,7 @@ type IComponentPropsWithoutRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component
  */
 interface IForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
+  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> { }
 
 /**
  * Type to define the supported `Component` nodes
@@ -66,24 +75,15 @@ interface IForwardRefComponent<E extends React.ElementType>
 type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
 
 /**
- * Default class joiner function
- * @param args classes to be joined
- * @returns merged classes
- */
-const cn = (...args: any[]) => {
-  return args.filter(Boolean).join(" ");
-};
-
-/**
  * `Component` - a higher-order component that extends standard html tags
  */
 const Component = NODES.reduce((tag, node) => {
   const Node = React.forwardRef(
     (
-      { asChild, twx = cn, ...props }: IComponentPropsWithRef<typeof node>,
+      { asChild, twx = tx, ...props }: IComponentPropsWithRef<typeof node>,
       forwardedRef: any
     ) => {
-      if (props?.className) props.className = twx(props.className);
+      if (tx && props?.className) props.className = twx(props.className);
       const Comp: any = asChild ? Slot : node;
       return <Comp ref={forwardedRef} {...props} />;
     }
