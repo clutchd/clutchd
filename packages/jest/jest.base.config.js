@@ -11,6 +11,7 @@ const config = {
     "!<rootDir>/**/*.benchmark.{js,ts,jsx,tsx}", // ignore benchmark files
     "!<rootDir>/**/*.config.*", // ignore config files
     "!<rootDir>/**/*.d.ts", // ignore types
+    "!<rootDir>/**/*.types.{ts,tsx}", // ignore types
     // prettier-ignore
     "!<rootDir>/**/\.*", // ignore files that start with ".",
   ],
