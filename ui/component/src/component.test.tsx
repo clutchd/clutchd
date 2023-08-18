@@ -162,9 +162,7 @@ test("Render with merged tailwindcss className", () => {
 test("Render asChild with merged tailwindcss className", () => {
   const { container } = render(
     <Component.div asChild className="bg-red-500">
-      <Component.div className="bg-blue-500">
-        With tailwindcss!
-      </Component.div>
+      <Component.div className="bg-blue-500">With tailwindcss!</Component.div>
     </Component.div>
   );
 
