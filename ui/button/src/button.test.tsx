@@ -9,5 +9,8 @@ test("render button", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(button).toBeInTheDocument();
-  expect(button).toHaveAttribute("class", "cursor-pointer");
+  expect(button).toHaveAttribute(
+    "class",
+    "cursor-pointer focus:outline-2 focus:outline-blue-500 focus:outline-offset-4"
+  );
 });
