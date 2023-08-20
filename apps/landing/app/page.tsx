@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Script async src="https://js.stripe.com/v3/pricing-table.js" />
-      <Header>
+      <Header className="p-6">
         <Link className="hidden sm:block" href="/">
           <Image
             width="194"
@@ -38,7 +38,7 @@ export default function Home() {
           Manage Subscription
         </Link>
       </Header>
-      <Main>
+      <Main className="p-6">
         <h1 className="pt-4 pb-16 text-3xl text-center">
           Professional design, development, and maintenance for all your web
           needs
@@ -49,7 +49,7 @@ export default function Home() {
           publishable-key="pk_live_51KnXiKExxz9r9gq2q29FmChNykUYPIuokFLvpumZDlw15GB7GNaJpuB45iMQIbthpTm4O3AjjCfBhfmRhZeG8wfP00YCb9j0rC"
         />
       </Main>
-      <Footer>
+      <Footer className="p-6">
         <div className="text-gray-500">© 2023 Clutchd, LLC</div>
         <Link
           className="text-right underline underline-offset-4"
