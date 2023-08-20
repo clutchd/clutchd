@@ -116,7 +116,7 @@ importers:
         version: link:../../packages/input
       '@clutchd/label':
         specifier: workspace:*
-        version: link:../../packages/label
+        version: link:../../ui/label
       '@clutchd/layout':
         specifier: workspace:*
         version: link:../../ui/layout
@@ -492,55 +492,6 @@ importers:
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
-
-  packages/label:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../ui/component
-      '@clutchd/compose-preventable-event-handlers':
-        specifier: workspace:*
-        version: link:../../ui/compose-preventable-event-handlers
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../../ui/tailwind
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.4.1
-        version: 20.4.1
-      '@types/react':
-        specifier: 18.2.14
-        version: 18.2.14
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.4.1)
-      next:
-        specifier: 13.4.9
-        version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
-      postcss:
-        specifier: 8.4.27
-        version: 8.4.27
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.1.0
-        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
-      typescript:
-        specifier: 5.1.6
-        version: 5.1.6
 
   packages/next-auth-prisma-adapter:
     devDependencies:
@@ -1214,6 +1165,55 @@ importers:
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.4.1)
+      postcss:
+        specifier: 8.4.27
+        version: 8.4.27
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.1.0
+        version: 7.1.0(postcss@8.4.27)(typescript@5.1.6)
+      typescript:
+        specifier: 5.1.6
+        version: 5.1.6
+
+  ui/label:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../component
+      '@clutchd/compose-preventable-event-handlers':
+        specifier: workspace:*
+        version: link:../compose-preventable-event-handlers
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../packages/jest
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../tailwind
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../packages/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.4.1
+        version: 20.4.1
+      '@types/react':
+        specifier: 18.2.14
+        version: 18.2.14
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.4.1)
+      next:
+        specifier: 13.4.9
+        version: 13.4.9(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)
       postcss:
         specifier: 8.4.27
         version: 8.4.27

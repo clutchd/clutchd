@@ -1,11 +1,14 @@
-import { Footer, Header, Main } from "@clutchd/layout";
-import { Metadata } from "next";
-import Image from "next/image";
 import { Divider } from "@clutchd/divider";
+import { Footer, Main } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { H1 } from "@clutchd/text";
-import * as React from "react";
-import { ButtonShowcase, CardShowcase, TailwindIndicator } from "../components";
+import { Metadata } from "next";
+import {
+  ButtonShowcase,
+  CardShowcase,
+  LabelShowcase,
+  TailwindIndicator,
+} from "../components";
 
 export const metadata: Metadata = {
   title: "Clutchd, LLC",
@@ -50,6 +53,7 @@ export default function Home() {
         <InputShowcase /> */}
         <ButtonShowcase />
         <CardShowcase />
+        <LabelShowcase />
       </Main>
       <Footer>
         <div className="text-gray-500">© 2023 Clutchd, LLC</div>

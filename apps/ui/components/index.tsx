@@ -1,6 +1,7 @@
 // export { AvatarShowcase } from "../oldComponents/avatarShowcase";
 export { ButtonShowcase } from "./buttonShowcase";
 export { CardShowcase } from "./cardShowcase";
+export { LabelShowcase } from "./labelShowcase";
 // export { ColorSwitch } from "../oldComponents/colorSwitch";
 // export { InputShowcase } from "./inputShowcase";
 export { Showcase } from "./showcase";

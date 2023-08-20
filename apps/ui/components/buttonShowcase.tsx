@@ -4,7 +4,7 @@ import { Showcase } from ".";
 
 function ButtonShowcase() {
   return (
-    <Showcase title="Button">
+    <Showcase title="Button" description="A simple, focusable, button.">
       <Button>Click me!</Button>
     </Showcase>
   );
