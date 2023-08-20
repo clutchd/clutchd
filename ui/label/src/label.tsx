@@ -10,7 +10,7 @@ type ILabel = React.ElementRef<typeof Component.label>;
 /**
  * Type to define `Label` props
  */
-interface ILabelProps { }
+interface ILabelProps {}
 
 /**
  * `Label` - A label component used to render accessible labels

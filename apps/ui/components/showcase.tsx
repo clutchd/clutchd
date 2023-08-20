@@ -18,7 +18,18 @@ function Showcase({
 }) {
   return (
     <Block>
-      <h2 className="inline-flex items-center mt-10 text-3xl font-bold text-gray-900">{title} {rsc ? <Badge className="text-blue-600 bg-blue-50 ring-blue-100">Server</Badge> : <Badge className="text-purple-600 bg-purple-50 ring-purple-100">Client</Badge>}</h2>
+      <h2 className="inline-flex items-center mt-10 text-3xl font-bold text-gray-900">
+        {title}{" "}
+        {rsc ? (
+          <Badge className="text-blue-600 bg-blue-50 ring-blue-100">
+            Server
+          </Badge>
+        ) : (
+          <Badge className="text-purple-600 bg-purple-50 ring-purple-100">
+            Client
+          </Badge>
+        )}
+      </h2>
       <p className="mb-6 font-mono italic text-gray-700">{pkg}</p>
       {description && <p className="text-gray-500">{description}</p>}
       <div className="relative my-6 border border-gray-200 rounded-lg dark:border-gray-700 bg-gray-50 dark:bg-gray-900">

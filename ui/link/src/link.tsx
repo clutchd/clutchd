@@ -28,7 +28,10 @@ const Link = React.forwardRef<ILink, ILinkHtmlProps>(
   ({ href = "/", className, children, ...props }, forwardedRef) => {
     return (
       <Component.a
-        className={["cursor-pointer", className].join(" ")}
+        className={[
+          "cursor-pointer focus:outline-2 focus:outline-blue-500 focus:outline-offset-4",
+          className,
+        ].join(" ")}
         asChild
         {...props}
       >
