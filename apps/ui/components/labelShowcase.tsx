@@ -2,19 +2,9 @@
 
 import { Label } from "@clutchd/label";
 import * as React from "react";
-import { Showcase } from ".";
 
 function LabelShowcase() {
-  return (
-    <Showcase
-      title="Label"
-      description="A simple, non-focusable, label intended to be used for input forms."
-      pkg="@clutchd/label"
-      rsc={false}
-    >
-      <Label>Click me!</Label>
-    </Showcase>
-  );
+  return <Label>Click me!</Label>;
 }
 
 export { LabelShowcase };

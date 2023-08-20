@@ -1,5 +1,4 @@
 import { Block } from "@clutchd/block";
-import { H2 } from "@clutchd/text";
 import React from "react";
 import { Badge } from ".";
 

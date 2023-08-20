@@ -7,7 +7,9 @@ import {
   ButtonShowcase,
   CardShowcase,
   LabelShowcase,
+  Showcase,
   TailwindIndicator,
+  TextInputShowcase,
 } from "../components";
 
 export const metadata: Metadata = {
@@ -51,9 +53,32 @@ export default function Home() {
         
        
         <InputShowcase /> */}
-        <ButtonShowcase />
-        <CardShowcase />
-        <LabelShowcase />
+        <Showcase
+          title="Button"
+          description="A simple, focusable, button."
+          pkg="@clutchd/button"
+        >
+          <ButtonShowcase />
+        </Showcase>
+        <Showcase title="Card" pkg="@clutchd/card">
+          <CardShowcase />
+        </Showcase>
+        <Showcase
+          title="TextInput"
+          description={'An input field of type "text".'}
+          pkg="@clutchd/input"
+          rsc={false}
+        >
+          <TextInputShowcase />
+        </Showcase>
+        <Showcase
+          title="Label"
+          description="A simple, non-focusable, label intended to be used for input forms."
+          pkg="@clutchd/label"
+          rsc={false}
+        >
+          <LabelShowcase />
+        </Showcase>
       </Main>
       <Footer>
         <div className="text-gray-500">© 2023 Clutchd, LLC</div>
