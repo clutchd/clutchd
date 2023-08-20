@@ -8,3 +8,4 @@ export { Showcase } from "./showcase";
 export { TailwindIndicator } from "./tailwindIndicator";
 // export { TextShowcase } from "./textShowcase";
 // export { ThemeSwitch } from "./themeSwitch";
+export { Badge } from './badge';

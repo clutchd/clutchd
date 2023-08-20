@@ -5,7 +5,7 @@ import { Showcase } from ".";
 
 function CardShowcase() {
   return (
-    <Showcase title="Card">
+    <Showcase title="Card" pkg="@clutchd/card">
       <Card>Card</Card>
       <Card>
         Card with Divider

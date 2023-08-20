@@ -2,12 +2,10 @@ import { Button } from "@clutchd/button";
 import * as React from "react";
 import { Showcase } from ".";
 
-function ButtonShowcase() {
+export function ButtonShowcase() {
   return (
-    <Showcase title="Button" description="A simple, focusable, button.">
+    <Showcase title="Button" description="A simple, focusable, button." pkg="@clutchd/button">
       <Button>Click me!</Button>
     </Showcase>
   );
 }
-
-export { ButtonShowcase };
