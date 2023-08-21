@@ -24,7 +24,7 @@ interface IDividerHtmlProps
 
 /**
  * `Divider` - A separator used to create space between elements
- * @param props `IDividerProps` used to render this `Divider`
+ * @param props `IDividerHtmlProps` used to render this `Divider`
  * @returns `Divider` component
  */
 const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(

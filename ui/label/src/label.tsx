@@ -21,7 +21,7 @@ interface ILabelHtmlProps
 
 /**
  * `Label` - A label component used to render accessible labels
- * @param props `ILabelProps` used to render this `Label`
+ * @param props `ILabelHtmlProps` used to render this `Label`
  * @returns `Label` component
  */
 const Label = React.forwardRef<ILabel, ILabelHtmlProps>(

@@ -21,7 +21,7 @@ interface IFooterHtmlProps
 
 /**
  * `Footer` - A layout component designed to contain a page's footer content. Renders as a `footer` element
- * @param props `IFooterProps` used to render this `Footer`
+ * @param props `IFooterHtmlProps` used to render this `Footer`
  * @returns `Footer` component
  */
 const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(

@@ -21,7 +21,7 @@ interface IPageHtmlProps
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen
- * @param props `IPageProps` used to render this `Page`
+ * @param props `IPageHtmlProps` used to render this `Page`
  * @returns `Page` component
  */
 const Page = React.forwardRef<IPage, IPageHtmlProps>(

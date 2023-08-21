@@ -21,7 +21,7 @@ interface IGridHtmlProps
 
 /**
  * `Grid` - A primitive grid container that powers various layouts
- * @param props `IGridProps` used to render this `Grid`
+ * @param props `IGridHtmlProps` used to render this `Grid`
  * @returns `Grid` component
  */
 const Grid = React.forwardRef<IGrid, IGridHtmlProps>(

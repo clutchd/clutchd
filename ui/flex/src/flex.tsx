@@ -38,7 +38,7 @@ interface IFlexHtmlProps
 
 /**
  * `Flex` - A primitive flex container that powers various layouts
- * @param props `IFlexProps` used to render this `Flex`
+ * @param props `IFlexHtmlProps` used to render this `Flex`
  * @returns `Flex` component
  */
 const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(

@@ -20,7 +20,7 @@ interface IButtonHtmlProps
 
 /**
  * `Button` - A button component used to render consistent buttons
- * @param props `IButtonProps` used to render this `Button`
+ * @param props `IButtonHtmlProps` used to render this `Button`
  * @returns `Button` component
  */
 const Button = React.forwardRef<IButton, IButtonHtmlProps>(

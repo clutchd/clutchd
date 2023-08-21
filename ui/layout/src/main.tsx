@@ -21,7 +21,7 @@ interface IMainHtmlProps
 
 /**
  * `Main` - A layout component designed to contain a page's primary Main. Renders as a `main` element
- * @param props `IMainProps` used to render this `Main`
+ * @param props `IMainHtmlProps` used to render this `Main`
  * @returns `Main` component
  */
 const Main = React.forwardRef<IMain, IMainHtmlProps>(

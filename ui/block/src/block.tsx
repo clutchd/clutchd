@@ -20,7 +20,7 @@ interface IBlockHtmlProps
 
 /**
  * `Block` - A block container for a vertical layout
- * @param props `IBlockProps` used to render this `Block`
+ * @param props `IBlockHtmlProps` used to render this `Block`
  * @returns `Block` component
  */
 const Block = React.forwardRef<IBlock, IBlockHtmlProps>(

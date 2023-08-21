@@ -20,7 +20,7 @@ interface ICardHtmlProps
 
 /**
  * `Card` - A building block component used to render contained elements such as forms
- * @param props `ICardProps` used to render this `Card`
+ * @param props `ICardHtmlProps` used to render this `Card`
  * @returns `Card` component
  */
 const Card = React.forwardRef<ICard, ICardHtmlProps>(

@@ -21,7 +21,7 @@ interface ILinkHtmlProps
 
 /**
  * `Link` - A simple link component, leverages next/link
- * @param props `ILinkProps` used to render this `Link`
+ * @param props `ILinkHtmlProps` used to render this `Link`
  * @returns `Link` component
  */
 const Link = React.forwardRef<ILink, ILinkHtmlProps>(

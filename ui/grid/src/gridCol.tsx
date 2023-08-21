@@ -24,7 +24,7 @@ interface IGridColHtmlProps
 
 /**
  * `GridCol` - A primitive component used to render a column within a grid
- * @param props `IColProps` used to render this `Col`
+ * @param props `IGridColHtmlProps` used to render this `Col`
  * @returns `Col` component
  */
 const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
