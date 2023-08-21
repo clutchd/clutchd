@@ -54,6 +54,7 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
           orientation === "horizontal" ? `h-px` : `w-px`,
           className,
         ].join(" ")}
+        data-orientation={orientation}
         ref={forwardedRef}
         {...props}
       />
