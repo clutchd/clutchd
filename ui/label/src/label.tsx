@@ -48,5 +48,7 @@ const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
   }
 );
 
+Label.displayName = "Label";
+
 export { Label };
 export type { ILabel, ILabelProps, ILabelHtmlProps };
