@@ -1,1 +1,1 @@
-export { composeProps } from "./composeProps";
+export { composeProps, composeClassNames } from "./composeProps";
