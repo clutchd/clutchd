@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import NextLink from "next/link";
 import * as React from "react";
 
@@ -28,10 +29,10 @@ const Link = React.forwardRef<ILink, ILinkHtmlProps>(
   ({ href = "/", className, children, ...props }, forwardedRef) => {
     return (
       <Component.a
-        className={[
+        className={cn(
           "cursor-pointer focus:outline-2 focus:outline-blue-500 focus:outline-offset-4",
-          className,
-        ].join(" ")}
+          className
+        )}
         asChild
         {...props}
       >

@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
 
 /**
@@ -27,10 +28,10 @@ const Button = React.forwardRef<IButton, IButtonHtmlProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
       <Component.button
-        className={[
+        className={cn(
           "cursor-pointer focus:outline-2 focus:outline-blue-500 focus:outline-offset-4",
-          className,
-        ].join(" ")}
+          className
+        )}
         ref={forwardedRef}
         {...props}
       />

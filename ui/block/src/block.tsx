@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
 
 /**
@@ -26,11 +27,7 @@ interface IBlockHtmlProps
 const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
   ({ className, ...props }, forwardedRef) => {
     return (
-      <div
-        className={["block", className].join(" ")}
-        ref={forwardedRef}
-        {...props}
-      />
+      <div className={cn("block", className)} ref={forwardedRef} {...props} />
     );
   }
 );

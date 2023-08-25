@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "@clutchd/component": "workspace:*",
-    "@clutchd/divider": "workspace:*"
+    "@clutchd/compose-props": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",

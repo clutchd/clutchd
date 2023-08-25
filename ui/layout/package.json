@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@clutchd/component": "workspace:*",
+    "@clutchd/compose-props": "workspace:*",
     "@clutchd/flex": "workspace:*",
     "@clutchd/tailwind": "workspace:*"
   },

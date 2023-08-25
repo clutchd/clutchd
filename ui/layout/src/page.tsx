@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
@@ -28,10 +29,10 @@ const Page = React.forwardRef<IPage, IPageHtmlProps>(
   ({ className, flexDirection = "flex-col", ...props }, forwardedRef) => {
     return (
       <Flex
-        className={[
-          "min-h-screen min-w-screen subpixel-antialiased transition-all duration-75 ease-out",
-          className,
-        ].join(" ")}
+        className={cn(
+          "min-h-screen min-w-screen subpixel-antialiased transition-all duration-150 ease-out",
+          className
+        )}
         flexDirection={flexDirection}
         ref={forwardedRef}
         {...props}

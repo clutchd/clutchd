@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import { WithColSpan, WithRowSpan } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -49,7 +50,7 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
   ) => {
     return (
       <Component.div
-        className={[
+        className={cn(
           colSpan,
           colSpanSm,
           colSpanMd,
@@ -62,8 +63,8 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
           rowSpanLg,
           rowSpanXl,
           rowSpan2xl,
-          className,
-        ].join(" ")}
+          className
+        )}
         ref={forwardedRef}
         {...props}
       />

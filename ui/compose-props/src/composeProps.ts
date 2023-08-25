@@ -41,7 +41,7 @@ function mergeProps(
       );
     }
 
-    // if a className prop, merge classes
+    // if a className prop, compose classes
     else if (propName === "className") {
       newProps[propName] = composeClassNames(
         originalProps[propName],
@@ -49,7 +49,7 @@ function mergeProps(
       );
     }
 
-    // if a style prop, merge styles
+    // if a style prop, compose styles
     else if (propName === "style") {
       newProps[propName] = {
         ...originalProps[propName],

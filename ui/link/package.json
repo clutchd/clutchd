@@ -45,7 +45,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@clutchd/component": "workspace:*"
+    "@clutchd/component": "workspace:*",
+    "@clutchd/compose-props": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",

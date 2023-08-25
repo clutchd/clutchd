@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import { WithGap, WithGridCols } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -41,7 +42,7 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
   ) => {
     return (
       <Component.div
-        className={[
+        className={cn(
           "grid",
           gap,
           gridCols,
@@ -50,8 +51,8 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
           gridColsLg,
           gridColsXl,
           gridCols2xl,
-          className,
-        ].join(" ")}
+          className
+        )}
         ref={forwardedRef}
         {...props}
       />

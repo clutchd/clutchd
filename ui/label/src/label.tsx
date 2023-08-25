@@ -1,5 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { composePreventableEventHandlers } from "@clutchd/compose-preventable-event-handlers";
+import { composePreventableEventHandlers } from "@clutchd/compose-event-handlers";
 import * as React from "react";
 
 /**
@@ -25,7 +25,7 @@ interface ILabelHtmlProps
  * @returns `Label` component
  */
 const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
-  ({ className, onMouseDown, ...props }, forwardedRef) => {
+  ({ onMouseDown, ...props }, forwardedRef) => {
     // disable the label's text highlight
     const disableLabelHighlight = (
       event: React.MouseEvent<HTMLLabelElement, MouseEvent>

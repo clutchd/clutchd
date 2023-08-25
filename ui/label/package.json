@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@clutchd/component": "workspace:*",
-    "@clutchd/compose-preventable-event-handlers": "workspace:*"
+    "@clutchd/compose-event-handlers": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
