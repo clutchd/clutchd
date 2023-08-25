@@ -1,5 +1,7 @@
 # @clutchd/merge-event-handlers
 
+**_This package has been deprecated. Please use @clutchd/compose-event-handlers instead._**
+
 A small utility intended to quickly merge multiple event handlers for a provided event.
 
 ## Installation
