@@ -1,7 +1,4 @@
-import {
-  IPossibleEventHandler,
-  mergeEventHandlers,
-} from "@clutchd/merge-event-handlers";
+import { IPossibleEventHandler, mergeEventHandlers } from ".";
 
 /**
  * Composes multiple event handlers into a single event handler function

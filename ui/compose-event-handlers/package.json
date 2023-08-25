@@ -1,11 +1,13 @@
 {
   "name": "@clutchd/compose-event-handlers",
   "version": "2.0.3",
-  "description": "A small utility intended to quickly compose multiple event handlers into a single handler.",
+  "description": "A small package that provides multiple event-handler utility functions.",
   "keywords": [
     "clutchd",
     "compose-event-handlers",
-    "event-handlers"
+    "compose-preventable-event-handlers",
+    "event-handlers",
+    "merge-event-handlers"
   ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
@@ -43,9 +45,7 @@
     "prepublish": "pnpm run build",
     "test": "jest"
   },
-  "dependencies": {
-    "@clutchd/merge-event-handlers": "workspace:*"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/jest": "workspace:*",
