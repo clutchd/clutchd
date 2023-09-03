@@ -9,4 +9,5 @@ export { TailwindIndicator } from "./tailwindIndicator";
 // export { TextShowcase } from "./textShowcase";
 // export { ThemeSwitch } from "./themeSwitch";
 export { Badge } from "./badge";
+export { DarkModeToggle } from "./darkModeToggle";
 export { TextInputShowcase } from "./textInputShowcase";
