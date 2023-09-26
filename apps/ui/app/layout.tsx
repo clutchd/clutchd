@@ -1,7 +1,7 @@
 import { Page } from "@clutchd/layout";
 import { Analytics } from "@vercel/analytics/react";
 import { Manrope } from "next/font/google";
-import { cookies } from 'next/headers';
+import { cookies } from "next/headers";
 import { DarkModeToggle } from "../components";
 import React from "react";
 import "./globals.css";
@@ -22,12 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const cookieStore = cookies();
-  const theme = cookieStore.get('theme');
+  const theme = cookieStore.get("theme");
   return (
     <html lang="en" className={manrope.variable}>
       <body className={theme?.value === "dark" && "dark"}>
         <Page className="p-6 bg-white">
-          <DarkModeToggle initialValue={theme?.value as ('light' | 'dark')} />
+          <DarkModeToggle initialValue={theme?.value as "light" | "dark"} />
           {children}
           <Analytics />
         </Page>

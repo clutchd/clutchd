@@ -19,9 +19,9 @@
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/index",
+  "module": "dist/index",
+  "types": "dist/index",
   "files": [
     "dist"
   ],
@@ -35,6 +35,7 @@
   "dependencies": {
     "@clutchd/component": "workspace:*",
     "@clutchd/compose-event-handlers": "workspace:*",
+    "@clutchd/compose-props": "workspace:*",
     "@clutchd/is-empty": "workspace:*"
   },
   "devDependencies": {
