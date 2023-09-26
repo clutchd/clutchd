@@ -1,6 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
+import { disabled, focus, global, outline } from ".";
 
 /**
  * Type to define `Button` component
@@ -10,7 +11,9 @@ type IButton = React.ElementRef<typeof Component.button>;
 /**
  * Type to define `Button` props
  */
-interface IButtonProps {}
+interface IButtonProps {
+  variant?: string;
+}
 
 /**
  * Type to define `Button` props with html attributes
@@ -25,13 +28,10 @@ interface IButtonHtmlProps
  * @returns `Button` component
  */
 const Button = React.forwardRef<IButton, IButtonHtmlProps>(
-  ({ className, ...props }, forwardedRef) => {
+  ({ className, variant = outline, ...props }, forwardedRef) => {
     return (
       <Component.button
-        className={cn(
-          "cursor-pointer focus:outline-2 focus:outline-blue-500 focus:outline-offset-4",
-          className
-        )}
+        className={cn(variant, global, disabled, focus, className)}
         ref={forwardedRef}
         {...props}
       />
@@ -42,4 +42,4 @@ const Button = React.forwardRef<IButton, IButtonHtmlProps>(
 Button.displayName = "Button";
 
 export { Button };
-export type { IButton, IButtonProps, IButtonHtmlProps };
+export type { IButton, IButtonHtmlProps, IButtonProps };
