@@ -18,6 +18,7 @@
     "@clutchd/copyright": "workspace:*",
     "@clutchd/divider": "workspace:*",
     "@clutchd/flex": "workspace:*",
+    "@clutchd/form": "workspace:*",
     "@clutchd/grid": "workspace:*",
     "@clutchd/input": "workspace:*",
     "@clutchd/label": "workspace:*",

@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import {
   ButtonShowcase,
   CardShowcase,
+  FormShowcase,
   LabelShowcase,
   Showcase,
   TailwindIndicator,
@@ -62,6 +63,9 @@ export default function Home() {
         </Showcase>
         <Showcase title="Card" pkg="@clutchd/card">
           <CardShowcase />
+        </Showcase>
+        <Showcase title="Form" pkg="@clutchd/form" rsc={false}>
+          <FormShowcase />
         </Showcase>
         <Showcase
           title="TextInput"
