@@ -1,5 +1,15 @@
 # @clutchd/slot
 
+## 1.0.14
+
+### Patch Changes
+
+- b5da60d: Fix bug that prevented proper merging of classNames when the child component had a className set
+- Updated dependencies [10988f6]
+- Updated dependencies [08cbf46]
+  - @clutchd/compose-props@2.0.0
+  - @clutchd/compose-refs@1.1.6
+
 ## 1.0.13
 
 ### Patch Changes

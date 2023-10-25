@@ -1,5 +1,16 @@
 # @clutchd/link
 
+## 1.4.2
+
+### Patch Changes
+
+- 3ead4fb: Standardize how classNames are merged
+- a7f4032: Add focus styles
+- Updated dependencies [10988f6]
+- Updated dependencies [08cbf46]
+  - @clutchd/compose-props@2.0.0
+  - @clutchd/component@3.0.0
+
 ## 1.4.1
 
 ### Patch Changes

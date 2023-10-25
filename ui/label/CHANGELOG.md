@@ -1,5 +1,22 @@
 # @clutchd/label
 
+## 3.0.0
+
+### Major Changes
+
+- ae23d27: Revamp label component for better usability and versatility
+
+### Patch Changes
+
+- 3ead4fb: Standardize how classNames are merged
+- 10b9ebd: Fix exports
+- e174e5c: Add missing display name
+- 0807af6: Add ILabelHtmlProps interface
+- Updated dependencies [10988f6]
+- Updated dependencies [43731cd]
+  - @clutchd/component@3.0.0
+  - @clutchd/compose-event-handlers@3.0.0
+
 ## 2.0.1
 
 ### Patch Changes

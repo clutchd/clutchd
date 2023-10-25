@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 1.0.7
+
+### Patch Changes
+
+- 089ed40: Update clsx
+
 ## 1.0.6
 
 ### Patch Changes
