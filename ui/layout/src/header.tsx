@@ -21,7 +21,7 @@ interface IHeaderHtmlProps
 
 /**
  * `Header` - A layout component designed to contain a page's header content. Renders as a `header` element
- * @param props `IHeaderProps` used to render this `Header`
+ * @param props `IHeaderHtmlProps` used to render this `Header`
  * @returns `Header` component
  */
 const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(

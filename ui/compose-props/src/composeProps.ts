@@ -18,6 +18,12 @@ function composeProps(...props: Record<string, any>[]) {
   return composed;
 }
 
+/**
+ * Merges two prop objects into a single prop object
+ * @param originalProps The original props object
+ * @param newProps The new props object
+ * @returns A single prop object composed from the original and new props
+ */
 function mergeProps(
   originalProps: Record<string, any>,
   newProps: Record<string, any>
@@ -35,14 +41,15 @@ function mergeProps(
       );
     }
 
-    // if a className prop, merge classes
+    // if a className prop, compose classes
     else if (propName === "className") {
-      newProps[propName] = [originalProps[propName], newProps[propName]]
-        .filter(Boolean)
-        .join(" ");
+      newProps[propName] = composeClassNames(
+        originalProps[propName],
+        newProps[propName]
+      );
     }
 
-    // if a style prop, merge styles
+    // if a style prop, compose styles
     else if (propName === "style") {
       newProps[propName] = {
         ...originalProps[propName],
@@ -53,4 +60,13 @@ function mergeProps(
   return { ...originalProps, ...newProps };
 }
 
-export { composeProps };
+/**
+ * Composes multiple classNames into a single className
+ * @param classNames Array of classNames that will be composed
+ * @returns A single className composed from all provided classNames
+ */
+function composeClassNames(...classNames: any[]) {
+  return classNames.filter(Boolean).join(" ");
+}
+
+export { composeProps, composeClassNames };

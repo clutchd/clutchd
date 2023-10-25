@@ -1,6 +1,10 @@
 # @clutchd/compose-event-handlers
 
-A small utility intended to quickly compose multiple event handlers into a single handler.
+A small package that provides multiple event-handler utility functions such as:
+
+- composing multiple event handlers into a single handler
+- composing multiple preventable event handlers int a single handler
+- merge multiple event handlers for a provided event
 
 ## Installation
 
@@ -10,7 +14,6 @@ npm i @clutchd/compose-event-handlers
 
 ## Related Packages
 
-- [`@clutchd/merge-event-handlers`](https://github.com/clutchd/clutchd/tree/main/ui/merge-event-handlers)
 - [`@radix-ui/primitive`](https://github.com/radix-ui/primitives/tree/main/packages/core/primitive)
 
 ---

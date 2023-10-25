@@ -2,7 +2,7 @@ import { Slot } from "@clutchd/slot";
 import * as React from "react";
 
 /**
- * Import `@clutchd/twx` if it exists, otherwise use simple merge function
+ * Import `@clutchd/twx` if it exists, otherwise no processing classNames
  */
 try {
   var tx = require("@clutchd/twx").twx;

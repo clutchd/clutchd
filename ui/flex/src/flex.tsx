@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import {
   WithAlignItems,
   WithFlex,
@@ -38,7 +39,7 @@ interface IFlexHtmlProps
 
 /**
  * `Flex` - A primitive flex container that powers various layouts
- * @param props `IFlexProps` used to render this `Flex`
+ * @param props `IFlexHtmlProps` used to render this `Flex`
  * @returns `Flex` component
  */
 const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
@@ -59,7 +60,7 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
   ) => {
     return (
       <Component.div
-        className={[
+        className={cn(
           "flex",
           alignItems,
           flex,
@@ -69,8 +70,8 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
           flexShrink,
           flexWrap,
           justifyContent,
-          className,
-        ].join(" ")}
+          className
+        )}
         ref={forwardedRef}
         {...props}
       />

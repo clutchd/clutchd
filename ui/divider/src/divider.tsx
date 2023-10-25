@@ -1,4 +1,5 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
 
 /**
@@ -24,7 +25,7 @@ interface IDividerHtmlProps
 
 /**
  * `Divider` - A separator used to create space between elements
- * @param props `IDividerProps` used to render this `Divider`
+ * @param props `IDividerHtmlProps` used to render this `Divider`
  * @returns `Divider` component
  */
 const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
@@ -48,12 +49,13 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
     return (
       <Component.div
         {...aria}
-        className={[
+        className={cn(
           "rounded-lg",
           hidden ? "bg-inherit" : "bg-gray-200",
           orientation === "horizontal" ? `h-px` : `w-px`,
-          className,
-        ].join(" ")}
+          className
+        )}
+        data-orientation={orientation}
         ref={forwardedRef}
         {...props}
       />

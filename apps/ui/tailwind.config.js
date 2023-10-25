@@ -11,6 +11,7 @@ module.exports = {
     "./node_modules/@clutchd/copyright/dist/index.js",
     "./node_modules/@clutchd/divider/dist/index.js",
     "./node_modules/@clutchd/flex/dist/index.js",
+    "./node_modules/@clutchd/form/dist/index.js",
     "./node_modules/@clutchd/grid/dist/index.js",
     "./node_modules/@clutchd/input/dist/index.js",
     "./node_modules/@clutchd/label/dist/index.js",
