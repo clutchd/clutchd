@@ -10,7 +10,7 @@ import {
   LabelShowcase,
   Showcase,
   TailwindIndicator,
-  TextInputShowcase,
+  InputShowcase,
 } from "../components";
 
 export const metadata: Metadata = {
@@ -50,10 +50,7 @@ export default function Home() {
         <H1>Components</H1>
         <Divider />
         {/* <TextShowcase /> */}
-        {/* <AvatarShowcase />
-        
-       
-        <InputShowcase /> */}
+        {/* <AvatarShowcase /> */}
         <Showcase
           title="Button"
           description="A simple, focusable, button."
@@ -68,12 +65,14 @@ export default function Home() {
           <FormShowcase />
         </Showcase>
         <Showcase
-          title="TextInput"
-          description={'An input field of type "text".'}
+          title="Input"
+          description={
+            "A primitive input component that powers all types of inputs."
+          }
           pkg="@clutchd/input"
           rsc={false}
         >
-          <TextInputShowcase />
+          <InputShowcase />
         </Showcase>
         <Showcase
           title="Label"

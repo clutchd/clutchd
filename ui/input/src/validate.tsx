@@ -14,16 +14,16 @@ function validateReadOnlyRequired(readOnly?: boolean, required?: boolean) {
   }
 }
 
-function validateType(defaultType: string, type?: string) {
-  if (!type) {
-    return;
-  }
+// function validateType(defaultType: string, type?: string) {
+//   if (!type) {
+//     return;
+//   }
 
-  if (type != defaultType) {
-    console.warn(
-      `The \`type\` attribute must be ${defaultType} on this input.`
-    );
-  }
-}
+//   if (type != defaultType) {
+//     console.warn(
+//       `The \`type\` attribute must be ${defaultType} on this input.`
+//     );
+//   }
+// }
 
-export { validateName, validateReadOnlyRequired, validateType };
+export { validateName, validateReadOnlyRequired };
