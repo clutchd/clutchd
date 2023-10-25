@@ -1,5 +1,20 @@
 # @clutchd/compose-props
 
+## 2.0.0
+
+### Major Changes
+
+- 10988f6: ClassNames are now merged with @clutchd/twx by default, and are overrideable by passing a function to the `twx` component prop.
+
+### Minor Changes
+
+- 08cbf46: Add export for composeClassNames
+
+### Patch Changes
+
+- Updated dependencies [43731cd]
+  - @clutchd/compose-event-handlers@3.0.0
+
 ## 1.4.0
 
 ### Minor Changes

@@ -1,5 +1,12 @@
 # @clutchd/tsconfig
 
+## 1.2.2
+
+### Patch Changes
+
+- ee765fa: Fix the includes setting on nextjs tsconfig
+- ee765fa: Add base url to base tsconfig
+
 ## 1.2.1
 
 ### Patch Changes

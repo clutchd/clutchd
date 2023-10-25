@@ -1,5 +1,21 @@
 # @clutchd/input
 
+## 0.5.0
+
+### Minor Changes
+
+- 4f66174: Component reset, taking back to basics (unstable)
+
+### Patch Changes
+
+- Updated dependencies [10988f6]
+- Updated dependencies [43731cd]
+- Updated dependencies [08cbf46]
+  - @clutchd/compose-props@2.0.0
+  - @clutchd/component@3.0.0
+  - @clutchd/compose-event-handlers@3.0.0
+  - @clutchd/is-empty@2.0.7
+
 ## 0.4.1
 
 ### Patch Changes

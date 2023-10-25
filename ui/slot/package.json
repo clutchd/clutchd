@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/slot",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "A utility component that merges it's props onto it's child.",
   "keywords": [
     "clutchd",

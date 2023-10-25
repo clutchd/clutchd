@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 3.0.0
+
+### Major Changes
+
+- 43731cd: Merge all event-handler packages
+
 ## 2.0.3
 
 ### Patch Changes

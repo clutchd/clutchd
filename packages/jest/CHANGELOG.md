@@ -1,5 +1,11 @@
 # @clutchd/jest
 
+## 1.1.0
+
+### Minor Changes
+
+- 0d0d186: Ignore \*.types.{ts,tsx} files for code coverage
+
 ## 1.0.3
 
 ### Patch Changes

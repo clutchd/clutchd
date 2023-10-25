@@ -1,5 +1,18 @@
 # @clutchd/component
 
+## 3.0.0
+
+### Major Changes
+
+- 10988f6: ClassNames are now merged with @clutchd/twx by default, and are overrideable by passing a function to the `twx` component prop.
+
+### Patch Changes
+
+- Updated dependencies [173a6d4]
+- Updated dependencies [b5da60d]
+  - @clutchd/twx@2.0.0
+  - @clutchd/slot@1.0.14
+
 ## 2.2.2
 
 ### Patch Changes

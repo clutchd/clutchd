@@ -1,5 +1,16 @@
 # @clutchd/landing
 
+## 2.0.5
+
+### Patch Changes
+
+- 0062269: Fix tsconfig files
+- 4edbaf5: Fix padding
+- Updated dependencies [3ead4fb]
+- Updated dependencies [a7f4032]
+  - @clutchd/layout@2.1.3
+  - @clutchd/link@1.4.2
+
 ## 2.0.4
 
 ### Patch Changes

@@ -1,5 +1,21 @@
 # @clutchd/card
 
+## 3.0.0
+
+### Major Changes
+
+- e2f62fe: Remove CardDivider, no longer needed
+
+### Patch Changes
+
+- 3ead4fb: Standardize how classNames are merged
+- 10b9ebd: Fix exports
+- 44d5e1d: Update border style
+- Updated dependencies [10988f6]
+- Updated dependencies [08cbf46]
+  - @clutchd/compose-props@2.0.0
+  - @clutchd/component@3.0.0
+
 ## 2.0.2
 
 ### Patch Changes

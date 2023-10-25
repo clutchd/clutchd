@@ -1,5 +1,16 @@
 # @clutchd/twx
 
+## 2.0.0
+
+### Major Changes
+
+- 173a6d4: Rework entire package to leverage as much of the original tailwind-merge package as possible
+
+### Patch Changes
+
+- Updated dependencies [089ed40]
+  - @clutchd/clsx@1.0.7
+
 ## 1.1.4
 
 ### Patch Changes

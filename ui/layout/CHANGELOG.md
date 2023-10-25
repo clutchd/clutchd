@@ -1,5 +1,19 @@
 # @clutchd/layout
 
+## 2.1.3
+
+### Patch Changes
+
+- 3ead4fb: Standardize how classNames are merged
+- Updated dependencies [3ead4fb]
+- Updated dependencies [52d0851]
+- Updated dependencies [10988f6]
+- Updated dependencies [08cbf46]
+  - @clutchd/flex@4.0.0
+  - @clutchd/compose-props@2.0.0
+  - @clutchd/component@3.0.0
+  - @clutchd/tailwind@3.1.0
+
 ## 2.1.2
 
 ### Patch Changes
