@@ -42,7 +42,7 @@
     "next-auth": "4.24.4",
     "prisma": "4.16.0",
     "tsup": "7.2.0",
-    "typescript": "5.1.6"
+    "typescript": "5.2.2"
   },
   "peerDependencies": {
     "@prisma/client": "^4.9",
