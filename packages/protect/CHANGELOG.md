@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 2.2.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
 ## 2.1.4
 
 ### Patch Changes

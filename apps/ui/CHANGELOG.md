@@ -1,5 +1,27 @@
 # @clutchd/ui
 
+## 0.11.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
+### Patch Changes
+
+- Updated dependencies [a83dc31]
+- Updated dependencies [8c7a155]
+  - @clutchd/copyright@2.2.0
+  - @clutchd/avatar@3.1.0
+  - @clutchd/text@3.1.0
+  - @clutchd/divider@3.1.0
+  - @clutchd/button@1.2.0
+  - @clutchd/input@0.6.0
+  - @clutchd/label@3.1.0
+  - @clutchd/flex@4.1.0
+  - @clutchd/form@0.2.0
+  - @clutchd/link@1.5.0
+  - @clutchd/layout@2.1.4
+
 ## 0.10.3
 
 ### Patch Changes

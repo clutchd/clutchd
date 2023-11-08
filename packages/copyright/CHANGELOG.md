@@ -1,5 +1,16 @@
 # @clutchd/copyright
 
+## 2.2.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
+### Patch Changes
+
+- Updated dependencies [a83dc31]
+  - @clutchd/text@3.1.0
+
 ## 2.1.20
 
 ### Patch Changes

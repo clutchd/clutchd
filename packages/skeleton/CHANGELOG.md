@@ -1,5 +1,11 @@
 # @clutchd/skeleton
 
+## 1.1.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
 ## 1.0.23
 
 ### Patch Changes

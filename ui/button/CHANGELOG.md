@@ -1,5 +1,12 @@
 # @clutchd/button
 
+## 1.2.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+- 8c7a155: Undo variant styles
+
 ## 1.1.0
 
 ### Minor Changes
