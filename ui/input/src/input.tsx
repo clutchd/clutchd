@@ -22,7 +22,7 @@ interface IInputProps {
  */
 interface IInputHtmlProps
   extends IInputProps,
-  IComponentPropsWithoutRef<typeof Component.input> { }
+    IComponentPropsWithoutRef<typeof Component.input> {}
 
 /**
  * Type to define possible `Input` validation states
