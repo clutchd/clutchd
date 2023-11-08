@@ -1,5 +1,11 @@
 # @clutchd/next-auth-prisma-adapter
 
+## 1.1.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
 ## 1.0.5
 
 ### Patch Changes

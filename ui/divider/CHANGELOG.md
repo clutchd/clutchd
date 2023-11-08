@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 3.1.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
 ## 3.0.0
 
 ### Major Changes

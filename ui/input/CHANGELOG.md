@@ -1,5 +1,11 @@
 # @clutchd/input
 
+## 0.6.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
 ## 0.5.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @clutchd/link
 
+## 1.5.0
+
+### Minor Changes
+
+- a83dc31: Update to Next 14
+
 ## 1.4.2
 
 ### Patch Changes
