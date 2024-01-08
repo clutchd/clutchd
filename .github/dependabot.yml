@@ -9,7 +9,7 @@ updates:
     assignees:
       - "CrutchTheClutch"
 
-  # Maintain dependencies for pnpm
+  # Maintain dependencies for npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
