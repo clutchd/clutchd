@@ -1,3 +1,4 @@
+import "@types/jest";
 const config = {
   // Automatically clear mock calls, instances and results before every test
   clearMocks: true,
