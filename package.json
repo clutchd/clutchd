@@ -4,6 +4,7 @@
   "private": true,
   "workspaces": [
     "apps/*",
+    "bench/*",
     "packages/*",
     "ui/*"
   ],
@@ -28,13 +29,14 @@
     "@manypkg/cli": "0.21.0",
     "eslint": "8.56.0",
     "prettier": "2.8.8",
-    "turbo": "1.10.16"
+    "turbo": "latest"
   },
   "manypkg": {
     "ignoredRules": [
       "INTERNAL_MISMATCH"
     ]
   },
+  "packageManager": "bun@1.0.21",
   "engines": {
     "node": ">=18.0.0"
   }
