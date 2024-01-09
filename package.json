@@ -2,19 +2,24 @@
   "name": "clutchd",
   "version": "0.0.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "ui/*"
+  ],
   "scripts": {
     "benchmark": "turbo run benchmark",
     "build": "turbo run build",
     "changeset": "changeset",
     "clean": "find . -type d \\( -name '.next'  -o -name '.turbo' -o -name 'coverage' -o -name 'dist' -o -name 'node_modules' \\) -prune -print -exec rm -rf '{}' \\;",
     "dev": "turbo run dev --parallel",
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "bunx only-allow bun",
     "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",
     "postinstall": "manypkg check",
     "lint": "turbo run lint",
     "release": "turbo run build && changeset publish",
     "test": "turbo run test",
-    "typesync": "npx typesync",
+    "typesync": "bunx typesync",
     "version-packages": "changeset version"
   },
   "dependencies": {
@@ -31,7 +36,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=18.0.0"
   }
 }
