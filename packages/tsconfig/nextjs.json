@@ -16,7 +16,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "types": ["node", "jest", "react", "react-dom"],
+    "types": ["bun-types", "node", "react", "react-dom"],
     "plugins": [
       {
         "name": "next"

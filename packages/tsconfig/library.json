@@ -7,6 +7,6 @@
     "lib": ["ES2019", "DOM"],
     "module": "ESNext",
     "jsx": "react",
-    "types": ["node", "jest"]
+    "types": ["bun-types", "node"]
   }
 }
