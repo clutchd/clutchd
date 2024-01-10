@@ -1,3 +1,4 @@
+import { expect, test } from "bun:test";
 import { getInitials } from "./getInitials";
 
 test("handles null", async () => {
