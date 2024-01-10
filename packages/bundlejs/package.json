@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
+    "@types/bun": "latest",
     "@types/node": "20.9.2",
     "@types/node-fetch": "2.6.4",
     "tsup": "7.2.0",

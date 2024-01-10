@@ -36,6 +36,7 @@
   "devDependencies": {
     "@clutchd/tailwind": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
+    "@types/bun": "latest",
     "@types/node": "20.9.2",
     "@types/react": "18.2.47",
     "@types/react-dom": "18.2.6",

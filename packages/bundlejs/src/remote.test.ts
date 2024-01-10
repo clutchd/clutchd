@@ -1,3 +1,4 @@
+import { expect, test } from "bun:test";
 import { getRemoteSize } from ".";
 
 test("ensures the remote size compression functions with bundlephobia", async () => {
