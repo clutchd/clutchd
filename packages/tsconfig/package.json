@@ -24,12 +24,31 @@
     "@types/bun": "latest",
     "@types/node": "20.9.2",
     "@types/react": "18.2.47",
-    "@types/react-dom": "18.2.6"
+    "@types/react-dom": "18.2.18",
+    "@types/web": "latest"
   },
   "peerDependencies": {
     "@types/bun": "latest",
     "@types/node": "^20.3",
     "@types/react": "^18.2",
-    "@types/react-dom": "^18.2"
+    "@types/react-dom": "^18.2",
+    "@types/web": "latest"
+  },
+  "peerDependenciesMeta": {
+    "@types/bun": {
+      "optional": true
+    },
+    "@types/node": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    },
+    "@types/react-dom": {
+      "optional": true
+    },
+    "@types/web": {
+      "optional": true
+    }
   }
 }

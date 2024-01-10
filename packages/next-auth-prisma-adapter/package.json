@@ -33,9 +33,6 @@
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
     "@prisma/client": "4.9.0",
-    "@types/node": "20.9.2",
-    "@types/react": "18.2.47",
-    "@types/react-dom": "18.2.6",
     "next-auth": "4.24.4",
     "prisma": "5.5.2",
     "tsup": "7.2.0",
