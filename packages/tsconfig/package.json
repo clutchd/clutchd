@@ -21,15 +21,15 @@
     "library.json"
   ],
   "devDependencies": {
+    "@types/bun": "latest",
     "@types/node": "20.9.2",
     "@types/react": "18.2.47",
-    "@types/react-dom": "18.2.6",
-    "bun-types": "^1.0.21"
+    "@types/react-dom": "18.2.6"
   },
   "peerDependencies": {
+    "@types/bun": "latest",
     "@types/node": "^20.3",
     "@types/react": "^18.2",
-    "@types/react-dom": "^18.2",
-    "bun-types": "^1.0.21"
+    "@types/react-dom": "^18.2"
   }
 }

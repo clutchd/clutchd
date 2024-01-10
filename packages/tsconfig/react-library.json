@@ -3,6 +3,6 @@
   "display": "React Library",
   "extends": "./library.json",
   "compilerOptions": {
-    "types": ["bun-types", "node", "react", "react-dom"]
+    "types": ["@types/bun", "node", "react", "react-dom"]
   }
 }
