@@ -15,7 +15,7 @@
     "dev": "turbo run dev --parallel",
     "preinstall": "bunx only-allow bun",
     "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",
-    "postinstall": "bunx patch-package && manypkg check",
+    "postinstall": "manypkg check",
     "lint": "turbo run lint",
     "release": "turbo run build && changeset publish",
     "test": "turbo run test",
