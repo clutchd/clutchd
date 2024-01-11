@@ -1,8 +1,8 @@
-describe("Example", () => {
-  test("Example Test", () => {
-    const logSpy = jest.spyOn(console, "log");
-    console.log("logged");
-    expect(logSpy).toHaveBeenCalledWith("logged");
-    expect(logSpy).toHaveBeenCalledTimes(1);
-  });
+import { expect, spyOn, test } from "bun:test";
+
+test("example test", () => {
+  const spy = spyOn(console, "log");
+  console.log("logged");
+  expect(spy).toHaveBeenCalledWith("logged");
+  expect(spy).toHaveBeenCalledTimes(1);
 });
