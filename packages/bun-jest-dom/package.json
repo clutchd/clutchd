@@ -1,0 +1,55 @@
+{
+  "name": "@clutchd/bun-jest-dom",
+  "version": "0.0.0",
+  "description": "Custom jest-dom types for bun support",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "import": {
+        "types": "./index.d.ts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "files": [
+    "dist",
+    "*.d.ts",
+    "bun.js"
+  ],
+  "keywords": [
+    "testing",
+    "dom",
+    "jest",
+    "jsdom",
+    "bun"
+  ],
+  "dependencies": {
+    "@testing-library/jest-dom": "6.2.0"
+  },
+  "devDependencies": {
+    "@clutchd/tsconfig": "workspace:*",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@types/bun": "latest",
+    "@types/web": "latest",
+    "rollup-plugin-delete": "^2.0.0",
+    "typescript": "5.2.2"
+  },
+  "peerDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependenciesMeta": {
+    "@types/bun": {
+      "optional": true
+    }
+  }
+}
