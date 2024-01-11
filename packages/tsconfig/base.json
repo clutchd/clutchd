@@ -22,7 +22,12 @@
       "module": "CommonJS"
     }
   },
-  "include": ["/**/*.ts", "/**/*.tsx", "/**/*.d.ts"],
+  "include": [
+    "/**/*.ts",
+    "/**/*.tsx",
+    "/**/*.d.ts",
+    "/**/node_modules/@clutchd/**/*.d.t.ts"
+  ],
   "exclude": [
     "/**/build",
     "/**/dist",

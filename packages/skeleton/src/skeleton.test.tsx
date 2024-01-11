@@ -1,4 +1,5 @@
 import { render } from "@testing-library/react";
+import { expect, test } from "bun:test";
 import React from "react";
 import { Skeleton } from ".";
 
