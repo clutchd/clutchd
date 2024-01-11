@@ -21,6 +21,10 @@ jobs:
         with:
           bun-version: latest
 
+      - name: Install Dependencies
+        shell: bash
+        run: pnpm i
+
       - name: Lint
         id: lint
         run: bun run lint
