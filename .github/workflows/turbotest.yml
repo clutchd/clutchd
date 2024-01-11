@@ -29,11 +29,11 @@ jobs:
 
       - name: Lint
         id: lint
-        run: pnpm run lint
+        run: bun run lint
 
       - name: Test
         id: test
-        run: pnpm run test
+        run: bun run test
 
       - name: Upload Code Coverage
         id: codecov
@@ -48,4 +48,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
+          publish: bun run release
