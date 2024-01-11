@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Dependencies
         shell: bash
-        run: pnpm i
+        run: bun i
 
       - name: Lint
         id: lint
