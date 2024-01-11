@@ -1,4 +1,5 @@
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
+import { expect, test } from "bun:test";
 import { readFileSync } from "fs";
 import { isEmpty } from ".";
 
