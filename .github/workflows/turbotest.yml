@@ -21,6 +21,9 @@ jobs:
         with:
           bun-version: latest
 
+      - name: Checkout Repo
+        uses: actions/checkout@v3.3.0
+
       - name: Install Dependencies
         shell: bash
         run: bun i
