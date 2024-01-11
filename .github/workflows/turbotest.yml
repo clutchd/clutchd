@@ -17,17 +17,17 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
-      - name: Setup Environment
-        id: setup
-        uses: clutchd/turbostart-pnpm@v3.0.0
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
 
       - name: Lint
         id: lint
-        run: pnpm run lint
+        run: bun run lint
 
       - name: Test
         id: test
-        run: pnpm run test
+        run: bun run test
 
       - name: Upload Code Coverage
         id: codecov
@@ -42,4 +42,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
+          publish: bun run release
