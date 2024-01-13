@@ -1,5 +1,7 @@
+import "@clutchd/bun-jest-dom";
 import { render } from "@testing-library/react";
-import * as React from "react";
+import { expect, test } from "bun:test";
+import React from "react";
 import { Button } from ".";
 
 test("render button", () => {
