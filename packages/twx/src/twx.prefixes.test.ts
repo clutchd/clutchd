@@ -1,5 +1,6 @@
 // unmodified from https://github.com/dcastil/tailwind-merge/blob/main/tests/prefixes.test.ts v1.14.0
 
+import { expect, test } from "bun:test";
 import { extendTwx } from ".";
 
 test("prefix working correctly", () => {

@@ -1,5 +1,6 @@
 // unmodified from https://github.com/dcastil/tailwind-merge/blob/main/tests/tw-merge.test.ts v1.14.0
 
+import { expect, test } from "bun:test";
 import { twx } from ".";
 
 test("twx", () => {

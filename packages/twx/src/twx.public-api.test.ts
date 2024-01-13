@@ -1,14 +1,15 @@
 // modified from https://github.com/dcastil/tailwind-merge/blob/main/tests/public-api.test.ts v1.14.0
 // replaces twJoin with clsx
 
+import { expect, test } from "bun:test";
 import {
   Config,
+  clsx,
   createTwx,
   extendTwx,
   fromTheme,
   getDefaultConfig,
   mergeConfigs,
-  clsx,
   twx,
   validators,
 } from ".";
@@ -72,15 +73,10 @@ test("twx() has correct inputs and outputs", () => {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const noRun = () => {
-    // @ts-expect-error
     twx(123);
-    // @ts-expect-error
     twx(true);
-    // @ts-expect-error
     twx({});
-    // @ts-expect-error
     twx(new Date());
-    // @ts-expect-error
     twx(() => {});
   };
 });
@@ -138,15 +134,10 @@ test("createTwx() has correct inputs and outputs", () => {
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const noRun = () => {
-    // @ts-expect-error
     tailwindMerge(123);
-    // @ts-expect-error
     tailwindMerge(true);
-    // @ts-expect-error
     tailwindMerge({});
-    // @ts-expect-error
     tailwindMerge(new Date());
-    // @ts-expect-error
     tailwindMerge(() => {});
   };
 });

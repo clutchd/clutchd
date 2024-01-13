@@ -1,5 +1,6 @@
 // unmodified from https://github.com/dcastil/tailwind-merge/blob/main/tests/create-tailwind-merge.test.ts v1.14.0
 
+import { expect, test } from "bun:test";
 import { createTwx } from ".";
 
 test("createTwx works with single config function", () => {

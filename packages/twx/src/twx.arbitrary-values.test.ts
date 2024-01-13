@@ -1,5 +1,6 @@
 // unmodified from https://github.com/dcastil/tailwind-merge/blob/main/tests/arbitrary-values.test.ts v1.14.0
 
+import { expect, test } from "bun:test";
 import { twx } from ".";
 
 test("handles simple conflicts with arbitrary values correctly", () => {
