@@ -1,4 +1,6 @@
+import "@clutchd/bun-jest-dom";
 import { render } from "@testing-library/react";
+import { expect, test } from "bun:test";
 import * as React from "react";
 import { Divider } from ".";
 
