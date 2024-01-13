@@ -37,8 +37,6 @@
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "@types/bun": "^1.0.1",
-    "@types/node-fetch": "2.6.10",
     "node-fetch": "2.6.7",
     "tsup": "7.2.0",
     "typescript": "5.2.2"

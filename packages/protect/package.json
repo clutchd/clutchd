@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "@types/react": "18.2.47",
     "next": "14.0.4",
     "next-auth": "4.24.4",
     "postcss": "8.4.31",
