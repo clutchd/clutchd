@@ -2,6 +2,7 @@ import { clsx } from ".";
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
 import pkg from "../package.json";
 import { readFileSync } from "fs";
+import { expect, test } from "bun:test";
 
 test("exports", () => {
   expect(typeof clsx).toEqual("function");
@@ -14,7 +15,7 @@ test("ensures the bundle size is accurate", async () => {
     if (match == null) return "";
     return parseInt(match[1]);
   }
-  const pkgSize = getClaimedSize(pkg.description);
+  const pkgSize = getClaimedSize(pkg.description) || -1;
   const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
   expect(size.rawCompressedSize).toEqual(pkgSize);
 });

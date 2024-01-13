@@ -1,3 +1,4 @@
+import { expect, test } from "bun:test";
 import { mergeEventHandlers } from ".";
 
 test("exports", () => {

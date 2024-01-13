@@ -1,10 +1,12 @@
+import { expect, test } from "bun:test";
+
 let data;
 
 try {
   data = require("../clsx.benchmark.json");
 } catch (e) {
   console.warn(
-    "clsx.benchmark.json not found. Please run `pnpm run benchmark` first."
+    "clsx.benchmark.json not found. Please run `bun run benchmark` first."
   );
 }
 

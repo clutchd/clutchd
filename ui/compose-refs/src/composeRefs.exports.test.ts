@@ -1,6 +1,7 @@
-import { composeRefs } from ".";
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
+import { expect, test } from "bun:test";
 import { readFileSync } from "fs";
+import { composeRefs } from ".";
 
 test("exports", () => {
   expect(typeof composeRefs).toEqual("function");
