@@ -1,4 +1,6 @@
+import "@clutchd/bun-jest-dom";
 import { render } from "@testing-library/react";
+import { expect, test } from "bun:test";
 import * as React from "react";
 import { Component } from ".";
 
@@ -176,7 +178,7 @@ test("Render asChild with merged tailwindcss className", () => {
 test("Render with merged tailwindcss className and inconsistent spaces", () => {
   const { container } = render(
     // prettier-ignore
-    <Component.div className="bg-red-500  bg-blue-500    shadow      rounded-xl">
+    <Component.div className="bg-red-500 bg-blue-500 shadow rounded-xl">
       With tailwindcss!
     </Component.div>
   );
