@@ -17,7 +17,7 @@ function DarkModeToggle({ initialValue }: { initialValue: Theme }) {
       setTheme(
         window.matchMedia("(prefers-color-scheme: dark)").matches
           ? "dark"
-          : "light"
+          : "light",
       );
     }
   }, [theme]);
@@ -26,7 +26,7 @@ function DarkModeToggle({ initialValue }: { initialValue: Theme }) {
     <button
       type="button"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="fixed z-50 flex items-center justify-center h-6 p-2 font-mono text-xs text-white bg-gray-800 rounded-full top-1 right-1"
+      className="fixed right-1 top-1 z-50 flex h-6 items-center justify-center rounded-full bg-gray-800 p-2 font-mono text-xs text-white"
     >
       {theme === "dark" ? "dark" : "light"}
     </button>

@@ -16,7 +16,7 @@ test("render with valid child", () => {
     // @ts-ignore
     <Slot asdf={"1234"}>
       <p>Rendering a component as a valid paragraph!</p>
-    </Slot>
+    </Slot>,
   );
 
   const p = container.querySelector("p");
@@ -33,7 +33,7 @@ test("render with valid child and props", () => {
     <Slot asdf={"1234"}>
       {/* @ts-ignore */}
       <p asdf="asdf">Rendering a component as a valid paragraph!</p>
-    </Slot>
+    </Slot>,
   );
 
   const p = container.querySelector("p");
@@ -47,7 +47,7 @@ test("render with valid child and props", () => {
 test("render with invalid and undefined child", () => {
   const { container } = render(
     // @ts-ignore
-    <Slot asdf="asdf">{null}</Slot>
+    <Slot asdf="asdf">{null}</Slot>,
   );
 
   const div = container.querySelector("div");
@@ -60,18 +60,18 @@ test("render with invalid and undefined child", () => {
 
 test("render with invalid child", () => {
   const { container } = render(
-    <Slot>Rendering a div as an invalid string!</Slot>
+    <Slot>Rendering a div as an invalid string!</Slot>,
   );
   expect(container.hasChildNodes()).toEqual(true);
   expect(container.textContent).toEqual(
-    "Rendering a div as an invalid string!"
+    "Rendering a div as an invalid string!",
   );
 });
 
 test("render with invalid child and props", () => {
   const { container } = render(
     // @ts-ignore
-    <Slot asdf={"1234"}>Rendering a div as an invalid string!</Slot>
+    <Slot asdf={"1234"}>Rendering a div as an invalid string!</Slot>,
   );
 
   const div = container.querySelector("div");
@@ -89,7 +89,7 @@ test("render with multiple children", () => {
       <p asdf="asdf">Rendering a div as a paragraph!</p>
       {/* @ts-ignore */}
       <div asdf="qwerty">Rendering a div as another div!</div>
-    </Slot>
+    </Slot>,
   );
 
   const p = container.querySelector("p");
@@ -111,7 +111,7 @@ test("Render with multiple children and props", () => {
       <p asdf="asdf">Rendering a div as a paragraph!</p>
       {/* @ts-ignore */}
       <div asdf="qwerty">Rendering a div as another div!</div>
-    </Slot>
+    </Slot>,
   );
 
   const root = container.querySelector("div");
@@ -134,7 +134,7 @@ test("render with valid child and className props", () => {
     <Slot className="bg-red-500">
       {/* @ts-ignore */}
       <p className="shadow-xl">Rendering a component as a valid paragraph!</p>
-    </Slot>
+    </Slot>,
   );
 
   const p = container.querySelector("p");

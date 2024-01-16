@@ -30,8 +30,8 @@ const Link = React.forwardRef<ILink, ILinkHtmlProps>(
     return (
       <Component.a
         className={cn(
-          "cursor-pointer focus:outline-2 focus:outline-blue-500 focus:outline-offset-4",
-          className
+          "cursor-pointer focus:outline-2 focus:outline-offset-4 focus:outline-blue-500",
+          className,
         )}
         asChild
         {...props}
@@ -41,7 +41,7 @@ const Link = React.forwardRef<ILink, ILinkHtmlProps>(
         </NextLink>
       </Component.a>
     );
-  }
+  },
 );
 
 Link.displayName = "Link";

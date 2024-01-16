@@ -21,7 +21,7 @@ test("render col with custom col span", () => {
       colSpanLg="lg:col-span-8"
       colSpanXl="xl:col-span-10"
       colSpan2xl="2xl:col-span-12"
-    />
+    />,
   );
 
   const div = container.querySelector("div");
@@ -45,7 +45,7 @@ test("render col with custom row span", () => {
       rowSpanLg="lg:row-span-4"
       rowSpanXl="xl:row-span-5"
       rowSpan2xl="2xl:row-span-6"
-    />
+    />,
   );
 
   const div = container.querySelector("div");

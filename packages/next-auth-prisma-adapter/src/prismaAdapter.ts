@@ -30,7 +30,7 @@ function PrismaAdapter(client: PrismaClient): Adapter {
       provider_providerAccountId: Pick<
         AdapterAccount,
         "provider" | "providerAccountId"
-      >
+      >,
     ) {
       const account = await client.account.findUnique({
         where: { provider_providerAccountId },
@@ -66,7 +66,7 @@ function PrismaAdapter(client: PrismaClient): Adapter {
       provider_providerAccountId: Pick<
         AdapterAccount,
         "provider" | "providerAccountId"
-      >
+      >,
     ) =>
       client.account.delete({
         where: { provider_providerAccountId },
@@ -96,7 +96,7 @@ function PrismaAdapter(client: PrismaClient): Adapter {
         },
       }) as Awaitable<AdapterSession>,
     updateSession: (
-      data: Partial<AdapterSession> & Pick<AdapterSession, "sessionToken">
+      data: Partial<AdapterSession> & Pick<AdapterSession, "sessionToken">,
     ) =>
       client.session.update({
         where: { sessionToken: data.sessionToken },

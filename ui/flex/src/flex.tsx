@@ -56,7 +56,7 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
       justifyContent,
       ...props
     },
-    forwardedRef
+    forwardedRef,
   ) => {
     return (
       <Component.div
@@ -70,13 +70,13 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
           flexShrink,
           flexWrap,
           justifyContent,
-          className
+          className,
         )}
         ref={forwardedRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 Flex.displayName = "Flex";

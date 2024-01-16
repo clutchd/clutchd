@@ -30,14 +30,14 @@ async function main() {
   bench(
     "objects",
     { foo: true, bar: true, bax: true, bux: false },
-    { baz: true, bax: false, bux: true }
+    { baz: true, bax: false, bux: true },
   );
   bench("arrays", ["foo", "bar"], ["baz", "bax", "bux"]);
   bench("nested_arrays", ["foo", ["bar"]], ["baz", ["bax", ["bux"]]]);
   bench(
     "nested_objects",
     ["foo", { bar: true, bax: true, bux: false }],
-    ["bax", { bax: false, bux: true }]
+    ["bax", { bax: false, bux: true }],
   );
   bench("mixed", "foo", "bar", { bax: true, bux: false }, [
     "baz",
@@ -52,7 +52,7 @@ async function main() {
     NaN,
     () => {},
     { bax: true, bux: false, 123: true },
-    ["baz", { bax: false, bux: true, abc: null }, {}]
+    ["baz", { bax: false, bux: true, abc: null }, {}],
   );
   await fsp
     .writeFile("./clsx.benchmark.json", JSON.stringify(results))

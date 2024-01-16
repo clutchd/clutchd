@@ -9,7 +9,7 @@ export interface LruCache<Key, Value> {
 
 // LRU cache inspired from hashlru (https://github.com/dominictarr/hashlru/blob/v1.0.4/index.js) but object replaced with Map to improve performance
 export function createLruCache<Key, Value>(
-  maxCacheSize: number
+  maxCacheSize: number,
 ): LruCache<Key, Value> {
   if (maxCacheSize < 1) {
     return {

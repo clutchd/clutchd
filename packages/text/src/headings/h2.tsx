@@ -24,7 +24,7 @@ const H2 = React.forwardRef<
   return (
     <h2
       className={[
-        "font-bold text-2xl sm:text-3xl mt-10 mb-6",
+        "mb-6 mt-10 text-2xl font-bold sm:text-3xl",
         "text-gray-900 dark:text-gray-50",
         className,
       ].join(" ")}

@@ -19,10 +19,10 @@ test("createTwx works with single config function", () => {
 
   expect(tailwindMerge("")).toBe("");
   expect(tailwindMerge("my-modifier:fooKey-bar my-modifier:fooKey-baz")).toBe(
-    "my-modifier:fooKey-baz"
+    "my-modifier:fooKey-baz",
   );
   expect(
-    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz")
+    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz"),
   ).toBe("other-modifier:fooKey-baz");
   expect(tailwindMerge("group fooKey-bar")).toBe("fooKey-bar");
   expect(tailwindMerge("fooKey-bar group")).toBe("group");
@@ -35,7 +35,7 @@ test("createTwx works with single config function", () => {
       // @ts-expect-error
       (config: any) => {
         return config;
-      }
+      },
     );
   };
 });
@@ -68,15 +68,15 @@ test("createTwx works with multiple config functions", () => {
           "helloFromSecondConfig",
         ],
       },
-    })
+    }),
   );
 
   expect(tailwindMerge("")).toBe("");
   expect(tailwindMerge("my-modifier:fooKey-bar my-modifier:fooKey-baz")).toBe(
-    "my-modifier:fooKey-baz"
+    "my-modifier:fooKey-baz",
   );
   expect(
-    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz")
+    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz"),
   ).toBe("other-modifier:fooKey-baz");
   expect(tailwindMerge("group fooKey-bar")).toBe("fooKey-bar");
   expect(tailwindMerge("fooKey-bar group")).toBe("group");
@@ -85,7 +85,7 @@ test("createTwx works with multiple config functions", () => {
 
   expect(tailwindMerge("second:group second:nother")).toBe("second:nother");
   expect(tailwindMerge("fooKey-bar hello-there")).toBe(
-    "fooKey-bar hello-there"
+    "fooKey-bar hello-there",
   );
   expect(tailwindMerge("hello-there fooKey-bar")).toBe("fooKey-bar");
 });

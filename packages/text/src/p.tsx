@@ -24,7 +24,7 @@ const P = React.forwardRef<
   return (
     <p
       className={[
-        "font-baseline text-sm sm:text-base lg:text-lg my-6",
+        "font-baseline my-6 text-sm sm:text-base lg:text-lg",
         "text-gray-700 dark:text-gray-300",
         className,
       ].join(" ")}

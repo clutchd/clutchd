@@ -30,8 +30,8 @@ const Card = React.forwardRef<ICard, ICardHtmlProps>(
     return (
       <Component.div
         className={cn(
-          "relative rounded-lg shadow border border-gray-950/10 bg-white",
-          className
+          "relative rounded-lg border border-gray-950/10 bg-white shadow",
+          className,
         )}
         ref={forwardedRef}
         {...props}
@@ -39,7 +39,7 @@ const Card = React.forwardRef<ICard, ICardHtmlProps>(
         {children}
       </Component.div>
     );
-  }
+  },
 );
 
 Card.displayName = "Card";

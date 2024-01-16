@@ -46,7 +46,7 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
       rowSpan2xl,
       ...props
     },
-    forwardedRef
+    forwardedRef,
   ) => {
     return (
       <Component.div
@@ -63,13 +63,13 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
           rowSpanLg,
           rowSpanXl,
           rowSpan2xl,
-          className
+          className,
         )}
         ref={forwardedRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 GridCol.displayName = "GridCol";

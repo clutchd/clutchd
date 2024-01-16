@@ -30,15 +30,15 @@ const Page = React.forwardRef<IPage, IPageHtmlProps>(
     return (
       <Flex
         className={cn(
-          "min-h-screen min-w-screen subpixel-antialiased transition-all duration-150 ease-out",
-          className
+          "min-w-screen min-h-screen subpixel-antialiased transition-all duration-150 ease-out",
+          className,
         )}
         flexDirection={flexDirection}
         ref={forwardedRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 Page.displayName = "Page";

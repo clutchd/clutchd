@@ -26,7 +26,7 @@ function composeProps(...props: Record<string, any>[]) {
  */
 function mergeProps(
   originalProps: Record<string, any>,
-  newProps: Record<string, any>
+  newProps: Record<string, any>,
 ): Record<string, any> {
   // iterate through all provided prop names
   for (const propName in newProps) {
@@ -37,7 +37,7 @@ function mergeProps(
     ) {
       newProps[propName] = composeEventHandlers(
         originalProps[propName],
-        newProps[propName]
+        newProps[propName],
       );
     }
 
@@ -45,7 +45,7 @@ function mergeProps(
     else if (propName === "className") {
       newProps[propName] = composeClassNames(
         originalProps[propName],
-        newProps[propName]
+        newProps[propName],
       );
     }
 

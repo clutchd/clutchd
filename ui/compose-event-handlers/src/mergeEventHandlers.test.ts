@@ -25,7 +25,7 @@ test("merge 2 valid handlers", async () => {
   mergeEventHandlers(
     getEvent(),
     (e) => console.log("first"),
-    (e) => console.log("second")
+    (e) => console.log("second"),
   );
   getEvent();
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -39,7 +39,7 @@ test("compose 3 valid handlers", async () => {
     getEvent(),
     (e) => console.log("first"),
     (e) => console.log("second"),
-    (e) => console.log("third")
+    (e) => console.log("third"),
   );
   getEvent();
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -54,7 +54,7 @@ test("compose 3 handlers (2 valid, 1 invalid)", async () => {
     getEvent(),
     (e) => console.log("first"),
     undefined,
-    (e) => console.log("third")
+    (e) => console.log("third"),
   );
   getEvent();
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -67,7 +67,7 @@ test("compose 2 valid handlers with defaultPrevented", async () => {
   mergeEventHandlers(
     getEvent(),
     (e) => console.log("first"),
-    (e) => console.log("second")
+    (e) => console.log("second"),
   );
   getEvent()?.preventDefault();
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -81,7 +81,7 @@ test("compose 3 valid handlers with defaultPrevented", async () => {
     getEvent(),
     (e) => console.log("first"),
     (e) => console.log("second"),
-    (e) => console.log("third")
+    (e) => console.log("third"),
   );
   getEvent()?.preventDefault();
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -96,7 +96,7 @@ test("compose 3 handlers with defaultPrevented (2 valid, 1 invalid)", async () =
     getEvent(),
     (e) => console.log("first"),
     undefined,
-    (e) => console.log("third")
+    (e) => console.log("third"),
   );
   getEvent()?.preventDefault();
   expect(logSpy).toHaveBeenCalledWith("first");

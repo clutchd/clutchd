@@ -56,18 +56,18 @@ test("twx() has correct inputs and outputs", () => {
   expect(twx("-:-:-:::---h-")).toStrictEqual(expect.any(String));
   expect(twx("hello world", "-:-:-:::---h-")).toStrictEqual(expect.any(String));
   expect(twx("hello world", "-:-:-:::---h-", "", "something")).toStrictEqual(
-    expect.any(String)
+    expect.any(String),
   );
   expect(twx("hello world", undefined)).toStrictEqual(expect.any(String));
   expect(twx("hello world", undefined, null)).toStrictEqual(expect.any(String));
   expect(twx("hello world", undefined, null, false)).toStrictEqual(
-    expect.any(String)
+    expect.any(String),
   );
   expect(twx("hello world", [undefined], [null, false])).toStrictEqual(
-    expect.any(String)
+    expect.any(String),
   );
   expect(
-    twx("hello world", [undefined], [null, [false, "some-class"], []])
+    twx("hello world", [undefined], [null, [false, "some-class"], []]),
   ).toStrictEqual(expect.any(String));
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -93,7 +93,7 @@ test("createTwx() has correct inputs and outputs", () => {
       theme: {},
       classGroups: {},
       conflictingClassGroups: {},
-    }))
+    })),
   ).toStrictEqual(expect.any(Function));
 
   const tailwindMerge = createTwx(() => ({
@@ -115,25 +115,29 @@ test("createTwx() has correct inputs and outputs", () => {
   expect(tailwindMerge("hello world")).toStrictEqual(expect.any(String));
   expect(tailwindMerge("-:-:-:::---h-")).toStrictEqual(expect.any(String));
   expect(tailwindMerge("hello world", "-:-:-:::---h-")).toStrictEqual(
-    expect.any(String)
+    expect.any(String),
   );
   expect(
-    tailwindMerge("hello world", "-:-:-:::---h-", "", "something")
+    tailwindMerge("hello world", "-:-:-:::---h-", "", "something"),
   ).toStrictEqual(expect.any(String));
   expect(tailwindMerge("hello world", undefined)).toStrictEqual(
-    expect.any(String)
+    expect.any(String),
   );
   expect(tailwindMerge("hello world", undefined, null)).toStrictEqual(
-    expect.any(String)
+    expect.any(String),
   );
   expect(tailwindMerge("hello world", undefined, null, false)).toStrictEqual(
-    expect.any(String)
+    expect.any(String),
   );
   expect(
-    tailwindMerge("hello world", [undefined], [null, false])
+    tailwindMerge("hello world", [undefined], [null, false]),
   ).toStrictEqual(expect.any(String));
   expect(
-    tailwindMerge("hello world", [undefined], [null, [false, "some-class"], []])
+    tailwindMerge(
+      "hello world",
+      [undefined],
+      [null, [false, "some-class"], []],
+    ),
   ).toStrictEqual(expect.any(String));
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -178,8 +182,8 @@ test("mergeConfigs has correct inputs and outputs", () => {
         },
         conflictingClassGroups: {},
       },
-      {}
-    )
+      {},
+    ),
   ).toStrictEqual(expect.any(Object));
 });
 
@@ -197,6 +201,6 @@ test("clsx has correct inputs and outputs", () => {
   expect(clsx()).toStrictEqual(expect.any(String));
   expect(clsx("")).toStrictEqual(expect.any(String));
   expect(
-    clsx("", [false, null, undefined, 0, [], [false, [""], ""]])
+    clsx("", [false, null, undefined, 0, [], [false, [""], ""]]),
   ).toStrictEqual(expect.any(String));
 });

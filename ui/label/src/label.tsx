@@ -28,7 +28,7 @@ const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
   ({ onMouseDown, ...props }, forwardedRef) => {
     // disable the label's text highlight
     const disableLabelHighlight = (
-      event: React.MouseEvent<HTMLLabelElement, MouseEvent>
+      event: React.MouseEvent<HTMLLabelElement, MouseEvent>,
     ) => {
       if (event.detail > 1) {
         event.preventDefault();
@@ -39,13 +39,13 @@ const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
       <Component.label
         onMouseDown={composePreventableEventHandlers(
           onMouseDown,
-          disableLabelHighlight
+          disableLabelHighlight,
         )}
         ref={forwardedRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 Label.displayName = "Label";

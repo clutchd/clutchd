@@ -27,7 +27,7 @@ interface ISubmitHtmlProps
 const Submit = React.forwardRef<ISubmit, ISubmitHtmlProps>(
   ({ type = "submit", ...props }, forwardedRef) => {
     return <Button type={type} ref={forwardedRef} {...props} />;
-  }
+  },
 );
 
 Submit.displayName = "Submit";

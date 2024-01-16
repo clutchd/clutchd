@@ -32,7 +32,7 @@ const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
       justifyContent = "justify-between",
       ...props
     },
-    forwardedRef
+    forwardedRef,
   ) => {
     return (
       <Flex
@@ -44,7 +44,7 @@ const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
         <footer ref={forwardedRef}>{children}</footer>
       </Flex>
     );
-  }
+  },
 );
 
 Footer.displayName = "Footer";

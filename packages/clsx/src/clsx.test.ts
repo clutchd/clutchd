@@ -9,7 +9,7 @@ test("keeps object keys with truthy values", () => {
       d: null,
       e: undefined,
       f: 1,
-    })
+    }),
   ).toEqual("a f");
 });
 
@@ -88,8 +88,8 @@ test("handles all types of truthy and falsy property values as expected", () => 
       emptyList: [],
       nonEmptyList: [1, 2, 3],
       greaterZero: 1,
-    })
+    }),
   ).toEqual(
-    "nonEmptyString whitespace function emptyObject nonEmptyObject emptyList nonEmptyList greaterZero"
+    "nonEmptyString whitespace function emptyObject nonEmptyObject emptyList nonEmptyList greaterZero",
   );
 });

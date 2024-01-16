@@ -29,7 +29,7 @@ const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
     return (
       <div className={cn("block", className)} ref={forwardedRef} {...props} />
     );
-  }
+  },
 );
 
 Block.displayName = "Block";

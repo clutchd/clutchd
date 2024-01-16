@@ -22,7 +22,7 @@ const Small = React.forwardRef<
 >((props, forwardedRef) => {
   return (
     <small
-      className={["text-xs sm:text-sm font-medium leading-none"].join(" ")}
+      className={["text-xs font-medium leading-none sm:text-sm"].join(" ")}
       {...props}
       ref={forwardedRef}
     />

@@ -11,6 +11,6 @@ test("render button", () => {
   expect(button).toBeInTheDocument();
   expect(button).toHaveAttribute(
     "class",
-    "cursor-pointer disabled:pointer-events-none disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500/50 focus-visible:outline-offset-2"
+    "cursor-pointer disabled:pointer-events-none disabled:opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500/50 focus-visible:outline-offset-2",
   );
 });

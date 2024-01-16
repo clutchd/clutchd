@@ -32,7 +32,7 @@ test("render grid with custom cols", () => {
       gridColsLg="lg:grid-cols-8"
       gridColsXl="xl:grid-cols-10"
       gridCols2xl="2xl:grid-cols-12"
-    />
+    />,
   );
 
   const div = container.querySelector("div");

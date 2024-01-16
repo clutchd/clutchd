@@ -11,7 +11,7 @@ test("theme scale can be extended", () => {
   });
 
   expect(tailwindMerge("p-3 p-my-space p-my-margin")).toBe(
-    "p-my-space p-my-margin"
+    "p-my-space p-my-margin",
   );
   expect(tailwindMerge("m-3 m-my-space m-my-margin")).toBe("m-my-margin");
 });

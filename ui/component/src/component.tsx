@@ -81,12 +81,12 @@ const Component = NODES.reduce((tag, node) => {
   const Node = React.forwardRef(
     (
       { asChild, twx = tx, ...props }: IComponentPropsWithRef<typeof node>,
-      forwardedRef: any
+      forwardedRef: any,
     ) => {
       if (tx && props?.className) props.className = twx(props.className);
       const Comp: any = asChild ? Slot : node;
       return <Comp ref={forwardedRef} {...props} />;
-    }
+    },
   );
 
   Node.displayName = `Component.${node}`;

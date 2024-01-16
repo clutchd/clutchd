@@ -46,7 +46,7 @@ const Slot = React.forwardRef<ISlot, ISlotProps>(
         <>{children}</>
       </Slot>
     );
-  }
+  },
 );
 
 Slot.displayName = "Slot";

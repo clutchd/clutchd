@@ -4,7 +4,7 @@
 
 export type WithVariants<
   Key extends string,
-  Variants extends string
+  Variants extends string,
 > = `${Key}-${Variants}`;
 
 /**

@@ -15,6 +15,6 @@ test("handles conflicts between positive and negative values correctly", () => {
 test("handles conflicts across groups with negative values correctly", () => {
   expect(twx("-right-1 inset-x-1")).toBe("inset-x-1");
   expect(twx("hover:focus:-right-1 focus:hover:inset-x-1")).toBe(
-    "focus:hover:inset-x-1"
+    "focus:hover:inset-x-1",
   );
 });

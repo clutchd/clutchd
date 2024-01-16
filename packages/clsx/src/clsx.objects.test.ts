@@ -14,6 +14,6 @@ test("objects (variadic)", () => {
   expect(clsx({ foo: 1 }, { bar: 2 })).toEqual("foo bar");
   expect(clsx({ foo: 1 }, null, { baz: 1, bat: 0 })).toEqual("foo baz");
   expect(
-    clsx({ foo: 1 }, {}, {}, { bar: "a" }, { baz: null, bat: Infinity })
+    clsx({ foo: 1 }, {}, {}, { bar: "a" }, { baz: null, bat: Infinity }),
   ).toEqual("foo bar bat");
 });

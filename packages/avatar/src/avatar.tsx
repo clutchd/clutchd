@@ -38,7 +38,7 @@ const Avatar = React.forwardRef<
       width = "w-12",
       ...props
     },
-    forwardedRef
+    forwardedRef,
   ) => {
     const [loadingState, setLoadingState] =
       React.useState<IAvatarLoadingStates>("idle");
@@ -47,7 +47,7 @@ const Avatar = React.forwardRef<
       return (
         <span
           className={[
-            "flex items-center justify-center w-full h-full overflow-hidden",
+            "flex h-full w-full items-center justify-center overflow-hidden",
             borderRadius,
           ].join(" ")}
         >
@@ -78,8 +78,8 @@ const Avatar = React.forwardRef<
     return (
       <Component.span
         className={[
-          "inline-flex items-center justify-center align-middle select-none font-semibold overflow-hidden border",
-          "bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-400 text-gray-500 dark:text-gray-400",
+          "inline-flex select-none items-center justify-center overflow-hidden border align-middle font-semibold",
+          "border-gray-300 bg-gray-100 text-gray-500 dark:border-gray-400 dark:bg-gray-800 dark:text-gray-400",
           ,
           borderRadius,
           height,
@@ -95,7 +95,7 @@ const Avatar = React.forwardRef<
         </>
       </Component.span>
     );
-  }
+  },
 );
 
 Avatar.displayName = "Avatar";

@@ -44,7 +44,7 @@ function ProtectPage({
         router.pathname && `?next=${encodeURIComponent(router.pathname)}`
       }`,
       undefined,
-      { shallow: true }
+      { shallow: true },
     );
   }
 

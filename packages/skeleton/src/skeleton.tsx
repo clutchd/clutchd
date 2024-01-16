@@ -22,14 +22,14 @@ const Skeleton = React.forwardRef<ISkeleton, ISkeletonProps>(
     return (
       <Component.div
         className={[
-          "rounded block bg-black/10 dark:bg-white/10 w-full h-full animate-pulse motion-reduce:animate-none",
+          "block h-full w-full animate-pulse rounded bg-black/10 motion-reduce:animate-none dark:bg-white/10",
           className,
         ].join(" ")}
         ref={forwardedRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 Skeleton.displayName = "Skeleton";

@@ -24,7 +24,7 @@ const Lead = React.forwardRef<
   return (
     <p
       className={[
-        "font-baseline text-base sm:text-lg my-6",
+        "font-baseline my-6 text-base sm:text-lg",
         "text-gray-600 dark:text-gray-400",
         className,
       ].join(" ")}

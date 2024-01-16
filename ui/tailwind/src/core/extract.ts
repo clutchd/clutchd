@@ -7,7 +7,7 @@ import { WithNegative, WithOptVariants, WithVariants } from ".";
 export type ExtractKeyWithVariants<
   KeyType extends string,
   KeyUnion extends KeyType,
-  Variants extends string
+  Variants extends string,
 > = WithVariants<Extract<KeyType, KeyUnion>, Variants>;
 
 /**
@@ -17,7 +17,7 @@ export type ExtractKeyWithVariants<
 export type ExtractKeyWithOptVariants<
   KeyType extends string,
   KeyUnion extends KeyType,
-  Variants extends string
+  Variants extends string,
 > = WithOptVariants<Extract<KeyType, KeyUnion>, Variants>;
 
 /**
@@ -26,7 +26,7 @@ export type ExtractKeyWithOptVariants<
 
 export type ExtractKeyWithNegative<
   KeyType extends string,
-  KeyUnion extends KeyType
+  KeyUnion extends KeyType,
 > = WithNegative<Extract<KeyType, KeyUnion>>;
 
 /**
@@ -36,7 +36,7 @@ export type ExtractKeyWithNegative<
 export type ExtractKeyWithNegativeVariants<
   KeyType extends string,
   KeyUnion extends KeyType,
-  Variants extends string
+  Variants extends string,
 > = WithVariants<ExtractKeyWithNegative<KeyType, KeyUnion>, Variants>;
 
 /**
@@ -46,5 +46,5 @@ export type ExtractKeyWithNegativeVariants<
 export type ExtractKeyWithOptNegativeVariants<
   KeyType extends string,
   KeyUnion extends KeyType,
-  Variants extends string
+  Variants extends string,
 > = WithOptVariants<ExtractKeyWithNegative<KeyType, KeyUnion>, Variants>;

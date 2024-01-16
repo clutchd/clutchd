@@ -15,7 +15,7 @@ export async function getLocalSize(inputs: Uint8Array[] | string[]): Promise<{
   // Total uncompressed size
   const rawUncompressedSize = contents.reduce(
     (acc, content) => acc + content.byteLength,
-    0
+    0,
   );
 
   // Choose a different compression function based on the compression type
@@ -28,13 +28,13 @@ export async function getLocalSize(inputs: Uint8Array[] | string[]): Promise<{
 
   // Compress all binary contents according to the compression map
   const compressedContent = await Promise.all(
-    contents.map((content) => compressionMap(content))
+    contents.map((content) => compressionMap(content)),
   );
 
   // Convert sizes to human readable formats, e.g. 10000 bytes to 10MB
   const rawCompressedSize = compressedContent.reduce(
     (acc, { length }) => acc + length,
-    0
+    0,
   );
 
   return {

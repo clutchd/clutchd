@@ -10,7 +10,7 @@ test("handles conflicts across class groups correctly", () => {
   expect(twx("inset-x-1 right-1 inset-1")).toBe("inset-1");
   expect(twx("inset-x-1 right-1 inset-x-1")).toBe("inset-x-1");
   expect(twx("inset-x-1 right-1 inset-y-1")).toBe(
-    "inset-x-1 right-1 inset-y-1"
+    "inset-x-1 right-1 inset-y-1",
   );
   expect(twx("right-1 inset-x-1 inset-y-1")).toBe("inset-x-1 inset-y-1");
   expect(twx("inset-x-1 hover:left-1 inset-1")).toBe("hover:left-1 inset-1");

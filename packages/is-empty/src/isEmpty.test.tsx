@@ -44,6 +44,6 @@ test("function is not empty", async () => {
   expect(
     isEmpty((e: any) => {
       console.log(e);
-    })
+    }),
   ).toEqual(false);
 });

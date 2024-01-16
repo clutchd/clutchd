@@ -12,12 +12,12 @@ test("handles pseudo variant group conflicts properly", () => {
   expect(twx("group-empty:p-2 group-empty:p-3")).toBe("group-empty:p-3");
   expect(twx("peer-empty:p-2 peer-empty:p-3")).toBe("peer-empty:p-3");
   expect(twx("group-empty:p-2 peer-empty:p-3")).toBe(
-    "group-empty:p-2 peer-empty:p-3"
+    "group-empty:p-2 peer-empty:p-3",
   );
   expect(twx("hover:group-empty:p-2 hover:group-empty:p-3")).toBe(
-    "hover:group-empty:p-3"
+    "hover:group-empty:p-3",
   );
   expect(twx("group-read-only:p-2 group-read-only:p-3")).toBe(
-    "group-read-only:p-3"
+    "group-read-only:p-3",
   );
 });

@@ -90,8 +90,8 @@ test("render flex with custom props and className", () => {
       flexBasis="basis-1/2"
       justifyContent="justify-evenly"
       flexDirection="flex-col-reverse"
-      className={["p-4 bg-gray-200", "rounded-lg"].join(" ")}
-    />
+      className={["bg-gray-200 p-4", "rounded-lg"].join(" ")}
+    />,
   );
 
   const div = container.querySelector("div");
@@ -99,6 +99,6 @@ test("render flex with custom props and className", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass(
-    "flex items-start flex-1 basis-1/2 flex-col-reverse flex-wrap justify-evenly p-4 bg-gray-200 rounded-lg"
+    "flex items-start flex-1 basis-1/2 flex-col-reverse flex-wrap justify-evenly p-4 bg-gray-200 rounded-lg",
   );
 });

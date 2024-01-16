@@ -2,7 +2,7 @@ import * as React from "react";
 
 function TailwindIndicator() {
   return (
-    <div className="fixed z-50 flex items-center justify-center p-1 font-mono text-xs text-white bg-gray-800 rounded-full bottom-1 left-1">
+    <div className="fixed bottom-1 left-1 z-50 flex items-center justify-center rounded-full bg-gray-800 p-1 font-mono text-xs text-white">
       <div className="block sm:hidden">xs</div>
       <div className="hidden sm:block md:hidden">sm</div>
       <div className="hidden md:block lg:hidden">md</div>

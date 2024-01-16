@@ -9,5 +9,5 @@ export type Modifier = "hover" | "focus" | "dark" | ScreenVariants;
 
 export type WithModifier<
   Prefix extends Modifier,
-  Value extends string
+  Value extends string,
 > = `${Prefix}:${Value}`;

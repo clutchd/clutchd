@@ -31,7 +31,7 @@ const Main = React.forwardRef<IMain, IMainHtmlProps>(
         <main ref={forwardedRef}>{children}</main>
       </Flex>
     );
-  }
+  },
 );
 
 Main.displayName = "Main";

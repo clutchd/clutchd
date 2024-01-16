@@ -38,7 +38,7 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
       gridCols2xl,
       ...props
     },
-    forwardedRef
+    forwardedRef,
   ) => {
     return (
       <Component.div
@@ -51,13 +51,13 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
           gridColsLg,
           gridColsXl,
           gridCols2xl,
-          className
+          className,
         )}
         ref={forwardedRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 Grid.displayName = "Grid";

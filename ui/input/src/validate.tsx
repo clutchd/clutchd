@@ -1,7 +1,7 @@
 function validateName(name?: string) {
   if (name?.toUpperCase() === "isindex") {
     console.warn(
-      "The name attribute is not allowed to have a value of `isindex`."
+      "The name attribute is not allowed to have a value of `isindex`.",
     );
   }
 }
@@ -9,7 +9,7 @@ function validateName(name?: string) {
 function validateReadOnlyRequired(readOnly?: boolean, required?: boolean) {
   if (readOnly && required) {
     console.warn(
-      "The `required` attribute is not permitted on inputs with the `readonly` attribute."
+      "The `required` attribute is not permitted on inputs with the `readonly` attribute.",
     );
   }
 }

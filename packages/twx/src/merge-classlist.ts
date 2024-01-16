@@ -33,7 +33,7 @@ export function mergeClassList(classList: string, configUtils: ConfigUtils) {
         let classGroupId = getClassGroupId(
           maybePostfixModifierPosition
             ? baseClassName.substring(0, maybePostfixModifierPosition)
-            : baseClassName
+            : baseClassName,
         );
 
         let hasPostfixModifier = Boolean(maybePostfixModifierPosition);
@@ -90,7 +90,7 @@ export function mergeClassList(classList: string, configUtils: ConfigUtils) {
         classGroupsInConflict.add(classId);
 
         getConflictingClassGroupIds(classGroupId, hasPostfixModifier).forEach(
-          (group) => classGroupsInConflict.add(modifierId + group)
+          (group) => classGroupsInConflict.add(modifierId + group),
         );
 
         return true;

@@ -32,14 +32,14 @@ export default function Home() {
           />
         </Link>
         <Link
-          className="flex items-center px-4 text-white no-underline transition-all rounded-xl bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500"
+          className="bg-brand-500 focus:bg-accent-500 hover:bg-accent-500 active:bg-accent-500 flex items-center rounded-xl px-4 text-white no-underline transition-all"
           href="https://billing.stripe.com/p/login/7sI4gE2Bm7NKaR26oo"
         >
           Manage Subscription
         </Link>
       </Header>
       <Main className="p-6">
-        <h1 className="pt-4 pb-16 text-3xl text-center">
+        <h1 className="pb-16 pt-4 text-center text-3xl">
           Professional design, development, and maintenance for all your web
           needs
         </h1>

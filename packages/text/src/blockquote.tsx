@@ -24,8 +24,8 @@ const Blockquote = React.forwardRef<
   return (
     <blockquote
       className={[
-        "font-medium text-sm sm:text-base lg:text-lg my-6 leading-normal pl-6 italic border-l-4",
-        "text-gray-900 dark:text-gray-100 border-gray-200 dark:border-gray-700",
+        "my-6 border-l-4 pl-6 text-sm font-medium italic leading-normal sm:text-base lg:text-lg",
+        "border-gray-200 text-gray-900 dark:border-gray-700 dark:text-gray-100",
         className,
       ].join(" ")}
       ref={forwardedRef}

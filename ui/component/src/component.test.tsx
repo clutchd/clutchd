@@ -16,7 +16,7 @@ test("render with valid child", () => {
     // @ts-ignore
     <Component.div asChild asdf={"1234"}>
       <p>Rendering a component as a valid paragraph!</p>
-    </Component.div>
+    </Component.div>,
   );
 
   const p = container.querySelector("p");
@@ -33,7 +33,7 @@ test("render with valid child and props", () => {
     <Component.div asChild asdf={"1234"}>
       {/* @ts-ignore */}
       <p asdf="asdf">Rendering a component as a valid paragraph!</p>
-    </Component.div>
+    </Component.div>,
   );
 
   const p = container.querySelector("p");
@@ -49,7 +49,7 @@ test("render with invalid and undefined child", () => {
     // @ts-ignore
     <Component.div asChild asdf="asdf">
       {null}
-    </Component.div>
+    </Component.div>,
   );
 
   const div = container.querySelector("div");
@@ -62,12 +62,14 @@ test("render with invalid and undefined child", () => {
 
 test("render with invalid child", () => {
   const { container } = render(
-    <Component.div asChild>Rendering a div as an invalid string!</Component.div>
+    <Component.div asChild>
+      Rendering a div as an invalid string!
+    </Component.div>,
   );
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(container.textContent).toEqual(
-    "Rendering a div as an invalid string!"
+    "Rendering a div as an invalid string!",
   );
 });
 
@@ -76,7 +78,7 @@ test("render with invalid child and props", () => {
     // @ts-ignore
     <Component.div asChild asdf={"1234"}>
       Rendering a div as an invalid string!
-    </Component.div>
+    </Component.div>,
   );
 
   const div = container.querySelector("div");
@@ -94,7 +96,7 @@ test("render with multiple children", () => {
       <p asdf="asdf">Rendering a div as a paragraph!</p>
       {/* @ts-ignore */}
       <div asdf="qwerty">Rendering a div as another div!</div>
-    </Component.div>
+    </Component.div>,
   );
 
   const p = container.querySelector("p");
@@ -116,7 +118,7 @@ test("Render with multiple children and props", () => {
       <p asdf="asdf">Rendering a div as a paragraph!</p>
       {/* @ts-ignore */}
       <div asdf="qwerty">Rendering a div as another div!</div>
-    </Component.div>
+    </Component.div>,
   );
 
   const root = container.querySelector("div");
@@ -135,7 +137,7 @@ test("Render with multiple children and props", () => {
 
 test("Render with tailwindcss className", () => {
   const { container } = render(
-    <Component.div className="bg-red-500">With tailwindcss!</Component.div>
+    <Component.div className="bg-red-500">With tailwindcss!</Component.div>,
   );
 
   const root = container.querySelector("div");
@@ -147,9 +149,9 @@ test("Render with tailwindcss className", () => {
 
 test("Render with merged tailwindcss className", () => {
   const { container } = render(
-    <Component.div className="bg-red-500 bg-blue-500">
+    <Component.div className="bg-blue-500 bg-red-500">
       With tailwindcss!
-    </Component.div>
+    </Component.div>,
   );
 
   const root = container.querySelector("div");
@@ -163,7 +165,7 @@ test("Render asChild with merged tailwindcss className", () => {
   const { container } = render(
     <Component.div asChild className="bg-red-500">
       <Component.div className="bg-blue-500">With tailwindcss!</Component.div>
-    </Component.div>
+    </Component.div>,
   );
 
   const root = container.querySelector("div");
@@ -178,7 +180,7 @@ test("Render with merged tailwindcss className and inconsistent spaces", () => {
     // prettier-ignore
     <Component.div className="bg-red-500  bg-blue-500    shadow      rounded-xl">
       With tailwindcss!
-    </Component.div>
+    </Component.div>,
   );
 
   const root = container.querySelector("div");

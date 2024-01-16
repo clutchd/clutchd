@@ -26,7 +26,7 @@ interface IFormHtmlProps
 const Form = React.forwardRef<IForm, IFormHtmlProps>(
   ({ ...props }, forwardedRef) => {
     return <Component.form ref={forwardedRef} {...props} />;
-  }
+  },
 );
 
 Form.displayName = "Form";

@@ -18,10 +18,10 @@ test("extendTwx works correctly with single config", () => {
 
   expect(tailwindMerge("")).toBe("");
   expect(tailwindMerge("my-modifier:fooKey-bar my-modifier:fooKey-baz")).toBe(
-    "my-modifier:fooKey-baz"
+    "my-modifier:fooKey-baz",
   );
   expect(
-    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz")
+    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz"),
   ).toBe("other-modifier:fooKey-baz");
   expect(tailwindMerge("group fooKey-bar")).toBe("fooKey-bar");
   expect(tailwindMerge("fooKey-bar group")).toBe("group");
@@ -30,7 +30,7 @@ test("extendTwx works correctly with single config", () => {
 
   expect(tailwindMerge("p-10 p-20")).toBe("p-20");
   expect(tailwindMerge("hover:focus:p-10 focus:hover:p-20")).toBe(
-    "focus:hover:p-20"
+    "focus:hover:p-20",
   );
 });
 
@@ -54,15 +54,15 @@ test("extendTwx works corectly with multiple configs", () => {
         ...config.classGroups,
         secondConfigKey: ["hi-there", "hello"],
       },
-    })
+    }),
   );
 
   expect(tailwindMerge("")).toBe("");
   expect(tailwindMerge("my-modifier:fooKey-bar my-modifier:fooKey-baz")).toBe(
-    "my-modifier:fooKey-baz"
+    "my-modifier:fooKey-baz",
   );
   expect(tailwindMerge("other-modifier:hi-there other-modifier:hello")).toBe(
-    "other-modifier:hello"
+    "other-modifier:hello",
   );
   expect(tailwindMerge("group fooKey-bar")).toBe("fooKey-bar");
   expect(tailwindMerge("fooKey-bar group")).toBe("group");
@@ -71,7 +71,7 @@ test("extendTwx works corectly with multiple configs", () => {
 
   expect(tailwindMerge("p-10 p-20")).toBe("p-20");
   expect(tailwindMerge("hover:focus:p-10 focus:hover:p-20")).toBe(
-    "focus:hover:p-20"
+    "focus:hover:p-20",
   );
 });
 
@@ -94,10 +94,10 @@ test("extendTwx works correctly with function config", () => {
 
   expect(tailwindMerge("")).toBe("");
   expect(tailwindMerge("my-modifier:fooKey-bar my-modifier:fooKey-baz")).toBe(
-    "my-modifier:fooKey-baz"
+    "my-modifier:fooKey-baz",
   );
   expect(
-    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz")
+    tailwindMerge("other-modifier:fooKey-bar other-modifier:fooKey-baz"),
   ).toBe("other-modifier:fooKey-baz");
   expect(tailwindMerge("group fooKey-bar")).toBe("fooKey-bar");
   expect(tailwindMerge("fooKey-bar group")).toBe("group");
@@ -106,6 +106,6 @@ test("extendTwx works correctly with function config", () => {
 
   expect(tailwindMerge("p-10 p-20")).toBe("p-20");
   expect(tailwindMerge("hover:focus:p-10 focus:hover:p-20")).toBe(
-    "focus:hover:p-20"
+    "focus:hover:p-20",
   );
 });

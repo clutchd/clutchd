@@ -34,7 +34,7 @@ const Button = React.forwardRef<IButton, IButtonHtmlProps>(
         {...props}
       />
     );
-  }
+  },
 );
 
 Button.displayName = "Button";

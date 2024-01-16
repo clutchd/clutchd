@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={manrope.variable}>
       <body className={theme?.value === "dark" ? "dark" : ""}>
-        <Page className="p-6 bg-white">
+        <Page className="bg-white p-6">
           <DarkModeToggle initialValue={theme?.value as "light" | "dark"} />
           {children}
           <Analytics />

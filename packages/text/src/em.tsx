@@ -25,7 +25,7 @@ const Em = React.forwardRef<IEm, IEmProps>(
         {...props}
       />
     );
-  }
+  },
 );
 
 Em.displayName = "TextEm";

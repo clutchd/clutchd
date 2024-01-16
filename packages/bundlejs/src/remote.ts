@@ -7,7 +7,7 @@ import fetch from "node-fetch";
  */
 export async function getRemoteSize(
   pkg: string,
-  provider: "bundlephobia" | "bundlejs" = "bundlephobia"
+  provider: "bundlephobia" | "bundlejs" = "bundlephobia",
 ): Promise<{
   rawUncompressedSize: number;
   rawCompressedSize: number;
@@ -21,7 +21,7 @@ export async function getRemoteSize(
     };
   } else {
     const data = await fetch(
-      `https://bundlephobia.com/api/size?package=${pkg}`
+      `https://bundlephobia.com/api/size?package=${pkg}`,
     );
     const { size, gzip } = await data.json();
     return {

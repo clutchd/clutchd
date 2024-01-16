@@ -38,7 +38,7 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
       orientation = "horizontal",
       ...props
     },
-    forwardedRef
+    forwardedRef,
   ) => {
     // define aria props
     const aria = decorative
@@ -53,14 +53,14 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
           "rounded-lg",
           hidden ? "bg-inherit" : "bg-gray-200",
           orientation === "horizontal" ? `h-px` : `w-px`,
-          className
+          className,
         )}
         data-orientation={orientation}
         ref={forwardedRef}
         {...props}
       />
     );
-  }
+  },
 );
 
 Divider.displayName = "Divider";

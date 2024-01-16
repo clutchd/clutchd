@@ -32,7 +32,7 @@ const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
       justifyContent = "justify-between",
       ...props
     },
-    forwardedRef
+    forwardedRef,
   ) => {
     return (
       <Flex
@@ -44,7 +44,7 @@ const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
         <header ref={forwardedRef}>{children}</header>
       </Flex>
     );
-  }
+  },
 );
 
 Header.displayName = "Header";
