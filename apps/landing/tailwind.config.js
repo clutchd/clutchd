@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 
-module.exports = {
+const config = {
   content: [
     "./node_modules/@clutchd/layout/dist/index.js",
     "./node_modules/@clutchd/link/dist/index.js",
@@ -25,3 +25,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+export default config;

@@ -9,6 +9,7 @@
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/clutchd/clutchd",
@@ -16,7 +17,6 @@
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
-  "type": "module",
   "main": "dist/index",
   "module": "dist/index",
   "types": "dist/index",
