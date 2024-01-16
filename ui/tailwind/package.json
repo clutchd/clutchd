@@ -15,7 +15,6 @@
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
-  "type": "module",
   "main": "dist/index",
   "module": "dist/index",
   "types": "dist/index",

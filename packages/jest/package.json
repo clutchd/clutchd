@@ -16,7 +16,6 @@
     "directory": "packages/config"
   },
   "author": "Clutchd, LLC",
-  "type": "module",
   "main": "index.js",
   "files": [
     "*.config.js",

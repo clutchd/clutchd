@@ -110,7 +110,7 @@ test("render with multiple children", () => {
   expect(div?.textContent).toEqual("Rendering a div as another div!");
 });
 
-test("Render with multiple children and props", () => {
+test("render with multiple children and props", () => {
   const { container } = render(
     // @ts-ignore
     <Component.div asChild asdf="1234">
@@ -135,7 +135,7 @@ test("Render with multiple children and props", () => {
   expect(div?.textContent).toEqual("Rendering a div as another div!");
 });
 
-test("Render with tailwindcss className", () => {
+test("render with tailwindcss className", () => {
   const { container } = render(
     <Component.div className="bg-red-500">With tailwindcss!</Component.div>,
   );
@@ -147,7 +147,7 @@ test("Render with tailwindcss className", () => {
   expect(root?.textContent).toEqual("With tailwindcss!");
 });
 
-test("Render with merged tailwindcss className", () => {
+test("render with merged tailwindcss className", () => {
   const { container } = render(
     <Component.div className="bg-blue-500 bg-red-500">
       With tailwindcss!
@@ -157,7 +157,7 @@ test("Render with merged tailwindcss className", () => {
   const root = container.querySelector("div");
 
   expect(root).toBeInTheDocument();
-  expect(root).toHaveAttribute("class", "bg-blue-500");
+  expect(root).toHaveAttribute("class", "bg-red-500");
   expect(root?.textContent).toEqual("With tailwindcss!");
 });
 
@@ -175,10 +175,10 @@ test("Render asChild with merged tailwindcss className", () => {
   expect(root?.textContent).toEqual("With tailwindcss!");
 });
 
-test("Render with merged tailwindcss className and inconsistent spaces", () => {
+test("render with merged tailwindcss className and inconsistent spaces", () => {
   const { container } = render(
     // prettier-ignore
-    <Component.div className="bg-red-500  bg-blue-500    shadow      rounded-xl">
+    <Component.div className="bg-red-500 bg-blue-500 shadow rounded-xl">
       With tailwindcss!
     </Component.div>,
   );

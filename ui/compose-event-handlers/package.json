@@ -19,7 +19,6 @@
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
-  "type": "module",
   "exports": {
     ".": {
       "import": {

@@ -15,7 +15,6 @@
     "url": "https://github.com/clutchd/clutchd",
     "directory": "packages/avatar"
   },
-  "type": "module",
   "author": "Clutchd, LLC",
   "sideEffects": false,
   "main": "dist/index",

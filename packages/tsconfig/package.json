@@ -15,7 +15,6 @@
     "directory": "packages/tsconfig"
   },
   "author": "Clutchd, LLC",
-  "type": "module",
   "files": [
     "base.json",
     "nextjs.json",

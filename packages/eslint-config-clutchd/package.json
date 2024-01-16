@@ -16,7 +16,6 @@
     "directory": "packages/eslint-config-clutchd"
   },
   "author": "Clutchd, LLC",
-  "type": "module",
   "main": "index.js",
   "dependencies": {
     "eslint-config-next": "14.0.1",

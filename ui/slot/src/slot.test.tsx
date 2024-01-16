@@ -103,7 +103,7 @@ test("render with multiple children", () => {
   expect(div?.textContent).toEqual("Rendering a div as another div!");
 });
 
-test("Render with multiple children and props", () => {
+test("render with multiple children and props", () => {
   const { container } = render(
     // @ts-ignore
     <Slot asdf="1234">
