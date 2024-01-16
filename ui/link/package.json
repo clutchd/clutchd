@@ -18,6 +18,7 @@
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
+  "type": "module",
   "exports": {
     ".": {
       "import": {
@@ -30,9 +31,9 @@
       }
     }
   },
-  "source": "./src/index.tsx",
   "main": "dist/index",
   "module": "dist/index",
+  "source": "./src/index.tsx",
   "types": "dist/index",
   "files": [
     "dist"

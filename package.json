@@ -2,14 +2,15 @@
   "name": "clutchd",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "benchmark": "turbo run benchmark",
     "build": "turbo run build",
     "changeset": "changeset",
     "clean": "find . -type d \\( -name '.next'  -o -name '.turbo' -o -name 'coverage' -o -name 'dist' -o -name 'node_modules' \\) -prune -print -exec rm -rf '{}' \\;",
     "dev": "turbo run dev --parallel",
-    "preinstall": "npx only-allow pnpm",
     "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",
+    "preinstall": "npx only-allow pnpm",
     "postinstall": "manypkg check",
     "lint": "turbo run lint",
     "release": "turbo run build && changeset publish",
@@ -22,16 +23,18 @@
     "@clutchd/eslint-config-clutchd": "workspace:*",
     "@manypkg/cli": "0.21.0",
     "eslint": "8.56.0",
-    "prettier": "2.8.8",
+    "prettier": "3.2.2",
+    "prettier-plugin-packagejson": "2.4.9",
+    "prettier-plugin-tailwindcss": "0.5.11",
     "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
   },
   "manypkg": {
     "ignoredRules": [
       "INTERNAL_MISMATCH"
     ]
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
   }
 }

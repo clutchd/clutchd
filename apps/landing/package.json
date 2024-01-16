@@ -2,6 +2,7 @@
   "name": "@clutchd/landing",
   "version": "2.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "next build",
     "dev": "next dev -p 3000",
