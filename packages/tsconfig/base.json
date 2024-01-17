@@ -2,32 +2,27 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Default",
   "compilerOptions": {
-    "baseUrl": ".",
-    "composite": false,
-    "declaration": true,
-    "declarationMap": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "inlineSources": false,
-    "isolatedModules": true,
-    "moduleResolution": "Node",
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "preserveWatchOutput": true,
     "skipLibCheck": true,
-    "strict": true
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
+    "target": "es2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "checkJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"]
     }
   },
-  "include": ["/**/*.ts", "/**/*.tsx", "/**/*.d.ts"],
-  "exclude": [
-    "/**/build",
-    "/**/dist",
-    "/**/node_modules",
-    "/**/*.test.ts",
-    "/**/*.test.tsx"
-  ]
+  "include": ["/**/*.ts", "/**/*.tsx", "/**/*.cjs", "/**/*.d.ts", "/**/*.js"],
+  "exclude": ["/**/build", "/**/dist", "/**/node_modules"]
 }
