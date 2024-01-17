@@ -19,15 +19,12 @@
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
-  "main": "dist/index",
-  "module": "dist/index",
-  "types": "dist/index",
-  "files": [
-    "dist"
-  ],
+  "type": "module",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --minify",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts",
+    "build": "tsup src/index.tsx --format esm --dts --minify",
+    "dev": "tsup src/index.tsx --format esm --dts --watch",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
     "prepublish": "pnpm run build",
     "test": "jest"

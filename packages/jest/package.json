@@ -16,12 +16,16 @@
     "directory": "packages/config"
   },
   "author": "Clutchd, LLC",
-  "main": "index.js",
-  "files": [
-    "*.config.js",
-    "jsdom.cjs",
-    "setup-jest.js"
-  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./jest.base.config": "./jest.base.config.cjs",
+    "./jsdom": "./jsdom.cjs",
+    "./setup-jest": "./setup-jest.cjs",
+    "./ts-jest.base.config": "./ts-jest.base.config.cjs",
+    "./ts-jest.web.config": "./ts-jest.web.config.cjs"
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
   },

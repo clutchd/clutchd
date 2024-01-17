@@ -15,13 +15,13 @@ test("ensures the bundle size is accurate", async () => {
     return parseInt(match[1]);
   }
   const pkgSize = getClaimedSize(pkg.description);
-  const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
+  const size = await getLocalSize([readFileSync("dist/index.js", "utf8")]);
   expect(size.rawCompressedSize).toEqual(pkgSize);
 });
 
 test("ensures the bundle size is smaller than the last size", async () => {
   const og = await getRemoteSize("@clutchd/clsx");
-  const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
+  const size = await getLocalSize([readFileSync("dist/index.js", "utf8")]);
   expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
 });
 

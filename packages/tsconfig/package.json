@@ -15,11 +15,15 @@
     "directory": "packages/tsconfig"
   },
   "author": "Clutchd, LLC",
-  "files": [
-    "base.json",
-    "nextjs.json",
-    "library.json"
-  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./base.json": "./base.json",
+    "./nextjs.json": "./nextjs.json",
+    "./library.json": "./library.json",
+    "./react-library.json": "./react-library.json"
+  },
+  "types": "./dist/index.d.ts",
   "devDependencies": {
     "@types/jest": "29.5.2",
     "@types/node": "20.9.2",

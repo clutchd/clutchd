@@ -9,6 +9,6 @@ test("exports", () => {
 
 test("ensures the bundle size is smaller than the last size", async () => {
   const og = await getRemoteSize("@clutchd/compose-props");
-  const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
+  const size = await getLocalSize([readFileSync("dist/index.js", "utf8")]);
   expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
 });

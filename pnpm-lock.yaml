@@ -385,6 +385,9 @@ importers:
         specifier: workspace:*
         version: link:../is-empty
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: workspace:*
+        version: link:../bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../jest
@@ -879,6 +882,9 @@ importers:
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@radix-ui/primitive':
+        specifier: 1.0.1
+        version: 1.0.1
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -937,6 +943,9 @@ importers:
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@radix-ui/react-compose-refs':
+        specifier: 1.0.1
+        version: 1.0.1(@types/react@18.2.47)(react@18.2.0)
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -1387,6 +1396,9 @@ importers:
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../packages/tsconfig
+      '@radix-ui/react-slot':
+        specifier: 1.0.2
+        version: 1.0.2(@types/react@18.2.47)(react@18.2.0)
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -2657,6 +2669,41 @@ packages:
   /@prisma/engines@5.5.2:
     resolution: {integrity: sha512-Be5hoNF8k+lkB3uEMiCHbhbfF6aj1GnrTBnn5iYFT7GEr3TsOEp1soviEcBR0tYCgHbxjcIxJMhdbvxALJhAqg==}
     requiresBuild: true
+    dev: true
+
+  /@radix-ui/primitive@1.0.1:
+    resolution: {integrity: sha512-yQ8oGX2GVsEYMWGxcovu1uGWPCxV5BFfeeYxqPmuAzUyLT9qmaMXSAhXpb0WrspIeqYzdJpkh2vHModJPgRIaw==}
+    dependencies:
+      '@babel/runtime': 7.23.8
+    dev: true
+
+  /@radix-ui/react-compose-refs@1.0.1(@types/react@18.2.47)(react@18.2.0):
+    resolution: {integrity: sha512-fDSBgd44FKHa1FRMU59qBMPFcl2PZE+2nmqunj+BWFyYYjnhIDWL2ItDs3rrbJDQOtzt5nIebLCQc4QRfz6LJw==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.8
+      '@types/react': 18.2.47
+      react: 18.2.0
+    dev: true
+
+  /@radix-ui/react-slot@1.0.2(@types/react@18.2.47)(react@18.2.0):
+    resolution: {integrity: sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.8
+      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.2.47)(react@18.2.0)
+      '@types/react': 18.2.47
+      react: 18.2.0
     dev: true
 
   /@rushstack/eslint-patch@1.6.1:

@@ -15,10 +15,12 @@
     "directory": "packages/config"
   },
   "author": "Clutchd, LLC",
-  "main": "index.js",
-  "files": [
-    "*.config.js"
-  ],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./tailwind.config.js": "./tailwind.config.js"
+  },
+  "types": "./dist/index.d.ts",
   "scripts": {
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
   }

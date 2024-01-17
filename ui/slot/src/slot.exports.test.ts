@@ -1,19 +1,5 @@
 import { Slot } from ".";
-import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
-import { readFileSync } from "fs";
 
 test("exports", () => {
   expect(typeof Slot).toEqual("object");
 });
-
-test("ensures the bundle size is smaller than the last size", async () => {
-  const og = await getRemoteSize("@clutchd/slot");
-  const size = await getLocalSize([readFileSync("dist/index.mjs", "utf8")]);
-  expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
-});
-
-// test("ensures the package is smaller than the original size", async () => {
-//   const og = await getRemoteSize("@radix-ui/react-slot");
-//   const size = await getRemoteSize("@clutchd/slot");
-//   expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
-// });

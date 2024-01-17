@@ -1,4 +1,4 @@
-const base = require("./ts-jest.base.config");
+const base = require("./ts-jest.base.config.cjs");
 
 const config = {
   ...base,

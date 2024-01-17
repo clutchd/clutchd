@@ -32,10 +32,10 @@ const config = {
   coverageProvider: "v8",
 
   // An array of file extensions your modules use
-  setupFilesAfterEnv: ["@clutchd/jest/setup-jest.js"],
+  setupFilesAfterEnv: ["@clutchd/jest/setup-jest"],
 
   // The test environment that will be used for testing
-  testEnvironment: "@clutchd/jest/jsdom.cjs",
+  testEnvironment: "@clutchd/jest/jsdom",
 
   // A map from regular expressions to paths to transformers
   transform: {

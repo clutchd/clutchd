@@ -16,7 +16,10 @@
     "directory": "packages/eslint-config-clutchd"
   },
   "author": "Clutchd, LLC",
-  "main": "index.js",
+  "sideEffects": false,
+  "type": "module",
+  "exports": "./index.cjs",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "eslint-config-next": "14.0.1",
     "eslint-config-prettier": "8.8.0",
