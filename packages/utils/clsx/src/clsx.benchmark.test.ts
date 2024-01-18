@@ -1,3 +1,4 @@
+// TODO: type errors
 let data;
 
 try {

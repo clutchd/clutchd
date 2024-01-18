@@ -150,7 +150,7 @@ test("render with tailwindcss className", () => {
 
 test("render with merged tailwindcss className", () => {
   const { container } = render(
-    <Component.div className="bg-red-500 bg-blue-500">
+    <Component.div className="bg-blue-500 bg-red-500">
       With tailwindcss!
     </Component.div>,
   );

@@ -33,6 +33,7 @@
     "tailwind-merge": "1.14.0"
   },
   "devDependencies": {
+    "@clutchd/bundlejs": "workspace:*",
     "@clutchd/jest": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
     "@types/jest": "29.5.2",
