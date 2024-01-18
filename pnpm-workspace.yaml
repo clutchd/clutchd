@@ -3,7 +3,11 @@ packages:
   - "apps/*"
   # all packages in direct sub directories of packages/
   - "packages/*"
-  # all tools packages
+  # all unstable packages
+  - "packages/_unstable_/*"
+  # all primitive component packages
+  - "packages/primitives/*"
+  # all tooling packages
   - "packages/tooling/*"
   # all utility packages
   - "packages/utils/*"

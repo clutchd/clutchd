@@ -185,6 +185,87 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
+  packages/_unstable_/next-auth-prisma-adapter:
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@prisma/client':
+        specifier: 4.9.0
+        version: 4.9.0(prisma@5.5.2)
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      next-auth:
+        specifier: 4.24.4
+        version: 4.24.4(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
+      prisma:
+        specifier: 5.5.2
+        version: 5.5.2
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/_unstable_/protect:
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      next:
+        specifier: 14.0.4
+        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
+      next-auth:
+        specifier: 4.24.4
+        version: 4.24.4(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
   packages/avatar:
     dependencies:
       '@clutchd/component':
@@ -224,40 +305,6 @@ importers:
       react:
         specifier: 18.2.0
         version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  packages/bundlejs:
-    dependencies:
-      '@hazae41/foras':
-        specifier: 2.0.8
-        version: 2.0.8
-      node-fetch:
-        specifier: 2.6.7
-        version: 2.6.7
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/node-fetch':
-        specifier: 2.6.4
-        version: 2.6.4
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
@@ -326,38 +373,30 @@ importers:
         specifier: 7.33.2
         version: 7.33.2(eslint@8.56.0)
 
-  packages/next-auth-prisma-adapter:
+  packages/primitives/compose-props:
+    dependencies:
+      '@clutchd/compose-event-handlers':
+        specifier: workspace:*
+        version: link:../../../ui/compose-event-handlers
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: workspace:*
+        version: link:../../tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../tooling/jest
+        version: link:../../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tooling/tsconfig
-      '@prisma/client':
-        specifier: 4.9.0
-        version: 4.9.0(prisma@5.5.2)
+        version: link:../../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
-      next-auth:
-        specifier: 4.24.4
-        version: 4.24.4(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
-      prisma:
-        specifier: 5.5.2
-        version: 5.5.2
       tsup:
         specifier: 7.2.0
         version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
@@ -365,14 +404,23 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/protect:
+  packages/primitives/compose-refs:
     devDependencies:
+      '@clutchd/bundlejs':
+        specifier: workspace:*
+        version: link:../../tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../tooling/jest
+        version: link:../../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tooling/tsconfig
+        version: link:../../tooling/tsconfig
+      '@radix-ui/react-compose-refs':
+        specifier: 1.0.1
+        version: 1.0.1(@types/react@18.2.47)(react@18.2.0)
+      '@testing-library/react':
+        specifier: 14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -388,15 +436,6 @@ importers:
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
-      next-auth:
-        specifier: 4.24.4
-        version: 4.24.4(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -499,6 +538,40 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
+  packages/tooling/bundlejs:
+    dependencies:
+      '@hazae41/foras':
+        specifier: 2.0.8
+        version: 2.0.8
+      node-fetch:
+        specifier: 2.6.7
+        version: 2.6.7
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/node-fetch':
+        specifier: 2.6.4
+        version: 2.6.4
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
   packages/tooling/config: {}
 
   packages/tooling/jest:
@@ -539,7 +612,7 @@ importers:
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
-        version: link:../../bundlejs
+        version: link:../../tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../tooling/jest
@@ -590,7 +663,7 @@ importers:
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
-        version: link:../../bundlejs
+        version: link:../../tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../tooling/jest
@@ -617,7 +690,7 @@ importers:
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
-        version: link:../../bundlejs
+        version: link:../../tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../tooling/jest
@@ -681,7 +754,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
@@ -730,7 +803,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
@@ -782,7 +855,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -829,7 +902,7 @@ importers:
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
-        version: link:../../packages/bundlejs
+        version: link:../../packages/tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/tooling/jest
@@ -871,7 +944,7 @@ importers:
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
-        version: link:../../packages/bundlejs
+        version: link:../../packages/tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/tooling/jest
@@ -897,79 +970,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  ui/compose-props:
-    dependencies:
-      '@clutchd/compose-event-handlers':
-        specifier: workspace:*
-        version: link:../compose-event-handlers
-    devDependencies:
-      '@clutchd/bundlejs':
-        specifier: workspace:*
-        version: link:../../packages/bundlejs
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../packages/tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  ui/compose-refs:
-    devDependencies:
-      '@clutchd/bundlejs':
-        specifier: workspace:*
-        version: link:../../packages/bundlejs
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../packages/tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../packages/tooling/tsconfig
-      '@radix-ui/react-compose-refs':
-        specifier: 1.0.1
-        version: 1.0.1(@types/react@18.2.47)(react@18.2.0)
-      '@testing-library/react':
-        specifier: 14.0.0
-        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
   ui/divider:
     dependencies:
       '@clutchd/component':
@@ -977,7 +977,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
@@ -1026,7 +1026,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
@@ -1078,7 +1078,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -1127,7 +1127,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
@@ -1179,7 +1179,7 @@ importers:
         version: link:../compose-event-handlers
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/is-empty':
         specifier: workspace:*
         version: link:../../packages/utils/is-empty
@@ -1280,7 +1280,7 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/flex':
         specifier: workspace:*
         version: link:../flex
@@ -1329,11 +1329,11 @@ importers:
         version: link:../component
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
-        version: link:../../packages/bundlejs
+        version: link:../../packages/tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/tooling/jest
@@ -1378,14 +1378,14 @@ importers:
     dependencies:
       '@clutchd/compose-props':
         specifier: workspace:*
-        version: link:../compose-props
+        version: link:../../packages/primitives/compose-props
       '@clutchd/compose-refs':
         specifier: workspace:*
-        version: link:../compose-refs
+        version: link:../../packages/primitives/compose-refs
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
-        version: link:../../packages/bundlejs
+        version: link:../../packages/tooling/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../packages/tooling/jest
