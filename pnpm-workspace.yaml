@@ -1,17 +1,15 @@
 packages:
   # all packages in direct sub directories of apps/
   - "apps/*"
-  # all packages in direct sub directories of packages/
-  - "packages/*"
   # all unstable packages
   - "packages/_unstable_/*"
   # all primitive component packages
   - "packages/primitives/*"
   # all tooling packages
   - "packages/tooling/*"
+  # all ui component packages
+  - "packages/ui/*"
   # all utility packages
   - "packages/utils/*"
-  # all packages in direct sub directories of ui/
-  - "ui/*"
   # all packages in a benchmark sub directory
   - "**/benchmark"

@@ -1,11 +1,9 @@
 {
-  "name": "@clutchd/input",
-  "version": "0.6.0",
+  "name": "@clutchd/button",
+  "version": "1.2.0",
   "keywords": [
     "clutchd",
-    "input",
-    "form",
-    "forms",
+    "button",
     "tailwind",
     "next"
   ],
@@ -15,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/clutchd/clutchd",
-    "directory": "packages/input"
+    "directory": "packages/_unstable_/button"
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
@@ -31,14 +29,13 @@
   },
   "dependencies": {
     "@clutchd/component": "workspace:*",
-    "@clutchd/compose-event-handlers": "workspace:*",
     "@clutchd/compose-props": "workspace:*",
-    "@clutchd/is-empty": "workspace:*"
+    "@clutchd/tailwind": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
-    "@clutchd/tailwind": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
+    "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.2",
     "@types/node": "20.9.2",
     "@types/react": "18.2.47",
