@@ -1,8 +1,18 @@
 import { getInitials } from "./getInitials";
 
+test("handles invalid inputs", async () => {
+  // @ts-ignore
+  expect(getInitials(9, "timothy", null, true, "booking", "   \s   ", "", "cook", { data: "wow, look at all this data", lol: true })).toEqual("TC");
+});
+
 test("handles null", async () => {
   // @ts-ignore
   expect(getInitials(null)).toEqual("U");
+});
+
+test("handles multiple null and lowercase string", async () => {
+  //@ts-ignore
+  expect(getInitials(null, "tim", null)).toEqual("T");
 });
 
 test("handles undefined", async () => {
@@ -10,8 +20,13 @@ test("handles undefined", async () => {
   expect(getInitials(undefined)).toEqual("U");
 });
 
+test("handles multiple undefined and lowercase string", async () => {
+  //@ts-ignore
+  expect(getInitials(undefined, "tim", undefined)).toEqual("T");
+});
+
 test("handles empty string", async () => {
-  expect(getInitials("")).toEqual("U");
+  expect(getInitials("", "")).toEqual("U");
 });
 
 test("handles lowercase string", async () => {
@@ -20,6 +35,10 @@ test("handles lowercase string", async () => {
 
 test("handles lowercase string and empty string", async () => {
   expect(getInitials("tim", "")).toEqual("T");
+});
+
+test("handles multiple empty strings and lowercase string", async () => {
+  expect(getInitials("", "tim", "", "cooking", "")).toEqual("TC");
 });
 
 test("handles lowercase string and whitespace", async () => {

@@ -1,23 +1,36 @@
-import { isEmpty } from "@clutchd/is-empty";
-
 /**
  * Returns a set of initials derived from the provided names
  * @param names Names which we need to derive initials from
  * @returns A single set of initials
  */
 function getInitials(...names: string[]) {
-  let formatted: string[] = names.join(" ").split(" ");
+  // declare vars to hold initials
+  let l, f = "U"
 
-  if (formatted.length === 1 && isEmpty(formatted[0])) {
-    return "U";
+  // filter out all invalid inputs
+  names = names.filter(x => typeof x === "string").join(" ").split(" ").filter(x => x.trim() != "");
+
+  // if no valid inputs provided, return default
+  if (names.length === 0) {
+    return f;
   }
 
-  let initials = formatted[0].substring(0, 1).toUpperCase();
+  // otherwise, get current length of array
+  let len = names.length;
 
-  if (formatted.length > 1) {
-    initials += formatted[formatted.length - 1].substring(0, 1).toUpperCase();
+  // collect first initial
+  if (names[0]) {
+    f = names[0].charAt(0);
+    console.log("f: '" + f + "'")
   }
-  return initials;
+
+  // if only one valid input, return first initial
+  if (len === 1) {
+    return f.toUpperCase().toString();
+  }
+
+  // otherwise, return first and last initial
+  return (f + names[len - 1]?.charAt(0)).toUpperCase();
 }
 
 export { getInitials };

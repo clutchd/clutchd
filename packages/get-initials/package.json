@@ -26,9 +26,6 @@
     "prepublish": "pnpm run build",
     "test": "jest"
   },
-  "dependencies": {
-    "@clutchd/is-empty": "workspace:*"
-  },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/jest": "workspace:*",
