@@ -3,6 +3,8 @@ packages:
   - "apps/*"
   # all packages in direct sub directories of packages/
   - "packages/*"
+  # all utility packages
+  - "packages/utils/*"
   # all packages in direct sub directories of ui/
   - "ui/*"
   # all packages in a benchmark sub directory

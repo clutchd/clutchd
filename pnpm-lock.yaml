@@ -137,7 +137,7 @@ importers:
         version: link:../../packages/text
       '@clutchd/twx':
         specifier: workspace:*
-        version: link:../../packages/twx
+        version: link:../../packages/utils/twx
       '@vercel/analytics':
         specifier: 1.1.1
         version: 1.1.1
@@ -265,57 +265,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/clsx:
-    devDependencies:
-      '@clutchd/bundlejs':
-        specifier: workspace:*
-        version: link:../bundlejs
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      clsx:
-        specifier: 2.0.0
-        version: 2.0.0
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      node-fetch:
-        specifier: 2.6.7
-        version: 2.6.7
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  packages/clsx/benchmark:
-    devDependencies:
-      '@clutchd/clsx':
-        specifier: workspace:*
-        version: link:..
-      benchmark:
-        specifier: ^2.1.4
-        version: 2.1.4
-      classcat:
-        specifier: ^5.0.4
-        version: 5.0.4
-      classnames:
-        specifier: ^2.3.2
-        version: 2.5.1
-      clsx:
-        specifier: 2.0.0
-        version: 2.0.0
-
   packages/config: {}
 
   packages/copyright:
@@ -380,33 +329,6 @@ importers:
         version: 7.33.2(eslint@8.56.0)
 
   packages/get-initials:
-    devDependencies:
-      '@clutchd/bundlejs':
-        specifier: workspace:*
-        version: link:../bundlejs
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  packages/is-empty:
     devDependencies:
       '@clutchd/bundlejs':
         specifier: workspace:*
@@ -640,7 +562,85 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
 
-  packages/twx:
+  packages/utils/clsx:
+    devDependencies:
+      '@clutchd/bundlejs':
+        specifier: workspace:*
+        version: link:../../bundlejs
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      clsx:
+        specifier: 2.0.0
+        version: 2.0.0
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      node-fetch:
+        specifier: 2.6.7
+        version: 2.6.7
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/utils/clsx/benchmark:
+    devDependencies:
+      '@clutchd/clsx':
+        specifier: workspace:*
+        version: link:..
+      benchmark:
+        specifier: ^2.1.4
+        version: 2.1.4
+      classcat:
+        specifier: ^5.0.4
+        version: 5.0.4
+      classnames:
+        specifier: ^2.3.2
+        version: 2.5.1
+      clsx:
+        specifier: 2.0.0
+        version: 2.0.0
+
+  packages/utils/is-empty:
+    devDependencies:
+      '@clutchd/bundlejs':
+        specifier: workspace:*
+        version: link:../../bundlejs
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/utils/twx:
     dependencies:
       '@clutchd/clsx':
         specifier: workspace:*
@@ -651,10 +651,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../../jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../../tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -838,7 +838,7 @@ importers:
         version: link:../../packages/tsconfig
       '@clutchd/twx':
         specifier: workspace:*
-        version: link:../../packages/twx
+        version: link:../../packages/utils/twx
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -1182,7 +1182,7 @@ importers:
         version: link:../compose-props
       '@clutchd/is-empty':
         specifier: workspace:*
-        version: link:../../packages/is-empty
+        version: link:../../packages/utils/is-empty
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
