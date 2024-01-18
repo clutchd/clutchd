@@ -13,7 +13,7 @@ importers:
         version: 2.26.2
       '@clutchd/eslint-config-clutchd':
         specifier: workspace:*
-        version: link:packages/eslint-config-clutchd
+        version: link:packages/tooling/eslint-config-clutchd
       '@manypkg/cli':
         specifier: 0.21.0
         version: 0.21.0
@@ -92,7 +92,7 @@ importers:
     dependencies:
       '@clutchd/avatar':
         specifier: workspace:*
-        version: link:../../packages/avatar
+        version: link:../../packages/_unstable_/avatar
       '@clutchd/block':
         specifier: workspace:*
         version: link:../../ui/block
@@ -107,7 +107,7 @@ importers:
         version: link:../../ui/component
       '@clutchd/copyright':
         specifier: workspace:*
-        version: link:../../packages/copyright
+        version: link:../../packages/_unstable_/copyright
       '@clutchd/divider':
         specifier: workspace:*
         version: link:../../ui/divider
@@ -134,7 +134,7 @@ importers:
         version: link:../../ui/link
       '@clutchd/text':
         specifier: workspace:*
-        version: link:../../packages/text
+        version: link:../../packages/_unstable_/text
       '@clutchd/twx':
         specifier: workspace:*
         version: link:../../packages/utils/twx
@@ -181,6 +181,98 @@ importers:
       tailwindcss:
         specifier: 3.3.5
         version: 3.3.5
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/_unstable_/avatar:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../../../ui/component
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../../../ui/tailwind
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      next:
+        specifier: 14.0.4
+        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/_unstable_/copyright:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../../../ui/component
+      '@clutchd/text':
+        specifier: workspace:*
+        version: link:../text
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      next:
+        specifier: 14.0.4
+        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
       typescript:
         specifier: 5.2.2
         version: 5.2.2
@@ -266,21 +358,67 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/avatar:
+  packages/_unstable_/skeleton:
     dependencies:
       '@clutchd/component':
         specifier: workspace:*
-        version: link:../../ui/component
+        version: link:../../../ui/component
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../tooling/jest
+        version: link:../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@testing-library/react':
+        specifier: 14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      next-auth:
+        specifier: 4.24.4
+        version: 4.24.4(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/_unstable_/text:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../../../ui/component
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../../ui/tailwind
+        version: link:../../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tooling/tsconfig
+        version: link:../../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -311,67 +449,6 @@ importers:
       typescript:
         specifier: 5.2.2
         version: 5.2.2
-
-  packages/copyright:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../ui/component
-      '@clutchd/text':
-        specifier: workspace:*
-        version: link:../text
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  packages/eslint-config-clutchd:
-    dependencies:
-      eslint-config-next:
-        specifier: 14.0.1
-        version: 14.0.1(eslint@8.56.0)(typescript@5.2.2)
-      eslint-config-prettier:
-        specifier: 8.8.0
-        version: 8.8.0(eslint@8.56.0)
-      eslint-config-turbo:
-        specifier: 1.10.16
-        version: 1.10.16(eslint@8.56.0)
-      eslint-plugin-react:
-        specifier: 7.33.2
-        version: 7.33.2(eslint@8.56.0)
 
   packages/primitives/compose-props:
     dependencies:
@@ -446,98 +523,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/skeleton:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../ui/component
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tooling/tsconfig
-      '@testing-library/react':
-        specifier: 14.0.0
-        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      next-auth:
-        specifier: 4.24.4
-        version: 4.24.4(next@14.0.4)(react-dom@18.2.0)(react@18.2.0)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  packages/text:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../ui/component
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../tooling/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../../ui/tailwind
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
   packages/tooling/bundlejs:
     dependencies:
       '@hazae41/foras':
@@ -573,6 +558,21 @@ importers:
         version: 5.2.2
 
   packages/tooling/config: {}
+
+  packages/tooling/eslint-config-clutchd:
+    dependencies:
+      eslint-config-next:
+        specifier: 14.0.1
+        version: 14.0.1(eslint@8.56.0)(typescript@5.2.2)
+      eslint-config-prettier:
+        specifier: 8.8.0
+        version: 8.8.0(eslint@8.56.0)
+      eslint-config-turbo:
+        specifier: 1.10.16
+        version: 1.10.16(eslint@8.56.0)
+      eslint-plugin-react:
+        specifier: 7.33.2
+        version: 7.33.2(eslint@8.56.0)
 
   packages/tooling/jest:
     dependencies:
