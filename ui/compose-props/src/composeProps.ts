@@ -26,7 +26,7 @@ function composeProps(...props: Record<string, any>[]) {
  */
 function mergeProps(
   originalProps: Record<string, any>,
-  newProps: Record<string, any>,
+  newProps: Record<string, any> | undefined,
 ): Record<string, any> {
   // iterate through all provided prop names
   for (const propName in newProps) {
