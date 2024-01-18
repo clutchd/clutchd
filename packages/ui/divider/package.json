@@ -1,10 +1,10 @@
 {
-  "name": "@clutchd/block",
-  "version": "2.0.0",
+  "name": "@clutchd/divider",
+  "version": "3.1.0",
   "keywords": [
     "clutchd",
-    "block",
-    "react",
+    "divider",
+    "seperator",
     "tailwind"
   ],
   "bugs": {
@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/clutchd/clutchd",
-    "directory": "packages/block"
+    "directory": "packages/ui/divider"
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,

@@ -1,9 +1,9 @@
 {
-  "name": "@clutchd/card",
-  "version": "3.0.0",
+  "name": "@clutchd/block",
+  "version": "2.0.0",
   "keywords": [
     "clutchd",
-    "card",
+    "block",
     "react",
     "tailwind"
   ],
@@ -13,7 +13,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/clutchd/clutchd",
-    "directory": "packages/card"
+    "directory": "packages/ui/block"
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,
@@ -29,12 +29,13 @@
   },
   "dependencies": {
     "@clutchd/component": "workspace:*",
-    "@clutchd/compose-props": "workspace:*"
+    "@clutchd/compose-props": "workspace:*",
+    "@clutchd/tailwind": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
-    "@clutchd/tailwind": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
+    "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.2",
     "@types/node": "20.9.2",
     "@types/react": "18.2.47",
