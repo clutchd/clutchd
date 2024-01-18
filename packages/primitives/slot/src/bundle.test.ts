@@ -7,6 +7,7 @@ test("ensures the bundle size is smaller than the last size", async () => {
   expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
 });
 
+// TODO: make this test pass
 // test("ensures the package is smaller than the original size", async () => {
 //   const og = await getRemoteSize("@radix-ui/react-slot");
 //   const size = await getRemoteSize("@clutchd/slot");

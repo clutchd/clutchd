@@ -23,6 +23,17 @@
       "~/*": ["./src/*"]
     }
   },
-  "include": ["/**/*.ts", "/**/*.tsx", "/**/*.cjs", "/**/*.d.ts", "/**/*.js"],
-  "exclude": ["/**/build", "/**/dist", "/**/node_modules"]
+  "include": [
+    "/**/*.ts",
+    "/**/*.tsx",
+    "/**/*.cjs",
+    "/**/*.d.ts",
+    "/**/*.js",
+    "/.next/types/**/*.ts",
+  ],
+  "exclude": [
+    "/**/build",
+    "/**/dist",
+    "/**/node_modules"
+  ]
 }
