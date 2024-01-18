@@ -3,6 +3,8 @@ packages:
   - "apps/*"
   # all packages in direct sub directories of packages/
   - "packages/*"
+  # all tools packages
+  - "packages/tooling/*"
   # all utility packages
   - "packages/utils/*"
   # all packages in direct sub directories of ui/

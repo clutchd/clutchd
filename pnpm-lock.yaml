@@ -56,10 +56,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -153,10 +153,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -193,13 +193,13 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -242,10 +242,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -265,8 +265,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/config: {}
-
   packages/copyright:
     dependencies:
       '@clutchd/component':
@@ -278,10 +276,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -328,60 +326,14 @@ importers:
         specifier: 7.33.2
         version: 7.33.2(eslint@8.56.0)
 
-  packages/get-initials:
-    devDependencies:
-      '@clutchd/bundlejs':
-        specifier: workspace:*
-        version: link:../bundlejs
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  packages/jest:
-    dependencies:
-      '@testing-library/jest-dom':
-        specifier: 5.16.5
-        version: 5.16.5
-      jest-environment-jsdom:
-        specifier: 29.7.0
-        version: 29.7.0
-      ts-jest:
-        specifier: 29.1.0
-        version: 29.1.0(@babel/core@7.23.7)(jest@29.6.1)(typescript@5.2.2)
-    devDependencies:
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-
   packages/next-auth-prisma-adapter:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../tooling/tsconfig
       '@prisma/client':
         specifier: 4.9.0
         version: 4.9.0(prisma@5.5.2)
@@ -417,10 +369,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -463,10 +415,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../tooling/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -509,13 +461,13 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../jest
+        version: link:../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../../ui/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../tsconfig
+        version: link:../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -547,7 +499,28 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/tsconfig:
+  packages/tooling/config: {}
+
+  packages/tooling/jest:
+    dependencies:
+      '@testing-library/jest-dom':
+        specifier: 5.16.5
+        version: 5.16.5
+      jest-environment-jsdom:
+        specifier: 29.7.0
+        version: 29.7.0
+      ts-jest:
+        specifier: 29.1.0
+        version: 29.1.0(@babel/core@7.23.7)(jest@29.6.1)(typescript@5.2.2)
+    devDependencies:
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+
+  packages/tooling/tsconfig:
     devDependencies:
       '@types/jest':
         specifier: 29.5.2
@@ -569,10 +542,10 @@ importers:
         version: link:../../bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../jest
+        version: link:../../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../tsconfig
+        version: link:../../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -613,6 +586,33 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
 
+  packages/utils/get-initials:
+    devDependencies:
+      '@clutchd/bundlejs':
+        specifier: workspace:*
+        version: link:../../bundlejs
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
   packages/utils/is-empty:
     devDependencies:
       '@clutchd/bundlejs':
@@ -620,10 +620,10 @@ importers:
         version: link:../../bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../jest
+        version: link:../../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../tsconfig
+        version: link:../../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -651,10 +651,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../jest
+        version: link:../../tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../tsconfig
+        version: link:../../tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -688,10 +688,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -737,10 +737,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -786,13 +786,13 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -832,10 +832,10 @@ importers:
         version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@clutchd/twx':
         specifier: workspace:*
         version: link:../../packages/utils/twx
@@ -874,10 +874,10 @@ importers:
         version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@radix-ui/primitive':
         specifier: 1.0.1
         version: 1.0.1
@@ -908,10 +908,10 @@ importers:
         version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -935,10 +935,10 @@ importers:
         version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@radix-ui/react-compose-refs':
         specifier: 1.0.1
         version: 1.0.1(@types/react@18.2.47)(react@18.2.0)
@@ -984,10 +984,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -1033,10 +1033,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -1082,13 +1082,13 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -1134,10 +1134,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -1186,13 +1186,13 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -1235,13 +1235,13 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -1290,10 +1290,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
@@ -1336,10 +1336,10 @@ importers:
         version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@testing-library/react':
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
@@ -1388,10 +1388,10 @@ importers:
         version: link:../../packages/bundlejs
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@radix-ui/react-slot':
         specifier: 1.0.2
         version: 1.0.2(@types/react@18.2.47)(react@18.2.0)
@@ -1427,10 +1427,10 @@ importers:
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
-        version: link:../../packages/jest
+        version: link:../../packages/tooling/jest
       '@clutchd/tsconfig':
         specifier: workspace:*
-        version: link:../../packages/tsconfig
+        version: link:../../packages/tooling/tsconfig
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
