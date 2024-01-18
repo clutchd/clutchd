@@ -15,7 +15,7 @@ test("compose 0 valid handlers", async () => {
 
 test("compose 1 valid handlers", async () => {
   const logSpy = jest.spyOn(console, "log");
-  const handler = composePreventableEventHandlers((e) => console.log("first"));
+  const handler = composePreventableEventHandlers(() => console.log("first"));
   handler(getEvent());
   expect(logSpy).toHaveBeenCalledWith("first");
   expect(logSpy).toHaveBeenCalledTimes(1);
@@ -24,8 +24,8 @@ test("compose 1 valid handlers", async () => {
 test("compose 2 valid handlers", async () => {
   const logSpy = jest.spyOn(console, "log");
   const handler = composePreventableEventHandlers(
-    (e) => console.log("first"),
-    (e) => console.log("second"),
+    () => console.log("first"),
+    () => console.log("second"),
   );
   handler(getEvent());
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -36,9 +36,9 @@ test("compose 2 valid handlers", async () => {
 test("compose 3 valid handlers", async () => {
   const logSpy = jest.spyOn(console, "log");
   const handler = composePreventableEventHandlers(
-    (e) => console.log("first"),
-    (e) => console.log("second"),
-    (e) => console.log("third"),
+    () => console.log("first"),
+    () => console.log("second"),
+    () => console.log("third"),
   );
   handler(getEvent());
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -50,10 +50,10 @@ test("compose 3 valid handlers", async () => {
 test("compose 3 handlers (2 valid, 1 invalid)", async () => {
   const logSpy = jest.spyOn(console, "log");
   const handler = composePreventableEventHandlers(
-    (e) => console.log("first"),
+    () => console.log("first"),
     // @ts-ignore
     undefined,
-    (e) => console.log("third"),
+    () => console.log("third"),
   );
   handler(getEvent());
   expect(logSpy).toHaveBeenCalledWith("first");
@@ -64,8 +64,8 @@ test("compose 3 handlers (2 valid, 1 invalid)", async () => {
 test("compose 2 valid handlers with defaultPrevented", async () => {
   const logSpy = jest.spyOn(console, "log");
   const handler = composePreventableEventHandlers(
-    (e) => console.log("first"),
-    (e) => console.log("second"),
+    () => console.log("first"),
+    () => console.log("second"),
   );
   const event = getEvent();
   event.preventDefault();
@@ -77,9 +77,9 @@ test("compose 2 valid handlers with defaultPrevented", async () => {
 test("compose 3 valid handlers with defaultPrevented", async () => {
   const logSpy = jest.spyOn(console, "log");
   const handler = composePreventableEventHandlers(
-    (e) => console.log("first"),
-    (e) => console.log("second"),
-    (e) => console.log("third"),
+    () => console.log("first"),
+    () => console.log("second"),
+    () => console.log("third"),
   );
   const event = getEvent();
   event.preventDefault();
@@ -91,10 +91,10 @@ test("compose 3 valid handlers with defaultPrevented", async () => {
 test("compose 3 handlers with defaultPrevented (2 valid, 1 invalid)", async () => {
   const logSpy = jest.spyOn(console, "log");
   const handler = composePreventableEventHandlers(
-    (e) => console.log("first"),
+    () => console.log("first"),
     // @ts-ignore
     undefined,
-    (e) => console.log("third"),
+    () => console.log("third"),
   );
   const event = getEvent();
   event.preventDefault();
