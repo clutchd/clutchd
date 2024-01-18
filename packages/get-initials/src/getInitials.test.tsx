@@ -1,8 +1,8 @@
 import { getInitials } from "./getInitials";
 
 test("handles invalid inputs", async () => {
-  // @ts-ignore
   expect(
+    // @ts-ignore
     getInitials(9, "timothy", null, true, "booking", "   s   ", "", "cook", {
       data: "wow, look at all this data",
       lol: true,
