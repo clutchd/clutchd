@@ -5,10 +5,15 @@
  */
 function getInitials(...names: string[]) {
   // declare vars to hold initials
-  let l, f = "U"
+  let l,
+    f = "U";
 
   // filter out all invalid inputs
-  names = names.filter(x => typeof x === "string").join(" ").split(" ").filter(x => x.trim() != "");
+  names = names
+    .filter((x) => typeof x === "string")
+    .join(" ")
+    .split(" ")
+    .filter((x) => x.trim() != "");
 
   // if no valid inputs provided, return default
   if (names.length === 0) {
@@ -21,7 +26,7 @@ function getInitials(...names: string[]) {
   // collect first initial
   if (names[0]) {
     f = names[0].charAt(0);
-    console.log("f: '" + f + "'")
+    console.log("f: '" + f + "'");
   }
 
   // if only one valid input, return first initial

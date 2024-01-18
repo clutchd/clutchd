@@ -2,7 +2,12 @@ import { getInitials } from "./getInitials";
 
 test("handles invalid inputs", async () => {
   // @ts-ignore
-  expect(getInitials(9, "timothy", null, true, "booking", "   \s   ", "", "cook", { data: "wow, look at all this data", lol: true })).toEqual("TC");
+  expect(
+    getInitials(9, "timothy", null, true, "booking", "   s   ", "", "cook", {
+      data: "wow, look at all this data",
+      lol: true,
+    }),
+  ).toEqual("TC");
 });
 
 test("handles null", async () => {
