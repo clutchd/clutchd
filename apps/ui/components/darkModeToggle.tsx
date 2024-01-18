@@ -12,7 +12,7 @@ function DarkModeToggle({ initialValue }: { initialValue: Theme }) {
       document.cookie = `theme=${theme};path=/;`;
       document
         .querySelector("body")
-        .setAttribute("class", theme === "dark" ? "dark" : "");
+        ?.setAttribute("class", theme === "dark" ? "dark" : "");
     } else {
       setTheme(
         window.matchMedia("(prefers-color-scheme: dark)").matches
