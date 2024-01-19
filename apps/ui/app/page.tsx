@@ -50,7 +50,7 @@ export default function Home() {
       </Header> */}
       <Main>
         <div className="mb-10">
-          <H1 className="pb-4 border-b border-gray-950">Primitives</H1>
+          <H1 className="border-b border-gray-950 pb-4">Primitives</H1>
           <Showcase
             title="Copyright"
             description="A small utility primitive to assist with returning the current copyright year."
@@ -73,7 +73,7 @@ export default function Home() {
           </Showcase>
         </div>
         <div className="mb-8">
-          <H1 className="pb-4 border-b border-gray-950">Components</H1>
+          <H1 className="border-b border-gray-950 pb-4">Components</H1>
         </div>
         {/* <TextShowcase /> */}
         {/* <AvatarShowcase /> */}

@@ -19,6 +19,7 @@
   "sideEffects": false,
   "type": "module",
   "exports": "./index.cjs",
+  "main": "./index.cjs",
   "types": "./dist/index.d.ts",
   "dependencies": {
     "eslint-config-next": "14.0.1",
