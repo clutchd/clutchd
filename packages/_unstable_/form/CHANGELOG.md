@@ -1,5 +1,12 @@
 # @clutchd/form
 
+## 0.2.2
+
+### Patch Changes
+
+- @clutchd/component@4.0.1
+- @clutchd/button@1.2.2
+
 ## 0.2.1
 
 ### Patch Changes
