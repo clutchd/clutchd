@@ -4,6 +4,7 @@ export { CardShowcase } from "./cardShowcase";
 export { DarkModeToggle } from "./darkModeToggle";
 export { FormShowcase } from "./formShowcase";
 export { InputShowcase } from "./inputShowcase";
-export { LabelShowcase } from "./labelShowcase";
+export { LabelShowcase } from "./primitives/labelShowcase";
 export { Showcase } from "./showcase";
 export { TailwindIndicator } from "./tailwindIndicator";
+export * from "./primitives";

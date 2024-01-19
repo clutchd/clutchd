@@ -11,7 +11,9 @@ import {
   Showcase,
   TailwindIndicator,
   InputShowcase,
+  CopyrightShowcase,
 } from "../components";
+import { Copyright } from "@clutchd/copyright";
 
 export const metadata: Metadata = {
   title: "Clutchd, LLC",
@@ -47,11 +49,35 @@ export default function Home() {
         <ColorSwitch color={color} setColor={setColor} /> 
       </Header> */}
       <Main>
-        <H1>Components</H1>
-        <Divider />
+        <div className="mb-10">
+          <H1 className="pb-4 border-b border-gray-950">Primitives</H1>
+          <Showcase
+            title="Copyright"
+            description="A small utility primitive to assist with returning the current copyright year."
+            pkg="@clutchd/copyright"
+            pkgType="primitive"
+            stable
+            rsc
+          >
+            <CopyrightShowcase />
+          </Showcase>
+          <Showcase
+            title="Label"
+            description="A simple, non-focusable, label intended to be used for input forms."
+            pkg="@clutchd/label"
+            pkgType="primitive"
+            stable
+            rsc={false}
+          >
+            <LabelShowcase />
+          </Showcase>
+        </div>
+        <div className="mb-8">
+          <H1 className="pb-4 border-b border-gray-950">Components</H1>
+        </div>
         {/* <TextShowcase /> */}
         {/* <AvatarShowcase /> */}
-        <Showcase
+        {/* <Showcase
           title="Button"
           description="A simple, focusable, button."
           pkg="@clutchd/button"
@@ -73,20 +99,10 @@ export default function Home() {
           rsc={false}
         >
           <InputShowcase />
-        </Showcase>
-        <Showcase
-          title="Label"
-          description="A simple, non-focusable, label intended to be used for input forms."
-          pkg="@clutchd/label"
-          pkgType="primitive"
-          stable
-          rsc={false}
-        >
-          <LabelShowcase />
-        </Showcase>
+        </Showcase> */}
       </Main>
-      <Footer className="mt-8">
-        <div className="text-gray-500">© 2023 Clutchd, LLC</div>
+      <Footer>
+        <Copyright className="text-gray-500">Clutchd, LLC</Copyright>
         <Link
           className="text-right underline underline-offset-4"
           href="mailto:william@clutchd.com"
