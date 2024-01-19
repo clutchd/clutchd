@@ -1,5 +1,12 @@
 # @clutchd/tailwind
 
+## 3.2.0
+
+### Minor Changes
+
+- 5daa466: export spacing utils
+- 5daa466: Export types only
+
 ## 3.1.0
 
 ### Minor Changes

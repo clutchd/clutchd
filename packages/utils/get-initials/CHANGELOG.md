@@ -1,5 +1,15 @@
 # @clutchd/get-initials
 
+## 2.0.0
+
+### Major Changes
+
+- d47ab7a: esm only
+
+### Patch Changes
+
+- a149bd1: Remove need for isEmpty, improve input validation
+
 ## 1.2.6
 
 ### Patch Changes

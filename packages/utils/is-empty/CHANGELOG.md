@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.0
+
+### Major Changes
+
+- d47ab7a: esm only
+
 ## 2.0.7
 
 ### Patch Changes

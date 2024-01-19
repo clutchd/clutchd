@@ -1,5 +1,12 @@
 # @clutchd/avatar
 
+## 3.1.1
+
+### Patch Changes
+
+- Updated dependencies [d47ab7a]
+  - @clutchd/component@4.0.0
+
 ## 3.1.0
 
 ### Minor Changes

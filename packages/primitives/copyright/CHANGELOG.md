@@ -1,5 +1,17 @@
 # @clutchd/copyright
 
+## 3.0.0
+
+### Major Changes
+
+- 72bece5: Convert copyright to a primitive. Returns div with copyright content. Provides simple helper function as escape hatch.
+- d47ab7a: esm only
+
+### Patch Changes
+
+- Updated dependencies [d47ab7a]
+  - @clutchd/component@4.0.0
+
 ## 2.2.0
 
 ### Minor Changes

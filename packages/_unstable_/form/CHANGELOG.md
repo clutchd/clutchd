@@ -1,5 +1,15 @@
 # @clutchd/form
 
+## 0.2.1
+
+### Patch Changes
+
+- Updated dependencies [d4dc605]
+- Updated dependencies [d47ab7a]
+  - @clutchd/compose-props@3.0.0
+  - @clutchd/component@4.0.0
+  - @clutchd/button@1.2.1
+
 ## 0.2.0
 
 ### Minor Changes

@@ -1,5 +1,11 @@
 # @clutchd/eslint-config-clutchd
 
+## 2.0.0
+
+### Major Changes
+
+- d47ab7a: esm only
+
 ## 1.1.2
 
 ### Patch Changes

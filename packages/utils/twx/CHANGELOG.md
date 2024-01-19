@@ -1,5 +1,16 @@
 # @clutchd/twx
 
+## 3.0.0
+
+### Major Changes
+
+- d47ab7a: esm only
+
+### Patch Changes
+
+- Updated dependencies [d47ab7a]
+  - @clutchd/clsx@2.0.0
+
 ## 2.0.0
 
 ### Major Changes
