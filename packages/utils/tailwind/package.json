@@ -11,7 +11,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/clutchd/clutchd",
-    "directory": "packages/_unstable_/tailwind"
+    "directory": "packages/utils/tailwind"
   },
   "author": "Clutchd, LLC",
   "sideEffects": false,

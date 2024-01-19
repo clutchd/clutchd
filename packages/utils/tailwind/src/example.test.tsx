@@ -1,4 +1,4 @@
-// TODO: Add tests for this package
+// TODO: Add tests
 test("example test", () => {
   const logSpy = jest.spyOn(console, "log");
   console.log("logged");
