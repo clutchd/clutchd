@@ -12,8 +12,13 @@ export async function getRemoteSize(
   rawUncompressedSize: number;
   rawCompressedSize: number;
 }> {
+  // if "@" is NOT in pkg (after first char), we are NOT targeting a version
+  // in this case, we should force the latest available version
+  let forceLatest = !pkg.substring(1, pkg.length - 1).includes("@");
   if (provider === "bundlejs") {
-    const data = await fetch(`https://edge.bundlejs.com/?q=${pkg}`);
+    const data = await fetch(
+      `https://edge.bundlejs.com/?q=${pkg}${forceLatest ? "@latest" : ""}`,
+    );
     const { size } = await data.json();
     return {
       rawUncompressedSize: size?.rawUncompressedSize,
@@ -21,7 +26,7 @@ export async function getRemoteSize(
     };
   } else {
     const data = await fetch(
-      `https://bundlephobia.com/api/size?package=${pkg}`,
+      `https://bundlephobia.com/api/size?package=${pkg}${forceLatest ? "@latest" : ""}`,
     );
     const { size, gzip } = await data.json();
     return {

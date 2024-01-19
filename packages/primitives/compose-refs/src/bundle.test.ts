@@ -9,7 +9,7 @@ test("ensures the bundle size is smaller than the last size", async () => {
 
 test("ensures the package is smaller than the original size", async () => {
   const og = await getRemoteSize("@radix-ui/react-compose-refs");
-  const size = await getRemoteSize("@clutchd/compose-refs@1.1.5");
+  const size = await getRemoteSize("@clutchd/compose-refs");
   console.log(size);
   expect(size.rawCompressedSize).toBeLessThanOrEqual(og.rawCompressedSize);
 });
