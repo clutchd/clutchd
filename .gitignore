@@ -33,3 +33,6 @@ npm-debug.log*
 
 # benchmarking
 *.benchmark.json
+
+# changeset archive
+.changeset-archive
