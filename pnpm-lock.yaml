@@ -107,7 +107,7 @@ importers:
         version: link:../../packages/primitives/component
       '@clutchd/copyright':
         specifier: workspace:*
-        version: link:../../packages/_unstable_/copyright
+        version: link:../../packages/primitives/copyright
       '@clutchd/divider':
         specifier: workspace:*
         version: link:../../packages/_unstable_/divider
@@ -365,52 +365,6 @@ importers:
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
-  packages/_unstable_/copyright:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../primitives/component
-      '@clutchd/text':
-        specifier: workspace:*
-        version: link:../text
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
       postcss:
         specifier: 8.4.31
         version: 8.4.31
@@ -982,9 +936,6 @@ importers:
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1015,9 +966,6 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1046,9 +994,6 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1079,15 +1024,43 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/primitives/copyright:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../component
+    devDependencies:
+      '@clutchd/bundlejs':
+        specifier: workspace:*
+        version: link:../../tooling/bundlejs
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1121,25 +1094,16 @@ importers:
         version: link:../../tooling/tsconfig
       '@radix-ui/react-label':
         specifier: 2.0.2
-        version: 2.0.2(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
+        version: 2.0.2(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
       postcss:
         specifier: 8.4.31
         version: 8.4.31
@@ -1180,15 +1144,9 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1220,9 +1178,6 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       '@types/node-fetch':
         specifier: 2.6.4
         version: 2.6.4
@@ -1301,18 +1256,12 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       clsx:
         specifier: 2.0.0
         version: 2.0.0
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
-      node-fetch:
-        specifier: 2.6.7
-        version: 2.6.7
       tsup:
         specifier: 7.2.0
         version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
@@ -1352,9 +1301,6 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1379,9 +1325,6 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1403,9 +1346,6 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
@@ -1437,15 +1377,9 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
-      node-fetch:
-        specifier: 2.6.7
-        version: 2.6.7
       tsup:
         specifier: 7.2.0
         version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
@@ -2693,7 +2627,7 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@radix-ui/react-label@2.0.2(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
+  /@radix-ui/react-label@2.0.2(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-N5ehvlM7qoTLx7nWPodsPYPgMzA5WM8zZChQg8nyFJKnDO5WHdba1vv5/H6IO5LtJMfD2Q3wh1qHFGNtK0w3bQ==}
     peerDependencies:
       '@types/react': '*'
@@ -2707,14 +2641,13 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.23.8
-      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
+      '@radix-ui/react-primitive': 1.0.3(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
       '@types/react': 18.2.47
-      '@types/react-dom': 18.2.6
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /@radix-ui/react-primitive@1.0.3(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
+  /@radix-ui/react-primitive@1.0.3(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-yi58uVyoAcK/Nq1inRY56ZSjKypBNKTa/1mcL8qdl6oJeEaDbOldlzrGn7P6Q3Id5d+SYNGc5AJgc4vGhjs5+g==}
     peerDependencies:
       '@types/react': '*'
@@ -2730,7 +2663,6 @@ packages:
       '@babel/runtime': 7.23.8
       '@radix-ui/react-slot': 1.0.2(@types/react@18.2.47)(react@18.2.0)
       '@types/react': 18.2.47
-      '@types/react-dom': 18.2.6
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     dev: true
@@ -6208,6 +6140,7 @@ packages:
         optional: true
     dependencies:
       whatwg-url: 5.0.0
+    dev: false
 
   /node-int64@0.4.0:
     resolution: {integrity: sha512-O5lz91xSOeoXP6DulyHfllpq+Eg00MWitZIbtPfoSEvqIHdl5gfcY6hYzDWnj0qD5tz52PI08u9qUvSVeUBeHw==}
@@ -7499,6 +7432,7 @@ packages:
 
   /tr46@0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
+    dev: false
 
   /tr46@1.0.1:
     resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
@@ -7880,6 +7814,7 @@ packages:
 
   /webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
+    dev: false
 
   /webidl-conversions@4.0.2:
     resolution: {integrity: sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==}
@@ -7915,6 +7850,7 @@ packages:
     dependencies:
       tr46: 0.0.3
       webidl-conversions: 3.0.1
+    dev: false
 
   /whatwg-url@7.1.0:
     resolution: {integrity: sha512-WUu7Rg1DroM7oQvGWfOiAK21n74Gg+T4elXEQYkOhtyLeWiJFoOGLXPKI/9gzIie9CtwVLm8wtw6YJdKyxSjeg==}
