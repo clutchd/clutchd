@@ -1,5 +1,11 @@
 # @clutchd/slot
 
+## 2.0.1
+
+### Patch Changes
+
+- 3215c85: Add main to package.json
+
 ## 2.0.0
 
 ### Major Changes

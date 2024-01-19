@@ -1,5 +1,25 @@
 # @clutchd/ui
 
+## 0.12.1
+
+### Patch Changes
+
+- @clutchd/component@4.0.1
+- @clutchd/avatar@3.1.2
+- @clutchd/block@2.0.2
+- @clutchd/button@1.2.2
+- @clutchd/card@3.0.2
+- @clutchd/divider@3.1.2
+- @clutchd/flex@4.1.2
+- @clutchd/form@0.2.2
+- @clutchd/grid@3.0.2
+- @clutchd/input@0.6.2
+- @clutchd/layout@2.1.6
+- @clutchd/link@1.5.2
+- @clutchd/text@3.1.2
+- @clutchd/copyright@3.0.1
+- @clutchd/label@4.0.1
+
 ## 0.12.0
 
 ### Minor Changes
