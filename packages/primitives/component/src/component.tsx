@@ -1,6 +1,7 @@
 import { Slot } from "@clutchd/slot";
 import * as React from "react";
 
+// TODO: should twx be optionally bundled like this? should we not make tailwind assumption?
 /**
  * Import `@clutchd/twx` if it exists, otherwise no processing classNames
  */
@@ -10,6 +11,7 @@ try {
   tx = false;
 }
 
+// TODO: make this list leaner?
 /**
  * Supported `Component` nodes
  */
@@ -67,7 +69,7 @@ type IComponentPropsWithoutRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component
  */
 interface IForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
+  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> { }
 
 /**
  * Type to define the supported `Component` nodes
