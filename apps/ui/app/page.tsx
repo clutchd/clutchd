@@ -78,6 +78,8 @@ export default function Home() {
           title="Label"
           description="A simple, non-focusable, label intended to be used for input forms."
           pkg="@clutchd/label"
+          pkgType="primitive"
+          stable
           rsc={false}
         >
           <LabelShowcase />

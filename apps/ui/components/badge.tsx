@@ -11,7 +11,7 @@ export function Badge({
   return (
     <Component.div
       className={[
-        "mx-2 inline-flex cursor-default items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-100",
+        "mx-2 inline-flex cursor-default items-center rounded-md px-2 py-1 text-xs font-medium ring-1 ring-inset ",
         className,
       ]
         .filter(Boolean)
