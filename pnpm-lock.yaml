@@ -125,7 +125,7 @@ importers:
         version: link:../../packages/_unstable_/input
       '@clutchd/label':
         specifier: workspace:*
-        version: link:../../packages/_unstable_/label
+        version: link:../../packages/ui/label
       '@clutchd/layout':
         specifier: workspace:*
         version: link:../../packages/_unstable_/layout
@@ -196,7 +196,7 @@ importers:
         version: link:../../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
@@ -241,7 +241,7 @@ importers:
         version: link:../../primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -290,7 +290,7 @@ importers:
         version: link:../../primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -346,7 +346,7 @@ importers:
         version: link:../../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
@@ -434,7 +434,7 @@ importers:
         version: link:../../primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -483,7 +483,7 @@ importers:
         version: link:../../primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -539,7 +539,7 @@ importers:
         version: link:../../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
@@ -584,7 +584,7 @@ importers:
         version: link:../../primitives/compose-props
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -643,7 +643,7 @@ importers:
         version: link:../../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
@@ -740,7 +740,7 @@ importers:
         version: link:../flex
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
     devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
@@ -990,7 +990,7 @@ importers:
         version: link:../../tooling/jest
       '@clutchd/tailwind':
         specifier: workspace:*
-        version: link:../tailwind
+        version: link:../../utils/tailwind
       '@clutchd/tsconfig':
         specifier: workspace:*
         version: link:../../tooling/tsconfig
@@ -1308,6 +1308,58 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
 
+  packages/ui/label:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../../primitives/component
+      '@clutchd/compose-event-handlers':
+        specifier: workspace:*
+        version: link:../../primitives/compose-event-handlers
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../../utils/tailwind
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@radix-ui/react-label':
+        specifier: ^2.0.2
+        version: 2.0.2(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      next:
+        specifier: 14.0.4
+        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
   packages/utils/clsx:
     devDependencies:
       '@clutchd/bundlejs':
@@ -1391,6 +1443,30 @@ importers:
       '@clutchd/bundlejs':
         specifier: workspace:*
         version: link:../../tooling/bundlejs
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/utils/tailwind:
+    devDependencies:
       '@clutchd/jest':
         specifier: workspace:*
         version: link:../../tooling/jest
@@ -2688,6 +2764,48 @@ packages:
       '@babel/runtime': 7.23.8
       '@types/react': 18.2.47
       react: 18.2.0
+    dev: true
+
+  /@radix-ui/react-label@2.0.2(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-N5ehvlM7qoTLx7nWPodsPYPgMzA5WM8zZChQg8nyFJKnDO5WHdba1vv5/H6IO5LtJMfD2Q3wh1qHFGNtK0w3bQ==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.8
+      '@radix-ui/react-primitive': 1.0.3(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
+      '@types/react': 18.2.47
+      '@types/react-dom': 18.2.6
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /@radix-ui/react-primitive@1.0.3(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-yi58uVyoAcK/Nq1inRY56ZSjKypBNKTa/1mcL8qdl6oJeEaDbOldlzrGn7P6Q3Id5d+SYNGc5AJgc4vGhjs5+g==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.8
+      '@radix-ui/react-slot': 1.0.2(@types/react@18.2.47)(react@18.2.0)
+      '@types/react': 18.2.47
+      '@types/react-dom': 18.2.6
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: true
 
   /@radix-ui/react-slot@1.0.2(@types/react@18.2.47)(react@18.2.0):
