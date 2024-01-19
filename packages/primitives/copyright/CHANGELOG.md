@@ -1,5 +1,13 @@
 # @clutchd/copyright
 
+## 3.0.2
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+- Updated dependencies [49d885ae]
+  - @clutchd/component@4.0.2
+
 ## 3.0.1
 
 ### Patch Changes

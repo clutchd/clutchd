@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.3.1
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+
 ## 0.3.0
 
 ### Minor Changes

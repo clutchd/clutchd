@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.0.1
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+
 ## 2.0.0
 
 ### Major Changes

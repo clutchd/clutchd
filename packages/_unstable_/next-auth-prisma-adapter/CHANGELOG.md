@@ -1,5 +1,11 @@
 # @clutchd/next-auth-prisma-adapter
 
+## 1.1.1
+
+### Patch Changes
+
+- fb26d96c: fix package.json
+
 ## 1.1.0
 
 ### Minor Changes
