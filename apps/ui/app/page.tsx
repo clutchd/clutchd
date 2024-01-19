@@ -85,7 +85,7 @@ export default function Home() {
           <LabelShowcase />
         </Showcase>
       </Main>
-      <Footer>
+      <Footer className="mt-8">
         <div className="text-gray-500">© 2023 Clutchd, LLC</div>
         <Link
           className="text-right underline underline-offset-4"
