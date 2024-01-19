@@ -1,6 +1,5 @@
-// TODO: type errors
-// TODO: fix these tests so they actually run
-let data;
+// TODO: fix these tests so they actually run (update types to be accurate as well)
+let data: any;
 
 try {
   data = require("../clsx.benchmark.json");
