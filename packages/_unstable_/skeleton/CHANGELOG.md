@@ -1,5 +1,17 @@
 # @clutchd/skeleton
 
+## 2.0.0
+
+### Major Changes
+
+- fb26d96c: esm only
+
+### Patch Changes
+
+- fb26d96c: fix package.json
+- Updated dependencies [49d885ae]
+  - @clutchd/component@4.0.2
+
 ## 1.1.2
 
 ### Patch Changes

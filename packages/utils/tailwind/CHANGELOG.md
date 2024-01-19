@@ -1,5 +1,15 @@
 # @clutchd/tailwind
 
+## 4.0.0
+
+### Major Changes
+
+- fb26d96c: esm only
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+
 ## 3.2.0
 
 ### Minor Changes

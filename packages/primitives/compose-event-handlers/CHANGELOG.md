@@ -1,5 +1,15 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.0
+
+### Major Changes
+
+- fb26d96c: esm only
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+
 ## 4.0.0
 
 ### Major Changes

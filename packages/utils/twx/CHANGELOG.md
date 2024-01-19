@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 3.0.1
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+- Updated dependencies [49d885ae]
+  - @clutchd/clsx@2.0.1
+
 ## 3.0.0
 
 ### Major Changes

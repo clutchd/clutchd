@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 4.0.2
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+- Updated dependencies [49d885ae]
+  - @clutchd/twx@3.0.1
+  - @clutchd/slot@2.0.2
+
 ## 4.0.1
 
 ### Patch Changes

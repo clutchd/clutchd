@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.1
+
+### Patch Changes
+
+- 49d885ae: fix package.json
+
 ## 3.0.0
 
 ### Major Changes
