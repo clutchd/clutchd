@@ -69,7 +69,7 @@ type IComponentPropsWithoutRef<E extends React.ElementType> =
  * Type to define `Component` as a forwarded ref component
  */
 interface IForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> { }
+  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
 
 /**
  * Type to define the supported `Component` nodes
