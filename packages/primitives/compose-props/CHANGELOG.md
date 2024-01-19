@@ -1,5 +1,17 @@
 # @clutchd/compose-props
 
+## 3.0.0
+
+### Major Changes
+
+- d47ab7a: esm only
+
+### Patch Changes
+
+- d4dc605: Improve input type definitions
+- Updated dependencies [d47ab7a]
+  - @clutchd/compose-event-handlers@4.0.0
+
 ## 2.0.0
 
 ### Major Changes

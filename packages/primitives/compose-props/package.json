@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-props",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A small utility intended to merge and compose a single props object from the provided prop objects.",
   "keywords": [
     "clutchd",

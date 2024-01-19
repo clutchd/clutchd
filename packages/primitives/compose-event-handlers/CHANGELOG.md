@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 4.0.0
+
+### Major Changes
+
+- d47ab7a: esm only
+
 ## 3.0.0
 
 ### Major Changes

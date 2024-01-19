@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.3.0
+
+### Minor Changes
+
+- d47ab7a: esm only
+
 ## 0.2.0
 
 ### Minor Changes

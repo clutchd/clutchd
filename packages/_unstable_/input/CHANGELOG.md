@@ -1,5 +1,16 @@
 # @clutchd/input
 
+## 0.6.1
+
+### Patch Changes
+
+- Updated dependencies [d4dc605]
+- Updated dependencies [d47ab7a]
+  - @clutchd/compose-props@3.0.0
+  - @clutchd/compose-event-handlers@4.0.0
+  - @clutchd/component@4.0.0
+  - @clutchd/is-empty@3.0.0
+
 ## 0.6.0
 
 ### Minor Changes

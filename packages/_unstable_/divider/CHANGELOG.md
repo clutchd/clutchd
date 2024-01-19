@@ -1,5 +1,17 @@
 # @clutchd/divider
 
+## 3.1.1
+
+### Patch Changes
+
+- Updated dependencies [d4dc605]
+- Updated dependencies [5daa466]
+- Updated dependencies [5daa466]
+- Updated dependencies [d47ab7a]
+  - @clutchd/compose-props@3.0.0
+  - @clutchd/tailwind@3.2.0
+  - @clutchd/component@4.0.0
+
 ## 3.1.0
 
 ### Minor Changes

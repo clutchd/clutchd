@@ -1,5 +1,17 @@
 # @clutchd/label
 
+## 4.0.0
+
+### Major Changes
+
+- d47ab7a: esm only
+
+### Patch Changes
+
+- Updated dependencies [d47ab7a]
+  - @clutchd/compose-event-handlers@4.0.0
+  - @clutchd/component@4.0.0
+
 ## 3.1.0
 
 ### Minor Changes

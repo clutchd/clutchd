@@ -1,5 +1,12 @@
 # @clutchd/landing
 
+## 2.1.1
+
+### Patch Changes
+
+- @clutchd/layout@2.1.5
+- @clutchd/link@1.5.1
+
 ## 2.1.0
 
 ### Minor Changes
