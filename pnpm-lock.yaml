@@ -1256,6 +1256,9 @@ importers:
       '@types/jest':
         specifier: 29.5.2
         version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
       clsx:
         specifier: 2.0.0
         version: 2.0.0
