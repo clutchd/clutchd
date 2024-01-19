@@ -1,5 +1,15 @@
 # @clutchd/protect
 
+## 3.0.0
+
+### Major Changes
+
+- fb26d96c: esm only
+
+### Patch Changes
+
+- fb26d96c: fix package.json
+
 ## 2.2.0
 
 ### Minor Changes

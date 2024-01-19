@@ -1,5 +1,21 @@
 # @clutchd/button
 
+## 2.0.0
+
+### Major Changes
+
+- fb26d96c: esm only
+
+### Patch Changes
+
+- fb26d96c: fix package.json
+- Updated dependencies [49d885ae]
+- Updated dependencies [fb26d96c]
+- Updated dependencies [49d885ae]
+  - @clutchd/tailwind@4.0.0
+  - @clutchd/compose-props@3.0.1
+  - @clutchd/component@4.0.2
+
 ## 1.2.2
 
 ### Patch Changes
