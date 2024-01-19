@@ -125,7 +125,7 @@ importers:
         version: link:../../packages/_unstable_/input
       '@clutchd/label':
         specifier: workspace:*
-        version: link:../../packages/ui/label
+        version: link:../../packages/primitives/label
       '@clutchd/layout':
         specifier: workspace:*
         version: link:../../packages/_unstable_/layout
@@ -678,55 +678,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/_unstable_/label:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../primitives/component
-      '@clutchd/compose-event-handlers':
-        specifier: workspace:*
-        version: link:../../primitives/compose-event-handlers
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../tooling/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../tailwind
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
   packages/_unstable_/layout:
     dependencies:
       '@clutchd/component':
@@ -955,30 +906,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/_unstable_/tailwind:
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
   packages/_unstable_/text:
     dependencies:
       '@clutchd/component':
@@ -1174,6 +1101,58 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
+  packages/primitives/label:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../component
+      '@clutchd/compose-event-handlers':
+        specifier: workspace:*
+        version: link:../compose-event-handlers
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../tooling/jest
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../../utils/tailwind
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../tooling/tsconfig
+      '@radix-ui/react-label':
+        specifier: 2.0.2
+        version: 2.0.2(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/node':
+        specifier: 20.9.2
+        version: 20.9.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      next:
+        specifier: 14.0.4
+        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
   packages/primitives/slot:
     dependencies:
       '@clutchd/compose-props':
@@ -1307,58 +1286,6 @@ importers:
       '@types/react-dom':
         specifier: 18.2.6
         version: 18.2.6
-
-  packages/ui/label:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../primitives/component
-      '@clutchd/compose-event-handlers':
-        specifier: workspace:*
-        version: link:../../primitives/compose-event-handlers
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../tooling/jest
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../../utils/tailwind
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@radix-ui/react-label':
-        specifier: ^2.0.2
-        version: 2.0.2(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      next:
-        specifier: 14.0.4
-        version: 14.0.4(@babel/core@7.23.7)(react-dom@18.2.0)(react@18.2.0)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
 
   packages/utils/clsx:
     devDependencies:
