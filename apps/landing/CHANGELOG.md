@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.4
+
+### Patch Changes
+
+- Updated dependencies [1d770f0]
+- Updated dependencies [257a2d8]
+- Updated dependencies [257a2d8]
+  - @clutchd/link@2.1.0
+
 ## 2.1.3
 
 ### Patch Changes
