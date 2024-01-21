@@ -1,5 +1,17 @@
 # @clutchd/ui
 
+## 0.12.3
+
+### Patch Changes
+
+- Updated dependencies [1d770f0]
+- Updated dependencies [257a2d8]
+- Updated dependencies [257a2d8]
+  - @clutchd/link@2.1.0
+  - @clutchd/copyright@3.0.2
+  - @clutchd/component@4.0.2
+  - @clutchd/twx@3.0.1
+
 ## 0.12.2
 
 ### Patch Changes

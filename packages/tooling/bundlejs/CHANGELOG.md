@@ -1,5 +1,15 @@
 # @clutchd/bundlejs
 
+## 0.4.0
+
+### Minor Changes
+
+- b52273b: Allow package version targeting
+
+### Patch Changes
+
+- b7460c4: Fix bug when remote bundler is not avaliable
+
 ## 0.3.1
 
 ### Patch Changes

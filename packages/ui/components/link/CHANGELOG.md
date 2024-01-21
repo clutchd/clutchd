@@ -1,5 +1,18 @@
 # @clutchd/link
 
+## 2.1.0
+
+### Minor Changes
+
+- 257a2d8: Introduce CoreLink for a unstyled primitve version of the link component
+
+### Patch Changes
+
+- 1d770f0: Fix href prop type
+- 257a2d8: Remove cursor styling
+  - @clutchd/component@4.0.2
+  - @clutchd/compose-props@3.0.1
+
 ## 2.0.0
 
 ### Major Changes
