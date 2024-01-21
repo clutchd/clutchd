@@ -1,4 +1,4 @@
-# @clutchd/compose-event-handlers
+# `@clutchd/compose-event-handlers` • ![@clutchd/compose-event-handlers](https://img.shields.io/bundlejs/size/@clutchd/compose-event-handlers)
 
 A small package that provides multiple event-handler utility functions such as:
 
@@ -11,11 +11,3 @@ A small package that provides multiple event-handler utility functions such as:
 ```sh
 npm i @clutchd/compose-event-handlers
 ```
-
-## Related Packages
-
-- [`@radix-ui/primitive`](https://github.com/radix-ui/primitives/tree/main/packages/core/primitive)
-
----
-
-![@clutchd/compose-event-handlers](https://edge.bundlejs.com/?q=@clutchd/compose-event-handlers&badge=)
