@@ -7,8 +7,12 @@ packages:
   - "packages/primitives/*"
   # all tooling packages
   - "packages/tooling/*"
-  # all ui component packages
-  - "packages/ui/*"
+  # all standard ui component packages
+  - "packages/ui/components/*"
+  # all layout component packages
+  - "packages/ui/layout/*"
+  # all typography component packages
+  - "packages/ui/layout/*"
   # all utility packages
   - "packages/utils/*"
   # all packages in a benchmark sub directory
