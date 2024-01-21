@@ -26,7 +26,6 @@ function getInitials(...names: string[]) {
   // collect first initial
   if (names[0]) {
     f = names[0].charAt(0);
-    console.log("f: '" + f + "'");
   }
 
   // if only one valid input, return first initial
