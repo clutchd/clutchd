@@ -1,6 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
+import { UrlObject } from "node:url";
 import * as React from "react";
 
 /**
@@ -11,7 +12,9 @@ type ILink = React.ElementRef<typeof Component.a>;
 /**
  * Type to define `Link` props
  */
-interface ILinkProps extends NextLinkProps {}
+interface ILinkProps extends Omit<NextLinkProps, "href"> {
+  href?: string | UrlObject;
+}
 
 /**
  * Type to define `Link` props with html attributes
@@ -60,4 +63,4 @@ const Link = React.forwardRef<ILink, ILinkHtmlProps>(
 Link.displayName = "Link";
 
 export { CoreLink, Link };
-export type { ILink, ILinkProps, ILinkHtmlProps };
+export type { ILink, ILinkHtmlProps, ILinkProps };
