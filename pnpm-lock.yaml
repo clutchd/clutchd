@@ -37,7 +37,7 @@ importers:
     dependencies:
       '@clutchd/layout':
         specifier: workspace:*
-        version: link:../../packages/_unstable_/layout
+        version: link:../../packages/ui/components/layout
       '@clutchd/link':
         specifier: workspace:*
         version: link:../../packages/ui/components/link
@@ -128,7 +128,7 @@ importers:
         version: link:../../packages/ui/components/label
       '@clutchd/layout':
         specifier: workspace:*
-        version: link:../../packages/_unstable_/layout
+        version: link:../../packages/ui/components/layout
       '@clutchd/link':
         specifier: workspace:*
         version: link:../../packages/ui/components/link
@@ -583,55 +583,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/_unstable_/layout:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../ui/core/component
-      '@clutchd/compose-props':
-        specifier: workspace:*
-        version: link:../../ui/core/compose-props
-      '@clutchd/flex':
-        specifier: workspace:*
-        version: link:../../ui/layout/flex
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../../utils/tailwind
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
   packages/_unstable_/next-auth-prisma-adapter:
     devDependencies:
       '@clutchd/jest':
@@ -948,6 +899,52 @@ importers:
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/ui/components/layout:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../../core/component
+      '@clutchd/compose-props':
+        specifier: workspace:*
+        version: link:../../core/compose-props
+      '@clutchd/flex':
+        specifier: workspace:*
+        version: link:../../layout/flex
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../../../utils/tailwind
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling/tsconfig
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      '@types/react-dom':
+        specifier: 18.2.6
+        version: 18.2.6
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
