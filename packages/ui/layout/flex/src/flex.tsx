@@ -41,7 +41,7 @@ interface IFlexHtmlProps
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Flex` - A primitive flex container that powers various layouts
+ * `Flex` - A flex container that powers various layouts
  * @param props `IFlexHtmlProps` used to render this `Flex`
  * @returns `Flex` component
  */
