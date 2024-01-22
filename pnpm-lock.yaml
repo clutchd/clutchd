@@ -113,7 +113,7 @@ importers:
         version: link:../../packages/_unstable_/divider
       '@clutchd/flex':
         specifier: workspace:*
-        version: link:../../packages/_unstable_/flex
+        version: link:../../packages/ui/layout/flex
       '@clutchd/form':
         specifier: workspace:*
         version: link:../../packages/_unstable_/form
@@ -427,55 +427,6 @@ importers:
         specifier: 5.2.2
         version: 5.2.2
 
-  packages/_unstable_/flex:
-    dependencies:
-      '@clutchd/component':
-        specifier: workspace:*
-        version: link:../../ui/core/component
-      '@clutchd/compose-props':
-        specifier: workspace:*
-        version: link:../../ui/core/compose-props
-      '@clutchd/tailwind':
-        specifier: workspace:*
-        version: link:../../utils/tailwind
-    devDependencies:
-      '@clutchd/jest':
-        specifier: workspace:*
-        version: link:../../tooling/jest
-      '@clutchd/tsconfig':
-        specifier: workspace:*
-        version: link:../../tooling/tsconfig
-      '@testing-library/react':
-        specifier: 14.0.0
-        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
-      '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
-      '@types/node':
-        specifier: 20.9.2
-        version: 20.9.2
-      '@types/react':
-        specifier: 18.2.47
-        version: 18.2.47
-      '@types/react-dom':
-        specifier: 18.2.6
-        version: 18.2.6
-      jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
-      postcss:
-        specifier: 8.4.31
-        version: 8.4.31
-      react:
-        specifier: 18.2.0
-        version: 18.2.0
-      tsup:
-        specifier: 7.2.0
-        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
-      typescript:
-        specifier: 5.2.2
-        version: 5.2.2
-
   packages/_unstable_/form:
     dependencies:
       '@clutchd/button':
@@ -642,7 +593,7 @@ importers:
         version: link:../../ui/core/compose-props
       '@clutchd/flex':
         specifier: workspace:*
-        version: link:../flex
+        version: link:../../ui/layout/flex
       '@clutchd/tailwind':
         specifier: workspace:*
         version: link:../../utils/tailwind
@@ -1241,6 +1192,49 @@ importers:
       jest:
         specifier: 29.6.1
         version: 29.6.1(@types/node@20.9.2)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      tsup:
+        specifier: 7.2.0
+        version: 7.2.0(postcss@8.4.31)(typescript@5.2.2)
+      typescript:
+        specifier: 5.2.2
+        version: 5.2.2
+
+  packages/ui/layout/flex:
+    dependencies:
+      '@clutchd/component':
+        specifier: workspace:*
+        version: link:../../core/component
+      '@clutchd/compose-props':
+        specifier: workspace:*
+        version: link:../../core/compose-props
+      '@clutchd/tailwind':
+        specifier: workspace:*
+        version: link:../../../utils/tailwind
+    devDependencies:
+      '@clutchd/jest':
+        specifier: workspace:*
+        version: link:../../../tooling/jest
+      '@clutchd/tsconfig':
+        specifier: workspace:*
+        version: link:../../../tooling/tsconfig
+      '@testing-library/react':
+        specifier: 14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
+      '@types/jest':
+        specifier: 29.5.2
+        version: 29.5.2
+      '@types/react':
+        specifier: 18.2.47
+        version: 18.2.47
+      jest:
+        specifier: 29.6.1
+        version: 29.6.1(@types/node@20.9.2)
+      postcss:
+        specifier: 8.4.31
+        version: 8.4.31
       react:
         specifier: 18.2.0
         version: 18.2.0

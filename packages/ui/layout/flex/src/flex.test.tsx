@@ -9,7 +9,7 @@ test("render flex", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col flex-wrap");
+  expect(div).toHaveClass("flex");
 });
 
 test("render flex with custom alignItems", () => {
@@ -19,7 +19,7 @@ test("render flex with custom alignItems", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col flex-wrap items-start");
+  expect(div).toHaveClass("flex items-start");
 });
 
 test("render flex with custom flex", () => {
@@ -29,7 +29,7 @@ test("render flex with custom flex", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-none flex-col flex-wrap");
+  expect(div).toHaveClass("flex flex-none");
 });
 
 test("render flex with custom flexBasis", () => {
@@ -39,7 +39,7 @@ test("render flex with custom flexBasis", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex basis-1/2 flex-col flex-wrap");
+  expect(div).toHaveClass("flex basis-1/2");
 });
 
 test("render flex with custom flexDirection", () => {
@@ -49,7 +49,7 @@ test("render flex with custom flexDirection", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col-reverse flex-wrap");
+  expect(div).toHaveClass("flex flex-col-reverse");
 });
 
 test("render flex with custom flexGrow", () => {
@@ -59,7 +59,7 @@ test("render flex with custom flexGrow", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col grow-0 flex-wrap");
+  expect(div).toHaveClass("flex grow-0");
 });
 
 test("render flex with custom flexShrink", () => {
@@ -69,7 +69,7 @@ test("render flex with custom flexShrink", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col shrink-0 flex-wrap");
+  expect(div).toHaveClass("flex shrink-0");
 });
 
 test("render flex with custom justifyContent", () => {
@@ -79,7 +79,7 @@ test("render flex with custom justifyContent", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col flex-wrap justify-evenly");
+  expect(div).toHaveClass("flex justify-evenly");
 });
 
 test("render flex with custom props and className", () => {
@@ -99,6 +99,6 @@ test("render flex with custom props and className", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass(
-    "flex items-start flex-1 basis-1/2 flex-col-reverse flex-wrap justify-evenly p-4 bg-gray-200 rounded-lg",
+    "flex items-start flex-1 basis-1/2 flex-col-reverse justify-evenly p-4 bg-gray-200 rounded-lg",
   );
 });

@@ -1,6 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import {
+  Display,
   WithAlignItems,
   WithFlex,
   WithFlexBasis,
@@ -28,7 +29,9 @@ interface IFlexProps
     WithFlexGrow,
     WithFlexShrink,
     WithFlexWrap,
-    WithJustifyContent {}
+    WithJustifyContent {
+  display?: Extract<Display, "flex" | "inline-flex" | "hidden">;
+}
 
 /**
  * Type to define `Flex` props with html attributes
@@ -47,12 +50,13 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
     {
       alignItems,
       className,
+      display = "flex",
       flex,
       flexBasis,
-      flexDirection = "flex-col",
+      flexDirection,
       flexGrow,
       flexShrink,
-      flexWrap = "flex-wrap",
+      flexWrap,
       justifyContent,
       ...props
     },
@@ -61,8 +65,8 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
     return (
       <Component.div
         className={cn(
-          "flex",
           alignItems,
+          display,
           flex,
           flexBasis,
           flexDirection,

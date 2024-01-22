@@ -10,7 +10,7 @@ packages:
     # all core ui component packages
   - "packages/ui/core/*"
   # all layout component packages
-  - "packages/ui/layout/*layout/*"
+  - "packages/ui/layout/*"
   # all typography component packages
   - "packages/ui/typograpy/*"
   # all utility packages
