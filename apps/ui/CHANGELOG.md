@@ -1,5 +1,29 @@
 # @clutchd/ui
 
+## 0.12.4
+
+### Patch Changes
+
+- Updated dependencies [25b8583]
+- Updated dependencies [25b8583]
+- Updated dependencies [d09904a]
+  - @clutchd/flex@5.1.0
+  - @clutchd/layout@3.0.1
+  - @clutchd/avatar@4.0.0
+  - @clutchd/block@3.0.1
+  - @clutchd/button@2.0.1
+  - @clutchd/card@4.0.0
+  - @clutchd/divider@4.0.1
+  - @clutchd/form@0.3.1
+  - @clutchd/grid@4.0.1
+  - @clutchd/input@0.7.0
+  - @clutchd/text@4.0.0
+  - @clutchd/label@4.0.2
+  - @clutchd/copyright@3.0.2
+  - @clutchd/link@2.1.0
+  - @clutchd/component@4.0.2
+  - @clutchd/twx@3.0.1
+
 ## 0.12.3
 
 ### Patch Changes
