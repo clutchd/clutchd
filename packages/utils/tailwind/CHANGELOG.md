@@ -1,5 +1,23 @@
 # @clutchd/tailwind
 
+## 4.1.0
+
+### Minor Changes
+
+- 89e8eec: Add font smoothing
+- c7b4ae5: Add max height
+- c7b4ae5: Add min height
+- f8f0415: Add transition
+- d99bf44: Add transition duration
+- c7b4ae5: Add min width
+- a0ed544: Add display types
+- 89e8eec: Add transition timing
+
+### Patch Changes
+
+- c7b4ae5: Add missing max width values
+- c7b4ae5: Add missing height values
+
 ## 4.0.0
 
 ### Major Changes

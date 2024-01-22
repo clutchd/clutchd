@@ -1,5 +1,23 @@
 # @clutchd/grid
 
+## 4.0.1
+
+### Patch Changes
+
+- Updated dependencies [89e8eec]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [f8f0415]
+- Updated dependencies [d99bf44]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [a0ed544]
+- Updated dependencies [89e8eec]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [c7b4ae5]
+  - @clutchd/tailwind@4.1.0
+  - @clutchd/component@4.0.2
+  - @clutchd/compose-props@3.0.1
+
 ## 4.0.0
 
 ### Major Changes

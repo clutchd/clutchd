@@ -1,5 +1,27 @@
 # @clutchd/layout
 
+## 3.0.1
+
+### Patch Changes
+
+- d09904a: Convert default classes to props
+- Updated dependencies [89e8eec]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [f8f0415]
+- Updated dependencies [d99bf44]
+- Updated dependencies [25b8583]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [a0ed544]
+- Updated dependencies [89e8eec]
+- Updated dependencies [25b8583]
+- Updated dependencies [c7b4ae5]
+- Updated dependencies [c7b4ae5]
+  - @clutchd/tailwind@4.1.0
+  - @clutchd/flex@5.1.0
+  - @clutchd/component@4.0.2
+  - @clutchd/compose-props@3.0.1
+
 ## 3.0.0
 
 ### Major Changes

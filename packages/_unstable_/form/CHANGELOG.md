@@ -1,5 +1,13 @@
 # @clutchd/form
 
+## 0.3.1
+
+### Patch Changes
+
+- @clutchd/button@2.0.1
+- @clutchd/component@4.0.2
+- @clutchd/compose-props@3.0.1
+
 ## 0.3.0
 
 ### Minor Changes

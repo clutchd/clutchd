@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.0.1
+
+### Patch Changes
+
+- 96b08da: Remove base path and path aliases by default
+
 ## 2.0.0
 
 ### Major Changes
