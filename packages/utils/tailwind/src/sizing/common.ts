@@ -9,6 +9,8 @@ import {
 
 export type ContentSizeVariants = "min" | "max" | "fit";
 
+export type DynamicHeightVariants = "svh" | "lvh" | "dvh";
+
 export type CommonSizeVariants =
   | SpacingVariants
   | "auto"
