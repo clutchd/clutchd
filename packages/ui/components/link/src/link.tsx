@@ -40,6 +40,8 @@ const CoreLink = React.forwardRef<ILink, ILinkHtmlProps>(
   },
 );
 
+CoreLink.displayName = "CoreLink";
+
 /**
  * `Link` - A simple link component, leverages next/link and includes basic styling
  * @param props `ILinkHtmlProps` used to render this `Link`
