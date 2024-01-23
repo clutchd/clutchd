@@ -17,6 +17,6 @@
     "/**/*.d.ts",
     "/**/*.js",
     "/next-env.d.ts",
-    "/.next/types/**/*.ts"
+    ".next/types/**/*.ts"
   ]
 }
