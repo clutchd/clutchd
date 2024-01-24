@@ -1,10 +1,9 @@
-export const global = "cursor-pointer";
-
-// stateful styles (should always be present)
+// stateful styles
 export const disabled = "disabled:pointer-events-none disabled:opacity-50";
 export const focus =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500/50 focus-visible:outline-offset-2";
 
+// TODO: figure out where opinionated styles fit into @clutchd/ui as a whole
 // variant styles (optional)
 export const styled =
   "px-2 py-1 rounded-md font-medium transition-colors duration-150";
