@@ -1,9 +1,9 @@
 import { render } from "@testing-library/react";
 import * as React from "react";
-import { GridCol } from ".";
+import { GridCell } from ".";
 
 test("render col", () => {
-  const { container } = render(<GridCol />);
+  const { container } = render(<GridCell />);
 
   const div = container.querySelector("div");
 
@@ -14,7 +14,7 @@ test("render col", () => {
 
 test("render col with custom col span", () => {
   const { container } = render(
-    <GridCol
+    <GridCell
       colSpan="col-span-2"
       colSpanSm="sm:col-span-4"
       colSpanMd="md:col-span-6"
@@ -38,7 +38,7 @@ test("render col with custom col span", () => {
 
 test("render col with custom row span", () => {
   const { container } = render(
-    <GridCol
+    <GridCell
       rowSpan="row-span-1"
       rowSpanSm="sm:row-span-2"
       rowSpanMd="md:row-span-3"

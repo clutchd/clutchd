@@ -1,34 +1,45 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import { WithColSpan, WithRowSpan } from "@clutchd/tailwind";
+import {
+  WithColEnd,
+  WithColSpan,
+  WithColStart,
+  WithRowEnd,
+  WithRowSpan,
+  WithRowStart,
+} from "@clutchd/tailwind";
 import * as React from "react";
 
 /**
- * Type to define `GridCol` element
+ * Type to define `GridCell` element
  */
-type IGridCol = React.ElementRef<typeof Component.div>;
+type IGridCell = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `GridCol` props
+ * Type to define `GridCell` props
  */
-interface IGridColProps
+interface IGridCellProps
   extends WithColSpan,
+    WithColStart,
+    WithColEnd,
     WithRowSpan,
+    WithRowStart,
+    WithRowEnd,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * Type to define `GridCol` props with html attributes
+ * Type to define `GridCell` props with html attributes
  */
-interface IGridColHtmlProps
-  extends IGridColProps,
+interface IGridCellHtmlProps
+  extends IGridCellProps,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `GridCol` - A primitive component used to render a column within a grid
- * @param props `IGridColHtmlProps` used to render this `Col`
- * @returns `Col` component
+ * `GridCell` - A primitive component used to render a cell within a grid
+ * @param props `IGridCellHtmlProps` used to render this `GridCell`
+ * @returns `GridCell` component
  */
-const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
+const GridCell = React.forwardRef<IGridCell, IGridCellHtmlProps>(
   (
     {
       className,
@@ -38,12 +49,16 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
       colSpanLg,
       colSpanXl,
       colSpan2xl,
+      colStart,
+      colEnd,
       rowSpan,
       rowSpanSm,
       rowSpanMd,
       rowSpanLg,
       rowSpanXl,
       rowSpan2xl,
+      rowStart,
+      rowEnd,
       ...props
     },
     forwardedRef,
@@ -57,12 +72,16 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
           colSpanLg,
           colSpanXl,
           colSpan2xl,
+          colStart,
+          colEnd,
           rowSpan,
           rowSpanSm,
           rowSpanMd,
           rowSpanLg,
           rowSpanXl,
           rowSpan2xl,
+          rowStart,
+          rowEnd,
           className,
         )}
         ref={forwardedRef}
@@ -72,7 +91,7 @@ const GridCol = React.forwardRef<IGridCol, IGridColHtmlProps>(
   },
 );
 
-GridCol.displayName = "GridCol";
+GridCell.displayName = "GridCell";
 
-export { GridCol };
-export type { IGridCol, IGridColProps, IGridColHtmlProps };
+export { GridCell };
+export type { IGridCell, IGridCellProps, IGridCellHtmlProps };

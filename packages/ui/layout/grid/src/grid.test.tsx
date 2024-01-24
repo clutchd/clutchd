@@ -12,17 +12,6 @@ test("render grid", () => {
   expect(div).toHaveClass("grid");
 });
 
-test("render grid with custom gap", () => {
-  const { container } = render(<Grid gap="gap-0" />);
-
-  const div = container.querySelector("div");
-
-  expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("grid");
-  expect(div).toHaveClass("gap-0");
-});
-
 test("render grid with custom cols", () => {
   const { container } = render(
     <Grid
@@ -46,4 +35,29 @@ test("render grid with custom cols", () => {
   expect(div).toHaveClass("lg:grid-cols-8");
   expect(div).toHaveClass("xl:grid-cols-10");
   expect(div).toHaveClass("2xl:grid-cols-12");
+});
+
+test("render grid with custom rows", () => {
+  const { container } = render(
+    <Grid
+      gridRows="grid-rows-2"
+      gridRowsSm="sm:grid-rows-4"
+      gridRowsMd="md:grid-rows-6"
+      gridRowsLg="lg:grid-rows-8"
+      gridRowsXl="xl:grid-rows-10"
+      gridRows2xl="2xl:grid-rows-12"
+    />,
+  );
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("grid");
+  expect(div).toHaveClass("grid-rows-2");
+  expect(div).toHaveClass("sm:grid-rows-4");
+  expect(div).toHaveClass("md:grid-rows-6");
+  expect(div).toHaveClass("lg:grid-rows-8");
+  expect(div).toHaveClass("xl:grid-rows-10");
+  expect(div).toHaveClass("2xl:grid-rows-12");
 });

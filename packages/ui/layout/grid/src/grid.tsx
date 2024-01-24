@@ -1,6 +1,6 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import { WithGap, WithGridCols } from "@clutchd/tailwind";
+import { Display, WithGridCols, WithGridRows } from "@clutchd/tailwind";
 import * as React from "react";
 
 /**
@@ -11,7 +11,9 @@ type IGrid = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Grid` props
  */
-interface IGridProps extends WithGridCols, WithGap {}
+interface IGridProps extends WithGridCols, WithGridRows {
+  display?: Extract<Display, "grid" | "inline-grid" | "hidden">;
+}
 
 /**
  * Type to define `Grid` props with html attributes
@@ -29,13 +31,19 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
   (
     {
       className,
-      gap,
+      display = "grid",
       gridCols,
       gridColsSm,
       gridColsMd,
       gridColsLg,
       gridColsXl,
       gridCols2xl,
+      gridRows,
+      gridRowsSm,
+      gridRowsMd,
+      gridRowsLg,
+      gridRowsXl,
+      gridRows2xl,
       ...props
     },
     forwardedRef,
@@ -43,14 +51,19 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
     return (
       <Component.div
         className={cn(
-          "grid",
-          gap,
+          display,
           gridCols,
           gridColsSm,
           gridColsMd,
           gridColsLg,
           gridColsXl,
           gridCols2xl,
+          gridRows,
+          gridRowsSm,
+          gridRowsMd,
+          gridRowsLg,
+          gridRowsXl,
+          gridRows2xl,
           className,
         )}
         ref={forwardedRef}
@@ -63,4 +76,4 @@ const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
 Grid.displayName = "Grid";
 
 export { Grid };
-export type { IGrid, IGridProps, IGridHtmlProps };
+export type { IGrid, IGridHtmlProps, IGridProps };
