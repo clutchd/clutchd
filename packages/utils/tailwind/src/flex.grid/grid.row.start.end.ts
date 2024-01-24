@@ -1,17 +1,17 @@
-import { WithModifier, WithVariants, OneTwoThreeFourFiveSix } from "../core";
+import { WithModifier, WithVariants, OneThroughTwelve } from "../core";
 
 /**
  * Grid Row Start / End
  * @see https://tailwindcss.com/docs/grid-row
  */
 
-type GridRowStartEndVariants = OneTwoThreeFourFiveSix | "7" | "auto";
+type GridRowStartEndVariants = OneThroughTwelve | "13" | "auto";
 
 /**
  * Row Span
  */
 
-type RowSpanVariants = OneTwoThreeFourFiveSix | "full";
+type RowSpanVariants = OneThroughTwelve | "full";
 
 export type RowSpan = "row-auto" | WithVariants<"row-span", RowSpanVariants>;
 

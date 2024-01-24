@@ -9,5 +9,5 @@ export * from "./flex.wrap";
 export * from "./gap";
 export * from "./grid.column.start.end";
 export * from "./grid.row.start.end";
-export * from "./grid.template.columns";
+export * from "./grid.template";
 export * from "./justify.content";
