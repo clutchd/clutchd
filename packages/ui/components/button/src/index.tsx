@@ -5,7 +5,6 @@ export {
   disabled,
   focus,
   ghost,
-  global,
   link,
   outline,
   styled,

@@ -11,7 +11,7 @@ type ICopyright = React.ElementRef<typeof Component.div>;
  * Type to define `Copyright` props
  */
 interface ICopyrightProps {
-  getCopyright: typeof internalGetCopyright;
+  getCopyright?: typeof internalGetCopyright;
 }
 
 /**
