@@ -3,7 +3,7 @@ import { composeClassNames as cn } from "@clutchd/compose-props";
 import { CoreLink, ILinkHtmlProps, ILinkProps } from "@clutchd/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
-import { isActiveRoute as internalIsActiveRoute } from "./";
+import { isActiveRoute as internalIsActiveRoute } from ".";
 
 /**
  * Type to define `Navigator` element
