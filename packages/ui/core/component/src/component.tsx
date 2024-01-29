@@ -31,6 +31,7 @@ const NODES = [
   "h5",
   "h6",
   "header",
+  "img",
   "input",
   "label",
   "main",
