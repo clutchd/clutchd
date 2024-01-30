@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 3.0.1
+
+### Patch Changes
+
+- 1598fc1c: Upgrade next
+
 ## 3.0.0
 
 ### Major Changes

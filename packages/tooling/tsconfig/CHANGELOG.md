@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.0.2
+
+### Patch Changes
+
+- 747fe368: Next really doesn't want a leading slash
+
 ## 2.0.1
 
 ### Patch Changes

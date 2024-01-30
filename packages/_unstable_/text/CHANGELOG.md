@@ -1,5 +1,13 @@
 # @clutchd/text
 
+## 4.0.1
+
+### Patch Changes
+
+- 1598fc1c: Upgrade next
+- Updated dependencies [1b23f343]
+  - @clutchd/component@4.1.0
+
 ## 4.0.0
 
 ### Major Changes

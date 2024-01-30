@@ -1,5 +1,25 @@
 # @clutchd/grid
 
+## 5.0.0
+
+### Major Changes
+
+- 7c4908fe: Stable. Grid now has full support of rows. Removes the gap prop, that is too opinionated. GridCol is now GridCell with first class row support.
+
+### Patch Changes
+
+- Updated dependencies [0d581676]
+- Updated dependencies [35803bad]
+- Updated dependencies [e076b22e]
+- Updated dependencies [0d581676]
+- Updated dependencies [223dc8a7]
+- Updated dependencies [841c2f50]
+- Updated dependencies [2a070b67]
+- Updated dependencies [1b23f343]
+  - @clutchd/tailwind@4.2.0
+  - @clutchd/component@4.1.0
+  - @clutchd/compose-props@3.0.1
+
 ## 4.0.1
 
 ### Patch Changes

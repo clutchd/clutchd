@@ -1,5 +1,16 @@
 # @clutchd/component
 
+## 4.1.0
+
+### Minor Changes
+
+- 1b23f343: Add img support
+
+### Patch Changes
+
+- @clutchd/slot@2.0.2
+- @clutchd/twx@3.0.1
+
 ## 4.0.2
 
 ### Patch Changes

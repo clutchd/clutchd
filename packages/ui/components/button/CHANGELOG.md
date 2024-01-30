@@ -1,5 +1,26 @@
 # @clutchd/button
 
+## 3.0.0
+
+### Major Changes
+
+- 74030647: Make button stable
+
+### Patch Changes
+
+- 1598fc1c: Upgrade next
+- Updated dependencies [0d581676]
+- Updated dependencies [35803bad]
+- Updated dependencies [e076b22e]
+- Updated dependencies [0d581676]
+- Updated dependencies [223dc8a7]
+- Updated dependencies [841c2f50]
+- Updated dependencies [2a070b67]
+- Updated dependencies [1b23f343]
+  - @clutchd/tailwind@4.2.0
+  - @clutchd/component@4.1.0
+  - @clutchd/compose-props@3.0.1
+
 ## 2.0.1
 
 ### Patch Changes

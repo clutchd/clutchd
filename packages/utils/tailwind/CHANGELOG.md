@@ -1,5 +1,20 @@
 # @clutchd/tailwind
 
+## 4.2.0
+
+### Minor Changes
+
+- 35803bad: Add overflow
+- e076b22e: Add text overflow
+- 223dc8a7: Add user select
+- 841c2f50: Add size
+- 2a070b67: Add position
+
+### Patch Changes
+
+- 0d581676: Fix gird.row.start.end
+- 0d581676: Add subgrid to grid templates
+
 ## 4.1.0
 
 ### Minor Changes
