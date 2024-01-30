@@ -40,22 +40,32 @@ interface IImageHtmlProps
     > {}
 
 /**
+ * `CoreImage` - A core image component used to render next/image components
+ * @param props `IImageHtmlProps` used to render this `CoreImage`
+ * @returns `CoreImage` component
+ */
+const CoreImage = React.forwardRef<IImage, IImageHtmlProps>(
+  ({ alt, children, src, ...props }, forwardedRef) => {
+    return (
+      <Component.img asChild {...props}>
+        <NextImage alt={alt} ref={forwardedRef} src={src}>
+          {children}
+        </NextImage>
+      </Component.img>
+    );
+  },
+);
+
+CoreImage.displayName = "CoreImage";
+
+/**
  * `Image` - A image component used to render next/image components with data attributes
  * @param props `IImageHtmlProps` used to render this `Image`
  * @returns `Image` component
  */
 const Image = React.forwardRef<IImage, IImageHtmlProps>(
   (
-    {
-      alt,
-      children,
-      handleStateChange,
-      onError,
-      onLoad,
-      onLoadStart,
-      src,
-      ...props
-    },
+    { children, handleStateChange, onError, onLoad, onLoadStart, ...props },
     forwardedRef,
   ) => {
     const [loading, setLoading] = React.useState<IImageLoadingStates>("idle");
@@ -66,27 +76,24 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
     };
 
     return (
-      <Component.img asChild {...props}>
-        <NextImage
-          alt={alt}
-          ref={forwardedRef}
-          src={src}
-          onError={composeEventHandlers(() => updateState("error"), onError)}
-          onLoad={composeEventHandlers(() => updateState("loaded"), onLoad)}
-          onLoadStart={composeEventHandlers(
-            () => updateState("loading"),
-            onLoadStart,
-          )}
-          data-state={loading}
-        >
-          {children}
-        </NextImage>
-      </Component.img>
+      <CoreImage
+        {...props}
+        ref={forwardedRef}
+        onError={composeEventHandlers(() => updateState("error"), onError)}
+        onLoad={composeEventHandlers(() => updateState("loaded"), onLoad)}
+        onLoadStart={composeEventHandlers(
+          () => updateState("loading"),
+          onLoadStart,
+        )}
+        data-state={loading}
+      >
+        {children}
+      </CoreImage>
     );
   },
 );
 
 Image.displayName = "Image";
 
-export { Image };
+export { CoreImage, Image };
 export type { IImage, IImageHtmlProps, IImageLoadingStates, IImageProps };
