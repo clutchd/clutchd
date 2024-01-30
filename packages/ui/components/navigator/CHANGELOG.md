@@ -1,5 +1,11 @@
 # @clutchd/navigator
 
+## 1.0.2
+
+### Patch Changes
+
+- a8d748a3: Fix navigator href prop
+
 ## 1.0.1
 
 ### Patch Changes
