@@ -1,5 +1,12 @@
 # @clutchd/layout
 
+## 3.0.3
+
+### Patch Changes
+
+- Updated dependencies [93c70f92]
+  - @clutchd/flex@5.1.2
+
 ## 3.0.2
 
 ### Patch Changes
