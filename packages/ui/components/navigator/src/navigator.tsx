@@ -42,7 +42,12 @@ const CoreNavigator = React.forwardRef<INavigator, INavigatorHtmlProps>(
     }, [pathname, href, isActiveRoute]);
 
     return (
-      <CoreLink data-active={isActive} ref={forwardedRef} {...props}>
+      <CoreLink
+        href={href}
+        data-active={isActive}
+        ref={forwardedRef}
+        {...props}
+      >
         {children}
       </CoreLink>
     );
