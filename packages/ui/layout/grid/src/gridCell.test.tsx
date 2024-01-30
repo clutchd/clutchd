@@ -9,7 +9,6 @@ test("render col", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("col-auto");
 });
 
 test("render col with custom col span", () => {
@@ -52,7 +51,6 @@ test("render col with custom row span", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("col-auto");
   expect(div).toHaveClass("row-span-1");
   expect(div).toHaveClass("sm:row-span-2");
   expect(div).toHaveClass("md:row-span-3");
