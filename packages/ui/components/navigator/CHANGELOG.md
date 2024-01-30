@@ -1,5 +1,11 @@
 # @clutchd/navigator
 
+## 1.0.1
+
+### Patch Changes
+
+- d9fc0968: Add missing export, add disabled styles
+
 ## 1.0.0
 
 ### Major Changes
