@@ -1,5 +1,11 @@
 # @clutchd/grid
 
+## 5.0.1
+
+### Patch Changes
+
+- 8d2e2f6d: Remove col-auto style
+
 ## 5.0.0
 
 ### Major Changes

@@ -1,5 +1,11 @@
 # @clutchd/flex
 
+## 5.1.2
+
+### Patch Changes
+
+- 93c70f92: Bad take, flex direction should have a default of col
+
 ## 5.1.1
 
 ### Patch Changes

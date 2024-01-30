@@ -1,5 +1,15 @@
 # @clutchd/ui
 
+## 0.12.6
+
+### Patch Changes
+
+- Updated dependencies [93c70f92]
+- Updated dependencies [8d2e2f6d]
+  - @clutchd/flex@5.1.2
+  - @clutchd/grid@5.0.1
+  - @clutchd/layout@3.0.3
+
 ## 0.12.5
 
 ### Patch Changes
