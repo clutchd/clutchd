@@ -1,5 +1,16 @@
 # @clutchd/copyright
 
+## 3.1.0
+
+### Minor Changes
+
+- 2d469edb: Allow getCopyright function to be overridden
+
+### Patch Changes
+
+- Updated dependencies [1b23f343]
+  - @clutchd/component@4.1.0
+
 ## 3.0.2
 
 ### Patch Changes

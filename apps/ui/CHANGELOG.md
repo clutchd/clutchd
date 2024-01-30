@@ -1,5 +1,35 @@
 # @clutchd/ui
 
+## 0.12.5
+
+### Patch Changes
+
+- 1598fc1c: Upgrade next
+- aaf5fa1f: Update tailwind
+- Updated dependencies [2d469edb]
+- Updated dependencies [74030647]
+- Updated dependencies [0356a875]
+- Updated dependencies [53ce3edc]
+- Updated dependencies [1598fc1c]
+- Updated dependencies [1b23f343]
+- Updated dependencies [7c4908fe]
+  - @clutchd/copyright@3.1.0
+  - @clutchd/button@3.0.0
+  - @clutchd/avatar@5.0.0
+  - @clutchd/link@2.1.1
+  - @clutchd/input@0.7.1
+  - @clutchd/form@0.3.2
+  - @clutchd/text@4.0.1
+  - @clutchd/component@4.1.0
+  - @clutchd/grid@5.0.0
+  - @clutchd/block@3.0.2
+  - @clutchd/card@4.0.1
+  - @clutchd/divider@4.0.2
+  - @clutchd/label@4.0.3
+  - @clutchd/flex@5.1.1
+  - @clutchd/layout@3.0.2
+  - @clutchd/twx@3.0.1
+
 ## 0.12.4
 
 ### Patch Changes

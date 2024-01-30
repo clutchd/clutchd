@@ -1,5 +1,16 @@
 # @clutchd/landing
 
+## 2.1.6
+
+### Patch Changes
+
+- 1598fc1c: Upgrade next
+- aaf5fa1f: Update tailwind
+- Updated dependencies [53ce3edc]
+- Updated dependencies [1598fc1c]
+  - @clutchd/link@2.1.1
+  - @clutchd/layout@3.0.2
+
 ## 2.1.5
 
 ### Patch Changes

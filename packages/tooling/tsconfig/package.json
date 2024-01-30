@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/tsconfig",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Collection of tsconfigs shared between clutchd/apps and clutchd/packages.",
   "keywords": [
     "clutchd",

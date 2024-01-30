@@ -1,5 +1,21 @@
 # @clutchd/avatar
 
+## 5.0.0
+
+### Major Changes
+
+- 0356a875: Stable release
+
+### Patch Changes
+
+- Updated dependencies [1ac7e080]
+- Updated dependencies [3c214fd9]
+- Updated dependencies [1598fc1c]
+- Updated dependencies [1b23f343]
+  - @clutchd/image@1.0.0
+  - @clutchd/component@4.1.0
+  - @clutchd/compose-props@3.0.1
+
 ## 4.0.0
 
 ### Major Changes

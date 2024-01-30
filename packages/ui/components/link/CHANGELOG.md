@@ -1,5 +1,15 @@
 # @clutchd/link
 
+## 2.1.1
+
+### Patch Changes
+
+- 53ce3edc: Fix CoreLink display name
+- 1598fc1c: Upgrade next
+- Updated dependencies [1b23f343]
+  - @clutchd/component@4.1.0
+  - @clutchd/compose-props@3.0.1
+
 ## 2.1.0
 
 ### Minor Changes
