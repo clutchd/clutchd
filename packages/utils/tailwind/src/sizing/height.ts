@@ -6,7 +6,11 @@ import { CommonSizeVariants, DynamicHeightVariants } from "./common";
  * @see https://tailwindcss.com/docs/height
  */
 
-type HeightVariants = CommonSizeVariants | DynamicHeightVariants | Arbitrary;
+type HeightVariants =
+  | CommonSizeVariants
+  | "screen"
+  | DynamicHeightVariants
+  | Arbitrary;
 
 export type Height = WithVariants<"h", HeightVariants>;
 

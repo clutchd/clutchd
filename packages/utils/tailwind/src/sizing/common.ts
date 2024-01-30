@@ -20,5 +20,4 @@ export type CommonSizeVariants =
   | Fifths
   | Sixths
   | "full"
-  | "screen"
   | ContentSizeVariants;

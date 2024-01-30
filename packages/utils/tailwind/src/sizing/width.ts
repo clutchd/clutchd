@@ -6,7 +6,7 @@ import { CommonSizeVariants } from "./common";
  * @see https://tailwindcss.com/docs/width
  */
 
-type WidthVariants = CommonSizeVariants | Twelfths | Arbitrary;
+type WidthVariants = CommonSizeVariants | "screen" | Twelfths | Arbitrary;
 
 export type Width = WithVariants<"w", WidthVariants>;
 
