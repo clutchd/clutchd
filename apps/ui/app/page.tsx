@@ -1,19 +1,15 @@
-import { Divider } from "@clutchd/divider";
+import { Copyright } from "@clutchd/copyright";
 import { Footer, Main } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { H1 } from "@clutchd/text";
 import { Metadata } from "next";
 import {
-  ButtonShowcase,
-  CardShowcase,
-  FormShowcase,
+  AvatarShowcase,
+  CopyrightShowcase,
   LabelShowcase,
   Showcase,
   TailwindIndicator,
-  InputShowcase,
-  CopyrightShowcase,
 } from "../components";
-import { Copyright } from "@clutchd/copyright";
 
 export const metadata: Metadata = {
   title: "Clutchd, LLC",
@@ -74,9 +70,18 @@ export default function Home() {
         </div>
         <div className="mb-8">
           <H1 className="border-b border-gray-950 pb-4">Components</H1>
+          <Showcase
+            title="Avatar"
+            description="A basic avatar component powered by next/image."
+            pkg="@clutchd/avatar"
+            pkgType="ui"
+            stable
+            rsc={false}
+          >
+            <AvatarShowcase />
+          </Showcase>
         </div>
         {/* <TextShowcase /> */}
-        {/* <AvatarShowcase /> */}
         {/* <Showcase
           title="Button"
           description="A simple, focusable, button."

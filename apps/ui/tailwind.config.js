@@ -14,6 +14,7 @@ const config = {
     "./node_modules/@clutchd/form/dist/index.js",
     "./node_modules/@clutchd/grid/dist/index.js",
     "./node_modules/@clutchd/input/dist/index.js",
+    "./node_modules/@clutchd/image/dist/index.js",
     "./node_modules/@clutchd/label/dist/index.js",
     "./node_modules/@clutchd/layout/dist/index.js",
     "./node_modules/@clutchd/link/dist/index.js",
