@@ -1,5 +1,5 @@
 export { isActiveRoute } from "./isActiveRoute";
-export { CoreNavigator } from "./navigator";
+export { Navigator, CoreNavigator } from "./navigator";
 export type {
   INavigator,
   INavigatorHtmlProps,

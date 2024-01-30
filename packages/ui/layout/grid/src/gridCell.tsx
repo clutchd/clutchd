@@ -20,19 +20,19 @@ type IGridCell = React.ElementRef<typeof Component.div>;
  */
 interface IGridCellProps
   extends WithColSpan,
-  WithColStart,
-  WithColEnd,
-  WithRowSpan,
-  WithRowStart,
-  WithRowEnd,
-  IComponentPropsWithoutRef<typeof Component.div> { }
+    WithColStart,
+    WithColEnd,
+    WithRowSpan,
+    WithRowStart,
+    WithRowEnd,
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * Type to define `GridCell` props with html attributes
  */
 interface IGridCellHtmlProps
   extends IGridCellProps,
-  IComponentPropsWithoutRef<typeof Component.div> { }
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `GridCell` - A primitive component used to render a cell within a grid

@@ -61,7 +61,7 @@ const Navigator = React.forwardRef<INavigator, INavigatorHtmlProps>(
     return (
       <CoreNavigator
         className={cn(
-          "focus:outline-2 focus:outline-offset-4 focus:outline-blue-500",
+          "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500/50 disabled:pointer-events-none disabled:opacity-50",
           className,
         )}
         ref={forwardedRef}
