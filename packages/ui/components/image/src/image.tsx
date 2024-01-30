@@ -25,7 +25,9 @@ interface IImageProps
     | "objectPosition"
     | "lazyBoundary"
     | "lazyRoot"
-  > {}
+  > {
+  handleStateChange?: (state: IImageLoadingStates) => void;
+}
 
 /**
  * Type to define `Image` props with html attributes
@@ -44,11 +46,24 @@ interface IImageHtmlProps
  */
 const Image = React.forwardRef<IImage, IImageHtmlProps>(
   (
-    { alt, children, onError, onLoad, onLoadStart, src, ...props },
+    {
+      alt,
+      children,
+      handleStateChange,
+      onError,
+      onLoad,
+      onLoadStart,
+      src,
+      ...props
+    },
     forwardedRef,
   ) => {
-    const [loadingState, setLoadingState] =
-      React.useState<IImageLoadingStates>("idle");
+    const [loading, setLoading] = React.useState<IImageLoadingStates>("idle");
+
+    const updateState = (state: IImageLoadingStates) => {
+      setLoading(state);
+      handleStateChange && handleStateChange(state);
+    };
 
     return (
       <Component.img asChild {...props}>
@@ -56,16 +71,13 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
           alt={alt}
           ref={forwardedRef}
           src={src}
-          onError={composeEventHandlers(
-            () => setLoadingState("error"),
-            onError,
-          )}
-          onLoad={composeEventHandlers(() => setLoadingState("loaded"), onLoad)}
+          onError={composeEventHandlers(() => updateState("error"), onError)}
+          onLoad={composeEventHandlers(() => updateState("loaded"), onLoad)}
           onLoadStart={composeEventHandlers(
-            () => setLoadingState("loading"),
+            () => updateState("loading"),
             onLoadStart,
           )}
-          data-state={loadingState}
+          data-state={loading}
         >
           {children}
         </NextImage>
