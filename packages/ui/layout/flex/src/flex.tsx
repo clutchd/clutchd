@@ -56,7 +56,7 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
       flexDirection = "flex-col",
       flexGrow,
       flexShrink,
-      flexWrap,
+      flexWrap = "flex-wrap",
       justifyContent,
       ...props
     },
