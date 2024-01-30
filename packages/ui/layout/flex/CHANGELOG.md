@@ -1,5 +1,11 @@
 # @clutchd/flex
 
+## 5.1.3
+
+### Patch Changes
+
+- 2f8cc878: Re-add flex-wrap for better flex defaults
+
 ## 5.1.2
 
 ### Patch Changes
