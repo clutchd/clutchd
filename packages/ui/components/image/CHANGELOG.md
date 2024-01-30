@@ -1,5 +1,11 @@
 # @clutchd/image
 
+## 1.1.0
+
+### Minor Changes
+
+- 90b88e96: Introduce CoreImage for RSC images
+
 ## 1.0.0
 
 ### Major Changes
