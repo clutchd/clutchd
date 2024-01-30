@@ -9,7 +9,7 @@ test("render flex", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex");
+  expect(div).toHaveClass("flex flex-col");
 });
 
 test("render flex with custom alignItems", () => {
@@ -19,7 +19,7 @@ test("render flex with custom alignItems", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex items-start");
+  expect(div).toHaveClass("flex flex-col items-start");
 });
 
 test("render flex with custom flex", () => {
@@ -29,7 +29,7 @@ test("render flex with custom flex", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-none");
+  expect(div).toHaveClass("flex flex-col flex-none");
 });
 
 test("render flex with custom flexBasis", () => {
@@ -39,7 +39,7 @@ test("render flex with custom flexBasis", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex basis-1/2");
+  expect(div).toHaveClass("flex flex-col basis-1/2");
 });
 
 test("render flex with custom flexDirection", () => {
@@ -59,7 +59,7 @@ test("render flex with custom flexGrow", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex grow-0");
+  expect(div).toHaveClass("flex flex-col grow-0");
 });
 
 test("render flex with custom flexShrink", () => {
@@ -69,7 +69,7 @@ test("render flex with custom flexShrink", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex shrink-0");
+  expect(div).toHaveClass("flex flex-col shrink-0");
 });
 
 test("render flex with custom justifyContent", () => {
@@ -79,7 +79,7 @@ test("render flex with custom justifyContent", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex justify-evenly");
+  expect(div).toHaveClass("flex flex-col justify-evenly");
 });
 
 test("render flex with custom props and className", () => {
