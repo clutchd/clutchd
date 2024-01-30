@@ -1,5 +1,11 @@
 # @clutchd/ui
 
+## 0.12.8
+
+### Patch Changes
+
+- @clutchd/avatar@5.0.1
+
 ## 0.12.7
 
 ### Patch Changes

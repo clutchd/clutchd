@@ -1,5 +1,12 @@
 # @clutchd/avatar
 
+## 5.0.1
+
+### Patch Changes
+
+- Updated dependencies [90b88e96]
+  - @clutchd/image@1.1.0
+
 ## 5.0.0
 
 ### Major Changes
