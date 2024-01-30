@@ -23,13 +23,13 @@ type IFlex = React.ElementRef<typeof Component.div>;
  */
 interface IFlexProps
   extends WithAlignItems,
-    WithFlex,
-    WithFlexBasis,
-    WithFlexDirection,
-    WithFlexGrow,
-    WithFlexShrink,
-    WithFlexWrap,
-    WithJustifyContent {
+  WithFlex,
+  WithFlexBasis,
+  WithFlexDirection,
+  WithFlexGrow,
+  WithFlexShrink,
+  WithFlexWrap,
+  WithJustifyContent {
   display?: Extract<Display, "flex" | "inline-flex" | "hidden">;
 }
 
@@ -38,7 +38,7 @@ interface IFlexProps
  */
 interface IFlexHtmlProps
   extends IFlexProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+  IComponentPropsWithoutRef<typeof Component.div> { }
 
 /**
  * `Flex` - A flex container that powers various layouts
@@ -53,7 +53,7 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
       display = "flex",
       flex,
       flexBasis,
-      flexDirection,
+      flexDirection = "flex-col",
       flexGrow,
       flexShrink,
       flexWrap,
