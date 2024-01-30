@@ -1,9 +1,6 @@
 "use client";
 
-import { Image } from "../../../packages/ui/components/image";
-import { default as NextImage } from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from "@clutchd/avatar";
-import * as React from "react";
+import { Avatar } from "@clutchd/avatar";
 
 export function AvatarShowcase() {
   const styles =
