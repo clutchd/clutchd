@@ -1,5 +1,12 @@
 # @clutchd/ui
 
+## 0.12.9
+
+### Patch Changes
+
+- Updated dependencies [d72868db]
+  - @clutchd/avatar@5.0.2
+
 ## 0.12.8
 
 ### Patch Changes

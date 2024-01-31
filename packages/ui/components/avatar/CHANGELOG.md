@@ -1,5 +1,11 @@
 # @clutchd/avatar
 
+## 5.0.2
+
+### Patch Changes
+
+- d72868db: Export html interfaces
+
 ## 5.0.1
 
 ### Patch Changes
