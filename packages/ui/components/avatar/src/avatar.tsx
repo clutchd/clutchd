@@ -34,14 +34,18 @@ interface IAvatarProps
 }
 
 /**
+ * Type to define `Avatar` props with html attributes
+ */
+interface IAvatarHtmlProps
+  extends IAvatarProps,
+    IComponentPropsWithoutRef<typeof Component.span> {}
+
+/**
  * `Avatar` - An image based component used to render a user's profile picture
  * @param props `IAvatarProps` used to render this `Avatar`
  * @returns `Avatar` component
  */
-const Avatar = React.forwardRef<
-  IAvatar,
-  IAvatarProps & IComponentPropsWithoutRef<typeof Component.span>
->(
+const Avatar = React.forwardRef<IAvatar, IAvatarHtmlProps>(
   (
     {
       alt = "An avatar image",
@@ -97,4 +101,4 @@ const Avatar = React.forwardRef<
 Avatar.displayName = "Avatar";
 
 export { Avatar };
-export type { IAvatar, IAvatarProps };
+export type { IAvatar, IAvatarHtmlProps, IAvatarProps };

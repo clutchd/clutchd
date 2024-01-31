@@ -14,13 +14,20 @@ type IAvatarFallback = React.ElementRef<typeof Component.span>;
 interface IAvatarFallbackProps extends WithDisplay, WithTextOverflow {}
 
 /**
+ * Type to define `AvatarFallback` props with html attributes
+ */
+interface IAvatarFallbackHtmlProps
+  extends IAvatarFallbackProps,
+    IComponentPropsWithoutRef<typeof Component.span> {}
+
+/**
  * `AvatarFallback` - A text component used to render a avatar's fallback if an image is not provided to an `Avatar`
  * @param props `IAvatarProps` used to render this `Avatar`
  * @returns `AvatarFallback` component
  */
 const AvatarFallback = React.forwardRef<
   IAvatarFallback,
-  IAvatarFallbackProps & IComponentPropsWithoutRef<typeof Component.span>
+  IAvatarFallbackHtmlProps
 >(
   (
     {
@@ -47,4 +54,4 @@ const AvatarFallback = React.forwardRef<
 AvatarFallback.displayName = "AvatarFallback";
 
 export { AvatarFallback };
-export type { IAvatarFallback, IAvatarFallbackProps };
+export type { IAvatarFallback, IAvatarFallbackHtmlProps, IAvatarFallbackProps };
