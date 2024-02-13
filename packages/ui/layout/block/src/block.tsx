@@ -1,6 +1,9 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
+import {
+  Display,
+} from "@clutchd/tailwind";
 
 /**
  * Type to define `Block` element
@@ -10,24 +13,26 @@ type IBlock = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Block` props
  */
-interface IBlockProps {}
+interface IBlockProps {
+  display?: Extract<Display, "block" | "inline-block" | "inline" | "hidden">;
+}
 
 /**
  * Type to define `Block` props with html attributes
  */
 interface IBlockHtmlProps
   extends IBlockProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+  IComponentPropsWithoutRef<typeof Component.div> { }
 
 /**
- * `Block` - A block container for a vertical layout
+ * `Block` - A fundamental layout building block
  * @param props `IBlockHtmlProps` used to render this `Block`
  * @returns `Block` component
  */
 const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
-  ({ className, ...props }, forwardedRef) => {
+  ({ className, display = "block", ...props }, forwardedRef) => {
     return (
-      <div className={cn("block", className)} ref={forwardedRef} {...props} />
+      <div className={cn(display, className)} ref={forwardedRef} {...props} />
     );
   },
 );
