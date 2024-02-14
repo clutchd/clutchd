@@ -1,11 +1,11 @@
 export { Badge } from "./badge";
-export { ButtonShowcase } from "./buttonShowcase";
-export { CardShowcase } from "./cardShowcase";
 export { DarkModeToggle } from "./darkModeToggle";
 export { FormShowcase } from "./formShowcase";
 export { InputShowcase } from "./inputShowcase";
 export * from "./primitives";
 export { LabelShowcase } from "./primitives/labelShowcase";
+export { Section } from "./section";
 export { Showcase } from "./showcase";
 export { TailwindIndicator } from "./tailwindIndicator";
 export * from "./ui";
+export { ButtonShowcase } from "./ui/buttonShowcase";

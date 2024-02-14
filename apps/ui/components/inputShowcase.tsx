@@ -1,9 +1,9 @@
 "use client";
 
-import { Input } from "@clutchd/input";
+// import { Input } from "@clutchd/input";
 
 function InputShowcase() {
-  return <Input />;
+  // return <Input />;
 }
 
 export { InputShowcase };

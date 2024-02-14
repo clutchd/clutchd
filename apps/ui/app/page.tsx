@@ -1,4 +1,5 @@
 import { Copyright } from "@clutchd/copyright";
+import { Divider } from "@clutchd/divider";
 import { Footer, Main } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { Metadata } from "next";
@@ -6,10 +7,10 @@ import {
   AvatarShowcase,
   CopyrightShowcase,
   LabelShowcase,
+  Section,
   Showcase,
   TailwindIndicator,
 } from "../components";
-import { Divider } from "@clutchd/divider";
 
 export const metadata: Metadata = {
   title: "Clutchd, LLC",
@@ -45,9 +46,9 @@ export default function Home() {
         <ColorSwitch color={color} setColor={setColor} /> 
       </Header> */}
       <Main>
-        <div className="mb-10">
-          <h1 className="pb-4 text-4xl">Primitives</h1>
-          <Divider className="bg-gray-950" />
+        <Section title="Core"></Section>
+        <Section title="Layout"></Section>
+        <Section title="Primitives">
           <Showcase
             title="Copyright"
             description="A small utility primitive to assist with returning the current copyright year."
@@ -68,9 +69,8 @@ export default function Home() {
           >
             <LabelShowcase />
           </Showcase>
-        </div>
-        <div className="mb-8">
-          <h1 className="pb-4 text-3xl">Components</h1>
+        </Section>
+        <Section title="Components">
           <Divider className="bg-gray-950" />
           <Showcase
             title="Avatar"
@@ -82,15 +82,18 @@ export default function Home() {
           >
             <AvatarShowcase />
           </Showcase>
-        </div>
+          {/* <Showcase
+            title="Button"
+            description="A simple, focusable, button."
+            pkg="@clutchd/button"
+            pkgType="ui"
+            stable
+          >
+            <ButtonShowcase />
+          </Showcase> */}
+        </Section>
         {/* <TextShowcase /> */}
-        {/* <Showcase
-          title="Button"
-          description="A simple, focusable, button."
-          pkg="@clutchd/button"
-        >
-          <ButtonShowcase />
-        </Showcase>
+        {/* 
         <Showcase title="Card" pkg="@clutchd/card">
           <CardShowcase />
         </Showcase>

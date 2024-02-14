@@ -1,6 +1,6 @@
 "use client";
 
-import { Form, Submit } from "@clutchd/form";
+// import { Form, Submit } from "@clutchd/form";
 
 function FormShowcase() {
   return (
@@ -8,8 +8,9 @@ function FormShowcase() {
     //   <Label>Test</Label>
     //   <Input />
     // </Form>
-    <Form className="flex flex-col">
-      {/* <Form.Field className="FormField" name="email">
+    //<Form className="flex flex-col">
+    {
+      /* <Form.Field className="FormField" name="email">
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between' }}>
         <Form.Label className="FormLabel">Email</Form.Label>
         <Form.Message className="FormMessage" match="valueMissing">
@@ -33,9 +34,10 @@ function FormShowcase() {
       <Form.Control asChild>
         <textarea className="Textarea" required />
       </Form.Control>
-    </Form.Field> */}
-      <Submit>Submit Form</Submit>
-    </Form>
+    </Form.Field> */
+    }
+    //<Submit>Submit Form</Submit>
+    //</Form>
   );
 }
 
