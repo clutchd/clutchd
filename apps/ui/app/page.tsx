@@ -1,7 +1,6 @@
 import { Copyright } from "@clutchd/copyright";
 import { Footer, Main } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
-import { H1 } from "@clutchd/text";
 import { Metadata } from "next";
 import {
   AvatarShowcase,
@@ -10,6 +9,7 @@ import {
   Showcase,
   TailwindIndicator,
 } from "../components";
+import { Divider } from "@clutchd/divider";
 
 export const metadata: Metadata = {
   title: "Clutchd, LLC",
@@ -46,7 +46,8 @@ export default function Home() {
       </Header> */}
       <Main>
         <div className="mb-10">
-          <H1 className="border-b border-gray-950 pb-4">Primitives</H1>
+          <h1 className="pb-4 text-4xl">Primitives</h1>
+          <Divider className="bg-gray-950" />
           <Showcase
             title="Copyright"
             description="A small utility primitive to assist with returning the current copyright year."
@@ -69,7 +70,8 @@ export default function Home() {
           </Showcase>
         </div>
         <div className="mb-8">
-          <H1 className="border-b border-gray-950 pb-4">Components</H1>
+          <h1 className="pb-4 text-3xl">Components</h1>
+          <Divider className="bg-gray-950" />
           <Showcase
             title="Avatar"
             description="A basic avatar component powered by next/image."

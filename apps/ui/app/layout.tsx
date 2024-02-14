@@ -1,5 +1,4 @@
 import { Page } from "@clutchd/layout";
-import { Analytics } from "@vercel/analytics/react";
 import { Manrope } from "next/font/google";
 import { cookies } from "next/headers";
 import { DarkModeToggle } from "../components";
@@ -29,7 +28,6 @@ export default function RootLayout({
         <Page className="bg-white p-6">
           <DarkModeToggle initialValue={theme?.value as "light" | "dark"} />
           {children}
-          <Analytics />
         </Page>
       </body>
     </html>
