@@ -1,7 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
-import { Display } from "@clutchd/tailwind";
+import type { Display } from "@clutchd/tailwind";
 
 /**
  * Type to define `Block` element

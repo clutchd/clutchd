@@ -1,4 +1,4 @@
-// import { Color } from "@clutchd/tailwind";
+// import type { Color } from "@clutchd/tailwind";
 // import * as React from "react";
 
 // function ColorSwitch({ color, setColor }) {

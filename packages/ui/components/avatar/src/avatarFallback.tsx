@@ -1,6 +1,6 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import { WithDisplay, WithTextOverflow } from "@clutchd/tailwind";
+import type { WithDisplay, WithTextOverflow } from "@clutchd/tailwind";
 import * as React from "react";
 
 /**

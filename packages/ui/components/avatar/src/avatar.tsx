@@ -1,7 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import { IImageLoadingStates } from "@clutchd/image";
-import {
+import type {
   WithAlignItems,
   WithDisplay,
   WithJustifyContent,

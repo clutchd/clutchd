@@ -1,7 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import { Flex, IFlexProps } from "@clutchd/flex";
-import {
+import type {
   WithFontSmoothing,
   WithMinHeight,
   WithMinWidth,

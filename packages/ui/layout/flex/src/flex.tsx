@@ -1,6 +1,6 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import {
+import type {
   Display,
   WithAlignItems,
   WithFlex,
