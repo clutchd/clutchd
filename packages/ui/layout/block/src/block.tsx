@@ -1,9 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
-import {
-  Display,
-} from "@clutchd/tailwind";
+import { Display } from "@clutchd/tailwind";
 
 /**
  * Type to define `Block` element
@@ -22,7 +20,7 @@ interface IBlockProps {
  */
 interface IBlockHtmlProps
   extends IBlockProps,
-  IComponentPropsWithoutRef<typeof Component.div> { }
+    IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Block` - A fundamental layout building block

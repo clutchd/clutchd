@@ -34,27 +34,26 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
       children,
       className,
       decorative = false,
-      hidden = false,
       orientation = "horizontal",
       ...props
     },
     forwardedRef,
   ) => {
-    // define aria props
+    // ensure only a valid aria-orientation is passed
+    orientation = orientation === "vertical" ? "vertical" : "horizontal";
+    // assign aria props
     const aria = decorative
       ? { role: "none" }
-      : { "aria-orientation": orientation, role: "separator" };
+      : {
+          "aria-orientation": orientation,
+          role: "separator",
+        };
 
-    // TODO: Bring back theming
+    // TODO: Bring back theming?
     return (
       <Component.div
         {...aria}
-        className={cn(
-          "rounded-lg",
-          hidden ? "bg-inherit" : "bg-gray-200",
-          orientation === "horizontal" ? `h-px` : `w-px`,
-          className,
-        )}
+        className={cn(orientation === "vertical" ? `w-px` : `h-px`, className)}
         data-orientation={orientation}
         ref={forwardedRef}
         {...props}
