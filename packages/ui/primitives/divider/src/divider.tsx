@@ -49,7 +49,6 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
           role: "separator",
         };
 
-    // TODO: Bring back theming?
     return (
       <Component.div
         {...aria}
