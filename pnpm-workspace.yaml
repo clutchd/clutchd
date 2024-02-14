@@ -7,10 +7,12 @@ packages:
   - "packages/tooling/*"
   # all standard ui component packages
   - "packages/ui/components/*"
-    # all core ui component packages
+  # all core ui component packages
   - "packages/ui/core/*"
   # all layout component packages
   - "packages/ui/layout/*"
+  # all primitive component packages
+  - "packages/ui/primitives/*"
   # all typography component packages
   - "packages/ui/typograpy/*"
   # all utility packages

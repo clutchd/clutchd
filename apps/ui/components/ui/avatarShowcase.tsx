@@ -3,8 +3,8 @@
 import { Avatar } from "@clutchd/avatar";
 
 export function AvatarShowcase() {
-  const styles =
-    "font-semibold text-gray-500 bg-gray-100 border border-gray-300 rounded-full dark:border-gray-400 dark:bg-gray-800 dark:text-gray-400";
+  const styles = "";
+  //"font-semibold text-gray-500 bg-gray-100 border border-gray-300 rounded-full dark:border-gray-400 dark:bg-gray-800 dark:text-gray-400";
   return (
     <>
       <Avatar display="flex" className={styles} />

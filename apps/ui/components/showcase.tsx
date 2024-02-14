@@ -15,10 +15,10 @@ function Showcase({
   title: string;
   pkg: string;
   description?: string;
-  pkgType?: "primitive" | "utility" | "ui";
+  pkgType?: "primitive" | "utility" | "ui" | "core" | "layout";
   rsc?: boolean;
   stable?: boolean;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }) {
   return (
     <Block className="my-6">
@@ -58,7 +58,11 @@ function Showcase({
         </p>
       )}
       <Divider className="bg-gray-950" />
-      <div className="space-y-4 py-6">{children}</div>
+      {children ? (
+        <div className="space-y-4 py-6">{children}</div>
+      ) : (
+        <div className="py-2" />
+      )}
     </Block>
   );
 }
