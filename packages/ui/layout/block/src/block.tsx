@@ -13,7 +13,7 @@ type IBlock = React.ElementRef<typeof Component.div>;
  */
 interface IBlockProps {
   /**
-   * A subset of the tailwind display classes
+   * A subset of the `Display` tailwindcss classes
    * @see https://tailwindcss.com/docs/display
    */
   display?: Extract<Display, "block" | "inline-block" | "inline" | "hidden">;

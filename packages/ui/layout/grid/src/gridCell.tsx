@@ -1,12 +1,12 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type {
-  ColEnd,
-  ColSpan,
-  ColStart,
-  RowEnd,
-  RowSpan,
-  RowStart,
+  WithColEnd,
+  WithColSpan,
+  WithColStart,
+  WithRowEnd,
+  WithRowSpan,
+  WithRowStart,
 } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -18,38 +18,13 @@ type IGridCell = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `GridCell` props
  */
-interface IGridCellProps {
-  /**
-   * The tailwind col start classes, a subset of the grid column start / end classes
-   * @see https://tailwindcss.com/docs/grid-column
-   */
-  colStart?: ColStart;
-  /**
-   * The tailwind col span classes, a subset of the grid column start / end classes
-   * @see https://tailwindcss.com/docs/grid-column
-   */
-  colSpan?: ColSpan;
-  /**
-   * The tailwind col end classes, a subset of the grid column start / end classes
-   * @see https://tailwindcss.com/docs/grid-column
-   */
-  colEnd?: ColEnd;
-  /**
-   * The tailwind row start classes, a subset of the grid row start / end classes
-   * @see https://tailwindcss.com/docs/grid-row
-   */
-  rowStart?: RowStart;
-  /**
-   * The tailwind row span classes, a subset of the grid row start / end classes
-   * @see https://tailwindcss.com/docs/grid-row
-   */
-  rowSpan?: RowSpan;
-  /**
-   * The tailwind row end classes, a subset of the grid row start / end classes
-   * @see https://tailwindcss.com/docs/grid-row
-   */
-  rowEnd?: RowEnd;
-}
+interface IGridCellProps
+  extends WithColStart,
+    WithColSpan,
+    WithColEnd,
+    WithRowStart,
+    WithRowSpan,
+    WithRowEnd {}
 
 /**
  * Type to define `GridCell` props with html attributes

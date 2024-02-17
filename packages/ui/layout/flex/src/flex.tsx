@@ -19,27 +19,27 @@ type IFlex = React.ElementRef<typeof Component.div>;
  */
 interface IFlexProps {
   /**
-   * A subset of the tailwind display classes
+   * A subset of the `Display` tailwindcss classes
    * @see https://tailwindcss.com/docs/display
    */
   display?: Extract<Display, "flex" | "inline-flex" | "hidden">;
   /**
-   * The tailwind flex direction classes
+   * The `Flex Direction` tailwindcss classes
    * @see https://tailwindcss.com/docs/flex-direction
    */
   direction?: FlexDirection;
   /**
-   * The tailwind align items classes
+   * The `Align Items` tailwindcss classes
    * @see https://tailwindcss.com/docs/align-items
    */
   align?: AlignItems;
   /**
-   * The tailwind justify content classes
+   * The `Justify Content` tailwindcss classes
    * @see https://tailwindcss.com/docs/justify-content
    */
   justify?: JustifyContent;
   /**
-   * The tailwind flex wrap classes
+   * The `Flex Wrap` tailwindcss classes
    * @see https://tailwindcss.com/docs/flex-wrap
    */
   wrap?: FlexWrap;

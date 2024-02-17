@@ -19,27 +19,27 @@ type IGrid = React.ElementRef<typeof Component.div>;
  */
 interface IGridProps {
   /**
-   * A subset of the tailwind display classes
+   * A subset of the `Display` tailwindcss classes
    * @see https://tailwindcss.com/docs/display
    */
   display?: Extract<Display, "grid" | "inline-grid" | "hidden">;
   /**
-   * The tailwind align items classes
+   * The `Align Items` tailwindcss classes
    * @see https://tailwindcss.com/docs/align-items
    */
   align?: AlignItems;
   /**
-   * The tailwind justify content classes
+   * The `Justify Content` tailwindcss classes
    * @see https://tailwindcss.com/docs/justify-content
    */
   justify?: JustifyContent;
   /**
-   * The tailwind grid template columns classes
+   * The `Grid Template Columns` tailwindcss classes
    * @see https://tailwindcss.com/docs/grid-template-columns
    */
   cols?: GridCols;
   /**
-   * The tailwind grid template rows classes
+   * The `Grid Template Rows` tailwindcss classes
    * @see https://tailwindcss.com/docs/grid-template-rows
    */
   rows?: GridRows;
