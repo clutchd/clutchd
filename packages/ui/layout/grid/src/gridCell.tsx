@@ -1,12 +1,12 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type {
-  WithColEnd,
-  WithColSpan,
-  WithColStart,
-  WithRowEnd,
-  WithRowSpan,
-  WithRowStart,
+  ColEnd,
+  ColSpan,
+  ColStart,
+  RowEnd,
+  RowSpan,
+  RowStart,
 } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -18,14 +18,38 @@ type IGridCell = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `GridCell` props
  */
-interface IGridCellProps
-  extends WithColSpan,
-    WithColStart,
-    WithColEnd,
-    WithRowSpan,
-    WithRowStart,
-    WithRowEnd,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+interface IGridCellProps {
+  /**
+   * The tailwind col start classes, a subset of the grid column start / end classes
+   * @see https://tailwindcss.com/docs/grid-column
+   */
+  colStart?: ColStart;
+  /**
+   * The tailwind col span classes, a subset of the grid column start / end classes
+   * @see https://tailwindcss.com/docs/grid-column
+   */
+  colSpan?: ColSpan;
+  /**
+   * The tailwind col end classes, a subset of the grid column start / end classes
+   * @see https://tailwindcss.com/docs/grid-column
+   */
+  colEnd?: ColEnd;
+  /**
+   * The tailwind row start classes, a subset of the grid row start / end classes
+   * @see https://tailwindcss.com/docs/grid-row
+   */
+  rowStart?: RowStart;
+  /**
+   * The tailwind row span classes, a subset of the grid row start / end classes
+   * @see https://tailwindcss.com/docs/grid-row
+   */
+  rowSpan?: RowSpan;
+  /**
+   * The tailwind row end classes, a subset of the grid row start / end classes
+   * @see https://tailwindcss.com/docs/grid-row
+   */
+  rowEnd?: RowEnd;
+}
 
 /**
  * Type to define `GridCell` props with html attributes
@@ -44,19 +68,9 @@ const GridCell = React.forwardRef<IGridCell, IGridCellHtmlProps>(
     {
       className,
       colSpan,
-      colSpanSm,
-      colSpanMd,
-      colSpanLg,
-      colSpanXl,
-      colSpan2xl,
       colStart,
       colEnd,
       rowSpan,
-      rowSpanSm,
-      rowSpanMd,
-      rowSpanLg,
-      rowSpanXl,
-      rowSpan2xl,
       rowStart,
       rowEnd,
       ...props
@@ -67,19 +81,9 @@ const GridCell = React.forwardRef<IGridCell, IGridCellHtmlProps>(
       <Component.div
         className={cn(
           colSpan,
-          colSpanSm,
-          colSpanMd,
-          colSpanLg,
-          colSpanXl,
-          colSpan2xl,
           colStart,
           colEnd,
           rowSpan,
-          rowSpanSm,
-          rowSpanMd,
-          rowSpanLg,
-          rowSpanXl,
-          rowSpan2xl,
           rowStart,
           rowEnd,
           className,
@@ -94,4 +98,4 @@ const GridCell = React.forwardRef<IGridCell, IGridCellHtmlProps>(
 GridCell.displayName = "GridCell";
 
 export { GridCell };
-export type { IGridCell, IGridCellProps, IGridCellHtmlProps };
+export type { IGridCell, IGridCellHtmlProps, IGridCellProps };

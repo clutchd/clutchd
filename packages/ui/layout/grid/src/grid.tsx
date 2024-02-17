@@ -1,6 +1,12 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import type { Display, WithGridCols, WithGridRows } from "@clutchd/tailwind";
+import type {
+  AlignItems,
+  Display,
+  GridCols,
+  GridRows,
+  JustifyContent,
+} from "@clutchd/tailwind";
 import * as React from "react";
 
 /**
@@ -11,8 +17,32 @@ type IGrid = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Grid` props
  */
-interface IGridProps extends WithGridCols, WithGridRows {
+interface IGridProps {
+  /**
+   * A subset of the tailwind display classes
+   * @see https://tailwindcss.com/docs/display
+   */
   display?: Extract<Display, "grid" | "inline-grid" | "hidden">;
+  /**
+   * The tailwind align items classes
+   * @see https://tailwindcss.com/docs/align-items
+   */
+  align?: AlignItems;
+  /**
+   * The tailwind justify content classes
+   * @see https://tailwindcss.com/docs/justify-content
+   */
+  justify?: JustifyContent;
+  /**
+   * The tailwind grid template columns classes
+   * @see https://tailwindcss.com/docs/grid-template-columns
+   */
+  cols?: GridCols;
+  /**
+   * The tailwind grid template rows classes
+   * @see https://tailwindcss.com/docs/grid-template-rows
+   */
+  rows?: GridRows;
 }
 
 /**
@@ -29,43 +59,12 @@ interface IGridHtmlProps
  */
 const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
   (
-    {
-      className,
-      display = "grid",
-      gridCols,
-      gridColsSm,
-      gridColsMd,
-      gridColsLg,
-      gridColsXl,
-      gridCols2xl,
-      gridRows,
-      gridRowsSm,
-      gridRowsMd,
-      gridRowsLg,
-      gridRowsXl,
-      gridRows2xl,
-      ...props
-    },
+    { className, display = "grid", align, justify, cols, rows, ...props },
     forwardedRef,
   ) => {
     return (
       <Component.div
-        className={cn(
-          display,
-          gridCols,
-          gridColsSm,
-          gridColsMd,
-          gridColsLg,
-          gridColsXl,
-          gridCols2xl,
-          gridRows,
-          gridRowsSm,
-          gridRowsMd,
-          gridRowsLg,
-          gridRowsXl,
-          gridRows2xl,
-          className,
-        )}
+        className={cn(display, align, justify, cols, rows, className)}
         ref={forwardedRef}
         {...props}
       />
