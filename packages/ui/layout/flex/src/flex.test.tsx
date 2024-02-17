@@ -9,41 +9,21 @@ test("render flex", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col");
+  expect(div).toHaveClass("flex");
 });
 
-test("render flex with custom alignItems", () => {
-  const { container } = render(<Flex alignItems="items-start" />);
+test("render flex with custom align", () => {
+  const { container } = render(<Flex align="items-start" />);
 
   const div = container.querySelector("div");
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col items-start");
+  expect(div).toHaveClass("flex items-start");
 });
 
-test("render flex with custom flex", () => {
-  const { container } = render(<Flex flex="flex-none" />);
-
-  const div = container.querySelector("div");
-
-  expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col flex-none");
-});
-
-test("render flex with custom flexBasis", () => {
-  const { container } = render(<Flex flexBasis="basis-1/2" />);
-
-  const div = container.querySelector("div");
-
-  expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col basis-1/2");
-});
-
-test("render flex with custom flexDirection", () => {
-  const { container } = render(<Flex flexDirection="flex-col-reverse" />);
+test("render flex with custom direction", () => {
+  const { container } = render(<Flex direction="flex-col-reverse" />);
 
   const div = container.querySelector("div");
 
@@ -52,44 +32,22 @@ test("render flex with custom flexDirection", () => {
   expect(div).toHaveClass("flex flex-col-reverse");
 });
 
-test("render flex with custom flexGrow", () => {
-  const { container } = render(<Flex flexGrow="grow-0" />);
+test("render flex with custom justify", () => {
+  const { container } = render(<Flex justify="justify-evenly" />);
 
   const div = container.querySelector("div");
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col grow-0");
-});
-
-test("render flex with custom flexShrink", () => {
-  const { container } = render(<Flex flexShrink="shrink-0" />);
-
-  const div = container.querySelector("div");
-
-  expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col shrink-0");
-});
-
-test("render flex with custom justifyContent", () => {
-  const { container } = render(<Flex justifyContent="justify-evenly" />);
-
-  const div = container.querySelector("div");
-
-  expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col justify-evenly");
+  expect(div).toHaveClass("flex justify-evenly");
 });
 
 test("render flex with custom props and className", () => {
   const { container } = render(
     <Flex
-      alignItems="items-start"
-      flex="flex-1"
-      flexBasis="basis-1/2"
-      justifyContent="justify-evenly"
-      flexDirection="flex-col-reverse"
+      align="items-start"
+      justify="justify-evenly"
+      direction="flex-col-reverse"
       className={["bg-gray-200 p-4", "rounded-lg"].join(" ")}
     />,
   );
@@ -99,6 +57,6 @@ test("render flex with custom props and className", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass(
-    "flex items-start flex-1 basis-1/2 flex-col-reverse justify-evenly p-4 bg-gray-200 rounded-lg",
+    "flex items-start flex-col-reverse justify-evenly p-4 bg-gray-200 rounded-lg",
   );
 });

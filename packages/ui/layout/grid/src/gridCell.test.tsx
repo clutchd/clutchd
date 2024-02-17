@@ -1,5 +1,4 @@
 import { render } from "@testing-library/react";
-import * as React from "react";
 import { GridCell } from ".";
 
 test("render col", () => {
@@ -11,50 +10,62 @@ test("render col", () => {
   expect(div).toBeInTheDocument();
 });
 
+test("render col with custom col start", () => {
+  const { container } = render(<GridCell colStart="col-start-2" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("col-start-2");
+});
+
 test("render col with custom col span", () => {
-  const { container } = render(
-    <GridCell
-      colSpan="col-span-2"
-      colSpanSm="sm:col-span-4"
-      colSpanMd="md:col-span-6"
-      colSpanLg="lg:col-span-8"
-      colSpanXl="xl:col-span-10"
-      colSpan2xl="2xl:col-span-12"
-    />,
-  );
+  const { container } = render(<GridCell colSpan="col-span-2" />);
 
   const div = container.querySelector("div");
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveClass("col-span-2");
-  expect(div).toHaveClass("sm:col-span-4");
-  expect(div).toHaveClass("md:col-span-6");
-  expect(div).toHaveClass("lg:col-span-8");
-  expect(div).toHaveClass("xl:col-span-10");
-  expect(div).toHaveClass("2xl:col-span-12");
 });
 
-test("render col with custom row span", () => {
-  const { container } = render(
-    <GridCell
-      rowSpan="row-span-1"
-      rowSpanSm="sm:row-span-2"
-      rowSpanMd="md:row-span-3"
-      rowSpanLg="lg:row-span-4"
-      rowSpanXl="xl:row-span-5"
-      rowSpan2xl="2xl:row-span-6"
-    />,
-  );
+test("render col with custom col end", () => {
+  const { container } = render(<GridCell colEnd="col-end-2" />);
 
   const div = container.querySelector("div");
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("row-span-1");
-  expect(div).toHaveClass("sm:row-span-2");
-  expect(div).toHaveClass("md:row-span-3");
-  expect(div).toHaveClass("lg:row-span-4");
-  expect(div).toHaveClass("xl:row-span-5");
-  expect(div).toHaveClass("2xl:row-span-6");
+  expect(div).toHaveClass("col-end-2");
+});
+
+test("render col with custom row start", () => {
+  const { container } = render(<GridCell rowStart="row-start-2" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("row-start-2");
+});
+
+test("render col with custom row span", () => {
+  const { container } = render(<GridCell rowSpan="row-span-2" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("row-span-2");
+});
+
+test("render col with custom row end", () => {
+  const { container } = render(<GridCell rowEnd="row-end-2" />);
+
+  const div = container.querySelector("div");
+
+  expect(container.hasChildNodes()).toEqual(true);
+  expect(div).toBeInTheDocument();
+  expect(div).toHaveClass("row-end-2");
 });
