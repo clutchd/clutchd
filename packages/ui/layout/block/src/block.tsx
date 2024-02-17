@@ -1,7 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import * as React from "react";
 import type { Display } from "@clutchd/tailwind";
+import * as React from "react";
 
 /**
  * Type to define `Block` element
@@ -12,6 +12,10 @@ type IBlock = React.ElementRef<typeof Component.div>;
  * Type to define `Block` props
  */
 interface IBlockProps {
+  /**
+   * A subset of the tailwind display classes
+   * @see https://tailwindcss.com/docs/display
+   */
   display?: Extract<Display, "block" | "inline-block" | "inline" | "hidden">;
 }
 
@@ -38,4 +42,4 @@ const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
 Block.displayName = "Block";
 
 export { Block };
-export type { IBlock, IBlockProps, IBlockHtmlProps };
+export type { IBlock, IBlockHtmlProps, IBlockProps };
