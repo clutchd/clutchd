@@ -1,35 +1,31 @@
-import { WithVariants, WithModifier, OneThroughTwelve } from "../core";
-
-/**
- * Grid Template Columns
- * @see https://tailwindcss.com/docs/grid-template-columns
- */
+import { OneThroughTwelve, WithVariants } from "../core";
 
 type GridTemplateVariants = OneThroughTwelve | "none" | "subgrid";
 
+/**
+ * The `Grid Template Columns` tailwindcss classes
+ * @see https://tailwindcss.com/docs/grid-template-columns
+ */
 export type GridCols = WithVariants<"grid-cols", GridTemplateVariants>;
 
 export interface WithGridCols {
+  /**
+   * The `Grid Template Columns` tailwindcss classes
+   * @see https://tailwindcss.com/docs/grid-template-columns
+   */
   gridCols?: GridCols;
-  gridColsSm?: WithModifier<"sm", GridCols>;
-  gridColsMd?: WithModifier<"md", GridCols>;
-  gridColsLg?: WithModifier<"lg", GridCols>;
-  gridColsXl?: WithModifier<"xl", GridCols>;
-  gridCols2xl?: WithModifier<"2xl", GridCols>;
 }
 
 /**
- * Grid Template Rows
+ * The `Grid Template Rows` tailwindcss classes
  * @see https://tailwindcss.com/docs/grid-template-rows
  */
-
 export type GridRows = WithVariants<"grid-rows", GridTemplateVariants>;
 
 export interface WithGridRows {
+  /**
+   * The `Grid Template Rows` tailwindcss classes
+   * @see https://tailwindcss.com/docs/grid-template-rows
+   */
   gridRows?: GridRows;
-  gridRowsSm?: WithModifier<"sm", GridRows>;
-  gridRowsMd?: WithModifier<"md", GridRows>;
-  gridRowsLg?: WithModifier<"lg", GridRows>;
-  gridRowsXl?: WithModifier<"xl", GridRows>;
-  gridRows2xl?: WithModifier<"2xl", GridRows>;
 }

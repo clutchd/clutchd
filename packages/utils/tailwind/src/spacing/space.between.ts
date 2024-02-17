@@ -1,29 +1,31 @@
 import { SpacingVariants, WithVariants } from "../core";
 
-/**
- * Space Between
- * @see https://tailwindcss.com/docs/space
- */
-
 type SpaceBetweenVariants = SpacingVariants | "reverse";
 
+/**
+ * The `space-x` tailwindcss classes, a subset of the `Space Between` classes
+ * @see https://tailwindcss.com/docs/space
+ */
 export type SpaceX = WithVariants<"space-x", SpaceBetweenVariants>;
 
-export type SpaceY = WithVariants<"space-y", SpaceBetweenVariants>;
-
-export type SpaceBetween = WithVariants<
-  "space-x" | "space-y",
-  SpaceBetweenVariants
->;
-
 export interface WithSpaceX {
+  /**
+   * The `space-x` tailwindcss classes, a subset of the `Space Between` classes
+   * @see https://tailwindcss.com/docs/space
+   */
   spaceX?: SpaceX;
 }
 
-export interface WithSpaceY {
-  spaceY?: SpaceY;
-}
+/**
+ * The `space-y` tailwindcss classes, a subset of the `Space Between` classes
+ * @see https://tailwindcss.com/docs/space
+ */
+export type SpaceY = WithVariants<"space-y", SpaceBetweenVariants>;
 
-export interface WithSpaceBetween {
-  spaceBetween?: SpaceBetween;
+export interface WithSpaceY {
+  /**
+   * The `space-y` tailwindcss classes, a subset of the `Space Between` classes
+   * @see https://tailwindcss.com/docs/space
+   */
+  spaceY?: SpaceY;
 }
