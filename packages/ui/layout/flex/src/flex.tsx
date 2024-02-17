@@ -1,15 +1,11 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type {
+  AlignItems,
   Display,
-  WithAlignItems,
-  WithFlex,
-  WithFlexBasis,
-  WithFlexDirection,
-  WithFlexGrow,
-  WithFlexShrink,
-  WithFlexWrap,
-  WithJustifyContent,
+  FlexDirection,
+  FlexWrap,
+  JustifyContent,
 } from "@clutchd/tailwind";
 import * as React from "react";
 
@@ -21,16 +17,32 @@ type IFlex = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Flex` props
  */
-interface IFlexProps
-  extends WithAlignItems,
-    WithFlex,
-    WithFlexBasis,
-    WithFlexDirection,
-    WithFlexGrow,
-    WithFlexShrink,
-    WithFlexWrap,
-    WithJustifyContent {
+interface IFlexProps {
+  /**
+   * A subset of the tailwind display classes
+   * @see https://tailwindcss.com/docs/display
+   */
   display?: Extract<Display, "flex" | "inline-flex" | "hidden">;
+  /**
+   * The tailwind flex direction classes
+   * @see https://tailwindcss.com/docs/flex-direction
+   */
+  direction?: FlexDirection;
+  /**
+   * The tailwind align items classes
+   * @see https://tailwindcss.com/docs/align-items
+   */
+  align?: AlignItems;
+  /**
+   * The tailwind justify content classes
+   * @see https://tailwindcss.com/docs/justify-content
+   */
+  justify?: JustifyContent;
+  /**
+   * The tailwind flex wrap classes
+   * @see https://tailwindcss.com/docs/flex-wrap
+   */
+  wrap?: FlexWrap;
 }
 
 /**
@@ -47,35 +59,12 @@ interface IFlexHtmlProps
  */
 const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
   (
-    {
-      alignItems,
-      className,
-      display = "flex",
-      flex,
-      flexBasis,
-      flexDirection = "flex-col",
-      flexGrow,
-      flexShrink,
-      flexWrap = "flex-wrap",
-      justifyContent,
-      ...props
-    },
+    { className, display = "flex", direction, align, justify, wrap, ...props },
     forwardedRef,
   ) => {
     return (
       <Component.div
-        className={cn(
-          alignItems,
-          display,
-          flex,
-          flexBasis,
-          flexDirection,
-          flexGrow,
-          flexShrink,
-          flexWrap,
-          justifyContent,
-          className,
-        )}
+        className={cn(display, direction, align, justify, wrap, className)}
         ref={forwardedRef}
         {...props}
       />
@@ -86,4 +75,4 @@ const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
 Flex.displayName = "Flex";
 
 export { Flex };
-export type { IFlex, IFlexProps, IFlexHtmlProps };
+export type { IFlex, IFlexHtmlProps, IFlexProps };
