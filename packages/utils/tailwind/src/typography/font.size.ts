@@ -1,10 +1,5 @@
 import { WithVariants } from "../core";
 
-/**
- * Font Size
- * @see https://tailwindcss.com/docs/font-size
- */
-
 type FontSizeVariants =
   | "xs"
   | "sm"
@@ -20,8 +15,16 @@ type FontSizeVariants =
   | "8xl"
   | "9xl";
 
+/**
+ * The `Font Size` tailwindcss classes
+ * @see https://tailwindcss.com/docs/font-size
+ */
 export type FontSize = WithVariants<"text", FontSizeVariants>;
 
 export interface WithFontSize {
+  /**
+   * The `Font Size` tailwindcss classes
+   * @see https://tailwindcss.com/docs/font-size
+   */
   fontSize?: FontSize;
 }

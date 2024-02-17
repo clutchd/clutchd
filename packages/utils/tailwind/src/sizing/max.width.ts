@@ -1,11 +1,6 @@
 import { Arbitrary, ScreenVariants, WithVariants } from "../core";
 import { ContentSizeVariants } from "./common";
 
-/**
- * Max-Width
- * @see https://tailwindcss.com/docs/max-width
- */
-
 type MaxWidthVariants =
   | "0"
   | "none"
@@ -22,8 +17,16 @@ type MaxWidthVariants =
   | WithVariants<"screen", ScreenVariants>
   | Arbitrary;
 
+/**
+ * The `Max-Width` tailwindcss classes
+ * @see https://tailwindcss.com/docs/max-width
+ */
 export type MaxWidth = WithVariants<"max-w", MaxWidthVariants>;
 
 export interface WithMaxWidth {
+  /**
+   * The `Max-Width` tailwindcss classes
+   * @see https://tailwindcss.com/docs/max-width
+   */
   maxWidth?: MaxWidth;
 }

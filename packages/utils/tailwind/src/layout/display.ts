@@ -1,8 +1,7 @@
 /**
- * Display
+ * The `Display` tailwindcss classes
  * @see https://tailwindcss.com/docs/display
  */
-
 export type Display =
   | "block"
   | "inline-block"
@@ -27,5 +26,9 @@ export type Display =
   | "hidden";
 
 export interface WithDisplay {
+  /**
+   * The `Display` tailwindcss classes
+   * @see https://tailwindcss.com/docs/display
+   */
   display?: Display;
 }

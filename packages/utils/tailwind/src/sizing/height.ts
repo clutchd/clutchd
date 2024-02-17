@@ -1,19 +1,22 @@
 import { Arbitrary, WithVariants } from "../core";
 import { CommonSizeVariants, DynamicHeightVariants } from "./common";
 
-/**
- * Height
- * @see https://tailwindcss.com/docs/height
- */
-
 type HeightVariants =
   | CommonSizeVariants
   | "screen"
   | DynamicHeightVariants
   | Arbitrary;
 
+/**
+ * The `Height` tailwindcss classes
+ * @see https://tailwindcss.com/docs/height
+ */
 export type Height = WithVariants<"h", HeightVariants>;
 
 export interface WithHeight {
+  /**
+   * The `Height` tailwindcss classes
+   * @see https://tailwindcss.com/docs/height
+   */
   height?: Height;
 }

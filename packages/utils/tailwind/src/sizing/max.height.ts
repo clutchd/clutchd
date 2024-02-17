@@ -1,11 +1,6 @@
 import { Arbitrary, SpacingVariants, WithVariants } from "../core";
 import { ContentSizeVariants, DynamicHeightVariants } from "./common";
 
-/**
- * Max-Height
- * @see https://tailwindcss.com/docs/max-height
- */
-
 type MaxHeightVariants =
   | SpacingVariants
   | "none"
@@ -15,8 +10,16 @@ type MaxHeightVariants =
   | DynamicHeightVariants
   | Arbitrary;
 
+/**
+ * The `Max-Height` tailwindcss classes
+ * @see https://tailwindcss.com/docs/max-height
+ */
 export type MaxHeight = WithVariants<"max-h", MaxHeightVariants>;
 
 export interface WithMaxHeight {
+  /**
+   * The `Max-Height` tailwindcss classes
+   * @see https://tailwindcss.com/docs/max-height
+   */
   maxHeight?: MaxHeight;
 }

@@ -1,10 +1,5 @@
 import { Arbitrary, Fractions, SpacingVariants, WithVariants } from "../core";
 
-/**
- * Flex Grow
- * @see https://tailwindcss.com/docs/flex-grow
- */
-
 type FlexBasisVariants =
   | SpacingVariants
   | Fractions
@@ -12,8 +7,16 @@ type FlexBasisVariants =
   | "full"
   | Arbitrary;
 
+/**
+ * The `Flex Basis` tailwindcss classes
+ * @see https://tailwindcss.com/docs/flex-basis
+ */
 export type FlexBasis = WithVariants<"basis", FlexBasisVariants>;
 
 export interface WithFlexBasis {
+  /**
+   * The `Flex Basis` tailwindcss classes
+   * @see https://tailwindcss.com/docs/flex-basis
+   */
   flexBasis?: FlexBasis;
 }

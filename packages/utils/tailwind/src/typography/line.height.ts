@@ -1,10 +1,5 @@
 import { WithVariants } from "../core";
 
-/**
- * Line Height
- * @see https://tailwindcss.com/docs/line-height
- */
-
 type LineHeightVariants =
   | "3"
   | "4"
@@ -21,8 +16,16 @@ type LineHeightVariants =
   | "relaxed"
   | "loose";
 
+/**
+ * The `Line Height` tailwindcss classes
+ * @see https://tailwindcss.com/docs/line-height
+ */
 export type LineHeight = WithVariants<"leading", LineHeightVariants>;
 
 export interface WithLineHeight {
+  /**
+   * The `Line Height` tailwindcss classes
+   * @see https://tailwindcss.com/docs/line-height
+   */
   lineHeight?: LineHeight;
 }

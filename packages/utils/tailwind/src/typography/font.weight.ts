@@ -1,10 +1,5 @@
 import { WithVariants } from "../core";
 
-/**
- * Font Weight
- * @see https://tailwindcss.com/docs/font-weight
- */
-
 type FontWeightVariants =
   | "thin"
   | "extralight"
@@ -16,8 +11,16 @@ type FontWeightVariants =
   | "extrabold"
   | "black";
 
+/**
+ * The `Font Weight` tailwindcss classes
+ * @see https://tailwindcss.com/docs/font-weight
+ */
 export type FontWeight = WithVariants<"font", FontWeightVariants>;
 
 export interface WithFontWeight {
+  /**
+   * The `Font Weight` tailwindcss classes
+   * @see https://tailwindcss.com/docs/font-weight
+   */
   fontWeight?: FontWeight;
 }
