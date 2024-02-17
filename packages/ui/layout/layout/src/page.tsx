@@ -43,7 +43,7 @@ const Page = React.forwardRef<IPage, IPageHtmlProps>(
     {
       className,
       fontSmoothing = "subpixel-antialiased",
-      flexDirection = "flex-col",
+      direction = "flex-col",
       minWidth = "min-w-screen",
       minHeight = "min-h-screen",
       transition = "transition-all",
@@ -62,7 +62,7 @@ const Page = React.forwardRef<IPage, IPageHtmlProps>(
           transitionTiming,
           className,
         )}
-        flexDirection={flexDirection}
+        direction={direction}
         ref={forwardedRef}
         {...props}
       />

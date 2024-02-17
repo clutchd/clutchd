@@ -25,9 +25,9 @@ interface IMainHtmlProps
  * @returns `Main` component
  */
 const Main = React.forwardRef<IMain, IMainHtmlProps>(
-  ({ children, flexDirection = "flex-col", ...props }, forwardedRef) => {
+  ({ children, direction = "flex-col", ...props }, forwardedRef) => {
     return (
-      <Flex asChild flex="flex-1" flexDirection={flexDirection} {...props}>
+      <Flex asChild direction={direction} {...props}>
         <main ref={forwardedRef}>{children}</main>
       </Flex>
     );

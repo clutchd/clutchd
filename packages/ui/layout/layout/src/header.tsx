@@ -26,21 +26,11 @@ interface IHeaderHtmlProps
  */
 const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
   (
-    {
-      children,
-      flexDirection = "flex-row",
-      justifyContent = "justify-between",
-      ...props
-    },
+    { children, direction = "flex-row", justify = "justify-between", ...props },
     forwardedRef,
   ) => {
     return (
-      <Flex
-        asChild
-        flexDirection={flexDirection}
-        justifyContent={justifyContent}
-        {...props}
-      >
+      <Flex asChild direction={direction} justify={justify} {...props}>
         <header ref={forwardedRef}>{children}</header>
       </Flex>
     );
