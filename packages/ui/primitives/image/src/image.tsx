@@ -34,10 +34,10 @@ interface IImageProps
  */
 interface IImageHtmlProps
   extends IImageProps,
-  Omit<
-    IComponentPropsWithoutRef<typeof Component.img>,
-    "asChild" | "alt" | "src" | "height" | "width"
-  > { }
+    Omit<
+      IComponentPropsWithoutRef<typeof Component.img>,
+      "asChild" | "alt" | "src" | "height" | "width"
+    > {}
 
 /**
  * `RawImage` - A raw image component used to render next/image components
