@@ -24,7 +24,7 @@ interface IBlockProps {
  */
 interface IBlockHtmlProps
   extends IBlockProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+  IComponentPropsWithoutRef<typeof Component.div> { }
 
 /**
  * `Block` - A fundamental layout building block
@@ -34,7 +34,7 @@ interface IBlockHtmlProps
 const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
   ({ className, display = "block", ...props }, forwardedRef) => {
     return (
-      <div className={cn(display, className)} ref={forwardedRef} {...props} />
+      <Component.div className={cn(display, className)} ref={forwardedRef} {...props} />
     );
   },
 );
@@ -43,3 +43,4 @@ Block.displayName = "Block";
 
 export { Block };
 export type { IBlock, IBlockHtmlProps, IBlockProps };
+
