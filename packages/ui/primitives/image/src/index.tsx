@@ -1,4 +1,4 @@
-export { CoreImage, Image } from "./image";
+export { RawImage, Image } from "./image";
 export type {
   IImage,
   IImageHtmlProps,

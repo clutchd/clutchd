@@ -34,17 +34,17 @@ interface IImageProps
  */
 interface IImageHtmlProps
   extends IImageProps,
-    Omit<
-      IComponentPropsWithoutRef<typeof Component.img>,
-      "asChild" | "alt" | "src" | "height" | "width"
-    > {}
+  Omit<
+    IComponentPropsWithoutRef<typeof Component.img>,
+    "asChild" | "alt" | "src" | "height" | "width"
+  > { }
 
 /**
- * `CoreImage` - A core image component used to render next/image components
+ * `RawImage` - A raw image component used to render next/image components
  * @param props `IImageHtmlProps` used to render this `CoreImage`
  * @returns `CoreImage` component
  */
-const CoreImage = React.forwardRef<IImage, IImageHtmlProps>(
+const RawImage = React.forwardRef<IImage, IImageHtmlProps>(
   ({ alt, children, src, ...props }, forwardedRef) => {
     return (
       <Component.img asChild {...props}>
@@ -56,7 +56,7 @@ const CoreImage = React.forwardRef<IImage, IImageHtmlProps>(
   },
 );
 
-CoreImage.displayName = "CoreImage";
+RawImage.displayName = "RawImage";
 
 /**
  * `Image` - A image component used to render next/image components with data attributes
@@ -76,7 +76,7 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
     };
 
     return (
-      <CoreImage
+      <RawImage
         {...props}
         ref={forwardedRef}
         onError={composeEventHandlers(() => updateState("error"), onError)}
@@ -88,12 +88,12 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
         data-state={loading}
       >
         {children}
-      </CoreImage>
+      </RawImage>
     );
   },
 );
 
 Image.displayName = "Image";
 
-export { CoreImage, Image };
+export { RawImage, Image };
 export type { IImage, IImageHtmlProps, IImageLoadingStates, IImageProps };
