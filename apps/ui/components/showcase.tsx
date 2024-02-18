@@ -52,11 +52,7 @@ function Showcase({
           </>
         )}
       </div>
-      {description && (
-        <p className="border-b border-gray-950 pb-4 text-gray-700">
-          {description}
-        </p>
-      )}
+      {description && <p className="pb-4 text-gray-700 ">{description}</p>}
       <Divider className="bg-gray-950" />
       {children ? (
         <div className="space-y-4 py-6">{children}</div>

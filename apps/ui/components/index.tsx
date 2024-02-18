@@ -1,7 +1,9 @@
 export { Badge } from "./badge";
 export { DarkModeToggle } from "./darkModeToggle";
+export { DecorativeBlock, DecorativeLabel } from "./decorative";
 export { FormShowcase } from "./formShowcase";
 export { InputShowcase } from "./inputShowcase";
+export * from "./showcases";
 export * from "./primitives";
 export { LabelShowcase } from "./primitives/labelShowcase";
 export { Section } from "./section";

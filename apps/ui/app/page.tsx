@@ -1,13 +1,14 @@
 import { Copyright } from "@clutchd/copyright";
 import { Divider } from "@clutchd/divider";
-import { Footer, Main } from "@clutchd/layout";
+import { Footer } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { Metadata } from "next";
+import { GridShowcase } from "~/components/showcases/layout/gridShowcase";
 import {
   AvatarShowcase,
-  ButtonShowcase,
-  CopyrightShowcase,
-  LabelShowcase,
+  BlockShowcase,
+  FlexShowcase,
+  LayoutShowcase,
   Section,
   Showcase,
   TailwindIndicator,
@@ -46,9 +47,9 @@ export default function Home() {
         <ThemeSwitch />
         <ColorSwitch color={color} setColor={setColor} /> 
       </Header> */}
-      <Main>
-        <Section title="Core">
-          {/* // TODO: Add proper showcase */}
+      <main>
+        {/* <Section title="Core">
+          {/* // TODO: Add proper showcase
           <Showcase
             title="Component"
             description="A primitive component intended to be used as a foundation for all other ui components."
@@ -57,7 +58,7 @@ export default function Home() {
             stable
             rsc
           />
-          {/* // TODO: Add proper showcase */}
+          {/* // TODO: Add proper showcase
           <Showcase
             title="Compose Event Handlers"
             description="A small package that provides multiple event-handler utility functions."
@@ -66,7 +67,7 @@ export default function Home() {
             stable
             rsc
           />
-          {/* // TODO: Add proper showcase */}
+          {/* // TODO: Add proper showcase
           <Showcase
             title="Compose Props"
             description="A small utility intended to merge and compose a single props object from the provided prop objects."
@@ -75,7 +76,7 @@ export default function Home() {
             stable
             rsc
           />
-          {/* // TODO: Add proper showcase */}
+          {/* // TODO: Add proper showcase
           <Showcase
             title="Compose Refs"
             description="A small utility intended to compose multiple refs into a single ref."
@@ -84,7 +85,7 @@ export default function Home() {
             stable
             rsc
           />
-          {/* // TODO: Add proper showcase */}
+          {/* // TODO: Add proper showcase
           <Showcase
             title="Slot"
             description="A utility component that merges it's props onto it's child."
@@ -93,45 +94,14 @@ export default function Home() {
             stable
             rsc
           />
-        </Section>
+      </Section>*/}
         <Section title="Layout">
-          {/* // TODO: Add proper showcase */}
-          <Showcase
-            title="Block"
-            description="A fundamental layout building block."
-            pkg="@clutchd/block"
-            pkgType="layout"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase */}
-          <Showcase
-            title="Flex"
-            description="A flex container that powers various layouts."
-            pkg="@clutchd/flex"
-            pkgType="layout"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase */}
-          <Showcase
-            title="Grid"
-            description="A grid container that powers various layouts."
-            pkg="@clutchd/grid"
-            pkgType="layout"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase */}
-          <Showcase
-            title="Layout"
-            description="A group of layout components for quickly build a web page's foundation."
-            pkg="@clutchd/layout"
-            pkgType="layout"
-            stable
-            rsc
-          />
+          <BlockShowcase />
+          <FlexShowcase />
+          <GridShowcase />
+          <LayoutShowcase />
         </Section>
+        {/* 
         <Section title="Primitives">
           <Showcase
             title="Copyright"
@@ -143,7 +113,7 @@ export default function Home() {
           >
             <CopyrightShowcase />
           </Showcase>
-          {/* // TODO: Add proper showcase */}
+          {/* // TODO: Add proper showcase
           <Showcase
             title="Divider"
             description="A visual divider to separate content."
@@ -152,7 +122,7 @@ export default function Home() {
             stable
             rsc
           />
-          {/* // TODO: Add proper showcase */}
+          {/* // TODO: Add proper showcase
           <Showcase
             title="Image"
             description="A simple next/image based component with data states."
@@ -171,9 +141,8 @@ export default function Home() {
           >
             <LabelShowcase />
           </Showcase>
-        </Section>
+        </Section> */}
         <Section title="Components">
-          <Divider className="bg-gray-950" />
           <Showcase
             title="Avatar"
             description="A basic avatar component powered by next/image."
@@ -194,8 +163,8 @@ export default function Home() {
             <ButtonShowcase />
           </Showcase> */}
         </Section>
-        {/* <TextShowcase /> */}
-        {/* 
+        {/* <TextShowcase />
+       
         <Showcase title="Card" pkg="@clutchd/card">
           <CardShowcase />
         </Showcase>
@@ -212,7 +181,7 @@ export default function Home() {
         >
           <InputShowcase />
         </Showcase> */}
-      </Main>
+      </main>
       <Footer>
         <Copyright className="text-gray-500">Clutchd, LLC</Copyright>
         <Link
