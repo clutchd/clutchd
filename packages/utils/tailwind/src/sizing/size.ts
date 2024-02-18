@@ -1,5 +1,5 @@
 import { Arbitrary, WithVariants } from "../core";
-import { CommonSizeVariants, DynamicHeightVariants } from "./common";
+import { CommonSizeVariants } from "./common";
 
 type SizeVariants = CommonSizeVariants | Arbitrary;
 
