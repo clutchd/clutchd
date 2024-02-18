@@ -30,12 +30,13 @@ interface IAvatarImageHtmlProps extends IAvatarImageProps, IImageHtmlProps {}
  * @returns `Avatar` component
  */
 const AvatarImage = React.forwardRef<IAvatarImage, IAvatarImageHtmlProps>(
-  ({ fill = true, ...props }, forwardedRef) => {
-    return <Image fill={fill} ref={forwardedRef} {...props} />;
+  ({ fill = true, src, ...props }, forwardedRef) => {
+    if (!src) return null;
+    return <Image fill={fill} src={src} ref={forwardedRef} {...props} />;
   },
 );
 
 AvatarImage.displayName = "AvatarImage";
 
 export { AvatarImage };
-export type { IAvatarImage, IAvatarImageProps, IAvatarImageHtmlProps };
+export type { IAvatarImage, IAvatarImageHtmlProps, IAvatarImageProps };
