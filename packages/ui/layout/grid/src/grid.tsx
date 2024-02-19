@@ -19,7 +19,7 @@ type IGrid = React.ElementRef<typeof Component.div>;
  */
 interface IGridProps {
   /**
-   * A subset of the `Display` tailwindcss classes
+   * A subset of the `Display` tailwindcss classes.  Defaults to `grid`.
    * @see https://tailwindcss.com/docs/display
    */
   display?: Extract<Display, "grid" | "inline-grid" | "hidden">;

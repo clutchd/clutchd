@@ -19,7 +19,7 @@ type IFlex = React.ElementRef<typeof Component.div>;
  */
 interface IFlexProps {
   /**
-   * A subset of the `Display` tailwindcss classes
+   * A subset of the `Display` tailwindcss classes.  Defaults to `flex`.
    * @see https://tailwindcss.com/docs/display
    */
   display?: Extract<Display, "flex" | "inline-flex" | "hidden">;

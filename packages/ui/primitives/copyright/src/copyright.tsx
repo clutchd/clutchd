@@ -11,6 +11,9 @@ type ICopyright = React.ElementRef<typeof Component.span>;
  * Type to define `Copyright` props
  */
 interface ICopyrightProps {
+  /**
+   * Optional prop to override the default `getCopyright` functionality.
+   */
   getCopyright?: typeof internalGetCopyright;
 }
 

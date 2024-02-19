@@ -11,11 +11,11 @@ type IDivider = React.ElementRef<typeof Component.div>;
  */
 interface IDividerProps {
   /**
-   * Determines if this divider is purely decorative.  Updates the accessibility attributes and removes this component from the accessibility tree when this is `true`.
+   * Determines if this divider is purely decorative.  Updates the accessibility attributes and removes this component from the accessibility tree when this is `true`.  Defaults to `false`.
    */
   decorative?: boolean;
   /**
-   * Used to determine orientation of the divider.  Defaults to `horizontal` if orientation is invalid or is not provided.
+   * Used to determine orientation of the divider.  Defaults to `horizontal`.
    */
   orientation?: "horizontal" | "vertical";
 }
