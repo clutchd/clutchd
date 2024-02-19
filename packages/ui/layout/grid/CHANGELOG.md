@@ -1,5 +1,22 @@
 # @clutchd/grid
 
+## 6.0.0
+
+### Major Changes
+
+- e0d6d3c2: Removed all breakpoint props, simplified component
+
+### Patch Changes
+
+- aac831f8: Improved comments
+- 3ed52a14: Improved prop comments
+- 53b6c01c: Improve type imports
+- Updated dependencies [d27d4ced]
+- Updated dependencies [bd7e5819]
+- Updated dependencies [d27d4ced]
+- Updated dependencies [d27d4ced]
+  - @clutchd/tailwind@5.0.0
+
 ## 5.0.1
 
 ### Patch Changes

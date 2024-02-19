@@ -1,5 +1,19 @@
 # @clutchd/avatar
 
+## 6.0.0
+
+### Major Changes
+
+- 20f02758: Rework Avatar to allow for a very composable unstyled setup. Still supports the standard styled Avatar with a simplified api. If more custom usecases are needed, it is up to the end user to "build" their own avatar with the provided composable components.
+
+### Patch Changes
+
+- 912b0728: Fix IAvatar type
+- 0e513d5d: AvatarImage now ensures it is not rendered if a src is not provided
+- 53b6c01c: Improve type imports
+- Updated dependencies [9386329b]
+  - @clutchd/image@2.0.0
+
 ## 5.0.2
 
 ### Patch Changes

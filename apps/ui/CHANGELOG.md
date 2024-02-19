@@ -1,5 +1,36 @@
 # @clutchd/ui
 
+## 0.12.10
+
+### Patch Changes
+
+- Updated dependencies [57de13f4]
+- Updated dependencies [8ea05546]
+- Updated dependencies [912b0728]
+- Updated dependencies [20f02758]
+- Updated dependencies [32ef885c]
+- Updated dependencies [cfc86f54]
+- Updated dependencies [7d83a3cb]
+- Updated dependencies [aac831f8]
+- Updated dependencies [2586f89c]
+- Updated dependencies [fc98f154]
+- Updated dependencies [e0d6d3c2]
+- Updated dependencies [3ed52a14]
+- Updated dependencies [3fef6f67]
+- Updated dependencies [9b1525c6]
+- Updated dependencies [0e513d5d]
+- Updated dependencies [53b6c01c]
+  - @clutchd/layout@4.0.0
+  - @clutchd/divider@5.0.0
+  - @clutchd/avatar@6.0.0
+  - @clutchd/flex@6.0.0
+  - @clutchd/link@3.0.0
+  - @clutchd/block@3.1.0
+  - @clutchd/copyright@4.0.0
+  - @clutchd/grid@6.0.0
+  - @clutchd/button@3.0.1
+  - @clutchd/label@4.0.3
+
 ## 0.12.9
 
 ### Patch Changes
