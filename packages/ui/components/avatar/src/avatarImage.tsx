@@ -1,38 +1,40 @@
-import {
-  IImage,
-  IImageHtmlProps,
-  IImageLoadingStates,
-  IImageProps,
-  Image,
-} from "@clutchd/image";
+import { IImage, IImageHtmlProps, IImageProps, Image } from "@clutchd/image";
 import * as React from "react";
+import { AvatarContext, IWithAvatarContext } from "./_context";
 
 /**
- * Type to define `AvatarImage` element
+ * Type to define `AvatarImage` element.
  */
 type IAvatarImage = IImage;
 
 /**
- * Type to define `AvatarImage` props
+ * Type to define `AvatarImage` props.
  */
-interface IAvatarImageProps extends IImageProps {
-  handleStateChange?: (state: IImageLoadingStates) => void;
-}
+interface IAvatarImageProps extends IImageProps, IWithAvatarContext {}
 
 /**
- * Type to define `AvatarImage` props with html attributes
+ * Type to define `AvatarImage` props with html attributes.
  */
 interface IAvatarImageHtmlProps extends IAvatarImageProps, IImageHtmlProps {}
 
 /**
- * `Avatar` - An image based component used to render a user's profile picture
- * @param props `IAvatarProps` used to render this `Avatar`
- * @returns `Avatar` component
+ * `Avatar` - An image based component used to render a user's profile picture.
+ * @param props `IAvatarProps` used to render this `Avatar`.
+ * @returns `Avatar` component.
  */
 const AvatarImage = React.forwardRef<IAvatarImage, IAvatarImageHtmlProps>(
-  ({ fill = true, src, ...props }, forwardedRef) => {
+  ({ _context = AvatarContext, fill = true, src, ...props }, forwardedRef) => {
     if (!src) return null;
-    return <Image fill={fill} src={src} ref={forwardedRef} {...props} />;
+    const context = React.useContext(_context);
+    return (
+      <Image
+        handleStateChange={context.onLoadingStateChange}
+        fill={fill}
+        src={src}
+        ref={forwardedRef}
+        {...props}
+      />
+    );
   },
 );
 

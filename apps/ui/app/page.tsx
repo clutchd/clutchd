@@ -143,16 +143,7 @@ export default function Home() {
           </Showcase>
         </Section> */}
         <Section title="Components">
-          <Showcase
-            title="Avatar"
-            description="A basic avatar component powered by next/image."
-            pkg="@clutchd/avatar"
-            pkgType="ui"
-            stable
-            rsc={false}
-          >
-            <AvatarShowcase />
-          </Showcase>
+          <AvatarShowcase />
           {/* <Showcase
             title="Button"
             description="A simple, focusable, button."

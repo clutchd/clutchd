@@ -1,99 +1,99 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import { IImageLoadingStates } from "@clutchd/image";
-import type {
-  WithAlignItems,
-  WithDisplay,
-  WithJustifyContent,
-  WithOverflow,
-  WithPosition,
-  WithSize,
-  WithUserSelect,
-} from "@clutchd/tailwind";
+import { IImageProps } from "@clutchd/image";
+import type { BorderRadius, Display, Size } from "@clutchd/tailwind";
 import * as React from "react";
-import { AvatarFallback, AvatarImage, IAvatarImageProps } from "./";
+import { AvatarFallback, AvatarImage, AvatarRoot, IAvatarImageProps } from "./";
 
 /**
- * Type to define `Avatar` element
+ * Type to define `Avatar` element.
  */
 type IAvatar = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `Avatar` props
+ * Type to define `Avatar` props.
  */
-interface IAvatarProps
-  extends WithAlignItems,
-    WithDisplay,
-    WithJustifyContent,
-    WithOverflow,
-    WithPosition,
-    WithSize,
-    WithUserSelect {
+interface IAvatarProps {
+  /**
+   * The `alt` attribute for the underlying `Image`.  Defaults to `An avatar image.`.
+   */
   alt?: IAvatarImageProps["alt"];
+  /**
+   * The `src` attribute for the underlying `Image`.
+   */
   src?: IAvatarImageProps["src"];
+  /**
+   * A subset of the `Display` tailwindcss classes.  Defaults to `inline-flex`.
+   * @see https://tailwindcss.com/docs/display
+   */
+  display?: Extract<Display, "flex" | "inline-flex" | "hidden">;
+  /**
+   * The `rounded` tailwindcss classes, a subset of the `Border Radius` classes.
+   * @see https://tailwindcss.com/docs/border-radius
+   */
+  radius?: BorderRadius;
+  /**
+   * The `Size` tailwindcss classes.  Defaults to `size-12`.
+   * @see https://tailwindcss.com/docs/size
+   */
+  size?: Size;
+  // TODO: make this prop not needed with styled Avatar?
+  // Seems like we could get a pixel value based on size class, and since
+  // avatar sizes don't change we could only have this prop present as an escape hatch.
+  /**
+   * A `nextjs/image` prop used to optimize the underlying image.
+   * @see https://nextjs.org/docs/pages/api-reference/components/image#sizes
+   */
+  sizes?: IImageProps["sizes"];
 }
 
 /**
- * Type to define `Avatar` props with html attributes
+ * Type to define `Avatar` props with html attributes.
  */
 interface IAvatarHtmlProps
   extends IAvatarProps,
     IComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
- * `Avatar` - An image based component used to render a user's profile picture
- * @param props `IAvatarProps` used to render this `Avatar`
- * @returns `Avatar` component
+ * `Avatar` - An image based component used to render a user's profile picture.
+ * @param props `IAvatarProps` used to render this `Avatar`.
+ * @returns `Avatar` component.
  */
 const Avatar = React.forwardRef<IAvatar, IAvatarHtmlProps>(
   (
     {
-      alt = "An avatar image",
-      alignItems = "items-center",
+      alt = "An avatar image.",
       children = "U",
       className,
       display = "inline-flex",
-      justifyContent = "justify-center",
-      overflow = "overflow-hidden",
-      position = "relative",
+      radius,
       size = "size-12",
       src,
-      userSelect = "select-none",
+      // Do NOT have a default value, can cause confusion by
+      // potentially rendering poor quality image.
+      sizes,
       ...props
     },
     forwardedRef,
   ) => {
-    const [state, setState] = React.useState("idle");
-
-    const updateState = (state: IImageLoadingStates) => {
-      setState(state);
-    };
-
     return (
-      <Component.div
-        // TODO: Add theming? Old styles here
-        // "border font-semibold border-gray-300 bg-gray-100 text-gray-500 dark:border-gray-400 dark:bg-gray-800 dark:text-gray-400",
+      <AvatarRoot
         className={cn(
-          alignItems,
           display,
-          justifyContent,
-          overflow,
-          position,
+          radius,
           size,
-          userSelect,
+          "relative select-none items-center justify-center truncate",
+          sizes,
           className,
         )}
-        data-state={state}
         ref={forwardedRef}
         {...props}
       >
         <>
-          {src && (
-            <AvatarImage alt={alt} handleStateChange={updateState} src={src} />
-          )}
-          {state !== "loaded" && <AvatarFallback>{children}</AvatarFallback>}
+          {src && <AvatarImage alt={alt} src={src} sizes={sizes} />}
+          <AvatarFallback className="m-1 truncate">{children}</AvatarFallback>
         </>
-      </Component.div>
+      </AvatarRoot>
     );
   },
 );

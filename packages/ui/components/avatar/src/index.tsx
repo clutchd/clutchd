@@ -12,3 +12,9 @@ export type {
   IAvatarImageHtmlProps,
   IAvatarImageProps,
 } from "./avatarImage";
+export { AvatarRoot } from "./avatarRoot";
+export type {
+  IAvatarRoot,
+  IAvatarRootHtmlProps,
+  IAvatarRootProps,
+} from "./avatarRoot";

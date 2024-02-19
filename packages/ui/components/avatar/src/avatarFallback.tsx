@@ -1,55 +1,40 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { composeClassNames as cn } from "@clutchd/compose-props";
-import type { WithDisplay, WithTextOverflow } from "@clutchd/tailwind";
 import * as React from "react";
+import { AvatarContext, IWithAvatarContext } from "./_context";
 
 /**
- * Type to define `IAvatarFallback` element
+ * Type to define `IAvatarFallback` element.
  */
 type IAvatarFallback = React.ElementRef<typeof Component.span>;
 
 /**
- * Type to define `AvatarFallback` props
+ * Type to define `AvatarFallback` props.
  */
-interface IAvatarFallbackProps extends WithDisplay, WithTextOverflow {}
+interface IAvatarFallbackProps extends IWithAvatarContext {}
 
 /**
- * Type to define `AvatarFallback` props with html attributes
+ * Type to define `AvatarFallback` props with html attributes.
  */
 interface IAvatarFallbackHtmlProps
   extends IAvatarFallbackProps,
     IComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
- * `AvatarFallback` - A text component used to render a avatar's fallback if an image is not provided to an `Avatar`
- * @param props `IAvatarProps` used to render this `Avatar`
- * @returns `AvatarFallback` component
+ * `AvatarFallback` - A text component used to render a avatar's fallback if an image is not provided to an `Avatar`.
+ * @param props `IAvatarProps` used to render this `Avatar`.
+ * @returns `AvatarFallback` component.
  */
 const AvatarFallback = React.forwardRef<
   IAvatarFallback,
   IAvatarFallbackHtmlProps
->(
-  (
-    {
-      children = "U",
-      className,
-      display = "block",
-      textOverflow = "truncate",
-      ...props
-    },
-    forwardedRef,
-  ) => {
-    return (
-      <span
-        className={cn(display, textOverflow, className)}
-        {...props}
-        ref={forwardedRef}
-      >
-        {children}
-      </span>
-    );
-  },
-);
+>(({ _context = AvatarContext, children, ...props }, forwardedRef) => {
+  const context = React.useContext(_context);
+  return context.loadingState !== "loaded" ? (
+    <Component.span {...props} ref={forwardedRef}>
+      {children}
+    </Component.span>
+  ) : null;
+});
 
 AvatarFallback.displayName = "AvatarFallback";
 
