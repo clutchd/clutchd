@@ -5,7 +5,7 @@ import { getCopyright as internalGetCopyright } from ".";
 /**
  * Type to define `Copyright` element
  */
-type ICopyright = React.ElementRef<typeof Component.div>;
+type ICopyright = React.ElementRef<typeof Component.span>;
 
 /**
  * Type to define `Copyright` props
@@ -19,7 +19,7 @@ interface ICopyrightProps {
  */
 interface ICopyrightHtmlProps
   extends ICopyrightProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+    IComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `Copyright` - A simple text component used to display the copyright of an entity for the current year
@@ -35,9 +35,10 @@ const Copyright = React.forwardRef<
     forwardedRef,
   ) => {
     return (
-      <Component.div ref={forwardedRef} {...props}>
-        {getCopyright()} {children}
-      </Component.div>
+      <Component.span ref={forwardedRef} {...props}>
+        {getCopyright()}
+        {children ? " " + children : null}
+      </Component.span>
     );
   },
 );
