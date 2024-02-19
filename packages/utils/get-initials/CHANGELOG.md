@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.2
+
+### Patch Changes
+
+- 454cffd2: Force release to remove extraneous log
+
 ## 2.0.1
 
 ### Patch Changes

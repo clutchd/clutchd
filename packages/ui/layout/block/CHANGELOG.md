@@ -1,5 +1,23 @@
 # @clutchd/block
 
+## 3.1.0
+
+### Minor Changes
+
+- 7d83a3cb: Make stable, add display prop
+
+### Patch Changes
+
+- aac831f8: Improved comments
+- 3ed52a14: Improved prop comments
+- 9b1525c6: Fix support for asChild prop
+- 53b6c01c: Improve type imports
+- Updated dependencies [d27d4ced]
+- Updated dependencies [bd7e5819]
+- Updated dependencies [d27d4ced]
+- Updated dependencies [d27d4ced]
+  - @clutchd/tailwind@5.0.0
+
 ## 3.0.2
 
 ### Patch Changes

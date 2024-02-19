@@ -1,5 +1,11 @@
 # @clutchd/link
 
+## 3.0.0
+
+### Major Changes
+
+- cfc86f54: Introduce LinkRoot, replaces CoreLink
+
 ## 2.1.1
 
 ### Patch Changes
