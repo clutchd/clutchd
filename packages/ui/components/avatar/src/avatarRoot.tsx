@@ -30,6 +30,7 @@ const AvatarRoot = React.forwardRef<IAvatarRoot, IAvatarRootHtmlProps>(
     const [state, setState] = React.useState<IImageLoadingStates>("idle");
     return (
       <AvatarContext.Provider
+        //TODO: make easier to override these internal states? (improve api)
         value={{
           loadingState: state,
           onLoadingStateChange: setState,

@@ -2,4 +2,4 @@
 "@clutchd/image": major
 ---
 
-Rename RawImage to RootImage
+Rename CoreImage to ImageRoot

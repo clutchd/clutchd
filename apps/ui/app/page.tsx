@@ -1,18 +1,18 @@
 import { Copyright } from "@clutchd/copyright";
-import { Divider } from "@clutchd/divider";
 import { Footer } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
 import { Metadata } from "next";
-import { GridShowcase } from "~/components/showcases/layout/gridShowcase";
 import {
   AvatarShowcase,
   BlockShowcase,
+  CopyrightShowcase,
   FlexShowcase,
+  GridShowcase,
+  LabelShowcase,
   LayoutShowcase,
   Section,
-  Showcase,
   TailwindIndicator,
-} from "../components";
+} from "~/components";
 
 export const metadata: Metadata = {
   title: "Clutchd, LLC",
@@ -101,18 +101,11 @@ export default function Home() {
           <GridShowcase />
           <LayoutShowcase />
         </Section>
-        {/* 
+
         <Section title="Primitives">
-          <Showcase
-            title="Copyright"
-            description="A small utility primitive to assist with returning the current copyright year."
-            pkg="@clutchd/copyright"
-            pkgType="primitive"
-            stable
-            rsc
-          >
-            <CopyrightShowcase />
-          </Showcase>
+          <CopyrightShowcase />
+          <LabelShowcase />
+          {/* 
           {/* // TODO: Add proper showcase
           <Showcase
             title="Divider"
@@ -131,20 +124,12 @@ export default function Home() {
             stable
             rsc={false}
           />
-          <Showcase
-            title="Label"
-            description="A simple, non-focusable, label intended to be used for input forms."
-            pkg="@clutchd/label"
-            pkgType="primitive"
-            stable
-            rsc={false}
-          >
-            <LabelShowcase />
-          </Showcase>
-        </Section> */}
+          */}
+        </Section>
         <Section title="Components">
           <AvatarShowcase />
-          {/* <Showcase
+          {/* // TODO: Add proper showcase
+          <Showcase
             title="Button"
             description="A simple, focusable, button."
             pkg="@clutchd/button"
