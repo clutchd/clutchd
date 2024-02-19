@@ -1,5 +1,15 @@
 # @clutchd/copyright
 
+## 4.0.0
+
+### Major Changes
+
+- 3fef6f67: Render as a span rather than a div
+
+### Patch Changes
+
+- aac831f8: Improved comments
+
 ## 3.1.0
 
 ### Minor Changes

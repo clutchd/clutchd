@@ -1,5 +1,16 @@
 # @clutchd/navigator
 
+## 2.0.0
+
+### Major Changes
+
+- 9503d4d5: Rework navigator, introduce NavigatorRoot
+
+### Patch Changes
+
+- Updated dependencies [cfc86f54]
+  - @clutchd/link@3.0.0
+
 ## 1.0.2
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @clutchd/tailwind
 
+## 5.0.0
+
+### Major Changes
+
+- d27d4ced: Remove modifiers from grid interfaces
+- d27d4ced: Split overflow into multiple interfaces much like Gap, among others
+- d27d4ced: Remove custom space-between interface. We want this package to resmble tailwindcss as it exists
+
+### Patch Changes
+
+- bd7e5819: Add comments to all exported types
+
 ## 4.2.0
 
 ### Minor Changes

@@ -1,5 +1,15 @@
 # @clutchd/button
 
+## 3.0.1
+
+### Patch Changes
+
+- Updated dependencies [d27d4ced]
+- Updated dependencies [bd7e5819]
+- Updated dependencies [d27d4ced]
+- Updated dependencies [d27d4ced]
+  - @clutchd/tailwind@5.0.0
+
 ## 3.0.0
 
 ### Major Changes

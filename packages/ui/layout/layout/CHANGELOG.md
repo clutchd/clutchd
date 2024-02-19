@@ -1,5 +1,26 @@
 # @clutchd/layout
 
+## 4.0.0
+
+### Major Changes
+
+- 57de13f4: Remove unneccesary props from Page. Only has min-w and min-h in addition to standard flex props.
+- fc98f154: Flex prop major changes which layout is based on
+
+### Patch Changes
+
+- 53b6c01c: Improve type imports
+- Updated dependencies [d27d4ced]
+- Updated dependencies [bd7e5819]
+- Updated dependencies [32ef885c]
+- Updated dependencies [aac831f8]
+- Updated dependencies [d27d4ced]
+- Updated dependencies [3ed52a14]
+- Updated dependencies [53b6c01c]
+- Updated dependencies [d27d4ced]
+  - @clutchd/tailwind@5.0.0
+  - @clutchd/flex@6.0.0
+
 ## 3.0.4
 
 ### Patch Changes

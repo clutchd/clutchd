@@ -1,5 +1,22 @@
 # @clutchd/flex
 
+## 6.0.0
+
+### Major Changes
+
+- 32ef885c: Better dev experience, better defaults. Nearly all props renamed
+
+### Patch Changes
+
+- aac831f8: Improved comments
+- 3ed52a14: Improved prop comments
+- 53b6c01c: Improve type imports
+- Updated dependencies [d27d4ced]
+- Updated dependencies [bd7e5819]
+- Updated dependencies [d27d4ced]
+- Updated dependencies [d27d4ced]
+  - @clutchd/tailwind@5.0.0
+
 ## 5.1.3
 
 ### Patch Changes

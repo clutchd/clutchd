@@ -1,5 +1,11 @@
 # @clutchd/image
 
+## 2.0.0
+
+### Major Changes
+
+- 9386329b: Rework CoreImage into it's own ImageRoot component
+
 ## 1.1.0
 
 ### Minor Changes

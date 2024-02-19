@@ -1,5 +1,21 @@
 # @clutchd/divider
 
+## 5.0.0
+
+### Major Changes
+
+- 8ea05546: Defaults to horizontal orientation, removed styling, now cleans the orientation prop
+- 2586f89c: Remove unused hidden prop, remove default styling. Data state should be used to modify styling of divider based on orientation.
+
+### Patch Changes
+
+- aac831f8: Improved comments
+- Updated dependencies [d27d4ced]
+- Updated dependencies [bd7e5819]
+- Updated dependencies [d27d4ced]
+- Updated dependencies [d27d4ced]
+  - @clutchd/tailwind@5.0.0
+
 ## 4.0.2
 
 ### Patch Changes
