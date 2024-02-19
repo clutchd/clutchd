@@ -1,13 +1,7 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import { Flex, IFlexProps } from "@clutchd/flex";
-import type {
-  WithFontSmoothing,
-  WithMinHeight,
-  WithMinWidth,
-  WithTransition,
-  WithTransitionTiming,
-} from "@clutchd/tailwind";
+import type { WithMinHeight, WithMinWidth } from "@clutchd/tailwind";
 import * as React from "react";
 
 /**
@@ -18,13 +12,7 @@ type IPage = React.ElementRef<typeof Component.div>;
 /**
  * Type to define `Page` props
  */
-interface IPageProps
-  extends IFlexProps,
-    WithMinWidth,
-    WithMinHeight,
-    WithTransition,
-    WithTransitionTiming,
-    WithFontSmoothing {}
+interface IPageProps extends IFlexProps, WithMinWidth, WithMinHeight {}
 
 /**
  * Type to define `Page` props with html attributes
@@ -42,26 +30,16 @@ const Page = React.forwardRef<IPage, IPageHtmlProps>(
   (
     {
       className,
-      fontSmoothing = "subpixel-antialiased",
       direction = "flex-col",
       minWidth = "min-w-screen",
       minHeight = "min-h-screen",
-      transition = "transition-all",
-      transitionTiming = "ease-out",
       ...props
     },
     forwardedRef,
   ) => {
     return (
       <Flex
-        className={cn(
-          fontSmoothing,
-          minWidth,
-          minHeight,
-          transition,
-          transitionTiming,
-          className,
-        )}
+        className={cn(minWidth, minHeight, className)}
         direction={direction}
         ref={forwardedRef}
         {...props}
