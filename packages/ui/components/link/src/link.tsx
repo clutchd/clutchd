@@ -1,19 +1,21 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { composeClassNames as cn } from "@clutchd/compose-props";
-import NextLink, { LinkProps as NextLinkProps } from "next/link";
-import { UrlObject } from "node:url";
 import * as React from "react";
+import { ILinkRoot, ILinkRootProps, LinkRoot } from ".";
 
 /**
  * Type to define `Link` element.
  */
-type ILink = React.ElementRef<typeof Component.a>;
+type ILink = ILinkRoot;
 
 /**
  * Type to define `Link` props.
  */
-interface ILinkProps extends Omit<NextLinkProps, "href"> {
-  href?: string | UrlObject;
+interface ILinkProps extends Omit<ILinkRootProps, "href"> {
+  /**
+   * The path or URL to navigate to. It can also be an object.  Defaults to `/` - the app's root.
+   * @see https://nextjs.org/docs/api-reference/next/link#with-url-object
+   */
+  href?: Partial<ILinkRootProps["href"]>;
 }
 
 /**
@@ -24,45 +26,17 @@ interface ILinkHtmlProps
     Omit<IComponentPropsWithoutRef<typeof Component.a>, "asChild" | "href"> {}
 
 /**
- * `CoreLink` - The core link component, leverages next/link.
- * @param props `ILinkHtmlProps` used to render this `Link`.
- * @returns `Link` component.
- */
-const CoreLink = React.forwardRef<ILink, ILinkHtmlProps>(
-  ({ href = "/", children, ...props }, forwardedRef) => {
-    return (
-      <Component.a asChild {...props}>
-        <NextLink href={href} ref={forwardedRef}>
-          {children}
-        </NextLink>
-      </Component.a>
-    );
-  },
-);
-
-CoreLink.displayName = "CoreLink";
-
-/**
- * `Link` - A simple link component, leverages next/link and includes basic styling.
+ * `Link` - A simple link component, leverages next/link.
  * @param props `ILinkHtmlProps` used to render this `Link`.
  * @returns `Link` component.
  */
 const Link = React.forwardRef<ILink, ILinkHtmlProps>(
-  ({ className, ...props }, forwardedRef) => {
-    return (
-      <CoreLink
-        className={cn(
-          "focus:outline-2 focus:outline-offset-4 focus:outline-blue-500",
-          className,
-        )}
-        ref={forwardedRef}
-        {...props}
-      />
-    );
+  ({ href = "/", ...props }, forwardedRef) => {
+    return <LinkRoot href={href} ref={forwardedRef} {...props} />;
   },
 );
 
 Link.displayName = "Link";
 
-export { CoreLink, Link };
+export { Link };
 export type { ILink, ILinkHtmlProps, ILinkProps };
