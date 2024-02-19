@@ -47,7 +47,7 @@ jobs:
         run: pnpm lint
 
       - name: Build
-        id: builc
+        id: build
         run: pnpm build
 
       - name: Test
