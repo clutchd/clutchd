@@ -1,31 +1,17 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
-import { ImageProps, default as NextImage } from "next/image";
 import * as React from "react";
+import { IImageLoadingStates, IImageRoot, IImageRootProps, ImageRoot } from ".";
 
 /**
  * Type to define `Image` component.
  */
-type IImage = React.ElementRef<typeof Component.img>;
-
-/**
- * Type to define loading states of the `Image`.
- */
-type IImageLoadingStates = "idle" | "loading" | "loaded" | "error";
+type IImage = IImageRoot;
 
 /**
  * Type to define `Image` props.
  */
-interface IImageProps
-  extends Omit<
-    ImageProps,
-    | "onLoadingComplete"
-    | "layout"
-    | "objectFit"
-    | "objectPosition"
-    | "lazyBoundary"
-    | "lazyRoot"
-  > {
+interface IImageProps extends IImageRootProps {
   /**
    * Optional prop to introduce functionality when the image's loading state changes.
    */
@@ -41,25 +27,6 @@ interface IImageHtmlProps
       IComponentPropsWithoutRef<typeof Component.img>,
       "asChild" | "alt" | "src" | "height" | "width"
     > {}
-
-/**
- * `RootImage` - The root image component used to render next/image components.
- * @param props `IImageHtmlProps` used to render this `RootImage`.
- * @returns `RootImage` component.
- */
-const RootImage = React.forwardRef<IImage, IImageHtmlProps>(
-  ({ alt, children, src, ...props }, forwardedRef) => {
-    return (
-      <Component.img asChild {...props}>
-        <NextImage alt={alt} ref={forwardedRef} src={src}>
-          {children}
-        </NextImage>
-      </Component.img>
-    );
-  },
-);
-
-RootImage.displayName = "RootImage";
 
 /**
  * `Image` - A image component used to render next/image components with corresponding data attributes.
@@ -79,7 +46,7 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
     };
 
     return (
-      <RootImage
+      <ImageRoot
         {...props}
         ref={forwardedRef}
         onError={composeEventHandlers(() => updateState("error"), onError)}
@@ -91,12 +58,12 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
         data-state={loading}
       >
         {children}
-      </RootImage>
+      </ImageRoot>
     );
   },
 );
 
 Image.displayName = "Image";
 
-export { RootImage, Image };
-export type { IImage, IImageHtmlProps, IImageLoadingStates, IImageProps };
+export { Image };
+export type { IImage, IImageHtmlProps, IImageProps };

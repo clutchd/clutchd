@@ -1,7 +1,9 @@
-export { RawImage, Image } from "./image";
+export { Image } from "./image";
+export type { IImage, IImageHtmlProps, IImageProps } from "./image";
+export { ImageRoot } from "./imageRoot";
 export type {
-  IImage,
-  IImageHtmlProps,
   IImageLoadingStates,
-  IImageProps,
-} from "./image";
+  IImageRoot,
+  IImageRootHtmlProps,
+  IImageRootProps,
+} from "./imageRoot";
