@@ -9,7 +9,7 @@ import {
   AvatarRoot,
   IAvatarImageProps,
   IAvatarRoot,
-} from "./";
+} from ".";
 
 /**
  * Type to define `Avatar` element.
