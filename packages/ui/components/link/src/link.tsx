@@ -21,7 +21,7 @@ interface ILinkProps extends Omit<NextLinkProps, "href"> {
  */
 interface ILinkHtmlProps
   extends ILinkProps,
-  Omit<IComponentPropsWithoutRef<typeof Component.a>, "asChild" | "href"> { }
+    Omit<IComponentPropsWithoutRef<typeof Component.a>, "asChild" | "href"> {}
 
 /**
  * `CoreLink` - The core link component, leverages next/link.

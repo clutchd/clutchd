@@ -11,14 +11,14 @@ type IButton = React.ElementRef<typeof Component.button>;
 /**
  * Type to define `Button` props.
  */
-interface IButtonProps { }
+interface IButtonProps {}
 
 /**
  * Type to define `Button` props with html attributes.
  */
 interface IButtonHtmlProps
   extends IButtonProps,
-  IComponentPropsWithoutRef<typeof Component.button> { }
+    IComponentPropsWithoutRef<typeof Component.button> {}
 
 /**
  * `CoreButton` - The core button component used to render consistent buttons.

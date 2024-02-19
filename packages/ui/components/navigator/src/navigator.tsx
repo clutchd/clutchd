@@ -20,7 +20,7 @@ interface INavigatorProps extends ILinkProps {
 /**
  * Type to define `Navigator` props with html attributes.
  */
-interface INavigatorHtmlProps extends INavigatorProps, ILinkHtmlProps { }
+interface INavigatorHtmlProps extends INavigatorProps, ILinkHtmlProps {}
 
 /**
  * `CoreNavigator` - The core navigator component, leverages next/link.
