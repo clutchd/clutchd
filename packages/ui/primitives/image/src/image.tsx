@@ -43,11 +43,11 @@ interface IImageHtmlProps
     > {}
 
 /**
- * `RawImage` - A raw image component used to render next/image components.
- * @param props `IImageHtmlProps` used to render this `RawImage`.
- * @returns `RawImage` component.
+ * `RootImage` - The root image component used to render next/image components.
+ * @param props `IImageHtmlProps` used to render this `RootImage`.
+ * @returns `RootImage` component.
  */
-const RawImage = React.forwardRef<IImage, IImageHtmlProps>(
+const RootImage = React.forwardRef<IImage, IImageHtmlProps>(
   ({ alt, children, src, ...props }, forwardedRef) => {
     return (
       <Component.img asChild {...props}>
@@ -59,10 +59,10 @@ const RawImage = React.forwardRef<IImage, IImageHtmlProps>(
   },
 );
 
-RawImage.displayName = "RawImage";
+RootImage.displayName = "RootImage";
 
 /**
- * `Image` - A image component used to render next/image components with data attributes.
+ * `Image` - A image component used to render next/image components with corresponding data attributes.
  * @param props `IImageHtmlProps` used to render this `Image`.
  * @returns `Image` component.
  */
@@ -79,7 +79,7 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
     };
 
     return (
-      <RawImage
+      <RootImage
         {...props}
         ref={forwardedRef}
         onError={composeEventHandlers(() => updateState("error"), onError)}
@@ -91,12 +91,12 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
         data-state={loading}
       >
         {children}
-      </RawImage>
+      </RootImage>
     );
   },
 );
 
 Image.displayName = "Image";
 
-export { RawImage, Image };
+export { RootImage, Image };
 export type { IImage, IImageHtmlProps, IImageLoadingStates, IImageProps };
