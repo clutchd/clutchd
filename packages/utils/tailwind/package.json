@@ -28,8 +28,8 @@
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/jest": "29.5.2",
-    "jest": "29.6.1",
+    "@types/jest": "29.5.12",
+    "jest": "29.7.0",
     "tsup": "7.2.0",
     "typescript": "5.2.2"
   }

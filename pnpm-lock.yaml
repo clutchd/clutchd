@@ -76,8 +76,8 @@ importers:
         specifier: 7.3.0
         version: 7.3.0
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       postcss:
         specifier: 8.4.31
         version: 8.4.31
@@ -161,8 +161,8 @@ importers:
         specifier: 7.3.0
         version: 7.3.0
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       postcss:
         specifier: 8.4.31
         version: 8.4.31
@@ -195,8 +195,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -207,8 +207,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -241,8 +241,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -253,8 +253,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -287,8 +287,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -299,8 +299,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -339,8 +339,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -351,8 +351,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -378,8 +378,8 @@ importers:
         specifier: 4.9.0
         version: 4.9.0(prisma@5.5.2)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -390,8 +390,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next-auth:
         specifier: 4.24.4
         version: 4.24.4(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
@@ -414,8 +414,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -426,8 +426,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -460,8 +460,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -472,8 +472,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next-auth:
         specifier: 4.24.4
         version: 4.24.4(next@14.1.0)(react-dom@18.2.0)(react@18.2.0)
@@ -503,8 +503,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -515,8 +515,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -546,14 +546,14 @@ importers:
         specifier: workspace:*
         version: link:../tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node-fetch':
         specifier: 2.6.4
         version: 2.6.4
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -588,20 +588,20 @@ importers:
         version: 29.7.0
       ts-jest:
         specifier: 29.1.0
-        version: 29.1.0(@babel/core@7.23.9)(jest@29.6.1)(typescript@5.2.2)
+        version: 29.1.0(@babel/core@7.23.9)(jest@29.7.0)(typescript@5.2.2)
     devDependencies:
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
 
   packages/tooling/tsconfig:
     devDependencies:
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -634,8 +634,8 @@ importers:
         specifier: workspace:*
         version: link:../../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -646,8 +646,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -683,8 +683,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -692,8 +692,8 @@ importers:
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -732,8 +732,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -741,8 +741,8 @@ importers:
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -781,8 +781,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -790,8 +790,8 @@ importers:
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -817,14 +817,14 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -851,14 +851,14 @@ importers:
         specifier: 1.0.2
         version: 1.0.2(@types/react@18.2.47)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -884,8 +884,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -893,8 +893,8 @@ importers:
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -930,8 +930,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -939,8 +939,8 @@ importers:
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -976,8 +976,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -988,8 +988,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1025,14 +1025,14 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1068,8 +1068,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -1080,8 +1080,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1114,8 +1114,8 @@ importers:
         specifier: workspace:*
         version: link:../../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
@@ -1123,8 +1123,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1151,14 +1151,14 @@ importers:
         specifier: workspace:*
         version: link:../../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1191,8 +1191,8 @@ importers:
         specifier: 14.0.0
         version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -1203,8 +1203,8 @@ importers:
         specifier: 18.2.6
         version: 18.2.6
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1234,14 +1234,14 @@ importers:
         specifier: workspace:*
         version: link:../../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       next:
         specifier: 14.1.0
         version: 14.1.0(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -1277,14 +1277,14 @@ importers:
         specifier: 2.0.2
         version: 2.0.2(@types/react-dom@18.2.6)(@types/react@18.2.47)(react-dom@18.2.0)(react@18.2.0)
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/react':
         specifier: 18.2.47
         version: 18.2.47
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -1307,8 +1307,8 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
@@ -1316,8 +1316,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -1355,14 +1355,14 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -1382,14 +1382,14 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -1406,11 +1406,11 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -1437,14 +1437,14 @@ importers:
         specifier: workspace:*
         version: link:../../tooling/tsconfig
       '@types/jest':
-        specifier: 29.5.2
-        version: 29.5.2
+        specifier: 29.5.12
+        version: 29.5.12
       '@types/node':
         specifier: 20.9.2
         version: 20.9.2
       jest:
-        specifier: 29.6.1
-        version: 29.6.1(@types/node@20.9.2)
+        specifier: 29.7.0
+        version: 29.7.0(@types/node@20.9.2)
       tsup:
         specifier: 7.2.0
         version: 7.2.0(typescript@5.2.2)
@@ -3923,8 +3923,8 @@ packages:
     dependencies:
       '@types/istanbul-lib-report': 3.0.3
 
-  /@types/jest@29.5.2:
-    resolution: {integrity: sha512-mSoZVJF5YzGVCk+FsDxzDuH7s+SCkzrgKZzf0Z0T2WudhBUPoF6ktoTPC4R0ZoCPCV5xUvuU6ias5NvxcBcMMg==}
+  /@types/jest@29.5.12:
+    resolution: {integrity: sha512-eDC8bTvT/QhYdxJAulQikueigY5AsdBRH2yDKW3yveW7svY3+DzN84/2NUgkw10RTiJbWqZrTtoGVdYlvFJdLw==}
     dependencies:
       expect: 29.7.0
       pretty-format: 29.7.0
@@ -4013,7 +4013,7 @@ packages:
   /@types/testing-library__jest-dom@5.14.9:
     resolution: {integrity: sha512-FSYhIjFlfOpGSRyVoMBMuS3ws5ehFQODymf3vlI7U1K8c7PHwWwFY7VREfmsuzHSOnoKs/9/Y983ayOs7eRzqw==}
     dependencies:
-      '@types/jest': 29.5.2
+      '@types/jest': 29.5.12
     dev: false
 
   /@types/tough-cookie@4.0.5:
@@ -6792,8 +6792,8 @@ packages:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  /jest@29.6.1(@types/node@20.9.2):
-    resolution: {integrity: sha512-Nirw5B4nn69rVUZtemCQhwxOBhm0nsp3hmtF4rzCeWD7BkjAXRIji7xWQfnTNbz9g0aVsBX6aZK3n+23LM6uDw==}
+  /jest@29.7.0(@types/node@20.9.2):
+    resolution: {integrity: sha512-NIy3oAFp9shda19hy4HK0HRTWKtPJmGdnvywu01nOqNC2vZg+Z+fvJDxpMQA88eb2I9EcafcdjYgsDthnYTvGw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
@@ -8691,7 +8691,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-jest@29.1.0(@babel/core@7.23.9)(jest@29.6.1)(typescript@5.2.2):
+  /ts-jest@29.1.0(@babel/core@7.23.9)(jest@29.7.0)(typescript@5.2.2):
     resolution: {integrity: sha512-ZhNr7Z4PcYa+JjMl62ir+zPiNJfXJN6E8hSLnaUKhOgqcn8vb3e537cpkd0FuAfRK3sR1LSqM1MOhliXNgOFPA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
@@ -8715,7 +8715,7 @@ packages:
       '@babel/core': 7.23.9
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
-      jest: 29.6.1(@types/node@20.9.2)
+      jest: 29.7.0(@types/node@20.9.2)
       jest-util: 29.7.0
       json5: 2.2.3
       lodash.memoize: 4.1.2
