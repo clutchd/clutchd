@@ -5,9 +5,9 @@ import { Main } from ".";
 test("render main", () => {
   const { container } = render(<Main />);
 
-  const div = container.querySelector("main");
+  const main = container.querySelector("main");
 
   expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-col");
+  expect(main).toBeInTheDocument();
+  expect(main).toHaveClass("flex flex-col");
 });

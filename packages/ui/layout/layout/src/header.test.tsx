@@ -5,9 +5,9 @@ import { Header } from ".";
 test("render header", () => {
   const { container } = render(<Header />);
 
-  const div = container.querySelector("header");
+  const header = container.querySelector("header");
 
   expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-row justify-between");
+  expect(header).toBeInTheDocument();
+  expect(header).toHaveClass("flex flex-row justify-between");
 });

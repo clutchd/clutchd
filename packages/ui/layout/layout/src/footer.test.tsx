@@ -5,9 +5,9 @@ import { Footer } from ".";
 test("render footer", () => {
   const { container } = render(<Footer />);
 
-  const div = container.querySelector("footer");
+  const footer = container.querySelector("footer");
 
   expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveClass("flex flex-row justify-between");
+  expect(footer).toBeInTheDocument();
+  expect(footer).toHaveClass("flex flex-row justify-between");
 });

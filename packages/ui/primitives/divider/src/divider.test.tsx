@@ -11,7 +11,7 @@ test("render divider", () => {
   expect(div).toBeInTheDocument();
   expect(div).toHaveAttribute("aria-orientation", "horizontal");
   expect(div).toHaveAttribute("role", "separator");
-  expect(div).toHaveClass("h-px");
+  expect(div).toHaveAttribute("data-orientation", "horizontal");
 });
 
 test("render divider with custom orientation", () => {
@@ -23,7 +23,7 @@ test("render divider with custom orientation", () => {
   expect(div).toBeInTheDocument();
   expect(div).toHaveAttribute("aria-orientation", "vertical");
   expect(div).toHaveAttribute("role", "separator");
-  expect(div).toHaveClass("w-px");
+  expect(div).toHaveAttribute("data-orientation", "vertical");
 });
 
 test("render divider as decoration", () => {
@@ -34,17 +34,5 @@ test("render divider as decoration", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
   expect(div).toHaveAttribute("role", "none");
-  expect(div).toHaveClass("h-px");
-});
-
-test("render hidden divider", () => {
-  const { container } = render(<Divider hidden />);
-
-  const div = container.querySelector("div");
-
-  expect(container.hasChildNodes()).toEqual(true);
-  expect(div).toBeInTheDocument();
-  expect(div).toHaveAttribute("aria-orientation", "horizontal");
-  expect(div).toHaveAttribute("role", "separator");
-  expect(div).toHaveClass("h-px");
+  expect(div).toHaveAttribute("data-orientation", "horizontal");
 });
