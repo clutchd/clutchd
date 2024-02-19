@@ -1,7 +1,7 @@
 /**
- * Determines if the provided value is empty; This is not just a simple check for a truthy or falsy value
- * @param value - Value we are checking for emptiness
- * @returns True if empty, otherwise false
+ * Determines if the provided value is empty;  This is not just a simple check for a truthy or falsy value.
+ * @param value - Value we are checking for emptiness.
+ * @returns True if empty, otherwise false.
  */
 export function isEmpty(value?: any) {
   let type = typeof value;

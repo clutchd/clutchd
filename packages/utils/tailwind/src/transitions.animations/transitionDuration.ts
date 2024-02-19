@@ -12,7 +12,7 @@ type TransitionDurationVariants =
   | "1000";
 
 /**
- * The `Transition Duration` tailwindcss classes
+ * The `Transition Duration` tailwindcss classes.
  * @see https://tailwindcss.com/docs/transition-duration
  */
 export type TransitionDuration = WithVariants<
@@ -22,7 +22,7 @@ export type TransitionDuration = WithVariants<
 
 export interface WithTransitionDuration {
   /**
-   * The `Transition Duration` tailwindcss classes
+   * The `Transition Duration` tailwindcss classes.
    * @see https://tailwindcss.com/docs/transition-duration
    */
   transitionDuration?: TransitionDuration;

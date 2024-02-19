@@ -1,7 +1,7 @@
 /**
- * Returns a set of initials derived from the provided names
- * @param names Names which we need to derive initials from
- * @returns A single set of initials
+ * Returns a set of initials derived from the provided names.
+ * @param names Names which we need to derive initials from.
+ * @returns A single set of initials.
  */
 function getInitials(...names: string[]) {
   // declare vars to hold initials

@@ -11,14 +11,14 @@ type MaxHeightVariants =
   | Arbitrary;
 
 /**
- * The `Max-Height` tailwindcss classes
+ * The `Max-Height` tailwindcss classes.
  * @see https://tailwindcss.com/docs/max-height
  */
 export type MaxHeight = WithVariants<"max-h", MaxHeightVariants>;
 
 export interface WithMaxHeight {
   /**
-   * The `Max-Height` tailwindcss classes
+   * The `Max-Height` tailwindcss classes.
    * @see https://tailwindcss.com/docs/max-height
    */
   maxHeight?: MaxHeight;

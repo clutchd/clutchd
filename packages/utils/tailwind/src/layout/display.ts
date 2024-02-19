@@ -1,5 +1,5 @@
 /**
- * The `Display` tailwindcss classes
+ * The `Display` tailwindcss classes.
  * @see https://tailwindcss.com/docs/display
  */
 export type Display =
@@ -27,7 +27,7 @@ export type Display =
 
 export interface WithDisplay {
   /**
-   * The `Display` tailwindcss classes
+   * The `Display` tailwindcss classes.
    * @see https://tailwindcss.com/docs/display
    */
   display?: Display;

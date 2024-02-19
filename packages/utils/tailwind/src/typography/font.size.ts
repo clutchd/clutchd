@@ -16,14 +16,14 @@ type FontSizeVariants =
   | "9xl";
 
 /**
- * The `Font Size` tailwindcss classes
+ * The `Font Size` tailwindcss classes.
  * @see https://tailwindcss.com/docs/font-size
  */
 export type FontSize = WithVariants<"text", FontSizeVariants>;
 
 export interface WithFontSize {
   /**
-   * The `Font Size` tailwindcss classes
+   * The `Font Size` tailwindcss classes.
    * @see https://tailwindcss.com/docs/font-size
    */
   fontSize?: FontSize;

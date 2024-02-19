@@ -1,7 +1,6 @@
 /**
- * Generates any combination of permutations with a custom separator
+ * Generates any combination of permutations with a custom separator.  Beware, this can exponentially increase types.
  */
-
 export type Permutations<
   Prefix extends string,
   Separator extends string = " ",

@@ -10,14 +10,14 @@ type MinHeightVariants =
   | Arbitrary;
 
 /**
- * The `Min-Height` tailwindcss classes
+ * The `Min-Height` tailwindcss classes.
  * @see https://tailwindcss.com/docs/min-height
  */
 export type MinHeight = WithVariants<"min-h", MinHeightVariants>;
 
 export interface WithMinHeight {
   /**
-   * The `Min-Height` tailwindcss classes
+   * The `Min-Height` tailwindcss classes.
    * @see https://tailwindcss.com/docs/min-height
    */
   minHeight?: MinHeight;

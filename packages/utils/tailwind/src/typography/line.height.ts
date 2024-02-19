@@ -17,14 +17,14 @@ type LineHeightVariants =
   | "loose";
 
 /**
- * The `Line Height` tailwindcss classes
+ * The `Line Height` tailwindcss classes.
  * @see https://tailwindcss.com/docs/line-height
  */
 export type LineHeight = WithVariants<"leading", LineHeightVariants>;
 
 export interface WithLineHeight {
   /**
-   * The `Line Height` tailwindcss classes
+   * The `Line Height` tailwindcss classes.
    * @see https://tailwindcss.com/docs/line-height
    */
   lineHeight?: LineHeight;

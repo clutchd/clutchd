@@ -8,14 +8,14 @@ type FlexBasisVariants =
   | Arbitrary;
 
 /**
- * The `Flex Basis` tailwindcss classes
+ * The `Flex Basis` tailwindcss classes.
  * @see https://tailwindcss.com/docs/flex-basis
  */
 export type FlexBasis = WithVariants<"basis", FlexBasisVariants>;
 
 export interface WithFlexBasis {
   /**
-   * The `Flex Basis` tailwindcss classes
+   * The `Flex Basis` tailwindcss classes.
    * @see https://tailwindcss.com/docs/flex-basis
    */
   flexBasis?: FlexBasis;
