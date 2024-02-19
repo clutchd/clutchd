@@ -6,26 +6,26 @@ import * as React from "react";
 import { isActiveRoute as internalIsActiveRoute } from ".";
 
 /**
- * Type to define `Navigator` element
+ * Type to define `Navigator` element.
  */
 type INavigator = React.ElementRef<typeof Component.a>;
 
 /**
- * Type to define `Navigator` props
+ * Type to define `Navigator` props.
  */
 interface INavigatorProps extends ILinkProps {
   isActiveRoute?: typeof internalIsActiveRoute;
 }
 
 /**
- * Type to define `Navigator` props with html attributes
+ * Type to define `Navigator` props with html attributes.
  */
-interface INavigatorHtmlProps extends INavigatorProps, ILinkHtmlProps {}
+interface INavigatorHtmlProps extends INavigatorProps, ILinkHtmlProps { }
 
 /**
- * `CoreNavigator` - The core navigator component, leverages next/link
- * @param props `INavigatorHtmlProps` used to render this `Navigator`
- * @returns `Navigator` component
+ * `CoreNavigator` - The core navigator component, leverages next/link.
+ * @param props `INavigatorHtmlProps` used to render this `Navigator`.
+ * @returns `Navigator` component.
  */
 const CoreNavigator = React.forwardRef<INavigator, INavigatorHtmlProps>(
   (
@@ -57,9 +57,9 @@ const CoreNavigator = React.forwardRef<INavigator, INavigatorHtmlProps>(
 CoreNavigator.displayName = "CoreNavigator";
 
 /**
- * `Navigator` - A simple navigator component, leverages next/link and includes basic styling
- * @param props `INavigatorHtmlProps` used to render this `Navigator`
- * @returns `Navigator` component
+ * `Navigator` - A simple navigator component, leverages next/link and includes basic styling.
+ * @param props `INavigatorHtmlProps` used to render this `Navigator`.
+ * @returns `Navigator` component.
  */
 const Navigator = React.forwardRef<INavigator, INavigatorHtmlProps>(
   ({ className, ...props }, forwardedRef) => {

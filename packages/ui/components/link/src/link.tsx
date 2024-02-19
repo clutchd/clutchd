@@ -5,28 +5,28 @@ import { UrlObject } from "node:url";
 import * as React from "react";
 
 /**
- * Type to define `Link` element
+ * Type to define `Link` element.
  */
 type ILink = React.ElementRef<typeof Component.a>;
 
 /**
- * Type to define `Link` props
+ * Type to define `Link` props.
  */
 interface ILinkProps extends Omit<NextLinkProps, "href"> {
   href?: string | UrlObject;
 }
 
 /**
- * Type to define `Link` props with html attributes
+ * Type to define `Link` props with html attributes.
  */
 interface ILinkHtmlProps
   extends ILinkProps,
-    Omit<IComponentPropsWithoutRef<typeof Component.a>, "asChild" | "href"> {}
+  Omit<IComponentPropsWithoutRef<typeof Component.a>, "asChild" | "href"> { }
 
 /**
- * `CoreLink` - The core link component, leverages next/link
- * @param props `ILinkHtmlProps` used to render this `Link`
- * @returns `Link` component
+ * `CoreLink` - The core link component, leverages next/link.
+ * @param props `ILinkHtmlProps` used to render this `Link`.
+ * @returns `Link` component.
  */
 const CoreLink = React.forwardRef<ILink, ILinkHtmlProps>(
   ({ href = "/", children, ...props }, forwardedRef) => {
@@ -43,9 +43,9 @@ const CoreLink = React.forwardRef<ILink, ILinkHtmlProps>(
 CoreLink.displayName = "CoreLink";
 
 /**
- * `Link` - A simple link component, leverages next/link and includes basic styling
- * @param props `ILinkHtmlProps` used to render this `Link`
- * @returns `Link` component
+ * `Link` - A simple link component, leverages next/link and includes basic styling.
+ * @param props `ILinkHtmlProps` used to render this `Link`.
+ * @returns `Link` component.
  */
 const Link = React.forwardRef<ILink, ILinkHtmlProps>(
   ({ className, ...props }, forwardedRef) => {

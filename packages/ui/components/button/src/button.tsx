@@ -4,26 +4,26 @@ import * as React from "react";
 import { disabled, focus } from ".";
 
 /**
- * Type to define `Button` component
+ * Type to define `Button` component.
  */
 type IButton = React.ElementRef<typeof Component.button>;
 
 /**
- * Type to define `Button` props
+ * Type to define `Button` props.
  */
-interface IButtonProps {}
+interface IButtonProps { }
 
 /**
- * Type to define `Button` props with html attributes
+ * Type to define `Button` props with html attributes.
  */
 interface IButtonHtmlProps
   extends IButtonProps,
-    IComponentPropsWithoutRef<typeof Component.button> {}
+  IComponentPropsWithoutRef<typeof Component.button> { }
 
 /**
- * `CoreButton` - The core button component used to render consistent buttons
- * @param props `IButtonHtmlProps` used to render this `Button`
- * @returns `Button` component
+ * `CoreButton` - The core button component used to render consistent buttons.
+ * @param props `IButtonHtmlProps` used to render this `Button`.
+ * @returns `Button` component.
  */
 const CoreButton = React.forwardRef<IButton, IButtonHtmlProps>(
   ({ ...props }, forwardedRef) => {
@@ -34,9 +34,9 @@ const CoreButton = React.forwardRef<IButton, IButtonHtmlProps>(
 CoreButton.displayName = "CoreButton";
 
 /**
- * `Button` - A button component used to render consistent buttons
- * @param props `IButtonHtmlProps` used to render this `Button`
- * @returns `Button` component
+ * `Button` - A button component used to render consistent buttons.
+ * @param props `IButtonHtmlProps` used to render this `Button`.
+ * @returns `Button` component.
  */
 const Button = React.forwardRef<IButton, IButtonHtmlProps>(
   ({ className, ...props }, forwardedRef) => {
