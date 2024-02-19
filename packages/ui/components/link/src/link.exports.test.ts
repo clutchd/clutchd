@@ -1,9 +1,9 @@
-import { CoreLink, Link } from ".";
+import { LinkRoot, Link } from ".";
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
 import { readFileSync } from "fs";
 
 test("exports", () => {
-  expect(typeof CoreLink).toEqual("object");
+  expect(typeof LinkRoot).toEqual("object");
   expect(typeof Link).toEqual("object");
 });
 

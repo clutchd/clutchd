@@ -10,10 +10,6 @@ test("render link", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(link).toBeInTheDocument();
   expect(link).toHaveAttribute("href", "/");
-  expect(link).toHaveAttribute(
-    "class",
-    "focus:outline-2 focus:outline-offset-4 focus:outline-blue-500",
-  );
 });
 
 test("render with merged classes", () => {
@@ -24,10 +20,7 @@ test("render with merged classes", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(link).toBeInTheDocument();
   expect(link).toHaveAttribute("href", "/");
-  expect(link).toHaveAttribute(
-    "class",
-    "focus:outline-2 focus:outline-offset-4 focus:outline-blue-500 text-red-500",
-  );
+  expect(link).toHaveAttribute("class", "text-red-500");
 });
 
 test("render with custom link and custom cursor", () => {
@@ -40,10 +33,7 @@ test("render with custom link and custom cursor", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(link).toBeInTheDocument();
   expect(link).toHaveAttribute("href", "/next-page");
-  expect(link).toHaveAttribute(
-    "class",
-    "focus:outline-2 focus:outline-offset-4 focus:outline-blue-500 cursor-pointer text-red-500",
-  );
+  expect(link).toHaveAttribute("class", "cursor-pointer text-red-500");
 });
 
 test("render with children", () => {
@@ -59,10 +49,7 @@ test("render with children", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(link).toBeInTheDocument();
   expect(link).toHaveAttribute("href", "/next-page");
-  expect(link).toHaveAttribute(
-    "class",
-    "focus:outline-2 focus:outline-offset-4 focus:outline-blue-500 cursor-pointer text-red-500",
-  );
+  expect(link).toHaveAttribute("class", "cursor-pointer text-red-500");
   expect(div).toBeInTheDocument();
   expect(div).toHaveTextContent("This is my custom div wrapped in a link!");
 });
@@ -89,10 +76,7 @@ test("render with onClick", () => {
   expect(container.hasChildNodes()).toEqual(true);
   expect(link).toBeInTheDocument();
   expect(link).toHaveAttribute("href", "/next-page");
-  expect(link).toHaveAttribute(
-    "class",
-    "focus:outline-2 focus:outline-offset-4 focus:outline-blue-500 cursor-pointer text-red-500",
-  );
+  expect(link).toHaveAttribute("class", "cursor-pointer text-red-500");
   expect(logSpy).toHaveBeenCalledWith("click!");
   expect(logSpy).toHaveBeenCalledTimes(1);
   expect(div).toBeInTheDocument();

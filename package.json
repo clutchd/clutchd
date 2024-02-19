@@ -14,7 +14,7 @@
     "postinstall": "manypkg check",
     "lint": "turbo run lint",
     "release": "turbo run build && changeset publish",
-    "test": "turbo run test",
+    "test": "pnpm format && turbo run test",
     "typesync": "npx typesync",
     "version-packages": "changeset version"
   },
