@@ -26,6 +26,9 @@ interface IImageProps
     | "lazyBoundary"
     | "lazyRoot"
   > {
+  /**
+   * Optional prop to introduce functionality when the image's loading state changes.
+   */
   handleStateChange?: (state: IImageLoadingStates) => void;
 }
 
