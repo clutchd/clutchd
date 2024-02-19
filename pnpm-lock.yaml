@@ -533,8 +533,8 @@ importers:
   packages/tooling/bundlejs:
     dependencies:
       '@hazae41/foras':
-        specifier: 2.0.8
-        version: 2.0.8
+        specifier: 2.1.4
+        version: 2.1.4
       node-fetch:
         specifier: 2.6.7
         version: 2.6.7
@@ -2220,8 +2220,8 @@ packages:
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
     dev: true
 
-  /@hazae41/foras@2.0.8:
-    resolution: {integrity: sha512-pOKMyBsD1moMJBxc9q3TeeuDPE8yBmsmRRUC4b5s0qxd8UBfJgw9kMF3lqBUr9ZYr4u4o26tffmXgt2CGkExNQ==}
+  /@hazae41/foras@2.1.4:
+    resolution: {integrity: sha512-obzWFJ7sYYypl0UGjLKLZ8q/pFfY8B2re0oAw+ojc8XJQORz3yHMX8L+hv2r3Tm0zzOxGWAV/j0wdJuGRvhQow==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
