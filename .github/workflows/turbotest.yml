@@ -17,23 +17,42 @@ jobs:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
     steps:
-      - name: Setup Environment
-        id: setup
-        uses: clutchd/turbostart-pnpm@v3.0.0
-
-      - name: Bun Runtime
-        id: setup-bun
-        uses: oven-sh/setup-bun@v1
+      - name: Checkout Repo
+        uses: actions/checkout@v3.3.0
         with:
-          bun-version: latest
+          fetch-depth: 2
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 18
+          cache: "pnpm"
+
+      - name: Install Dependencies
+        run: pnpm i
+
+      # - name: Bun Runtime
+      #   id: setup-bun
+      #   uses: oven-sh/setup-bun@v1
+      #   with:
+      #     bun-version: latest
 
       - name: Lint
         id: lint
-        run: bun run lint
+        run: pnpm lint
+
+      - name: Build
+        id: builc
+        run: pnpm build
 
       - name: Test
         id: test
-        run: bun run test
+        run: pnpm test
 
       - name: Upload Code Coverage
         id: codecov
