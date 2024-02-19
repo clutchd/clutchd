@@ -4,12 +4,12 @@ import type { Display } from "@clutchd/tailwind";
 import * as React from "react";
 
 /**
- * Type to define `Block` element
+ * Type to define `Block` element.
  */
 type IBlock = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `Block` props
+ * Type to define `Block` props.
  */
 interface IBlockProps {
   /**
@@ -20,16 +20,16 @@ interface IBlockProps {
 }
 
 /**
- * Type to define `Block` props with html attributes
+ * Type to define `Block` props with html attributes.
  */
 interface IBlockHtmlProps
   extends IBlockProps,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Block` - A fundamental layout building block
- * @param props `IBlockHtmlProps` used to render this `Block`
- * @returns `Block` component
+ * `Block` - A fundamental layout building block.
+ * @param props `IBlockHtmlProps` used to render this `Block`.
+ * @returns `Block` component.
  */
 const Block = React.forwardRef<IBlock, IBlockHtmlProps>(
   ({ className, display = "block", ...props }, forwardedRef) => {

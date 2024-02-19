@@ -10,12 +10,12 @@ import type {
 import * as React from "react";
 
 /**
- * Type to define `Flex` element
+ * Type to define `Flex` element.
  */
 type IFlex = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `Flex` props
+ * Type to define `Flex` props.
  */
 interface IFlexProps {
   /**
@@ -24,38 +24,38 @@ interface IFlexProps {
    */
   display?: Extract<Display, "flex" | "inline-flex" | "hidden">;
   /**
-   * The `Flex Direction` tailwindcss classes
+   * The `Flex Direction` tailwindcss classes.
    * @see https://tailwindcss.com/docs/flex-direction
    */
   direction?: FlexDirection;
   /**
-   * The `Align Items` tailwindcss classes
+   * The `Align Items` tailwindcss classes.
    * @see https://tailwindcss.com/docs/align-items
    */
   align?: AlignItems;
   /**
-   * The `Justify Content` tailwindcss classes
+   * The `Justify Content` tailwindcss classes.
    * @see https://tailwindcss.com/docs/justify-content
    */
   justify?: JustifyContent;
   /**
-   * The `Flex Wrap` tailwindcss classes
+   * The `Flex Wrap` tailwindcss classes.
    * @see https://tailwindcss.com/docs/flex-wrap
    */
   wrap?: FlexWrap;
 }
 
 /**
- * Type to define `Flex` props with html attributes
+ * Type to define `Flex` props with html attributes.
  */
 interface IFlexHtmlProps
   extends IFlexProps,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Flex` - A flex container that powers various layouts
- * @param props `IFlexHtmlProps` used to render this `Flex`
- * @returns `Flex` component
+ * `Flex` - A flex container that powers various layouts.
+ * @param props `IFlexHtmlProps` used to render this `Flex`.
+ * @returns `Flex` component.
  */
 const Flex = React.forwardRef<IFlex, IFlexHtmlProps>(
   (

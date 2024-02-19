@@ -1,9 +1,9 @@
 import { Ref, MutableRefObject, useCallback } from "react";
 
 /**
- * Composes multiple ref objects into a single ref object
- * @param refs Array of ref objects that will be composed
- * @returns A single ref object composed from all provided refs
+ * Composes multiple ref objects into a single ref object.
+ * @param refs Array of ref objects that will be composed.
+ * @returns A single ref object composed from all provided refs.
  */
 function composeRefs<T>(...refs: (Ref<T> | undefined)[]) {
   return (node: T) =>
@@ -15,9 +15,9 @@ function composeRefs<T>(...refs: (Ref<T> | undefined)[]) {
 }
 
 /**
- * Custom hook that composes multiple ref objects into a single ref object
- * @param refs Array of ref objects that will be composed
- * @returns A single ref object composed from all provided refs
+ * Custom hook that composes multiple ref objects into a single ref object.
+ * @param refs Array of ref objects that will be composed.
+ * @returns A single ref object composed from all provided refs.
  */
 function useComposedRefs<T>(...refs: (Ref<T> | undefined)[]) {
   return useCallback(composeRefs(...refs), refs);

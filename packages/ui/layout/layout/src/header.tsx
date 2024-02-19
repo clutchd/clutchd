@@ -3,26 +3,26 @@ import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
 /**
- * Type to define `Header` element
+ * Type to define `Header` element.
  */
 type IHeader = React.ElementRef<typeof Component.header>;
 
 /**
- * Type to define `Header` props
+ * Type to define `Header` props.
  */
 interface IHeaderProps extends IFlexProps {}
 
 /**
- * Type to define `Header` props with html attributes
+ * Type to define `Header` props with html attributes.
  */
 interface IHeaderHtmlProps
   extends IHeaderProps,
     IComponentPropsWithoutRef<typeof Component.header> {}
 
 /**
- * `Header` - A layout component designed to contain a page's header content. Renders as a `header` element
- * @param props `IHeaderHtmlProps` used to render this `Header`
- * @returns `Header` component
+ * `Header` - A layout component designed to contain a page's header content. Renders as a `header` element.
+ * @param props `IHeaderHtmlProps` used to render this `Header`.
+ * @returns `Header` component.
  */
 const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
   (

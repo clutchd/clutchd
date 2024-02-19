@@ -11,12 +11,12 @@ import type {
 import * as React from "react";
 
 /**
- * Type to define `GridCell` element
+ * Type to define `GridCell` element.
  */
 type IGridCell = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `GridCell` props
+ * Type to define `GridCell` props.
  */
 interface IGridCellProps
   extends WithColStart,
@@ -27,16 +27,16 @@ interface IGridCellProps
     WithRowEnd {}
 
 /**
- * Type to define `GridCell` props with html attributes
+ * Type to define `GridCell` props with html attributes.
  */
 interface IGridCellHtmlProps
   extends IGridCellProps,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `GridCell` - A primitive component used to render a cell within a grid
- * @param props `IGridCellHtmlProps` used to render this `GridCell`
- * @returns `GridCell` component
+ * `GridCell` - A primitive component used to render a cell within a grid.
+ * @param props `IGridCellHtmlProps` used to render this `GridCell`.
+ * @returns `GridCell` component.
  */
 const GridCell = React.forwardRef<IGridCell, IGridCellHtmlProps>(
   (

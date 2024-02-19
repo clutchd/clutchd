@@ -3,19 +3,19 @@ import { composeRefs } from "@clutchd/compose-refs";
 import * as React from "react";
 
 /**
- * Type to define `Slot` element
+ * Type to define `Slot` element.
  */
 type ISlot = HTMLElement;
 
 /**
- * Type to define `Slot` props
+ * Type to define `Slot` props.
  */
 interface ISlotProps extends React.HTMLAttributes<ISlot> {
   children?: React.ReactNode;
 }
 
 /**
- * A higher-order component that allows rendering as any `React.Element`
+ * A higher-order component that allows rendering as any `React.Element`.
  */
 const Slot = React.forwardRef<ISlot, ISlotProps>(
   ({ children, ...props }, forwardedRef) => {

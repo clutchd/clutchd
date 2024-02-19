@@ -10,12 +10,12 @@ import type {
 import * as React from "react";
 
 /**
- * Type to define `Grid` element
+ * Type to define `Grid` element.
  */
 type IGrid = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `Grid` props
+ * Type to define `Grid` props.
  */
 interface IGridProps {
   /**
@@ -24,38 +24,38 @@ interface IGridProps {
    */
   display?: Extract<Display, "grid" | "inline-grid" | "hidden">;
   /**
-   * The `Align Items` tailwindcss classes
+   * The `Align Items` tailwindcss classes.
    * @see https://tailwindcss.com/docs/align-items
    */
   align?: AlignItems;
   /**
-   * The `Justify Content` tailwindcss classes
+   * The `Justify Content` tailwindcss classes.
    * @see https://tailwindcss.com/docs/justify-content
    */
   justify?: JustifyContent;
   /**
-   * The `Grid Template Columns` tailwindcss classes
+   * The `Grid Template Columns` tailwindcss classes.
    * @see https://tailwindcss.com/docs/grid-template-columns
    */
   cols?: GridCols;
   /**
-   * The `Grid Template Rows` tailwindcss classes
+   * The `Grid Template Rows` tailwindcss classes.
    * @see https://tailwindcss.com/docs/grid-template-rows
    */
   rows?: GridRows;
 }
 
 /**
- * Type to define `Grid` props with html attributes
+ * Type to define `Grid` props with html attributes.
  */
 interface IGridHtmlProps
   extends IGridProps,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Grid` - A primitive grid container that powers various layouts
- * @param props `IGridHtmlProps` used to render this `Grid`
- * @returns `Grid` component
+ * `Grid` - A primitive grid container that powers various layouts.
+ * @param props `IGridHtmlProps` used to render this `Grid`.
+ * @returns `Grid` component.
  */
 const Grid = React.forwardRef<IGrid, IGridHtmlProps>(
   (

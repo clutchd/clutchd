@@ -3,26 +3,26 @@ import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
 /**
- * Type to define `Footer` element
+ * Type to define `Footer` element.
  */
 type IFooter = React.ElementRef<typeof Component.footer>;
 
 /**
- * Type to define `Footer` props
+ * Type to define `Footer` props.
  */
 interface IFooterProps extends IFlexProps {}
 
 /**
- * Type to define `Footer` props with html attributes
+ * Type to define `Footer` props with html attributes.
  */
 interface IFooterHtmlProps
   extends IFooterProps,
     IComponentPropsWithoutRef<typeof Component.footer> {}
 
 /**
- * `Footer` - A layout component designed to contain a page's footer content. Renders as a `footer` element
- * @param props `IFooterHtmlProps` used to render this `Footer`
- * @returns `Footer` component
+ * `Footer` - A layout component designed to contain a page's footer content. Renders as a `footer` element.
+ * @param props `IFooterHtmlProps` used to render this `Footer`.
+ * @returns `Footer` component.
  */
 const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
   (

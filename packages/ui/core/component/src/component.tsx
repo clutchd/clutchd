@@ -3,7 +3,7 @@ import * as React from "react";
 
 // TODO: should twx be optionally bundled like this? should we not make tailwind assumption?
 /**
- * Import `@clutchd/twx` if it exists, otherwise no processing classNames
+ * Import `@clutchd/twx` if it exists, otherwise no processing classNames.
  */
 try {
   var tx = require("@clutchd/twx").twx;
@@ -13,7 +13,7 @@ try {
 
 // TODO: make this list leaner?
 /**
- * Supported `Component` nodes
+ * Supported `Component` nodes.
  */
 const NODES = [
   "a",
@@ -47,7 +47,7 @@ const NODES = [
 ] as const;
 
 /**
- * Type to define generic `Component` props
+ * Type to define generic `Component` props.
  */
 type IComponentProps = {
   asChild?: boolean;
@@ -55,30 +55,30 @@ type IComponentProps = {
 };
 
 /**
- * Type to define `Component` props with the 'ref' prop
+ * Type to define `Component` props with the 'ref' prop.
  */
 type IComponentPropsWithRef<E extends React.ElementType> =
   React.ComponentPropsWithRef<E> & IComponentProps;
 
 /**
- * Type to define `Component` props without the 'ref' prop
+ * Type to define `Component` props without the 'ref' prop.
  */
 type IComponentPropsWithoutRef<E extends React.ElementType> =
   React.ComponentPropsWithoutRef<E> & IComponentProps;
 
 /**
- * Type to define `Component` as a forwarded ref component
+ * Type to define `Component` as a forwarded ref component.
  */
 interface IForwardRefComponent<E extends React.ElementType>
   extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
 
 /**
- * Type to define the supported `Component` nodes
+ * Type to define the supported `Component` nodes.
  */
 type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
 
 /**
- * `Component` - a higher-order component that extends standard html tags
+ * `Component` - a higher-order component that extends standard html tags.
  */
 const Component = NODES.reduce((tag, node) => {
   const Node = React.forwardRef(

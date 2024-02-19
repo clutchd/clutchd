@@ -4,17 +4,17 @@ import { ImageProps, default as NextImage } from "next/image";
 import * as React from "react";
 
 /**
- * Type to define `Image` component
+ * Type to define `Image` component.
  */
 type IImage = React.ElementRef<typeof Component.img>;
 
 /**
- * Type to define loading states of the `Image`
+ * Type to define loading states of the `Image`.
  */
 type IImageLoadingStates = "idle" | "loading" | "loaded" | "error";
 
 /**
- * Type to define `Image` props
+ * Type to define `Image` props.
  */
 interface IImageProps
   extends Omit<
@@ -33,7 +33,7 @@ interface IImageProps
 }
 
 /**
- * Type to define `Image` props with html attributes
+ * Type to define `Image` props with html attributes.
  */
 interface IImageHtmlProps
   extends IImageProps,
@@ -43,9 +43,9 @@ interface IImageHtmlProps
     > {}
 
 /**
- * `RawImage` - A raw image component used to render next/image components
- * @param props `IImageHtmlProps` used to render this `CoreImage`
- * @returns `CoreImage` component
+ * `RawImage` - A raw image component used to render next/image components.
+ * @param props `IImageHtmlProps` used to render this `RawImage`.
+ * @returns `RawImage` component.
  */
 const RawImage = React.forwardRef<IImage, IImageHtmlProps>(
   ({ alt, children, src, ...props }, forwardedRef) => {
@@ -62,9 +62,9 @@ const RawImage = React.forwardRef<IImage, IImageHtmlProps>(
 RawImage.displayName = "RawImage";
 
 /**
- * `Image` - A image component used to render next/image components with data attributes
- * @param props `IImageHtmlProps` used to render this `Image`
- * @returns `Image` component
+ * `Image` - A image component used to render next/image components with data attributes.
+ * @param props `IImageHtmlProps` used to render this `Image`.
+ * @returns `Image` component.
  */
 const Image = React.forwardRef<IImage, IImageHtmlProps>(
   (

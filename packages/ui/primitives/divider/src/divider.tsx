@@ -2,12 +2,12 @@ import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
 import * as React from "react";
 
 /**
- * Type to define `Divider` element
+ * Type to define `Divider` element.
  */
 type IDivider = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `Divider` props
+ * Type to define `Divider` props.
  */
 interface IDividerProps {
   /**
@@ -21,16 +21,16 @@ interface IDividerProps {
 }
 
 /**
- * Type to define `Divider` props with html attributes
+ * Type to define `Divider` props with html attributes.
  */
 interface IDividerHtmlProps
   extends IDividerProps,
     IComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
- * `Divider` - A separator used to create space between elements
- * @param props `IDividerHtmlProps` used to render this `Divider`
- * @returns `Divider` component
+ * `Divider` - A separator used to create space between elements.
+ * @param props `IDividerHtmlProps` used to render this `Divider`.
+ * @returns `Divider` component.
  */
 const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
   (
