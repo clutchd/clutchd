@@ -30,12 +30,12 @@
   },
   "dependencies": {
     "@clutchd/component": "workspace:*",
-    "@clutchd/compose-props": "workspace:*",
     "@clutchd/tailwind": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
+    "@radix-ui/react-separator": "1.0.3",
     "@testing-library/react": "14.0.0",
     "@types/jest": "29.5.2",
     "@types/node": "20.9.2",

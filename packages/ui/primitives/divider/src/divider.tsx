@@ -1,5 +1,4 @@
 import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
 
 /**
@@ -11,8 +10,13 @@ type IDivider = React.ElementRef<typeof Component.div>;
  * Type to define `Divider` props
  */
 interface IDividerProps {
+  /**
+   * Determines if this divider is purely decorative.  Updates the accessibility attributes and removes this component from the accessibility tree when this is `true`.
+   */
   decorative?: boolean;
-  hidden?: boolean;
+  /**
+   * Used to determine orientation of the divider.  Defaults to `horizontal` if orientation is invalid or is not provided.
+   */
   orientation?: "horizontal" | "vertical";
 }
 
@@ -30,13 +34,7 @@ interface IDividerHtmlProps
  */
 const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
   (
-    {
-      children,
-      className,
-      decorative = false,
-      orientation = "horizontal",
-      ...props
-    },
+    { children, decorative = false, orientation = "horizontal", ...props },
     forwardedRef,
   ) => {
     // ensure only a valid aria-orientation is passed
@@ -52,7 +50,6 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
     return (
       <Component.div
         {...aria}
-        className={cn(orientation === "vertical" ? `w-px` : `h-px`, className)}
         data-orientation={orientation}
         ref={forwardedRef}
         {...props}
@@ -64,4 +61,4 @@ const Divider = React.forwardRef<IDivider, IDividerHtmlProps>(
 Divider.displayName = "Divider";
 
 export { Divider };
-export type { IDivider, IDividerProps, IDividerHtmlProps };
+export type { IDivider, IDividerHtmlProps, IDividerProps };
