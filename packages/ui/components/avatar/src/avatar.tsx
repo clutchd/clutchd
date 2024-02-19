@@ -3,12 +3,18 @@ import { composeClassNames as cn } from "@clutchd/compose-props";
 import { IImageProps } from "@clutchd/image";
 import type { BorderRadius, Display, Size } from "@clutchd/tailwind";
 import * as React from "react";
-import { AvatarFallback, AvatarImage, AvatarRoot, IAvatarImageProps } from "./";
+import {
+  AvatarFallback,
+  AvatarImage,
+  AvatarRoot,
+  IAvatarImageProps,
+  IAvatarRoot,
+} from "./";
 
 /**
  * Type to define `Avatar` element.
  */
-type IAvatar = React.ElementRef<typeof Component.div>;
+type IAvatar = IAvatarRoot;
 
 /**
  * Type to define `Avatar` props.
