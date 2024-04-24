@@ -24,7 +24,7 @@ export default function RootLayout({
   const theme = cookieStore.get("theme");
   return (
     <html lang="en" className={manrope.variable}>
-      <Page className="p-6 bg-white" asChild>
+      <Page className="bg-white p-6" asChild>
         <body className={theme?.value === "dark" ? "dark" : ""}>
           <DarkModeToggle initialValue={theme?.value as "light" | "dark"} />
           {children}
