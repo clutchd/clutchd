@@ -1,5 +1,12 @@
 # @clutchd/twx
 
+## 3.0.2
+
+### Patch Changes
+
+- Updated dependencies [4fc00d0a]
+  - @clutchd/clsx@2.2.0
+
 ## 3.0.1
 
 ### Patch Changes

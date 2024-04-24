@@ -1,5 +1,12 @@
 # @clutchd/ui
 
+## 0.12.11
+
+### Patch Changes
+
+- @clutchd/twx@3.0.2
+- @clutchd/component@4.1.0
+
 ## 0.12.10
 
 ### Patch Changes
