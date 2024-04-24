@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.0
+
+### Minor Changes
+
+- 4fc00d0a: Add clsx lite support
+
 ## 2.0.1
 
 ### Patch Changes
