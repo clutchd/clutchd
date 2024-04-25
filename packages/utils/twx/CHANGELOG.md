@@ -1,5 +1,16 @@
 # @clutchd/twx
 
+## 4.0.0
+
+### Major Changes
+
+- 15c7099: Converge on official twMerge release, utilize clsx/lite to support only strings
+
+### Patch Changes
+
+- Updated dependencies [3e936ba1]
+  - @clutchd/clsx@2.2.1
+
 ## 3.0.2
 
 ### Patch Changes

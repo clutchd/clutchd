@@ -1,5 +1,11 @@
 # @clutchd/image
 
+## 2.0.1
+
+### Patch Changes
+
+- @clutchd/component@5.0.0
+
 ## 2.0.0
 
 ### Major Changes

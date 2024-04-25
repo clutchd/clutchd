@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/component",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "description": "A primitive component intended to be used as a foundation for all other ui components.",
   "keywords": [
     "clutchd",
@@ -47,7 +47,7 @@
     "typescript": "5.2.2"
   },
   "peerDependencies": {
-    "@clutchd/twx": "^3.0.2",
+    "@clutchd/twx": "^4.0.0",
     "react": "^18.2"
   },
   "peerDependenciesMeta": {
