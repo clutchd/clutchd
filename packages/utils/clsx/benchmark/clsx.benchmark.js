@@ -6,6 +6,7 @@ const classcat = require("classcat");
 const clsx = require("clsx");
 const prev = require("@clutchd/clsx").clsx;
 const clutchd = require("../dist").clsx;
+const clutchdlite = require("../dist/lite.js").clsx;
 
 let results = {};
 
@@ -17,6 +18,7 @@ function bench(name, ...args) {
     .add("clsx", () => clsx.apply(clsx, args))
     .add("prev", () => prev.apply(prev, args))
     .add("clutchd", () => clutchd.apply(clutchd, args))
+    .add("clutchdlite", () => clutchdlite.apply(clutchdlite, args))
     .on("cycle", (e) => {
       results[name] == null
         ? (results[name] = { [e.target.name]: e.target.hz })
