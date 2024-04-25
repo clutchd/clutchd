@@ -1,5 +1,12 @@
 # @clutchd/component
 
+## 5.0.0
+
+### Patch Changes
+
+- Updated dependencies [15c7099]
+  - @clutchd/twx@4.0.0
+
 ## 4.1.0
 
 ### Minor Changes

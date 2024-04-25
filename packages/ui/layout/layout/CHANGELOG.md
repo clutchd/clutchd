@@ -1,5 +1,12 @@
 # @clutchd/layout
 
+## 4.0.1
+
+### Patch Changes
+
+- @clutchd/component@5.0.0
+- @clutchd/flex@6.0.1
+
 ## 4.0.0
 
 ### Major Changes

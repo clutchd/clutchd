@@ -1,5 +1,11 @@
 # @clutchd/card
 
+## 4.0.2
+
+### Patch Changes
+
+- @clutchd/component@5.0.0
+
 ## 4.0.1
 
 ### Patch Changes
