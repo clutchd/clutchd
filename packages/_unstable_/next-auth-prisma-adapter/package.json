@@ -31,7 +31,7 @@
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@prisma/client": "4.9.0",
+    "@prisma/client": "5.15.1",
     "@types/jest": "29.5.12",
     "@types/node": "20.9.2",
     "@types/react": "18.2.47",
