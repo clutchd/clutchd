@@ -13,7 +13,7 @@
     "noUncheckedIndexedAccess": true,
     "checkJs": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "dom.iterable", "ES2022"],
+    "lib": ["DOM", "ESNext", "DOM.Iterable"],
     "noEmit": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
