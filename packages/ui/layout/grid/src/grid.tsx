@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type {
   AlignItems,
@@ -50,7 +50,7 @@ interface IGridProps {
  */
 interface IGridHtmlProps
   extends IGridProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+    React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Grid` - A primitive grid container that powers various layouts.

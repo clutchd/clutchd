@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import NextLink from "next/link";
 import * as React from "react";
 
@@ -19,7 +19,7 @@ interface IAProps {}
  */
 const A = React.forwardRef<
   IA,
-  IAProps & IComponentPropsWithoutRef<typeof Component.a>
+  IAProps & React.ComponentPropsWithoutRef<typeof Component.a>
 >(({ className, href = "/", ...props }, forwardedRef) => {
   // TODO: Bring back theming
   const classNames = [
@@ -41,4 +41,4 @@ const A = React.forwardRef<
 A.displayName = "TextA";
 
 export { A };
-export type { IAProps, IA };
+export type { IA, IAProps };

@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -18,7 +18,7 @@ interface ILargeProps {}
  */
 const Large = React.forwardRef<
   ILarge,
-  ILargeProps & IComponentPropsWithoutRef<typeof Component.p>
+  ILargeProps & React.ComponentPropsWithoutRef<typeof Component.p>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (

@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
 import * as React from "react";
 import { IImageLoadingStates, IImageRoot, IImageRootProps, ImageRoot } from ".";
@@ -24,7 +24,7 @@ interface IImageProps extends IImageRootProps {
 interface IImageHtmlProps
   extends IImageProps,
     Omit<
-      IComponentPropsWithoutRef<typeof Component.img>,
+      React.ComponentPropsWithoutRef<typeof Component.img>,
       "asChild" | "alt" | "src" | "height" | "width"
     > {}
 

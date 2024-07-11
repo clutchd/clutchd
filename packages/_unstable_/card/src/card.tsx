@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
 
@@ -17,7 +17,7 @@ interface ICardProps {}
  */
 interface ICardHtmlProps
   extends ICardProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+    React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Card` - A building block component used to render contained elements such as forms
@@ -45,4 +45,4 @@ const Card = React.forwardRef<ICard, ICardHtmlProps>(
 Card.displayName = "Card";
 
 export { Card };
-export type { ICardProps, ICard, ICardHtmlProps };
+export type { ICard, ICardHtmlProps, ICardProps };

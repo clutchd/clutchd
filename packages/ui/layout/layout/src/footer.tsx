@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
@@ -17,7 +17,7 @@ interface IFooterProps extends IFlexProps {}
  */
 interface IFooterHtmlProps
   extends IFooterProps,
-    IComponentPropsWithoutRef<typeof Component.footer> {}
+    React.ComponentPropsWithoutRef<typeof Component.footer> {}
 
 /**
  * `Footer` - A layout component designed to contain a page's footer content. Renders as a `footer` element.
@@ -40,4 +40,4 @@ const Footer = React.forwardRef<IFooter, IFooterHtmlProps>(
 Footer.displayName = "Footer";
 
 export { Footer };
-export type { IFooter, IFooterProps, IFooterHtmlProps };
+export type { IFooter, IFooterHtmlProps, IFooterProps };

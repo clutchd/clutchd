@@ -1,4 +1,4 @@
-// import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+// import { Component} from "@clutchd/component";
 // import * as React from "react";
 // import { IInput, IInputProps, Input } from "./input";
 // import {
@@ -27,7 +27,7 @@
 //  */
 // const TextInput = React.forwardRef<
 //   ITextInput,
-//   ITextInputProps & IComponentPropsWithoutRef<typeof Component.input>
+//   ITextInputProps & React.ComponentPropsWithoutRef<typeof Component.input>
 // >(
 //   (
 //     {
@@ -71,7 +71,7 @@
 //   ) => {
 //     // trim all unsupported input props
 //     let inputProps: Partial<
-//       ITextInputProps & IComponentPropsWithoutRef<typeof Component.input>
+//       ITextInputProps & React.ComponentPropsWithoutRef<typeof Component.input>
 //     > = {
 //       autoComplete,
 //       autoCorrect,

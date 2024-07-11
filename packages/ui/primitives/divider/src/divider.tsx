@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -25,7 +25,7 @@ interface IDividerProps {
  */
 interface IDividerHtmlProps
   extends IDividerProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+    React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Divider` - A separator used to create space between elements.

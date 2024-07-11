@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 import { getCopyright as internalGetCopyright } from ".";
 
@@ -22,7 +22,7 @@ interface ICopyrightProps {
  */
 interface ICopyrightHtmlProps
   extends ICopyrightProps,
-    IComponentPropsWithoutRef<typeof Component.span> {}
+    React.ComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `Copyright` - A simple text component used to display the copyright of an entity for the current year.
@@ -31,7 +31,7 @@ interface ICopyrightHtmlProps
  */
 const Copyright = React.forwardRef<
   ICopyright,
-  ICopyrightProps & IComponentPropsWithoutRef<typeof Component.p>
+  ICopyrightProps & React.ComponentPropsWithoutRef<typeof Component.p>
 >(
   (
     { children, getCopyright = internalGetCopyright, ...props },

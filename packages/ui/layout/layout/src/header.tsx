@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
@@ -17,7 +17,7 @@ interface IHeaderProps extends IFlexProps {}
  */
 interface IHeaderHtmlProps
   extends IHeaderProps,
-    IComponentPropsWithoutRef<typeof Component.header> {}
+    React.ComponentPropsWithoutRef<typeof Component.header> {}
 
 /**
  * `Header` - A layout component designed to contain a page's header content. Renders as a `header` element.
@@ -40,4 +40,4 @@ const Header = React.forwardRef<IHeader, IHeaderHtmlProps>(
 Header.displayName = "Header";
 
 export { Header };
-export type { IHeader, IHeaderProps, IHeaderHtmlProps };
+export type { IHeader, IHeaderHtmlProps, IHeaderProps };

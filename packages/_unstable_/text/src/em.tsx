@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -9,7 +9,8 @@ type IEm = React.ElementRef<typeof Component.em>;
 /**
  * Type to define `Em` props
  */
-interface IEmProps extends IComponentPropsWithoutRef<typeof Component.em> {}
+interface IEmProps
+  extends React.ComponentPropsWithoutRef<typeof Component.em> {}
 
 /**
  * `Em` - A inline text component used to italicize the provided text

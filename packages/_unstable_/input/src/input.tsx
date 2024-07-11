@@ -1,9 +1,7 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
-import { global, disabled, focus, outline } from ".";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
-import { composeEventHandlers } from "@clutchd/compose-event-handlers";
-import { validateName, validateReadOnlyRequired } from "./validate";
+import { disabled, focus, global, outline } from ".";
 
 /**
  * Type to define `Input` component
@@ -22,7 +20,7 @@ interface IInputProps {
  */
 interface IInputHtmlProps
   extends IInputProps,
-    IComponentPropsWithoutRef<typeof Component.input> {}
+    React.ComponentPropsWithoutRef<typeof Component.input> {}
 
 /**
  * Type to define possible `Input` validation states
@@ -115,4 +113,4 @@ const Input = React.forwardRef<IInput, IInputHtmlProps>(
 Input.displayName = "Input";
 
 export { Input };
-export type { IInput, IInputProps, IInputHtmlProps };
+export type { IInput, IInputHtmlProps, IInputProps };

@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composePreventableEventHandlers } from "@clutchd/compose-event-handlers";
 import * as React from "react";
 
@@ -17,7 +17,7 @@ interface ILabelProps {}
  */
 interface ILabelHtmlProps
   extends ILabelProps,
-    IComponentPropsWithoutRef<typeof Component.label> {}
+    React.ComponentPropsWithoutRef<typeof Component.label> {}
 
 /**
  * `Label` - A label component used to render accessible labels.
@@ -51,4 +51,4 @@ const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
 Label.displayName = "Label";
 
 export { Label };
-export type { ILabel, ILabelProps, ILabelHtmlProps };
+export type { ILabel, ILabelHtmlProps, ILabelProps };

@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -18,7 +18,7 @@ interface IStrongProps {}
  */
 const Strong = React.forwardRef<
   IStrong,
-  IStrongProps & IComponentPropsWithoutRef<typeof Component.strong>
+  IStrongProps & React.ComponentPropsWithoutRef<typeof Component.strong>
 >((props, forwardedRef) => {
   return (
     <strong className={["font-bold"].join(" ")} {...props} ref={forwardedRef} />

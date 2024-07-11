@@ -55,27 +55,21 @@ type IComponentProps = {
 };
 
 /**
- * Type to define `Component` props with the 'ref' prop.
+ * Type to define the supported `Component` nodes.
  */
-type IComponentPropsWithRef<E extends React.ElementType> =
-  React.ComponentPropsWithRef<E> & IComponentProps;
+type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
 
 /**
- * Type to define `Component` props without the 'ref' prop.
+ * Type to define `Component` props with the 'ref' prop.
  */
-type IComponentPropsWithoutRef<E extends React.ElementType> =
-  React.ComponentPropsWithoutRef<E> & IComponentProps;
+type ComponentPropsWithRef<E extends React.ElementType> =
+  React.ComponentPropsWithRef<E> & IComponentProps;
 
 /**
  * Type to define `Component` as a forwarded ref component.
  */
 interface IForwardRefComponent<E extends React.ElementType>
-  extends React.ForwardRefExoticComponent<IComponentPropsWithRef<E>> {}
-
-/**
- * Type to define the supported `Component` nodes.
- */
-type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
+  extends React.ForwardRefExoticComponent<ComponentPropsWithRef<E>> {}
 
 /**
  * `Component` - a higher-order component that extends standard html tags.
@@ -83,7 +77,7 @@ type Components = { [E in (typeof NODES)[number]]: IForwardRefComponent<E> };
 const Component = NODES.reduce((tag, node) => {
   const Node = React.forwardRef(
     (
-      { asChild, twx = tx, ...props }: IComponentPropsWithRef<typeof node>,
+      { asChild, twx = tx, ...props }: ComponentPropsWithRef<typeof node>,
       forwardedRef: any,
     ) => {
       if (tx && props?.className) props.className = twx(props.className);
@@ -98,4 +92,4 @@ const Component = NODES.reduce((tag, node) => {
 }, {} as Components);
 
 export { Component };
-export type { IComponentPropsWithRef, IComponentPropsWithoutRef };
+export type { ComponentPropsWithRef };

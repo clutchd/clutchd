@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -16,7 +16,7 @@ interface IFormProps {}
  */
 interface IFormHtmlProps
   extends IFormProps,
-    IComponentPropsWithoutRef<typeof Component.form> {}
+    React.ComponentPropsWithoutRef<typeof Component.form> {}
 
 /**
  * `Form` - A form component used to render complete forms
@@ -32,4 +32,4 @@ const Form = React.forwardRef<IForm, IFormHtmlProps>(
 Form.displayName = "Form";
 
 export { Form };
-export type { IForm, IFormProps, IFormHtmlProps };
+export type { IForm, IFormHtmlProps, IFormProps };

@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 import { ILinkRoot, ILinkRootProps, LinkRoot } from ".";
 
@@ -23,7 +23,10 @@ interface ILinkProps extends Omit<ILinkRootProps, "href"> {
  */
 interface ILinkHtmlProps
   extends ILinkProps,
-    Omit<IComponentPropsWithoutRef<typeof Component.a>, "asChild" | "href"> {}
+    Omit<
+      React.ComponentPropsWithoutRef<typeof Component.a>,
+      "asChild" | "href"
+    > {}
 
 /**
  * `Link` - A simple link component, leverages next/link.

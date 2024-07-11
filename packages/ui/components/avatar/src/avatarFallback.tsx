@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 import { AvatarContext, IWithAvatarContext } from "./_context";
 
@@ -17,7 +17,7 @@ interface IAvatarFallbackProps extends IWithAvatarContext {}
  */
 interface IAvatarFallbackHtmlProps
   extends IAvatarFallbackProps,
-    IComponentPropsWithoutRef<typeof Component.span> {}
+    React.ComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `AvatarFallback` - A text component used to render a avatar's fallback if an image is not provided to an `Avatar`.

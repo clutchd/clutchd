@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import { Flex, IFlexProps } from "@clutchd/flex";
 import type { WithMinHeight, WithMinWidth } from "@clutchd/tailwind";
@@ -19,7 +19,7 @@ interface IPageProps extends IFlexProps, WithMinWidth, WithMinHeight {}
  */
 interface IPageHtmlProps
   extends IPageProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+    React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Page` - A `Container` designed to contain an entire page. Renders as a `div` element that fills the screen.

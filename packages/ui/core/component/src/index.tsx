@@ -1,5 +1,2 @@
 export { Component } from "./component";
-export type {
-  IComponentPropsWithoutRef,
-  IComponentPropsWithRef,
-} from "./component";
+export type { ComponentPropsWithRef } from "./component";

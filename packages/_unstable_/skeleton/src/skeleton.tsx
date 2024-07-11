@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -10,7 +10,7 @@ type ISkeleton = React.ElementRef<typeof Component.div>;
  * Type to define `Skeleton` props
  */
 interface ISkeletonProps
-  extends IComponentPropsWithoutRef<typeof Component.div> {}
+  extends React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Skeleton` - A generic component used to render content structures and loading states

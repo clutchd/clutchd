@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { Flex, IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
@@ -17,7 +17,7 @@ interface IMainProps extends IFlexProps {}
  */
 interface IMainHtmlProps
   extends IMainProps,
-    IComponentPropsWithoutRef<typeof Component.main> {}
+    React.ComponentPropsWithoutRef<typeof Component.main> {}
 
 /**
  * `Main` - A layout component designed to contain a page's primary Main. Renders as a `main` element.
@@ -37,4 +37,4 @@ const Main = React.forwardRef<IMain, IMainHtmlProps>(
 Main.displayName = "Main";
 
 export { Main };
-export type { IMain, IMainProps, IMainHtmlProps };
+export type { IMain, IMainHtmlProps, IMainProps };

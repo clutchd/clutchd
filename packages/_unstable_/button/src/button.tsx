@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import * as React from "react";
 import { disabled, focus } from ".";
@@ -18,7 +18,7 @@ interface IButtonProps {}
  */
 interface IButtonHtmlProps
   extends IButtonProps,
-    IComponentPropsWithoutRef<typeof Component.button> {}
+    React.ComponentPropsWithoutRef<typeof Component.button> {}
 
 /**
  * `CoreButton` - The core button component used to render consistent buttons.
@@ -52,5 +52,5 @@ const Button = React.forwardRef<IButton, IButtonHtmlProps>(
 
 Button.displayName = "Button";
 
-export { CoreButton, Button };
+export { Button, CoreButton };
 export type { IButton, IButtonHtmlProps, IButtonProps };

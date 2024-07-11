@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -18,7 +18,7 @@ interface ISmallProps {}
  */
 const Small = React.forwardRef<
   ISmall,
-  ISmallProps & IComponentPropsWithoutRef<typeof Component.small>
+  ISmallProps & React.ComponentPropsWithoutRef<typeof Component.small>
 >((props, forwardedRef) => {
   return (
     <small

@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type {
   WithColEnd,
@@ -31,7 +31,7 @@ interface IGridCellProps
  */
 interface IGridCellHtmlProps
   extends IGridCellProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+    React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `GridCell` - A primitive component used to render a cell within a grid.

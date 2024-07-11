@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -18,7 +18,7 @@ interface IH3Props {}
  */
 const H3 = React.forwardRef<
   IH3,
-  IH3Props & IComponentPropsWithoutRef<typeof Component.h3>
+  IH3Props & React.ComponentPropsWithoutRef<typeof Component.h3>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (

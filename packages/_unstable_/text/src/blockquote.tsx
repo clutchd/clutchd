@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -18,7 +18,7 @@ interface IBlockquoteProps {}
  */
 const Blockquote = React.forwardRef<
   IBlockquote,
-  IBlockquoteProps & IComponentPropsWithoutRef<typeof Component.blockquote>
+  IBlockquoteProps & React.ComponentPropsWithoutRef<typeof Component.blockquote>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (

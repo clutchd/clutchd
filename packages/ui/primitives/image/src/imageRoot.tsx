@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { ImageProps, default as NextImage } from "next/image";
 import * as React from "react";
 
@@ -32,7 +32,7 @@ interface IImageRootProps
 interface IImageRootHtmlProps
   extends IImageRootProps,
     Omit<
-      IComponentPropsWithoutRef<typeof Component.img>,
+      React.ComponentPropsWithoutRef<typeof Component.img>,
       "asChild" | "alt" | "src" | "height" | "width"
     > {}
 

@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type {
   AlignItems,
@@ -50,7 +50,7 @@ interface IFlexProps {
  */
 interface IFlexHtmlProps
   extends IFlexProps,
-    IComponentPropsWithoutRef<typeof Component.div> {}
+    React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Flex` - A flex container that powers various layouts.

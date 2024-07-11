@@ -1,4 +1,4 @@
-import { Component, IComponentPropsWithoutRef } from "@clutchd/component";
+import { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import { IImageProps } from "@clutchd/image";
 import type { BorderRadius, Display, Size } from "@clutchd/tailwind";
@@ -58,7 +58,7 @@ interface IAvatarProps {
  */
 interface IAvatarHtmlProps
   extends IAvatarProps,
-    IComponentPropsWithoutRef<typeof Component.span> {}
+    React.ComponentPropsWithoutRef<typeof Component.span> {}
 
 /**
  * `Avatar` - An image based component used to render a user's profile picture.
