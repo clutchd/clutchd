@@ -10,14 +10,14 @@ type ILabel = React.ElementRef<typeof Component.label>;
 /**
  * Type to define `Label` props.
  */
-interface ILabelProps { }
+interface ILabelProps {}
 
 /**
  * Type to define `Label` props with html attributes.
  */
 interface ILabelHtmlProps
   extends ILabelProps,
-  React.ComponentPropsWithoutRef<typeof Component.label> { }
+    React.ComponentPropsWithoutRef<typeof Component.label> {}
 
 /**
  * `Label` - A label component used to render accessible labels.
@@ -32,7 +32,7 @@ const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
     ) => {
       // only prevent text selection if clicking inside the label itself
       const target = event.target as HTMLElement;
-      if (target.closest('button, input, select, textarea')) return;
+      if (target.closest("button, input, select, textarea")) return;
 
       if (event.detail > 1) {
         event.preventDefault();
@@ -56,4 +56,3 @@ Label.displayName = "Label";
 
 export { Label };
 export type { ILabel, ILabelHtmlProps, ILabelProps };
-
