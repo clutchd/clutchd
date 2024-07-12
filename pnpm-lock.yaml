@@ -863,8 +863,8 @@ importers:
         specifier: workspace:*
         version: link:../../../tooling/tsconfig
       '@radix-ui/react-slot':
-        specifier: 1.0.2
-        version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
+        specifier: 1.1.0
+        version: 1.1.0(@types/react@18.3.3)(react@18.3.1)
       '@types/jest':
         specifier: 29.5.12
         version: 29.5.12
@@ -942,8 +942,8 @@ importers:
         specifier: workspace:*
         version: link:../../../tooling/tsconfig
       '@radix-ui/react-slot':
-        specifier: 1.0.2
-        version: 1.0.2(@types/react@18.3.3)(react@18.3.1)
+        specifier: 1.1.0
+        version: 1.1.0(@types/react@18.3.3)(react@18.3.1)
       '@testing-library/dom':
         specifier: 10.3.1
         version: 10.3.1
@@ -2583,15 +2583,6 @@ packages:
       '@types/react':
         optional: true
       '@types/react-dom':
-        optional: true
-
-  '@radix-ui/react-slot@1.0.2':
-    resolution: {integrity: sha512-YeTpuq4deV+6DusvVUW4ivBgnkHwECUu0BiN43L5UCDFgdhsRUWAghhTF5MbvNTPzmiFOx90asDSUjWuCNapwg==}
-    peerDependencies:
-      '@types/react': '*'
-      react: ^16.8 || ^17.0 || ^18.0
-    peerDependenciesMeta:
-      '@types/react':
         optional: true
 
   '@radix-ui/react-slot@1.1.0':
@@ -7352,14 +7343,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.3
       '@types/react-dom': 18.3.0
-
-  '@radix-ui/react-slot@1.0.2(@types/react@18.3.3)(react@18.3.1)':
-    dependencies:
-      '@babel/runtime': 7.23.9
-      '@radix-ui/react-compose-refs': 1.0.1(@types/react@18.3.3)(react@18.3.1)
-      react: 18.3.1
-    optionalDependencies:
-      '@types/react': 18.3.3
 
   '@radix-ui/react-slot@1.1.0(@types/react@18.3.3)(react@18.3.1)':
     dependencies:
