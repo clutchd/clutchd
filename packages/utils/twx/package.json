@@ -31,14 +31,14 @@
   },
   "dependencies": {
     "@clutchd/clsx": "workspace:*",
-    "tailwind-merge": "2.3.0"
+    "tailwind-merge": "2.4.0"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/jest": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
     "@types/jest": "29.5.12",
-    "@types/node": "20.9.2",
+    "@types/node": "20.14.10",
     "jest": "29.7.0",
     "tsup": "8.1.0",
     "typescript": "5.5.3"
