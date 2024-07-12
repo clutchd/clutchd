@@ -73,8 +73,8 @@ importers:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.31)
       dotenv-cli:
-        specifier: 7.3.0
-        version: 7.3.0
+        specifier: 7.4.2
+        version: 7.4.2
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@20.14.10)
@@ -158,8 +158,8 @@ importers:
         specifier: 10.4.14
         version: 10.4.14(postcss@8.4.31)
       dotenv-cli:
-        specifier: 7.3.0
-        version: 7.3.0
+        specifier: 7.4.2
+        version: 7.4.2
       jest:
         specifier: 29.7.0
         version: 29.7.0(@types/node@20.14.10)
@@ -3613,8 +3613,8 @@ packages:
     engines: {node: '>=12'}
     deprecated: Use your platform's native DOMException instead
 
-  dotenv-cli@7.3.0:
-    resolution: {integrity: sha512-314CA4TyK34YEJ6ntBf80eUY+t1XaFLyem1k9P0sX1gn30qThZ5qZr/ZwE318gEnzyYP9yj9HJk6SqwE0upkfw==}
+  dotenv-cli@7.4.2:
+    resolution: {integrity: sha512-SbUj8l61zIbzyhIbg0FwPJq6+wjbzdn9oEtozQpZ6kW2ihCcapKVZj49oCT3oPM+mgQm+itgvUQcG5szxVrZTA==}
     hasBin: true
 
   dotenv-expand@10.0.0:
@@ -8418,7 +8418,7 @@ snapshots:
     dependencies:
       webidl-conversions: 7.0.0
 
-  dotenv-cli@7.3.0:
+  dotenv-cli@7.4.2:
     dependencies:
       cross-spawn: 7.0.3
       dotenv: 16.4.4
