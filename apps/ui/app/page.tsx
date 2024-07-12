@@ -47,7 +47,7 @@ export default function Home() {
         <ThemeSwitch />
         <ColorSwitch color={color} setColor={setColor} /> 
       </Header> */}
-      <main>
+      <main className="p-5">
         {/* <Section title="Core">
           {/* // TODO: Add proper showcase
           <Showcase
@@ -158,7 +158,7 @@ export default function Home() {
           <InputShowcase />
         </Showcase> */}
       </main>
-      <Footer>
+      <Footer className="p-5">
         <Copyright className="text-gray-500">Clutchd, LLC</Copyright>
         <Link
           className="text-right underline underline-offset-4"
