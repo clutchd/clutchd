@@ -1,5 +1,17 @@
 # @clutchd/divider
 
+## 5.0.2
+
+### Patch Changes
+
+- 236aed2d: Update deps
+- 61f898b3: Update deps
+- Updated dependencies [19aeff50]
+- Updated dependencies [a25c581b]
+- Updated dependencies [38495d5e]
+  - @clutchd/component@6.0.0
+  - @clutchd/tailwind@5.0.0
+
 ## 5.0.1
 
 ### Patch Changes

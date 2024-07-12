@@ -1,5 +1,11 @@
 # @clutchd/next-auth-prisma-adapter
 
+## 1.1.2
+
+### Patch Changes
+
+- b69e4847: Update deps
+
 ## 1.1.1
 
 ### Patch Changes

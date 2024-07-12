@@ -1,5 +1,16 @@
 # @clutchd/text
 
+## 4.0.3
+
+### Patch Changes
+
+- 72d6d265: update next
+- b69e4847: Update deps
+- Updated dependencies [19aeff50]
+- Updated dependencies [a25c581b]
+- Updated dependencies [38495d5e]
+  - @clutchd/component@6.0.0
+
 ## 4.0.2
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @clutchd/landing
 
+## 2.1.11
+
+### Patch Changes
+
+- b53e16be: Fix padding
+- 72d6d265: update next
+- 03e7b34b: Update deps
+- Updated dependencies [72d6d265]
+- Updated dependencies [236aed2d]
+  - @clutchd/link@3.0.2
+  - @clutchd/layout@4.0.2
+
 ## 2.1.10
 
 ### Patch Changes

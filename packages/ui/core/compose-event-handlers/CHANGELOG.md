@@ -1,5 +1,12 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.1
+
+### Patch Changes
+
+- 194a141e: Update deps
+- c3bc9d72: Fix package.json
+
 ## 5.0.0
 
 ### Major Changes

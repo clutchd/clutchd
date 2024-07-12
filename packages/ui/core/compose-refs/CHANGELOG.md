@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 2.0.2
+
+### Patch Changes
+
+- 194a141e: Update deps
+
 ## 2.0.1
 
 ### Patch Changes

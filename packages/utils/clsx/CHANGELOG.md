@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.2
+
+### Patch Changes
+
+- 03e7b34b: Update deps
+
 ## 2.2.1
 
 ### Patch Changes

@@ -1,5 +1,12 @@
 # @clutchd/protect
 
+## 3.0.2
+
+### Patch Changes
+
+- 72d6d265: update next
+- b69e4847: Update deps
+
 ## 3.0.1
 
 ### Patch Changes

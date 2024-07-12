@@ -1,5 +1,12 @@
 # @clutchd/tsconfig
 
+## 2.0.3
+
+### Patch Changes
+
+- d5501b34: Small tsconfig update
+- 03e7b34b: Update deps
+
 ## 2.0.2
 
 ### Patch Changes

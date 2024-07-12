@@ -1,5 +1,22 @@
 # @clutchd/form
 
+## 0.3.5
+
+### Patch Changes
+
+- 72d6d265: update next
+- b69e4847: Update deps
+- Updated dependencies [19aeff50]
+- Updated dependencies [194a141e]
+- Updated dependencies [72d6d265]
+- Updated dependencies [a25c581b]
+- Updated dependencies [c3bc9d72]
+- Updated dependencies [b69e4847]
+- Updated dependencies [38495d5e]
+  - @clutchd/component@6.0.0
+  - @clutchd/compose-props@3.0.2
+  - @clutchd/button@3.0.3
+
 ## 0.3.4
 
 ### Patch Changes

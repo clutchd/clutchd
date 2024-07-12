@@ -1,5 +1,11 @@
 # @clutchd/jest
 
+## 2.0.1
+
+### Patch Changes
+
+- 03e7b34b: Update deps
+
 ## 2.0.0
 
 ### Major Changes
