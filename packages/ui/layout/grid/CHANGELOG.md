@@ -1,5 +1,19 @@
 # @clutchd/grid
 
+## 6.0.2
+
+### Patch Changes
+
+- 236aed2d: Update deps
+- Updated dependencies [19aeff50]
+- Updated dependencies [194a141e]
+- Updated dependencies [a25c581b]
+- Updated dependencies [c3bc9d72]
+- Updated dependencies [38495d5e]
+  - @clutchd/component@6.0.0
+  - @clutchd/compose-props@3.0.2
+  - @clutchd/tailwind@5.0.0
+
 ## 6.0.1
 
 ### Patch Changes

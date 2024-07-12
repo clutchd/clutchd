@@ -1,5 +1,20 @@
 # @clutchd/component
 
+## 6.0.0
+
+### Major Changes
+
+- 38495d5e: Bumps to react 19 support
+
+### Patch Changes
+
+- 19aeff50: Update deps
+- a25c581b: Update deps
+- Updated dependencies [194a141e]
+- Updated dependencies [03e7b34b]
+  - @clutchd/slot@2.0.3
+  - @clutchd/twx@4.0.1
+
 ## 5.0.0
 
 ### Patch Changes
