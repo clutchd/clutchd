@@ -28,7 +28,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "@hazae41/foras": "2.0.8",
+    "@hazae41/foras": "2.1.4",
     "node-fetch": "2.6.7"
   },
   "devDependencies": {

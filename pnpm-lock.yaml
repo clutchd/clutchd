@@ -539,8 +539,8 @@ importers:
   packages/tooling/bundlejs:
     dependencies:
       '@hazae41/foras':
-        specifier: 2.0.8
-        version: 2.0.8
+        specifier: 2.1.4
+        version: 2.1.4
       node-fetch:
         specifier: 2.6.7
         version: 2.6.7
@@ -1900,8 +1900,8 @@ packages:
   '@floating-ui/utils@0.2.1':
     resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
 
-  '@hazae41/foras@2.0.8':
-    resolution: {integrity: sha512-pOKMyBsD1moMJBxc9q3TeeuDPE8yBmsmRRUC4b5s0qxd8UBfJgw9kMF3lqBUr9ZYr4u4o26tffmXgt2CGkExNQ==}
+  '@hazae41/foras@2.1.4':
+    resolution: {integrity: sha512-obzWFJ7sYYypl0UGjLKLZ8q/pFfY8B2re0oAw+ojc8XJQORz3yHMX8L+hv2r3Tm0zzOxGWAV/j0wdJuGRvhQow==}
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -6531,7 +6531,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.1': {}
 
-  '@hazae41/foras@2.0.8': {}
+  '@hazae41/foras@2.1.4': {}
 
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
