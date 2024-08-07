@@ -1,5 +1,16 @@
 # @clutchd/input
 
+## 0.7.4
+
+### Patch Changes
+
+- 2029b364: Update peer deps
+- Updated dependencies [87205878]
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-event-handlers@5.0.1
+  - @clutchd/compose-props@3.0.2
+  - @clutchd/is-empty@3.0.2
+
 ## 0.7.3
 
 ### Patch Changes

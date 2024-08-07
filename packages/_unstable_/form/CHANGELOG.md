@@ -1,5 +1,16 @@
 # @clutchd/form
 
+## 0.3.6
+
+### Patch Changes
+
+- 2029b364: Update peer deps
+- Updated dependencies [2029b364]
+- Updated dependencies [87205878]
+  - @clutchd/button@3.0.4
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-props@3.0.2
+
 ## 0.3.5
 
 ### Patch Changes
