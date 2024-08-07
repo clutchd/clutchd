@@ -1,5 +1,13 @@
 # @clutchd/text
 
+## 4.0.4
+
+### Patch Changes
+
+- 2029b364: Update peer deps
+- Updated dependencies [87205878]
+  - @clutchd/component@6.0.1
+
 ## 4.0.3
 
 ### Patch Changes

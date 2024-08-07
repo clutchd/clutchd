@@ -1,5 +1,13 @@
 # @clutchd/component
 
+## 6.0.1
+
+### Patch Changes
+
+- 87205878: Update peer deps
+  - @clutchd/slot@2.0.3
+  - @clutchd/twx@4.0.1
+
 ## 6.0.0
 
 ### Major Changes

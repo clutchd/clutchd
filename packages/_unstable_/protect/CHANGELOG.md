@@ -1,5 +1,11 @@
 # @clutchd/protect
 
+## 3.0.3
+
+### Patch Changes
+
+- 2029b364: Update peer deps
+
 ## 3.0.2
 
 ### Patch Changes

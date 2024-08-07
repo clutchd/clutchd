@@ -1,5 +1,13 @@
 # @clutchd/label
 
+## 4.0.6
+
+### Patch Changes
+
+- Updated dependencies [87205878]
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-event-handlers@5.0.1
+
 ## 4.0.5
 
 ### Patch Changes
