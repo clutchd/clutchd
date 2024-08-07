@@ -30,9 +30,9 @@
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "6.4.6",
+    "@testing-library/jest-dom": "6.4.8",
     "jest-environment-jsdom": "29.7.0",
-    "ts-jest": "29.2.2"
+    "ts-jest": "29.2.4"
   },
   "devDependencies": {
     "@types/jest": "29.5.12",
