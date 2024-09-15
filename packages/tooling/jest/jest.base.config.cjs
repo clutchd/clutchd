@@ -12,7 +12,7 @@ const config = {
     "!<rootDir>/**/*.config.*", // ignore config files
     "!<rootDir>/**/*.d.ts", // ignore types
     "!<rootDir>/**/*.types.{ts,tsx}", // ignore types
-    // prettier-ignore
+    // biome-ignore format: We want this to have '\' for proper regex
     "!<rootDir>/**/\.*", // ignore files that start with ".",
   ],
 
