@@ -9,7 +9,7 @@
     "changeset": "changeset",
     "clean": "find . -type d \\( -name '.next'  -o -name '.turbo' -o -name 'coverage' -o -name 'dist' -o -name 'node_modules' \\) -prune -print -exec rm -rf '{}' \\;",
     "dev": "turbo run dev --parallel",
-    "format": "prettier --write \"**/*.{js,json,jsx,ts,tsx,md,mdx}\"",
+    "format": "biome format --write .",
     "preinstall": "npx only-allow pnpm",
     "postinstall": "manypkg check",
     "lint": "turbo run lint",
@@ -19,10 +19,9 @@
     "version-packages": "changeset version"
   },
   "dependencies": {
+    "@biomejs/biome": "1.9.0",
     "@changesets/cli": "2.26.2",
-    "@clutchd/eslint-config-clutchd": "workspace:*",
     "@manypkg/cli": "0.21.2",
-    "eslint": "8.56.0",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.9",
     "prettier-plugin-tailwindcss": "0.5.11",
@@ -34,8 +33,6 @@
     "pnpm": ">=8.0.0"
   },
   "manypkg": {
-    "ignoredRules": [
-      "INTERNAL_MISMATCH"
-    ]
+    "ignoredRules": ["INTERNAL_MISMATCH"]
   }
 }

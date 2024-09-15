@@ -22,6 +22,6 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
+    "lint": "biome check . --write"
   }
 }

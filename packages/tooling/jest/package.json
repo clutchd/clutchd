@@ -27,7 +27,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
+    "lint": "biome check . --write"
   },
   "dependencies": {
     "@testing-library/jest-dom": "6.4.8",

@@ -6,7 +6,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev -p 3001",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "start": "next start",
     "test": "dotenv -- jest --passWithNoTests"
   },

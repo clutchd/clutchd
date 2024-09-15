@@ -23,7 +23,7 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm --dts --minify",
     "dev": "tsup src/index.tsx --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest"
   },

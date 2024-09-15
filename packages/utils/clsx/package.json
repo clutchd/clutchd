@@ -27,7 +27,7 @@
     "benchmark": "node ./benchmark/clsx.benchmark.js",
     "build": "tsup src/index.ts src/lite.ts --format esm --dts --minify",
     "dev": "tsup src/index.ts src/lite.ts --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest",
     "validate": "pnpm run build && pnpm run benchmark && pnpm run test"

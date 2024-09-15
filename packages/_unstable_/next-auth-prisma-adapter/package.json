@@ -24,7 +24,7 @@
   "scripts": {
     "build": "prisma generate && tsup src/index.ts --format esm --dts --minify",
     "dev": "prisma generate && tsup src/index.ts --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest"
   },

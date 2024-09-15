@@ -177,8 +177,8 @@ test("Render asChild with merged tailwindcss className", () => {
 
 test("render with merged tailwindcss className and inconsistent spaces", () => {
   const { container } = render(
-    // prettier-ignore
-    <Component.div className="bg-red-500 bg-blue-500 shadow rounded-xl">
+    // biome-ignore format: We want this to have inconsistent spacing for tests
+    <Component.div className="bg-red-500    bg-blue-500  shadow     rounded-xl">
       With tailwindcss!
     </Component.div>,
   );
