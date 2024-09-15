@@ -2,12 +2,7 @@
   "name": "@clutchd/link",
   "version": "3.0.2",
   "description": "A next/link powered component with additional features and default styling.",
-  "keywords": [
-    "clutchd",
-    "link",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "link", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

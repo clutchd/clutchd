@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/protect",
   "version": "3.0.2",
-  "keywords": [
-    "clutchd",
-    "protect",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "protect", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

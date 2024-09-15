@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/next-auth-prisma-adapter",
   "version": "1.1.2",
-  "keywords": [
-    "clutchd",
-    "next-auth",
-    "prisma",
-    "next"
-  ],
+  "keywords": ["clutchd", "next-auth", "prisma", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

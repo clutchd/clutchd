@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/skeleton",
   "version": "2.0.3",
-  "keywords": [
-    "clutchd",
-    "skeleton",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "skeleton", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

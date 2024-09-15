@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/button",
   "version": "3.0.3",
-  "keywords": [
-    "clutchd",
-    "button",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "button", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
