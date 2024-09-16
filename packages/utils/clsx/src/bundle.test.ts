@@ -1,12 +1,12 @@
+import { readFileSync } from "node:fs";
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
 import pkg from "../package.json";
-import { readFileSync } from "fs";
 
 test("ensures the bundle size is accurate", async () => {
   function getClaimedSize(text: string) {
     const match = text.match(/\((\d+)B\)/);
     if (match == null) return "";
-    return parseInt(match[1] ?? "");
+    return Number.parseInt(match[1] ?? "");
   }
   const pkgSize = getClaimedSize(pkg.description);
   const size = await getLocalSize([readFileSync("dist/index.js", "utf8")]);
