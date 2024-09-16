@@ -3,7 +3,7 @@ import { render } from "@testing-library/react";
 import { Component } from ".";
 
 test("render `a` node", () => {
-  const { container } = render(<Component.a />);
+  const { container } = render(<Component.a href="/">a</Component.a>);
   const node = container.querySelector("a");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();
@@ -59,42 +59,42 @@ test("render `form` node", () => {
 });
 
 test("render `h1` node", () => {
-  const { container } = render(<Component.h1 />);
+  const { container } = render(<Component.h1>h1</Component.h1>);
   const node = container.querySelector("h1");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();
 });
 
 test("render `h2` node", () => {
-  const { container } = render(<Component.h2 />);
+  const { container } = render(<Component.h2>h2</Component.h2>);
   const node = container.querySelector("h2");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();
 });
 
 test("render `h3` node", () => {
-  const { container } = render(<Component.h3 />);
+  const { container } = render(<Component.h3>h3</Component.h3>);
   const node = container.querySelector("h3");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();
 });
 
 test("render `h4` node", () => {
-  const { container } = render(<Component.h4 />);
+  const { container } = render(<Component.h4>h4</Component.h4>);
   const node = container.querySelector("h4");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();
 });
 
 test("render `h5` node", () => {
-  const { container } = render(<Component.h5 />);
+  const { container } = render(<Component.h5>h5</Component.h5>);
   const node = container.querySelector("h5");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();
 });
 
 test("render `h6` node", () => {
-  const { container } = render(<Component.h6 />);
+  const { container } = render(<Component.h6>h6</Component.h6>);
   const node = container.querySelector("h6");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();
