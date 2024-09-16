@@ -1,6 +1,6 @@
 import { getRemoteSize } from ".";
 
-describe("bundlephobia", function () {
+describe("bundlephobia", () => {
   test("ensures the remote size compression functions", async () => {
     const size = await getRemoteSize("@clutchd/clsx");
     if (size) {
@@ -20,7 +20,7 @@ describe("bundlephobia", function () {
   });
 });
 
-describe("bundlejs", function () {
+describe("bundlejs", () => {
   test("ensures the remote size compression functions", async () => {
     const size = await getRemoteSize("@clutchd/clsx", "bundlejs");
     if (size) {

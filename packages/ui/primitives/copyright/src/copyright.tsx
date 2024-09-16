@@ -40,7 +40,7 @@ const Copyright = React.forwardRef<
     return (
       <Component.span ref={forwardedRef} {...props}>
         {getCopyright()}
-        {children ? " " + children : null}
+        {children ? `  ${children}` : null}
       </Component.span>
     );
   },

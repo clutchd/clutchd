@@ -1,4 +1,4 @@
-import { IPossibleEventHandler, mergeEventHandlers } from ".";
+import { type IPossibleEventHandler, mergeEventHandlers } from ".";
 
 /**
  * Composes multiple event handlers into a single event handler function.

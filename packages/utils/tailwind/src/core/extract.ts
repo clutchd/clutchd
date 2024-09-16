@@ -1,4 +1,4 @@
-import { WithNegative, WithOptVariants, WithVariants } from ".";
+import type { WithNegative, WithOptVariants, WithVariants } from ".";
 
 /**
  * Extracts a `Key` from a type and combines with all provided required `Variants`.

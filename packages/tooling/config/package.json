@@ -1,11 +1,7 @@
 {
   "name": "@clutchd/config",
   "version": "3.0.0",
-  "keywords": [
-    "clutchd",
-    "config",
-    "tailwind"
-  ],
+  "keywords": ["clutchd", "config", "tailwind"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -22,6 +18,6 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
+    "lint": "biome check . --write"
   }
 }

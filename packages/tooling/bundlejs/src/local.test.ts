@@ -1,4 +1,4 @@
-import { readFileSync } from "fs";
+import { readFileSync } from "node:fs";
 import { getLocalSize } from ".";
 
 test("ensures the local size compression functions", async () => {

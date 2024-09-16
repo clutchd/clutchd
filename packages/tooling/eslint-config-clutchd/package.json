@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/eslint-config-clutchd",
   "version": "2.0.1",
-  "keywords": [
-    "clutchd",
-    "eslint",
-    "eslintconfig",
-    "eslint-config"
-  ],
+  "keywords": ["clutchd", "eslint", "eslintconfig", "eslint-config"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

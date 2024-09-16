@@ -1,6 +1,6 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import { Flex, IFlexProps } from "@clutchd/flex";
+import { Flex, type IFlexProps } from "@clutchd/flex";
 import type { WithMinHeight, WithMinWidth } from "@clutchd/tailwind";
 import * as React from "react";
 

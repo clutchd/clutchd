@@ -20,8 +20,8 @@ test("compose unique generic props", async () => {
 test("compose unique handler props", async () => {
   const handler = jest.fn();
 
-  const original: Record<string, any> = { a: handler };
-  const props: Record<string, any> = { b: handler };
+  const original: Record<string, unknown> = { a: handler };
+  const props: Record<string, unknown> = { b: handler };
   const composed = composeProps(original, props);
 
   expect(composed).toEqual({
@@ -33,12 +33,14 @@ test("compose unique handler props", async () => {
 test("compose incompatible handler props", async () => {
   const handler = jest.fn();
 
-  const original: Record<string, any> = { a: "hello" };
-  const props: Record<string, any> = { a: handler };
+  const original: Record<string, unknown> = { a: "hello" };
+  const props: Record<string, unknown> = { a: handler };
   const composed = composeProps(original, props);
 
-  const composedSpy = jest.spyOn(composed, "a");
-  composed.a();
+  const composedSpy = jest.spyOn(composed as { a: () => void }, "a");
+  if (typeof composed.a === "function") {
+    composed.a();
+  }
 
   expect(composed).toEqual({
     a: expect.any(Function),
@@ -52,13 +54,15 @@ test("compose multiple incompatible handler props", async () => {
   const handler1 = jest.fn();
   const handler2 = jest.fn();
 
-  const original: Record<string, any> = { a: handler1 };
-  const props1: Record<string, any> = { a: "hello" };
-  const props2: Record<string, any> = { a: handler2 };
+  const original = { a: handler1 };
+  const props1 = { a: "hello" };
+  const props2 = { a: handler2 };
   const composed = composeProps(original, props1, props2);
 
-  const composedSpy = jest.spyOn(composed, "a");
-  composed.a();
+  const composedSpy = jest.spyOn(composed as { a: () => void }, "a");
+  if (typeof composed.a === "function") {
+    composed.a();
+  }
 
   expect(composed).toEqual({
     a: expect.any(Function),
@@ -73,13 +77,15 @@ test("compose handler props more than once", async () => {
   const handler2 = jest.fn();
   const handler3 = jest.fn();
 
-  const original: Record<string, any> = { a: handler1 };
-  const props1: Record<string, any> = { a: handler2 };
-  const props2: Record<string, any> = { a: handler3 };
+  const original: Record<string, unknown> = { a: handler1 };
+  const props1: Record<string, unknown> = { a: handler2 };
+  const props2: Record<string, unknown> = { a: handler3 };
   const composed = composeProps(original, props1, props2);
 
-  const composedSpy = jest.spyOn(composed, "a");
-  composed.a();
+  const composedSpy = jest.spyOn(composed as { a: () => void }, "a");
+  if (typeof composed.a === "function") {
+    composed.a();
+  }
 
   expect(composed).toEqual({
     a: expect.any(Function),

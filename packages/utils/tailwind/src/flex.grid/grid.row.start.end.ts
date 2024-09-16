@@ -1,4 +1,8 @@
-import { WithModifier, WithVariants, OneThroughTwelve } from "../core";
+import {
+  type OneThroughTwelve,
+  WithModifier,
+  type WithVariants,
+} from "../core";
 
 type GridRowStartEndVariants = OneThroughTwelve | "13" | "auto";
 

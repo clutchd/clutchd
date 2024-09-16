@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,18 +7,13 @@ import * as React from "react";
 type ILead = React.ElementRef<typeof Component.p>;
 
 /**
- * Type to define `Lead` props
- */
-interface ILeadProps {}
-
-/**
  * `Lead` - A leading text component to be used for catch a reader's attention
  * @param props `ILeadProps` used to render this `Lead`
  * @returns `Lead` component
  */
 const Lead = React.forwardRef<
   ILead,
-  ILeadProps & React.ComponentPropsWithoutRef<typeof Component.p>
+  React.ComponentPropsWithoutRef<typeof Component.p>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (
@@ -37,4 +32,4 @@ const Lead = React.forwardRef<
 Lead.displayName = "TextLead";
 
 export { Lead };
-export type { ILead, ILeadProps };
+export type { ILead };

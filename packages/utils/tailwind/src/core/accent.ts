@@ -1,4 +1,4 @@
-import { Arbitrary } from "./arbitrary";
+import type { Arbitrary } from "./arbitrary";
 
 export type Opacity =
   | "0"

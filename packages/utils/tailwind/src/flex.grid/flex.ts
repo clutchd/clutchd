@@ -1,4 +1,4 @@
-import { WithVariants } from "../core";
+import type { WithVariants } from "../core";
 
 type FlexVariants = "1" | "auto" | "initial" | "none";
 

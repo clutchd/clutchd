@@ -1,14 +1,14 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import { IImageProps } from "@clutchd/image";
+import type { IImageProps } from "@clutchd/image";
 import type { BorderRadius, Display, Size } from "@clutchd/tailwind";
 import * as React from "react";
 import {
   AvatarFallback,
   AvatarImage,
   AvatarRoot,
-  IAvatarImageProps,
-  IAvatarRoot,
+  type IAvatarImageProps,
+  type IAvatarRoot,
 } from ".";
 
 /**

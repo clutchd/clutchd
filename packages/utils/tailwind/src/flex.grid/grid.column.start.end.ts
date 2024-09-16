@@ -1,4 +1,4 @@
-import { OneThroughTwelve, WithVariants } from "../core";
+import type { OneThroughTwelve, WithVariants } from "../core";
 
 type GridColStartEndVariants = OneThroughTwelve | "13" | "auto";
 

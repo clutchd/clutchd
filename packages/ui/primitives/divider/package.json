@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/divider",
   "version": "5.0.2",
-  "keywords": [
-    "clutchd",
-    "divider",
-    "separator",
-    "tailwind"
-  ],
+  "keywords": ["clutchd", "divider", "separator", "tailwind"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -24,7 +19,7 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm --dts --minify",
     "dev": "tsup src/index.tsx --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest"
   },
@@ -37,6 +32,7 @@
     "@clutchd/tsconfig": "workspace:*",
     "@radix-ui/react-separator": "1.1.0",
     "@testing-library/dom": "10.3.1",
+    "@testing-library/jest-dom": "6.4.8",
     "@testing-library/react": "16.0.0",
     "@types/jest": "29.5.12",
     "@types/node": "22.1.0",

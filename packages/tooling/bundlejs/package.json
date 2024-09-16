@@ -2,10 +2,7 @@
   "name": "@clutchd/bundlejs",
   "version": "0.4.0",
   "description": "A small utility package to determine the size of a js bundle.",
-  "keywords": [
-    "clutchd",
-    "bundlejs"
-  ],
+  "keywords": ["clutchd", "bundlejs"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -23,7 +20,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --minify",
     "dev": "tsup src/index.ts --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest"
   },

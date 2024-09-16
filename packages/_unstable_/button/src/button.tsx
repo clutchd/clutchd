@@ -9,16 +9,10 @@ import { disabled, focus } from ".";
 type IButton = React.ElementRef<typeof Component.button>;
 
 /**
- * Type to define `Button` props.
- */
-interface IButtonProps {}
-
-/**
  * Type to define `Button` props with html attributes.
  */
 interface IButtonHtmlProps
-  extends IButtonProps,
-    React.ComponentPropsWithoutRef<typeof Component.button> {}
+  extends React.ComponentPropsWithoutRef<typeof Component.button> {}
 
 /**
  * `CoreButton` - The core button component used to render consistent buttons.
@@ -53,4 +47,4 @@ const Button = React.forwardRef<IButton, IButtonHtmlProps>(
 Button.displayName = "Button";
 
 export { Button, CoreButton };
-export type { IButton, IButtonHtmlProps, IButtonProps };
+export type { IButton, IButtonHtmlProps };

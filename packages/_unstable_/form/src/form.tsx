@@ -7,16 +7,10 @@ import * as React from "react";
 type IForm = React.ElementRef<typeof Component.form>;
 
 /**
- * Type to define `Form` props
- */
-interface IFormProps {}
-
-/**
  * Type to define `Form` props with html attributes
  */
 interface IFormHtmlProps
-  extends IFormProps,
-    React.ComponentPropsWithoutRef<typeof Component.form> {}
+  extends React.ComponentPropsWithoutRef<typeof Component.form> {}
 
 /**
  * `Form` - A form component used to render complete forms
@@ -32,4 +26,4 @@ const Form = React.forwardRef<IForm, IFormHtmlProps>(
 Form.displayName = "Form";
 
 export { Form };
-export type { IForm, IFormHtmlProps, IFormProps };
+export type { IForm, IFormHtmlProps };

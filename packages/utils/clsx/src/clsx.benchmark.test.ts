@@ -1,6 +1,17 @@
 // TODO: fix these tests so they actually run (update types to be accurate as well)
-let data: any;
+interface BenchmarkData {
+  strings: { clutchd: string; clsx: string };
+  objects: { clutchd: string; clsx: string };
+  arrays: { clutchd: string; clsx: string };
+  nested_arrays: { clutchd: string; clsx: string };
+  nested_objects: { clutchd: string; clsx: string };
+  mixed: { clutchd: string; clsx: string };
+  mixed_bad: { clutchd: string; clsx: string };
+}
 
+let data: BenchmarkData | undefined;
+
+// ... existing code ...
 try {
   data = require("../clsx.benchmark.json");
 } catch (e) {
@@ -15,8 +26,8 @@ test("strings", () => {
     return;
   }
 
-  expect(parseFloat(data?.["strings"]?.["clutchd"])).toBeGreaterThanOrEqual(
-    parseFloat(data?.["strings"]?.["clsx"]),
+  expect(Number.parseFloat(data?.strings?.clutchd)).toBeGreaterThanOrEqual(
+    Number.parseFloat(data?.strings?.clsx),
   );
 });
 
@@ -26,8 +37,8 @@ test("objects", () => {
     return;
   }
 
-  expect(parseFloat(data?.["objects"]?.["clutchd"])).toBeGreaterThanOrEqual(
-    parseFloat(data?.["objects"]?.["clsx"]),
+  expect(Number.parseFloat(data?.objects?.clutchd)).toBeGreaterThanOrEqual(
+    Number.parseFloat(data?.objects?.clsx),
   );
 });
 
@@ -37,8 +48,8 @@ test("arrays", () => {
     return;
   }
 
-  expect(parseFloat(data?.["arrays"]?.["clutchd"])).toBeGreaterThanOrEqual(
-    parseFloat(data?.["arrays"]?.["clsx"]),
+  expect(Number.parseFloat(data?.arrays?.clutchd)).toBeGreaterThanOrEqual(
+    Number.parseFloat(data?.arrays?.clsx),
   );
 });
 
@@ -49,8 +60,8 @@ test("nested_arrays", () => {
   }
 
   expect(
-    parseFloat(data?.["nested_arrays"]?.["clutchd"]),
-  ).toBeGreaterThanOrEqual(parseFloat(data?.["nested_arrays"]?.["clsx"]));
+    Number.parseFloat(data?.nested_arrays?.clutchd),
+  ).toBeGreaterThanOrEqual(Number.parseFloat(data?.nested_arrays?.clsx));
 });
 
 test("nested_objects", () => {
@@ -60,8 +71,8 @@ test("nested_objects", () => {
   }
 
   expect(
-    parseFloat(data?.["nested_objects"]?.["clutchd"]),
-  ).toBeGreaterThanOrEqual(parseFloat(data?.["nested_objects"]?.["clsx"]));
+    Number.parseFloat(data?.nested_objects?.clutchd),
+  ).toBeGreaterThanOrEqual(Number.parseFloat(data?.nested_objects?.clsx));
 });
 
 test("mixed", () => {
@@ -70,8 +81,8 @@ test("mixed", () => {
     return;
   }
 
-  expect(parseFloat(data?.["mixed"]?.["clutchd"])).toBeGreaterThanOrEqual(
-    parseFloat(data?.["mixed"]?.["clsx"]),
+  expect(Number.parseFloat(data?.mixed?.clutchd)).toBeGreaterThanOrEqual(
+    Number.parseFloat(data?.mixed?.clsx),
   );
 });
 
@@ -81,7 +92,7 @@ test("mixed_bad", () => {
     return;
   }
 
-  expect(parseFloat(data?.["mixed_bad"]?.["clutchd"])).toBeGreaterThanOrEqual(
-    parseFloat(data?.["mixed_bad"]?.["clsx"]),
+  expect(Number.parseFloat(data?.mixed_bad?.clutchd)).toBeGreaterThanOrEqual(
+    Number.parseFloat(data?.mixed_bad?.clsx),
   );
 });

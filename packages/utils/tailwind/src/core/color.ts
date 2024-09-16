@@ -1,4 +1,4 @@
-import { ColorAccent, Opacity } from ".";
+import type { ColorAccent, Opacity } from ".";
 
 /**
  * Colors

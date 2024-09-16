@@ -2,11 +2,7 @@
   "name": "@clutchd/component",
   "version": "6.0.0",
   "description": "A primitive component intended to be used as a foundation for all other ui components.",
-  "keywords": [
-    "clutchd",
-    "component",
-    "ui"
-  ],
+  "keywords": ["clutchd", "component", "ui"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -24,7 +20,7 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm --dts --minify",
     "dev": "tsup src/index.tsx --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest"
   },
@@ -38,6 +34,7 @@
     "@clutchd/twx": "workspace:*",
     "@radix-ui/react-primitive": "2.0.0",
     "@testing-library/dom": "10.3.1",
+    "@testing-library/jest-dom": "6.4.8",
     "@testing-library/react": "16.0.0",
     "@types/jest": "29.5.12",
     "@types/node": "22.1.0",

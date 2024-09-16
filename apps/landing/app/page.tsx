@@ -1,6 +1,6 @@
 import { Footer, Header, Main } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
 

@@ -1,4 +1,4 @@
-import { SpacingVariants, WithVariants } from "../core";
+import type { SpacingVariants, WithVariants } from "../core";
 
 /**
  * The `gap` tailwindcss classes, a subset of the `Gap` classes.

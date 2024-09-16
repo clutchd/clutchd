@@ -2,11 +2,7 @@
   "name": "@clutchd/compose-refs",
   "version": "2.0.2",
   "description": "A small utility intended to compose multiple refs into a single ref.",
-  "keywords": [
-    "clutchd",
-    "compose-refs",
-    "refs"
-  ],
+  "keywords": ["clutchd", "compose-refs", "refs"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -24,7 +20,7 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --minify",
     "dev": "tsup src/index.ts --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest"
   },

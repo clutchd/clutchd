@@ -1,6 +1,11 @@
-import { IImage, IImageHtmlProps, IImageProps, Image } from "@clutchd/image";
+import {
+  type IImage,
+  type IImageHtmlProps,
+  type IImageProps,
+  Image,
+} from "@clutchd/image";
 import * as React from "react";
-import { AvatarContext, IWithAvatarContext } from "./_context";
+import { AvatarContext, type IWithAvatarContext } from "./_context";
 
 /**
  * Type to define `AvatarImage` element.

@@ -1,4 +1,4 @@
-import { IPossibleEventHandler, mergeEventHandlers } from ".";
+import { type IPossibleEventHandler, mergeEventHandlers } from ".";
 
 /**
  * Composes multiple preventable event handlers into a single handler.
@@ -11,7 +11,7 @@ function composePreventableEventHandlers<E>(
   ...handlers: IPossibleEventHandler<E>[]
 ) {
   // return the composed event handler
-  return function (event: E) {
+  return (event: E) => {
     // original event handler will always execute
     original?.(event);
 

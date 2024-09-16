@@ -44,7 +44,7 @@ test("render with children", () => {
   );
 
   const link = container.querySelector("a");
-  const div = link.querySelector("div");
+  const div = link?.querySelector("div");
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(link).toBeInTheDocument();
@@ -69,7 +69,7 @@ test("render with onClick", () => {
   );
 
   const link = container.querySelector("a");
-  const div = link.querySelector("div");
+  const div = link?.querySelector("div");
 
   link?.click();
 
