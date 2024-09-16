@@ -8,16 +8,10 @@ import * as React from "react";
 type ICard = React.ElementRef<typeof Component.div>;
 
 /**
- * Type to define `Card` props
- */
-interface ICardProps {}
-
-/**
  * Type to define `Card` props with html attributes
  */
 interface ICardHtmlProps
-  extends ICardProps,
-    React.ComponentPropsWithoutRef<typeof Component.div> {}
+  extends React.ComponentPropsWithoutRef<typeof Component.div> {}
 
 /**
  * `Card` - A building block component used to render contained elements such as forms
@@ -45,4 +39,4 @@ const Card = React.forwardRef<ICard, ICardHtmlProps>(
 Card.displayName = "Card";
 
 export { Card };
-export type { ICard, ICardHtmlProps, ICardProps };
+export type { ICard, ICardHtmlProps };
