@@ -3,13 +3,13 @@
  * @param value - Value we are checking for emptiness.
  * @returns True if empty, otherwise false.
  */
-export function isEmpty(value?: any) {
-  let type = typeof value;
+export function isEmpty(value?: unknown) {
+  const type = typeof value;
   // if number, function, or valid date, we are not empty
   if (
     type === "function" ||
     type === "number" ||
-    (value instanceof Date && !isNaN(value.valueOf()))
+    (value instanceof Date && !Number.isNaN(value.valueOf()))
   ) {
     return false;
   }

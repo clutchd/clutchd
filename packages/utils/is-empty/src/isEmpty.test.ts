@@ -42,7 +42,7 @@ test("invalid date is empty", async () => {
 
 test("function is not empty", async () => {
   expect(
-    isEmpty((e: any) => {
+    isEmpty((e: unknown) => {
       console.log(e);
     }),
   ).toEqual(false);
