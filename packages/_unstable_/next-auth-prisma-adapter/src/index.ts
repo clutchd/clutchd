@@ -1,1 +1,0 @@
-export { PrismaAdapter } from "./prismaAdapter";
