@@ -1,5 +1,5 @@
 export { Button } from "./button";
-export type { IButton, IButtonHtmlProps, IButtonProps } from "./button";
+export type { IButton, IButtonHtmlProps } from "./button";
 export {
   danger,
   disabled,
