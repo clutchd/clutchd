@@ -1,5 +1,5 @@
 function validateName(name?: string) {
-  if (name?.toUpperCase() === "isindex") {
+  if (name?.toUpperCase() === "ISINDEX") {
     console.warn(
       "The name attribute is not allowed to have a value of `isindex`.",
     );
