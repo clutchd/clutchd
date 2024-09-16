@@ -8,16 +8,10 @@ import * as React from "react";
 type ILabel = React.ElementRef<typeof Component.label>;
 
 /**
- * Type to define `Label` props.
- */
-interface ILabelProps {}
-
-/**
  * Type to define `Label` props with html attributes.
  */
 interface ILabelHtmlProps
-  extends ILabelProps,
-    React.ComponentPropsWithoutRef<typeof Component.label> {}
+  extends React.ComponentPropsWithoutRef<typeof Component.label> {}
 
 /**
  * `Label` - A label component used to render accessible labels.
@@ -55,4 +49,4 @@ const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
 Label.displayName = "Label";
 
 export { Label };
-export type { ILabel, ILabelHtmlProps, ILabelProps };
+export type { ILabel, ILabelHtmlProps };

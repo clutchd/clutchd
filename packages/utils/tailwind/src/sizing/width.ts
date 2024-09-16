@@ -1,5 +1,5 @@
-import { Arbitrary, Twelfths, WithVariants } from "../core";
-import { CommonSizeVariants } from "./common";
+import type { Arbitrary, Twelfths, WithVariants } from "../core";
+import type { CommonSizeVariants } from "./common";
 
 type WidthVariants = CommonSizeVariants | "screen" | Twelfths | Arbitrary;
 

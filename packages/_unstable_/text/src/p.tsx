@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,18 +7,13 @@ import * as React from "react";
 type IP = React.ElementRef<typeof Component.p>;
 
 /**
- * Type to define `P` props
- */
-interface IPProps {}
-
-/**
  * `P` - A standard text component used to render a p tag
  * @param props `IPProps` used to render this `P`
  * @returns `P` component
  */
 const P = React.forwardRef<
   IP,
-  IPProps & React.ComponentPropsWithoutRef<typeof Component.p>
+  React.ComponentPropsWithoutRef<typeof Component.p>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (
@@ -37,4 +32,4 @@ const P = React.forwardRef<
 P.displayName = "TextP";
 
 export { P };
-export type { IP, IPProps };
+export type { IP };

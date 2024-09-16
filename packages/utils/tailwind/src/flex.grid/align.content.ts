@@ -1,5 +1,5 @@
-import { WithVariants } from "../core";
-import { ContentVariants } from "./common";
+import type { WithVariants } from "../core";
+import type { ContentVariants } from "./common";
 
 type AlignContentVariants = ContentVariants | "baseline";
 

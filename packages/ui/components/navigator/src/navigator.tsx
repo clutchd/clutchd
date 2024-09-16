@@ -1,8 +1,8 @@
-import { ILinkHtmlProps, ILinkProps } from "@clutchd/link";
+import type { ILinkHtmlProps, ILinkProps } from "@clutchd/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
 import {
-  INavigatorRoot,
+  type INavigatorRoot,
   NavigatorRoot,
   isActiveRoute as internalIsActiveRoute,
 } from ".";

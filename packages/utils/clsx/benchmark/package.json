@@ -2,7 +2,7 @@
   "name": "@clutchd/clsx-benchmark",
   "private": true,
   "scripts": {
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx"
+    "lint": "biome check . --write"
   },
   "devDependencies": {
     "@clutchd/clsx": "workspace:*",

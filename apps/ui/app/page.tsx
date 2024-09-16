@@ -1,7 +1,7 @@
 import { Copyright } from "@clutchd/copyright";
 import { Footer } from "@clutchd/layout";
 import { Link } from "@clutchd/link";
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import {
   AvatarShowcase,
   BlockShowcase,

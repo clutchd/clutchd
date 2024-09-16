@@ -1,5 +1,5 @@
-import { Button, IButton } from "@clutchd/button";
-import { Component } from "@clutchd/component";
+import { Button, type IButton } from "@clutchd/button";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -8,16 +8,10 @@ import * as React from "react";
 type ISubmit = IButton;
 
 /**
- * Type to define `Submit` props
- */
-interface ISubmitProps {}
-
-/**
  * Type to define `Submit` props with html attributes
  */
 interface ISubmitHtmlProps
-  extends ISubmitProps,
-    React.ComponentPropsWithoutRef<typeof Component.button> {}
+  extends React.ComponentPropsWithoutRef<typeof Component.button> {}
 
 /**
  * `Submit` - A button component used to submit forms
@@ -33,4 +27,4 @@ const Submit = React.forwardRef<ISubmit, ISubmitHtmlProps>(
 Submit.displayName = "Submit";
 
 export { Submit };
-export type { ISubmit, ISubmitHtmlProps, ISubmitProps };
+export type { ISubmit, ISubmitHtmlProps };

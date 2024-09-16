@@ -14,19 +14,19 @@ export async function getRemoteSize(
 } | null> {
   // if "@" is NOT in pkg (after first char), we are NOT targeting a version
   // in this case, we should force the latest available version
-  let forceLatest = !pkg.substring(1, pkg.length - 1).includes("@");
+  const forceLatest = !pkg.substring(1, pkg.length - 1).includes("@");
   if (provider === "bundlejs") {
     const data = await fetch(
       `https://edge.bundlejs.com/?q=${pkg}${forceLatest ? "@latest" : ""}`,
     );
     try {
-      const { size } = await data?.json();
+      const { size } = await data.json();
       return {
         rawUncompressedSize: size?.rawUncompressedSize,
         rawCompressedSize: size?.rawCompressedSize,
       };
     } catch (e) {
-      console.error("Unable to fetch from bundlejs: " + e);
+      console.error(`Unable to fetch from bundlejs: ${e}`);
       return null;
     }
   } else {
@@ -40,7 +40,7 @@ export async function getRemoteSize(
         rawCompressedSize: gzip,
       };
     } catch (e) {
-      console.error("Unable to fetch from bundlephobia: " + e);
+      console.error(`Unable to fetch from bundlephobia: ${e}`);
       return null;
     }
   }

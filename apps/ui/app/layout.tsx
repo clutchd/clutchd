@@ -1,7 +1,7 @@
 import { Page } from "@clutchd/layout";
 import { Manrope } from "next/font/google";
 import { cookies } from "next/headers";
-import React from "react";
+import type React from "react";
 import { DarkModeToggle } from "../components";
 import "./globals.css";
 

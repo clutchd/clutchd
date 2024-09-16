@@ -73,7 +73,7 @@ test("handles all types of truthy and falsy property values as expected", () => 
       // falsy:
       null: null,
       emptyString: "",
-      noNumber: NaN,
+      noNumber: Number.NaN,
       zero: 0,
       negativeZero: -0,
       false: false,

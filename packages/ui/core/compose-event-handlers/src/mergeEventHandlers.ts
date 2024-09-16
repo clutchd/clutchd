@@ -11,10 +11,11 @@ type IPossibleEventHandler<E> = ((event: E) => void) | undefined;
 const mergeEventHandlers = <E>(
   event: E,
   ...handlers: IPossibleEventHandler<E>[]
-) =>
-  handlers.forEach((handler) => {
+) => {
+  for (const handler of handlers) {
     if (handler) handler(event);
-  });
+  }
+};
 
 export { mergeEventHandlers };
 export type { IPossibleEventHandler };

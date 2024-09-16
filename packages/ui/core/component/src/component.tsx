@@ -5,11 +5,10 @@ import * as React from "react";
 /**
  * Import `@clutchd/twx` if it exists, otherwise no processing classNames.
  */
+let tx: (args: unknown) => string;
 try {
-  var tx = require("@clutchd/twx").twx;
-} catch (e) {
-  tx = false;
-}
+  tx = require("@clutchd/twx").twx;
+} catch (e) {}
 
 // TODO: make this list leaner?
 /**
@@ -51,7 +50,7 @@ const NODES = [
  */
 type IComponentProps = {
   asChild?: boolean;
-  twx?: Function;
+  twx?: (args: unknown) => string;
 };
 
 /**
@@ -78,17 +77,18 @@ const Component = NODES.reduce((tag, node) => {
   const Node = React.forwardRef(
     (
       { asChild, twx = tx, ...props }: ComponentPropsWithRef<typeof node>,
-      forwardedRef: any,
+      forwardedRef: React.Ref<unknown>,
     ) => {
-      if (tx && props?.className) props.className = twx(props.className);
-      const Comp: any = asChild ? Slot : node;
+      if (twx && props?.className) props.className = twx(props.className);
+      const Comp: React.ElementType = asChild ? Slot : node;
       return <Comp ref={forwardedRef} {...props} />;
     },
   );
 
   Node.displayName = `Component.${node}`;
 
-  return { ...tag, [node]: Node };
+  Object.assign(tag, { [node]: Node });
+  return tag;
 }, {} as Components);
 
 export { Component };

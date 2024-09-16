@@ -1,4 +1,9 @@
-import { Arbitrary, Fractions, SpacingVariants, WithVariants } from "../core";
+import type {
+  Arbitrary,
+  Fractions,
+  SpacingVariants,
+  WithVariants,
+} from "../core";
 
 type FlexBasisVariants =
   | SpacingVariants

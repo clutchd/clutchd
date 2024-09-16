@@ -1,5 +1,5 @@
-import { Component } from "@clutchd/component";
-import { Flex, IFlexProps } from "@clutchd/flex";
+import type { Component } from "@clutchd/component";
+import { Flex, type IFlexProps } from "@clutchd/flex";
 import * as React from "react";
 
 /**

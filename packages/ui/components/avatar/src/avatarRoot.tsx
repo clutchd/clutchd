@@ -1,5 +1,5 @@
 import { Component } from "@clutchd/component";
-import { IImageLoadingStates } from "@clutchd/image";
+import type { IImageLoadingStates } from "@clutchd/image";
 import * as React from "react";
 import { AvatarContext, type IWithAvatarContext } from "./_context";
 

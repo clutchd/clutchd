@@ -37,8 +37,8 @@ test("non-strings", () => {
   // number
   expect(clsx(1)).toEqual("");
   expect(clsx(1, 2)).toEqual("");
-  expect(clsx(Infinity)).toEqual("");
-  expect(clsx(NaN)).toEqual("");
+  expect(clsx(Number.POSITIVE_INFINITY)).toEqual("");
+  expect(clsx(Number.NaN)).toEqual("");
   expect(clsx(0)).toEqual("");
 
   // objects

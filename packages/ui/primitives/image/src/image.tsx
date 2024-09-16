@@ -1,7 +1,12 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
 import * as React from "react";
-import { IImageLoadingStates, IImageRoot, IImageRootProps, ImageRoot } from ".";
+import {
+  type IImageLoadingStates,
+  type IImageRoot,
+  type IImageRootProps,
+  ImageRoot,
+} from ".";
 
 /**
  * Type to define `Image` component.
@@ -42,7 +47,7 @@ const Image = React.forwardRef<IImage, IImageHtmlProps>(
 
     const updateState = (state: IImageLoadingStates) => {
       setLoading(state);
-      handleStateChange && handleStateChange(state);
+      handleStateChange?.(state);
     };
 
     return (

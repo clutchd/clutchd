@@ -1,4 +1,4 @@
-import { WithOptVariants } from "../core";
+import type { WithOptVariants } from "../core";
 
 type FlexShrinkVariants = "0";
 

@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/image",
   "version": "2.0.2",
-  "keywords": [
-    "clutchd",
-    "image",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "image", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -24,7 +19,7 @@
   "scripts": {
     "build": "tsup src/index.tsx --format esm --dts --minify",
     "dev": "tsup src/index.tsx --format esm --dts --watch",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx",
+    "lint": "biome check . --write",
     "prepublish": "pnpm run build",
     "test": "jest"
   },

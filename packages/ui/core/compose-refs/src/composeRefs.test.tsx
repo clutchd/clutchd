@@ -11,7 +11,7 @@ test("composeRefs", () => {
   const composed = composeRefs(ref1, ref2);
 
   const Component = () => {
-    return <div ref={composed}></div>;
+    return <div ref={composed} />;
   };
 
   render(<Component />);
@@ -29,7 +29,7 @@ test("useComposedRefs", () => {
 
   const Component = () => {
     const composed = useComposedRefs(ref1, ref2);
-    return <div ref={composed}></div>;
+    return <div ref={composed} />;
   };
 
   render(<Component />);

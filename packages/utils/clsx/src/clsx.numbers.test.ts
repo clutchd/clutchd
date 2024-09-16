@@ -6,8 +6,8 @@ test("numbers", () => {
   expect(clsx(0.1)).toEqual("0.1");
   expect(clsx(0)).toEqual("");
 
-  expect(clsx(Infinity)).toEqual("Infinity");
-  expect(clsx(NaN)).toEqual("");
+  expect(clsx(Number.POSITIVE_INFINITY)).toEqual("Infinity");
+  expect(clsx(Number.NaN)).toEqual("");
 });
 
 test("numbers (variadic)", () => {

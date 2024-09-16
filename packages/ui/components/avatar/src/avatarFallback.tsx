@@ -1,6 +1,6 @@
 import { Component } from "@clutchd/component";
 import * as React from "react";
-import { AvatarContext, IWithAvatarContext } from "./_context";
+import { AvatarContext, type IWithAvatarContext } from "./_context";
 
 /**
  * Type to define `IAvatarFallback` element.

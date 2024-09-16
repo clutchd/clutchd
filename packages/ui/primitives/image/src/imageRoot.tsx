@@ -1,5 +1,5 @@
 import { Component } from "@clutchd/component";
-import { ImageProps, default as NextImage } from "next/image";
+import { type ImageProps, default as NextImage } from "next/image";
 import * as React from "react";
 
 /**

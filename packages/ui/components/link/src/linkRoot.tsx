@@ -1,6 +1,6 @@
+import type { UrlObject } from "node:url";
 import { Component } from "@clutchd/component";
-import NextLink, { LinkProps as NextLinkProps } from "next/link";
-import { UrlObject } from "node:url";
+import NextLink, { type LinkProps as NextLinkProps } from "next/link";
 import * as React from "react";
 
 /**

@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,18 +7,13 @@ import * as React from "react";
 type ILarge = React.ElementRef<typeof Component.p>;
 
 /**
- * Type to define `Large` props
- */
-interface ILargeProps {}
-
-/**
  * `Large` - A large text component intended for large copy
  * @param props `ILargeProps` used to render this `Large`
  * @returns `Large` component
  */
 const Large = React.forwardRef<
   ILarge,
-  ILargeProps & React.ComponentPropsWithoutRef<typeof Component.p>
+  React.ComponentPropsWithoutRef<typeof Component.p>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (
@@ -37,4 +32,4 @@ const Large = React.forwardRef<
 Large.displayName = "TextLarge";
 
 export { Large };
-export type { ILarge, ILargeProps };
+export type { ILarge };

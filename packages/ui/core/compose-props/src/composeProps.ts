@@ -5,7 +5,7 @@ import { composeEventHandlers } from "@clutchd/compose-event-handlers";
  * @param props Array of prop objects that will be composed.
  * @returns A single prop object composed from all provided props.
  */
-function composeProps(...props: Record<string, any>[]) {
+function composeProps(...props: Record<string, unknown>[]) {
   // create new props object for composed props
   let composed = { ...props?.[0] };
 
@@ -25,9 +25,9 @@ function composeProps(...props: Record<string, any>[]) {
  * @returns A single prop object composed from the original and new props.
  */
 function mergeProps(
-  originalProps: Record<string, any>,
-  newProps: Record<string, any> | undefined,
-): Record<string, any> {
+  originalProps: Record<string, unknown>,
+  newProps: Record<string, unknown> | undefined,
+): Record<string, unknown> {
   // iterate through all provided prop names
   for (const propName in newProps) {
     // if handlers are found, compose them
@@ -36,24 +36,24 @@ function mergeProps(
       typeof newProps[propName] === "function"
     ) {
       newProps[propName] = composeEventHandlers(
-        originalProps[propName],
-        newProps[propName],
+        originalProps[propName] as (...rest: unknown[]) => unknown,
+        newProps[propName] as (...rest: unknown[]) => unknown,
       );
     }
 
     // if a className prop, compose classes
     else if (propName === "className") {
       newProps[propName] = composeClassNames(
-        originalProps[propName],
-        newProps[propName],
+        originalProps[propName] as string,
+        newProps[propName] as string,
       );
     }
 
     // if a style prop, compose styles
     else if (propName === "style") {
       newProps[propName] = {
-        ...originalProps[propName],
-        ...newProps[propName],
+        ...(originalProps[propName] as Record<string, unknown>),
+        ...(newProps[propName] as Record<string, unknown>),
       };
     }
   }
@@ -65,7 +65,7 @@ function mergeProps(
  * @param classNames Array of classNames that will be composed.
  * @returns A single className composed from all provided classNames.
  */
-function composeClassNames(...classNames: any[]) {
+function composeClassNames(...classNames: unknown[]) {
   return classNames.filter(Boolean).join(" ");
 }
 

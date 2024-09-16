@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,18 +7,13 @@ import * as React from "react";
 type ISubtle = React.ElementRef<typeof Component.p>;
 
 /**
- * Type to define `Subtle` props
- */
-interface ISubtleProps {}
-
-/**
  * `Subtle` - A small text component intended for subtle copy
  * @param props `ISubtleProps` used to render this `Subtle`
  * @returns `Subtle` component
  */
 const Subtle = React.forwardRef<
   ISubtle,
-  ISubtleProps & React.ComponentPropsWithoutRef<typeof Component.p>
+  React.ComponentPropsWithoutRef<typeof Component.p>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (
@@ -37,4 +32,4 @@ const Subtle = React.forwardRef<
 Subtle.displayName = "TextSubtle";
 
 export { Subtle };
-export type { ISubtle, ISubtleProps };
+export type { ISubtle };
