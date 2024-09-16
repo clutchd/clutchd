@@ -1,7 +1,12 @@
 {
   "name": "@clutchd/text",
-  "version": "4.0.3",
-  "keywords": ["clutchd", "text", "tailwind", "next"],
+  "version": "4.1.0",
+  "keywords": [
+    "clutchd",
+    "text",
+    "tailwind",
+    "next"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

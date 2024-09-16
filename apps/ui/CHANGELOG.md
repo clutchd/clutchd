@@ -1,5 +1,31 @@
 # @clutchd/ui
 
+## 0.12.14
+
+### Patch Changes
+
+- Updated dependencies [2029b364]
+- Updated dependencies [87205878]
+- Updated dependencies [5a813d07]
+- Updated dependencies [41447ca2]
+- Updated dependencies [810ca3d3]
+- Updated dependencies [211dbef6]
+- Updated dependencies [082cd6bd]
+- Updated dependencies [e09e7dd9]
+  - @clutchd/button@3.1.0
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-props@3.0.3
+  - @clutchd/twx@4.0.2
+  - @clutchd/avatar@6.0.3
+  - @clutchd/link@3.0.3
+  - @clutchd/copyright@4.0.3
+  - @clutchd/divider@5.0.3
+  - @clutchd/label@4.0.6
+  - @clutchd/block@3.1.3
+  - @clutchd/flex@6.0.3
+  - @clutchd/grid@6.0.3
+  - @clutchd/layout@4.0.3
+
 ## 0.12.13
 
 ### Patch Changes

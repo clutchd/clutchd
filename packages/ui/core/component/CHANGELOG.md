@@ -1,5 +1,16 @@
 # @clutchd/component
 
+## 6.0.1
+
+### Patch Changes
+
+- 87205878: Update peer deps
+- e09e7dd9: Fix lint
+- Updated dependencies [41447ca2]
+- Updated dependencies [48488a13]
+  - @clutchd/twx@4.0.2
+  - @clutchd/slot@2.0.4
+
 ## 6.0.0
 
 ### Major Changes

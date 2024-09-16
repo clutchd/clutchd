@@ -1,7 +1,12 @@
 {
   "name": "@clutchd/block",
-  "version": "3.1.2",
-  "keywords": ["clutchd", "block", "react", "tailwind"],
+  "version": "3.1.3",
+  "keywords": [
+    "clutchd",
+    "block",
+    "react",
+    "tailwind"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

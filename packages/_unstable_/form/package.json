@@ -1,7 +1,13 @@
 {
   "name": "@clutchd/form",
-  "version": "0.3.5",
-  "keywords": ["clutchd", "form", "forms", "tailwind", "next"],
+  "version": "0.4.0",
+  "keywords": [
+    "clutchd",
+    "form",
+    "forms",
+    "tailwind",
+    "next"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

@@ -1,5 +1,11 @@
 # @clutchd/jest
 
+## 2.0.2
+
+### Patch Changes
+
+- c88b9a6d: Fix lint
+
 ## 2.0.1
 
 ### Patch Changes

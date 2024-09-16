@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.3
+
+### Patch Changes
+
+- 6cae206b: Fix lint
+
 ## 3.0.2
 
 ### Patch Changes

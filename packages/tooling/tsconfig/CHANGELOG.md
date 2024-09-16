@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.0.4
+
+### Patch Changes
+
+- 5ab0032c: Remove unneccesary peerDeps
+
 ## 2.0.3
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @clutchd/copyright
 
+## 4.0.3
+
+### Patch Changes
+
+- 082cd6bd: Fix lint
+- Updated dependencies [87205878]
+- Updated dependencies [e09e7dd9]
+  - @clutchd/component@6.0.1
+
 ## 4.0.2
 
 ### Patch Changes
