@@ -2,7 +2,7 @@
 
 "use strict";
 
-const { TextEncoder, TextDecoder } = require("util");
+const { TextEncoder, TextDecoder } = require("node:util");
 const {
   default: $JSDOMEnvironment,
   TestEnvironment,
