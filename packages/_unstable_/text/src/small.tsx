@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,18 +7,12 @@ import * as React from "react";
 type ISmall = React.ElementRef<typeof Component.small>;
 
 /**
- * Type to define `Small` props
- */
-interface ISmallProps {}
-
-/**
  * `Small` - A inline text component used to make the provided text small
  * @param props `ISmallProps` used to render this `Small`
  * @returns `Small` component
  */
 const Small = React.forwardRef<
-  ISmall,
-  ISmallProps & React.ComponentPropsWithoutRef<typeof Component.small>
+  ISmall & React.ComponentPropsWithoutRef<typeof Component.small>
 >((props, forwardedRef) => {
   return (
     <small
@@ -32,4 +26,4 @@ const Small = React.forwardRef<
 Small.displayName = "TextSmall";
 
 export { Small };
-export type { ISmall, ISmallProps };
+export type { ISmall };

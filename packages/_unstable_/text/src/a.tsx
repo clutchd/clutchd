@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import NextLink from "next/link";
 import * as React from "react";
 
@@ -8,18 +8,13 @@ import * as React from "react";
 type IA = React.ElementRef<typeof Component.a>;
 
 /**
- * Type to define `A` props
- */
-interface IAProps {}
-
-/**
  * `A` - A simple text link component, leverages next/link
  * @param props `IAProps` used to render this `A`
  * @returns `A` component
  */
 const A = React.forwardRef<
   IA,
-  IAProps & React.ComponentPropsWithoutRef<typeof Component.a>
+  React.ComponentPropsWithoutRef<typeof Component.a>
 >(({ className, href = "/", ...props }, forwardedRef) => {
   // TODO: Bring back theming
   const classNames = [
@@ -41,4 +36,4 @@ const A = React.forwardRef<
 A.displayName = "TextA";
 
 export { A };
-export type { IA, IAProps };
+export type { IA };

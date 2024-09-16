@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,18 +7,13 @@ import * as React from "react";
 type IH1 = React.ElementRef<typeof Component.h1>;
 
 /**
- * Type to define `H1` props
- */
-interface IH1Props {}
-
-/**
  * `H1` - A text component used to render an h1 tag
  * @param props `IH1Props` used to render this `H1`
  * @returns `H1` component
  */
 const H1 = React.forwardRef<
   IH1,
-  IH1Props & React.ComponentPropsWithoutRef<typeof Component.h1>
+  React.ComponentPropsWithoutRef<typeof Component.h1>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (
@@ -37,4 +32,4 @@ const H1 = React.forwardRef<
 H1.displayName = "TextH1";
 
 export { H1 };
-export type { IH1, IH1Props };
+export type { IH1 };

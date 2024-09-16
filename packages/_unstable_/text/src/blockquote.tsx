@@ -1,4 +1,4 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,18 +7,13 @@ import * as React from "react";
 type IBlockquote = React.ElementRef<typeof Component.blockquote>;
 
 /**
- * Type to define `Blockquote` props
- */
-interface IBlockquoteProps {}
-
-/**
  * `Blockquote` - A text component used to render a blockquote tag
  * @param props `IBlockquoteProps` used to render this `Blockquote`
  * @returns `Blockquote` component
  */
 const Blockquote = React.forwardRef<
   IBlockquote,
-  IBlockquoteProps & React.ComponentPropsWithoutRef<typeof Component.blockquote>
+  React.ComponentPropsWithoutRef<typeof Component.blockquote>
 >(({ className, ...props }, forwardedRef) => {
   // TODO: Bring back theming
   return (
@@ -37,4 +32,4 @@ const Blockquote = React.forwardRef<
 Blockquote.displayName = "TextBlockquote";
 
 export { Blockquote };
-export type { IBlockquote, IBlockquoteProps };
+export type { IBlockquote };
