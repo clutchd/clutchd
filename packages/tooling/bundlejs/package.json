@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@hazae41/foras": "2.0.8",
-    "node-fetch": "2.6.7"
+    "node-fetch": "3.3.2"
   },
   "devDependencies": {
     "@clutchd/jest": "workspace:*",
