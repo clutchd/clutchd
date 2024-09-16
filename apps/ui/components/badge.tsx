@@ -1,5 +1,5 @@
 import { Component } from "@clutchd/component";
-import * as React from "react";
+import type * as React from "react";
 
 export function Badge({
   className,

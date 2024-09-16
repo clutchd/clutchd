@@ -1,7 +1,7 @@
 import { Page } from "@clutchd/layout";
 import { Analytics } from "@vercel/analytics/react";
 import { Manrope } from "next/font/google";
-import React from "react";
+import type React from "react";
 import "./globals.css";
 
 const manrope = Manrope({

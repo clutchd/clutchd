@@ -1,5 +1,5 @@
 import { Divider } from "@clutchd/divider";
-import * as React from "react";
+import type * as React from "react";
 
 function Section({
   title,
