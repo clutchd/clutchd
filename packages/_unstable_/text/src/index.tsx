@@ -12,14 +12,14 @@ export type {
   IH4,
 } from "./headings";
 export { Large } from "./large";
-export type { ILarge, ILargeProps } from "./large";
+export type { ILarge } from "./large";
 export { Lead } from "./lead";
-export type { ILead, ILeadProps } from "./lead";
+export type { ILead } from "./lead";
 export { P } from "./p";
-export type { IP, IPProps } from "./p";
+export type { IP } from "./p";
 export { Small } from "./small";
-export type { ISmall, ISmallProps } from "./small";
+export type { ISmall } from "./small";
 export { Strong } from "./strong";
-export type { IStrong, IStrongProps } from "./strong";
+export type { IStrong } from "./strong";
 export { Subtle } from "./subtle";
-export type { ISubtle, ISubtleProps } from "./subtle";
+export type { ISubtle } from "./subtle";
