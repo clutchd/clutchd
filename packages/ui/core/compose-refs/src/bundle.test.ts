@@ -1,5 +1,5 @@
+import { readFileSync } from "node:fs";
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
-import { readFileSync } from "fs";
 
 test("ensures the bundle size is smaller than the last size", async () => {
   const og = await getRemoteSize("@clutchd/compose-refs");

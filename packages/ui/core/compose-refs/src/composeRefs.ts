@@ -1,4 +1,4 @@
-import { Ref, MutableRefObject, useCallback } from "react";
+import { type MutableRefObject, type Ref, useCallback } from "react";
 
 /**
  * Composes multiple ref objects into a single ref object.
@@ -6,12 +6,13 @@ import { Ref, MutableRefObject, useCallback } from "react";
  * @returns A single ref object composed from all provided refs.
  */
 function composeRefs<T>(...refs: (Ref<T> | undefined)[]) {
-  return (node: T) =>
-    refs.forEach((ref) => {
+  return (node: T) => {
+    for (const ref of refs) {
       if (!ref) return;
       if (typeof ref === "function") ref(node);
       else (ref as MutableRefObject<T>).current = node;
-    });
+    }
+  };
 }
 
 /**
