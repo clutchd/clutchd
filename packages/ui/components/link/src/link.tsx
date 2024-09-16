@@ -1,6 +1,6 @@
-import { Component } from "@clutchd/component";
+import type { Component } from "@clutchd/component";
 import * as React from "react";
-import { ILinkRoot, ILinkRootProps, LinkRoot } from ".";
+import { type ILinkRoot, type ILinkRootProps, LinkRoot } from ".";
 
 /**
  * Type to define `Link` element.

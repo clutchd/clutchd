@@ -1,4 +1,4 @@
-import { IImageLoadingStates } from "@clutchd/image";
+import type { IImageLoadingStates } from "@clutchd/image";
 import * as React from "react";
 
 /**

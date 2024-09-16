@@ -1,7 +1,7 @@
 import {
-  ILinkRoot,
-  ILinkRootHtmlProps,
-  ILinkRootProps,
+  type ILinkRoot,
+  type ILinkRootHtmlProps,
+  type ILinkRootProps,
   LinkRoot,
 } from "@clutchd/link";
 import * as React from "react";

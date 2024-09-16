@@ -1,4 +1,4 @@
-import { INavigatorProps } from ".";
+import type { INavigatorProps } from ".";
 
 /**
  * Helper function that checks if the target route is active.

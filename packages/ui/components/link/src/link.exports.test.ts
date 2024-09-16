@@ -1,6 +1,6 @@
-import { LinkRoot, Link } from ".";
+import { readFileSync } from "node:fs";
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
-import { readFileSync } from "fs";
+import { Link, LinkRoot } from ".";
 
 test("exports", () => {
   expect(typeof LinkRoot).toEqual("object");
