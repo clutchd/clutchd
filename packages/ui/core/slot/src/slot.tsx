@@ -22,19 +22,19 @@ const Slot = React.forwardRef<ISlot, ISlotProps>(
     // if valid children were provided, clone the children
     if (React.isValidElement(children)) {
       const childrenRef = getElementRef(children);
-      return React.cloneElement<any>(children, {
+      return React.cloneElement(children, {
         ...composeProps(props, { ...children.props }),
         ref: forwardedRef
           ? composeRefs(forwardedRef, childrenRef)
           : childrenRef,
-      });
+      } as React.Attributes & { ref?: React.Ref<unknown> });
     }
 
     // if invalid children and props were provided, wrap in a div and warn
     if (Object.keys(props).length > 0) {
       return (
         <Slot>
-          <div {...props} ref={forwardedRef as any}>
+          <div {...props} ref={forwardedRef as React.Ref<HTMLDivElement>}>
             {children}
           </div>
         </Slot>
@@ -42,8 +42,10 @@ const Slot = React.forwardRef<ISlot, ISlotProps>(
     }
 
     // otherwise, attempt to render the invalid children
+
     return (
       <Slot>
+        {/** biome-ignore lint: Children is not neccesarily a valid react element  */}
         <>{children}</>
       </Slot>
     );
@@ -56,15 +58,13 @@ const Slot = React.forwardRef<ISlot, ISlotProps>(
 //
 // Access the ref using the method that doesn't yield a warning.
 function getElementRef(element: React.ReactElement) {
-  const v = parseInt(React.version.slice(0, 2), 10);
+  const v = Number.parseInt(React.version.slice(0, 2), 10);
   // if react version 19 or greater
   if (v >= 19) {
-    return (element as any).ref;
+    return (element as unknown as { ref: React.Ref<unknown> }).ref;
   }
   // otherwise access the old way
-  else {
-    return element.props.ref;
-  }
+  return element.props.ref;
 }
 
 Slot.displayName = "Slot";
