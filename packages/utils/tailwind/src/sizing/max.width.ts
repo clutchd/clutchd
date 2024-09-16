@@ -1,5 +1,5 @@
-import { Arbitrary, ScreenVariants, WithVariants } from "../core";
-import { ContentSizeVariants } from "./common";
+import type { Arbitrary, ScreenVariants, WithVariants } from "../core";
+import type { ContentSizeVariants } from "./common";
 
 type MaxWidthVariants =
   | "0"

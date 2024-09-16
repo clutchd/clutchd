@@ -1,5 +1,5 @@
-import { WithVariants } from "../core";
-import { StartEndCenter } from "./common";
+import type { WithVariants } from "../core";
+import type { StartEndCenter } from "./common";
 
 type AlignItemsVariants = StartEndCenter | "baseline" | "stretch";
 

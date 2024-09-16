@@ -1,5 +1,5 @@
-import { Arbitrary, SpacingVariants, WithVariants } from "../core";
-import { ContentSizeVariants } from "./common";
+import type { Arbitrary, SpacingVariants, WithVariants } from "../core";
+import type { ContentSizeVariants } from "./common";
 
 type MinWidthVariants =
   | SpacingVariants

@@ -1,4 +1,4 @@
-import { ExtractKeyWithOptVariants } from "../core";
+import type { ExtractKeyWithOptVariants } from "../core";
 
 type BorderRadiusKeys =
   | "rounded"

@@ -1,5 +1,5 @@
-import { Arbitrary, SpacingVariants, WithVariants } from "../core";
-import { ContentSizeVariants, DynamicHeightVariants } from "./common";
+import type { Arbitrary, SpacingVariants, WithVariants } from "../core";
+import type { ContentSizeVariants, DynamicHeightVariants } from "./common";
 
 type MaxHeightVariants =
   | SpacingVariants

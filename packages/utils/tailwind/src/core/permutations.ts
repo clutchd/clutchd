@@ -5,7 +5,7 @@ export type Permutations<
   Prefix extends string,
   Separator extends string = " ",
   Suffix extends string = Prefix,
-> = Prefix extends any
+> = Prefix extends unknown
   ?
       | Prefix
       | `${Prefix}${Separator}${Permutations<

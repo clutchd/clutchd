@@ -1,4 +1,4 @@
-import { OneThroughTwelve, WithVariants } from "../core";
+import type { OneThroughTwelve, WithVariants } from "../core";
 
 type GridTemplateVariants = OneThroughTwelve | "none" | "subgrid";
 

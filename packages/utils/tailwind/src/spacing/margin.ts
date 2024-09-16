@@ -1,4 +1,4 @@
-import { ExtractKeyWithVariants, SpacingVariants } from "../core";
+import type { ExtractKeyWithVariants, SpacingVariants } from "../core";
 
 type MarginKeys = "m" | "mx" | "my" | "mt" | "mr" | "mb" | "ml" | "ms" | "me";
 
