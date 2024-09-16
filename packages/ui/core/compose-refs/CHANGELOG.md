@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 2.0.3
+
+### Patch Changes
+
+- f49ddb0b: Fix lint
+
 ## 2.0.2
 
 ### Patch Changes

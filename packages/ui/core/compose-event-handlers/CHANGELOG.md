@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.2
+
+### Patch Changes
+
+- 5a813d07: Fix lint
+
 ## 5.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.1
+
+### Patch Changes
+
+- 66e8a806: Fix lint
+
 ## 0.4.0
 
 ### Minor Changes

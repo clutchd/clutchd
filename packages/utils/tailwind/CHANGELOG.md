@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.1
+
+### Patch Changes
+
+- 7698b3c3: Fix lint
+
 ## 5.0.0
 
 ### Major Changes

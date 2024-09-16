@@ -1,5 +1,18 @@
 # @clutchd/text
 
+## 4.1.0
+
+### Minor Changes
+
+- 05442707: Unstable remove unused prop objects
+
+### Patch Changes
+
+- 2029b364: Update peer deps
+- Updated dependencies [87205878]
+- Updated dependencies [e09e7dd9]
+  - @clutchd/component@6.0.1
+
 ## 4.0.3
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 3.0.3
+
+### Patch Changes
+
+- 5a813d07: Fix lint
+- Updated dependencies [5a813d07]
+  - @clutchd/compose-event-handlers@5.0.2
+
 ## 3.0.2
 
 ### Patch Changes

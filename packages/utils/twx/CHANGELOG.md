@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.2
+
+### Patch Changes
+
+- 41447ca2: Fix lint
+- Updated dependencies [e0ee4b97]
+  - @clutchd/clsx@2.2.3
+
 ## 4.0.1
 
 ### Patch Changes

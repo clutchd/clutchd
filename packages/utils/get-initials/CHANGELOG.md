@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.4
+
+### Patch Changes
+
+- ba4b292b: Fix lint
+
 ## 2.0.3
 
 ### Patch Changes

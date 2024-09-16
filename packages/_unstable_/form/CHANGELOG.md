@@ -1,5 +1,23 @@
 # @clutchd/form
 
+## 0.4.0
+
+### Minor Changes
+
+- 211dbef6: Unstable removes unused props
+
+### Patch Changes
+
+- 2029b364: Update peer deps
+- Updated dependencies [2029b364]
+- Updated dependencies [87205878]
+- Updated dependencies [5a813d07]
+- Updated dependencies [211dbef6]
+- Updated dependencies [e09e7dd9]
+  - @clutchd/button@3.1.0
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-props@3.0.3
+
 ## 0.3.5
 
 ### Patch Changes

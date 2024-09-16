@@ -1,7 +1,12 @@
 {
   "name": "@clutchd/jest",
-  "version": "2.0.1",
-  "keywords": ["clutchd", "config", "jest", "ts-jest"],
+  "version": "2.0.2",
+  "keywords": [
+    "clutchd",
+    "config",
+    "jest",
+    "ts-jest"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

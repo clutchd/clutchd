@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.3
+
+### Patch Changes
+
+- e0ee4b97: Fix lint
+
 ## 2.2.2
 
 ### Patch Changes

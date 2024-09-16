@@ -1,5 +1,15 @@
 # @clutchd/slot
 
+## 2.0.4
+
+### Patch Changes
+
+- 48488a13: Fix lint
+- Updated dependencies [5a813d07]
+- Updated dependencies [f49ddb0b]
+  - @clutchd/compose-props@3.0.3
+  - @clutchd/compose-refs@2.0.3
+
 ## 2.0.3
 
 ### Patch Changes
