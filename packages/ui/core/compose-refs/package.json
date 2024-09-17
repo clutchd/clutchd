@@ -28,7 +28,7 @@
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/jest": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@radix-ui/react-compose-refs": "1.0.1",
+    "@radix-ui/react-compose-refs": "1.1.0",
     "@testing-library/dom": "10.3.1",
     "@testing-library/react": "16.0.0",
     "@types/jest": "29.5.12",
