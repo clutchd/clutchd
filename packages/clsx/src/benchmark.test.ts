@@ -91,7 +91,7 @@ if (process.env.benchmark) {
       undefined,
       null,
       Number.NaN,
-      () => { },
+      () => {},
       { bax: true, bux: false, 123: true },
       ["baz", { bax: false, bux: true, abc: null }, {}],
     );
@@ -99,5 +99,5 @@ if (process.env.benchmark) {
     expect(mixed_bad.clutchdlite).toBeGreaterThanOrEqual(mixed_bad.clsxlite);
   });
 } else {
-  console.log("skipping benchmark tests")
+  console.log("skipping benchmark tests");
 }
