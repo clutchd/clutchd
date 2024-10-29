@@ -1,6 +1,6 @@
+import { expect, test } from "bun:test";
 import { readFileSync } from "node:fs";
 import { getLocalSize, getRemoteSize } from "@clutchd/bundlejs";
-import { test, expect } from "bun:test";
 
 test("ensures the bundle size is smaller than the last size", async () => {
   const og = await getRemoteSize("@clutchd/twx");

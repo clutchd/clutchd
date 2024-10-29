@@ -1,5 +1,5 @@
+import { expect, test } from "bun:test";
 import { getInitials } from ".";
-import { test, expect } from "bun:test";
 
 test("handles invalid inputs", async () => {
   expect(

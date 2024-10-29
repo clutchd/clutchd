@@ -1,5 +1,5 @@
+import { expect, test } from "bun:test";
 import { isEmpty } from ".";
-import { test, expect } from "bun:test";
 
 test("null is empty", async () => {
   expect(isEmpty(null)).toEqual(true);
