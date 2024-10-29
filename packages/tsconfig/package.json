@@ -1,0 +1,28 @@
+{
+  "name": "@clutchd/tsconfig",
+  "version": "2.0.3",
+  "description": "Collection of tsconfigs shared between clutchd packages.",
+  "keywords": ["clutchd", "tsconfig"],
+  "bugs": {
+    "url": "https://github.com/clutchd/clutchd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clutchd/clutchd",
+    "directory": "packages/tsconfig"
+  },
+  "author": "Clutchd, LLC",
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    "./base.json": "./base.json",
+    "./nextjs.json": "./nextjs.json"
+  },
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "@types/jest": "29.5.12",
+    "@types/node": "22.1.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0"
+  }
+}
