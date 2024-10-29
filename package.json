@@ -4,16 +4,7 @@
   "private": true,
   "type": "module",
   "workspaces": [
-    "apps/*",
-    "packages/_unstable_/*",
-    "packages/tooling/*",
-    "packages/ui/components/*",
-    "packages/ui/core/*",
-    "packages/ui/layout/*",
-    "packages/ui/primitives/*",
-    "packages/ui/typograpy/*",
-    "packages/utils/*",
-    "**/benchmark"
+
   ],
   "scripts": {
     "build": "turbo run build",
