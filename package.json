@@ -3,10 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "workspaces": [
-    "packages/**"
-  ],
+  "workspaces": ["packages/**"],
   "scripts": {
+    "benchmark": "turbo run benchmark",
     "build": "turbo run build",
     "changeset": "changeset",
     "dev": "turbo run dev --parallel",
