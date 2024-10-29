@@ -21,7 +21,7 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"]
-    },
+    }
   },
   "include": ["/**/*.ts", "/**/*.tsx", "/**/*.cjs", "/**/*.d.ts", "/**/*.js"],
   "exclude": ["/**/build", "/**/dist", "/**/node_modules"]

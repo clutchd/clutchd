@@ -1,3 +1,4 @@
+import { expect, test } from "bun:test";
 import * as mod from "./lite";
 
 const clsx = mod.default;

@@ -1,3 +1,4 @@
+import { expect, test } from "bun:test";
 import { Suite, type Target } from "benchmark";
 import clsx from "clsx";
 import clsxlite from "clsx/lite";

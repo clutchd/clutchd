@@ -1,3 +1,4 @@
+import { expect, test } from "bun:test";
 import { clsx } from ".";
 
 test("keeps object keys with truthy values", () => {
