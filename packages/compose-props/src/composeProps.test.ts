@@ -1,4 +1,4 @@
-import { expect, test, spyOn, mock } from "bun:test";
+import { expect, mock, spyOn, test } from "bun:test";
 import { composeProps } from ".";
 
 test("compose no props", async () => {
