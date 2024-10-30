@@ -20,7 +20,7 @@ test("compose 1 valid handlers", async () => {
   handler(getEvent());
   expect(logSpy).toHaveBeenCalledWith("first");
   expect(logSpy).toHaveBeenCalledTimes(1);
-  logSpy.mockReset()
+  logSpy.mockReset();
 });
 
 test("compose 2 valid handlers", async () => {
