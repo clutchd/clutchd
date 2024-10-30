@@ -5,5 +5,5 @@ A next/link powered component with additional features and default styling.
 ## Installation
 
 ```sh
-npm i @clutchd/link
+bun i @clutchd/link
 ```

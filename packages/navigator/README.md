@@ -5,5 +5,5 @@ A @clutchd/link powered component with additional features for navigation.
 ## Installation
 
 ```sh
-npm i @clutchd/navigator
+bun i @clutchd/navigator
 ```
