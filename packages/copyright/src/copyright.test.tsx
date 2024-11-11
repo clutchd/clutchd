@@ -4,7 +4,7 @@ import * as React from "react";
 import { Copyright, getCopyright } from ".";
 
 test("render copyright", () => {
-  const { getByText, debug } = render(<Copyright />);
+  const { getByText } = render(<Copyright />);
   expect(getByText(`${getCopyright()}`)).toBeInTheDocument();
 });
 
