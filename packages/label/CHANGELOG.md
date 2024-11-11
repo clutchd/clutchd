@@ -1,5 +1,16 @@
 # @clutchd/label
 
+## 4.0.6
+
+### Patch Changes
+
+- 082cd6b: Fix lint
+- Updated dependencies [8720587]
+- Updated dependencies [5a813d0]
+- Updated dependencies [e09e7dd]
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-event-handlers@5.0.2
+
 ## 4.0.5
 
 ### Patch Changes

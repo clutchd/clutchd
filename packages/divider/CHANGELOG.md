@@ -1,5 +1,14 @@
 # @clutchd/divider
 
+## 5.0.3
+
+### Patch Changes
+
+- 082cd6b: Fix lint
+- Updated dependencies [8720587]
+- Updated dependencies [e09e7dd]
+  - @clutchd/component@6.0.1
+
 ## 5.0.2
 
 ### Patch Changes

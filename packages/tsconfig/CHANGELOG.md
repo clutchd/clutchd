@@ -1,5 +1,15 @@
 # @clutchd/tsconfig
 
+## 2.1.0
+
+### Minor Changes
+
+- 41acfdb: Update tsconfig to use ESNEXT
+
+### Patch Changes
+
+- 5ab0032: Remove unneccesary peerDeps
+
 ## 2.0.3
 
 ### Patch Changes
