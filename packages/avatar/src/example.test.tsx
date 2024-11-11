@@ -1,4 +1,4 @@
-import { test, expect, spyOn } from "bun:test";
+import { expect, spyOn, test } from "bun:test";
 
 // TODO: Add tests
 test("example test", () => {

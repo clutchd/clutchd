@@ -1,4 +1,4 @@
-import { expect, test, spyOn } from "bun:test";
+import { expect, spyOn, test } from "bun:test";
 import { render } from "@testing-library/react";
 import * as React from "react";
 import { Link } from ".";

@@ -115,7 +115,11 @@ test("render `input` node", () => {
 });
 
 test("render `label` node", () => {
-  const { container } = render(<Component.label />);
+  const { container } = render(
+    <Component.label htmlFor="test">
+      <input id="test" />
+    </Component.label>,
+  );
   const node = container.querySelector("label");
   expect(container.hasChildNodes()).toEqual(true);
   expect(node).toBeInTheDocument();

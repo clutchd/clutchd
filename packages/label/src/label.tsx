@@ -34,6 +34,7 @@ const Label = React.forwardRef<ILabel, ILabelHtmlProps>(
     };
 
     return (
+      // biome-ignore lint/a11y/noLabelWithoutControl: up to the user to have input associated
       <Component.label
         onMouseDown={composePreventableEventHandlers(
           onMouseDown,
