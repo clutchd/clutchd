@@ -5,5 +5,5 @@ Combining the powers of [@clutchd/clsx](https://github.com/clutchd/clutchd/tree/
 ## Installation
 
 ```sh
-pnpm i @clutchd/twx
+bun i @clutchd/twx
 ```
