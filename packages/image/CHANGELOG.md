@@ -1,5 +1,16 @@
 # @clutchd/image
 
+## 2.0.3
+
+### Patch Changes
+
+- 082cd6b: Fix lint
+- Updated dependencies [8720587]
+- Updated dependencies [5a813d0]
+- Updated dependencies [e09e7dd]
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-event-handlers@5.0.2
+
 ## 2.0.2
 
 ### Patch Changes

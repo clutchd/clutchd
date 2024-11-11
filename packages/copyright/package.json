@@ -1,7 +1,10 @@
 {
   "name": "@clutchd/copyright",
-  "version": "4.0.2",
-  "keywords": ["clutchd", "copyright"],
+  "version": "4.1.0",
+  "keywords": [
+    "clutchd",
+    "copyright"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

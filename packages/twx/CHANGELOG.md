@@ -1,5 +1,14 @@
 # @clutchd/twx
 
+## 4.0.2
+
+### Patch Changes
+
+- 585e225: Utlilize clsx/lite rather than clsx
+- 41447ca: Fix lint
+- Updated dependencies [e0ee4b9]
+  - @clutchd/clsx@2.2.3
+
 ## 4.0.1
 
 ### Patch Changes

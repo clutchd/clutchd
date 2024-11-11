@@ -1,5 +1,15 @@
 # @clutchd/copyright
 
+## 4.1.0
+
+### Minor Changes
+
+- 0cbfe93: Convert from component to a fragment
+
+### Patch Changes
+
+- 082cd6b: Fix lint
+
 ## 4.0.2
 
 ### Patch Changes

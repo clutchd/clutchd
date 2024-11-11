@@ -1,5 +1,18 @@
 # @clutchd/navigator
 
+## 2.0.3
+
+### Patch Changes
+
+- 810ca3d: Fix lint
+- Updated dependencies [8720587]
+- Updated dependencies [5a813d0]
+- Updated dependencies [810ca3d]
+- Updated dependencies [e09e7dd]
+  - @clutchd/component@6.0.1
+  - @clutchd/compose-props@3.0.3
+  - @clutchd/link@3.0.3
+
 ## 2.0.2
 
 ### Patch Changes
