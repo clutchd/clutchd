@@ -5,5 +5,5 @@ A fundamental layout building block.
 ## Installation
 
 ```sh
-npm i @clutchd/block
+bun i @clutchd/block
 ```

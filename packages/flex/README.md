@@ -5,5 +5,5 @@ A flex container that powers various layouts.
 ## Installation
 
 ```sh
-npm i @clutchd/flex
+bun i @clutchd/flex
 ```

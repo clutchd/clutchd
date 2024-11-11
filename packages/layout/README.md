@@ -5,5 +5,5 @@ A group of layout components for quickly build a web page's foundation.
 ## Installation
 
 ```sh
-npm i @clutchd/layout
+bun i @clutchd/layout
 ```
