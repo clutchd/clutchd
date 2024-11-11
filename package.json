@@ -3,33 +3,28 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "workspaces": ["packages/**"],
   "scripts": {
-    "benchmark": "turbo benchmark",
-    "build": "turbo build",
+    "benchmark": "turbo run benchmark",
+    "build": "turbo run build",
     "changeset": "changeset",
-    "clean": "find . -type d \\( -name '.next'  -o -name '.turbo' -o -name 'coverage' -o -name 'dist' -o -name 'node_modules' \\) -prune -print -exec rm -rf '{}' \\;",
-    "dev": "turbo dev --parallel",
-    "format": "biome format --write .",
-    "preinstall": "npx only-allow pnpm",
-    "postinstall": "manypkg check",
-    "lint": "turbo lint",
-    "release": "turbo build && changeset publish",
-    "test": "pnpm format && turbo test",
-    "typesync": "npx typesync",
-    "version-packages": "changeset version"
+    "dev": "turbo run dev --parallel",
+    "format": "biome format . --write",
+    "lint": "biome check . --write",
+    "preinstall": "bun x only-allow bun",
+    "release": "turbo run build && changeset publish",
+    "test": "turbo run test"
   },
   "dependencies": {
-    "@biomejs/biome": "1.9.0",
+    "@biomejs/biome": "1.9.4",
     "@changesets/cli": "2.26.2",
-    "@manypkg/cli": "0.21.2",
-    "turbo": "^2.0.11"
+    "@types/bun": "1.1.11",
+    "turbo": "2.2.3",
+    "typescript": "5.6.3"
   },
-  "packageManager": "pnpm@9.5.0",
   "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
+    "node": ">=20.0.0",
+    "bun": ">=1.1.0"
   },
-  "manypkg": {
-    "ignoredRules": ["INTERNAL_MISMATCH"]
-  }
+  "packageManager": "bun@1.1.26"
 }

@@ -22,35 +22,26 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4.0.3
+      - name: Bun Runtime
+        id: setup-bun
+        uses: oven-sh/setup-bun@v1
         with:
-          node-version: 18
-          cache: "pnpm"
-
+          bun-version: latest
+        
       - name: Install Dependencies
-        run: pnpm i
-
-      # - name: Bun Runtime
-      #   id: setup-bun
-      #   uses: oven-sh/setup-bun@v1
-      #   with:
-      #     bun-version: latest
+        run: bun i
 
       - name: Lint
         id: lint
-        run: pnpm lint
+        run: bun run lint
 
       - name: Build
         id: build
-        run: pnpm build
+        run: bun run build
 
       - name: Test
         id: test
-        run: pnpm test
+        run: bun run test
 
       - name: Upload Code Coverage
         id: codecov
@@ -65,4 +56,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
+          publish: bun run release
