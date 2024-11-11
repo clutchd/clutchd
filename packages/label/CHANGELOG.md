@@ -1,5 +1,12 @@
 # @clutchd/label
 
+## 4.0.7
+
+### Patch Changes
+
+- @clutchd/component@6.0.2
+- @clutchd/compose-event-handlers@5.0.2
+
 ## 4.0.6
 
 ### Patch Changes

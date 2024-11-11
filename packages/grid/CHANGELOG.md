@@ -1,5 +1,12 @@
 # @clutchd/grid
 
+## 6.0.4
+
+### Patch Changes
+
+- @clutchd/component@6.0.2
+- @clutchd/compose-props@3.0.3
+
 ## 6.0.3
 
 ### Patch Changes

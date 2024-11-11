@@ -1,5 +1,22 @@
 # @clutchd/ui
 
+## 0.12.16
+
+### Patch Changes
+
+- @clutchd/component@6.0.2
+- @clutchd/compose-props@3.0.3
+- @clutchd/copyright@4.1.0
+- @clutchd/link@3.0.4
+- @clutchd/twx@4.0.2
+- @clutchd/avatar@6.0.4
+- @clutchd/block@3.1.4
+- @clutchd/divider@5.0.4
+- @clutchd/flex@6.0.4
+- @clutchd/grid@6.0.4
+- @clutchd/label@4.0.7
+- @clutchd/layout@4.0.4
+
 ## 0.12.15
 
 ### Patch Changes

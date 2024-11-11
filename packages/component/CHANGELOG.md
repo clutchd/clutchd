@@ -1,5 +1,12 @@
 # @clutchd/component
 
+## 6.0.2
+
+### Patch Changes
+
+- @clutchd/slot@2.0.5
+- @clutchd/twx@4.0.2
+
 ## 6.0.1
 
 ### Patch Changes

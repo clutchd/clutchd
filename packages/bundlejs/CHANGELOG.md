@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.2
+
+### Patch Changes
+
+- be4ce40: Update deps
+
 ## 0.4.1
 
 ### Patch Changes
