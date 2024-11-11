@@ -15,6 +15,7 @@
     "@clutchd/block": "workspace:*",
     "@clutchd/component": "workspace:*",
     "@clutchd/compose-props": "workspace:*",
+    "@clutchd/copyright": "workspace:*",
     "@clutchd/divider": "workspace:*",
     "@clutchd/flex": "workspace:*",
     "@clutchd/grid": "workspace:*",
