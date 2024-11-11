@@ -1,5 +1,11 @@
 # @clutchd/divider
 
+## 5.0.4
+
+### Patch Changes
+
+- @clutchd/component@6.0.2
+
 ## 5.0.3
 
 ### Patch Changes

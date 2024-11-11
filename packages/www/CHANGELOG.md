@@ -1,5 +1,12 @@
 # @clutchd/landing
 
+## 2.1.13
+
+### Patch Changes
+
+- @clutchd/link@3.0.4
+- @clutchd/layout@4.0.4
+
 ## 2.1.12
 
 ### Patch Changes

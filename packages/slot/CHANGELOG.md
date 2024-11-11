@@ -1,5 +1,13 @@
 # @clutchd/slot
 
+## 2.0.5
+
+### Patch Changes
+
+- Updated dependencies [be4ce40]
+  - @clutchd/compose-refs@2.0.4
+  - @clutchd/compose-props@3.0.3
+
 ## 2.0.4
 
 ### Patch Changes

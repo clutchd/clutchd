@@ -1,5 +1,12 @@
 # @clutchd/image
 
+## 2.0.4
+
+### Patch Changes
+
+- @clutchd/component@6.0.2
+- @clutchd/compose-event-handlers@5.0.2
+
 ## 2.0.3
 
 ### Patch Changes
