@@ -21,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={manrope.variable}>
       <Page asChild className="bg-white">
-        <body>
-          {children}
-        </body>
+        <body>{children}</body>
       </Page>
     </html>
   );
