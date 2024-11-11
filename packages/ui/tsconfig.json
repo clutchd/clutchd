@@ -1,0 +1,21 @@
+{
+  "extends": "@clutchd/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    }
+  },
+  "include": [
+    "/**/*.ts",
+    "/**/*.tsx",
+    "/**/*.d.ts",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ]
+}
