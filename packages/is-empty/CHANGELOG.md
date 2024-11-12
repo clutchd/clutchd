@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.14
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 3.0.13
 
 ### Patch Changes

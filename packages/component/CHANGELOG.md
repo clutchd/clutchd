@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.14
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/slot@2.0.17
+  - @clutchd/twx@4.0.13
+
 ## 6.0.13
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.11
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 4.1.10
 
 ### Patch Changes

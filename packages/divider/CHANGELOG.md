@@ -1,5 +1,13 @@
 # @clutchd/divider
 
+## 5.0.16
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/component@6.0.14
+
 ## 5.0.15
 
 ### Patch Changes

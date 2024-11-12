@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.13
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/clsx@2.2.14
+
 ## 4.0.12
 
 ### Patch Changes

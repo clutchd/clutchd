@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.14
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 2.2.13
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.12
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 5.0.11
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.15
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 2.0.14
 
 ### Patch Changes

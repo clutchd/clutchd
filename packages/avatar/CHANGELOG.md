@@ -1,5 +1,15 @@
 # @clutchd/avatar
 
+## 6.0.16
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/component@6.0.14
+  - @clutchd/compose-props@3.0.14
+  - @clutchd/image@2.0.16
+
 ## 6.0.15
 
 ### Patch Changes

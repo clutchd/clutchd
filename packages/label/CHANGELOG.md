@@ -1,5 +1,14 @@
 # @clutchd/label
 
+## 4.0.19
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/component@6.0.14
+  - @clutchd/compose-event-handlers@5.0.13
+
 ## 4.0.18
 
 ### Patch Changes
