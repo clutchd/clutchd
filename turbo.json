@@ -12,7 +12,7 @@
       "cache": false
     },
     "lint": {},
-    "publish": {
+    "bun-publish": {
       "dependsOn": ["test", "^publish"]
     },
     "test": {

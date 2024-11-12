@@ -25,7 +25,7 @@
     "build": "tsup src/index.tsx --format esm --dts --minify",
     "dev": "tsup src/index.tsx --format esm --dts --watch",
     "prepublish": "bun run build",
-    "publish": "bun publish",
+    "bun-publish": "bun publish",
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {

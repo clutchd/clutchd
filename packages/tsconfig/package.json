@@ -23,7 +23,7 @@
   },
   "types": "./dist/index.d.ts",
   "scripts": {
-    "publish": "bun publish"
+    "bun-publish": "bun publish"
   },
   "devDependencies": {
     "@types/bun": "1.1.11",
