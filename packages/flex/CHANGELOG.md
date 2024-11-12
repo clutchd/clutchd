@@ -1,5 +1,15 @@
 # @clutchd/flex
 
+## 6.0.5
+
+### Patch Changes
+
+- 72d5060: Fix release
+- Updated dependencies [72d5060]
+  - @clutchd/component@6.0.3
+  - @clutchd/compose-props@3.0.4
+  - @clutchd/tailwind@5.0.2
+
 ## 6.0.4
 
 ### Patch Changes

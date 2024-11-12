@@ -1,5 +1,14 @@
 # @clutchd/image
 
+## 2.0.5
+
+### Patch Changes
+
+- 72d5060: Fix release
+- Updated dependencies [72d5060]
+  - @clutchd/component@6.0.3
+  - @clutchd/compose-event-handlers@5.0.3
+
 ## 2.0.4
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.3
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 0.4.2
 
 ### Patch Changes

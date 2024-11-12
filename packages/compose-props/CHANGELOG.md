@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 3.0.4
+
+### Patch Changes
+
+- 72d5060: Fix release
+- Updated dependencies [72d5060]
+  - @clutchd/compose-event-handlers@5.0.3
+
 ## 3.0.3
 
 ### Patch Changes
