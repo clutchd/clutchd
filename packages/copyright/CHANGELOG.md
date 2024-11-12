@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.9
+
+### Patch Changes
+
+- 825983f: bun-publish
+
 ## 4.1.8
 
 ### Patch Changes

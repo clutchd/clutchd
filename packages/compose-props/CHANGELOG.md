@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 3.0.12
+
+### Patch Changes
+
+- 825983f: bun-publish
+- Updated dependencies [825983f]
+  - @clutchd/compose-event-handlers@5.0.11
+
 ## 3.0.11
 
 ### Patch Changes

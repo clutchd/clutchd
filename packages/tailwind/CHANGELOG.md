@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.10
+
+### Patch Changes
+
+- 825983f: bun-publish
+
 ## 5.0.9
 
 ### Patch Changes
