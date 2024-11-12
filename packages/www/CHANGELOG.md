@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.20
+
+### Patch Changes
+
+- b643771: Fixed for real?
+- Updated dependencies [b643771]
+  - @clutchd/layout@4.0.11
+  - @clutchd/link@3.0.11
+
 ## 2.1.19
 
 ### Patch Changes

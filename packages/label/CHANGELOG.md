@@ -1,5 +1,14 @@
 # @clutchd/label
 
+## 4.0.14
+
+### Patch Changes
+
+- b643771: Fixed for real?
+- Updated dependencies [b643771]
+  - @clutchd/component@6.0.9
+  - @clutchd/compose-event-handlers@5.0.9
+
 ## 4.0.13
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.9
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 5.0.8
 
 ### Patch Changes

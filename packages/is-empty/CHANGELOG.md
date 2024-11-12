@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.10
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 3.0.9
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.8
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 5.0.7
 
 ### Patch Changes

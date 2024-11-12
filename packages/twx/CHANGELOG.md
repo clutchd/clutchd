@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.9
+
+### Patch Changes
+
+- b643771: Fixed for real?
+- Updated dependencies [b643771]
+  - @clutchd/clsx@2.2.10
+
 ## 4.0.8
 
 ### Patch Changes

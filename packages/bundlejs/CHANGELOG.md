@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.9
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 0.4.8
 
 ### Patch Changes

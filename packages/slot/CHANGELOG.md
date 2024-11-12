@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.12
+
+### Patch Changes
+
+- b643771: Fixed for real?
+- Updated dependencies [b643771]
+  - @clutchd/compose-props@3.0.10
+  - @clutchd/compose-refs@2.0.11
+
 ## 2.0.11
 
 ### Patch Changes

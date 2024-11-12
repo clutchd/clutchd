@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.7
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 4.1.6
 
 ### Patch Changes

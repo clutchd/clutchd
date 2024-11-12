@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.23
+
+### Patch Changes
+
+- b643771: Fixed for real?
+- Updated dependencies [b643771]
+  - @clutchd/avatar@6.0.11
+  - @clutchd/block@3.1.11
+  - @clutchd/component@6.0.9
+  - @clutchd/compose-props@3.0.10
+  - @clutchd/copyright@4.1.7
+  - @clutchd/divider@5.0.11
+  - @clutchd/flex@6.0.11
+  - @clutchd/grid@6.0.11
+  - @clutchd/label@4.0.14
+  - @clutchd/layout@4.0.11
+  - @clutchd/link@3.0.11
+  - @clutchd/twx@4.0.9
+
 ## 0.12.22
 
 ### Patch Changes
