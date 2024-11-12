@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.10
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/slot@2.0.13
+  - @clutchd/twx@4.0.10
+
 ## 6.0.9
 
 ### Patch Changes

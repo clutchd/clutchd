@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 3.0.11
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/compose-event-handlers@5.0.10
+
 ## 3.0.10
 
 ### Patch Changes

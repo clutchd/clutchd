@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.11
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+
 ## 2.2.10
 
 ### Patch Changes

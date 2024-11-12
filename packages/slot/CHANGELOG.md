@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.13
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/compose-props@3.0.11
+  - @clutchd/compose-refs@2.0.12
+
 ## 2.0.12
 
 ### Patch Changes

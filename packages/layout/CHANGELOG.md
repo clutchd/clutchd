@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 4.0.12
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/compose-props@3.0.11
+  - @clutchd/component@6.0.10
+  - @clutchd/tailwind@5.0.9
+  - @clutchd/flex@6.0.12
+
 ## 4.0.11
 
 ### Patch Changes

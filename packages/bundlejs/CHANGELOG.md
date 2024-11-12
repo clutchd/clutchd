@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.10
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+
 ## 0.4.9
 
 ### Patch Changes

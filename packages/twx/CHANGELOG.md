@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.10
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/clsx@2.2.11
+
 ## 4.0.9
 
 ### Patch Changes
