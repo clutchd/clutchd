@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.30
+
+### Patch Changes
+
+- c021177: Update deps
+- Updated dependencies [c021177]
+  - @clutchd/compose-props@3.0.16
+  - @clutchd/component@6.0.16
+  - @clutchd/copyright@4.1.13
+  - @clutchd/divider@5.0.18
+  - @clutchd/avatar@6.0.18
+  - @clutchd/layout@4.0.18
+  - @clutchd/block@3.1.18
+  - @clutchd/label@4.0.21
+  - @clutchd/flex@6.0.18
+  - @clutchd/grid@6.0.18
+  - @clutchd/link@3.0.18
+  - @clutchd/twx@4.0.15
+
 ## 0.12.29
 
 ### Patch Changes

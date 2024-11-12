@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.14
+
+### Patch Changes
+
+- c021177: Update deps
+
 ## 5.0.13
 
 ### Patch Changes

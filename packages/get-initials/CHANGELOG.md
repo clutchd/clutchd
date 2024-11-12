@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.17
+
+### Patch Changes
+
+- c021177: Update deps
+
 ## 2.0.16
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.16
+
+### Patch Changes
+
+- c021177: Update deps
+- Updated dependencies [c021177]
+  - @clutchd/slot@2.0.19
+  - @clutchd/twx@4.0.15
+
 ## 6.0.15
 
 ### Patch Changes
