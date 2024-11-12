@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.7
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+
 ## 2.1.6
 
 ### Patch Changes

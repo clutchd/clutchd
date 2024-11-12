@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.21
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/layout@4.0.12
+  - @clutchd/link@3.0.12
+
 ## 2.1.20
 
 ### Patch Changes

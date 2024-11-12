@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.10
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+
 ## 5.0.9
 
 ### Patch Changes

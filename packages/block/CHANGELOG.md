@@ -1,5 +1,15 @@
 # @clutchd/block
 
+## 3.1.12
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/compose-props@3.0.11
+  - @clutchd/component@6.0.10
+  - @clutchd/tailwind@5.0.9
+
 ## 3.1.11
 
 ### Patch Changes
