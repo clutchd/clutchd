@@ -1,5 +1,12 @@
 # @clutchd/component
 
+## 6.0.13
+
+### Patch Changes
+
+- Updated dependencies [5067269]
+  - @clutchd/slot@2.0.16
+
 ## 6.0.12
 
 ### Patch Changes
