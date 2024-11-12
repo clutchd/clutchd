@@ -14,8 +14,7 @@
     "format": "biome format . --write",
     "lint": "biome check . --write",
     "preinstall": "bun x only-allow bun",
-    "publish": "turbo run test && changeset publish",
-    "bun-publish": "changeset version && turbo run bun-publish && changeset tag",
+    "publish": "changeset version && turbo run bun-publish && changeset tag",
     "test": "turbo run test"
   },
   "dependencies": {
