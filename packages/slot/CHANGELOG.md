@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.17
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/compose-props@3.0.14
+  - @clutchd/compose-refs@2.0.15
+
 ## 2.0.16
 
 ### Patch Changes

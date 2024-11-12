@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.10
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 2.1.9
 
 ### Patch Changes

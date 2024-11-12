@@ -1,5 +1,15 @@
 # @clutchd/block
 
+## 3.1.16
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/component@6.0.14
+  - @clutchd/compose-props@3.0.14
+  - @clutchd/tailwind@5.0.12
+
 ## 3.1.15
 
 ### Patch Changes

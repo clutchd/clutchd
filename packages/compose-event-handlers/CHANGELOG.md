@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.13
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 5.0.12
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.13
+
+### Patch Changes
+
+- d17470f: changeset publish
+
 ## 0.4.12
 
 ### Patch Changes

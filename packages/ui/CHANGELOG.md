@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.28
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/avatar@6.0.16
+  - @clutchd/block@3.1.16
+  - @clutchd/component@6.0.14
+  - @clutchd/compose-props@3.0.14
+  - @clutchd/copyright@4.1.11
+  - @clutchd/divider@5.0.16
+  - @clutchd/flex@6.0.16
+  - @clutchd/grid@6.0.16
+  - @clutchd/label@4.0.19
+  - @clutchd/layout@4.0.16
+  - @clutchd/link@3.0.16
+  - @clutchd/twx@4.0.13
+
 ## 0.12.27
 
 ### Patch Changes

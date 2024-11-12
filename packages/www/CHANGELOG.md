@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.25
+
+### Patch Changes
+
+- d17470f: changeset publish
+- Updated dependencies [d17470f]
+  - @clutchd/layout@4.0.16
+  - @clutchd/link@3.0.16
+
 ## 2.1.24
 
 ### Patch Changes
