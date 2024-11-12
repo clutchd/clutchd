@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.4
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+- Updated dependencies [f2c705f]
+  - @clutchd/slot@2.0.7
+  - @clutchd/twx@4.0.4
+
 ## 6.0.3
 
 ### Patch Changes

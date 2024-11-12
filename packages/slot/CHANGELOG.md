@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.7
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+- Updated dependencies [f2c705f]
+  - @clutchd/compose-props@3.0.5
+  - @clutchd/compose-refs@2.0.6
+
 ## 2.0.6
 
 ### Patch Changes

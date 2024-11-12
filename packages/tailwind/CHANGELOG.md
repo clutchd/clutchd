@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.3
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+
 ## 5.0.2
 
 ### Patch Changes

@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.18
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+- Updated dependencies [f2c705f]
+  - @clutchd/compose-props@3.0.5
+  - @clutchd/component@6.0.4
+  - @clutchd/copyright@4.1.2
+  - @clutchd/divider@5.0.6
+  - @clutchd/avatar@6.0.6
+  - @clutchd/layout@4.0.6
+  - @clutchd/block@3.1.6
+  - @clutchd/label@4.0.9
+  - @clutchd/flex@6.0.6
+  - @clutchd/grid@6.0.6
+  - @clutchd/link@3.0.6
+  - @clutchd/twx@4.0.4
+
 ## 0.12.17
 
 ### Patch Changes

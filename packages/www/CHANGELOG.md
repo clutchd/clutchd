@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.15
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+- Updated dependencies [f2c705f]
+  - @clutchd/layout@4.0.6
+  - @clutchd/link@3.0.6
+
 ## 2.1.14
 
 ### Patch Changes

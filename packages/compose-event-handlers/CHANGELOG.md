@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.4
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+
 ## 5.0.3
 
 ### Patch Changes

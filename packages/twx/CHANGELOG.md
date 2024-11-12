@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.4
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+- Updated dependencies [f2c705f]
+  - @clutchd/clsx@2.2.5
+
 ## 4.0.3
 
 ### Patch Changes
