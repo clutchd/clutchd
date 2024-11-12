@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.5
+
+### Patch Changes
+
+- a8c83eb: Update packages
+- Updated dependencies [a8c83eb]
+  - @clutchd/clsx@2.2.6
+
 ## 4.0.4
 
 ### Patch Changes

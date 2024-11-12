@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.2
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 2.1.1
 
 ### Patch Changes

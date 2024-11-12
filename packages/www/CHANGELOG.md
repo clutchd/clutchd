@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.16
+
+### Patch Changes
+
+- a8c83eb: Update packages
+- Updated dependencies [a8c83eb]
+  - @clutchd/layout@4.0.7
+  - @clutchd/link@3.0.7
+
 ## 2.1.15
 
 ### Patch Changes

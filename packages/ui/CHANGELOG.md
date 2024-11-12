@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.19
+
+### Patch Changes
+
+- a8c83eb: Update packages
+- Updated dependencies [a8c83eb]
+  - @clutchd/avatar@6.0.7
+  - @clutchd/block@3.1.7
+  - @clutchd/component@6.0.5
+  - @clutchd/compose-props@3.0.6
+  - @clutchd/copyright@4.1.3
+  - @clutchd/divider@5.0.7
+  - @clutchd/flex@6.0.7
+  - @clutchd/grid@6.0.7
+  - @clutchd/label@4.0.10
+  - @clutchd/layout@4.0.7
+  - @clutchd/link@3.0.7
+  - @clutchd/twx@4.0.5
+
 ## 0.12.18
 
 ### Patch Changes
