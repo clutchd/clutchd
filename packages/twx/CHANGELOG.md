@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.3
+
+### Patch Changes
+
+- 72d5060: Fix release
+- Updated dependencies [72d5060]
+  - @clutchd/clsx@2.2.4
+
 ## 4.0.2
 
 ### Patch Changes

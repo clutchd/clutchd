@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.17
+
+### Patch Changes
+
+- 72d5060: Fix release
+- Updated dependencies [72d5060]
+  - @clutchd/avatar@6.0.5
+  - @clutchd/block@3.1.5
+  - @clutchd/component@6.0.3
+  - @clutchd/compose-props@3.0.4
+  - @clutchd/copyright@4.1.1
+  - @clutchd/divider@5.0.5
+  - @clutchd/flex@6.0.5
+  - @clutchd/grid@6.0.5
+  - @clutchd/label@4.0.8
+  - @clutchd/layout@4.0.5
+  - @clutchd/link@3.0.5
+  - @clutchd/twx@4.0.3
+
 ## 0.12.16
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.1
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 4.1.0
 
 ### Minor Changes

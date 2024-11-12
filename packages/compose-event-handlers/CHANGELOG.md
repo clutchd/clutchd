@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.3
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 5.0.2
 
 ### Patch Changes

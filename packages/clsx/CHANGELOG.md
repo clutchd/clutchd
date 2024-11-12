@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.4
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 2.2.3
 
 ### Patch Changes

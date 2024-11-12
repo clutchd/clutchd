@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.2
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 5.0.1
 
 ### Patch Changes

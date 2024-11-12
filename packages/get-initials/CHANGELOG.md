@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.5
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 2.0.4
 
 ### Patch Changes
