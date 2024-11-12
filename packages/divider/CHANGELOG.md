@@ -1,5 +1,13 @@
 # @clutchd/divider
 
+## 5.0.8
+
+### Patch Changes
+
+- 246caaa: Please
+- Updated dependencies [246caaa]
+  - @clutchd/component@6.0.6
+
 ## 5.0.7
 
 ### Patch Changes

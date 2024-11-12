@@ -1,5 +1,14 @@
 # @clutchd/image
 
+## 2.0.8
+
+### Patch Changes
+
+- 246caaa: Please
+- Updated dependencies [246caaa]
+  - @clutchd/component@6.0.6
+  - @clutchd/compose-event-handlers@5.0.6
+
 ## 2.0.7
 
 ### Patch Changes

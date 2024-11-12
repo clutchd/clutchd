@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.6
+
+### Patch Changes
+
+- 246caaa: Please
+- Updated dependencies [246caaa]
+  - @clutchd/slot@2.0.9
+  - @clutchd/twx@4.0.6
+
 ## 6.0.5
 
 ### Patch Changes

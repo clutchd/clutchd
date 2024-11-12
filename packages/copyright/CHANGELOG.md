@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.4
+
+### Patch Changes
+
+- 246caaa: Please
+
 ## 4.1.3
 
 ### Patch Changes
