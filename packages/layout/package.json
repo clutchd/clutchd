@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/layout",
   "version": "4.0.17",
-  "keywords": [
-    "clutchd",
-    "layout",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "layout", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
