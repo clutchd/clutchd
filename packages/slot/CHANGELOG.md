@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.6
+
+### Patch Changes
+
+- 72d5060: Fix release
+- Updated dependencies [72d5060]
+  - @clutchd/compose-props@3.0.4
+  - @clutchd/compose-refs@2.0.5
+
 ## 2.0.5
 
 ### Patch Changes

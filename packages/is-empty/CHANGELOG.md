@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.4
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 3.0.3
 
 ### Patch Changes

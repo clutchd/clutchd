@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.14
+
+### Patch Changes
+
+- 72d5060: Fix release
+- Updated dependencies [72d5060]
+  - @clutchd/layout@4.0.5
+  - @clutchd/link@3.0.5
+
 ## 2.1.13
 
 ### Patch Changes

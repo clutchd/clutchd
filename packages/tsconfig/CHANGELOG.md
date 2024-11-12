@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.1
+
+### Patch Changes
+
+- 72d5060: Fix release
+
 ## 2.1.0
 
 ### Minor Changes
