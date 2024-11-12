@@ -13,7 +13,7 @@
     },
     "lint": {},
     "publish": {
-      "dependsOn": ["build"]
+      "dependsOn": ["test", "^publish"]
     },
     "test": {
       "dependsOn": ["build"],
