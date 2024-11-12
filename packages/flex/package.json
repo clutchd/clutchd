@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/flex",
   "version": "6.0.15",
-  "keywords": [
-    "clutchd",
-    "flex",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "flex", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -26,7 +21,6 @@
     "dev": "tsup src/index.tsx --format esm --dts --watch",
     "lint": "biome check . --write",
     "prepublish": "bun run build",
-    "bun-publish": "bun publish",
     "test": "bun test --coverage --coverage-reporter=lcov --preload='./preload.ts'"
   },
   "dependencies": {

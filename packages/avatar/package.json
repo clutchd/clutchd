@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/avatar",
   "version": "6.0.15",
-  "keywords": [
-    "clutchd",
-    "avatar",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "avatar", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -25,7 +20,6 @@
     "build": "tsup src/index.tsx --format esm --dts --minify",
     "dev": "tsup src/index.tsx --format esm --dts --watch",
     "prepublish": "bun run build",
-    "bun-publish": "bun publish",
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {

@@ -23,6 +23,10 @@ jobs:
         with:
           fetch-depth: 2
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
       - name: Bun Runtime
         id: setup-bun
         uses: oven-sh/setup-bun@v1
@@ -57,4 +61,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && steps.test.outcome == 'success' && !cancelled() }}
         uses: changesets/action@v1
         with:
-          publish: bun run publish
+          publish: bun run release

@@ -2,10 +2,7 @@
   "name": "@clutchd/tsconfig",
   "version": "2.1.9",
   "description": "Collection of tsconfigs shared between clutchd packages.",
-  "keywords": [
-    "clutchd",
-    "tsconfig"
-  ],
+  "keywords": ["clutchd", "tsconfig"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
