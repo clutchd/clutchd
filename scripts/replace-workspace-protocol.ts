@@ -5,12 +5,12 @@ function replaceWorkspaceProtocol(packagePath) {
   const packageJson = JSON.parse(fs.readFileSync(packagePath, 'utf8'));
   const workspaceRoot = path.resolve(__dirname, '..');
 
-  ['dependencies', 'devDependencies', 'peerDependencies'].forEach(depType => {
+  ['dependencies', 'devDependencies'].forEach(depType => {
     if (packageJson[depType]) {
       Object.keys(packageJson[depType]).forEach(dep => {
         if (packageJson[depType][dep] === 'workspace:*') {
           const depPackageJson = JSON.parse(fs.readFileSync(path.join(workspaceRoot, 'packages', dep.split('/')[1], 'package.json'), 'utf8'));
-          packageJson[depType][dep] = `^${depPackageJson.version}`;
+          packageJson[depType][dep] = `${depPackageJson.version}`;
         }
       });
     }
