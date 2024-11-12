@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.7
+
+### Patch Changes
+
+- aacd792: Please 2
+- Updated dependencies [aacd792]
+  - @clutchd/slot@2.0.10
+  - @clutchd/twx@4.0.7
+
 ## 6.0.6
 
 ### Patch Changes

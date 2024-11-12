@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.7
+
+### Patch Changes
+
+- aacd792: Please 2
+
 ## 0.4.6
 
 ### Patch Changes

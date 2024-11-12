@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.7
+
+### Patch Changes
+
+- aacd792: Please 2
+- Updated dependencies [aacd792]
+  - @clutchd/clsx@2.2.8
+
 ## 4.0.6
 
 ### Patch Changes

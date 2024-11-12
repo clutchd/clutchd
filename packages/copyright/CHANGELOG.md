@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.5
+
+### Patch Changes
+
+- aacd792: Please 2
+
 ## 4.1.4
 
 ### Patch Changes

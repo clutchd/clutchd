@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.21
+
+### Patch Changes
+
+- aacd792: Please 2
+- Updated dependencies [aacd792]
+  - @clutchd/avatar@6.0.9
+  - @clutchd/block@3.1.9
+  - @clutchd/component@6.0.7
+  - @clutchd/compose-props@3.0.8
+  - @clutchd/copyright@4.1.5
+  - @clutchd/divider@5.0.9
+  - @clutchd/flex@6.0.9
+  - @clutchd/grid@6.0.9
+  - @clutchd/label@4.0.12
+  - @clutchd/layout@4.0.9
+  - @clutchd/link@3.0.9
+  - @clutchd/twx@4.0.7
+
 ## 0.12.20
 
 ### Patch Changes
