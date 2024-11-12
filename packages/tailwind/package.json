@@ -1,10 +1,7 @@
 {
   "name": "@clutchd/tailwind",
   "version": "5.0.2",
-  "keywords": [
-    "clutchd",
-    "tailwind"
-  ],
+  "keywords": ["clutchd", "tailwind"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

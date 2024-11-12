@@ -1,3 +1,4 @@
+// biome-ignore lint: We actually need react, not just the type
 import * as React from "react";
 import { getCopyright as internalGetCopyright } from ".";
 
