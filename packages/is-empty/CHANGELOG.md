@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.16
+
+### Patch Changes
+
+- c021177: Update deps
+
 ## 3.0.15
 
 ### Patch Changes

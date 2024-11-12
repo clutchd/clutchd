@@ -1,7 +1,12 @@
 {
   "name": "@clutchd/flex",
-  "version": "6.0.17",
-  "keywords": ["clutchd", "flex", "tailwind", "next"],
+  "version": "6.0.18",
+  "keywords": [
+    "clutchd",
+    "flex",
+    "tailwind",
+    "next"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

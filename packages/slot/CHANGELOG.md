@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.19
+
+### Patch Changes
+
+- c021177: Update deps
+- Updated dependencies [c021177]
+  - @clutchd/compose-props@3.0.16
+  - @clutchd/compose-refs@2.0.17
+
 ## 2.0.18
 
 ### Patch Changes

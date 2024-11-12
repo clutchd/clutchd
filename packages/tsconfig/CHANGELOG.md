@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.12
+
+### Patch Changes
+
+- c021177: Update deps
+
 ## 2.1.11
 
 ### Patch Changes

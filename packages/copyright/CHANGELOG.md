@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.13
+
+### Patch Changes
+
+- c021177: Update deps
+
 ## 4.1.12
 
 ### Patch Changes

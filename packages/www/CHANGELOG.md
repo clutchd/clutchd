@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.27
+
+### Patch Changes
+
+- c021177: Update deps
+- Updated dependencies [c021177]
+  - @clutchd/layout@4.0.18
+  - @clutchd/link@3.0.18
+
 ## 2.1.26
 
 ### Patch Changes

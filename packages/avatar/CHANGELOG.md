@@ -1,5 +1,15 @@
 # @clutchd/avatar
 
+## 6.0.18
+
+### Patch Changes
+
+- c021177: Update deps
+- Updated dependencies [c021177]
+  - @clutchd/compose-props@3.0.16
+  - @clutchd/component@6.0.16
+  - @clutchd/image@2.0.18
+
 ## 6.0.17
 
 ### Patch Changes
