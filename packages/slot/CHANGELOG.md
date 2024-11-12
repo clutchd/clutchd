@@ -1,5 +1,11 @@
 # @clutchd/slot
 
+## 2.0.16
+
+### Patch Changes
+
+- 5067269: Slot test
+
 ## 2.0.15
 
 ### Patch Changes

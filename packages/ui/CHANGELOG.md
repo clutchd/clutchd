@@ -1,5 +1,19 @@
 # @clutchd/ui
 
+## 0.12.27
+
+### Patch Changes
+
+- @clutchd/component@6.0.13
+- @clutchd/avatar@6.0.15
+- @clutchd/block@3.1.15
+- @clutchd/divider@5.0.15
+- @clutchd/flex@6.0.15
+- @clutchd/grid@6.0.15
+- @clutchd/label@4.0.18
+- @clutchd/layout@4.0.15
+- @clutchd/link@3.0.15
+
 ## 0.12.26
 
 ### Patch Changes

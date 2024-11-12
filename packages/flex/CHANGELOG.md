@@ -1,5 +1,11 @@
 # @clutchd/flex
 
+## 6.0.15
+
+### Patch Changes
+
+- @clutchd/component@6.0.13
+
 ## 6.0.14
 
 ### Patch Changes

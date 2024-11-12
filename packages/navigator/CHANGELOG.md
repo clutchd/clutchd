@@ -1,5 +1,12 @@
 # @clutchd/navigator
 
+## 2.0.15
+
+### Patch Changes
+
+- @clutchd/component@6.0.13
+- @clutchd/link@3.0.15
+
 ## 2.0.14
 
 ### Patch Changes
