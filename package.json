@@ -12,7 +12,7 @@
     "format": "biome format . --write",
     "lint": "biome check . --write",
     "preinstall": "bun x only-allow bun",
-    "release": "turbo run publish && changeset tag",
+    "publish": "turbo run publish --parallel && changeset tag",
     "test": "turbo run test"
   },
   "dependencies": {
