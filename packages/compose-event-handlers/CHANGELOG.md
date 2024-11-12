@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.11
+
+### Patch Changes
+
+- 825983f: bun-publish
+
 ## 5.0.10
 
 ### Patch Changes

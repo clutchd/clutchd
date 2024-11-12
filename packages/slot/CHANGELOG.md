@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.14
+
+### Patch Changes
+
+- 825983f: bun-publish
+- Updated dependencies [825983f]
+  - @clutchd/compose-props@3.0.12
+  - @clutchd/compose-refs@2.0.13
+
 ## 2.0.13
 
 ### Patch Changes

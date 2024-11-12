@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.25
+
+### Patch Changes
+
+- 825983f: bun-publish
+- Updated dependencies [825983f]
+  - @clutchd/avatar@6.0.13
+  - @clutchd/block@3.1.13
+  - @clutchd/component@6.0.11
+  - @clutchd/compose-props@3.0.12
+  - @clutchd/copyright@4.1.9
+  - @clutchd/divider@5.0.13
+  - @clutchd/flex@6.0.13
+  - @clutchd/grid@6.0.13
+  - @clutchd/label@4.0.16
+  - @clutchd/layout@4.0.13
+  - @clutchd/link@3.0.13
+  - @clutchd/twx@4.0.11
+
 ## 0.12.24
 
 ### Patch Changes

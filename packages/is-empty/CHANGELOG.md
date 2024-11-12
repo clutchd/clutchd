@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.12
+
+### Patch Changes
+
+- 825983f: bun-publish
+
 ## 3.0.11
 
 ### Patch Changes

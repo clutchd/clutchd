@@ -1,5 +1,14 @@
 # @clutchd/label
 
+## 4.0.16
+
+### Patch Changes
+
+- 825983f: bun-publish
+- Updated dependencies [825983f]
+  - @clutchd/component@6.0.11
+  - @clutchd/compose-event-handlers@5.0.11
+
 ## 4.0.15
 
 ### Patch Changes

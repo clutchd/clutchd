@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.11
+
+### Patch Changes
+
+- 825983f: bun-publish
+- Updated dependencies [825983f]
+  - @clutchd/clsx@2.2.12
+
 ## 4.0.10
 
 ### Patch Changes

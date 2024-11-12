@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.22
+
+### Patch Changes
+
+- 825983f: bun-publish
+- Updated dependencies [825983f]
+  - @clutchd/layout@4.0.13
+  - @clutchd/link@3.0.13
+
 ## 2.1.21
 
 ### Patch Changes

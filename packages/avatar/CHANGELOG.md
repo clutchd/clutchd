@@ -1,5 +1,15 @@
 # @clutchd/avatar
 
+## 6.0.13
+
+### Patch Changes
+
+- 825983f: bun-publish
+- Updated dependencies [825983f]
+  - @clutchd/component@6.0.11
+  - @clutchd/compose-props@3.0.12
+  - @clutchd/image@2.0.13
+
 ## 6.0.12
 
 ### Patch Changes

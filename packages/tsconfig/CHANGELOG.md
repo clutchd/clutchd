@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.8
+
+### Patch Changes
+
+- 825983f: bun-publish
+
 ## 2.1.7
 
 ### Patch Changes

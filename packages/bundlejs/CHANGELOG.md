@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.11
+
+### Patch Changes
+
+- 825983f: bun-publish
+
 ## 0.4.10
 
 ### Patch Changes
