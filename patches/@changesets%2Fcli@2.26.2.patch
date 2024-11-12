@@ -1,0 +1,30 @@
+diff --git a/dist/cli.cjs.prod.js b/dist/cli.cjs.prod.js
+index d4c8b915e46dc553c14838e19b22c30312c7fb65..4ee46618ec7b1b1a00f7f8db8ea00462bcfc9408 100644
+--- a/dist/cli.cjs.prod.js
++++ b/dist/cli.cjs.prod.js
+@@ -397,23 +397,8 @@ function getCorrectRegistry(packageJson) {
+ }
+ 
+ async function getPublishTool(cwd) {
+-  const pm = await preferredPM__default.default(cwd);
+-  if (!pm || "pnpm" !== pm.name) return {
+-    name: "npm"
+-  };
+-  try {
+-    let version = (await spawn__default.default("pnpm", [ "--version" ], {
+-      cwd: cwd
+-    })).stdout.toString().trim(), parsed = semverParse__default.default(version);
+-    return {
+-      name: "pnpm",
+-      shouldAddNoGitChecks: void 0 !== (null == parsed ? void 0 : parsed.major) && parsed.major >= 5
+-    };
+-  } catch (e) {
+-    return {
+-      name: "pnpm",
+-      shouldAddNoGitChecks: !1
+-    };
++  return {
++    name: "bun"
+   }
+ }
+ 
