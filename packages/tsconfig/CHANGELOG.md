@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.6
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 2.1.5
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @clutchd/divider
 
+## 5.0.11
+
+### Patch Changes
+
+- b643771: Fixed for real?
+- Updated dependencies [b643771]
+  - @clutchd/component@6.0.9
+
 ## 5.0.10
 
 ### Patch Changes

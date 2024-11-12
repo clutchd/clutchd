@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.10
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 2.2.9
 
 ### Patch Changes

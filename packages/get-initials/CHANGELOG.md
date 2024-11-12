@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.11
+
+### Patch Changes
+
+- b643771: Fixed for real?
+
 ## 2.0.10
 
 ### Patch Changes

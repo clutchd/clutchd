@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.9
+
+### Patch Changes
+
+- b643771: Fixed for real?
+- Updated dependencies [b643771]
+  - @clutchd/slot@2.0.12
+  - @clutchd/twx@4.0.9
+
 ## 6.0.8
 
 ### Patch Changes
