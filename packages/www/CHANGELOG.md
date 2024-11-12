@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.23
+
+### Patch Changes
+
+- Fix deps
+- Updated dependencies
+  - @clutchd/layout@4.0.14
+  - @clutchd/link@3.0.14
+
 ## 2.1.22
 
 ### Patch Changes

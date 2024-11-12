@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.10
+
+### Patch Changes
+
+- Fix deps
+
 ## 4.1.9
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @clutchd/block
 
+## 3.1.14
+
+### Patch Changes
+
+- Fix deps
+- Updated dependencies
+  - @clutchd/component@6.0.12
+  - @clutchd/compose-props@3.0.13
+  - @clutchd/tailwind@5.0.11
+
 ## 3.1.13
 
 ### Patch Changes

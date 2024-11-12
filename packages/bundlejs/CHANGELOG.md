@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.12
+
+### Patch Changes
+
+- Fix deps
+
 ## 0.4.11
 
 ### Patch Changes

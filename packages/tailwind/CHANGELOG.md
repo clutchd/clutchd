@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.11
+
+### Patch Changes
+
+- Fix deps
+
 ## 5.0.10
 
 ### Patch Changes

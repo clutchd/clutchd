@@ -1,5 +1,14 @@
 # @clutchd/link
 
+## 3.0.14
+
+### Patch Changes
+
+- Fix deps
+- Updated dependencies
+  - @clutchd/component@6.0.12
+  - @clutchd/compose-props@3.0.13
+
 ## 3.0.13
 
 ### Patch Changes

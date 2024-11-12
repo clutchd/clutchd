@@ -1,5 +1,13 @@
 # @clutchd/twx
 
+## 4.0.12
+
+### Patch Changes
+
+- Fix deps
+- Updated dependencies
+  - @clutchd/clsx@2.2.13
+
 ## 4.0.11
 
 ### Patch Changes

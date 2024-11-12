@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.13
+
+### Patch Changes
+
+- Fix deps
+
 ## 3.0.12
 
 ### Patch Changes

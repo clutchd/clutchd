@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.9
+
+### Patch Changes
+
+- Fix deps
+
 ## 2.1.8
 
 ### Patch Changes

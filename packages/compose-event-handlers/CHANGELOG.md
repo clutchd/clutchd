@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.12
+
+### Patch Changes
+
+- Fix deps
+
 ## 5.0.11
 
 ### Patch Changes

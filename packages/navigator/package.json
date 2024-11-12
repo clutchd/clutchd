@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/navigator",
-  "version": "2.0.13",
+  "version": "2.0.14",
   "description": "A @clutchd/link powered component with additional features for navigation.",
   "keywords": [
     "clutchd",
