@@ -19,7 +19,6 @@
     "build": "tsup src/index.ts --format esm --dts-only --minify",
     "dev": "tsup src/index.ts --format esm --dts --watch",
     "prepublish": "bun run build",
-    "publish": "bun publish",
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "devDependencies": {

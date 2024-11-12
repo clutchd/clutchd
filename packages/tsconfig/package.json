@@ -19,9 +19,6 @@
     "./nextjs.json": "./nextjs.json"
   },
   "types": "./dist/index.d.ts",
-  "scripts": {
-    "publish": "bun publish"
-  },
   "devDependencies": {
     "@types/bun": "1.1.11",
     "@types/node": "22.1.0",

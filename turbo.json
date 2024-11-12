@@ -12,9 +12,6 @@
       "cache": false
     },
     "lint": {},
-    "publish": {
-      "dependsOn": ["build"]
-    },
     "test": {
       "dependsOn": ["build"],
       "outputs": ["coverage/**"]
