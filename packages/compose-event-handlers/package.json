@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/compose-event-handlers",
-  "version": "5.0.7",
+  "version": "5.0.8",
   "description": "A small package that provides multiple event-handler utility functions.",
   "keywords": [
     "clutchd",

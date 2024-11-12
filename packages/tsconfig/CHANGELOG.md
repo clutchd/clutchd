@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.5
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+
 ## 2.1.4
 
 ### Patch Changes

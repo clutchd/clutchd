@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.8
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+- Updated dependencies [56c4d5b]
+  - @clutchd/slot@2.0.11
+  - @clutchd/twx@4.0.8
+
 ## 6.0.7
 
 ### Patch Changes
