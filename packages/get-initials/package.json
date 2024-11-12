@@ -28,8 +28,8 @@
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "devDependencies": {
-    "@clutchd/bundlejs": "workspace:^",
-    "@clutchd/tsconfig": "workspace:^",
+    "@clutchd/bundlejs": "workspace:*",
+    "@clutchd/tsconfig": "workspace:*",
     "@types/node": "22.1.0",
     "tsup": "8.1.0"
   }
