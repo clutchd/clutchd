@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.22
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+- Updated dependencies [56c4d5b]
+  - @clutchd/avatar@6.0.10
+  - @clutchd/block@3.1.10
+  - @clutchd/component@6.0.8
+  - @clutchd/compose-props@3.0.9
+  - @clutchd/copyright@4.1.6
+  - @clutchd/divider@5.0.10
+  - @clutchd/flex@6.0.10
+  - @clutchd/grid@6.0.10
+  - @clutchd/label@4.0.13
+  - @clutchd/layout@4.0.10
+  - @clutchd/link@3.0.10
+  - @clutchd/twx@4.0.8
+
 ## 0.12.21
 
 ### Patch Changes

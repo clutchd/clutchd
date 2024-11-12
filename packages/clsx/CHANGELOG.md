@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.9
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+
 ## 2.2.8
 
 ### Patch Changes

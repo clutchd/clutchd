@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.19
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+- Updated dependencies [56c4d5b]
+  - @clutchd/layout@4.0.10
+  - @clutchd/link@3.0.10
+
 ## 2.1.18
 
 ### Patch Changes

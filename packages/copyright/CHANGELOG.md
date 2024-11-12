@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.6
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+
 ## 4.1.5
 
 ### Patch Changes

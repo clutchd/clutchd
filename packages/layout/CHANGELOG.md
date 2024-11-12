@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 4.0.10
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+- Updated dependencies [56c4d5b]
+  - @clutchd/component@6.0.8
+  - @clutchd/compose-props@3.0.9
+  - @clutchd/flex@6.0.10
+  - @clutchd/tailwind@5.0.7
+
 ## 4.0.9
 
 ### Patch Changes

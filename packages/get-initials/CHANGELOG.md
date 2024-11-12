@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.10
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+
 ## 2.0.9
 
 ### Patch Changes

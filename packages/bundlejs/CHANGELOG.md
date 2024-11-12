@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.8
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+
 ## 0.4.7
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.9
+
+### Patch Changes
+
+- 56c4d5b: Fix releases
+
 ## 3.0.8
 
 ### Patch Changes
