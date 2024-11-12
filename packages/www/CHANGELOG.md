@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.26
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/layout@4.0.17
+  - @clutchd/link@3.0.17
+
 ## 2.1.25
 
 ### Patch Changes

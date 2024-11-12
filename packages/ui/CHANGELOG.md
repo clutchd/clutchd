@@ -1,5 +1,24 @@
 # @clutchd/ui
 
+## 0.12.29
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/avatar@6.0.17
+  - @clutchd/block@3.1.17
+  - @clutchd/component@6.0.15
+  - @clutchd/compose-props@3.0.15
+  - @clutchd/copyright@4.1.12
+  - @clutchd/divider@5.0.17
+  - @clutchd/flex@6.0.17
+  - @clutchd/grid@6.0.17
+  - @clutchd/label@4.0.20
+  - @clutchd/layout@4.0.17
+  - @clutchd/link@3.0.17
+  - @clutchd/twx@4.0.14
+
 ## 0.12.28
 
 ### Patch Changes

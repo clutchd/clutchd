@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 4.0.17
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/component@6.0.15
+  - @clutchd/compose-props@3.0.15
+  - @clutchd/flex@6.0.17
+  - @clutchd/tailwind@5.0.13
+
 ## 4.0.16
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @clutchd/label
 
+## 4.0.20
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/component@6.0.15
+  - @clutchd/compose-event-handlers@5.0.14
+
 ## 4.0.19
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @clutchd/slot
 
+## 2.0.18
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/compose-props@3.0.15
+  - @clutchd/compose-refs@2.0.16
+
 ## 2.0.17
 
 ### Patch Changes

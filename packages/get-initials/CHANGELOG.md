@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 2.0.16
+
+### Patch Changes
+
+- 14bb529: custom release script
+
 ## 2.0.15
 
 ### Patch Changes

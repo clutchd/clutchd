@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.12
+
+### Patch Changes
+
+- 14bb529: custom release script
+
 ## 4.1.11
 
 ### Patch Changes

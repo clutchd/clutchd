@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.14
+
+### Patch Changes
+
+- 14bb529: custom release script
+
 ## 0.4.13
 
 ### Patch Changes

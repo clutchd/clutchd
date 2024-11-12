@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.11
+
+### Patch Changes
+
+- 14bb529: custom release script
+
 ## 2.1.10
 
 ### Patch Changes

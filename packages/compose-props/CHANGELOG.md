@@ -1,5 +1,13 @@
 # @clutchd/compose-props
 
+## 3.0.15
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/compose-event-handlers@5.0.14
+
 ## 3.0.14
 
 ### Patch Changes

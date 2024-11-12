@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.13
+
+### Patch Changes
+
+- 14bb529: custom release script
+
 ## 5.0.12
 
 ### Patch Changes
