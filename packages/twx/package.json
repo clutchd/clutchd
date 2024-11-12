@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/twx",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "Combining the powers of @clutchd/clsx and tailwind-merge.",
   "keywords": ["clutchd", "clsx", "twx", "tailwind"],
   "bugs": {

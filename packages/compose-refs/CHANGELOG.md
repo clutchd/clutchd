@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 2.0.6
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+
 ## 2.0.5
 
 ### Patch Changes

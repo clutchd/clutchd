@@ -1,5 +1,13 @@
 # @clutchd/divider
 
+## 5.0.6
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+- Updated dependencies [f2c705f]
+  - @clutchd/component@6.0.4
+
 ## 5.0.5
 
 ### Patch Changes

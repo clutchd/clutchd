@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.5
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+
 ## 3.0.4
 
 ### Patch Changes
