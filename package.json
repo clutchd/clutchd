@@ -12,7 +12,7 @@
     "format": "biome format . --write",
     "lint": "biome check . --write",
     "preinstall": "bun x only-allow bun",
-    "publish": "bun run build && changeset publish",
+    "release": "bun run build && changeset publish",
     "test": "turbo run test"
   },
   "dependencies": {
@@ -26,8 +26,5 @@
     "bun": ">=1.1.0",
     "node": ">=20.0.0"
   },
-  "packageManager": "bun@1.1.34",
-  "patchedDependencies": {
-    "@changesets/cli@2.26.2": "patches/@changesets%2Fcli@2.26.2.patch"
-  }
+  "packageManager": "bun@1.1.34"
 }
