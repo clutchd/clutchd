@@ -12,7 +12,7 @@
     "format": "biome format . --write",
     "lint": "biome check . --write",
     "preinstall": "bun x only-allow bun",
-    "release": "bun run build && changeset publish",
+    "release": "bun run build && bun scripts/replace-workspace-protocol.ts",
     "test": "turbo run test"
   },
   "dependencies": {
