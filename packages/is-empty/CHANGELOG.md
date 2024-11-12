@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.7
+
+### Patch Changes
+
+- 246caaa: Please
+
 ## 3.0.6
 
 ### Patch Changes

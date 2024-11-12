@@ -1,6 +1,6 @@
 {
   "name": "@clutchd/link",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "A next/link powered component with additional features and default styling.",
   "keywords": [
     "clutchd",

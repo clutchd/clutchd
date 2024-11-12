@@ -1,5 +1,15 @@
 # @clutchd/navigator
 
+## 2.0.8
+
+### Patch Changes
+
+- 246caaa: Please
+- Updated dependencies [246caaa]
+  - @clutchd/component@6.0.6
+  - @clutchd/compose-props@3.0.7
+  - @clutchd/link@3.0.8
+
 ## 2.0.7
 
 ### Patch Changes
