@@ -32,8 +32,8 @@
     "validate": "bun run build && bun run benchmark && bun run test"
   },
   "devDependencies": {
-    "@clutchd/bundlejs": "workspace:*",
-    "@clutchd/tsconfig": "workspace:*",
+    "@clutchd/bundlejs": "workspace:^",
+    "@clutchd/tsconfig": "workspace:^",
     "@types/benchmark": "2.1.5",
     "@types/node": "22.1.0",
     "benchmark": "2.1.4",

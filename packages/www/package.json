@@ -10,14 +10,14 @@
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {
-    "@clutchd/layout": "workspace:*",
-    "@clutchd/link": "workspace:*",
+    "@clutchd/layout": "workspace:^",
+    "@clutchd/link": "workspace:^",
     "next": "14.2.5",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@clutchd/tsconfig": "workspace:*",
+    "@clutchd/tsconfig": "workspace:^",
     "@types/node": "22.1.0",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",

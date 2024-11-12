@@ -28,13 +28,13 @@
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {
-    "@clutchd/component": "workspace:*",
-    "@clutchd/compose-props": "workspace:*",
-    "@clutchd/image": "workspace:*"
+    "@clutchd/component": "workspace:^",
+    "@clutchd/compose-props": "workspace:^",
+    "@clutchd/image": "workspace:^"
   },
   "devDependencies": {
-    "@clutchd/tailwind": "workspace:*",
-    "@clutchd/tsconfig": "workspace:*",
+    "@clutchd/tailwind": "workspace:^",
+    "@clutchd/tsconfig": "workspace:^",
     "@types/node": "22.1.0",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",

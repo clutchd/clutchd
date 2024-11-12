@@ -30,11 +30,11 @@
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {
-    "@clutchd/component": "workspace:*",
-    "@clutchd/compose-event-handlers": "workspace:*"
+    "@clutchd/component": "workspace:^",
+    "@clutchd/compose-event-handlers": "workspace:^"
   },
   "devDependencies": {
-    "@clutchd/tsconfig": "workspace:*",
+    "@clutchd/tsconfig": "workspace:^",
     "@radix-ui/react-label": "2.1.0",
     "@types/react": "18.3.3",
     "react": "18.3.1",

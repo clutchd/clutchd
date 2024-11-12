@@ -27,9 +27,6 @@ jobs:
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
         
       - name: Install Dependencies
         run: bun i
@@ -59,4 +56,4 @@ jobs:
         if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
         uses: changesets/action@v1
         with:
-          publish: pnpm run release
+          publish: bun run release
