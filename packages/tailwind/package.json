@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "tsup": "8.1.0"
+    "tsup": "8.3.5"
   }
 }

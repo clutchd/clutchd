@@ -30,12 +30,12 @@
   },
   "dependencies": {
     "@clutchd/clsx": "workspace:*",
-    "tailwind-merge": "2.4.0"
+    "tailwind-merge": "2.5.4"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.1.0",
-    "tsup": "8.1.0"
+    "@types/node": "22.9.0",
+    "tsup": "8.3.5"
   }
 }

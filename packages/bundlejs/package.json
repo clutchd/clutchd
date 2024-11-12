@@ -33,6 +33,6 @@
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
     "@types/node-fetch": "2.6.12",
-    "tsup": "8.1.0"
+    "tsup": "8.3.5"
   }
 }
