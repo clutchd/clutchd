@@ -54,7 +54,7 @@ jobs:
 
       - name: Create Release Pull Request or Publish to npm
         id: changesets
-        if: ${{ github.ref == 'refs/heads/main' && !cancelled() }}
+        if: ${{ github.ref == 'refs/heads/main' && steps.test.outcome == 'success' && !cancelled() }}
         uses: changesets/action@v1
         with:
           publish: bun run publish
