@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.6
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 3.0.5
 
 ### Patch Changes

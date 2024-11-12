@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.6
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 2.2.5
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @clutchd/flex
 
+## 6.0.7
+
+### Patch Changes
+
+- a8c83eb: Update packages
+- Updated dependencies [a8c83eb]
+  - @clutchd/component@6.0.5
+  - @clutchd/compose-props@3.0.6
+  - @clutchd/tailwind@5.0.4
+
 ## 6.0.6
 
 ### Patch Changes

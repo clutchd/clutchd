@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.5
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 0.4.4
 
 ### Patch Changes

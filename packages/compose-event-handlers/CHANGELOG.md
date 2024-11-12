@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.5
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 5.0.4
 
 ### Patch Changes

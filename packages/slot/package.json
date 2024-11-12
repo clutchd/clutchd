@@ -1,8 +1,12 @@
 {
   "name": "@clutchd/slot",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "A utility component that merges it's props onto it's child.",
-  "keywords": ["clutchd", "slot", "ui"],
+  "keywords": [
+    "clutchd",
+    "slot",
+    "ui"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

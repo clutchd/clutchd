@@ -1,5 +1,11 @@
 # @clutchd/tailwind
 
+## 5.0.4
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 5.0.3
 
 ### Patch Changes

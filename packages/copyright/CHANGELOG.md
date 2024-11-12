@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.3
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 4.1.2
 
 ### Patch Changes

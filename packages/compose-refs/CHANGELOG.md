@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 2.0.7
+
+### Patch Changes
+
+- a8c83eb: Update packages
+
 ## 2.0.6
 
 ### Patch Changes
