@@ -1,3 +1,4 @@
+// TODO: Deprecate this with bun feature / changesets support for bun
 const fs = require("node:fs");
 const path = require("node:path");
 
