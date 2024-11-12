@@ -2,12 +2,7 @@
   "name": "@clutchd/navigator",
   "version": "2.0.16",
   "description": "A @clutchd/link powered component with additional features for navigation.",
-  "keywords": [
-    "clutchd",
-    "navigator",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "navigator", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

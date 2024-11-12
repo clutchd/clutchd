@@ -2,10 +2,7 @@
   "name": "@clutchd/bundlejs",
   "version": "0.4.13",
   "description": "A small utility package to determine the size of a js bundle.",
-  "keywords": [
-    "clutchd",
-    "bundlejs"
-  ],
+  "keywords": ["clutchd", "bundlejs"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
