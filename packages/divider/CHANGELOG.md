@@ -1,5 +1,13 @@
 # @clutchd/divider
 
+## 5.0.12
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/component@6.0.10
+
 ## 5.0.11
 
 ### Patch Changes

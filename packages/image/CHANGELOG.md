@@ -1,5 +1,14 @@
 # @clutchd/image
 
+## 2.0.12
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/compose-event-handlers@5.0.10
+  - @clutchd/component@6.0.10
+
 ## 2.0.11
 
 ### Patch Changes

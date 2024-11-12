@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.8
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+
 ## 4.1.7
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @clutchd/label
 
+## 4.0.15
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+- Updated dependencies [92a22a7]
+  - @clutchd/compose-event-handlers@5.0.10
+  - @clutchd/component@6.0.10
+
 ## 4.0.14
 
 ### Patch Changes

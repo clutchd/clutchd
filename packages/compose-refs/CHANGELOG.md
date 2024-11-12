@@ -1,5 +1,11 @@
 # @clutchd/compose-refs
 
+## 2.0.12
+
+### Patch Changes
+
+- 92a22a7: Update all packages, fix publish script
+
 ## 2.0.11
 
 ### Patch Changes
