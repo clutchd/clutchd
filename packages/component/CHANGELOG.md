@@ -1,5 +1,14 @@
 # @clutchd/component
 
+## 6.0.15
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/slot@2.0.18
+  - @clutchd/twx@4.0.14
+
 ## 6.0.14
 
 ### Patch Changes

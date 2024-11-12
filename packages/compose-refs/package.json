@@ -1,8 +1,12 @@
 {
   "name": "@clutchd/compose-refs",
-  "version": "2.0.15",
+  "version": "2.0.16",
   "description": "A small utility intended to compose multiple refs into a single ref.",
-  "keywords": ["clutchd", "compose-refs", "refs"],
+  "keywords": [
+    "clutchd",
+    "compose-refs",
+    "refs"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

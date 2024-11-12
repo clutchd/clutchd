@@ -1,5 +1,15 @@
 # @clutchd/navigator
 
+## 2.0.17
+
+### Patch Changes
+
+- 14bb529: custom release script
+- Updated dependencies [14bb529]
+  - @clutchd/component@6.0.15
+  - @clutchd/compose-props@3.0.15
+  - @clutchd/link@3.0.17
+
 ## 2.0.16
 
 ### Patch Changes

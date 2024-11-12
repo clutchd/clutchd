@@ -1,8 +1,12 @@
 {
   "name": "@clutchd/compose-props",
-  "version": "3.0.14",
+  "version": "3.0.15",
   "description": "A small utility intended to merge and compose a single props object from the provided prop objects.",
-  "keywords": ["clutchd", "compose-props", "props"],
+  "keywords": [
+    "clutchd",
+    "compose-props",
+    "props"
+  ],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.15
+
+### Patch Changes
+
+- 14bb529: custom release script
+
 ## 2.2.14
 
 ### Patch Changes
