@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.5
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+
 ## 2.2.4
 
 ### Patch Changes

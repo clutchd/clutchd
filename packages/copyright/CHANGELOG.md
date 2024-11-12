@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 4.1.2
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+
 ## 4.1.1
 
 ### Patch Changes

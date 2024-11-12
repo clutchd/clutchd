@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 0.4.4
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+
 ## 0.4.3
 
 ### Patch Changes

@@ -1,5 +1,15 @@
 # @clutchd/navigator
 
+## 2.0.6
+
+### Patch Changes
+
+- f2c705f: Fix changeset releases with bun
+- Updated dependencies [f2c705f]
+  - @clutchd/compose-props@3.0.5
+  - @clutchd/component@6.0.4
+  - @clutchd/link@3.0.6
+
 ## 2.0.5
 
 ### Patch Changes
