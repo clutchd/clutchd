@@ -1,5 +1,11 @@
 # @clutchd/clsx
 
+## 2.2.8
+
+### Patch Changes
+
+- aacd792: Please 2
+
 ## 2.2.7
 
 ### Patch Changes

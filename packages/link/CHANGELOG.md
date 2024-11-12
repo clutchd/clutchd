@@ -1,5 +1,14 @@
 # @clutchd/link
 
+## 3.0.9
+
+### Patch Changes
+
+- aacd792: Please 2
+- Updated dependencies [aacd792]
+  - @clutchd/component@6.0.7
+  - @clutchd/compose-props@3.0.8
+
 ## 3.0.8
 
 ### Patch Changes
