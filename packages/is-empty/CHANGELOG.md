@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 3.0.8
+
+### Patch Changes
+
+- aacd792: Please 2
+
 ## 3.0.7
 
 ### Patch Changes

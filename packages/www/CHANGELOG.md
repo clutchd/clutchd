@@ -1,5 +1,14 @@
 # @clutchd/landing
 
+## 2.1.18
+
+### Patch Changes
+
+- aacd792: Please 2
+- Updated dependencies [aacd792]
+  - @clutchd/layout@4.0.9
+  - @clutchd/link@3.0.9
+
 ## 2.1.17
 
 ### Patch Changes

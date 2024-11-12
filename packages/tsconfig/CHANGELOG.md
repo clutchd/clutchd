@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 2.1.4
+
+### Patch Changes
+
+- aacd792: Please 2
+
 ## 2.1.3
 
 ### Patch Changes

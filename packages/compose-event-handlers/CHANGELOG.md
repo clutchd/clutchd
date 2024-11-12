@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 5.0.7
+
+### Patch Changes
+
+- aacd792: Please 2
+
 ## 5.0.6
 
 ### Patch Changes
