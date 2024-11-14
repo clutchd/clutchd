@@ -34,7 +34,7 @@
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
     "@clutchd/twx": "workspace:*",
-    "@happy-dom/global-registrator": "15.11.3",
+    "@happy-dom/global-registrator": "15.11.6",
     "@radix-ui/react-primitive": "2.0.0",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
