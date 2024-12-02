@@ -2,6 +2,7 @@ import { Page } from "@clutchd/layout";
 import { Manrope } from "next/font/google";
 import type React from "react";
 import "./globals.css";
+import SimpleAnalytics from "~/components/simpleAnalytics";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <Page className="bg-white p-5" asChild>
         <body>
           {/* <DarkModeToggle initialValue={theme?.value as "light" | "dark"} /> */}
+          <SimpleAnalytics />
           {children}
         </body>
       </Page>

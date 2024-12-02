@@ -2,6 +2,7 @@ import { Page } from "@clutchd/layout";
 import { Manrope } from "next/font/google";
 import type React from "react";
 import "./globals.css";
+import SimpleAnalytics from "./SimpleAnalytics";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={manrope.variable}>
       <Page asChild className="bg-white">
-        <body>{children}</body>
+        <body>
+          <SimpleAnalytics />
+          {children}
+        </body>
       </Page>
     </html>
   );
