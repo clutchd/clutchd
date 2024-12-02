@@ -2,7 +2,7 @@ import { Page } from "@clutchd/layout";
 import { Manrope } from "next/font/google";
 import type React from "react";
 import "./globals.css";
-import SimpleAnalytics from "./SimpleAnalytics";
+import SimpleAnalytics from "./simpleAnalytics";
 
 const manrope = Manrope({
   subsets: ["latin"],
