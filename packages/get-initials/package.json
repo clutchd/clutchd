@@ -30,7 +30,7 @@
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.9.0",
+    "@types/node": "22.10.1",
     "tsup": "8.3.5"
   }
 }
