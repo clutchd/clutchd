@@ -1,11 +1,7 @@
 {
   "name": "@clutchd/get-initials",
   "version": "2.0.17",
-  "keywords": [
-    "clutchd",
-    "get-initials",
-    "initials"
-  ],
+  "keywords": ["clutchd", "get-initials", "initials"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

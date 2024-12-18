@@ -1,14 +1,7 @@
 {
   "name": "@clutchd/label",
   "version": "4.0.21",
-  "keywords": [
-    "clutchd",
-    "label",
-    "form",
-    "forms",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "label", "form", "forms", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },

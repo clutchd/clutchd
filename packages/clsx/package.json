@@ -2,10 +2,7 @@
   "name": "@clutchd/clsx",
   "version": "2.2.16",
   "description": "A tinier (225B), more performant implementation of clsx.",
-  "keywords": [
-    "clutchd",
-    "clsx"
-  ],
+  "keywords": ["clutchd", "clsx"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
