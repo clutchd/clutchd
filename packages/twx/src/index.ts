@@ -1,4 +1,4 @@
-import { clsx } from "@clutchd/clsx/lite";
+import { clsx } from "clsx/lite";
 import { twMerge } from "tailwind-merge";
 
 export function twx(...inputs: unknown[]) {

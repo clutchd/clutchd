@@ -24,13 +24,13 @@
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {
-    "@clutchd/clsx": "workspace:*",
-    "tailwind-merge": "2.5.4"
+    "clsx": "2.1.1",
+    "tailwind-merge": "2.5.5"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.9.0",
+    "@types/node": "22.10.2",
     "tsup": "8.3.5"
   }
 }
