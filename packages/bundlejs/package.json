@@ -24,12 +24,10 @@
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {
-    "@hazae41/foras": "2.0.8",
-    "node-fetch": "2.6.7"
+    "@hazae41/foras": "2.1.4"
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node-fetch": "2.6.12",
     "tsup": "8.3.5"
   }
 }
