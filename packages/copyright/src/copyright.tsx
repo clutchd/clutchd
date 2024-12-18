@@ -1,11 +1,10 @@
-// biome-ignore lint: We actually need react, not just the type
-import * as React from "react";
+import type * as React from "react";
 import { getCopyright as internalGetCopyright } from ".";
 
 /**
- * Type to define `Copyright` element.
+ * Type to define `Copyright` component.
  */
-type ICopyright = React.ElementRef<typeof React.Fragment>;
+type ICopyright = React.ComponentRef<typeof React.Fragment>;
 
 /**
  * Type to define `Copyright` props.
@@ -25,7 +24,7 @@ interface ICopyrightHtmlProps
     React.ComponentPropsWithoutRef<typeof React.Fragment> {}
 
 /**
- * `Copyright` - A simple text component used to display the copyright of an entity for the current year.
+ * `Copyright` - A simple text fragment used to display the copyright of an entity for the current year.
  * @param props `ICopyrightProps` used to render this `Copyright`.
  * @returns `Copyright` component.
  */
