@@ -1,7 +1,7 @@
 {
   "name": "@clutchd/navigator",
   "version": "2.0.18",
-  "description": "A @clutchd/link powered component with additional features for navigation.",
+  "description": "A next/link component with additional features for navigation.",
   "keywords": ["clutchd", "navigator", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
@@ -24,24 +24,22 @@
     "test": "bun test --coverage --coverage-reporter=lcov --preload='./preload.ts'"
   },
   "dependencies": {
-    "@clutchd/component": "workspace:*",
-    "@clutchd/compose-props": "workspace:*",
-    "@clutchd/link": "workspace:*"
+    "@clutchd/compose-props": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@happy-dom/global-registrator": "15.11.3",
+    "@happy-dom/global-registrator": "15.11.7",
     "@testing-library/dom": "10.4.0",
-    "@testing-library/react": "16.0.1",
-    "@types/node": "22.9.0",
-    "@types/react": "18.3.12",
-    "next": "15.0.3",
-    "react": "18.3.1",
+    "@testing-library/react": "16.1.0",
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.2",
+    "next": "15.1.1",
+    "react": "19.0.0",
     "tsup": "8.3.5"
   },
   "peerDependencies": {
-    "next": "^14.0 || ^15.0",
-    "react": "^18.0 || ^19.0"
+    "next": "^15.0",
+    "react": "^19.0"
   }
 }

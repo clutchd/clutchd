@@ -1,21 +1,17 @@
-import type { ILinkHtmlProps, ILinkProps } from "@clutchd/link";
+import Link, { type LinkProps } from "next/link";
 import { usePathname } from "next/navigation";
 import * as React from "react";
-import {
-  type INavigatorRoot,
-  NavigatorRoot,
-  isActiveRoute as internalIsActiveRoute,
-} from ".";
+import { isActiveRoute as internalIsActiveRoute } from ".";
 
 /**
  * Type to define `Navigator` element.
  */
-type INavigator = INavigatorRoot;
+type INavigator = typeof Link;
 
 /**
  * Type to define `Navigator` props.
  */
-interface INavigatorProps extends ILinkProps {
+interface INavigatorProps extends LinkProps {
   /**
    * Optional prop to override the default `isActiveRoute` functionality.
    */
@@ -25,39 +21,34 @@ interface INavigatorProps extends ILinkProps {
 /**
  * Type to define `Navigator` props with html attributes.
  */
-interface INavigatorHtmlProps extends INavigatorProps, ILinkHtmlProps {}
+interface INavigatorHtmlProps
+  extends INavigatorProps,
+    React.HTMLAttributes<HTMLAnchorElement> {}
 
 /**
  * `Navigator` - The navigator component, leverages `@clutchd/link`.
  * @param props `INavigatorHtmlProps` used to render this `Navigator`.
  * @returns `Navigator` component.
  */
-const Navigator = React.forwardRef<INavigator, INavigatorHtmlProps>(
-  (
-    { href = "/", children, isActiveRoute = internalIsActiveRoute, ...props },
-    forwardedRef,
-  ) => {
-    const pathname = usePathname();
-    const [isActive, setIsActive] = React.useState(
-      isActiveRoute(pathname, href),
-    );
+function Navigator({
+  href,
+  children,
+  isActiveRoute = internalIsActiveRoute,
+  ...props
+}: INavigatorHtmlProps) {
+  const pathname = usePathname();
+  const [isActive, setIsActive] = React.useState(isActiveRoute(pathname, href));
 
-    React.useEffect(() => {
-      setIsActive(isActiveRoute(pathname, href));
-    }, [pathname, href, isActiveRoute]);
+  React.useEffect(() => {
+    setIsActive(isActiveRoute(pathname, href));
+  }, [pathname, href, isActiveRoute]);
 
-    return (
-      <NavigatorRoot
-        href={href}
-        data-active={isActive}
-        ref={forwardedRef}
-        {...props}
-      >
-        {children}
-      </NavigatorRoot>
-    );
-  },
-);
+  return (
+    <Link href={href} data-active={isActive} {...props}>
+      {children}
+    </Link>
+  );
+}
 
 Navigator.displayName = "Navigator";
 
