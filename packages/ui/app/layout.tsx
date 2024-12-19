@@ -1,7 +1,7 @@
-import { Page } from "@clutchd/layout";
 import { Manrope } from "next/font/google";
 import type React from "react";
 import "./globals.css";
+import { Page } from "@clutchd/layout";
 import SimpleAnalytics from "~/components/simpleAnalytics";
 
 const manrope = Manrope({
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={manrope.variable}>
-      <Page className="bg-white p-5" asChild>
+      <Page asChild className="bg-white p-5">
         <body>
           {/* <DarkModeToggle initialValue={theme?.value as "light" | "dark"} /> */}
           <SimpleAnalytics />

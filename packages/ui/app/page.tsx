@@ -1,15 +1,10 @@
-import { Block } from "@clutchd/block";
 import { Copyright } from "@clutchd/copyright";
 import { Footer } from "@clutchd/layout";
-import { Link } from "@clutchd/link";
 import type { Metadata } from "next";
+import Link from "next/link";
 import {
   AvatarShowcase,
-  BlockShowcase,
   CopyrightShowcase,
-  FlexShowcase,
-  GridShowcase,
-  LabelShowcase,
   LayoutShowcase,
   Section,
   TailwindIndicator,
@@ -97,15 +92,11 @@ export default function Home() {
           />
       </Section>*/}
         <Section title="Layout">
-          <BlockShowcase />
-          <FlexShowcase />
-          <GridShowcase />
           <LayoutShowcase />
         </Section>
 
         <Section title="Primitives">
           <CopyrightShowcase />
-          <LabelShowcase />
           {/* 
           {/* // TODO: Add proper showcase
           <Showcase
