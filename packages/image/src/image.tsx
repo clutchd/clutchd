@@ -1,22 +1,24 @@
-import type { Component } from "@clutchd/component";
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
-import * as React from "react";
 import {
-  type IImageLoadingStates,
-  type IImageRoot,
-  type IImageRootProps,
-  ImageRoot,
-} from ".";
+  default as NextImage,
+  type ImageProps as NextImageProps,
+} from "next/image";
+import * as React from "react";
+
+/**
+ * Type to define loading states of the `Image`.
+ */
+type IImageLoadingStates = "idle" | "loading" | "loaded" | "error";
 
 /**
  * Type to define `Image` component.
  */
-type IImage = IImageRoot;
+type IImage = typeof NextImage;
 
 /**
  * Type to define `Image` props.
  */
-interface IImageProps extends IImageRootProps {
+interface IImageProps extends NextImageProps {
   /**
    * Optional prop to introduce functionality when the image's loading state changes.
    */
@@ -28,47 +30,48 @@ interface IImageProps extends IImageRootProps {
  */
 interface IImageHtmlProps
   extends IImageProps,
-    Omit<
-      React.ComponentPropsWithoutRef<typeof Component.img>,
-      "asChild" | "alt" | "src" | "height" | "width"
-    > {}
+  Omit<
+    React.HTMLAttributes<HTMLImageElement>,
+    "alt" | "src" | "height" | "width"
+  > { }
 
 /**
  * `Image` - A image component used to render next/image components with corresponding data attributes.
  * @param props `IImageHtmlProps` used to render this `Image`.
  * @returns `Image` component.
  */
-const Image = React.forwardRef<IImage, IImageHtmlProps>(
-  (
-    { children, handleStateChange, onError, onLoad, onLoadStart, ...props },
-    forwardedRef,
-  ) => {
-    const [loading, setLoading] = React.useState<IImageLoadingStates>("idle");
+function Image({
+  children,
+  handleStateChange,
+  onError,
+  onLoad,
+  onLoadStart,
+  ...props
+}: IImageHtmlProps) {
+  const [loading, setLoading] = React.useState<IImageLoadingStates>("idle");
 
-    const updateState = (state: IImageLoadingStates) => {
-      setLoading(state);
-      handleStateChange?.(state);
-    };
+  const updateState = (state: IImageLoadingStates) => {
+    setLoading(state);
+    handleStateChange?.(state);
+  };
 
-    return (
-      <ImageRoot
-        {...props}
-        ref={forwardedRef}
-        onError={composeEventHandlers(() => updateState("error"), onError)}
-        onLoad={composeEventHandlers(() => updateState("loaded"), onLoad)}
-        onLoadStart={composeEventHandlers(
-          () => updateState("loading"),
-          onLoadStart,
-        )}
-        data-state={loading}
-      >
-        {children}
-      </ImageRoot>
-    );
-  },
-);
+  return (
+    <NextImage
+      {...props}
+      onError={composeEventHandlers(() => updateState("error"), onError)}
+      onLoad={composeEventHandlers(() => updateState("loaded"), onLoad)}
+      onLoadStart={composeEventHandlers(
+        () => updateState("loading"),
+        onLoadStart,
+      )}
+      data-state={loading}
+    >
+      {children}
+    </NextImage>
+  );
+}
 
 Image.displayName = "Image";
 
 export { Image };
-export type { IImage, IImageHtmlProps, IImageProps };
+export type { IImageLoadingStates, IImage, IImageHtmlProps, IImageProps };
