@@ -1,5 +1,4 @@
-import { Block } from "@clutchd/block";
-import { Divider } from "@clutchd/divider";
+import { Separator } from "@radix-ui/react-separator";
 import type * as React from "react";
 import { Badge } from ".";
 
@@ -21,7 +20,7 @@ function Showcase({
   children?: React.ReactNode;
 }) {
   return (
-    <Block className="my-6">
+    <div className="block my-6">
       <h2 className="inline-flex items-center text-3xl font-bold text-gray-900">
         {title}{" "}
         {stable ? (
@@ -53,13 +52,13 @@ function Showcase({
         )}
       </div>
       {description && <p className="pb-4 text-gray-700 ">{description}</p>}
-      <Divider className="bg-gray-950 data-[orientation=horizontal]:h-px data-[orientation=vertical]:w-px" />
+      <Separator className="bg-gray-950 data-[orientation=horizontal]:h-px data-[orientation=vertical]:w-px" />
       {children ? (
         <div className="py-6">{children}</div>
       ) : (
         <div className="py-2" />
       )}
-    </Block>
+    </div>
   );
 }
 
