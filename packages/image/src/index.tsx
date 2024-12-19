@@ -1,3 +1,5 @@
+"use client";
+
 export { Image } from "./image";
 export type {
   IImageLoadingStates,

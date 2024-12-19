@@ -1,3 +1,5 @@
+"use client";
+
 import { composeEventHandlers } from "@clutchd/compose-event-handlers";
 import {
   default as NextImage,
@@ -30,10 +32,10 @@ interface IImageProps extends NextImageProps {
  */
 interface IImageHtmlProps
   extends IImageProps,
-  Omit<
-    React.HTMLAttributes<HTMLImageElement>,
-    "alt" | "src" | "height" | "width"
-  > { }
+    Omit<
+      React.HTMLAttributes<HTMLImageElement>,
+      "alt" | "src" | "height" | "width"
+    > {}
 
 /**
  * `Image` - A image component used to render next/image components with corresponding data attributes.
