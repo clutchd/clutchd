@@ -1,4 +1,4 @@
-import { twx } from "@clutchd/twx";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 import { Primitive } from "@radix-ui/react-primitive";
 // biome-ignore lint: We actually need react, not just the type
 import * as React from "react";
@@ -14,7 +14,7 @@ function Page({
 }: React.ComponentPropsWithoutRef<typeof Primitive.div>) {
   return (
     <Primitive.div
-      className={twx("flex flex-col min-w-screen min-h-screen", className)}
+      className={cn("flex flex-col min-w-screen min-h-screen", className)}
       {...props}
     />
   );

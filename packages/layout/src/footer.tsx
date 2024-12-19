@@ -1,4 +1,4 @@
-import { twx } from "@clutchd/twx";
+import { composeClassNames as cn } from "@clutchd/compose-props";
 // biome-ignore lint: We actually need react, not just the type
 import * as React from "react";
 
@@ -13,7 +13,7 @@ function Footer({
 }: React.ComponentPropsWithoutRef<"footer">) {
   return (
     <footer
-      className={twx("flex flex-row justify-between", className)}
+      className={cn("flex flex-row justify-between", className)}
       {...props}
     />
   );
