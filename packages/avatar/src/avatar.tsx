@@ -1,7 +1,8 @@
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type { IImageProps } from "@clutchd/image";
 import type { Primitive } from "@radix-ui/react-primitive";
-import type * as React from "react";
+// biome-ignore lint: We actually need react, not just the type
+import * as React from "react";
 import {
   AvatarFallback,
   AvatarImage,
