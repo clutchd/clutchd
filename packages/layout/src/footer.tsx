@@ -12,6 +12,7 @@ function Footer({
   ...props
 }: React.ComponentPropsWithoutRef<"footer">) {
   return (
+    // TODO: Should this be a Primitive?
     <footer
       className={cn("flex flex-row justify-between", className)}
       {...props}

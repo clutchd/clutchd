@@ -12,6 +12,7 @@ function Header({
   ...props
 }: React.ComponentPropsWithoutRef<"header">) {
   return (
+    // TODO: Should this be a Primitive?
     <header
       className={cn("flex flex-row justify-between", className)}
       {...props}

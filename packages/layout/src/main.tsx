@@ -8,6 +8,7 @@ import * as React from "react";
  * @returns `Main` component.
  */
 function Main({ className, ...props }: React.ComponentPropsWithoutRef<"main">) {
+  // TODO: Should this be a Primitive?
   return <main className={cn("flex flex-col", className)} {...props} />;
 }
 
