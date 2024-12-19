@@ -1,8 +1,7 @@
-import type { Component } from "@clutchd/component";
 import { composeClassNames as cn } from "@clutchd/compose-props";
 import type { IImageProps } from "@clutchd/image";
-import type { BorderRadius, Display, Size } from "@clutchd/tailwind";
-import * as React from "react";
+import type { Primitive } from "@radix-ui/react-primitive";
+import type * as React from "react";
 import {
   AvatarFallback,
   AvatarImage,
@@ -28,21 +27,6 @@ interface IAvatarProps {
    * The `src` attribute for the underlying `Image`.
    */
   src?: IAvatarImageProps["src"];
-  /**
-   * A subset of the `Display` tailwindcss classes.  Defaults to `inline-flex`.
-   * @see https://tailwindcss.com/docs/display
-   */
-  display?: Extract<Display, "flex" | "inline-flex" | "hidden">;
-  /**
-   * The `rounded` tailwindcss classes, a subset of the `Border Radius` classes.
-   * @see https://tailwindcss.com/docs/border-radius
-   */
-  radius?: BorderRadius;
-  /**
-   * The `Size` tailwindcss classes.  Defaults to `size-12`.
-   * @see https://tailwindcss.com/docs/size
-   */
-  size?: Size;
   // TODO: make this prop not needed with styled Avatar?
   // Seems like we could get a pixel value based on size class, and since
   // avatar sizes don't change we could only have this prop present as an escape hatch.
@@ -58,51 +42,37 @@ interface IAvatarProps {
  */
 interface IAvatarHtmlProps
   extends IAvatarProps,
-    React.ComponentPropsWithoutRef<typeof Component.span> {}
+    React.ComponentPropsWithoutRef<typeof Primitive.span> {}
 
 /**
  * `Avatar` - An image based component used to render a user's profile picture.
  * @param props `IAvatarProps` used to render this `Avatar`.
  * @returns `Avatar` component.
  */
-const Avatar = React.forwardRef<IAvatar, IAvatarHtmlProps>(
-  (
-    {
-      alt = "An avatar image.",
-      children = "U",
-      className,
-      display = "inline-flex",
-      radius,
-      size = "size-12",
-      src,
-      // Do NOT have a default value, can cause confusion by
-      // potentially rendering poor quality image.
-      sizes,
-      ...props
-    },
-    forwardedRef,
-  ) => {
-    return (
-      <AvatarRoot
-        className={cn(
-          display,
-          radius,
-          size,
-          "relative select-none items-center justify-center truncate",
-          sizes,
-          className,
-        )}
-        ref={forwardedRef}
-        {...props}
-      >
-        <>
-          {src && <AvatarImage alt={alt} src={src} sizes={sizes} />}
-          <AvatarFallback className="m-1 truncate">{children}</AvatarFallback>
-        </>
-      </AvatarRoot>
-    );
-  },
-);
+function Avatar({
+  alt = "An avatar image.",
+  children = "U",
+  className,
+  src,
+  sizes,
+  ...props
+}: IAvatarHtmlProps) {
+  return (
+    <AvatarRoot
+      className={cn(
+        "relative select-none items-center justify-center truncate inline-flex size-12",
+        sizes,
+        className,
+      )}
+      {...props}
+    >
+      <>
+        {src && <AvatarImage alt={alt} src={src} sizes={sizes} />}
+        <AvatarFallback className="m-1 truncate">{children}</AvatarFallback>
+      </>
+    </AvatarRoot>
+  );
+}
 
 Avatar.displayName = "Avatar";
 

@@ -23,22 +23,21 @@
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "dependencies": {
-    "@clutchd/component": "workspace:*",
     "@clutchd/compose-props": "workspace:*",
-    "@clutchd/image": "workspace:*"
+    "@clutchd/image": "workspace:*",
+    "@radix-ui/react-primitive": "2.0.1"
   },
   "devDependencies": {
-    "@clutchd/tailwind": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.9.0",
-    "@types/react": "18.3.12",
-    "@types/react-dom": "18.3.1",
-    "next": "15.0.3",
-    "react": "18.3.1",
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
+    "next": "15.1.1",
+    "react": "19.0.0",
     "tsup": "8.3.5"
   },
   "peerDependencies": {
-    "next": "^14.0 || ^15.0",
-    "react": "^18.0 || ^19.0"
+    "next": "^15.0",
+    "react": "^19.0"
   }
 }
