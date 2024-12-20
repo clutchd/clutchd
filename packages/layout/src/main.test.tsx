@@ -9,5 +9,5 @@ test("render main", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(main).toBeInTheDocument();
-  // TODO: FIX TEST => expect(main).toHaveClass("flex flex-col");
+  expect(main).toHaveClass("flex flex-col");
 });

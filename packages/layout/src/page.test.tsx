@@ -9,5 +9,5 @@ test("render page", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(div).toBeInTheDocument();
-  // TODO: FIX TEST => expect(div).toHaveClass("flex flex-col min-w-screen min-h-screen");
+  expect(div).toHaveClass("flex flex-col min-w-screen min-h-screen");
 });
