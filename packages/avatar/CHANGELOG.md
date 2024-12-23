@@ -1,5 +1,16 @@
 # @clutchd/avatar
 
+## 7.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/image@3.0.0
+
 ## 6.0.18
 
 ### Patch Changes

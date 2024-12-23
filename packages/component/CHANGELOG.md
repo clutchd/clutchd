@@ -1,5 +1,16 @@
 # @clutchd/component
 
+## 7.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/compose-props@4.0.0
+
 ## 6.0.16
 
 ### Patch Changes

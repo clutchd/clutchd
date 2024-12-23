@@ -1,5 +1,11 @@
 # @clutchd/copyright
 
+## 5.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
 ## 4.1.13
 
 ### Patch Changes

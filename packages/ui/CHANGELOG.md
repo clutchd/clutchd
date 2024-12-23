@@ -1,5 +1,19 @@
 # @clutchd/ui
 
+## 1.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/copyright@5.0.0
+  - @clutchd/avatar@7.0.0
+  - @clutchd/layout@5.0.0
+  - @clutchd/twx@5.0.0
+
 ## 0.12.30
 
 ### Patch Changes

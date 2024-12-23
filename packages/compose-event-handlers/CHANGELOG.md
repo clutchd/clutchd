@@ -1,5 +1,11 @@
 # @clutchd/compose-event-handlers
 
+## 6.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
 ## 5.0.15
 
 ### Patch Changes

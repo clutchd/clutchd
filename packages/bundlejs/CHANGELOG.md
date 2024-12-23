@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 1.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
 ## 0.4.15
 
 ### Patch Changes

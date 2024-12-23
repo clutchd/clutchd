@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 5.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/component@7.0.0
+
 ## 4.0.18
 
 ### Patch Changes

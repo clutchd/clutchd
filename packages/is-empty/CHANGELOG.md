@@ -1,5 +1,11 @@
 # @clutchd/is-empty
 
+## 4.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
 ## 3.0.16
 
 ### Patch Changes
