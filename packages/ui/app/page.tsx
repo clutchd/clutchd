@@ -37,10 +37,18 @@ export default function Home() {
       </Header> */}
       <main className="p-5">
         <Section title="Core">
+          {/* TODO: Add component showcase */}
+          {/* TODO: Add compose-event-handlers showcase */}
+          {/* TODO: Add compose-props showcase */}
+          {/* TODO: Add get-initials showcase */}
+          {/* TODO: Add is-empty showcase */}
+          {/* TODO: Add twx showcase */}
           <LayoutShowcase />
         </Section>
         <Section title="Primitives">
           <CopyrightShowcase />
+          {/* TODO: Add image showcase */}
+          {/* TODO: Add navigator showcase */}
         </Section>
         <Section title="Components">
           <AvatarShowcase />
