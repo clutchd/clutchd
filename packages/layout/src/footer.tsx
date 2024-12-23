@@ -1,5 +1,4 @@
-import { composeClassNames as cn } from "@clutchd/compose-props";
-// biome-ignore lint: We actually need react, not just the type
+import { Component, type ComponentPropsWithRef } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,14 +6,10 @@ import * as React from "react";
  * @param props `IFooterHtmlProps` used to render this `Footer`.
  * @returns `Footer` component.
  */
-function Footer({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<"footer">) {
+function Footer({ className, ...props }: ComponentPropsWithRef<"footer">) {
   return (
-    // TODO: Should this be a Primitive?
-    <footer
-      className={cn("flex flex-row justify-between", className)}
+    <Component.footer
+      className={["flex flex-row justify-between", className].join(" ")}
       {...props}
     />
   );

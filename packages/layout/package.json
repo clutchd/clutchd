@@ -24,8 +24,7 @@
     "test": "bun test --coverage --coverage-reporter=lcov --preload='./preload.ts'"
   },
   "dependencies": {
-    "@clutchd/compose-props": "workspace:*",
-    "@radix-ui/react-primitive": "2.0.1"
+    "@clutchd/component": "workspace:*"
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",

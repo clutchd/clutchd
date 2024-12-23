@@ -1,5 +1,4 @@
-import { composeClassNames as cn } from "@clutchd/compose-props";
-// biome-ignore lint: We actually need react, not just the type
+import { Component, type ComponentPropsWithRef } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,9 +6,13 @@ import * as React from "react";
  * @param props `IMainHtmlProps` used to render this `Main`.
  * @returns `Main` component.
  */
-function Main({ className, ...props }: React.ComponentPropsWithoutRef<"main">) {
-  // TODO: Should this be a Primitive?
-  return <main className={cn("flex flex-col", className)} {...props} />;
+function Main({ className, ...props }: ComponentPropsWithRef<"main">) {
+  return (
+    <Component.main
+      className={["flex flex-col", className].join(" ")}
+      {...props}
+    />
+  );
 }
 
 Main.displayName = "Main";

@@ -1,6 +1,4 @@
-import { composeClassNames as cn } from "@clutchd/compose-props";
-import { Primitive } from "@radix-ui/react-primitive";
-// biome-ignore lint: We actually need react, not just the type
+import { Component, type ComponentPropsWithRef } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -8,13 +6,12 @@ import * as React from "react";
  * @param props `IPageHtmlProps` used to render this `Page`.
  * @returns `Page` component.
  */
-function Page({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Primitive.div>) {
+function Page({ className, ...props }: ComponentPropsWithRef<"div">) {
   return (
-    <Primitive.div
-      className={cn("flex flex-col min-w-screen min-h-screen", className)}
+    <Component.div
+      className={["flex flex-col min-w-screen min-h-screen", className].join(
+        " ",
+      )}
       {...props}
     />
   );

@@ -1,5 +1,4 @@
-import { composeClassNames as cn } from "@clutchd/compose-props";
-// biome-ignore lint: We actually need react, not just the type
+import { Component, type ComponentPropsWithRef } from "@clutchd/component";
 import * as React from "react";
 
 /**
@@ -7,14 +6,10 @@ import * as React from "react";
  * @param props `IHeaderHtmlProps` used to render this `Header`.
  * @returns `Header` component.
  */
-function Header({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<"header">) {
+function Header({ className, ...props }: ComponentPropsWithRef<"header">) {
   return (
-    // TODO: Should this be a Primitive?
-    <header
-      className={cn("flex flex-row justify-between", className)}
+    <Component.header
+      className={["flex flex-row justify-between", className].join(" ")}
       {...props}
     />
   );
