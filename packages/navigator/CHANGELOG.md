@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- abb04e7: Official release, ready to go
+- abb04e7: Rework navigator to utilize next/link, remove other complexity.
 
 ### Patch Changes
 

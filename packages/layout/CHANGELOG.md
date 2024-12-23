@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- abb04e7: Official release, ready to go
+- abb04e7: Remove unnecessary complexity with props and instead be a custom primitives with overridable styles.
 
 ### Patch Changes
 

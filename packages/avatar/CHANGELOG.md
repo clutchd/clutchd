@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- abb04e7: Official release, ready to go
+- abb04e7: More closely pertains to `@radix-ui/react-avatar` but with nextjs image features
 
 ### Patch Changes
 

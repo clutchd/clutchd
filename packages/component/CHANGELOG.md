@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- abb04e7: Official release, ready to go
+- abb04e7: Reworked this to more closely resemble `@radix-ui/react-primitive`.  Utilize existing tooling rather than reintroducing entire "stack".  There is still small needs for this component, but now there will be less to manage for development.
 
 ### Patch Changes
 

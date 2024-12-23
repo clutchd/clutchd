@@ -4,7 +4,7 @@
 
 ### Major Changes
 
-- abb04e7: Official release, ready to go
+- abb04e7: Reworked this to more closely resemble `@next/image`.  Basically just introduces state to built in next/image component.  No need for this to be a primitive
 
 ### Patch Changes
 
