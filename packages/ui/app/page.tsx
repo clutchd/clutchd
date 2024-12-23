@@ -55,11 +55,16 @@ export default function Home() {
         </Section>
       </main>
 
-
-
       <Footer className="p-5">
-        <span className="text-gray-500"><Copyright>Clutchd, LLC</Copyright></span>
-        <Link className="text-right underline underline-offset-4" href="mailto:william@clutchd.com">Contact Us</Link>
+        <span className="text-gray-500">
+          <Copyright>Clutchd, LLC</Copyright>
+        </span>
+        <Link
+          className="text-right underline underline-offset-4"
+          href="mailto:william@clutchd.com"
+        >
+          Contact Us
+        </Link>
       </Footer>
     </>
   );

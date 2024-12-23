@@ -26,7 +26,7 @@ interface INavigatorHtmlProps
     React.HTMLAttributes<HTMLAnchorElement> {}
 
 /**
- * `Navigator` - The navigator component, leverages `@clutchd/link`.
+ * `Navigator` - The navigator component, leverages `next/link`.
  * @param props `INavigatorHtmlProps` used to render this `Navigator`.
  * @returns `Navigator` component.
  */

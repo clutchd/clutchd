@@ -1,5 +1,5 @@
 import { composeClassNames as cn } from "@clutchd/compose-props";
-import React from "react";
+import type React from "react";
 
 export function DecorativeBlock({
   children,

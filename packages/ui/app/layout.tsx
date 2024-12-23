@@ -8,7 +8,7 @@ import "./globals.css";
 const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
-})
+});
 
 export default function RootLayout({
   children,
