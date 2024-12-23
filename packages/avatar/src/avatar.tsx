@@ -1,4 +1,3 @@
-import { composeClassNames as cn } from "@clutchd/compose-props";
 import type { IImageProps } from "@clutchd/image";
 import type { Primitive } from "@radix-ui/react-primitive";
 // biome-ignore lint: We actually need react, not just the type
@@ -60,11 +59,11 @@ function Avatar({
 }: IAvatarHtmlProps) {
   return (
     <AvatarRoot
-      className={cn(
+      className={[
         "relative select-none items-center justify-center truncate inline-flex size-12",
         sizes,
         className,
-      )}
+      ].join(" ")}
       {...props}
     >
       <>

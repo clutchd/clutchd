@@ -6,7 +6,7 @@ import { AvatarContext, type IWithAvatarContext } from "./_context";
 /**
  * Type to define `AvatarRoot` element.
  */
-type IAvatarRoot = React.ElementRef<typeof Primitive.span>;
+type IAvatarRoot = React.ComponentRef<typeof Primitive.span>;
 
 /**
  * Type to define `AvatarRoot` props.
