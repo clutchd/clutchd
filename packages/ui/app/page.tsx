@@ -1,23 +1,10 @@
-import { Block } from "@clutchd/block";
 import { Copyright } from "@clutchd/copyright";
 import { Footer } from "@clutchd/layout";
-import { Link } from "@clutchd/link";
-import type { Metadata } from "next";
-import {
-  AvatarShowcase,
-  BlockShowcase,
-  CopyrightShowcase,
-  FlexShowcase,
-  GridShowcase,
-  LabelShowcase,
-  LayoutShowcase,
-  Section,
-  TailwindIndicator,
-} from "~/components";
-
-export const metadata: Metadata = {
-  title: "Clutchd, LLC",
-};
+import Link from "next/link";
+import { AvatarShowcase } from "~/components/avatarShowcase";
+import { CopyrightShowcase } from "~/components/copyrightShowcase";
+import { LayoutShowcase } from "~/components/layoutShowcase";
+import { Section } from "~/components/section";
 
 export default function Home() {
   return (
@@ -49,116 +36,25 @@ export default function Home() {
         <ColorSwitch color={color} setColor={setColor} /> 
       </Header> */}
       <main className="p-5">
-        {/* <Section title="Core">
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Component"
-            description="A primitive component intended to be used as a foundation for all other ui components."
-            pkg="@clutchd/component"
-            pkgType="core"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Compose Event Handlers"
-            description="A small package that provides multiple event-handler utility functions."
-            pkg="@clutchd/compose-event-handlers"
-            pkgType="core"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Compose Props"
-            description="A small utility intended to merge and compose a single props object from the provided prop objects."
-            pkg="@clutchd/compose-props"
-            pkgType="core"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Compose Refs"
-            description="A small utility intended to compose multiple refs into a single ref."
-            pkg="@clutchd/compose-refs"
-            pkgType="core"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Slot"
-            description="A utility component that merges it's props onto it's child."
-            pkg="@clutchd/slot"
-            pkgType="core"
-            stable
-            rsc
-          />
-      </Section>*/}
-        <Section title="Layout">
-          <BlockShowcase />
-          <FlexShowcase />
-          <GridShowcase />
+        <Section title="Core">
+          {/* TODO: Add component showcase */}
+          {/* TODO: Add compose-event-handlers showcase */}
+          {/* TODO: Add compose-props showcase */}
+          {/* TODO: Add get-initials showcase */}
+          {/* TODO: Add is-empty showcase */}
+          {/* TODO: Add twx showcase */}
           <LayoutShowcase />
         </Section>
-
         <Section title="Primitives">
           <CopyrightShowcase />
-          <LabelShowcase />
-          {/* 
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Divider"
-            description="A visual divider to separate content."
-            pkg="@clutchd/divider"
-            pkgType="primitive"
-            stable
-            rsc
-          />
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Image"
-            description="A simple next/image based component with data states."
-            pkg="@clutchd/image"
-            pkgType="primitive"
-            stable
-            rsc={false}
-          />
-          */}
+          {/* TODO: Add image showcase */}
+          {/* TODO: Add navigator showcase */}
         </Section>
         <Section title="Components">
           <AvatarShowcase />
-          {/* // TODO: Add proper showcase
-          <Showcase
-            title="Button"
-            description="A simple, focusable, button."
-            pkg="@clutchd/button"
-            pkgType="ui"
-            stable
-          >
-            <ButtonShowcase />
-          </Showcase> */}
         </Section>
-        {/* <TextShowcase />
-       
-        <Showcase title="Card" pkg="@clutchd/card">
-          <CardShowcase />
-        </Showcase>
-        <Showcase title="Form" pkg="@clutchd/form" rsc={false}>
-          <FormShowcase />
-        </Showcase>
-        <Showcase
-          title="Input"
-          description={
-            "A primitive input component that powers all types of inputs."
-          }
-          pkg="@clutchd/input"
-          rsc={false}
-        >
-          <InputShowcase />
-        </Showcase> */}
       </main>
+
       <Footer className="p-5">
         <span className="text-gray-500">
           <Copyright>Clutchd, LLC</Copyright>
@@ -170,7 +66,6 @@ export default function Home() {
           Contact Us
         </Link>
       </Footer>
-      <TailwindIndicator />
     </>
   );
 }

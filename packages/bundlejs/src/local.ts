@@ -20,10 +20,11 @@ export async function getLocalSize(inputs: Uint8Array[] | string[]): Promise<{
 
   // Choose a different compression function based on the compression type
   const compressionMap = await (async () => {
-    // Wait for WASM to load
-    Foras.initSyncBundledOnce();
-
-    return async (code: Uint8Array) => gzip(code, 9);
+    await Foras.initBundledOnce();
+    return async (code: Uint8Array) => {
+      const memory = new Foras.Memory(code);
+      return gzip(memory, 9);
+    };
   })();
 
   // Compress all binary contents according to the compression map
@@ -33,7 +34,7 @@ export async function getLocalSize(inputs: Uint8Array[] | string[]): Promise<{
 
   // Convert sizes to human readable formats, e.g. 10000 bytes to 10MB
   const rawCompressedSize = compressedContent.reduce(
-    (acc, { length }) => acc + length,
+    (acc, memory) => acc + memory.bytes.length,
     0,
   );
 

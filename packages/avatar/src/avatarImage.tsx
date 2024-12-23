@@ -27,21 +27,23 @@ interface IAvatarImageHtmlProps extends IAvatarImageProps, IImageHtmlProps {}
  * @param props `IAvatarProps` used to render this `Avatar`.
  * @returns `Avatar` component.
  */
-const AvatarImage = React.forwardRef<IAvatarImage, IAvatarImageHtmlProps>(
-  ({ _context = AvatarContext, fill = true, src, ...props }, forwardedRef) => {
-    if (!src) return null;
-    const context = React.useContext(_context);
-    return (
-      <Image
-        handleStateChange={context.onLoadingStateChange}
-        fill={fill}
-        src={src}
-        ref={forwardedRef}
-        {...props}
-      />
-    );
-  },
-);
+function AvatarImage({
+  _context = AvatarContext,
+  fill = true,
+  src,
+  ...props
+}: IAvatarImageHtmlProps) {
+  if (!src) return null;
+  const context = React.useContext(_context);
+  return (
+    <Image
+      handleStateChange={context.onLoadingStateChange}
+      fill={fill}
+      src={src}
+      {...props}
+    />
+  );
+}
 
 AvatarImage.displayName = "AvatarImage";
 

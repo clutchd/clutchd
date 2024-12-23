@@ -1,11 +1,11 @@
-import { Component } from "@clutchd/component";
+import { Primitive } from "@radix-ui/react-primitive";
 import * as React from "react";
 import { AvatarContext, type IWithAvatarContext } from "./_context";
 
 /**
  * Type to define `IAvatarFallback` element.
  */
-type IAvatarFallback = React.ElementRef<typeof Component.span>;
+type IAvatarFallback = React.ComponentRef<typeof Primitive.span>;
 
 /**
  * Type to define `AvatarFallback` props.
@@ -17,24 +17,23 @@ interface IAvatarFallbackProps extends IWithAvatarContext {}
  */
 interface IAvatarFallbackHtmlProps
   extends IAvatarFallbackProps,
-    React.ComponentPropsWithoutRef<typeof Component.span> {}
+    React.ComponentPropsWithoutRef<typeof Primitive.span> {}
 
 /**
  * `AvatarFallback` - A text component used to render a avatar's fallback if an image is not provided to an `Avatar`.
  * @param props `IAvatarProps` used to render this `Avatar`.
  * @returns `AvatarFallback` component.
  */
-const AvatarFallback = React.forwardRef<
-  IAvatarFallback,
-  IAvatarFallbackHtmlProps
->(({ _context = AvatarContext, children, ...props }, forwardedRef) => {
+function AvatarFallback({
+  _context = AvatarContext,
+  children,
+  ...props
+}: IAvatarFallbackHtmlProps) {
   const context = React.useContext(_context);
   return context.loadingState !== "loaded" ? (
-    <Component.span {...props} ref={forwardedRef}>
-      {children}
-    </Component.span>
+    <Primitive.span {...props}>{children}</Primitive.span>
   ) : null;
-});
+}
 
 AvatarFallback.displayName = "AvatarFallback";
 

@@ -1,11 +1,7 @@
 {
   "name": "@clutchd/get-initials",
   "version": "2.0.17",
-  "keywords": [
-    "clutchd",
-    "get-initials",
-    "initials"
-  ],
+  "keywords": ["clutchd", "get-initials", "initials"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -30,7 +26,7 @@
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.9.0",
+    "@types/node": "22.10.2",
     "tsup": "8.3.5"
   }
 }

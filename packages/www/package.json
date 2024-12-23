@@ -7,22 +7,22 @@
     "build": "next build",
     "dev": "next dev -p 3000",
     "start": "next start",
-    "test": "bun test --coverage --coverage-reporter=lcov"
+    "test": "bun test --coverage --coverage-reporter=lcov --preload='./preload.ts'"
   },
   "dependencies": {
+    "@clutchd/copyright": "workspace:*",
     "@clutchd/layout": "workspace:*",
-    "@clutchd/link": "workspace:*",
-    "next": "15.0.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "next": "15.1.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.9.0",
-    "@types/react": "18.3.12",
-    "@types/react-dom": "18.3.1",
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.2",
+    "@types/react-dom": "19.0.2",
     "autoprefixer": "10.4.20",
     "postcss": "8.4.49",
-    "tailwindcss": "3.4.15"
+    "tailwindcss": "3.4.17"
   }
 }

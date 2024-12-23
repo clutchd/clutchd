@@ -9,5 +9,5 @@ test("render footer", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(footer).toBeInTheDocument();
-  // TODO: FIX TEST => expect(footer).toHaveClass("flex flex-row justify-between");
+  expect(footer).toHaveClass("flex flex-row justify-between");
 });

@@ -1,5 +1,8 @@
 import { Footer, Header, Main, Page } from "@clutchd/layout";
-import { DecorativeBlock, DecorativeLabel, Showcase } from "~/components";
+import { twx } from "@clutchd/twx";
+import React from "react";
+import { DecorativeBlock, DecorativeLabel } from "~/components/decorative";
+import { Showcase } from "~/components/showcase";
 
 function LayoutShowcase() {
   return (
@@ -12,9 +15,8 @@ function LayoutShowcase() {
       rsc
     >
       <Page
-        minHeight="min-h-0"
-        minWidth="min-w-0"
-        className="relative gap-4 rounded-md border border-gray-200 bg-gray-50 bg-[url('/diagonal.svg')] bg-repeat px-4 pb-4 pt-8"
+        cx={twx}
+        className="min-w-0 min-h-0 relative bg-gray-100 border border-gray-400 gap-4 rounded-md bg-[url('/diagonal.svg')] bg-repeat px-4 pb-4 pt-8"
       >
         <DecorativeLabel className="absolute -left-[1px] -top-[1px]">
           Page

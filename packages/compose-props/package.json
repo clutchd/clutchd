@@ -2,11 +2,7 @@
   "name": "@clutchd/compose-props",
   "version": "3.0.16",
   "description": "A small utility intended to merge and compose a single props object from the provided prop objects.",
-  "keywords": [
-    "clutchd",
-    "compose-props",
-    "props"
-  ],
+  "keywords": ["clutchd", "compose-props", "props"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -33,8 +29,7 @@
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@radix-ui/react-slot": "1.1.0",
-    "@types/node": "22.9.0",
+    "@types/node": "22.10.2",
     "tsup": "8.3.5"
   }
 }

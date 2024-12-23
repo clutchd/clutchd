@@ -3,10 +3,10 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 const config = {
   content: [
-    "../../node_modules/@clutchd/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "../../node_modules/@clutchd/{component,copyright,layout}/dist/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {

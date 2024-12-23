@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 /**
  * Get the size of a package from bundlejs.com
  * @param pkg Package name we are looking for

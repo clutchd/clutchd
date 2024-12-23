@@ -1,12 +1,8 @@
+import { Copyright } from "@clutchd/copyright";
 import { Footer, Header, Main } from "@clutchd/layout";
-import { Link } from "@clutchd/link";
-import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
-
-export const metadata: Metadata = {
-  title: "Clutchd, LLC",
-};
 
 export default function Home() {
   return (
@@ -50,7 +46,9 @@ export default function Home() {
         />
       </Main>
       <Footer className="p-5">
-        <div className="text-gray-500">© 2023 Clutchd, LLC</div>
+        <span className="text-gray-500">
+          <Copyright>Clutchd, LLC</Copyright>
+        </span>
         <Link
           className="text-right underline underline-offset-4"
           href="mailto:william@clutchd.com"

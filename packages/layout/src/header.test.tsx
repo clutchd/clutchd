@@ -9,5 +9,5 @@ test("render header", () => {
 
   expect(container.hasChildNodes()).toEqual(true);
   expect(header).toBeInTheDocument();
-  // TODO: FIX TEST => expect(header).toHaveClass("flex flex-row justify-between");
+  expect(header).toHaveClass("flex flex-row justify-between");
 });
