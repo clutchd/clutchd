@@ -1,6 +1,6 @@
 import { Separator } from "@radix-ui/react-separator";
 import type * as React from "react";
-import { Badge } from ".";
+import { Badge } from "./badge";
 
 function Showcase({
   title,

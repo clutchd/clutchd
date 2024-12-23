@@ -1,4 +1,6 @@
-export default function SimpleAnalytics() {
+import * as React from "react";
+
+export function SimpleAnalytics() {
   return (
     <>
       <script

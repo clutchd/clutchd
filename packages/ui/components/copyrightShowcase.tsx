@@ -1,6 +1,6 @@
 import { Copyright, getCopyright } from "@clutchd/copyright";
 import * as React from "react";
-import { Showcase } from "~/components";
+import { Showcase } from "~/components/showcase";
 
 function CopyrightShowcase() {
   return (
