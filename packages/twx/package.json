@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "clsx": "2.1.1",
-    "tailwind-merge": "2.5.5"
+    "tailwind-merge": "2.6.0"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
