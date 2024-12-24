@@ -1,5 +1,16 @@
 # @clutchd/navigator
 
+## 3.0.0
+
+### Major Changes
+
+- abb04e7: Rework navigator to utilize next/link, remove other complexity.
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/compose-props@4.0.0
+
 ## 2.0.18
 
 ### Patch Changes

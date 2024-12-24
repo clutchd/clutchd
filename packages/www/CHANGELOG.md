@@ -1,5 +1,17 @@
 # @clutchd/landing
 
+## 3.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/copyright@5.0.0
+  - @clutchd/layout@5.0.0
+
 ## 2.1.27
 
 ### Patch Changes

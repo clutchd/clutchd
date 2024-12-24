@@ -1,5 +1,16 @@
 # @clutchd/component
 
+## 7.0.0
+
+### Major Changes
+
+- abb04e7: Reworked this to more closely resemble `@radix-ui/react-primitive`.  Utilize existing tooling rather than reintroducing entire "stack".  There is still small needs for this component, but now there will be less to manage for development.
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/compose-props@4.0.0
+
 ## 6.0.16
 
 ### Patch Changes

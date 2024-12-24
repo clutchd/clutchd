@@ -1,5 +1,16 @@
 # @clutchd/layout
 
+## 5.0.0
+
+### Major Changes
+
+- abb04e7: Remove unnecessary complexity with props and instead be a custom primitives with overridable styles.
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/component@7.0.0
+
 ## 4.0.18
 
 ### Patch Changes

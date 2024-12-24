@@ -1,5 +1,11 @@
 # @clutchd/bundlejs
 
+## 1.0.0
+
+### Major Changes
+
+- abb04e7: Updated deps, remove dependency on node-fetch package
+
 ## 0.4.15
 
 ### Patch Changes

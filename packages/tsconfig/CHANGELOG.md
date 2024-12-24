@@ -1,5 +1,11 @@
 # @clutchd/tsconfig
 
+## 3.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
 ## 2.1.12
 
 ### Patch Changes

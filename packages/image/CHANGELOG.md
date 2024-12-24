@@ -1,5 +1,16 @@
 # @clutchd/image
 
+## 3.0.0
+
+### Major Changes
+
+- abb04e7: Reworked this to more closely resemble `@next/image`.  Basically just introduces state to built in next/image component.  No need for this to be a primitive
+
+### Patch Changes
+
+- Updated dependencies [abb04e7]
+  - @clutchd/compose-event-handlers@6.0.0
+
 ## 2.0.18
 
 ### Patch Changes

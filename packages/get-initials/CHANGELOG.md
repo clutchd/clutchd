@@ -1,5 +1,11 @@
 # @clutchd/get-initials
 
+## 3.0.0
+
+### Major Changes
+
+- abb04e7: Official release, ready to go
+
 ## 2.0.17
 
 ### Patch Changes
