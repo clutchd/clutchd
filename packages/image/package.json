@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "@happy-dom/global-registrator": "15.11.7",
+    "@happy-dom/global-registrator": "16.1.0",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.1.0",
