@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/image",
   "version": "3.0.0",
-  "keywords": [
-    "clutchd",
-    "image",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "image", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
