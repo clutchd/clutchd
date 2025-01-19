@@ -19,7 +19,6 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --minify",
     "dev": "tsup src/index.ts --format esm --dts --watch",
-    "lint": "biome check . --write",
     "prepublish": "bun run build",
     "test": "bun test --coverage --coverage-reporter=lcov"
   },

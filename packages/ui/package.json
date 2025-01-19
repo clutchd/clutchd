@@ -6,7 +6,6 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev -p 3001",
-    "lint": "biome check . --write",
     "start": "next start",
     "test": "bun test --coverage --coverage-reporter=lcov --preload='./preload.ts'"
   },
