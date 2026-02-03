@@ -2,11 +2,7 @@
   "name": "@clutchd/component",
   "version": "7.0.0",
   "description": "A primitive component intended to be used as a foundation for all other ui components.",
-  "keywords": [
-    "clutchd",
-    "component",
-    "ui"
-  ],
+  "keywords": ["clutchd", "component", "ui"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -36,12 +32,12 @@
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
     "@clutchd/twx": "workspace:*",
-    "@happy-dom/global-registrator": "15.11.7",
+    "@happy-dom/global-registrator": "16.6.0",
     "@radix-ui/react-primitive": "2.0.1",
     "@testing-library/dom": "10.4.0",
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.1.0",
-    "@types/node": "22.10.2",
+    "@types/node": "22.10.5",
     "@types/react": "19.0.2",
     "react": "19.0.0",
     "tsup": "8.3.5"

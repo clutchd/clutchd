@@ -1,11 +1,7 @@
 {
   "name": "@clutchd/get-initials",
   "version": "3.0.0",
-  "keywords": [
-    "clutchd",
-    "get-initials",
-    "initials"
-  ],
+  "keywords": ["clutchd", "get-initials", "initials"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -23,14 +19,13 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm --dts --minify",
     "dev": "tsup src/index.ts --format esm --dts --watch",
-    "lint": "biome check . --write",
     "prepublish": "bun run build",
     "test": "bun test --coverage --coverage-reporter=lcov"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.10.2",
-    "tsup": "8.3.5"
+    "@types/node": "25.2.0",
+    "tsup": "8.5.1"
   }
 }

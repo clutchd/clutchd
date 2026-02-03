@@ -2,12 +2,7 @@
   "name": "@clutchd/navigator",
   "version": "3.0.0",
   "description": "A next/link component with additional features for navigation.",
-  "keywords": [
-    "clutchd",
-    "navigator",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "navigator", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -34,14 +29,14 @@
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@happy-dom/global-registrator": "15.11.7",
-    "@testing-library/dom": "10.4.0",
-    "@testing-library/react": "16.1.0",
-    "@types/node": "22.10.2",
-    "@types/react": "19.0.2",
-    "next": "15.1.1",
-    "react": "19.0.0",
-    "tsup": "8.3.5"
+    "@happy-dom/global-registrator": "20.5.0",
+    "@testing-library/dom": "10.4.1",
+    "@testing-library/react": "16.3.2",
+    "@types/node": "25.2.0",
+    "@types/react": "19.2.10",
+    "next": "16.1.6",
+    "react": "19.2.4",
+    "tsup": "8.5.1"
   },
   "peerDependencies": {
     "next": "^15.0",

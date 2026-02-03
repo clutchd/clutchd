@@ -11,14 +11,21 @@ const config = {
     extend: {
       colors: {
         brand: {
-          500: "#830DF2",
-        },
-        accent: {
-          500: "#1C2541",
+          50: "#f4f2ff",
+          100: "#ebe6ff",
+          200: "#d8d0ff",
+          300: "#b8a8ff",
+          400: "#9a82ff",
+          500: "#7a5af8",
+          600: "#5f3ee6",
+          700: "#4a2fb8",
+          800: "#362389",
+          900: "#241a57",
         },
       },
       fontFamily: {
         sans: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans],
+        display: ["var(--font-manrope)", ...defaultTheme.fontFamily.sans],
       },
     },
   },

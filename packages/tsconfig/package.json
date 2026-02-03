@@ -2,10 +2,7 @@
   "name": "@clutchd/tsconfig",
   "version": "3.0.0",
   "description": "Collection of tsconfigs shared between clutchd packages.",
-  "keywords": [
-    "clutchd",
-    "tsconfig"
-  ],
+  "keywords": ["clutchd", "tsconfig"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -26,8 +23,8 @@
     "bun-publish": "bun publish"
   },
   "devDependencies": {
-    "@types/bun": "1.1.14",
-    "@types/node": "22.10.2",
+    "@types/bun": "1.2.2",
+    "@types/node": "22.10.5",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2"
   }

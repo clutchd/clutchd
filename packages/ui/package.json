@@ -6,7 +6,6 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev -p 3001",
-    "lint": "biome check . --write",
     "start": "next start",
     "test": "bun test --coverage --coverage-reporter=lcov --preload='./preload.ts'"
   },
@@ -17,13 +16,13 @@
     "@clutchd/twx": "workspace:*",
     "@radix-ui/react-primitive": "2.0.1",
     "@radix-ui/react-separator": "1.1.1",
-    "next": "15.1.1",
+    "next": "15.1.4",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.10.2",
+    "@types/node": "22.10.5",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
     "autoprefixer": "10.4.20",

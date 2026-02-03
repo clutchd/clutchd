@@ -3,9 +3,13 @@
  * @param names Names which we need to derive initials from.
  * @returns A single set of initials.
  */
-export function getInitials(...names: string[]) {
+export function getInitials(...names: (string | undefined)[]) {
   // declare vars to hold initials
   let f = "U";
+
+  if (!names || names.length === 0) {
+    return f;
+  }
 
   // filter out all invalid inputs
   const result = names

@@ -1,12 +1,7 @@
 {
   "name": "@clutchd/avatar",
   "version": "7.0.0",
-  "keywords": [
-    "clutchd",
-    "avatar",
-    "tailwind",
-    "next"
-  ],
+  "keywords": ["clutchd", "avatar", "tailwind", "next"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -29,16 +24,16 @@
   },
   "dependencies": {
     "@clutchd/image": "workspace:*",
-    "@radix-ui/react-primitive": "2.0.1"
+    "@radix-ui/react-primitive": "2.1.4"
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.10.2",
-    "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2",
-    "next": "15.1.1",
-    "react": "19.0.0",
-    "tsup": "8.3.5"
+    "@types/node": "25.2.0",
+    "@types/react": "19.2.10",
+    "@types/react-dom": "19.2.3",
+    "next": "16.1.6",
+    "react": "19.2.4",
+    "tsup": "8.5.1"
   },
   "peerDependencies": {
     "next": "^15.0",

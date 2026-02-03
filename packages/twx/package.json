@@ -2,12 +2,7 @@
   "name": "@clutchd/twx",
   "version": "5.0.0",
   "description": "Combining the powers of @clutchd/clsx and tailwind-merge.",
-  "keywords": [
-    "clutchd",
-    "clsx",
-    "twx",
-    "tailwind"
-  ],
+  "keywords": ["clutchd", "clsx", "twx", "tailwind"],
   "bugs": {
     "url": "https://github.com/clutchd/clutchd/issues"
   },
@@ -30,12 +25,12 @@
   },
   "dependencies": {
     "clsx": "2.1.1",
-    "tailwind-merge": "2.5.5"
+    "tailwind-merge": "2.6.0"
   },
   "devDependencies": {
     "@clutchd/bundlejs": "workspace:*",
     "@clutchd/tsconfig": "workspace:*",
-    "@types/node": "22.10.2",
+    "@types/node": "22.10.5",
     "tsup": "8.3.5"
   }
 }
