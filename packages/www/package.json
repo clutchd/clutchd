@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
-    "dev": "next dev -p 3000",
+    "dev": "next dev",
     "start": "next start",
     "test": "bun test --coverage --coverage-reporter=lcov --preload='./preload.ts'"
   },
@@ -13,16 +13,17 @@
     "@clutchd/copyright": "workspace:*",
     "@clutchd/layout": "workspace:*",
     "next": "15.1.4",
+    "posthog-js": "1.231.1",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
     "@clutchd/tsconfig": "workspace:*",
+    "@tailwindcss/postcss": "4.1.18",
     "@types/node": "22.10.5",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
-    "autoprefixer": "10.4.20",
-    "postcss": "8.4.49",
-    "tailwindcss": "3.4.17"
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.18"
   }
 }

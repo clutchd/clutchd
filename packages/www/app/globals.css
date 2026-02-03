@@ -1,3 +1,66 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --ink-900: #120f1a;
+  --ink-700: #2d2540;
+  --ink-500: #5f5673;
+  --paper-100: #f7f4ff;
+  --paper-200: #f1ecff;
+  --accent-500: #7a5af8;
+  --accent-700: #5f3ee6;
+  --accent-900: #3e2a9e;
+}
+
+body {
+  @apply min-h-screen bg-[radial-gradient(circle_at_top,_#ffffff_0%,_#f5f1ff_45%,_#eeebff_100%)] text-[var(--ink-900)] antialiased;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-manrope), sans-serif;
+  letter-spacing: -0.02em;
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+.float-slow {
+  animation: float-slow 10s ease-in-out infinite;
+}
+
+.float-fast {
+  animation: float-fast 7s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes float-fast {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-22px);
+  }
+}
+
+.section-title {
+  @apply text-xs uppercase tracking-[0.35em] text-[var(--ink-500)];
+}
+
+.glass-card {
+  @apply rounded-3xl border border-white/70 bg-white/80 p-6 shadow-[0_22px_60px_-42px_rgba(40,30,85,0.6)] backdrop-blur;
+}
